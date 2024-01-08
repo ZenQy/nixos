@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-JVN4fZ1M4cIlFzf2DjhO1suz+zdk95UM0yzi76yCcFc=",
+            "sha256": "sha256-0sB50juVAdKZJ+HVzazlVnpkoUr6JPowqIhlURtT5Cs=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.CrabappleChaffinch_EN-US1781584314_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.BerninaPass_EN-US8788589226_UHD.jpg"
         },
-        "version": "CrabappleChaffinch_EN-US1781584314"
+        "version": "BerninaPass_EN-US8788589226"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -114,21 +114,6 @@
         },
         "version": "v1.4"
     },
-    "logseq": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "logseq",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-9ycDoIB3OHPGEGWH4w6RUG2sEUrQ9rMzgxcfDMKm1eU=",
-            "type": "url",
-            "url": "https://github.com/logseq/logseq/releases/download/0.10.3/logseq-linux-x64-0.10.3.zip"
-        },
-        "version": "0.10.3"
-    },
     "markdown-online-editor": {
         "cargoLocks": null,
         "date": "2023-06-14",
@@ -227,12 +212,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1796.zip",
-            "sha256": "sha256-OMj6tlSqJH2NSpXxPSH0/pNpp7Yy+ce6TqMRHhqCVuM=",
+            "name": "rust-analyzer-0.4.1798.zip",
+            "sha256": "sha256-1oxBvLEHIgFsJ6YU6VGB/EEwirjWF6oHO4yNjo9pmpw=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1796/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1798/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1796"
+        "version": "0.4.1798"
     },
     "staticcheck": {
         "cargoLocks": null,

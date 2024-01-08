@@ -3,10 +3,10 @@
 {
   bingimg = {
     pname = "bingimg";
-    version = "CrabappleChaffinch_EN-US1781584314";
+    version = "BerninaPass_EN-US8788589226";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.CrabappleChaffinch_EN-US1781584314_UHD.jpg";
-      sha256 = "sha256-JVN4fZ1M4cIlFzf2DjhO1suz+zdk95UM0yzi76yCcFc=";
+      url = "https://www.bing.com/th?id=OHR.BerninaPass_EN-US8788589226_UHD.jpg";
+      sha256 = "sha256-0sB50juVAdKZJ+HVzazlVnpkoUr6JPowqIhlURtT5Cs=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -66,14 +66,6 @@
       sha256 = "sha256-W1uQFUekgARQ113GRz77ZGQS7/yCUhPZZ+Sf124fuyo=";
     };
   };
-  logseq = {
-    pname = "logseq";
-    version = "0.10.3";
-    src = fetchurl {
-      url = "https://github.com/logseq/logseq/releases/download/0.10.3/logseq-linux-x64-0.10.3.zip";
-      sha256 = "sha256-9ycDoIB3OHPGEGWH4w6RUG2sEUrQ9rMzgxcfDMKm1eU=";
-    };
-  };
   markdown-online-editor = {
     pname = "markdown-online-editor";
     version = "58f9fcb534a4f46ff2b7d5cce4553193c02d5781";
@@ -129,11 +121,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1796";
+    version = "0.4.1798";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1796/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1796.zip";
-      sha256 = "sha256-OMj6tlSqJH2NSpXxPSH0/pNpp7Yy+ce6TqMRHhqCVuM=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1798/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1798.zip";
+      sha256 = "sha256-1oxBvLEHIgFsJ6YU6VGB/EEwirjWF6oHO4yNjo9pmpw=";
     };
   };
   staticcheck = {
