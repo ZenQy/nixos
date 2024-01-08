@@ -1,0 +1,65 @@
+[fcitx5-pinyin-zhwiki]
+src.archpkg = "fcitx5-pinyin-zhwiki"
+src.prefix = "0.2.4."
+fetch.url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-$ver.dict"
+
+[dlv-dap]
+src.github = "go-delve/delve"
+fetch.github = "go-delve/delve"
+
+[nezha-agent]
+src.github = "nezhahq/agent"
+fetch.github = "nezhahq/agent"
+
+[nezha-dashboard]
+src.git = "https://github.com/naiba/nezha"
+fetch.github = "naiba/nezha"
+
+[staticcheck]
+src.github = "dominikh/go-tools"
+fetch.github = "dominikh/go-tools"
+
+[vue_volar]
+src.vsmarketplace = "vue.volar"
+fetch.vsmarketplace = "vue.volar"
+
+[dbaeumer_vscode-eslint]
+src.vsmarketplace = "dbaeumer.vscode-eslint"
+fetch.vsmarketplace = "dbaeumer.vscode-eslint"
+
+[golang_go]
+src.vsmarketplace = "golang.go"
+fetch.vsmarketplace = "golang.go"
+
+[pkief_material-icon-theme]
+src.vsmarketplace = "pkief.material-icon-theme"
+fetch.vsmarketplace = "pkief.material-icon-theme"
+
+[mhutchie_git-graph]
+src.vsmarketplace = "mhutchie.git-graph"
+fetch.vsmarketplace = "mhutchie.git-graph"
+
+[jnoortheen_nix-ide]
+src.vsmarketplace = "jnoortheen.nix-ide"
+fetch.vsmarketplace = "jnoortheen.nix-ide"
+
+[rust-lang_rust-analyzer]
+src.vsmarketplace = "rust-lang.rust-analyzer"
+fetch.vsmarketplace = "rust-lang.rust-analyzer"
+
+[bingimg]
+src.webpage = "https://www.bing.com/"
+src.regex = "id=OHR\\.(.*?)_tmb\\.jpg"
+fetch.url = "https://www.bing.com/th?id=OHR.$ver_UHD.jpg"
+
+# [logseq]
+# src.github_tag = "logseq/logseq"
+# fetch.url = "https://github.com/logseq/logseq/releases/download/$ver/logseq-linux-x64-$ver.zip"
+
+[leetgo]
+src.github = "j178/leetgo"
+fetch.github = "j178/leetgo"
+
+[markdown-online-editor]
+src.git = "https://github.com/nicejade/markdown-online-editor"
+fetch.github = "nicejade/markdown-online-editor"

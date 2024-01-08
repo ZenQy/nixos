@@ -1,0 +1,157 @@
+name: Build Update
+on:
+  schedule:
+    - cron: 0 20 * * *
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'Run the build with tmate debugging enabled'
+        required: false
+        default: false
+
+env:
+  NIX_PATH: nixpkgs=channel:nixos-unstable
+  WEEK: 0
+  TZ: Asia/Shanghai
+  NIXPKGS_ALLOW_BROKEN: 1
+  NIXPKGS_ALLOW_INSECURE: 1
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+
+      - name: Delete older workflow runs and artifacts
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 3
+          keep_minimum_runs: 3
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: SSH Private Key
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Install nixFlake
+        uses: cachix/install-nix-action@v24
+
+      - name: Day of week
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          echo WEEK=$(date +%u) >> $GITHUB_ENV
+  
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+
+      - name: Get Old Packages
+        run: |
+          mkdir -p ~/.config/nix
+          echo "allow-import-from-derivation = true" > ~/.config/nix/nix.conf
+          # sed -i 's/"aarch64-linux"//g' flake.nix
+          pkgs_old=$(nix flake show --json | jq '.packages."x86_64-linux"')
+          pkgs_list=$(echo $pkgs_old | jq 'keys')
+          echo pkgs_old=$pkgs_old >> $GITHUB_ENV
+          echo pkgs_list=$pkgs_list >> $GITHUB_ENV
+
+      - name: Run Nix Flake Update
+        run: |
+          nix flake update
+
+      - name: Run nvfetcher CLI
+        run : |
+          cd pkgs
+          nix run github:berberman/nvfetcher
+          nix eval -f _sources/generated.nix
+          cd ../
+
+      - name: Run Nix Flake Check
+        run: nix flake check || true
+
+      - name: Build nix-update CLI
+        run : |
+          nix build github:Mic92/nix-update
+
+      - id: set-matrix
+        name: set-matrix
+        run: |
+          if [[ $WEEK != '1' ]]; then
+            pkgs_new=$(nix flake show --json | jq '.packages."x86_64-linux"')
+            pkgs=$(echo $pkgs_list | jq -r '.[]')
+            gopkgs=$(ls pkgs/go)
+            for pkg in $pkgs; do
+              echo 正在执行$pkg...
+              pkg_old=$(echo $pkgs_old | jq ".\"$pkg\".name")
+              pkg_new=$(echo $pkgs_new | jq ".\"$pkg\".name")
+              if [[ $pkg_old == $pkg_new ]]; then
+                pkgs_list=$(echo $pkgs_list | jq "del(.[] | select(. == \"$pkg\"))")
+              else
+                if [[ $(echo $gopkgs | grep $pkg) != "" ]]; then
+                  ./result/bin/nix-update $pkg --flake --version=skip
+                fi
+              fi
+            done
+          fi
+          echo $pkgs_list
+          echo "matrix=$(echo $pkgs_list)" >> $GITHUB_OUTPUT
+
+      - name: Commit and Push
+        if: ${{ env.WEEK != '1' }}
+        run: |
+          git config --global user.name 'Automation - ZenQy'
+          git config --global user.email 'zenqy.qin@gmail.com'
+          git diff-index --quiet HEAD \
+          || (git commit -am "Update dependencies - Automated Commit" && git push || git stash)
+
+  build:
+    runs-on: ubuntu-latest
+    needs: update
+    strategy:
+      fail-fast: false
+      matrix: 
+        pkgs: ${{ fromJSON(needs.update.outputs.matrix) }}
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: update
+        run: git pull
+
+      - name: Install nixFlake
+        uses: cachix/install-nix-action@v24
+        with:
+          extra_nix_config: |
+            trusted-public-keys = zenqy.cachix.org-1:G5csLBsu/kQIOXU7XUiqeMacwzN1WQWv0+GysTVmJgo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+            substituters = https://zenqy.cachix.org/ https://cache.nixos.org/
+          
+      - name: Use Cachix
+        uses: cachix/cachix-action@v12
+        with:
+          name: zenqy
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+
+      - name: build package
+        run: |
+          nix build .#${{ matrix.pkgs }}
+
+      - name: Telegram notification
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            [${{ matrix.pkgs }}]编译失败，请查明原因

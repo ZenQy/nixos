@@ -1,0 +1,58 @@
+diff --git a/cmd/new/main.go b/cmd/new/main.go
+index e7f326c..fd87c3d 100644
+--- a/cmd/new/main.go
++++ b/cmd/new/main.go
+@@ -7,6 +7,7 @@ import (
+ 	"log"
+ 	"os"
+ 	"path/filepath"
++	"regexp"
+ 	"strings"
+ 	"text/template"
+ 
+@@ -83,6 +84,8 @@ type MetaWithFolder struct {
+ 	Folder     string
+ 	TagStr     string
+ 	FrontendId string
++	Func       string
++	FuncA      string
+ }
+ 
+ func Run(lc *leetcode.Leetcode, n string, lang string) {
+@@ -113,10 +116,18 @@ func Run(lc *leetcode.Leetcode, n string, lang string) {
+ 		folderName,
+ 		strings.Join(meta.Tags, ","),
+ 		n,
++		"func", "Func",
+ 	}
+ 	metaf.Meta.Content = strings.ReplaceAll(metaf.Meta.Content, "↵", "")
+ 	metaf.Meta.Code = gjson.Get(metaf.CodeSnippets, fmt.Sprintf("#(lang=%s).code", config.LeetcodeLang)).String()
+ 
++	r := regexp.MustCompile(`func (.*?)\(`)
++	funcs := r.FindStringSubmatch(metaf.Meta.Code)
++	if len(funcs) == 2 {
++		metaf.Func = funcs[1]
++		metaf.FuncA = strings.Title(funcs[1])
++	}
++
+ 	problemFp := filepath.Join(fp, "problem.md")
+ 	if !fileExists(problemFp) {
+ 		bf := mustExecuteTemplate("problem", problemStr, metaf)
+@@ -153,7 +164,17 @@ var (
+ {{ .Code }}
+ `
+ 
+-	testCodeStrGo = `package {{ .Folder }}_test
++	testCodeStrGo = `package {{ .Folder }}
++
++import (
++	"testing"
++
++	"github.com/stretchr/testify/assert"
++)
++
++func Test{{ .FuncA }}(t *testing.T) {
++	assert.Equal(t, {{ .Func }}(), 0)
++}
+ 
+ `
