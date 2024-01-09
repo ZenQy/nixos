@@ -7,31 +7,10 @@
 }
 
 window#waybar {
-  background: rgba(43, 48, 59, 0.5);
+  background-color: transparent;
+  /* background: rgba(43, 48, 59, 0.5);
   border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-  color: #ffffff;
-}
-
-window#waybar.hidded {
-  opacity: 0.2;
-}
-
-/*
-window#waybar.empty {
-  background: transparent;
-}
-window#waybar.solo {
-  background: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-  background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-  background-color: #DEE1E6;
-  color: #000000;
+  color: #ffffff; */
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -43,7 +22,7 @@ window#waybar.chromium {
 }
 
 #workspaces button.active {
-  background: #64727D;
+  background: #9445d4;
   border-bottom: 3px solid #ffffff;
 }
 
