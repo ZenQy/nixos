@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qq5Of9YeOEJj97BZbLLbd+5u2Zumk1ror1nfHflnJOo=",
+            "sha256": "sha256-Cv5+15LqbqkqsOSNY+pLsIxTH7A8L7MTXBgE/PmPov8=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.MilopotamosStairs_EN-US9131506093_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.LynxSnow_EN-US9261675170_UHD.jpg"
         },
-        "version": "MilopotamosStairs_EN-US9131506093"
+        "version": "LynxSnow_EN-US9261675170"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -212,12 +212,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1801.zip",
-            "sha256": "sha256-Beao4icsp0E7Vse3ieL7k1Ur53ZjwlkhY8IsL8mzWn0=",
+            "name": "rust-analyzer-0.4.1802.zip",
+            "sha256": "sha256-9dzCjdPpiwaOTDnLOZJIxemK4M0fqvMdKJ6wWBKqa7I=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1801/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1802/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1801"
+        "version": "0.4.1802"
     },
     "staticcheck": {
         "cargoLocks": null,
