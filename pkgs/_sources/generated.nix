@@ -3,10 +3,10 @@
 {
   bingimg = {
     pname = "bingimg";
-    version = "LynxSnow_EN-US9261675170";
+    version = "BukhansanSeoul_EN-US0422922586";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.LynxSnow_EN-US9261675170_UHD.jpg";
-      sha256 = "sha256-Cv5+15LqbqkqsOSNY+pLsIxTH7A8L7MTXBgE/PmPov8=";
+      url = "https://www.bing.com/th?id=OHR.BukhansanSeoul_EN-US0422922586_UHD.jpg";
+      sha256 = "sha256-ex4WnDJlg4cxmdDsSZKSpyQ5UIsf/yuzqxF/5Jn94jU=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -68,15 +68,15 @@
   };
   markdown-online-editor = {
     pname = "markdown-online-editor";
-    version = "58f9fcb534a4f46ff2b7d5cce4553193c02d5781";
+    version = "c624ff3333276cc47e5ca21766b284f98ff33450";
     src = fetchFromGitHub {
       owner = "nicejade";
       repo = "markdown-online-editor";
-      rev = "58f9fcb534a4f46ff2b7d5cce4553193c02d5781";
+      rev = "c624ff3333276cc47e5ca21766b284f98ff33450";
       fetchSubmodules = false;
-      sha256 = "sha256-cegrijki70tmOVLq2eWT4KYIQ7wwdIFcAOwclfEAcWY=";
+      sha256 = "sha256-2Hu1AwGy1/M5e6TBLMTmL48wiYWSb79CIgbCbZmyhvQ=";
     };
-    date = "2023-06-14";
+    date = "2024-01-12";
   };
   mhutchie_git-graph = {
     pname = "mhutchie_git-graph";
@@ -121,11 +121,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1802";
+    version = "0.4.1803";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1802/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1802.zip";
-      sha256 = "sha256-9dzCjdPpiwaOTDnLOZJIxemK4M0fqvMdKJ6wWBKqa7I=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1803/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1803.zip";
+      sha256 = "sha256-XWYF7ssyZPYn8JfDWpIHx4T2uT3FFtwnVplwGT1jZK0=";
     };
   };
   staticcheck = {
