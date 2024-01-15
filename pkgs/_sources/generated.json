@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-WRVO9/7GLHpoWbHAYTezBtQABnzLhvDJXRDlSfZQ1C4=",
+            "sha256": "sha256-TNiDb4E8QWvbgb8VcFGq55QLQQvC9e8nFi7iRHK4N6U=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.HanaHighway_EN-US0637770298_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MLKMemorialDC_EN-US1038696225_UHD.jpg"
         },
-        "version": "HanaHighway_EN-US0637770298"
+        "version": "MLKMemorialDC_EN-US1038696225"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -22,12 +22,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "vscode-eslint-2.4.2.zip",
-            "sha256": "sha256-eIjaiVQ7PNJUtOiZlM+lw6VmW07FbMWPtY7UoedWtbw=",
+            "name": "vscode-eslint-2.4.3.zip",
+            "sha256": "sha256-ZDd0av+sUEMfugbZO6Mi43WJ7NUmytKALXNkyZHKKJY=",
             "type": "url",
-            "url": "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/2.4.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/2.4.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "2.4.2"
+        "version": "2.4.3"
     },
     "dlv-dap": {
         "cargoLocks": null,
@@ -212,12 +212,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1804.zip",
-            "sha256": "sha256-e+CRymX1UxjrOxQtZMMIzbVYMYpJVf1H/+08j6x14yI=",
+            "name": "rust-analyzer-0.4.1806.zip",
+            "sha256": "sha256-VpWpwk3xewvprb636+qWCxOnE/u3UhuOMWhiV55wn7o=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1804/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1806/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1804"
+        "version": "0.4.1806"
     },
     "staticcheck": {
         "cargoLocks": null,
