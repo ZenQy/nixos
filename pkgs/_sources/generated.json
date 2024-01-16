@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-TNiDb4E8QWvbgb8VcFGq55QLQQvC9e8nFi7iRHK4N6U=",
+            "sha256": "sha256-e0/6NNemQcPjyj/aYpszOEuoY7sZCnKNmMFxjGNDep8=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.MLKMemorialDC_EN-US1038696225_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.LakeLouise_EN-US1133378386_UHD.jpg"
         },
-        "version": "MLKMemorialDC_EN-US1038696225"
+        "version": "LakeLouise_EN-US1133378386"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -212,12 +212,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1806.zip",
-            "sha256": "sha256-VpWpwk3xewvprb636+qWCxOnE/u3UhuOMWhiV55wn7o=",
+            "name": "rust-analyzer-0.4.1808.zip",
+            "sha256": "sha256-lptEYgBxJTujE+7scw+gFum8RC9JOUweydC2eS3H1wg=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1806/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1808/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1806"
+        "version": "0.4.1808"
     },
     "staticcheck": {
         "cargoLocks": null,
