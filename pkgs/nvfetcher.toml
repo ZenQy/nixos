@@ -60,6 +60,11 @@ fetch.url = "https://www.bing.com/th?id=OHR.$ver_UHD.jpg"
 src.github = "j178/leetgo"
 fetch.github = "j178/leetgo"
 
-[markdown-online-editor]
-src.git = "https://github.com/nicejade/markdown-online-editor"
-fetch.github = "nicejade/markdown-online-editor"
+# [markdown-online-editor]
+# src.git = "https://github.com/nicejade/markdown-online-editor"
+# fetch.github = "nicejade/markdown-online-editor"
+
+[code-server]
+src.github_tag = "coder/code-server"
+src.prefix = "v"
+fetch.url = "https://github.com/coder/code-server/releases/download/v$ver/code-server-$ver-linux-arm64.tar.gz"

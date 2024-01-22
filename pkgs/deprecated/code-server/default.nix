@@ -22,6 +22,6 @@ stdenv.mkDerivation rec {
       name = "ZenQy";
       email = "zenqy.qin@gmail.com";
     }];
-    platforms = [ "aarch64" ];
+    platforms = [ "aarch64-linux" ];
   };
 }

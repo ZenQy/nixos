@@ -56,11 +56,6 @@
         code.${secrets.ssl.domain} {
         	reverse_proxy :${toString config.services.openvscode-server.port}
         }
-
-        md.${secrets.ssl.domain} {
-        	root * ${pkgs.markdown-online-editor}
-          file_server
-        }
       '';
     };
 
