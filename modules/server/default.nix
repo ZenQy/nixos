@@ -5,7 +5,10 @@
   services.openssh = {
     enable = true;
     ports = [ secrets.openssh.port ];
-    settings.PasswordAuthentication = false;
+    settings = {
+      PasswordAuthentication = false;
+      PermitRootLogin = "prohibit-password";
+    };
   };
 
   users.users =

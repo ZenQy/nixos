@@ -24,9 +24,12 @@
     loader.generic-extlinux-compatible.enable = true;
     kernelPackages = pkgs.linuxPackages_latest;
     kernelParams = [
-      "root=UUID=ebb01a2b-d47b-43f7-aa46-0a125a8f1d61"
-      "rootfstype=btrfs"
-      "rootflags=compress-force=zstd"
+      "audit=0"
+      "net.ifnames=0"
+
+      # "root=UUID=ebb01a2b-d47b-43f7-aa46-0a125a8f1d61"
+      # "rootfstype=btrfs"
+      # "rootflags=compress-force=zstd"
 
       "consoleblank=0"
       "console=ttyAML0,115200n8"
@@ -36,18 +39,16 @@
 
   nixpkgs.hostPlatform.system = "aarch64-linux";
 
-  fileSystems."/" =
-    {
-      device = "/dev/disk/by-label/ROOTFS_EMMC";
-      fsType = "btrfs";
-      options = [ "compress-force=zstd" ];
-    };
+  fileSystems."/" = {
+    device = "/dev/disk/by-label/ROOTFS_EMMC";
+    fsType = "btrfs";
+    options = [ "compress-force=zstd" ];
+  };
 
-  fileSystems."/boot" =
-    {
-      device = "/dev/disk/by-label/BOOT_EMMC";
-      fsType = "vfat";
-    };
+  fileSystems."/boot" = {
+    device = "/dev/disk/by-label/BOOT_EMMC";
+    fsType = "vfat";
+  };
 
   swapDevices = [ ];
 

@@ -120,6 +120,7 @@
     ];
   };
 
+  services.xserver.excludePackages = [ pkgs.xterm ];
   environment.systemPackages = with pkgs; [
     go
     gopls

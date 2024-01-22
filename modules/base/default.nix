@@ -65,7 +65,6 @@
     PS1="\[\033[$PROMPT_COLOR\][\u@\h:\w]\\$\[\033[0m\] "
   '';
 
-  services.xserver.excludePackages = [ pkgs.xterm ];
   environment.systemPackages = with pkgs; [
     fastfetch
     jq
