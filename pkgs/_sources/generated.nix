@@ -3,19 +3,27 @@
 {
   bingimg = {
     pname = "bingimg";
-    version = "MacaroniPenguins_EN-US2046934125";
+    version = "SantaCruzSunrise_EN-US6436233856";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MacaroniPenguins_EN-US2046934125_UHD.jpg";
-      sha256 = "sha256-zHst4mQK9HADkTNyP57aXp2Mvdpm15mzFhOE2xcOeZ8=";
+      url = "https://www.bing.com/th?id=OHR.SantaCruzSunrise_EN-US6436233856_UHD.jpg";
+      sha256 = "sha256-2E4gu2YfMVXcisbAAnM2vt47/55Ock2do9DG1FHCzuQ=";
+    };
+  };
+  code-server = {
+    pname = "code-server";
+    version = "4.20.1";
+    src = fetchurl {
+      url = "https://github.com/coder/code-server/releases/download/v4.20.1/code-server-4.20.1-linux-arm64.tar.gz";
+      sha256 = "sha256-i3VlIMgGAV0hkMDxRdBPVb/SLCYPAaqpet14PbI5p1I=";
     };
   };
   dbaeumer_vscode-eslint = {
     pname = "dbaeumer_vscode-eslint";
-    version = "2.4.3";
+    version = "2.4.4";
     src = fetchurl {
-      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/2.4.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "vscode-eslint-2.4.3.zip";
-      sha256 = "sha256-ZDd0av+sUEMfugbZO6Mi43WJ7NUmytKALXNkyZHKKJY=";
+      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/2.4.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "vscode-eslint-2.4.4.zip";
+      sha256 = "sha256-NJGsMme/+4bvED/93SGojYTH03EZbtKe5LyvocywILA=";
     };
   };
   dlv-dap = {
@@ -39,11 +47,11 @@
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.40.1";
+    version = "0.40.3";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.40.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.40.1.zip";
-      sha256 = "sha256-KeYui/REV9E1HcNWBb0ThD0fOWkMM0AVTyfiE1efhCA=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.40.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.40.3.zip";
+      sha256 = "sha256-FWC9ALnp5ZsUqHFOPS5CcKsqf5O6rpr4oMfenvZlcZY=";
     };
   };
   jnoortheen_nix-ide = {
@@ -65,18 +73,6 @@
       fetchSubmodules = false;
       sha256 = "sha256-W1uQFUekgARQ113GRz77ZGQS7/yCUhPZZ+Sf124fuyo=";
     };
-  };
-  markdown-online-editor = {
-    pname = "markdown-online-editor";
-    version = "c624ff3333276cc47e5ca21766b284f98ff33450";
-    src = fetchFromGitHub {
-      owner = "nicejade";
-      repo = "markdown-online-editor";
-      rev = "c624ff3333276cc47e5ca21766b284f98ff33450";
-      fetchSubmodules = false;
-      sha256 = "sha256-2Hu1AwGy1/M5e6TBLMTmL48wiYWSb79CIgbCbZmyhvQ=";
-    };
-    date = "2024-01-12";
   };
   mhutchie_git-graph = {
     pname = "mhutchie_git-graph";
@@ -121,11 +117,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1812";
+    version = "0.4.1814";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1812/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1812.zip";
-      sha256 = "sha256-ZOFywfDi1Rrjzjg5SwXkOrdEORzcIRdcGjuPAziOXSM=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1814/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1814.zip";
+      sha256 = "sha256-1zDUHLc4BqBEHFlVsDrqSN0vBj6BbdPv1ZWik2HASvs=";
     };
   };
   staticcheck = {
