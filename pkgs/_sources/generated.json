@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-2E4gu2YfMVXcisbAAnM2vt47/55Ock2do9DG1FHCzuQ=",
+            "sha256": "sha256-XCRQczVxxCeOfXGp0OTjatP6g7FeYjy3ETsflQUxPmk=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.SantaCruzSunrise_EN-US6436233856_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MaldivesAtolls_EN-US2498947967_UHD.jpg"
         },
-        "version": "SantaCruzSunrise_EN-US6436233856"
+        "version": "MaldivesAtolls_EN-US2498947967"
     },
     "code-server": {
         "cargoLocks": null,
@@ -207,12 +207,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1814.zip",
-            "sha256": "sha256-1zDUHLc4BqBEHFlVsDrqSN0vBj6BbdPv1ZWik2HASvs=",
+            "name": "rust-analyzer-0.4.1816.zip",
+            "sha256": "sha256-q/+xSK5od003VPAfP/V6V6vORFVVRVjNi5D1BeHSqkI=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1814/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1816/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1814"
+        "version": "0.4.1816"
     },
     "staticcheck": {
         "cargoLocks": null,
