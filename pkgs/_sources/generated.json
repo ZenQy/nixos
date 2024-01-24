@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-XCRQczVxxCeOfXGp0OTjatP6g7FeYjy3ETsflQUxPmk=",
+            "sha256": "sha256-72cIiOvpwBN2sb8ofLmoNsdvzcyLQBt4/FLllmzRBTE=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.MaldivesAtolls_EN-US2498947967_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.IcelandBeach_EN-US2647667820_UHD.jpg"
         },
-        "version": "MaldivesAtolls_EN-US2498947967"
+        "version": "IcelandBeach_EN-US2647667820"
     },
     "code-server": {
         "cargoLocks": null,
@@ -207,12 +207,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1816.zip",
-            "sha256": "sha256-q/+xSK5od003VPAfP/V6V6vORFVVRVjNi5D1BeHSqkI=",
+            "name": "rust-analyzer-0.4.1817.zip",
+            "sha256": "sha256-ZcvdEXm2gLbArPJg/fTuj/hRnLBaEswYuwrnaVI0fmk=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1816/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1817/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1816"
+        "version": "0.4.1817"
     },
     "staticcheck": {
         "cargoLocks": null,
