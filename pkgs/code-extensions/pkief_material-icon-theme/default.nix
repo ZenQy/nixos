@@ -1,15 +1,20 @@
 { source, lib, vscode-utils }:
 
+with builtins;
+
 vscode-utils.buildVscodeMarketplaceExtension {
   vsix = source.src;
-  mktplcRef = {
-    name = "material-icon-theme";
-    publisher = "pkief";
-    version = source.version;
-  };
+  mktplcRef =
+    let
+      list = match "(.*?)_(.*?)" source.pname;
+    in
+    {
+      publisher = head list;
+      name = head (tail list);
+      version = source.version;
+    };
 
   meta = with lib; {
-    description = "Material Design Icons for Visual Studio Code.";
     license = licenses.mit;
     maintainers = [
       {

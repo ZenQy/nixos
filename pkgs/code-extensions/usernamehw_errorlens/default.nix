@@ -14,6 +14,7 @@ vscode-utils.buildVscodeMarketplaceExtension {
       version = source.version;
     };
 
+
   meta = with lib; {
     license = licenses.mit;
     maintainers = [

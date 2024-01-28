@@ -1,15 +1,20 @@
 { source, lib, vscode-utils }:
 
+with builtins;
+
 vscode-utils.buildVscodeMarketplaceExtension {
   vsix = source.src;
-  mktplcRef = {
-    name = "rust-analyzer";
-    publisher = "rust-lang";
-    version = source.version;
-  };
+  mktplcRef =
+    let
+      list = match "(.*?)_(.*?)" source.pname;
+    in
+    {
+      publisher = head list;
+      name = head (tail list);
+      version = source.version;
+    };
 
   meta = with lib; {
-    description = "This extension provides support for the Rust programming language. It is recommended over and replaces rust-lang.rust.";
     license = licenses.mit;
     maintainers = [
       {
