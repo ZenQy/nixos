@@ -129,7 +129,7 @@
 
     cargo
     rustc
-    rustfmt
+    rust-analyzer
 
     gcc
     leetgo

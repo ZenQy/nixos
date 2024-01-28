@@ -47,6 +47,14 @@ fetch.vsmarketplace = "jnoortheen.nix-ide"
 src.vsmarketplace = "rust-lang.rust-analyzer"
 fetch.vsmarketplace = "rust-lang.rust-analyzer"
 
+[usernamehw_errorlens]
+src.vsmarketplace = "usernamehw.errorlens"
+fetch.vsmarketplace = "usernamehw.errorlens"
+
+[tamasfe_even-better-toml]
+src.vsmarketplace = "tamasfe.even-better-toml"
+fetch.vsmarketplace = "tamasfe.even-better-toml"
+
 [bingimg]
 src.webpage = "https://www.bing.com/"
 src.regex = "id=OHR\\.(.*?)_tmb\\.jpg"
