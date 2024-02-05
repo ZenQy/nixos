@@ -1,4 +1,24 @@
 {
+    "Yacd-meta": {
+        "cargoLocks": null,
+        "date": "2023-12-29",
+        "extract": null,
+        "name": "Yacd-meta",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "MetaCubeX",
+            "repo": "Yacd-meta",
+            "rev": "b66b1d0393bd284b7a40329f95eae3746bb102be",
+            "sha256": "sha256-mbt7OSHNLseXRAQ8YsQL+FVK3EZ74UfbBWRddYBGUYI=",
+            "type": "github"
+        },
+        "version": "b66b1d0393bd284b7a40329f95eae3746bb102be"
+    },
     "bingimg": {
         "cargoLocks": null,
         "date": null,
@@ -8,11 +28,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-SS3qrgBctJGAj2VfKc80Wx0wRBp2W0xIJ+KJaGjbvD0=",
+            "sha256": "sha256-sNp4YBV4ePcyblE6kcn3sYS6xpjP3DQMQv1rO3rlkDk=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.HawkOwl_EN-US6646901652_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.WesternMonarchs_EN-US8386035297_UHD.jpg"
         },
-        "version": "HawkOwl_EN-US6646901652"
+        "version": "WesternMonarchs_EN-US8386035297"
     },
     "code-server": {
         "cargoLocks": null,
@@ -23,11 +43,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-i3VlIMgGAV0hkMDxRdBPVb/SLCYPAaqpet14PbI5p1I=",
+            "sha256": "sha256-WQloP9JJxWFZZ7t6FhK/DrwTbiL2zt25BwaEQWLy30E=",
             "type": "url",
-            "url": "https://github.com/coder/code-server/releases/download/v4.20.1/code-server-4.20.1-linux-arm64.tar.gz"
+            "url": "https://github.com/coder/code-server/releases/download/v4.21.0/code-server-4.21.0-linux-arm64.tar.gz"
         },
-        "version": "4.20.1"
+        "version": "4.21.0"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -123,11 +143,11 @@
             "name": null,
             "owner": "j178",
             "repo": "leetgo",
-            "rev": "v1.4",
-            "sha256": "sha256-W1uQFUekgARQ113GRz77ZGQS7/yCUhPZZ+Sf124fuyo=",
+            "rev": "v1.4.1",
+            "sha256": "sha256-LbY7GGPu2ZwcclCmsE9V421FUi+foR7CXyFHF7GrjQo=",
             "type": "github"
         },
-        "version": "v1.4"
+        "version": "v1.4.1"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -158,11 +178,11 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v0.15.17",
-            "sha256": "sha256-ZoJqO555cQ2jl/ofEOgkorSPJ0H4MFtBFD8KktVvVus=",
+            "rev": "v0.15.18",
+            "sha256": "sha256-GpJyWmmiS1L5WPmnLjeI+8YxRcW8Vwa6wix7kPmzoaU=",
             "type": "github"
         },
-        "version": "v0.15.17"
+        "version": "v0.15.18"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
@@ -207,12 +227,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1819.zip",
-            "sha256": "sha256-6dHzNcNU01kpe8RXaBEMq+JNxpvM7PFECjteb/a+vVE=",
+            "name": "rust-analyzer-0.4.1830.zip",
+            "sha256": "sha256-lpf0GC0I/Es0r4ki+v4Gvj+ftTSSVufXevDt8ow6mzA=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1819/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1830/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1819"
+        "version": "0.4.1830"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -233,6 +253,36 @@
             "type": "github"
         },
         "version": "2023.1.6"
+    },
+    "tamasfe_even-better-toml": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "tamasfe_even-better-toml",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": "even-better-toml-0.19.2.zip",
+            "sha256": "sha256-JKj6noi2dTe02PxX/kS117ZhW8u7Bhj4QowZQiJKP2E=",
+            "type": "url",
+            "url": "https://tamasfe.gallery.vsassets.io/_apis/public/gallery/publisher/tamasfe/extension/even-better-toml/0.19.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+        },
+        "version": "0.19.2"
+    },
+    "usernamehw_errorlens": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "usernamehw_errorlens",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": "errorlens-3.16.0.zip",
+            "sha256": "sha256-Y3M/A5rYLkxQPRIZ0BUjhlkvixDae+wIRUsBn4tREFw=",
+            "type": "url",
+            "url": "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.16.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+        },
+        "version": "3.16.0"
     },
     "vue_volar": {
         "cargoLocks": null,

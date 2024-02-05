@@ -13,49 +13,20 @@
     };
     date = "2023-12-29";
   };
-  dtbs = {
-    pname = "dtbs";
-    version = "v0.1.0";
-    src = fetchFromGitHub {
-      owner = "ophub";
-      repo = "amlogic-s9xxx-armbian";
-      rev = "v0.1.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-kft0c+F7vTV1L+F1fYcOKypgqY0ykTXzK0kB2uYMVw0=";
-    };
-  };
-  tamasfe_even-better-toml = {
-    pname = "tamasfe_even-better-toml";
-    version = "0.19.2";
-    src = fetchurl {
-      url = "https://tamasfe.gallery.vsassets.io/_apis/public/gallery/publisher/tamasfe/extension/even-better-toml/0.19.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "even-better-toml-0.19.2.zip";
-      sha256 = "sha256-JKj6noi2dTe02PxX/kS117ZhW8u7Bhj4QowZQiJKP2E=";
-    };
-  };
-  usernamehw_errorlens = {
-    pname = "usernamehw_errorlens";
-    version = "3.16.0";
-    src = fetchurl {
-      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.16.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "errorlens-3.16.0.zip";
-      sha256 = "sha256-Y3M/A5rYLkxQPRIZ0BUjhlkvixDae+wIRUsBn4tREFw=";
-    };
-  };
   bingimg = {
     pname = "bingimg";
-    version = "HawkOwl_EN-US6646901652";
+    version = "WesternMonarchs_EN-US8386035297";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HawkOwl_EN-US6646901652_UHD.jpg";
-      sha256 = "sha256-SS3qrgBctJGAj2VfKc80Wx0wRBp2W0xIJ+KJaGjbvD0=";
+      url = "https://www.bing.com/th?id=OHR.WesternMonarchs_EN-US8386035297_UHD.jpg";
+      sha256 = "sha256-sNp4YBV4ePcyblE6kcn3sYS6xpjP3DQMQv1rO3rlkDk=";
     };
   };
   code-server = {
     pname = "code-server";
-    version = "4.20.1";
+    version = "4.21.0";
     src = fetchurl {
-      url = "https://github.com/coder/code-server/releases/download/v4.20.1/code-server-4.20.1-linux-arm64.tar.gz";
-      sha256 = "sha256-i3VlIMgGAV0hkMDxRdBPVb/SLCYPAaqpet14PbI5p1I=";
+      url = "https://github.com/coder/code-server/releases/download/v4.21.0/code-server-4.21.0-linux-arm64.tar.gz";
+      sha256 = "sha256-WQloP9JJxWFZZ7t6FhK/DrwTbiL2zt25BwaEQWLy30E=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -106,13 +77,13 @@
   };
   leetgo = {
     pname = "leetgo";
-    version = "v1.4";
+    version = "v1.4.1";
     src = fetchFromGitHub {
       owner = "j178";
       repo = "leetgo";
-      rev = "v1.4";
+      rev = "v1.4.1";
       fetchSubmodules = false;
-      sha256 = "sha256-W1uQFUekgARQ113GRz77ZGQS7/yCUhPZZ+Sf124fuyo=";
+      sha256 = "sha256-LbY7GGPu2ZwcclCmsE9V421FUi+foR7CXyFHF7GrjQo=";
     };
   };
   mhutchie_git-graph = {
@@ -126,13 +97,13 @@
   };
   nezha-agent = {
     pname = "nezha-agent";
-    version = "v0.15.17";
+    version = "v0.15.18";
     src = fetchFromGitHub {
       owner = "nezhahq";
       repo = "agent";
-      rev = "v0.15.17";
+      rev = "v0.15.18";
       fetchSubmodules = false;
-      sha256 = "sha256-ZoJqO555cQ2jl/ofEOgkorSPJ0H4MFtBFD8KktVvVus=";
+      sha256 = "sha256-GpJyWmmiS1L5WPmnLjeI+8YxRcW8Vwa6wix7kPmzoaU=";
     };
   };
   nezha-dashboard = {
@@ -158,11 +129,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1819";
+    version = "0.4.1830";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1819/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1819.zip";
-      sha256 = "sha256-6dHzNcNU01kpe8RXaBEMq+JNxpvM7PFECjteb/a+vVE=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1830/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1830.zip";
+      sha256 = "sha256-lpf0GC0I/Es0r4ki+v4Gvj+ftTSSVufXevDt8ow6mzA=";
     };
   };
   staticcheck = {
@@ -174,6 +145,24 @@
       rev = "2023.1.6";
       fetchSubmodules = false;
       sha256 = "sha256-Ecp3A3Go7mp8/ghMjTGqCNlRkCeEAb3fzRuwahWcM2I=";
+    };
+  };
+  tamasfe_even-better-toml = {
+    pname = "tamasfe_even-better-toml";
+    version = "0.19.2";
+    src = fetchurl {
+      url = "https://tamasfe.gallery.vsassets.io/_apis/public/gallery/publisher/tamasfe/extension/even-better-toml/0.19.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "even-better-toml-0.19.2.zip";
+      sha256 = "sha256-JKj6noi2dTe02PxX/kS117ZhW8u7Bhj4QowZQiJKP2E=";
+    };
+  };
+  usernamehw_errorlens = {
+    pname = "usernamehw_errorlens";
+    version = "3.16.0";
+    src = fetchurl {
+      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.16.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "errorlens-3.16.0.zip";
+      sha256 = "sha256-Y3M/A5rYLkxQPRIZ0BUjhlkvixDae+wIRUsBn4tREFw=";
     };
   };
   vue_volar = {
