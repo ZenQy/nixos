@@ -1,6 +1,6 @@
-{ source, stdenv, lib }:
+{ source, stdenvNoCC, lib }:
 
-stdenv.mkDerivation {
+stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
   dontUnpack = true;
   installPhase = ''

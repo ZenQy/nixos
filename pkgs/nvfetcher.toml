@@ -76,3 +76,8 @@ fetch.github = "j178/leetgo"
 src.github_tag = "coder/code-server"
 src.prefix = "v"
 fetch.url = "https://github.com/coder/code-server/releases/download/v$ver/code-server-$ver-linux-arm64.tar.gz"
+
+[Yacd-meta]
+src.git = "https://github.com/MetaCubeX/Yacd-meta"
+src.branch = "gh-pages"
+fetch.github = "MetaCubeX/Yacd-meta"

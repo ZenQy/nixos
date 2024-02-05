@@ -22,6 +22,7 @@ stdenv.mkDerivation rec {
       name = "ZenQy";
       email = "zenqy.qin@gmail.com";
     }];
+    mainProgram = "code-server";
     platforms = [ "aarch64-linux" ];
   };
 }

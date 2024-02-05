@@ -5,9 +5,6 @@
     ./hardware.nix
   ];
 
-  nixpkgs.hostPlatform.system = "aarch64-linux";
-  boot.initrd.availableKernelModules = [ "xhci_pci" "virtio_pci" "usbhid" "sd_mod" ];
-
   systemd.network.networks.default = {
     name = "enp0s3";
     dns = [ "8.8.8.8" ];
@@ -18,9 +15,20 @@
     nezha-dashboard.enable = true;
     sing-box.enable = false;
 
-    openvscode-server = {
+    code-server = {
       enable = true;
-      connectionToken = secrets.user.root.password;
+      disableTelemetry = true;
+      disableUpdateCheck = true;
+      disableWorkspaceTrust = true;
+      extraArguments = map (x: "--install-extension ${x}") [
+        "mhutchie.git-graph"
+        "golang.go"
+        "pkief.material-icon-theme"
+        "jnoortheen.nix-ide"
+        "rust-lang.rust-analyzer"
+        "tamasfe.even-better-toml"
+        "usernamehw.errorlens"
+      ];
       user = "nixos";
       group = "wheel";
       host = "127.0.0.1";

@@ -1,7 +1,7 @@
 with builtins;
 let
-  categories = filter (v: v != null) (attrValues (mapAttrs (k: v: if k != "deprecated" && v == "directory" then k else null) (readDir ./.)));
-  packageLists = filter (v: v != null) (concatLists (map (dir: attrValues (mapAttrs (k: v: if v == "directory" then "${dir}/${k}" else null) (readDir ./${dir}))) categories));
+  floder = dir: filter (v: v != null) (attrValues (mapAttrs (k: v: if k != "deprecated" && v == "directory" then k else null) (readDir dir)));
+  packageLists = concatLists (map (dir: map (subdir: "${dir}/${subdir}") (floder ./${dir})) (floder ./.));
   listToSet = l: f: listToAttrs (map (name: { name = baseNameOf name; value = f name; }) l);
 in
 
@@ -17,7 +17,6 @@ in
           inherit (final) fetchurl fetchgit fetchFromGitHub dockerTools;
         };
         package = import ./${name};
-        # args = intersectAttrs (functionArgs package) { source = sources.${baseNameOf name}; };
       in
       final.callPackage package {
         source = sources.${baseNameOf name} or {
@@ -25,6 +24,6 @@ in
           version = "0.0.0";
           src = ./.;
         };
-      }  # args
+      }
     );
 }

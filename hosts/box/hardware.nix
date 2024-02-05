@@ -4,15 +4,14 @@
 { pkgs, modulesPath, ... }:
 
 {
-  imports =
-    [
-      (modulesPath + "/installer/scan/not-detected.nix")
-    ];
+  imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
+  ];
 
   hardware.deviceTree = {
     enable = true;
-    name = "amlogic/meson-gxl-s905d-phicomm-n1.dtb";
-    filter = "*phicomm-n1.dtb";
+    name = "meson-sm1-tx3-qz.dtb";
+    dtbSource = ./dtb;
   };
 
   boot = {

@@ -6,7 +6,6 @@ buildGoModule {
 
   doCheck = false;
   subPackages = [ "cmd/dashboard" ];
-  ldflags = "-linkmode=external";
 
   postPatch = ''
     sed -i "s|data/config|/etc/nezha/dashboard|g" cmd/dashboard/main.go

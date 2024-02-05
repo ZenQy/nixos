@@ -5,7 +5,9 @@ buildGoModule rec {
   vendorHash = "sha256-b2Wqr7j05jkWAIZ+y0abkybQtmEk881KuGwi5FoCdlA=";
 
   doCheck = false;
-  ldflags = "-linkmode=external -X=main.version=${version}";
+  ldflags = [
+    "-X=main.version=${version}"
+  ];
 
   postInstall = ''
     mv $out/bin/agent $out/bin/nezha-agent

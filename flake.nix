@@ -60,7 +60,7 @@
             osaka-2 = s;
             osaka-arm = s;
             rock-5b = s;
-            n1 = s;
+            box = s;
           };
         in
         builtins.mapAttrs

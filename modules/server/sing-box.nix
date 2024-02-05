@@ -1,4 +1,4 @@
-{ config, lib, pkgs, secrets, ... }:
+{ config, lib, secrets, ... }:
 
 {
   services.sing-box = {

@@ -3,6 +3,8 @@
 {
   imports = [
     ./hardware.nix
+    ./sing-box.nix
+    ./navidrome.nix
   ];
 
   nix.settings.substituters = [

@@ -105,8 +105,10 @@
         emoji = [
           "Noto Emoji"
           "Noto Color Emoji"
-          "Font Awesome 6 Free"
-          "Font Awesome 6 Brands"
+
+          "Font Awesome 6 Free Regular"
+          "Font Awesome 6 Free Solid"
+          "Font Awesome 6 Brands Regular"
         ];
       };
     };
@@ -148,8 +150,8 @@
     # vscodium
     sqlitebrowser
     # qmplay2
-    youtube-dl
-    you-get
+    # youtube-dl
+    # you-get
     tdesktop
     hugo
     android-tools
