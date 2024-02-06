@@ -28,11 +28,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-sNp4YBV4ePcyblE6kcn3sYS6xpjP3DQMQv1rO3rlkDk=",
+            "sha256": "sha256-Zg4doL0K9JDiCxzvipLT29LIJYCbnkUxn3SY/M9IoVY=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.WesternMonarchs_EN-US8386035297_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.LakeTahoeRock_EN-US8513392756_UHD.jpg"
         },
-        "version": "WesternMonarchs_EN-US8386035297"
+        "version": "LakeTahoeRock_EN-US8513392756"
     },
     "code-server": {
         "cargoLocks": null,
@@ -227,12 +227,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1830.zip",
-            "sha256": "sha256-lpf0GC0I/Es0r4ki+v4Gvj+ftTSSVufXevDt8ow6mzA=",
+            "name": "rust-analyzer-0.4.1832.zip",
+            "sha256": "sha256-UPYrr9AhKOGs+dnhMbVGv73leeWDBiLlZ6tE5HFcwX0=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1830/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1832/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1830"
+        "version": "0.4.1832"
     },
     "staticcheck": {
         "cargoLocks": null,
