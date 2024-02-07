@@ -15,10 +15,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "LakeTahoeRock_EN-US8513392756";
+    version = "StJamesPool_EN-US8700038796";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.LakeTahoeRock_EN-US8513392756_UHD.jpg";
-      sha256 = "sha256-Zg4doL0K9JDiCxzvipLT29LIJYCbnkUxn3SY/M9IoVY=";
+      url = "https://www.bing.com/th?id=OHR.StJamesPool_EN-US8700038796_UHD.jpg";
+      sha256 = "sha256-0EJB0DFbwxysOcyeoLlEJXg9YITQLulk1AWRq9tJojc=";
     };
   };
   code-server = {
@@ -129,11 +129,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1832";
+    version = "0.4.1833";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1832/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1832.zip";
-      sha256 = "sha256-UPYrr9AhKOGs+dnhMbVGv73leeWDBiLlZ6tE5HFcwX0=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1833/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1833.zip";
+      sha256 = "sha256-0xuV28N6JSerFwiGMiBB9g9GWqJMdaNSDKexKYFguxE=";
     };
   };
   staticcheck = {
