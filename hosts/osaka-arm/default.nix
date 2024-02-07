@@ -20,15 +20,6 @@
       disableTelemetry = true;
       disableUpdateCheck = true;
       disableWorkspaceTrust = true;
-      extraArguments = map (x: "--install-extension ${x}") [
-        "mhutchie.git-graph"
-        "golang.go"
-        "pkief.material-icon-theme"
-        "jnoortheen.nix-ide"
-        "rust-lang.rust-analyzer"
-        "tamasfe.even-better-toml"
-        "usernamehw.errorlens"
-      ];
       user = "nixos";
       group = "wheel";
       host = "127.0.0.1";
@@ -62,7 +53,7 @@
         }
 
         code.${secrets.ssl.domain} {
-        	reverse_proxy :${toString config.services.openvscode-server.port}
+        	reverse_proxy :${toString config.services.code-server.port}
         }
       '';
     };

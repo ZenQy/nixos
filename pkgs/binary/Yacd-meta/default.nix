@@ -4,7 +4,7 @@ stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
 
   installPhase = ''
-    install 
+    find . -name '*' -exec install -Dm644 {} "$out/{}" \;
   '';
 
   meta = with lib; {
