@@ -28,11 +28,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-0EJB0DFbwxysOcyeoLlEJXg9YITQLulk1AWRq9tJojc=",
+            "sha256": "sha256-qzXupmTgqkFsAhXx8WI8g/ioRQF7nDynh0m5UXRjk0s=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.StJamesPool_EN-US8700038796_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MtHoodOregon_EN-US8773825867_UHD.jpg"
         },
-        "version": "StJamesPool_EN-US8700038796"
+        "version": "MtHoodOregon_EN-US8773825867"
     },
     "code-server": {
         "cargoLocks": null,
@@ -227,12 +227,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1833.zip",
-            "sha256": "sha256-0xuV28N6JSerFwiGMiBB9g9GWqJMdaNSDKexKYFguxE=",
+            "name": "rust-analyzer-0.4.1834.zip",
+            "sha256": "sha256-lWN/gmK9MREPSF+M/70arlCLIsLahPmkm1N45Vrfzus=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1833/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1834/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1833"
+        "version": "0.4.1834"
     },
     "staticcheck": {
         "cargoLocks": null,
