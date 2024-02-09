@@ -28,11 +28,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qzXupmTgqkFsAhXx8WI8g/ioRQF7nDynh0m5UXRjk0s=",
+            "sha256": "sha256-D4gyJ8IPjXbSVYcV6sLsm+v2aN+CgbFIKZ+4XB3acLw=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.MtHoodOregon_EN-US8773825867_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PegadungRocks_EN-US6654823877_UHD.jpg"
         },
-        "version": "MtHoodOregon_EN-US8773825867"
+        "version": "PegadungRocks_EN-US6654823877"
     },
     "code-server": {
         "cargoLocks": null,
@@ -43,11 +43,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-WQloP9JJxWFZZ7t6FhK/DrwTbiL2zt25BwaEQWLy30E=",
+            "sha256": "sha256-zxDzkaG9O9SGlAHmtQwmU0k3HKF2ZChqnWP3lzcIyus=",
             "type": "url",
-            "url": "https://github.com/coder/code-server/releases/download/v4.21.0/code-server-4.21.0-linux-arm64.tar.gz"
+            "url": "https://github.com/coder/code-server/releases/download/v4.21.1-rc.1/code-server-4.21.1-rc.1-linux-arm64.tar.gz"
         },
-        "version": "4.21.0"
+        "version": "4.21.1-rc.1"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -178,15 +178,15 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v0.15.18",
-            "sha256": "sha256-GpJyWmmiS1L5WPmnLjeI+8YxRcW8Vwa6wix7kPmzoaU=",
+            "rev": "v0.15.19",
+            "sha256": "sha256-G+yZx4XQSc2Bo+UyzLTFTfTods7e7cLQGPUq4Pz9WQY=",
             "type": "github"
         },
-        "version": "v0.15.18"
+        "version": "v0.15.19"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-01-18",
+        "date": "2024-02-09",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -198,11 +198,11 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "ad9dc5470abf76d631cb1ece8f7780b61dcf29e0",
-            "sha256": "sha256-zxGH/AaWU8US9DOEX5IJvplOBx81NFSxEOy5h6jK+60=",
+            "rev": "c9bcba6f28498c621210244bbf4d251d3e9a7bd8",
+            "sha256": "sha256-iwPKWLm0dTwObQKafAlMZeIHcGnEruGzd4GsvpSt6Ws=",
             "type": "github"
         },
-        "version": "ad9dc5470abf76d631cb1ece8f7780b61dcf29e0"
+        "version": "c9bcba6f28498c621210244bbf4d251d3e9a7bd8"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -227,12 +227,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1834.zip",
-            "sha256": "sha256-lWN/gmK9MREPSF+M/70arlCLIsLahPmkm1N45Vrfzus=",
+            "name": "rust-analyzer-0.4.1835.zip",
+            "sha256": "sha256-HHxooib+/QYJX6dGVNuO0maCDHFTHA55Zem+xfNzwvk=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1834/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1835/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1834"
+        "version": "0.4.1835"
     },
     "staticcheck": {
         "cargoLocks": null,
