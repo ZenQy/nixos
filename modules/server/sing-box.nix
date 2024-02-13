@@ -22,7 +22,7 @@
           ];
           congestion_control = "bbr";
           tls =
-            let domain = "${config.networking.hostName}.${secrets.ssl.domain}";
+            let domain = "${config.networking.hostName}.${secrets.domain}";
             in {
               enabled = true;
               server_name = domain;

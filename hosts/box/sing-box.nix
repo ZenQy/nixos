@@ -7,103 +7,46 @@ let
         {
           tag = "dns_proxy";
           address = "https://1.1.1.1/dns-query";
-          address_resolver = "dns_resolver";
+          address_resolver = "dns_direct";
           strategy = "ipv4_only";
           detour = "proxy";
         }
         {
           tag = "dns_direct";
-          address = "https://dns.alidns.com/dns-query";
-          address_resolver = "dns_resolver";
-          strategy = "ipv4_only";
-          detour = "direct";
-        }
-        {
-          tag = "dns_resolver";
           address = "223.5.5.5";
           detour = "direct";
-        }
-        {
-          tag = "dns_success";
-          address = "rcode://success";
-        }
-        {
-          tag = "dns_refused";
-          address = "rcode://refused";
-        }
-        {
-          tag = "dns_fakeip";
-          address = "fakeip";
         }
       ];
       rules = [
         {
           outbound = "any";
-          server = "dns_resolver";
+          server = "dns_direct";
         }
         {
-          rule_set = [
-            "BlockHttpDNS"
-            "geosite-category-ads-all"
-          ];
-          server = "dns_success";
-          disable_cache = true;
-        }
-        {
-          rule_set = "geosite-geolocation-!cn";
-          query_type = [
-            "A"
-            "AAAA"
-          ];
-          server = "dns_fakeip";
-        }
-        {
-          rule_set = "geosite-geolocation-!cn";
-          query_type = [
-            "CNAME"
+          # 临时
+          domain_suffix = [
+            ".miui.com"
+            ".mi.com"
+            ".mi-img.com"
+            ".xiaomi.com"
+            ".xiaomi.net"
           ];
           server = "dns_proxy";
         }
         {
-          query_type = [
-            "A"
-            "AAAA"
-            "CNAME"
-          ];
-          invert = true;
-          server = "dns_refused";
-          disable_cache = true;
+          rule_set = "geosite-cn";
+          server = "dns_direct";
         }
       ];
-      final = "dns_direct";
-      independent_cache = true;
-      fakeip = {
-        enabled = true;
-        inet4_range = "198.18.0.0/15";
-        inet6_range = "fc00::/18";
-      };
+      final = "dns_proxy";
     };
     route = {
       rule_set = [
         {
-          tag = "BlockHttpDNS";
+          tag = "geosite-cn";
           type = "remote";
           format = "binary";
-          url = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/bm7/BlockHttpDNS.srs";
-          download_detour = "proxy";
-        }
-        {
-          tag = "geosite-category-ads-all";
-          type = "remote";
-          format = "binary";
-          url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs";
-          download_detour = "proxy";
-        }
-        {
-          tag = "geosite-geolocation-!cn";
-          type = "remote";
-          format = "binary";
-          url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs";
+          url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs";
           download_detour = "proxy";
         }
         {
@@ -120,20 +63,30 @@ let
           outbound = "dns-out";
         }
         {
-          rule_set = [
-            "BlockHttpDNS"
-            "geosite-category-ads-all"
+          # 临时
+          domain_suffix = [
+            ".miui.com"
+            ".mi.com"
+            ".mi-img.com"
+            ".xiaomi.com"
+            ".xiaomi.net"
           ];
-          outbound = "block";
+          outbound = "proxy";
         }
         {
-          rule_set = "geosite-geolocation-!cn";
-          outbound = "proxy";
+          rule_set = "geosite-cn";
+          outbound = "direct";
+        }
+        {
+          domain_suffix = [
+            ".cn"
+            "msftconnecttest.com"
+          ];
+          outbound = "direct";
         }
         {
           rule_set = "geoip-cn";
           ip_is_private = true;
-          domain = [ "www.msftconnecttest.com" "msftconnecttest.com" ];
           outbound = "direct";
         }
       ];
@@ -172,14 +125,13 @@ let
         tuicList = [ "cc" "tokyo-1" "tokyo-2" "osaka-1" "osaka-2" ];
       in
       map
-        (tag: tuicSet // { inherit tag; server = "${tag}.${secrets.ssl.domain}"; })
+        (tag: tuicSet // { inherit tag; server = "${tag}.${secrets.domain}"; })
         tuicList ++
       [
         {
           tag = "proxy";
-          type = "urltest";
+          type = "selector";
           outbounds = tuicList;
-          url = "https://www.gstatic.com/generate_204";
           interrupt_exist_connections = false;
         }
         { type = "direct"; tag = "direct"; }

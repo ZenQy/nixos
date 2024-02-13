@@ -46,6 +46,11 @@
     options = [ "umask=0077" ];
   };
 
+  fileSystems."/storage" = {
+    device = "/dev/disk/by-label/ADATA";
+    fsType = "ext4";
+  };
+
   swapDevices = [ ];
 
 }

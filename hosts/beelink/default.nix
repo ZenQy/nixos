@@ -9,11 +9,12 @@
   ];
   networking.wireless = {
     enable = true;
-    networks = {
-      "Redmi_5G_4504".psk = secrets.wireless."Redmi_5G_4504".password;
-      "160244823-5G".psk = secrets.wireless."160244823-5G".password;
-      "iQOO_Neo5".psk = secrets.wireless."iQOO_Neo5".password;
-    };
+    networks =
+      let
+        list = map (x: { name = x; value = { psk = secrets.wireless."${x}".password; }; })
+          [ "Redmi_5G_4504" "160244823-5G" "iQOO_Neo5" "CMCC-ABA2" ];
+      in
+      builtins.listToAttrs list;
   };
   systemd.network.networks =
     let

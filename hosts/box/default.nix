@@ -4,7 +4,7 @@
   imports = [
     ./hardware.nix
     ./sing-box.nix
-    ./navidrome.nix
+    ./services.nix
   ];
 
   nix.settings.substituters = [

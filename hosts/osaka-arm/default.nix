@@ -44,15 +44,15 @@
     caddy = {
       enable = true;
       extraConfig = ''
-        tz.${secrets.ssl.domain} {
+        tz.${secrets.domain} {
         	reverse_proxy :${toString secrets.nezha-dashboard.httpport}
         }
 
-        p.${secrets.ssl.domain} {
+        p.${secrets.domain} {
         	reverse_proxy :${toString config.services.vaultwarden.config.ROCKET_PORT}
         }
 
-        code.${secrets.ssl.domain} {
+        code.${secrets.domain} {
         	reverse_proxy :${toString config.services.code-server.port}
         }
       '';
@@ -61,7 +61,7 @@
     vaultwarden = {
       enable = true;
       config = {
-        DOMAIN = "https://p.${secrets.ssl.domain}";
+        DOMAIN = "https://p.${secrets.domain}";
         SIGNUPS_ALLOWED = false;
         WEB_VAULT_FOLDER = "${config.services.vaultwarden.webVaultPackage}/share/vaultwarden/vault";
         WEB_VAULT_ENABLED = true;
