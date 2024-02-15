@@ -19,6 +19,46 @@
         },
         "version": "b66b1d0393bd284b7a40329f95eae3746bb102be"
     },
+    "alist": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "alist",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "alist-org",
+            "repo": "alist",
+            "rev": "v3.30.0",
+            "sha256": "sha256-MW9QtH7nR1Zaepi1snwgbzPK7XjFDKlFoKG/KYjH9dM=",
+            "type": "github"
+        },
+        "version": "v3.30.0"
+    },
+    "alist-dist": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "alist-dist",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "alist-org",
+            "repo": "web-dist",
+            "rev": "3.30.0",
+            "sha256": "sha256-9O2LFGuYgFV/0Xr/64DjU0M//FaSPXIbpdG64S1DnDg=",
+            "type": "github"
+        },
+        "version": "3.30.0"
+    },
     "bingimg": {
         "cargoLocks": null,
         "date": null,
@@ -28,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ygdSRxtAV15HgoycKGfk98j136Bb8Oze5HjKckFoxnc=",
+            "sha256": "sha256-sOPd/PZ402YxZaNiCAMUrqLINa61c3A4iza0RgDiH84=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BowingCrane_EN-US7534977512_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.HippopotamusDay_EN-US7629909300_UHD.jpg"
         },
-        "version": "BowingCrane_EN-US7534977512"
+        "version": "HippopotamusDay_EN-US7629909300"
     },
     "code-server": {
         "cargoLocks": null,
@@ -227,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1841.zip",
-            "sha256": "sha256-Y4cs5aULpIUK87BBA4VaHAJxFs13JGgzWVb1PV5ONBQ=",
+            "name": "rust-analyzer-0.4.1842.zip",
+            "sha256": "sha256-B3QXLkAEGESonCWoMPrtw5W3s5ahMMzJPi+u7OtfPTc=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1841/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1842/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1841"
+        "version": "0.4.1842"
     },
     "staticcheck": {
         "cargoLocks": null,
