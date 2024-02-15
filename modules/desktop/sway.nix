@@ -93,7 +93,7 @@ with builtins;
         input * xkb_numlock enable
         output * {
           bg ${pkgs.bingimg}/bingimg.jpg fill
-          # scale 1.5
+          scale 1.5
         }
         exec_always --no-startup-id fcitx5
         

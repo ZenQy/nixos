@@ -81,3 +81,11 @@ fetch.url = "https://github.com/coder/code-server/releases/download/v$ver/code-s
 src.git = "https://github.com/MetaCubeX/Yacd-meta"
 src.branch = "gh-pages"
 fetch.github = "MetaCubeX/Yacd-meta"
+
+[alist]
+src.github_tag = "alist-org/alist"
+fetch.github = "alist-org/alist"
+
+[alist-dist]
+src.github_tag = "alist-org/web-dist"
+fetch.github = "alist-org/web-dist"

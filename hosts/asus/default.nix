@@ -33,7 +33,7 @@
       Group = "wheel";
       ExecStart = "${pkgs.qbittorrent-nox}/bin/qbittorrent-nox";
       RestartSec = 5;
-      Restart = "always";
+      Restart = "on-failure";
     };
   };
   services.transmission = {

@@ -6,7 +6,7 @@ buildGoModule rec {
 
   doCheck = false;
   ldflags = [
-    "-X=main.version=${version}"
+    "-X main.version=${version}"
   ];
 
   postInstall = ''

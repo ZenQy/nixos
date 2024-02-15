@@ -6,7 +6,7 @@ buildGoModule {
   vendorHash = "sha256-GG9IfM50uVhsQVjXhUrYxuEbPlbsEsFubmUUSMr5SD4=";
 
   doCheck = false;
-  subPackages = [ "./." ];
+  subPackages = [ "./" ];
 
   meta = with lib; {
     description = "Best LeetCode friend for geek.";
