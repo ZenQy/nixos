@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-sOPd/PZ402YxZaNiCAMUrqLINa61c3A4iza0RgDiH84=",
+            "sha256": "sha256-yzyZ69Sr3HigbRcCJIxtPzSy8zzxiitzFV1bCUCe2Cc=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.HippopotamusDay_EN-US7629909300_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.BackyardBird_EN-US8255123787_UHD.jpg"
         },
-        "version": "HippopotamusDay_EN-US7629909300"
+        "version": "BackyardBird_EN-US8255123787"
     },
     "code-server": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1842.zip",
-            "sha256": "sha256-B3QXLkAEGESonCWoMPrtw5W3s5ahMMzJPi+u7OtfPTc=",
+            "name": "rust-analyzer-0.4.1843.zip",
+            "sha256": "sha256-52yTwMEMZs1Qs41sr+R7UVLNvueh5kUGrFsJ2YT2jD4=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1842/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1843/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1842"
+        "version": "0.4.1843"
     },
     "staticcheck": {
         "cargoLocks": null,
