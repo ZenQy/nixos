@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "BackyardBird_EN-US8255123787";
+    version = "AileyUptown_EN-US7790191198";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.BackyardBird_EN-US8255123787_UHD.jpg";
-      sha256 = "sha256-yzyZ69Sr3HigbRcCJIxtPzSy8zzxiitzFV1bCUCe2Cc=";
+      url = "https://www.bing.com/th?id=OHR.AileyUptown_EN-US7790191198_UHD.jpg";
+      sha256 = "sha256-D3ITlz8c7EAZ5BXAgHUKbHZHFpsd7TpUarnNKek52Ps=";
     };
   };
   code-server = {

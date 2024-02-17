@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-yzyZ69Sr3HigbRcCJIxtPzSy8zzxiitzFV1bCUCe2Cc=",
+            "sha256": "sha256-D3ITlz8c7EAZ5BXAgHUKbHZHFpsd7TpUarnNKek52Ps=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BackyardBird_EN-US8255123787_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.AileyUptown_EN-US7790191198_UHD.jpg"
         },
-        "version": "BackyardBird_EN-US8255123787"
+        "version": "AileyUptown_EN-US7790191198"
     },
     "code-server": {
         "cargoLocks": null,
