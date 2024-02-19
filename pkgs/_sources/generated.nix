@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "AileyUptown_EN-US7790191198";
+    version = "LincolnSunset_EN-US8001542624";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.AileyUptown_EN-US7790191198_UHD.jpg";
-      sha256 = "sha256-D3ITlz8c7EAZ5BXAgHUKbHZHFpsd7TpUarnNKek52Ps=";
+      url = "https://www.bing.com/th?id=OHR.LincolnSunset_EN-US8001542624_UHD.jpg";
+      sha256 = "sha256-C7HTh4iQZz3+LRFbNLfiqoMNv/ZPPc9sqW3cIbkX+JM=";
     };
   };
   code-server = {
@@ -130,32 +130,32 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "5bd4b57cbf8b0053785d7f680e6b5630d52a36d6";
+    version = "5c549261ddf1371e2355cf049e1d3215cef66bfd";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "5bd4b57cbf8b0053785d7f680e6b5630d52a36d6";
+      rev = "5c549261ddf1371e2355cf049e1d3215cef66bfd";
       fetchSubmodules = false;
-      sha256 = "sha256-OI+jbue49SvLwlTf0/QmKRdHb/o8EpiAWAzimZ1bApo=";
+      sha256 = "sha256-YPeFl0gpRUgOF7fRQjoGN/YwUvHt2aLsC2hDn2TOYCs=";
     };
-    date = "2024-02-14";
+    date = "2024-02-19";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "4.33.0";
+    version = "4.34.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/4.33.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-4.33.0.zip";
-      sha256 = "sha256-Rwpc5p7FOSodGa1WWrjgkexzAp8RlgZCYBXhep1G5Pk=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/4.34.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-4.34.0.zip";
+      sha256 = "sha256-xxOEUvMjqJbl8lONB/So2NoIAVPOxysTq2YQY3iHGqo=";
     };
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1843";
+    version = "0.4.1849";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1843/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1843.zip";
-      sha256 = "sha256-52yTwMEMZs1Qs41sr+R7UVLNvueh5kUGrFsJ2YT2jD4=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1849/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1849.zip";
+      sha256 = "sha256-CrpFU4ieAHeSkhSvXAOA4yENACuqRHekar+CMi1Ddf8=";
     };
   };
   staticcheck = {
