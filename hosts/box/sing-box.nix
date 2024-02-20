@@ -1,4 +1,5 @@
-{ config, pkgs, lib, secrets, ... }:
+{ pkgs, lib, secrets, ... }:
+
 let
   settings = {
     log = { level = "warn"; timestamp = false; };

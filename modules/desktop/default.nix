@@ -5,7 +5,7 @@
   boot.supportedFilesystems = [ "ntfs" ];
   services.gvfs.enable = true;
   # services.gnome.gnome-keyring.enable = false;
-  security.sudo-rs.wheelNeedsPassword = false;
+  security.sudo.wheelNeedsPassword = false;
   security.polkit.extraConfig = ''
     polkit.addRule(function(action, subject) {
       if (subject.isInGroup("wheel")) {
