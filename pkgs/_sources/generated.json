@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-C7HTh4iQZz3+LRFbNLfiqoMNv/ZPPc9sqW3cIbkX+JM=",
+            "sha256": "sha256-co3BDe1KpaF8/Hqv/WETsiaCzphYwSvLblCj7dg6qD0=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.LincolnSunset_EN-US8001542624_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PeakDistrictNP_EN-US8094447567_UHD.jpg"
         },
-        "version": "LincolnSunset_EN-US8001542624"
+        "version": "PeakDistrictNP_EN-US8094447567"
     },
     "code-server": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1849.zip",
-            "sha256": "sha256-CrpFU4ieAHeSkhSvXAOA4yENACuqRHekar+CMi1Ddf8=",
+            "name": "rust-analyzer-0.4.1852.zip",
+            "sha256": "sha256-+wXwCmiI/jdSvde+4dCafaJdzmfzQbU529O25y5Omhk=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1849/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1852/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1849"
+        "version": "0.4.1852"
     },
     "staticcheck": {
         "cargoLocks": null,
