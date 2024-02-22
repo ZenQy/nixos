@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "YosemiteFirefall_EN-US8169903146";
+    version = "BrightonBoxes_EN-US7951266383";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.YosemiteFirefall_EN-US8169903146_UHD.jpg";
-      sha256 = "sha256-NJ3ZjPog9FwTO5ayPIHxALH3JgnpHqJTO3K29OJLic8=";
+      url = "https://www.bing.com/th?id=OHR.BrightonBoxes_EN-US7951266383_UHD.jpg";
+      sha256 = "sha256-E7jriaCpLef+iv/A4Sx4UylI9SpYmeTQVx3ViAj9kXw=";
     };
   };
   code-server = {
@@ -62,13 +62,13 @@
   };
   dlv-dap = {
     pname = "dlv-dap";
-    version = "v1.22.0";
+    version = "v1.22.1";
     src = fetchFromGitHub {
       owner = "go-delve";
       repo = "delve";
-      rev = "v1.22.0";
+      rev = "v1.22.1";
       fetchSubmodules = false;
-      sha256 = "sha256-uYUl8PMBRf73wwo+oOYda0sTfD1gnDThtNc3sg8Q328=";
+      sha256 = "sha256-rR84muba8nMrPZAhH+8xXOOxBvKIsU8Xju8tG7BjqBo=";
     };
   };
   fcitx5-pinyin-zhwiki = {
@@ -81,11 +81,11 @@
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.41.0";
+    version = "0.41.1";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.41.0.zip";
-      sha256 = "sha256-k4rW2brxnrKhr+NEErNkfREHN+agYC8shFoaMYgHLiw=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.41.1.zip";
+      sha256 = "sha256-tSt0IqRuE3nJgMYvdYUz5QDtzOsKKQqyW2KD1FEhkEQ=";
     };
   };
   jnoortheen_nix-ide = {
@@ -151,22 +151,22 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1853";
+    version = "0.4.1854";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1853/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1853.zip";
-      sha256 = "sha256-NXyiXuqbDj6nTl1PfLqB0GC8rt0BstBC1UeiEdJBfNw=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1854/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1854.zip";
+      sha256 = "sha256-cezcRjc+v77sw6ctq3jpsPbOIQAGiPgsZYNrV2OP9Gw=";
     };
   };
   staticcheck = {
     pname = "staticcheck";
-    version = "2023.1.6";
+    version = "2023.1.7";
     src = fetchFromGitHub {
       owner = "dominikh";
       repo = "go-tools";
-      rev = "2023.1.6";
+      rev = "2023.1.7";
       fetchSubmodules = false;
-      sha256 = "sha256-Ecp3A3Go7mp8/ghMjTGqCNlRkCeEAb3fzRuwahWcM2I=";
+      sha256 = "sha256-oR3fsvZmeddN75WsxOMcYe/RAIjYz+ba03ADJfDUqNg=";
     };
   };
   tamasfe_even-better-toml = {
