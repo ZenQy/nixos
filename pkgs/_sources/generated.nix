@@ -24,8 +24,8 @@
       sha256 = "sha256-MW9QtH7nR1Zaepi1snwgbzPK7XjFDKlFoKG/KYjH9dM=";
     };
   };
-  alist-dist = {
-    pname = "alist-dist";
+  alist-web = {
+    pname = "alist-web";
     version = "3.30.0";
     src = fetchFromGitHub {
       owner = "alist-org";

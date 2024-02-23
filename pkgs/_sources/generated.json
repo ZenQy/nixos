@@ -39,11 +39,11 @@
         },
         "version": "v3.30.0"
     },
-    "alist-dist": {
+    "alist-web": {
         "cargoLocks": null,
         "date": null,
         "extract": null,
-        "name": "alist-dist",
+        "name": "alist-web",
         "passthru": null,
         "pinned": false,
         "src": {

@@ -86,6 +86,6 @@ fetch.github = "MetaCubeX/Yacd-meta"
 src.github_tag = "alist-org/alist"
 fetch.github = "alist-org/alist"
 
-[alist-dist]
+[alist-web]
 src.github_tag = "alist-org/web-dist"
 fetch.github = "alist-org/web-dist"
