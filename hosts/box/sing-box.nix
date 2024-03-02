@@ -24,17 +24,6 @@ let
           server = "dns_direct";
         }
         {
-          # 临时
-          domain_suffix = [
-            ".miui.com"
-            ".mi.com"
-            ".mi-img.com"
-            ".xiaomi.com"
-            ".xiaomi.net"
-          ];
-          server = "dns_proxy";
-        }
-        {
           rule_set = "geosite-cn";
           server = "dns_direct";
         }
@@ -42,6 +31,8 @@ let
       final = "dns_proxy";
     };
     route = {
+      geosite.path = "";
+      geoip.path = "";
       rule_set = [
         {
           tag = "geosite-cn";
@@ -62,17 +53,6 @@ let
         {
           protocol = "dns";
           outbound = "dns-out";
-        }
-        {
-          # 临时
-          domain_suffix = [
-            ".miui.com"
-            ".mi.com"
-            ".mi-img.com"
-            ".xiaomi.com"
-            ".xiaomi.net"
-          ];
-          outbound = "proxy";
         }
         {
           rule_set = "geosite-cn";
