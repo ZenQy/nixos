@@ -37,18 +37,18 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "ModicaItaly_EN-US3843446204";
+    version = "ArenalCostaRica_EN-US4075825664";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.ModicaItaly_EN-US3843446204_UHD.jpg";
-      sha256 = "sha256-qbb7JCLEIRkFDv6gKcVeXgVPgGH7lCNdc87LaXohCB8=";
+      url = "https://www.bing.com/th?id=OHR.ArenalCostaRica_EN-US4075825664_UHD.jpg";
+      sha256 = "sha256-uPrV1Uj3FLGJWTtoW6eiO8c8LTstkCP1xKBZkYrMCIw=";
     };
   };
   code-server = {
     pname = "code-server";
-    version = "4.22.0-rc.1";
+    version = "4.22.0";
     src = fetchurl {
-      url = "https://github.com/coder/code-server/releases/download/v4.22.0-rc.1/code-server-4.22.0-rc.1-linux-arm64.tar.gz";
-      sha256 = "sha256-cI+F0JjW0QxBAYE3O2FfJUcuMu9aDGoFaD8643oIt9k=";
+      url = "https://github.com/coder/code-server/releases/download/v4.22.0/code-server-4.22.0-linux-arm64.tar.gz";
+      sha256 = "sha256-2JbX6BBBX8Rz66jdQbPl3+2YklUy4SoPuleUmurYnJ4=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -130,15 +130,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "dfb08caae1322c577ba0a2949933a39884f4aae6";
+    version = "193455c675d148d51035cb42c4b998281cb461fc";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "dfb08caae1322c577ba0a2949933a39884f4aae6";
+      rev = "193455c675d148d51035cb42c4b998281cb461fc";
       fetchSubmodules = false;
-      sha256 = "sha256-RM28mNhcyoN9yfmxqtERxSmrkDuBtJQ2N2HH93YeXcQ=";
+      sha256 = "sha256-k+RZVr1STBnV2MfL2tzwO2Xjq7KT5tqQioZXRqj2KI8=";
     };
-    date = "2024-03-02";
+    date = "2024-03-04";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1865";
+    version = "0.4.1867";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1865/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1865.zip";
-      sha256 = "sha256-4ZMTY2JP0g9WyDuhkwgBJ3RSPGcXracGrB8tV/Zyta0=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1867/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1867.zip";
+      sha256 = "sha256-W1Qn4HnERZRBW1Fex3cVo2ZmkND44QHL39YaZQhhl84=";
     };
   };
   staticcheck = {
@@ -189,11 +189,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.0.2";
+    version = "2.0.4";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.0.2.zip";
-      sha256 = "sha256-7Z1pkMF+DCbl9k9795vxKNl19dh0T+2psafnSJChXw8=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.0.4.zip";
+      sha256 = "sha256-Y9nLQ6OanpM61HLsE/uzH9r/nBjNWmKsW4ph7qMRP8g=";
     };
   };
 }
