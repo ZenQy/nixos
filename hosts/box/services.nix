@@ -41,6 +41,8 @@
           content-disposition-default-utf8 = true;
           enable-rpc = true;
           rpc-listen-all = true;
+          rpc-allow-origin-all = true;
+          rpc-secure = false;
           check-certificate = false;
         };
         conf = lib.generators.toKeyValue { } settings;
@@ -88,5 +90,15 @@
       RestartSec = 5;
       Restart = "on-failure";
     };
+  };
+
+  services.caddy = {
+    enable = true;
+    extraConfig = ''
+      http://10.0.0.11 {
+        root * ${pkgs.ariang}/share/ariang
+        file_server browse
+      }
+    '';
   };
 }

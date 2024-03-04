@@ -30,7 +30,7 @@ with builtins;
           down = "j";
           up = "k";
           right = "l";
-          menu = "wofi -S run -s ${./dotfiles/wofi/style.css} | xargs swaymsg exec --";
+          menu = "${pkgs.wofi}/bin/wofi -S run -s ${./dotfiles/wofi/style.css} | xargs swaymsg exec --";
           screenshot = "${pkgs.grim}/bin/grim -g \"$(${pkgs.slurp}/bin/slurp)\" $HOME/Pictures/$(date +\"%F_%T\").png";
           lock = "swaylock -C /etc/swaylock/config";
           exit = "exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'";

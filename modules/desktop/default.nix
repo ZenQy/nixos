@@ -124,34 +124,40 @@
 
   services.xserver.excludePackages = [ pkgs.xterm ];
   environment.systemPackages = with pkgs; [
+    ## Go ##
     go
     gopls
     dlv-dap
     staticcheck
-
+    leetgo
+    gcc
+    ## Rust ##
     cargo
     rustc
     rustfmt
     rust-analyzer
-
-    gcc
-    leetgo
-    # wev
-    # git
-    # postman
+    ## Nix ##
     nil
     nixpkgs-fmt
+    ## File Manager ##
+    pcmanfm
+    numix-icon-theme-circle
+    xarchiver
+    xdg-utils
     p7zip
     unrar
+    ## Download ##
     wget
     # axel
     # rsync
+    # youtube-dl
+    # you-get
+    ## Editor ##
+    obsidian
     vscode-with-extensions
     # vscodium
     sqlitebrowser
-    # qmplay2
-    # youtube-dl
-    # you-get
+    ## Others ##
     tdesktop
     hugo
     android-tools
@@ -161,21 +167,6 @@
     # mitmproxy
     # python3
     # python3Packages.pip
-    # chromium
-    # microsoft-edge
-
-    # hyprland
-    pcmanfm
-
-    numix-icon-theme-circle
-    xarchiver
-    wofi
-    # waybar
-    # grim
-    # pavucontrol
-    # helvum
-    # brightnessctl
-    xdg-utils
   ];
 
   xdg.mime = {

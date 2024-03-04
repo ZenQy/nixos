@@ -31,8 +31,6 @@ let
       final = "dns_proxy";
     };
     route = {
-      geosite.path = "";
-      geoip.path = "";
       rule_set = [
         {
           tag = "geosite-cn";

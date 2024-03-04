@@ -90,7 +90,7 @@ with builtins;
       bind = $mod, mouse_up, workspace, e-1
       bindm = $mod, mouse:272, movewindow
       bindm = $mod, mouse:273, resizewindow
-      bind = $mod, D, exec, wofi -S run -s ${./dotfiles/wofi/style.css} | xargs swaymsg exec --
+      bind = $mod, D, exec, ${pkgs.wofi}/bin/wofi -S run -s ${./dotfiles/wofi/style.css} | xargs swaymsg exec --
       bind = $mod, Print, exec, grim -g "$(${pkgs.slurp}/bin/slurp)" $HOME/Pictures/$(date +"%F_%T").png
     '' + concatStringsSep "\n" (genList
       (

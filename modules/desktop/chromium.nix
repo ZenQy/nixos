@@ -28,7 +28,7 @@
       # Bitwarden
       "nngceckbapebfimnlniiiahkandclblb"
     ];
-    homepageLocation = "https://limestart.cn";
+    homepageLocation = "https://go.itab.link";
 
     extraOpts = {
       "HomepageIsNewTabPage" = false;

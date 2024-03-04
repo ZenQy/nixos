@@ -5,7 +5,7 @@ buildGo121Module rec {
   inherit (source) pname version src;
 
   postPatch = ''
-    sed -i "s|all:dist|all:${alist-web}|g" public/public.go
+    cp -r ${alist-web}/* public/dist
     sed -i "s|BuiltAt    string|BuiltAt    string = \"$(date +'%F %T %z')\"|g" internal/conf/var.go
     GoVersion=$(go version | sed 's/go version //')
     sed -i "s|GoVersion  string|GoVersion  string = \"$GoVersion\"|g" internal/conf/var.go
