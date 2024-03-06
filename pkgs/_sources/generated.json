@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-zxXxL635ZFxwubOxUmTaQVcoU0DMP+r9xSJfxs0JdzI=",
+            "sha256": "sha256-Icr/F/XfzJd4/+4ud9RnIBz/Z66tju2X4pSferUmWVc=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BangkokCircle_EN-US4243452532_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.WahclellaFalls_EN-US4371863309_UHD.jpg"
         },
-        "version": "BangkokCircle_EN-US4243452532"
+        "version": "WahclellaFalls_EN-US4371863309"
     },
     "code-server": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1869.zip",
-            "sha256": "sha256-JkgR8W/0oWmpFFnn3Yrm71GT9QQISW5hNVR5qT2h3Ok=",
+            "name": "rust-analyzer-0.4.1871.zip",
+            "sha256": "sha256-VFZe4t7KPoapXcjxs5ZFr/Yh0C4B/lwyNUTK86Ughao=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1869/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1871/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1869"
+        "version": "0.4.1871"
     },
     "staticcheck": {
         "cargoLocks": null,
