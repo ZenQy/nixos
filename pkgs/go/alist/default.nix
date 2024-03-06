@@ -1,7 +1,7 @@
-{ source, lib, buildGo121Module, alist-web, }:
+{ source, lib, buildGoModule, alist-web, }:
 with builtins;
 
-buildGo121Module rec {
+buildGoModule rec {
   inherit (source) pname version src;
 
   postPatch = ''

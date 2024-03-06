@@ -153,9 +153,10 @@
     # youtube-dl
     # you-get
     ## Editor ##
-    obsidian
     vscode-with-extensions
     # vscodium
+    obsidian
+    anytype
     sqlitebrowser
     ## Others ##
     tdesktop
@@ -190,5 +191,5 @@
     ];
   };
 
-  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }
