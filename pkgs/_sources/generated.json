@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Icr/F/XfzJd4/+4ud9RnIBz/Z66tju2X4pSferUmWVc=",
+            "sha256": "sha256-3gApNxbtUYMnwyppgeiHWfND5hgOeIRqmJxfHKB0a0E=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.WahclellaFalls_EN-US4371863309_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.TarragonaSpain_EN-US4664908149_UHD.jpg"
         },
-        "version": "WahclellaFalls_EN-US4371863309"
+        "version": "TarragonaSpain_EN-US4664908149"
     },
     "code-server": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1871.zip",
-            "sha256": "sha256-VFZe4t7KPoapXcjxs5ZFr/Yh0C4B/lwyNUTK86Ughao=",
+            "name": "rust-analyzer-0.4.1872.zip",
+            "sha256": "sha256-Tj5u+G84qubkn0f8JwhxQXTLExO96HaGR+ghfwo4Fw0=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1871/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1872/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1871"
+        "version": "0.4.1872"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -332,11 +332,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "volar-2.0.5.zip",
-            "sha256": "sha256-ii5ySYDqreamwPHspHvaeDnRfQ2F+tIEUDmrii58OeI=",
+            "name": "volar-2.0.6.zip",
+            "sha256": "sha256-pYGTWceR8CatJ/z8ORrzeDAgrerwpMi/XkguIGRqiGo=",
             "type": "url",
-            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.5/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.6/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "2.0.5"
+        "version": "2.0.6"
     }
 }
