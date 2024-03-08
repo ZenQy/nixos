@@ -156,7 +156,7 @@
     vscode-with-extensions
     # vscodium
     obsidian
-    anytype
+    # anytype
     sqlitebrowser
     ## Others ##
     tdesktop

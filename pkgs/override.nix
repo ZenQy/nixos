@@ -6,6 +6,9 @@ final: prev:
 # in
 {
   vscode-with-extensions = prev.vscode-with-extensions.override {
+    vscode = prev.vscodium.override {
+      commandLineArgs = "--enable-wayland-ime";
+    };
     vscodeExtensions = with prev; [
       mhutchie_git-graph
       # eamodio_gitlens
@@ -21,6 +24,17 @@ final: prev:
     ];
   };
 
+  chromium = prev.chromium.override {
+    commandLineArgs = "--enable-wayland-ime";
+  };
+
+  obsidian = prev.obsidian.overrideAttrs (old: {
+    postInstall = ''
+      substituteInPlace $out/bin/obsidian \
+        --replace '--ozone-platform=wayland' '--ozone-platform=wayland --enable-wayland-ime'
+    '';
+  });
+
   mpv =
     let
       mpv-unwrapped = prev.mpv-unwrapped.overrideAttrs (old: {
@@ -32,11 +46,11 @@ final: prev:
     in
     prev.wrapMpv mpv-unwrapped { scripts = with prev.mpvScripts; [ autoload ]; };
 
-  # hyprland = prev.hyprland.overrideAttrs (old: {
-  #   postPatch = old.postPatch + ''
-  #     substituteInPlace src/config/ConfigManager.cpp \
-  #       --replace 'getenv("XDG_CONFIG_HOME")' '"/etc/xdg"'
-  #   '';
-  # });
+  hyprland = prev.hyprland.overrideAttrs (old: {
+    postPatch = old.postPatch + ''
+      substituteInPlace src/config/ConfigManager.cpp \
+        --replace 'getenv("XDG_CONFIG_HOME")' '"/etc/xdg"'
+    '';
+  });
 
 }
