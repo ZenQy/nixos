@@ -37,18 +37,18 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "SleepyKoala_EN-US1399776436";
+    version = "BambooPanda_EN-US2038899729";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SleepyKoala_EN-US1399776436_UHD.jpg";
-      sha256 = "sha256-fLr9EY+DdWteqSxafbf2kZJ3bafQDzIxZOILW1gYCOs=";
+      url = "https://www.bing.com/th?id=OHR.BambooPanda_EN-US2038899729_UHD.jpg";
+      sha256 = "sha256-kx4pIpe+j5FxJb84MosFXBUFlgbXXqcU7govBy8U8YU=";
     };
   };
   code-server = {
     pname = "code-server";
-    version = "4.22.0";
+    version = "4.22.1";
     src = fetchurl {
-      url = "https://github.com/coder/code-server/releases/download/v4.22.0/code-server-4.22.0-linux-arm64.tar.gz";
-      sha256 = "sha256-2JbX6BBBX8Rz66jdQbPl3+2YklUy4SoPuleUmurYnJ4=";
+      url = "https://github.com/coder/code-server/releases/download/v4.22.1/code-server-4.22.1-linux-arm64.tar.gz";
+      sha256 = "sha256-RMO8hKN++p1OLBTOcgJLLLg8IDTtTyn1DrWV+w8rxLM=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -81,31 +81,31 @@
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.41.1";
+    version = "0.41.2";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.41.1.zip";
-      sha256 = "sha256-tSt0IqRuE3nJgMYvdYUz5QDtzOsKKQqyW2KD1FEhkEQ=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.41.2.zip";
+      sha256 = "sha256-eD/9UBYxf8kmqxuzY+hgAT0bqSiYw/BbDv2gyB63zY0=";
     };
   };
   jnoortheen_nix-ide = {
     pname = "jnoortheen_nix-ide";
-    version = "0.2.2";
+    version = "0.3.1";
     src = fetchurl {
-      url = "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.2.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "nix-ide-0.2.2.zip";
-      sha256 = "sha256-jwOM+6LnHyCkvhOTVSTUZvgx77jAg6hFCCpBqY8AxIg=";
+      url = "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.3.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "nix-ide-0.3.1.zip";
+      sha256 = "sha256-05oMDHvFM/dTXB6T3rcDK3EiNG2T0tBN9Au9b+Bk7rI=";
     };
   };
   leetgo = {
     pname = "leetgo";
-    version = "v1.4.1";
+    version = "v1.4.2";
     src = fetchFromGitHub {
       owner = "j178";
       repo = "leetgo";
-      rev = "v1.4.1";
+      rev = "v1.4.2";
       fetchSubmodules = false;
-      sha256 = "sha256-LbY7GGPu2ZwcclCmsE9V421FUi+foR7CXyFHF7GrjQo=";
+      sha256 = "sha256-zBfhvLyY/hJiH5Ok/dn4h6JlsTbDrzv4Cp3rCY5NDO0=";
     };
   };
   mhutchie_git-graph = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1876";
+    version = "0.4.1882";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1876/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1876.zip";
-      sha256 = "sha256-HXVQH/Z1LJWClQgCHZdt6UtO/30akbCIFcKX/pBRtmk=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1882/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1882.zip";
+      sha256 = "sha256-hXGTGyxK/zBA8gkEOPevyuxDx9P5S+5CvM3/1MbJ5rk=";
     };
   };
   staticcheck = {
