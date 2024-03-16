@@ -25,7 +25,7 @@ final: prev:
   };
 
   chromium = prev.chromium.override {
-    commandLineArgs = "--enable-wayland-ime";
+    commandLineArgs = "--enable-wayland-ime --force-dark-mode";
   };
 
   obsidian = prev.obsidian.overrideAttrs (old: {
