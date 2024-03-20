@@ -3,7 +3,7 @@
 buildGo122Module {
   inherit (source) pname version src;
 
-  vendorHash = "sha256-fDTsqkQVeQNwH8Qt50Nqe9cABrKGkxfshd5S0gKqOhg=";
+  vendorHash = "sha256-PWGNZrfJjee7nSSgoWHqnRiJcPke/Fwn+5w/kIM6nn0=";
 
   doCheck = false;
   subPackages = [ "./" ];
