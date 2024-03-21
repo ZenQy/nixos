@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "CherryBlossomsDC_EN-US3285783737";
+    version = "BwindiNationalForest_EN-US3376071902";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.CherryBlossomsDC_EN-US3285783737_UHD.jpg";
-      sha256 = "sha256-bGrCIUNg2mWnawuX9Q88KSoisauKqzoI+f3W86rvCbQ=";
+      url = "https://www.bing.com/th?id=OHR.BwindiNationalForest_EN-US3376071902_UHD.jpg";
+      sha256 = "sha256-E7ILGCJmuMlxr4FSTuPsT/MukdeL25S/a4wA5cEgNGw=";
     };
   };
   code-server = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1888";
+    version = "0.4.1889";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1888/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1888.zip";
-      sha256 = "sha256-/E5Z/SldyrT3bjC2jRyHjtPcFkDG+/96dgVwsTqGQLQ=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1889/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1889.zip";
+      sha256 = "sha256-pFJYhFKQF9ELKpCRaZ8r6JIRrV4c2tnbd4VFOqSrYe4=";
     };
   };
   staticcheck = {
