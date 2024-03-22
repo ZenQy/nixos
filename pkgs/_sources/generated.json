@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-E7ILGCJmuMlxr4FSTuPsT/MukdeL25S/a4wA5cEgNGw=",
+            "sha256": "sha256-Q26wkVwDCpCCLvHB5PbzURJcWSQrHUCq2sD6XwnVwEA=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BwindiNationalForest_EN-US3376071902_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.WaikatoWater_EN-US1360247236_UHD.jpg"
         },
-        "version": "BwindiNationalForest_EN-US3376071902"
+        "version": "WaikatoWater_EN-US1360247236"
     },
     "code-server": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1889.zip",
-            "sha256": "sha256-pFJYhFKQF9ELKpCRaZ8r6JIRrV4c2tnbd4VFOqSrYe4=",
+            "name": "rust-analyzer-0.4.1891.zip",
+            "sha256": "sha256-hkSRHBBQCVw/A/kNUQhe+cub9s4lo8fP1fcRS4FKRSw=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1889/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1891/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1889"
+        "version": "0.4.1891"
     },
     "staticcheck": {
         "cargoLocks": null,
