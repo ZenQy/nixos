@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Q26wkVwDCpCCLvHB5PbzURJcWSQrHUCq2sD6XwnVwEA=",
+            "sha256": "sha256-3dEWHnCkgjHu4rsWpwU3Vstkbsg3LMXSIgxx+r9oeuk=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.WaikatoWater_EN-US1360247236_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.AmazonClouds_EN-US2049846873_UHD.jpg"
         },
-        "version": "WaikatoWater_EN-US1360247236"
+        "version": "AmazonClouds_EN-US2049846873"
     },
     "code-server": {
         "cargoLocks": null,
@@ -218,15 +218,15 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v0.16.2",
-            "sha256": "sha256-IeD0jEsXsICTTr+6VsOLtH+HZpVk8DR55Z+sv/S28hs=",
+            "rev": "v0.16.3",
+            "sha256": "sha256-DeZzR25KWxA70nS0mICaOb0TeBhnurm3FWLNS/EjwZA=",
             "type": "github"
         },
-        "version": "v0.16.2"
+        "version": "v0.16.3"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-03-04",
+        "date": "2024-03-23",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -238,11 +238,11 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "193455c675d148d51035cb42c4b998281cb461fc",
-            "sha256": "sha256-k+RZVr1STBnV2MfL2tzwO2Xjq7KT5tqQioZXRqj2KI8=",
+            "rev": "7d85c4c4a52a93d05612ca48d6db7383204329a5",
+            "sha256": "sha256-R/JtGf62Jic00iXgQiYc5UjHiCddose5GSww5x2dMdE=",
             "type": "github"
         },
-        "version": "193455c675d148d51035cb42c4b998281cb461fc"
+        "version": "7d85c4c4a52a93d05612ca48d6db7383204329a5"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1891.zip",
-            "sha256": "sha256-hkSRHBBQCVw/A/kNUQhe+cub9s4lo8fP1fcRS4FKRSw=",
+            "name": "rust-analyzer-0.4.1893.zip",
+            "sha256": "sha256-2lRYw2QDBiNetNv2pyDdCK/rJJ73khAzKgaLLL4mdic=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1891/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1893/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1891"
+        "version": "0.4.1893"
     },
     "staticcheck": {
         "cargoLocks": null,
