@@ -65,6 +65,7 @@ with builtins;
       windowrulev2 = workspace 1,class:^(foot)$,title:^(foot)$
       windowrulev2 = workspace 2,class:^(Microsoft-edge)$2
       windowrulev2 = workspace 2,class:^(chromium-browser)$
+      windowrulev2 = workspace 2,class:^(vivaldi-stable)$
       windowrulev2 = workspace 3,class:^(pcmanfm)$
       windowrulev2 = workspace 4,class:^(code-url-handler)$
       windowrulev2 = workspace 4,class:^(codium-url-handler)$
@@ -75,6 +76,7 @@ with builtins;
       windowrulev2 = float,class:^(org\.fcitx\.)$,title:^(Fcitx Configuration)$
       windowrulev2 = float,title:^(Open File)$
       windowrulev2 = float,title:^(Open Folder)$
+      windowrulev2 = float,title:^(Add Folder to Workspace)$
       windowrulev2 = opacity 0.8 0.5,floating:1
       windowrulev2 = opacity 1 1,class:^(fcitx)$
       

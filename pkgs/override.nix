@@ -28,6 +28,11 @@ final: prev:
     commandLineArgs = "--enable-wayland-ime --force-dark-mode";
   };
 
+  vivaldi = prev.vivaldi.override {
+    proprietaryCodecs = true;
+    commandLineArgs = "--enable-wayland-ime";
+  };
+
   obsidian = prev.obsidian.overrideAttrs (old: {
     postInstall = ''
       substituteInPlace $out/bin/obsidian \
