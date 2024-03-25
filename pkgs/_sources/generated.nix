@@ -15,32 +15,32 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.32.0";
+    version = "v3.33.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.32.0";
+      rev = "v3.33.0";
       fetchSubmodules = false;
-      sha256 = "sha256-SHiPaXIcjMwAb+GLnVvmAkPK4Wv/3mh3AbIGjQMX0qQ=";
+      sha256 = "sha256-/Os8DndNtWvwIHQ1us7TPg16+WOpMFcntZv9wv4O1fU=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.32.0";
+    version = "3.33.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "web-dist";
-      rev = "3.32.0";
+      rev = "3.33.0";
       fetchSubmodules = false;
-      sha256 = "sha256-+aPa+N/6ht/gMKqWf/ugB8PhDME/uH6VGBxp8Pdx2KE=";
+      sha256 = "sha256-0+sILKlaVmyNtM3MJv5Y++dF+j23aLpZfpGdrXU1Wus=";
     };
   };
   bingimg = {
     pname = "bingimg";
-    version = "AmazonClouds_EN-US2049846873";
+    version = "ColorfulHoli_EN-US2354988297";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.AmazonClouds_EN-US2049846873_UHD.jpg";
-      sha256 = "sha256-3dEWHnCkgjHu4rsWpwU3Vstkbsg3LMXSIgxx+r9oeuk=";
+      url = "https://www.bing.com/th?id=OHR.ColorfulHoli_EN-US2354988297_UHD.jpg";
+      sha256 = "sha256-m9XdxtYzTEeHmgqolwje4/4xYjTV7fr3NB2Fv5h3NwI=";
     };
   };
   code-server = {
@@ -130,15 +130,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "7d85c4c4a52a93d05612ca48d6db7383204329a5";
+    version = "506c87dbd865575af4274b90cfc98539ee269521";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "7d85c4c4a52a93d05612ca48d6db7383204329a5";
+      rev = "506c87dbd865575af4274b90cfc98539ee269521";
       fetchSubmodules = false;
-      sha256 = "sha256-R/JtGf62Jic00iXgQiYc5UjHiCddose5GSww5x2dMdE=";
+      sha256 = "sha256-VblBXC7LN+9FGXq8LUjCIZa9HwVZx+eQMdWq9pB5MTM=";
     };
-    date = "2024-03-23";
+    date = "2024-03-24";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1893";
+    version = "0.4.1895";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1893/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1893.zip";
-      sha256 = "sha256-2lRYw2QDBiNetNv2pyDdCK/rJJ73khAzKgaLLL4mdic=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1895/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1895.zip";
+      sha256 = "sha256-W2tUa353CH/Ig+fHyfz0bTCmKggT0O0ZibnWdsW7AbM=";
     };
   };
   staticcheck = {
