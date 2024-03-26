@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-m9XdxtYzTEeHmgqolwje4/4xYjTV7fr3NB2Fv5h3NwI=",
+            "sha256": "sha256-jnzfo4V4qN0/yEUxNK7hGvSuhzaZVFHHcDqtyj3fmdA=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.ColorfulHoli_EN-US2354988297_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.HangRaiVietnam_EN-US2418713642_UHD.jpg"
         },
-        "version": "ColorfulHoli_EN-US2354988297"
+        "version": "HangRaiVietnam_EN-US2418713642"
     },
     "code-server": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1895.zip",
-            "sha256": "sha256-W2tUa353CH/Ig+fHyfz0bTCmKggT0O0ZibnWdsW7AbM=",
+            "name": "rust-analyzer-0.4.1898.zip",
+            "sha256": "sha256-/dqjIbhPYUAnLTTvZQxhy8E9t1ydC9GnSDe66Q71t1I=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1895/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1898/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1895"
+        "version": "0.4.1898"
     },
     "staticcheck": {
         "cargoLocks": null,
