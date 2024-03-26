@@ -130,8 +130,8 @@
           #   on-scroll-up = "brightnessctl set +3%";
           # };
           clock = {
-            format = "{: %H:%M} ";
-            format-alt = "{:%Y-%m-%d} ";
+            format = "{:%H:%M} ";
+            format-alt = "{:%Y-%m-%d} ";
             tooltip-format = "<tt><small>{calendar}</small></tt>";
           };
           tray = {

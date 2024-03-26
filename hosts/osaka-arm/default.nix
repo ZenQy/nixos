@@ -12,6 +12,7 @@
   };
 
   services = {
+    cachix.enable = true;
     nezha-dashboard.enable = true;
     sing-box.enable = false;
 
