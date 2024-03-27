@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "HangRaiVietnam_EN-US2418713642";
+    version = "TeatroColon_EN-US2518867279";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HangRaiVietnam_EN-US2418713642_UHD.jpg";
-      sha256 = "sha256-jnzfo4V4qN0/yEUxNK7hGvSuhzaZVFHHcDqtyj3fmdA=";
+      url = "https://www.bing.com/th?id=OHR.TeatroColon_EN-US2518867279_UHD.jpg";
+      sha256 = "sha256-eu6hXV7ewFKQxmgfnu11aPOj4/KehwLqYUIuikbbaWA=";
     };
   };
   code-server = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1898";
+    version = "0.4.1899";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1898/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1898.zip";
-      sha256 = "sha256-/dqjIbhPYUAnLTTvZQxhy8E9t1ydC9GnSDe66Q71t1I=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1899/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1899.zip";
+      sha256 = "sha256-d+ML3XWTxUDvUPuszkzwoDo3uNKCAD6JRPEniC9uIKw=";
     };
   };
   staticcheck = {
