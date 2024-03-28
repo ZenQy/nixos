@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-eu6hXV7ewFKQxmgfnu11aPOj4/KehwLqYUIuikbbaWA=",
+            "sha256": "sha256-UyvOeStr4zU+U8+7oeOMS2QS0tKkb3Lt4xnvfVzflIM=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.TeatroColon_EN-US2518867279_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ShanghaiBlossoms_EN-US2613653434_UHD.jpg"
         },
-        "version": "TeatroColon_EN-US2518867279"
+        "version": "ShanghaiBlossoms_EN-US2613653434"
     },
     "code-server": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1899.zip",
-            "sha256": "sha256-d+ML3XWTxUDvUPuszkzwoDo3uNKCAD6JRPEniC9uIKw=",
+            "name": "rust-analyzer-0.4.1901.zip",
+            "sha256": "sha256-pf7wNcMnGteYUVQcyjKcXA7cy8Djm1r2elbX4IXDtQc=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1899/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1901/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1899"
+        "version": "0.4.1901"
     },
     "staticcheck": {
         "cargoLocks": null,
