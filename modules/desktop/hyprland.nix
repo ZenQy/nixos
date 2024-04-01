@@ -65,6 +65,7 @@ with builtins;
       windowrulev2 = workspace 1,class:^(foot)$,title:^(foot)$
       windowrulev2 = workspace 2,class:^(Microsoft-edge)$2
       windowrulev2 = workspace 2,class:^(chromium-browser)$
+      windowrulev2 = workspace 2,class:^(firefox)$
       windowrulev2 = workspace 2,class:^(vivaldi-stable)$
       windowrulev2 = workspace 3,class:^(pcmanfm)$
       windowrulev2 = workspace 4,class:^(code-url-handler)$

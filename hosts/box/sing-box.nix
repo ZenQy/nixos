@@ -31,6 +31,8 @@ let
       final = "dns_proxy";
     };
     route = {
+      geosite.path = "/etc/sing-box/geosite.db";
+      geoip.path = "/etc/sing-box/geoip.db";
       rule_set = [
         {
           tag = "geosite-cn";
@@ -102,20 +104,53 @@ let
           tcp_fast_open = true;
         };
         tuicList = [ "cc" "tokyo-1" "tokyo-2" "osaka-1" "osaka-2" ];
+        trojanSet = {
+          type = "trojan";
+          server_port = 443;
+          inherit (secrets.sing-box.trojan) password;
+          tls = { enabled = true; };
+          multiplex = {
+            enabled = true;
+          };
+          transport = {
+            type = "ws";
+            path = secrets.sing-box.trojan.path;
+            max_early_data = 2048;
+          };
+        };
+        trojanList = tuicList ++ [ "natvps-ca" "natvps-jp" "natseek-us" "natseek-jp" ];
       in
       map
-        (tag: tuicSet // { inherit tag; server = "${tag}.${secrets.domain}"; })
-        tuicList ++
+        (tag: tuicSet // {
+          inherit tag;
+          server = "${tag}.${secrets.domain}";
+        })
+        (map (tag: tag + "-tuic") tuicList) ++
+      map
+        (tag: trojanSet // {
+          inherit tag;
+          server = "${tag}.${secrets.domain}";
+        })
+        (map (tag: tag + "-trojan") trojanList) ++
       [
         {
           tag = "proxy";
           type = "selector";
-          outbounds = tuicList;
+          outbounds = map (tag: tag + "-tuic") tuicList ++ map (tag: tag + "-trojan") trojanList;
           interrupt_exist_connections = false;
         }
-        { type = "direct"; tag = "direct"; }
-        { type = "block"; tag = "block"; }
-        { type = "dns"; tag = "dns-out"; }
+        {
+          type = "direct";
+          tag = "direct";
+        }
+        {
+          type = "block";
+          tag = "block";
+        }
+        {
+          type = "dns";
+          tag = "dns-out";
+        }
       ];
     experimental = {
       cache_file = {

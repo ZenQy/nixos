@@ -22,7 +22,7 @@
           ];
           congestion_control = "bbr";
           tls =
-            let domain = "${config.networking.hostName}.${secrets.domain}";
+            let domain = "${config.networking.hostName}-tuic.${secrets.domain}";
             in {
               enabled = true;
               server_name = domain;
@@ -32,6 +32,23 @@
               };
               alpn = [ "h3" ];
             };
+        }
+        {
+          type = "trojan";
+          listen = "::";
+          listen_port = 80;
+          users = [
+            {
+              password = secrets.sing-box.trojan.password;
+            }
+          ];
+          tls = { enabled = false; };
+          multiplex = { enabled = true; };
+          transport = {
+            type = "ws";
+            path = secrets.sing-box.trojan.path;
+            max_early_data = 2048;
+          };
         }
       ];
       outbounds = [
