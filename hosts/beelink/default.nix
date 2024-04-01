@@ -18,15 +18,13 @@
   };
   systemd.network.networks =
     let
-      n = {
-        gateway = [ "10.0.0.11" ];
-        dns = [
-          # "119.29.29.29"
-          # "223.5.5.5"
-          "114.114.114.114"
-        ];
-        DHCP = "no";
-      };
+      n =
+        let ip = "10.0.0.11";
+        in {
+          gateway = [ ip ];
+          dns = [ ip ];
+          DHCP = "no";
+        };
     in
     {
       enp3s0 = {

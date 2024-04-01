@@ -121,12 +121,11 @@ let
       cache_file = {
         enabled = true;
         path = "cache.db";
-        store_fakeip = true;
       };
       clash_api = {
         external_controller = "0.0.0.0:9090";
         external_ui = "${pkgs.Yacd-meta}";
-        secret = "101005";
+        secret = secrets.user.zenith.password;
       };
     };
   };

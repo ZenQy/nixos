@@ -168,7 +168,7 @@
     # mitmproxy
     # python3
     # python3Packages.pip
-    vivaldi
+
   ];
 
   xdg.mime = {

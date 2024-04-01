@@ -23,7 +23,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs.";
     homepage = "https://github.com/alist-org/alist";
-    license = lib.licenses.agpl3;
+    license = lib.licenses.agpl3Only;
     maintainers = [
       {
         name = "ZenQy";
