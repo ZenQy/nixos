@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "PalazzoFarnese_EN-US3142967327";
+    version = "JutlandSpring_EN-US3202382460";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.PalazzoFarnese_EN-US3142967327_UHD.jpg";
-      sha256 = "sha256-OPC4eYK47M+FdM9zUPKd1OspPQKu4IytMllijycPFao=";
+      url = "https://www.bing.com/th?id=OHR.JutlandSpring_EN-US3202382460_UHD.jpg";
+      sha256 = "sha256-wINsPmvTMEf1sOhVPH48AkMTdytEDySKWafB4d6TSUU=";
     };
   };
   code-server = {
@@ -53,11 +53,11 @@
   };
   dbaeumer_vscode-eslint = {
     pname = "dbaeumer_vscode-eslint";
-    version = "2.4.4";
+    version = "3.0.5";
     src = fetchurl {
-      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/2.4.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "vscode-eslint-2.4.4.zip";
-      sha256 = "sha256-NJGsMme/+4bvED/93SGojYTH03EZbtKe5LyvocywILA=";
+      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.5/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "vscode-eslint-3.0.5.zip";
+      sha256 = "sha256-qXePnmM3gLPcry/5g3auhvoBUDTDRYZynviwEkN8s7I=";
     };
   };
   dlv-dap = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1905";
+    version = "0.4.1907";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1905/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1905.zip";
-      sha256 = "sha256-P1pAnpxyGl91cOPQTm2Ls/fi/2vmiCEMurY7whkKkPA=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1907/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1907.zip";
+      sha256 = "sha256-gbhjuGquUP1rmw2oVFIA3225wwJuJ5//LMbEvphR2x4=";
     };
   };
   staticcheck = {
