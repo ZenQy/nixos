@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-wINsPmvTMEf1sOhVPH48AkMTdytEDySKWafB4d6TSUU=",
+            "sha256": "sha256-qgpdM7aVtop2MLjWdaoCXzEXsfUROGrUUhnJc0nEgAo=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.JutlandSpring_EN-US3202382460_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.KyrgyzstanRainbow_EN-US3266651913_UHD.jpg"
         },
-        "version": "JutlandSpring_EN-US3202382460"
+        "version": "KyrgyzstanRainbow_EN-US3266651913"
     },
     "code-server": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1907.zip",
-            "sha256": "sha256-gbhjuGquUP1rmw2oVFIA3225wwJuJ5//LMbEvphR2x4=",
+            "name": "rust-analyzer-0.4.1908.zip",
+            "sha256": "sha256-bgKzwZ9t1ChOcUTVXdNSb498Hc/Sfj8JxSVEAwOk7dA=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1907/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1908/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1907"
+        "version": "0.4.1908"
     },
     "staticcheck": {
         "cargoLocks": null,
