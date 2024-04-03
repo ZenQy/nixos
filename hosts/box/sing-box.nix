@@ -27,6 +27,13 @@ let
           rule_set = "geosite-cn";
           server = "dns_direct";
         }
+        {
+          domain_suffix = [
+            ".cn"
+            "msftconnecttest.com"
+          ];
+          server = "dns_direct";
+        }
       ];
       final = "dns_proxy";
     };
@@ -136,8 +143,17 @@ let
         {
           tag = "proxy";
           type = "selector";
-          outbounds = map (tag: tag + "-tuic") tuicList ++ map (tag: tag + "-trojan") trojanList;
-          interrupt_exist_connections = false;
+          outbounds = [ "tuic" "trojan" "direct" ];
+        }
+        {
+          tag = "tuic";
+          type = "selector";
+          outbounds = map (tag: tag + "-tuic") tuicList;
+        }
+        {
+          tag = "trojan";
+          type = "selector";
+          outbounds = map (tag: tag + "-trojan") trojanList;
         }
         {
           type = "direct";
