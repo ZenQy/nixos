@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qgpdM7aVtop2MLjWdaoCXzEXsfUROGrUUhnJc0nEgAo=",
+            "sha256": "sha256-wSzHFn1x5TB0nnDzx5P7Gl2HQfrWFz7MhcvGyuhav74=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.KyrgyzstanRainbow_EN-US3266651913_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.AntelopeBotswana_EN-US3335739405_UHD.jpg"
         },
-        "version": "KyrgyzstanRainbow_EN-US3266651913"
+        "version": "AntelopeBotswana_EN-US3335739405"
     },
     "code-server": {
         "cargoLocks": null,
@@ -183,11 +183,11 @@
             "name": null,
             "owner": "j178",
             "repo": "leetgo",
-            "rev": "v1.4.3",
-            "sha256": "sha256-4y8IRpfkMrI4y4C/yUdVlsly+qPrmIWu7441BgjYasM=",
+            "rev": "v1.4.5",
+            "sha256": "sha256-srJsuZ8Rb/RqTwaccOUUGMnsKJ/GdogUpFzxCbESEec=",
             "type": "github"
         },
-        "version": "v1.4.3"
+        "version": "v1.4.5"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1908.zip",
-            "sha256": "sha256-bgKzwZ9t1ChOcUTVXdNSb498Hc/Sfj8JxSVEAwOk7dA=",
+            "name": "rust-analyzer-0.4.1909.zip",
+            "sha256": "sha256-K6vfHon3XAWOZ0nrg4ubrK5FWL3hay+eLD272ENKYDE=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1908/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1909/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1908"
+        "version": "0.4.1909"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -332,11 +332,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "volar-2.0.8.zip",
-            "sha256": "sha256-OBHMLSuOs7kuiY0zs6E9ZhGZ3xkuJtMv0jbMRJdT3u4=",
+            "name": "volar-2.0.10.zip",
+            "sha256": "sha256-vSCNpoVpSNkXlnYOi5xWg6Va20cPTJS98jhGgaC9Zj0=",
             "type": "url",
-            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.8/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.10/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "2.0.8"
+        "version": "2.0.10"
     }
 }
