@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "AntelopeBotswana_EN-US3335739405";
+    version = "BahamasSpace_EN-US1544254149";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.AntelopeBotswana_EN-US3335739405_UHD.jpg";
-      sha256 = "sha256-wSzHFn1x5TB0nnDzx5P7Gl2HQfrWFz7MhcvGyuhav74=";
+      url = "https://www.bing.com/th?id=OHR.BahamasSpace_EN-US1544254149_UHD.jpg";
+      sha256 = "sha256-FHnYyyh16TmFrm/YyO/+v1GDVIfppjPMpaIW4ORnEy0=";
     };
   };
   code-server = {
@@ -155,7 +155,7 @@
     src = fetchurl {
       url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1909/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "rust-analyzer-0.4.1909.zip";
-      sha256 = "sha256-K6vfHon3XAWOZ0nrg4ubrK5FWL3hay+eLD272ENKYDE=";
+      sha256 = "sha256-MHemPMdrkK5XxpnwEQYWIoqcf/x9n3sfD9xLzFDEstc=";
     };
   };
   staticcheck = {
