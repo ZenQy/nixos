@@ -37,18 +37,18 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "BahamasSpace_EN-US1544254149";
+    version = "JapanHimeji_EN-US1768279571";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.BahamasSpace_EN-US1544254149_UHD.jpg";
-      sha256 = "sha256-FHnYyyh16TmFrm/YyO/+v1GDVIfppjPMpaIW4ORnEy0=";
+      url = "https://www.bing.com/th?id=OHR.JapanHimeji_EN-US1768279571_UHD.jpg";
+      sha256 = "sha256-2a76GEUa60EhlWrPrzV2Gq4CoeJcIytNGRK/AwiywKs=";
     };
   };
   code-server = {
     pname = "code-server";
-    version = "4.22.1";
+    version = "4.23.0-rc.2";
     src = fetchurl {
-      url = "https://github.com/coder/code-server/releases/download/v4.22.1/code-server-4.22.1-linux-arm64.tar.gz";
-      sha256 = "sha256-RMO8hKN++p1OLBTOcgJLLLg8IDTtTyn1DrWV+w8rxLM=";
+      url = "https://github.com/coder/code-server/releases/download/v4.23.0-rc.2/code-server-4.23.0-rc.2-linux-arm64.tar.gz";
+      sha256 = "sha256-fF0rCdLf1Jb2XfSR187TqeuzmkpWfkAUVFmu69mFkBA=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,26 +119,26 @@
   };
   nezha-agent = {
     pname = "nezha-agent";
-    version = "v0.16.3";
+    version = "v0.16.4";
     src = fetchFromGitHub {
       owner = "nezhahq";
       repo = "agent";
-      rev = "v0.16.3";
+      rev = "v0.16.4";
       fetchSubmodules = false;
-      sha256 = "sha256-DeZzR25KWxA70nS0mICaOb0TeBhnurm3FWLNS/EjwZA=";
+      sha256 = "sha256-xXv2FVPsl8BR51VMrFreaS3UQLEJwfObY4OeMMb8pms=";
     };
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "194f3290bce06ce644562d9afafae155431ad228";
+    version = "d9a70029066cb19ba7f9a647a6baf82095aa3c76";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "194f3290bce06ce644562d9afafae155431ad228";
+      rev = "d9a70029066cb19ba7f9a647a6baf82095aa3c76";
       fetchSubmodules = false;
-      sha256 = "sha256-kp2PAVN/grH8os/0DvfuRBGy0KLyqXDOnEFx8KFCfLI=";
+      sha256 = "sha256-GKZXCfRXQqy8t/ICMMsiU9H+KhMqStOBjxy4ug4hi1Q=";
     };
-    date = "2024-03-30";
+    date = "2024-04-06";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";

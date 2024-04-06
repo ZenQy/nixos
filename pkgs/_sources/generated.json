@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-FHnYyyh16TmFrm/YyO/+v1GDVIfppjPMpaIW4ORnEy0=",
+            "sha256": "sha256-2a76GEUa60EhlWrPrzV2Gq4CoeJcIytNGRK/AwiywKs=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BahamasSpace_EN-US1544254149_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.JapanHimeji_EN-US1768279571_UHD.jpg"
         },
-        "version": "BahamasSpace_EN-US1544254149"
+        "version": "JapanHimeji_EN-US1768279571"
     },
     "code-server": {
         "cargoLocks": null,
@@ -83,11 +83,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-RMO8hKN++p1OLBTOcgJLLLg8IDTtTyn1DrWV+w8rxLM=",
+            "sha256": "sha256-fF0rCdLf1Jb2XfSR187TqeuzmkpWfkAUVFmu69mFkBA=",
             "type": "url",
-            "url": "https://github.com/coder/code-server/releases/download/v4.22.1/code-server-4.22.1-linux-arm64.tar.gz"
+            "url": "https://github.com/coder/code-server/releases/download/v4.23.0-rc.2/code-server-4.23.0-rc.2-linux-arm64.tar.gz"
         },
-        "version": "4.22.1"
+        "version": "4.23.0-rc.2"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -218,15 +218,15 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v0.16.3",
-            "sha256": "sha256-DeZzR25KWxA70nS0mICaOb0TeBhnurm3FWLNS/EjwZA=",
+            "rev": "v0.16.4",
+            "sha256": "sha256-xXv2FVPsl8BR51VMrFreaS3UQLEJwfObY4OeMMb8pms=",
             "type": "github"
         },
-        "version": "v0.16.3"
+        "version": "v0.16.4"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-03-30",
+        "date": "2024-04-06",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -238,11 +238,11 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "194f3290bce06ce644562d9afafae155431ad228",
-            "sha256": "sha256-kp2PAVN/grH8os/0DvfuRBGy0KLyqXDOnEFx8KFCfLI=",
+            "rev": "d9a70029066cb19ba7f9a647a6baf82095aa3c76",
+            "sha256": "sha256-GKZXCfRXQqy8t/ICMMsiU9H+KhMqStOBjxy4ug4hi1Q=",
             "type": "github"
         },
-        "version": "194f3290bce06ce644562d9afafae155431ad228"
+        "version": "d9a70029066cb19ba7f9a647a6baf82095aa3c76"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
