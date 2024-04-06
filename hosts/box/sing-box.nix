@@ -6,6 +6,10 @@ let
     dns = {
       servers = [
         {
+          tag = "dns_fakeip";
+          address = "fakeip";
+        }
+        {
           tag = "dns_proxy";
           address = "https://1.1.1.1/dns-query";
           address_resolver = "dns_direct";
@@ -24,18 +28,29 @@ let
           server = "dns_direct";
         }
         {
-          rule_set = "geosite-cn";
-          server = "dns_direct";
-        }
-        {
           domain_suffix = [
             ".cn"
             "msftconnecttest.com"
           ];
           server = "dns_direct";
         }
+        {
+          rule_set = "geosite-cn";
+          server = "dns_direct";
+        }
+        {
+          rule_set = "geosite-cn";
+          invert = true;
+          server = "dns_fakeip";
+        }
       ];
       final = "dns_proxy";
+      independent_cache = true;
+      fakeip = {
+        enabled = true;
+        inet4_range = "198.18.0.0/15";
+        inet6_range = "fc00::/18";
+      };
     };
     route = {
       geosite.path = "/etc/sing-box/geosite.db";
@@ -172,6 +187,7 @@ let
       cache_file = {
         enabled = true;
         path = "cache.db";
+        store_fakeip = true;
       };
       clash_api = {
         external_controller = "0.0.0.0:9090";
