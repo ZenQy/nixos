@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "JapanHimeji_EN-US1768279571";
+    version = "SolarEclipseOregon_EN-US2134131862";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.JapanHimeji_EN-US1768279571_UHD.jpg";
-      sha256 = "sha256-2a76GEUa60EhlWrPrzV2Gq4CoeJcIytNGRK/AwiywKs=";
+      url = "https://www.bing.com/th?id=OHR.SolarEclipseOregon_EN-US2134131862_UHD.jpg";
+      sha256 = "sha256-I09ZsI9qpBiu7lgkHR/nfKPUkIj10uu5bCZqt/IqGeo=";
     };
   };
   code-server = {
@@ -130,15 +130,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "d9a70029066cb19ba7f9a647a6baf82095aa3c76";
+    version = "f3c90bbf595c9b9ffcced4ed489dd3f200e9b353";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "d9a70029066cb19ba7f9a647a6baf82095aa3c76";
+      rev = "f3c90bbf595c9b9ffcced4ed489dd3f200e9b353";
       fetchSubmodules = false;
-      sha256 = "sha256-GKZXCfRXQqy8t/ICMMsiU9H+KhMqStOBjxy4ug4hi1Q=";
+      sha256 = "sha256-kw9GgtU1DikWsy4Ai/2dDr3D75TQQLfQnf7a57wH9zM=";
     };
-    date = "2024-04-06";
+    date = "2024-04-08";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1909";
+    version = "0.4.1915";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1909/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1909.zip";
-      sha256 = "sha256-MHemPMdrkK5XxpnwEQYWIoqcf/x9n3sfD9xLzFDEstc=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1915/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1915.zip";
+      sha256 = "sha256-pEyhmWKSfeLWSRAyfIMBcixxcoTAre1izv/tOsM7pS4=";
     };
   };
   staticcheck = {
@@ -189,11 +189,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.0.10";
+    version = "2.0.11";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.10/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.0.10.zip";
-      sha256 = "sha256-vSCNpoVpSNkXlnYOi5xWg6Va20cPTJS98jhGgaC9Zj0=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.11/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.0.11.zip";
+      sha256 = "sha256-EyULg2yS/aqf0ipUQKFjW1WJIHECr26/JIQ+UuTPSLk=";
     };
   };
 }
