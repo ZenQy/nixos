@@ -57,6 +57,7 @@
         "Music"
         "Pictures"
         "Videos"
+        "go"
 
         # 配置文件夹
         ".cache"
@@ -65,7 +66,9 @@
         ".mozilla"
         ".ssh"
       ];
-      files = [ ];
+      files = [
+        ".bash_history"
+      ];
     };
   };
 
@@ -93,6 +96,6 @@
       consoleMode = "auto";
       enable = true;
     };
-    timeout = 10;
+    timeout = 2;
   };
 }

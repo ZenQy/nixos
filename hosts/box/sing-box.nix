@@ -10,13 +10,6 @@ let
           address = "fakeip";
         }
         {
-          tag = "dns_proxy";
-          address = "https://1.1.1.1/dns-query";
-          address_resolver = "dns_direct";
-          strategy = "ipv4_only";
-          detour = "proxy";
-        }
-        {
           tag = "dns_direct";
           address = "223.5.5.5";
           detour = "direct";
@@ -44,7 +37,7 @@ let
           server = "dns_fakeip";
         }
       ];
-      final = "dns_proxy";
+      final = "dns_direct";
       independent_cache = true;
       fakeip = {
         enabled = true;

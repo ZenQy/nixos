@@ -153,9 +153,15 @@
     pname = "rust-lang_rust-analyzer";
     version = "0.4.1919";
     src = fetchurl {
+<<<<<<< HEAD
       url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1919/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "rust-analyzer-0.4.1919.zip";
       sha256 = "sha256-6SUtjmpw3VSA3WW5rQu/mWjSj2CTjn3hrisElU9tzFw=";
+=======
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1909/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1909.zip";
+      sha256 = "sha256-K6vfHon3XAWOZ0nrg4ubrK5FWL3hay+eLD272ENKYDE=";
+>>>>>>> a49f4d9 (update)
     };
   };
   staticcheck = {

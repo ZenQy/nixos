@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
+  boot.kernelPackages = pkgs.linuxPackages_lqx;
   boot.supportedFilesystems = [ "ntfs" ];
   services.gvfs.enable = true;
   # services.gnome.gnome-keyring.enable = false;
@@ -125,7 +125,8 @@
   services.xserver.excludePackages = [ pkgs.xterm ];
   environment.systemPackages = with pkgs; [
     ## Go ##
-    go
+    # go
+    go_1_21
     gopls
     dlv-dap
     staticcheck
