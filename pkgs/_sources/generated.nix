@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "DragonWaterfall_EN-US2799967886";
+    version = "SunsetArchesNP_EN-US2974318595";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.DragonWaterfall_EN-US2799967886_UHD.jpg";
-      sha256 = "sha256-WNZzo6CcF5HU/F4TwL0dxYF2LjnU0vklclyVYTvS34g=";
+      url = "https://www.bing.com/th?id=OHR.SunsetArchesNP_EN-US2974318595_UHD.jpg";
+      sha256 = "sha256-q+77xpIOUw0ABCBxWgm9dk9HYu8gOif1o2+DtCxRWL4=";
     };
   };
   code-server = {
@@ -151,17 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1919";
+    version = "0.4.1920";
     src = fetchurl {
-<<<<<<< HEAD
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1919/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1919.zip";
-      sha256 = "sha256-6SUtjmpw3VSA3WW5rQu/mWjSj2CTjn3hrisElU9tzFw=";
-=======
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1909/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1909.zip";
-      sha256 = "sha256-K6vfHon3XAWOZ0nrg4ubrK5FWL3hay+eLD272ENKYDE=";
->>>>>>> a49f4d9 (update)
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1920/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1920.zip";
+      sha256 = "sha256-W8kAhb5Tef5cXelU+Lfap5E/MqCYSx5AhcNcPKMo89M=";
     };
   };
   staticcheck = {
