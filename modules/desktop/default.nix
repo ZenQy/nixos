@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  boot.kernelPackages = pkgs.linuxPackages_lqx;
+  boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
   boot.supportedFilesystems = [ "ntfs" ];
   services.gvfs.enable = true;
   # services.gnome.gnome-keyring.enable = false;
