@@ -14,5 +14,5 @@
     extraConfig = "IPv6AcceptRA=no";
   };
 
-  services.cachix.enable = true;
+  zenith.cachix.enable = true;
 }

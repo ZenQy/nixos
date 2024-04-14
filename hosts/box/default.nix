@@ -19,6 +19,4 @@
     DHCP = "no";
   };
 
-  services.nezha-agent.enable = false;
-
 }

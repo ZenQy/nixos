@@ -1,11 +1,11 @@
 { config, lib, pkgs, secrets, ... }:
 with lib;
 let
-  cfg = config.services.nezha-dashboard;
+  cfg = config.zenith.nezha-dashboard;
 in
 
 {
-  options.services.nezha-dashboard = {
+  options.zenith.nezha-dashboard = {
     enable = mkOption {
       type = types.bool;
       default = false;

@@ -22,6 +22,12 @@ let
         }
         {
           domain_suffix = [
+            "googleapis.cn"
+          ];
+          server = "proxy";
+        }
+        {
+          domain_suffix = [
             ".cn"
             "msftconnecttest.com"
           ];
@@ -70,14 +76,20 @@ let
           outbound = "dns-out";
         }
         {
-          rule_set = "geosite-cn";
-          outbound = "direct";
+          domain_suffix = [
+            "googleapis.cn"
+          ];
+          outbound = "proxy";
         }
         {
           domain_suffix = [
             ".cn"
             "msftconnecttest.com"
           ];
+          outbound = "direct";
+        }
+        {
+          rule_set = "geosite-cn";
           outbound = "direct";
         }
         {

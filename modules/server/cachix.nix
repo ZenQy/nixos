@@ -3,12 +3,12 @@
 with lib;
 
 let
-  cfg = config.services.cachix;
+  cfg = config.zenith.cachix;
 in
 
 {
   options = {
-    services.cachix = {
+    zenith.cachix = {
       enable = mkOption {
         type = types.bool;
         default = false;

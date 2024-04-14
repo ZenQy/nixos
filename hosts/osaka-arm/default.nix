@@ -10,10 +10,11 @@
     dns = [ "8.8.8.8" ];
     DHCP = "yes";
   };
-
-  services = {
+  zenith = {
     cachix.enable = true;
     nezha-dashboard.enable = true;
+  };
+  services = {
     sing-box.enable = false;
 
     code-server = {
