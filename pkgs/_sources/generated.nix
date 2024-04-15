@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "SpringApple_EN-US3148648329";
+    version = "RedBallBelgium_EN-US3314192425";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SpringApple_EN-US3148648329_UHD.jpg";
-      sha256 = "sha256-Kz46cdziW8LrSw1X43NctxI61Q2tv9IuT8aVTdp+nVA=";
+      url = "https://www.bing.com/th?id=OHR.RedBallBelgium_EN-US3314192425_UHD.jpg";
+      sha256 = "sha256-ndG2LWMis/Ixfjhi/18YlIUD/7Da6/YIssxStr7oqD8=";
     };
   };
   code-server = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1921";
+    version = "0.4.1923";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1921/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1921.zip";
-      sha256 = "sha256-aZL9ORZiZqSY1tKbgrP71XIT/tNTuCbgPd33QJrpOp4=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1923/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1923.zip";
+      sha256 = "sha256-qWQuDvzUjcWWxXImubKyifbYcFBJ8Gl9J4SSbWt6kDc=";
     };
   };
   staticcheck = {
@@ -180,11 +180,11 @@
   };
   usernamehw_errorlens = {
     pname = "usernamehw_errorlens";
-    version = "3.16.0";
+    version = "3.17.0";
     src = fetchurl {
-      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.16.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "errorlens-3.16.0.zip";
-      sha256 = "sha256-Y3M/A5rYLkxQPRIZ0BUjhlkvixDae+wIRUsBn4tREFw=";
+      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.17.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "errorlens-3.17.0.zip";
+      sha256 = "sha256-E0EAzYukaiu/DKREEP4HQjRXPAqwB4cP2PwM1B3c0ok=";
     };
   };
   vue_volar = {
