@@ -24,14 +24,14 @@ final: prev:
     ];
   };
 
-  chromium = prev.chromium.override {
-    commandLineArgs = "--enable-wayland-ime --force-dark-mode";
-  };
+  # chromium = prev.chromium.override {
+  #   commandLineArgs = "--enable-wayland-ime --force-dark-mode";
+  # };
 
-  vivaldi = prev.vivaldi.override {
-    proprietaryCodecs = true;
-    commandLineArgs = "--enable-wayland-ime";
-  };
+  # vivaldi = prev.vivaldi.override {
+  #   proprietaryCodecs = true;
+  #   commandLineArgs = "--enable-wayland-ime";
+  # };
 
   obsidian = prev.obsidian.overrideAttrs (old: {
     postInstall = ''
