@@ -37,18 +37,18 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "RedBallBelgium_EN-US3314192425";
+    version = "UnionSquareNYC_EN-US3633149979";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.RedBallBelgium_EN-US3314192425_UHD.jpg";
-      sha256 = "sha256-ndG2LWMis/Ixfjhi/18YlIUD/7Da6/YIssxStr7oqD8=";
+      url = "https://www.bing.com/th?id=OHR.UnionSquareNYC_EN-US3633149979_UHD.jpg";
+      sha256 = "sha256-6PvaHt3BuJik3WZVsfyxW30FlSC6PFEUf4uySUBBrK0=";
     };
   };
   code-server = {
     pname = "code-server";
-    version = "4.23.0";
+    version = "4.23.1";
     src = fetchurl {
-      url = "https://github.com/coder/code-server/releases/download/v4.23.0/code-server-4.23.0-linux-arm64.tar.gz";
-      sha256 = "sha256-iA3m97WN9IFPdKzfSRh7fZmFFYUCqEeO0qFhMn39cZA=";
+      url = "https://github.com/coder/code-server/releases/download/v4.23.1/code-server-4.23.1-linux-arm64.tar.gz";
+      sha256 = "sha256-0uGNA6JDS8p/cKJYcN89VxKDWCFyQQw84Fsbtbuhpxs=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1923";
+    version = "0.4.1925";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1923/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1923.zip";
-      sha256 = "sha256-qWQuDvzUjcWWxXImubKyifbYcFBJ8Gl9J4SSbWt6kDc=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1925/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1925.zip";
+      sha256 = "sha256-VVihYa+1M5xAvJYeYF55oAU/nB1PwhP8nPMKgHwQbzI=";
     };
   };
   staticcheck = {
