@@ -125,8 +125,8 @@
   services.xserver.excludePackages = [ pkgs.xterm ];
   environment.systemPackages = with pkgs; [
     ## Go ##
-    # go
-    go_1_21
+    go
+    # go_1_21
     gopls
     dlv-dap
     staticcheck

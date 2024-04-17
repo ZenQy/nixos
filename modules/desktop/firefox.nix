@@ -3,6 +3,14 @@
 {
   programs.firefox = {
     enable = true;
+    preferences = {
+      "media.ffmpeg.vaapi.enabled" = true;
+      "media.ffvpx.enabled" = false;
+      "gfx.webrender.all" = true;
+      "gfx.webrender.compositor" = true;
+      "gfx.webrender.compositor.force-enabled" = true;
+      "media.hardware-video-decoding.force-enabled" = true;
+    };
     policies = {
       Homepage = {
         Locked = true;
