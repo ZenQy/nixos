@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "AvilaSpain_EN-US3559491003";
+    version = "OrkneyStones_EN-US3355508244";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.AvilaSpain_EN-US3559491003_UHD.jpg";
-      sha256 = "sha256-qx1CrOr8buEeez9mXahJ+ko/svFI9IhKxOO2AdinFiA=";
+      url = "https://www.bing.com/th?id=OHR.OrkneyStones_EN-US3355508244_UHD.jpg";
+      sha256 = "sha256-zJcg7W2/Z+ZYECa4OKWhjmTeKAqFp54FpvpO9WX+f5k=";
     };
   };
   code-server = {
@@ -142,20 +142,20 @@
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "4.34.0";
+    version = "5.0.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/4.34.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-4.34.0.zip";
-      sha256 = "sha256-xxOEUvMjqJbl8lONB/So2NoIAVPOxysTq2YQY3iHGqo=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.0.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.0.0.zip";
+      sha256 = "sha256-wC29VB7qlYalrah0faNfaVIv4BQ9aV4DpCAV4/o779U=";
     };
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1927";
+    version = "0.4.1928";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1927/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1927.zip";
-      sha256 = "sha256-0QmfyGDnh2eDUafnVErUZZcc5SNBTml9+oTB3rGqqug=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1928/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1928.zip";
+      sha256 = "sha256-BurM80mWf/uBE6h/nTkip5tspedWaJi5wB1uuWcna48=";
     };
   };
   staticcheck = {
