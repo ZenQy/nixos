@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "OrkneyStones_EN-US3355508244";
+    version = "YellowstoneGeyser_EN-US3470127711";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.OrkneyStones_EN-US3355508244_UHD.jpg";
-      sha256 = "sha256-zJcg7W2/Z+ZYECa4OKWhjmTeKAqFp54FpvpO9WX+f5k=";
+      url = "https://www.bing.com/th?id=OHR.YellowstoneGeyser_EN-US3470127711_UHD.jpg";
+      sha256 = "sha256-5AgfDNE3/4NQMl2RqEyjRB4SSB1ZPkuuKq9G3GW3heY=";
     };
   };
   code-server = {
@@ -142,20 +142,20 @@
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.0.0";
+    version = "5.1.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.0.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.0.0.zip";
-      sha256 = "sha256-wC29VB7qlYalrah0faNfaVIv4BQ9aV4DpCAV4/o779U=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.1.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.1.0.zip";
+      sha256 = "sha256-UuCYYRR0TDfn2DBznpidHeO3ROc/AVgnf7OYcTLeTDI=";
     };
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1928";
+    version = "0.4.1929";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1928/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1928.zip";
-      sha256 = "sha256-BurM80mWf/uBE6h/nTkip5tspedWaJi5wB1uuWcna48=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1929/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1929.zip";
+      sha256 = "sha256-tvChnkXiXlK688iszX8I1lsCzMUPQotURZ/UWobFviE=";
     };
   };
   staticcheck = {
