@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "YellowstoneGeyser_EN-US3470127711";
+    version = "EarthDayTurtle_EN-US4769423754";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.YellowstoneGeyser_EN-US3470127711_UHD.jpg";
-      sha256 = "sha256-5AgfDNE3/4NQMl2RqEyjRB4SSB1ZPkuuKq9G3GW3heY=";
+      url = "https://www.bing.com/th?id=OHR.EarthDayTurtle_EN-US4769423754_UHD.jpg";
+      sha256 = "sha256-hTC0BeZ7A/Wmd+HGLJ7nPcwIBZnVAXhh0ZnJWb6iOwo=";
     };
   };
   code-server = {
@@ -81,11 +81,11 @@
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.41.2";
+    version = "0.41.3";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.41.2.zip";
-      sha256 = "sha256-eD/9UBYxf8kmqxuzY+hgAT0bqSiYw/BbDv2gyB63zY0=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.41.3.zip";
+      sha256 = "sha256-xvrErtJ7Ejb36bpp4F6liDhqbpcbBeVmZUKYzfp2I3o=";
     };
   };
   jnoortheen_nix-ide = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1929";
+    version = "0.4.1931";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1929/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1929.zip";
-      sha256 = "sha256-tvChnkXiXlK688iszX8I1lsCzMUPQotURZ/UWobFviE=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1931/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1931.zip";
+      sha256 = "sha256-ETeIZ9t9phKwG9nraWh8PWByk/q0oWMstJBFW2kFKHc=";
     };
   };
   staticcheck = {
@@ -189,11 +189,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.0.12";
+    version = "2.0.14";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.12/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.0.12.zip";
-      sha256 = "sha256-uTMOaE/IInT4V6AZb83eoviKO5adiMybIEQkS4pVEcw=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.14/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.0.14.zip";
+      sha256 = "sha256-UQGatAUuDCd5/sisp8UOTuP1gtNMxTpOHQLzO28eOYg=";
     };
   };
 }
