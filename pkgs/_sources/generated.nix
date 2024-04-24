@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "TrinityDublin_EN-US5011442234";
+    version = "TrilliumOntario_EN-US5180679465";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.TrinityDublin_EN-US5011442234_UHD.jpg";
-      sha256 = "sha256-4w5S7In06/it+VUF/nndkfprHODK2ap92GNmX/X2ih8=";
+      url = "https://www.bing.com/th?id=OHR.TrilliumOntario_EN-US5180679465_UHD.jpg";
+      sha256 = "sha256-pVrlJbX30jGUZOoFNcEAq/0y/r2Ee5Y27rg5xWbm3Bc=";
     };
   };
   code-server = {
@@ -81,11 +81,11 @@
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.41.3";
+    version = "0.41.4";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.41.3.zip";
-      sha256 = "sha256-xvrErtJ7Ejb36bpp4F6liDhqbpcbBeVmZUKYzfp2I3o=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.41.4.zip";
+      sha256 = "sha256-ntrEI/l+UjzqGJmtyfVf/+sZJstZy3fm/PSWKTd7/Q0=";
     };
   };
   jnoortheen_nix-ide = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1933";
+    version = "0.4.1934";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1933/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1933.zip";
-      sha256 = "sha256-vzs0im1yDRgfEl1+3iis4D+qgS1zSIJ6nDFffziNFBQ=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1934/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1934.zip";
+      sha256 = "sha256-r5HiN4L2UvCsxLPCf5QTKMZxCY1XGGVkx3JqDOYugxE=";
     };
   };
   staticcheck = {
