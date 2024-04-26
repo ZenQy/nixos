@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "PenguinDirections_EN-US5469437415";
+    version = "KalalochTree_EN-US5565386489";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.PenguinDirections_EN-US5469437415_UHD.jpg";
-      sha256 = "sha256-o1c7eQqLDuFt7lUWK1HQtA6tF9GomTD1Zpm4qAPLJw4=";
+      url = "https://www.bing.com/th?id=OHR.KalalochTree_EN-US5565386489_UHD.jpg";
+      sha256 = "sha256-3AJT10G8xU+shp3KKtRyK2qxFhxCIBjUSgSdk9lOtqE=";
     };
   };
   code-server = {
@@ -73,10 +73,10 @@
   };
   fcitx5-pinyin-zhwiki = {
     pname = "fcitx5-pinyin-zhwiki";
-    version = "20240210";
+    version = "20240426";
     src = fetchurl {
-      url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-20240210.dict";
-      sha256 = "sha256-vNHS5n3TqSwpUx2wG26w7rK6jSqrvLANeG2n0vA4iYk=";
+      url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-20240426.dict";
+      sha256 = "sha256-SiiF4kvQpgjAFd3122WYy0ReJkVLUc93JVeFHIqc+jg=";
     };
   };
   golang_go = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1935";
+    version = "0.4.1936";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1935/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1935.zip";
-      sha256 = "sha256-cfGXMfYHW3kelO4O6cTp9+0X12ELOFl/cYE6vBDEXug=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1936/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1936.zip";
+      sha256 = "sha256-HwLbP7MCgrNj79E+MrHQMT6xkFnph7xLw+y1PYvuVOQ=";
     };
   };
   staticcheck = {
