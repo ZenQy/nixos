@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "KalalochTree_EN-US5565386489";
+    version = "LeucisticHummingbird_EN-US5796079642";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.KalalochTree_EN-US5565386489_UHD.jpg";
-      sha256 = "sha256-3AJT10G8xU+shp3KKtRyK2qxFhxCIBjUSgSdk9lOtqE=";
+      url = "https://www.bing.com/th?id=OHR.LeucisticHummingbird_EN-US5796079642_UHD.jpg";
+      sha256 = "sha256-1zNYeM0XOJYAHV0gPFtBSranITYrkCyIZoz4zQrc4uI=";
     };
   };
   code-server = {
@@ -130,15 +130,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "890616f52ae68756903654c39cfc9d71bf68beea";
+    version = "5c7652f0472f6593ce7675c1052033253329261c";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "890616f52ae68756903654c39cfc9d71bf68beea";
+      rev = "5c7652f0472f6593ce7675c1052033253329261c";
       fetchSubmodules = false;
-      sha256 = "sha256-NF2/XSjKeKGr4GLYYJ50Hoqr7pYRuFkvB/ioc4Eniy4=";
+      sha256 = "sha256-mF5WBYuGMTSZS/yN1rHqppj7BxImHET0n8WLi3fYj44=";
     };
-    date = "2024-04-18";
+    date = "2024-04-27";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1936";
+    version = "0.4.1937";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1936/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1936.zip";
-      sha256 = "sha256-HwLbP7MCgrNj79E+MrHQMT6xkFnph7xLw+y1PYvuVOQ=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1937/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1937.zip";
+      sha256 = "sha256-u4Cl9liCpaV/6GHl36ssU02l5DCYw2WmsDk3npKLKV0=";
     };
   };
   staticcheck = {
