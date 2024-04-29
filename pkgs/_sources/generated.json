@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1zNYeM0XOJYAHV0gPFtBSranITYrkCyIZoz4zQrc4uI=",
+            "sha256": "sha256-jybXyGD79cknpf1dmjLVx2cvfv0RmdKbJ58JOuB+BZs=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.LeucisticHummingbird_EN-US5796079642_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.TulouFujian_EN-US6009679228_UHD.jpg"
         },
-        "version": "LeucisticHummingbird_EN-US5796079642"
+        "version": "TulouFujian_EN-US6009679228"
     },
     "code-server": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1937.zip",
-            "sha256": "sha256-u4Cl9liCpaV/6GHl36ssU02l5DCYw2WmsDk3npKLKV0=",
+            "name": "rust-analyzer-0.4.1939.zip",
+            "sha256": "sha256-m9EYoT9TaCBsTR83v+5o8nLagSMuLWFIyB++5kT5NoM=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1937/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1939/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1937"
+        "version": "0.4.1939"
     },
     "staticcheck": {
         "cargoLocks": null,
