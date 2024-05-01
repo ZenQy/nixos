@@ -38,7 +38,7 @@
     hideMounts = true;
 
     directories = [
-      # "/home/nixos"
+      "/home/nixos"
       "/var/cache"
       "/var/lib"
       "/var/log"
@@ -48,28 +48,28 @@
       "/etc/machine-id"
     ];
 
-    users.nixos = {
-      directories = [
-        # 个人文件
-        "Desktop"
-        "Documents"
-        "Downloads"
-        "Music"
-        "Pictures"
-        "Videos"
-        "go"
+    # users.nixos = {
+    #   directories = [
+    #     # 个人文件
+    #     "Desktop"
+    #     "Documents"
+    #     "Downloads"
+    #     "Music"
+    #     "Pictures"
+    #     "Videos"
+    #     "go"
 
-        # 配置文件夹
-        ".cache"
-        ".config"
-        ".local"
-        ".mozilla"
-        ".ssh"
-      ];
-      files = [
-        ".bash_history"
-      ];
-    };
+    #     # 配置文件夹
+    #     ".cache"
+    #     ".config"
+    #     ".local"
+    #     ".mozilla"
+    #     ".ssh"
+    #   ];
+    #   files = [
+    #     ".bash_history"
+    #   ];
+    # };
   };
 
   systemd.services.nix-daemon = {

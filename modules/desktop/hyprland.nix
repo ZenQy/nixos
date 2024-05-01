@@ -15,7 +15,7 @@ with builtins;
 
   programs.hyprland = {
     enable = true;
-    xwayland.enable = true;
+    xwayland.enable = false;
   };
 
   environment.etc = {
@@ -96,7 +96,7 @@ with builtins;
       bindm = $mod, mouse:272, movewindow
       bindm = $mod, mouse:273, resizewindow
       bind = $mod, D, exec, ${pkgs.wofi}/bin/wofi -S run -s ${./dotfiles/wofi/style.css} | xargs swaymsg exec --
-      bind = $mod, Print, exec, grim -g "$(${pkgs.slurp}/bin/slurp)" $HOME/Pictures/$(date +"%F_%T").png
+      bind = $mod, Print, exec, ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp)" $HOME/Pictures/$(date +"%F_%T").png
     '' + concatStringsSep "\n" (genList
       (
         x:
