@@ -15,32 +15,32 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.33.0";
+    version = "v3.34.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.33.0";
+      rev = "v3.34.0";
       fetchSubmodules = false;
-      sha256 = "sha256-/Os8DndNtWvwIHQ1us7TPg16+WOpMFcntZv9wv4O1fU=";
+      sha256 = "sha256-LHkUqOpZk8GZPUis+oX077w8LY7lLwrLu4AO/NvLVeg=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.33.0";
+    version = "3.34.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "web-dist";
-      rev = "3.33.0";
+      rev = "3.34.0";
       fetchSubmodules = false;
-      sha256 = "sha256-0+sILKlaVmyNtM3MJv5Y++dF+j23aLpZfpGdrXU1Wus=";
+      sha256 = "sha256-pF2V2P2GTWP2RG2Oxle2yT0O4EsDsrUT4ggkq/auOZw=";
     };
   };
   bingimg = {
     pname = "bingimg";
-    version = "HawaiianLei_EN-US6290126556";
+    version = "CratersOfTheMoon_EN-US6516727783";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HawaiianLei_EN-US6290126556_UHD.jpg";
-      sha256 = "sha256-ytxvpKmRtLBSt4V30S91jpHdjDrDs7/5GSyhJSEQhMQ=";
+      url = "https://www.bing.com/th?id=OHR.CratersOfTheMoon_EN-US6516727783_UHD.jpg";
+      sha256 = "sha256-19FgGOp797IqmQHi4bYeI2qjzbR47uptBNGm28mmLSw=";
     };
   };
   code-server = {
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1943";
+    version = "0.4.1945";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1943/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1943.zip";
-      sha256 = "sha256-VfnnMJQfIGIRj0oVWKsYh71Y2daAbNml7Nxqh7aZh/c=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1945/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1945.zip";
+      sha256 = "sha256-ZFvaJtYEFfvHtUMHwjxem/c/9eZtYLoDFc1nSGOBwCE=";
     };
   };
   staticcheck = {
