@@ -10,6 +10,8 @@
       "gfx.webrender.compositor" = true;
       "gfx.webrender.compositor.force-enabled" = true;
       "media.hardware-video-decoding.force-enabled" = true;
+      "media.autoplay.default" = 0;
+      "browser.search.region" = "US";
     };
     policies = {
       Homepage = {
