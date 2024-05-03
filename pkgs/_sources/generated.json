@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-19FgGOp797IqmQHi4bYeI2qjzbR47uptBNGm28mmLSw=",
+            "sha256": "sha256-NxGEk4UssnK8tgaFxzcX7TpGcUE+oLWVwyIcRYjgDK0=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.CratersOfTheMoon_EN-US6516727783_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.SonoranSpring_EN-US9207877073_UHD.jpg"
         },
-        "version": "CratersOfTheMoon_EN-US6516727783"
+        "version": "SonoranSpring_EN-US9207877073"
     },
     "code-server": {
         "cargoLocks": null,
@@ -183,11 +183,11 @@
             "name": null,
             "owner": "j178",
             "repo": "leetgo",
-            "rev": "v1.4.5",
-            "sha256": "sha256-srJsuZ8Rb/RqTwaccOUUGMnsKJ/GdogUpFzxCbESEec=",
+            "rev": "v1.4.6",
+            "sha256": "sha256-f9rDqBTk9f0/ausq4U0Cbb2cOPs4+aP46DEKHeFfrDM=",
             "type": "github"
         },
-        "version": "v1.4.5"
+        "version": "v1.4.6"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -226,7 +226,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-04-27",
+        "date": "2024-05-03",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -238,11 +238,11 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "5c7652f0472f6593ce7675c1052033253329261c",
-            "sha256": "sha256-mF5WBYuGMTSZS/yN1rHqppj7BxImHET0n8WLi3fYj44=",
+            "rev": "25e7f8a912f98c3e3204767bcb3679a3b3f6617d",
+            "sha256": "sha256-stPbbD+ZmW3pHpWJlry41/pM8NT/5APQN3x9LFqYmxU=",
             "type": "github"
         },
-        "version": "5c7652f0472f6593ce7675c1052033253329261c"
+        "version": "25e7f8a912f98c3e3204767bcb3679a3b3f6617d"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1945.zip",
-            "sha256": "sha256-ZFvaJtYEFfvHtUMHwjxem/c/9eZtYLoDFc1nSGOBwCE=",
+            "name": "rust-analyzer-0.4.1946.zip",
+            "sha256": "sha256-+LZP2WOO/DeqQ+pKLyhNQvapgWfSHq0V0DN2RKKFsyU=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1945/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1946/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1945"
+        "version": "0.4.1946"
     },
     "staticcheck": {
         "cargoLocks": null,
