@@ -1,4 +1,4 @@
-{ config, lib, pkgs, secrets, ... }:
+{ config, lib, secrets, ... }:
 
 {
   services.nezha-agent = {
@@ -6,7 +6,7 @@
     server = secrets.nezha-agent.server;
     passwordFile =
       let
-        conf = pkgs.writeText "nezha-agent.conf"
+        conf = builtins.toFile "nezha-agent.conf"
           (config.networking.hostName + secrets.nezha-agent.password);
       in
       builtins.toString conf;

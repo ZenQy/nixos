@@ -135,30 +135,28 @@ let
           type = "trojan";
           server_port = 443;
           inherit (secrets.sing-box.trojan) password;
-          tls = { enabled = true; };
-          multiplex = {
-            enabled = true;
-          };
+          tls.enabled = true;
+          multiplex.enabled = true;
           transport = {
             type = "ws";
-            path = secrets.sing-box.trojan.path;
+            inherit (secrets.sing-box.trojan) path;
             max_early_data = 2048;
           };
         };
-        trojanList = tuicList ++ [ "natvps-ca" "natvps-jp" "natseek-us" "natseek-jp" ];
+        trojanList = [ "natvps-ca" "natvps-jp" "natseek-us" "natseek-jp" ];
       in
       map
         (tag: tuicSet // {
           inherit tag;
           server = "${tag}.${secrets.domain}";
         })
-        (map (tag: tag + "-tuic") tuicList) ++
+        tuicList ++
       map
         (tag: trojanSet // {
           inherit tag;
           server = "${tag}.${secrets.domain}";
         })
-        (map (tag: tag + "-trojan") trojanList) ++
+        trojanList ++
       [
         {
           tag = "proxy";
@@ -168,12 +166,12 @@ let
         {
           tag = "tuic";
           type = "selector";
-          outbounds = map (tag: tag + "-tuic") tuicList;
+          outbounds = tuicList;
         }
         {
           tag = "trojan";
           type = "selector";
-          outbounds = map (tag: tag + "-trojan") trojanList;
+          outbounds = trojanList;
         }
         {
           type = "direct";
@@ -197,7 +195,6 @@ let
       clash_api = {
         external_controller = "0.0.0.0:9090";
         external_ui = "${pkgs.Yacd-meta}";
-        secret = secrets.user.zenith.password;
       };
     };
   };

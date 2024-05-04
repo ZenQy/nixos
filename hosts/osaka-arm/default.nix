@@ -46,7 +46,7 @@
     caddy = {
       enable = true;
       extraConfig = ''
-        tz.${secrets.domain} {
+        s.${secrets.domain} {
         	reverse_proxy :${toString secrets.nezha-dashboard.httpport}
         }
 
@@ -54,8 +54,13 @@
         	reverse_proxy :${toString config.services.vaultwarden.config.ROCKET_PORT}
         }
 
-        code.${secrets.domain} {
+        x.${secrets.domain} {
         	reverse_proxy :${toString config.services.code-server.port}
+        }
+
+        t.${secrets.domain} {
+          root * ${pkgs.it-tools}/share/it-tools
+          file_server browse
         }
       '';
     };
