@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-NxGEk4UssnK8tgaFxzcX7TpGcUE+oLWVwyIcRYjgDK0=",
+            "sha256": "sha256-4pMwShNKCb1w4OBpCNvZXrFnW0ZTZhz9PTT4mcr75oM=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.SonoranSpring_EN-US9207877073_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.JediMonastery_EN-US9398447907_UHD.jpg"
         },
-        "version": "SonoranSpring_EN-US9207877073"
+        "version": "JediMonastery_EN-US9398447907"
     },
     "code-server": {
         "cargoLocks": null,
@@ -218,11 +218,11 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v0.16.5",
-            "sha256": "sha256-WRHYI3/6qrVZRa4ANA6VBBJCaINP1N8Xjy0GWO4LqgA=",
+            "rev": "v0.16.6",
+            "sha256": "sha256-+78WrkFMY2dfqU3ShmzQgR1ZgEKyb9COUjlIf695OM8=",
             "type": "github"
         },
-        "version": "v0.16.5"
+        "version": "v0.16.6"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
@@ -267,12 +267,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1946.zip",
-            "sha256": "sha256-+LZP2WOO/DeqQ+pKLyhNQvapgWfSHq0V0DN2RKKFsyU=",
+            "name": "rust-analyzer-0.4.1947.zip",
+            "sha256": "sha256-oij1bprQKr/91c0FxGAY20ThuI0HI72p54WJ8y+UI7I=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1946/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1947/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1946"
+        "version": "0.4.1947"
     },
     "staticcheck": {
         "cargoLocks": null,
