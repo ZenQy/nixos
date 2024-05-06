@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "JediMonastery_EN-US9398447907";
+    version = "TheRoachesPeakDistrict_EN-US9733115206";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.JediMonastery_EN-US9398447907_UHD.jpg";
-      sha256 = "sha256-4pMwShNKCb1w4OBpCNvZXrFnW0ZTZhz9PTT4mcr75oM=";
+      url = "https://www.bing.com/th?id=OHR.TheRoachesPeakDistrict_EN-US9733115206_UHD.jpg";
+      sha256 = "sha256-hx99KmOYBmADjsWWqMiXuKrY5GHCRl6nCWxEAUGNBdU=";
     };
   };
   code-server = {
@@ -130,15 +130,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "25e7f8a912f98c3e3204767bcb3679a3b3f6617d";
+    version = "3614ef381ea797af3c4638485882dd26fb36805f";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "25e7f8a912f98c3e3204767bcb3679a3b3f6617d";
+      rev = "3614ef381ea797af3c4638485882dd26fb36805f";
       fetchSubmodules = false;
-      sha256 = "sha256-stPbbD+ZmW3pHpWJlry41/pM8NT/5APQN3x9LFqYmxU=";
+      sha256 = "sha256-g4CmBTctTOHlW4lDPEaAwm6iHECqvKMtf5Pq4pG/cmA=";
     };
-    date = "2024-05-03";
+    date = "2024-05-05";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1947";
+    version = "0.4.1949";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1947/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1947.zip";
-      sha256 = "sha256-oij1bprQKr/91c0FxGAY20ThuI0HI72p54WJ8y+UI7I=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1949/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1949.zip";
+      sha256 = "sha256-POXYwuRIWbhJVHpp4WDBhs2fp63bVtcujXd2HcFAiEI=";
     };
   };
   staticcheck = {
