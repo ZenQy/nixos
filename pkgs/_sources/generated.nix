@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "TheRoachesPeakDistrict_EN-US9733115206";
+    version = "LittleDuckling_EN-US0447954247";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.TheRoachesPeakDistrict_EN-US9733115206_UHD.jpg";
-      sha256 = "sha256-hx99KmOYBmADjsWWqMiXuKrY5GHCRl6nCWxEAUGNBdU=";
+      url = "https://www.bing.com/th?id=OHR.LittleDuckling_EN-US0447954247_UHD.jpg";
+      sha256 = "sha256-YrHt8+RuhZZsYaTlZxn4SNDdeddM4K8WSpT4Hs9dz+M=";
     };
   };
   code-server = {
@@ -130,15 +130,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "3614ef381ea797af3c4638485882dd26fb36805f";
+    version = "5122d48dd821932229d2732ab8470b9c96464971";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "3614ef381ea797af3c4638485882dd26fb36805f";
+      rev = "5122d48dd821932229d2732ab8470b9c96464971";
       fetchSubmodules = false;
-      sha256 = "sha256-g4CmBTctTOHlW4lDPEaAwm6iHECqvKMtf5Pq4pG/cmA=";
+      sha256 = "sha256-TGb4xgOBtlNL5mj31wf5Lcce7ui8h+dCTJWjIvwcRxY=";
     };
-    date = "2024-05-05";
+    date = "2024-05-07";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -151,11 +151,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1949";
+    version = "0.4.1951";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1949/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1949.zip";
-      sha256 = "sha256-POXYwuRIWbhJVHpp4WDBhs2fp63bVtcujXd2HcFAiEI=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1951/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1951.zip";
+      sha256 = "sha256-7256dMxLEb5V+E642+emtACi7h1Lm5iP6/9WjIE5Sss=";
     };
   };
   staticcheck = {
