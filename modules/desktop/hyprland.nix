@@ -21,7 +21,7 @@ with builtins;
   environment.etc = {
     "xdg/hypr/hyprland.conf".text = ''
       $mod = SUPER
-      monitor=,preferred,auto,1.5
+      monitor=,preferred,auto,1.6
       exec-once = waybar & fcitx5
       env = XCURSOR_SIZE,36
       input {
