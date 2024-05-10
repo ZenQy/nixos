@@ -72,10 +72,10 @@ fetch.github = "j178/leetgo"
 # src.git = "https://github.com/nicejade/markdown-online-editor"
 # fetch.github = "nicejade/markdown-online-editor"
 
-[code-server]
-src.github_tag = "coder/code-server"
-src.prefix = "v"
-fetch.url = "https://github.com/coder/code-server/releases/download/v$ver/code-server-$ver-linux-arm64.tar.gz"
+# [code-server]
+# src.github_tag = "coder/code-server"
+# src.prefix = "v"
+# fetch.url = "https://github.com/coder/code-server/releases/download/v$ver/code-server-$ver-linux-arm64.tar.gz"
 
 [Yacd-meta]
 src.git = "https://github.com/MetaCubeX/Yacd-meta"
@@ -89,3 +89,8 @@ fetch.github = "alist-org/alist"
 [alist-web]
 src.github_tag = "alist-org/web-dist"
 fetch.github = "alist-org/web-dist"
+
+[it-tools]
+src.github = "CorentinTh/it-tools"
+src.prefix = "v"
+fetch.url = "https://github.com/CorentinTh/it-tools/releases/download/v$ver/it-tools-$ver.zip"
