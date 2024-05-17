@@ -68,26 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Z3sY1O0R9l9xKkm4lN6JbAKKlJv1f5Q0ulIpm9SGgoQ=",
+            "sha256": "sha256-AtM6VBT641XmeEYAkbWbRXXJbw8YjTjteyLD/SOdUZ4=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.PortMarseille_EN-US0558123049_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.TarangireElephants_EN-US8865263185_UHD.jpg"
         },
-        "version": "PortMarseille_EN-US0558123049"
-    },
-    "code-server": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "code-server",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-T2+BT+cpTu6q99B4vOKo6PWu4Lse1FzIF8+nMI7x9+s=",
-            "type": "url",
-            "url": "https://github.com/coder/code-server/releases/download/v4.89.0-rc.1/code-server-4.89.0-rc.1-linux-arm64.tar.gz"
-        },
-        "version": "4.89.0-rc.1"
+        "version": "TarangireElephants_EN-US8865263185"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -133,11 +118,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-SiiF4kvQpgjAFd3122WYy0ReJkVLUc93JVeFHIqc+jg=",
+            "sha256": "sha256-uRpKPq+/xJ8akKB8ol/JRF79VfDIQ8L4SxLDXzpfPxg=",
             "type": "url",
-            "url": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-20240426.dict"
+            "url": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.5/zhwiki-20240509.dict"
         },
-        "version": "20240426"
+        "version": "20240509"
     },
     "golang_go": {
         "cargoLocks": null,
@@ -153,6 +138,21 @@
             "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
         "version": "0.41.4"
+    },
+    "it-tools": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "it-tools",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-nqcSx/7BdmOtib/q+XZHe2ENC54dcTpgVsFQaaySZJM=",
+            "type": "url",
+            "url": "https://github.com/CorentinTh/it-tools/releases/download/v2024.5.13-a0bc346/it-tools-2024.5.13-a0bc346.zip"
+        },
+        "version": "2024.5.13-a0bc346"
     },
     "jnoortheen_nix-ide": {
         "cargoLocks": null,
@@ -183,11 +183,11 @@
             "name": null,
             "owner": "j178",
             "repo": "leetgo",
-            "rev": "v1.4.6",
-            "sha256": "sha256-f9rDqBTk9f0/ausq4U0Cbb2cOPs4+aP46DEKHeFfrDM=",
+            "rev": "v1.4.7",
+            "sha256": "sha256-K/PaQakX0ZLu2Uh906kZ4p8J+GV7ewAeSVFMMQiKYBA=",
             "type": "github"
         },
-        "version": "v1.4.6"
+        "version": "v1.4.7"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -203,26 +203,6 @@
             "url": "https://mhutchie.gallery.vsassets.io/_apis/public/gallery/publisher/mhutchie/extension/git-graph/1.30.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
         "version": "1.30.0"
-    },
-    "nezha-agent": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "nezha-agent",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "nezhahq",
-            "repo": "agent",
-            "rev": "v0.16.6",
-            "sha256": "sha256-+78WrkFMY2dfqU3ShmzQgR1ZgEKyb9COUjlIf695OM8=",
-            "type": "github"
-        },
-        "version": "v0.16.6"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
@@ -252,12 +232,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.1.0.zip",
-            "sha256": "sha256-UuCYYRR0TDfn2DBznpidHeO3ROc/AVgnf7OYcTLeTDI=",
+            "name": "material-icon-theme-5.3.0.zip",
+            "sha256": "sha256-SCiRpqoUy+TKkiOrhjL5dPvYCMlxnEaVUb0Cjiu3674=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.1.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.3.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.1.0"
+        "version": "5.3.0"
     },
     "rust-lang_rust-analyzer": {
         "cargoLocks": null,
@@ -267,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1952.zip",
-            "sha256": "sha256-tK6+RhZ3iR+MXgc2qC4SjTKQu0Hi7RC1A1e1epiL6GE=",
+            "name": "rust-analyzer-0.4.1960.zip",
+            "sha256": "sha256-Fx3lrCJoVCWsKvYlyM23+koyPRKEqWcOFoCBTE0NTwQ=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1952/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1960/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1952"
+        "version": "0.4.1960"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -332,11 +312,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "volar-2.0.16.zip",
-            "sha256": "sha256-RTBbF7qahYP4L7SZ/5aCM/e5crZAyyPRcgL48FVL1jk=",
+            "name": "volar-2.0.19.zip",
+            "sha256": "sha256-QfXJtV0OOpaBXHsENQD7he13JjqBQksMUAmQ5HBv4TQ=",
             "type": "url",
-            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.16/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.19/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "2.0.16"
+        "version": "2.0.19"
     }
 }
