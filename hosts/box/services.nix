@@ -92,11 +92,19 @@
     };
   };
 
+  services.cron.systemCronJobs = [
+    "0 2 * * *  nixos  ${pkgs.wget}/bin/wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6Plus.m3u -o /storage/ipv6Plus.m3u"
+  ];
+
   services.caddy = {
     enable = true;
     extraConfig = ''
       http://10.0.0.11:6868 {
         root * ${pkgs.ariang}/share/ariang
+        file_server browse
+      }
+      http://10.0.0.11:8080 {
+        root * /storage
         file_server browse
       }
       10.0.0.11 {
