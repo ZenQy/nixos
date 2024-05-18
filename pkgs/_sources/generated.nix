@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "TarangireElephants_EN-US8865263185";
+    version = "MuseumWhale_EN-US2412212162";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.TarangireElephants_EN-US8865263185_UHD.jpg";
-      sha256 = "sha256-AtM6VBT641XmeEYAkbWbRXXJbw8YjTjteyLD/SOdUZ4=";
+      url = "https://www.bing.com/th?id=OHR.MuseumWhale_EN-US2412212162_UHD.jpg";
+      sha256 = "sha256-/DvaGx22u5wQ+09TFhKdLRvWis4rillrwtVh5aOxLvk=";
     };
   };
   dbaeumer_vscode-eslint = {
