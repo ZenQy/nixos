@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MuseumWhale_EN-US2412212162";
+    version = "HoneycombBee_EN-US2941694554";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MuseumWhale_EN-US2412212162_UHD.jpg";
-      sha256 = "sha256-/DvaGx22u5wQ+09TFhKdLRvWis4rillrwtVh5aOxLvk=";
+      url = "https://www.bing.com/th?id=OHR.HoneycombBee_EN-US2941694554_UHD.jpg";
+      sha256 = "sha256-z021+wXQXFr8hik9TxtK2tfbp+wH4q3/o5FqiPnEnqg=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "5122d48dd821932229d2732ab8470b9c96464971";
+    version = "f5ca66d924a8fe6682d0f48cfd28f6a946b7b39a";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "5122d48dd821932229d2732ab8470b9c96464971";
+      rev = "f5ca66d924a8fe6682d0f48cfd28f6a946b7b39a";
       fetchSubmodules = false;
-      sha256 = "sha256-TGb4xgOBtlNL5mj31wf5Lcce7ui8h+dCTJWjIvwcRxY=";
+      sha256 = "sha256-2H2s5S8c2/Rwf4GHBuvD/xdnQBO+BapPtQg1TeFOX+I=";
     };
-    date = "2024-05-07";
+    date = "2024-05-19";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -144,7 +144,7 @@
     src = fetchurl {
       url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1960/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "rust-analyzer-0.4.1960.zip";
-      sha256 = "sha256-YxFopB6FQfYOuyhCHnQ1Fax4byEV3Ew7u8mu9H+noAI=";
+      sha256 = "sha256-Fx3lrCJoVCWsKvYlyM23+koyPRKEqWcOFoCBTE0NTwQ=";
     };
   };
   staticcheck = {
