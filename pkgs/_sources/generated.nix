@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "HoneycombBee_EN-US2941694554";
+    version = "MalaysiaTea_EN-US3322214623";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HoneycombBee_EN-US2941694554_UHD.jpg";
-      sha256 = "sha256-z021+wXQXFr8hik9TxtK2tfbp+wH4q3/o5FqiPnEnqg=";
+      url = "https://www.bing.com/th?id=OHR.MalaysiaTea_EN-US3322214623_UHD.jpg";
+      sha256 = "sha256-sdHXT+YvJSsLWWWFYpNyvp8UGIdh0KGrtQO/vRwjXeE=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "f5ca66d924a8fe6682d0f48cfd28f6a946b7b39a";
+    version = "1749247aebd1a71967509eb0b08fedb1d7020636";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "f5ca66d924a8fe6682d0f48cfd28f6a946b7b39a";
+      rev = "1749247aebd1a71967509eb0b08fedb1d7020636";
       fetchSubmodules = false;
-      sha256 = "sha256-2H2s5S8c2/Rwf4GHBuvD/xdnQBO+BapPtQg1TeFOX+I=";
+      sha256 = "sha256-i2eIhI9r2g3EquB9gL054y/EMetLibQKaXqg7CmO0xA=";
     };
-    date = "2024-05-19";
+    date = "2024-05-21";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";

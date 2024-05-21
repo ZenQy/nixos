@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-z021+wXQXFr8hik9TxtK2tfbp+wH4q3/o5FqiPnEnqg=",
+            "sha256": "sha256-sdHXT+YvJSsLWWWFYpNyvp8UGIdh0KGrtQO/vRwjXeE=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.HoneycombBee_EN-US2941694554_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MalaysiaTea_EN-US3322214623_UHD.jpg"
         },
-        "version": "HoneycombBee_EN-US2941694554"
+        "version": "MalaysiaTea_EN-US3322214623"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -206,7 +206,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-05-19",
+        "date": "2024-05-21",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -218,11 +218,11 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "f5ca66d924a8fe6682d0f48cfd28f6a946b7b39a",
-            "sha256": "sha256-2H2s5S8c2/Rwf4GHBuvD/xdnQBO+BapPtQg1TeFOX+I=",
+            "rev": "1749247aebd1a71967509eb0b08fedb1d7020636",
+            "sha256": "sha256-i2eIhI9r2g3EquB9gL054y/EMetLibQKaXqg7CmO0xA=",
             "type": "github"
         },
-        "version": "f5ca66d924a8fe6682d0f48cfd28f6a946b7b39a"
+        "version": "1749247aebd1a71967509eb0b08fedb1d7020636"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
