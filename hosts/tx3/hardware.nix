@@ -21,6 +21,7 @@
     extraModulePackages = [ ];
     loader.grub.enable = false;
     loader.generic-extlinux-compatible.enable = true;
+    loader.generic-extlinux-compatible.configurationLimit = 2; 
     # kernelPackages = pkgs.linuxPackages_latest;
     kernelParams = [
       "audit=0"

@@ -175,6 +175,7 @@
     # python3
     # python3Packages.pip
 
+    # niri
   ];
 
   xdg.mime = {
