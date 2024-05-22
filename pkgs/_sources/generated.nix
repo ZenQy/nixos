@@ -37,19 +37,19 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MalaysiaTea_EN-US3322214623";
+    version = "SnowGumTasmania_EN-US4058572259";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MalaysiaTea_EN-US3322214623_UHD.jpg";
-      sha256 = "sha256-sdHXT+YvJSsLWWWFYpNyvp8UGIdh0KGrtQO/vRwjXeE=";
+      url = "https://www.bing.com/th?id=OHR.SnowGumTasmania_EN-US4058572259_UHD.jpg";
+      sha256 = "sha256-Uh15FLlzuTfXI86Gd42gbYSXh9tAxIbG2qaLCyehkx4=";
     };
   };
   dbaeumer_vscode-eslint = {
     pname = "dbaeumer_vscode-eslint";
-    version = "3.0.5";
+    version = "3.0.7";
     src = fetchurl {
-      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.5/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "vscode-eslint-3.0.5.zip";
-      sha256 = "sha256-qXePnmM3gLPcry/5g3auhvoBUDTDRYZynviwEkN8s7I=";
+      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.7/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "vscode-eslint-3.0.7.zip";
+      sha256 = "sha256-PirVZb6yaNvBdmJYXY6iGYEuHOiVkYH5LHTVfSUqMQ4=";
     };
   };
   dlv-dap = {
@@ -140,11 +140,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1960";
+    version = "0.4.1969";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1960/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1960.zip";
-      sha256 = "sha256-Fx3lrCJoVCWsKvYlyM23+koyPRKEqWcOFoCBTE0NTwQ=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1969/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1969.zip";
+      sha256 = "sha256-h2G+btfo7RzexiezOYBfa728Su/crxRwOeyq0l86r8A=";
     };
   };
   staticcheck = {
