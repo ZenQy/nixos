@@ -15,32 +15,32 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.34.0";
+    version = "v3.35.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.34.0";
+      rev = "v3.35.0";
       fetchSubmodules = false;
-      sha256 = "sha256-LHkUqOpZk8GZPUis+oX077w8LY7lLwrLu4AO/NvLVeg=";
+      sha256 = "sha256-N9WgaPzc8cuDN7N0Ny3t6ARGla0lCluzF2Mut3Pg880=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.34.0";
+    version = "3.35.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "web-dist";
-      rev = "3.34.0";
+      rev = "3.35.0";
       fetchSubmodules = false;
-      sha256 = "sha256-pF2V2P2GTWP2RG2Oxle2yT0O4EsDsrUT4ggkq/auOZw=";
+      sha256 = "sha256-DGUTyPhzjV5aqKBhl+UIas/epiiqPdmIUqn1uGLDAyo=";
     };
   };
   bingimg = {
     pname = "bingimg";
-    version = "SnowGumTasmania_EN-US4058572259";
+    version = "IndianStarTortoise_EN-US4160827746";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SnowGumTasmania_EN-US4058572259_UHD.jpg";
-      sha256 = "sha256-Uh15FLlzuTfXI86Gd42gbYSXh9tAxIbG2qaLCyehkx4=";
+      url = "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_UHD.jpg";
+      sha256 = "sha256-8vZfOg9+n/T/2O3ONe90rOMncn6RNSDsnCcvj26kIHM=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -140,11 +140,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1969";
+    version = "0.4.1970";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1969/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1969.zip";
-      sha256 = "sha256-h2G+btfo7RzexiezOYBfa728Su/crxRwOeyq0l86r8A=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1970/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1970.zip";
+      sha256 = "sha256-hh7gAgW8iDbuCgvYrl6yR2iXtfp7jcniyOhxBTDIuBM=";
     };
   };
   staticcheck = {
