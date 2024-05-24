@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8vZfOg9+n/T/2O3ONe90rOMncn6RNSDsnCcvj26kIHM=",
+            "sha256": "sha256-Y7TUGGuxqdv3A5fONnNxFu9H4Y3eCcXUKRbQH7yAKCE=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.OrdesaNationalPark_EN-US4779461538_UHD.jpg"
         },
-        "version": "IndianStarTortoise_EN-US4160827746"
+        "version": "OrdesaNationalPark_EN-US4779461538"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1970.zip",
-            "sha256": "sha256-hh7gAgW8iDbuCgvYrl6yR2iXtfp7jcniyOhxBTDIuBM=",
+            "name": "rust-analyzer-0.4.1971.zip",
+            "sha256": "sha256-ledWBDfzB+nvyoQQDkRhPbRWoMN0vRRj4MbqXrg6e9M=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1970/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1971/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1970"
+        "version": "0.4.1971"
     },
     "staticcheck": {
         "cargoLocks": null,
