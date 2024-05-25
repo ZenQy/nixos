@@ -59,6 +59,7 @@
             osaka-1 = s;
             osaka-2 = s;
             osaka-arm = s;
+            crbs = s;
             rock-5b = s;
             tx3 = s;
           };

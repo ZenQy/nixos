@@ -93,7 +93,7 @@
   };
 
   services.cron.systemCronJobs = [
-    "0 2 * * *  nixos  ${pkgs.wget}/bin/wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6Plus.m3u -o /storage/ipv6Plus.m3u"
+    "0 2 * * *  nixos  ${pkgs.curl}/bin/curl https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6Plus.m3u -o /storage/ipv6Plus.m3u"
   ];
 
   services.caddy = {

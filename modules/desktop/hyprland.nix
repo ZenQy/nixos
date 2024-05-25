@@ -23,7 +23,7 @@ with builtins;
       $mod = SUPER
       monitor=,preferred,auto,1.6
       exec-once = waybar & fcitx5
-      env = XCURSOR_SIZE,36
+      env = XCURSOR_SIZE,48
       input {
           numlock_by_default = true
       }
@@ -95,7 +95,7 @@ with builtins;
       bind = $mod, mouse_up, workspace, e-1
       bindm = $mod, mouse:272, movewindow
       bindm = $mod, mouse:273, resizewindow
-      bind = $mod, D, exec, ${pkgs.wofi}/bin/wofi -S run -s ${./dotfiles/wofi/style.css} | xargs swaymsg exec --
+      bind = $mod, D, exec, ${pkgs.fuzzel}/bin/fuzzel
       bind = $mod, Print, exec, ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp)" $HOME/Pictures/$(date +"%F_%T").png
     '' + concatStringsSep "\n" (genList
       (
