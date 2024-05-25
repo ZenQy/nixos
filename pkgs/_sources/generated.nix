@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "OrdesaNationalPark_EN-US4779461538";
+    version = "MoroccoBenhaddou_EN-US4848616753";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.OrdesaNationalPark_EN-US4779461538_UHD.jpg";
-      sha256 = "sha256-Y7TUGGuxqdv3A5fONnNxFu9H4Y3eCcXUKRbQH7yAKCE=";
+      url = "https://www.bing.com/th?id=OHR.MoroccoBenhaddou_EN-US4848616753_UHD.jpg";
+      sha256 = "sha256-PgjKNA0cQq+8XVdMJgaebH0vMvuDEYQOMmJyUvZwbJM=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -140,11 +140,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.1971";
+    version = "0.4.1972";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1971/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.1971.zip";
-      sha256 = "sha256-ledWBDfzB+nvyoQQDkRhPbRWoMN0vRRj4MbqXrg6e9M=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1972/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.1972.zip";
+      sha256 = "sha256-NYrsen3xarXpY5zd56zxpl7KJg27xZp/vo2pjxqwrco=";
     };
   };
   staticcheck = {
