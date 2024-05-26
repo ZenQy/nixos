@@ -8,30 +8,21 @@
     (modulesPath + "/profiles/qemu-guest.nix")
   ];
 
-  boot.initrd.availableKernelModules = [ "ahci" "virtio_pci" "virtio_scsi" "xhci_pci" ];
+  boot.initrd.availableKernelModules = [ "ahci" "virtio_pci" "virtio_scsi" "xhci_pci" "sd_mod" "sr_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-label/cloudimg-rootfs";
-    fsType = "ext4";
+    device = "/dev/disk/by-label/NixOS";
+    fsType = "btrfs";
   };
 
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-label/UEFI";
-    fsType = "vfat";
-  };
+  swapDevices =
+    [{ device = "/dev/disk/by-label/SWAP"; }];
 
-  swapDevices = [ ];
-
-  boot.loader = {
-    efi.canTouchEfiVariables = false;
-    systemd-boot = {
-      configurationLimit = 1;
-      consoleMode = "auto";
-      enable = true;
-    };
-    timeout = 1;
+  boot.loader.grub = {
+    enable = true;
+    device = "/dev/sda";
   };
 }
