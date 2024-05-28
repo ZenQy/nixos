@@ -86,6 +86,10 @@ let
             ".cn"
             "msftconnecttest.com"
           ];
+          ip_is_private = true;
+          ip_cidr = [
+            secrets.nezha-agent.server
+          ];
           outbound = "direct";
         }
         {
@@ -94,7 +98,6 @@ let
         }
         {
           rule_set = "geoip-cn";
-          ip_is_private = true;
           outbound = "direct";
         }
       ];

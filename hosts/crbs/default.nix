@@ -1,4 +1,4 @@
-{ secrets, ... }:
+{ pkgs, secrets, ... }:
 
 {
   imports = [
@@ -20,4 +20,8 @@
     ];
   };
 
+  zenith.cachix.enable = true;
+  environment.systemPackages = with pkgs; [
+    nvfetcher
+  ];
 }
