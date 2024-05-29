@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MeteoraMonastery_EN-US5286293282";
+    version = "MullOtter_EN-US5451978021";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MeteoraMonastery_EN-US5286293282_UHD.jpg";
-      sha256 = "sha256-MF5I5TRaTIq+jZiBZ4wkUm1+0KtOawcLu/NmqOzvkog=";
+      url = "https://www.bing.com/th?id=OHR.MullOtter_EN-US5451978021_UHD.jpg";
+      sha256 = "sha256-Ec4K8FWIjN9ZcQpPLFrO1lc51bMQjVsoWQcrZV9DSoI=";
     };
   };
   dbaeumer_vscode-eslint = {
