@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1cYYl3QXu2mafcQO76UY1uy4E6mtQm4oRg0GW+YIrSk=",
+            "sha256": "sha256-USygmsQvwIP6vYSEi7CeGlTugipsNARcu5551WPplwY=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.Everglades90th_EN-US5663293086_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.YorkshireDalesNP_EN-US6104560581_UHD.jpg"
         },
-        "version": "Everglades90th_EN-US5663293086"
+        "version": "YorkshireDalesNP_EN-US6104560581"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -206,7 +206,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-05-21",
+        "date": "2024-05-31",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -218,11 +218,11 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "1749247aebd1a71967509eb0b08fedb1d7020636",
-            "sha256": "sha256-i2eIhI9r2g3EquB9gL054y/EMetLibQKaXqg7CmO0xA=",
+            "rev": "3782c0dcaf2ae7c21a8c64a06edf8f9df60a6dcc",
+            "sha256": "sha256-ihXcXJWdm7GN43avxriCwHOYTQGq6fUT94rYcCrHDmQ=",
             "type": "github"
         },
-        "version": "1749247aebd1a71967509eb0b08fedb1d7020636"
+        "version": "3782c0dcaf2ae7c21a8c64a06edf8f9df60a6dcc"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1978.zip",
-            "sha256": "sha256-mtM73U4rzXh2R60EJ86TuA6a3rja9I8gkuYjYfuf+UE=",
+            "name": "rust-analyzer-0.4.1979.zip",
+            "sha256": "sha256-Rhm74+WB8e+zM1DQcwhRYy17mNIlaVgM0B2CljRcNGc=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1978/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1979/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1978"
+        "version": "0.4.1979"
     },
     "staticcheck": {
         "cargoLocks": null,
