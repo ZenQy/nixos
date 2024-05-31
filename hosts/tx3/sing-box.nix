@@ -30,6 +30,7 @@ let
           domain_suffix = [
             ".cn"
             "msftconnecttest.com"
+            "blizzard.com"
           ];
           server = "dns_direct";
         }
@@ -85,6 +86,7 @@ let
           domain_suffix = [
             ".cn"
             "msftconnecttest.com"
+            "blizzard.com"
           ];
           ip_is_private = true;
           ip_cidr = [

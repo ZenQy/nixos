@@ -21,12 +21,12 @@
     extraModulePackages = [ ];
     loader.grub.enable = false;
     loader.generic-extlinux-compatible.enable = true;
-    loader.generic-extlinux-compatible.configurationLimit = 2; 
+    loader.generic-extlinux-compatible.configurationLimit = 2;
     # kernelPackages = pkgs.linuxPackages_latest;
     kernelParams = [
       "audit=0"
       "net.ifnames=0"
-
+      "ipv6.disable=1"
       "consoleblank=0"
       "console=ttyAML0,115200n8"
       "console=tty0"
