@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "YorkshireDalesNP_EN-US6104560581";
+    version = "PrideMonthSF_EN-US6251373281";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.YorkshireDalesNP_EN-US6104560581_UHD.jpg";
-      sha256 = "sha256-USygmsQvwIP6vYSEi7CeGlTugipsNARcu5551WPplwY=";
+      url = "https://www.bing.com/th?id=OHR.PrideMonthSF_EN-US6251373281_UHD.jpg";
+      sha256 = "sha256-CHggU2UOL39z3mxGVDcy+4iZBCF8YCCf6tItBz0MQCs=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "3782c0dcaf2ae7c21a8c64a06edf8f9df60a6dcc";
+    version = "f30969e946c60b382ab46d8bc13498eb7a027485";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "3782c0dcaf2ae7c21a8c64a06edf8f9df60a6dcc";
+      rev = "f30969e946c60b382ab46d8bc13498eb7a027485";
       fetchSubmodules = false;
-      sha256 = "sha256-ihXcXJWdm7GN43avxriCwHOYTQGq6fUT94rYcCrHDmQ=";
+      sha256 = "sha256-dUgN+IHF1uTnaB3+S60Vchl7vYYCXhcCTFj6JjXem5Q=";
     };
-    date = "2024-05-31";
+    date = "2024-06-01";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -144,7 +144,7 @@
     src = fetchurl {
       url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1980/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "rust-analyzer-0.4.1980.zip";
-      sha256 = "sha256-f8ra3Ge7BL9wjp34xknuWqzXmr/UfXGhSHoX1NiUKz8=";
+      sha256 = "sha256-6jFY//shIKcLF92UBPOxMT8nWE9SggSe83AEk6UCvPM=";
     };
   };
   staticcheck = {
