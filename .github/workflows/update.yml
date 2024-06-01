@@ -146,7 +146,8 @@ jobs:
 
       - name: build package
         run: |
-          nix build .#${{ matrix.pkgs }}
+          nix build .#packages.x86_64-linux.${{ matrix.pkgs }}
+          nix build .#packages.aarch64-linux.${{ matrix.pkgs }}
 
       - name: Telegram notification
         if: failure()
