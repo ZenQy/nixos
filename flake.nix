@@ -52,7 +52,6 @@
           hosts = {
             hp = d;
             beelink = d;
-            asus = s;
             cc = s;
             tokyo-1 = s;
             tokyo-2 = s;

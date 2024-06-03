@@ -135,7 +135,7 @@ let
           tls = { enabled = true; alpn = [ "h3" ]; };
           tcp_fast_open = true;
         };
-        tuicList = [ "cc" "tokyo-1" "tokyo-2" "osaka-1" "osaka-2" ];
+        tuicList = [ "cc" "tokyo-1" "tokyo-2" "osaka-1" "osaka-2" "crbs" ];
         trojanSet = {
           type = "trojan";
           server_port = 443;

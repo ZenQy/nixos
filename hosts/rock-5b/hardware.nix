@@ -4,27 +4,30 @@
 { modulesPath, ... }:
 
 {
-  imports =
-    [
-      (modulesPath + "/installer/scan/not-detected.nix")
-    ];
+  imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
+  ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "usb_storage" "usbhid" "sd_mod" ];
-  boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ ];
-  boot.extraModulePackages = [ ];
+  nixpkgs.hostPlatform.system = "aarch64-linux";
+  boot = {
+    initrd.availableKernelModules = [ "nvme" "sd_mod" ];
+    initrd.kernelModules = [ ];
+    kernelModules = [ ];
+    kernelParams = [ ];
+    extraModulePackages = [ ];
+  };
 
-  fileSystems."/" =
-    {
-      device = "/dev/disk/by-label/NixOS";
-      fsType = "btrfs";
-    };
+  fileSystems."/" = {
+    device = "/dev/disk/by-label/ROOTFS";
+    fsType = "btrfs";
+    options = [ "compress-force=zstd" "nosuid" "nodev" ];
+  };
 
-  fileSystems."/boot" =
-    {
-      device = "/dev/disk/by-label/BOOT";
-      fsType = "vfat";
-    };
+  fileSystems."/boot" = {
+    device = "/dev/disk/by-label/EFI";
+    fsType = "vfat";
+    options = [ "umask=0077" ];
+  };
 
   swapDevices = [ ];
   boot.loader = {
