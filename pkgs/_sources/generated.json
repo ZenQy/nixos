@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-KckFsxjMI+PThDXXtScOitwoN2dXKmtl5MCKmVjfFmU=",
+            "sha256": "sha256-CiHc/sLoQykTg2ZQ2Wx3xbVTEGfTv2EE5UQEsrQDRUA=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.CopenhagenBicycles_EN-US6431027482_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ChestnutBeeEater_EN-US6538566329_UHD.jpg"
         },
-        "version": "CopenhagenBicycles_EN-US6431027482"
+        "version": "ChestnutBeeEater_EN-US6538566329"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1982.zip",
-            "sha256": "sha256-YHZSNO3/O0E5JyCiijYbGYZYk7f55KxcAZy9jmN7d/Q=",
+            "name": "rust-analyzer-0.4.1984.zip",
+            "sha256": "sha256-fXK1s0NvoRBWwueKDM7PvQVj9w/xuIi9kl64oFltx7k=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1982/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1984/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1982"
+        "version": "0.4.1984"
     },
     "staticcheck": {
         "cargoLocks": null,
