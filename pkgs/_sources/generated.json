@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-kczB4yVHx4btJTF0onInnyX/UBE8hTouybjJu5aUF7Q=",
+            "sha256": "sha256-0ZmMnU2Ms5HTpwbQWqTMfMssJ+6H8VyD3zF7WIUNDqU=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.MadagascarRiver_EN-US6642458773_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.LesBravesNormandy_EN-US6707866678_UHD.jpg"
         },
-        "version": "MadagascarRiver_EN-US6642458773"
+        "version": "LesBravesNormandy_EN-US6707866678"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.1985.zip",
-            "sha256": "sha256-OeQ8X0lMxlcPvn/mx1GySyd/LoGgQJ55eaad7JCKnYU=",
+            "name": "rust-analyzer-0.4.1986.zip",
+            "sha256": "sha256-my+0hIkN1/vgply0QsU6GaDS/17rJC0/Pd/BcxynYTU=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1985/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1986/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.1985"
+        "version": "0.4.1986"
     },
     "staticcheck": {
         "cargoLocks": null,
