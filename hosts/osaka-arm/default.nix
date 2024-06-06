@@ -34,10 +34,6 @@
         dlv-dap
         staticcheck
 
-        cargo
-        rustc
-        rustfmt
-
         gcc
         leetgo
       ];

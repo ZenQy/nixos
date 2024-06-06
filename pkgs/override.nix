@@ -18,7 +18,6 @@ final: prev:
       pkief_material-icon-theme
       jnoortheen_nix-ide
       # github_vscode-github-actions
-      rust-lang_rust-analyzer
       tamasfe_even-better-toml
       usernamehw_errorlens
     ];

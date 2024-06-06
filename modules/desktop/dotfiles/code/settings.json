@@ -56,6 +56,5 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "extensions.autoCheckUpdates": false,
-  "extensions.autoUpdate": false,
-  "rust-analyzer.server.path": "rust-analyzer"
+  "extensions.autoUpdate": false
 }

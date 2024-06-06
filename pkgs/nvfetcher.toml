@@ -43,10 +43,6 @@ fetch.vsmarketplace = "mhutchie.git-graph"
 src.vsmarketplace = "jnoortheen.nix-ide"
 fetch.vsmarketplace = "jnoortheen.nix-ide"
 
-[rust-lang_rust-analyzer]
-src.vsmarketplace = "rust-lang.rust-analyzer"
-fetch.vsmarketplace = "rust-lang.rust-analyzer"
-
 [usernamehw_errorlens]
 src.vsmarketplace = "usernamehw.errorlens"
 fetch.vsmarketplace = "usernamehw.errorlens"

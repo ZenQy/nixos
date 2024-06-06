@@ -137,11 +137,6 @@
     staticcheck
     leetgo
     gcc
-    ## Rust ##
-    cargo
-    rustc
-    rustfmt
-    rust-analyzer
     ## Nix ##
     nil
     nixpkgs-fmt
