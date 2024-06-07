@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-0ZmMnU2Ms5HTpwbQWqTMfMssJ+6H8VyD3zF7WIUNDqU=",
+            "sha256": "sha256-Ai4/A7R/LEg+E+jhbIkULcZyFTl+gfstHioXS4AWo/4=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.LesBravesNormandy_EN-US6707866678_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.HumpbackFamily_EN-US6789097648_UHD.jpg"
         },
-        "version": "LesBravesNormandy_EN-US6707866678"
+        "version": "HumpbackFamily_EN-US6789097648"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -238,21 +238,6 @@
             "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.3.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
         "version": "5.3.0"
-    },
-    "rust-lang_rust-analyzer": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "rust-lang_rust-analyzer",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": "rust-analyzer-0.4.1986.zip",
-            "sha256": "sha256-my+0hIkN1/vgply0QsU6GaDS/17rJC0/Pd/BcxynYTU=",
-            "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.1986/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
-        },
-        "version": "0.4.1986"
     },
     "staticcheck": {
         "cargoLocks": null,
