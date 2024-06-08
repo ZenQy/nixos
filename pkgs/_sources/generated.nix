@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "HumpbackFamily_EN-US6789097648";
+    version = "KillikRiverAlaska_EN-US6860539516";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HumpbackFamily_EN-US6789097648_UHD.jpg";
-      sha256 = "sha256-Ai4/A7R/LEg+E+jhbIkULcZyFTl+gfstHioXS4AWo/4=";
+      url = "https://www.bing.com/th?id=OHR.KillikRiverAlaska_EN-US6860539516_UHD.jpg";
+      sha256 = "sha256-Fzk496oLcPZPvqh1q/w3jnKIRdQ37jhAHAu6zU97oXs=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -169,11 +169,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.0.19";
+    version = "2.0.21";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.19/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.0.19.zip";
-      sha256 = "sha256-QfXJtV0OOpaBXHsENQD7he13JjqBQksMUAmQ5HBv4TQ=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.21/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.0.21.zip";
+      sha256 = "sha256-7GyCilXKo4YEuHxZJmglLKeS+67vSLem8aO4+NKLD5U=";
     };
   };
 }
