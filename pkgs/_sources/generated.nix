@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "KillikRiverAlaska_EN-US6860539516";
+    version = "OsakaNight_EN-US7022302235";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.KillikRiverAlaska_EN-US6860539516_UHD.jpg";
-      sha256 = "sha256-Fzk496oLcPZPvqh1q/w3jnKIRdQ37jhAHAu6zU97oXs=";
+      url = "https://www.bing.com/th?id=OHR.OsakaNight_EN-US7022302235_UHD.jpg";
+      sha256 = "sha256-W89QP3dxWJyXRnvzo7U0YIAw+jdvf88aEqMiVHdKNYI=";
     };
   };
   dbaeumer_vscode-eslint = {

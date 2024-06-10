@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Fzk496oLcPZPvqh1q/w3jnKIRdQ37jhAHAu6zU97oXs=",
+            "sha256": "sha256-W89QP3dxWJyXRnvzo7U0YIAw+jdvf88aEqMiVHdKNYI=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.KillikRiverAlaska_EN-US6860539516_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.OsakaNight_EN-US7022302235_UHD.jpg"
         },
-        "version": "KillikRiverAlaska_EN-US6860539516"
+        "version": "OsakaNight_EN-US7022302235"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
