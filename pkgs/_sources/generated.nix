@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "OsakaNight_EN-US7022302235";
+    version = "GemsbokBotswana_EN-US7126985499";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.OsakaNight_EN-US7022302235_UHD.jpg";
-      sha256 = "sha256-W89QP3dxWJyXRnvzo7U0YIAw+jdvf88aEqMiVHdKNYI=";
+      url = "https://www.bing.com/th?id=OHR.GemsbokBotswana_EN-US7126985499_UHD.jpg";
+      sha256 = "sha256-cfFTwpwUjDvn9RtFcZ0RF6ggJfqC+ubnjJNmMxd8US0=";
     };
   };
   dbaeumer_vscode-eslint = {

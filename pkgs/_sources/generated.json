@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-W89QP3dxWJyXRnvzo7U0YIAw+jdvf88aEqMiVHdKNYI=",
+            "sha256": "sha256-cfFTwpwUjDvn9RtFcZ0RF6ggJfqC+ubnjJNmMxd8US0=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.OsakaNight_EN-US7022302235_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.GemsbokBotswana_EN-US7126985499_UHD.jpg"
         },
-        "version": "OsakaNight_EN-US7022302235"
+        "version": "GemsbokBotswana_EN-US7126985499"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
