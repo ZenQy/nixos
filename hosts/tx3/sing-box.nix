@@ -87,6 +87,7 @@ let
             ".cn"
             "msftconnecttest.com"
             "blizzard.com"
+            "test-ipv6.com"
           ];
           ip_is_private = true;
           ip_cidr = [
@@ -114,7 +115,7 @@ let
         inet6_address = "fd00::1/126";
         mtu = 1400;
         auto_route = true;
-        strict_route = true;
+        strict_route = false;
         stack = "gvisor";
         sniff = true;
         sniff_override_destination = false;
