@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "GemsbokBotswana_EN-US7126985499";
+    version = "BigBendMilkyWay_EN-US7213876995";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.GemsbokBotswana_EN-US7126985499_UHD.jpg";
-      sha256 = "sha256-cfFTwpwUjDvn9RtFcZ0RF6ggJfqC+ubnjJNmMxd8US0=";
+      url = "https://www.bing.com/th?id=OHR.BigBendMilkyWay_EN-US7213876995_UHD.jpg";
+      sha256 = "sha256-QCVn2PHcG91ptUg8CKVnVKgfCO3Dne8K8624prt2UWM=";
     };
   };
   dbaeumer_vscode-eslint = {
