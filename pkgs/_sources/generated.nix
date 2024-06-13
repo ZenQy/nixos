@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "BigBendMilkyWay_EN-US7213876995";
+    version = "RegistanUzbekistan_EN-US7287760362";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.BigBendMilkyWay_EN-US7213876995_UHD.jpg";
-      sha256 = "sha256-QCVn2PHcG91ptUg8CKVnVKgfCO3Dne8K8624prt2UWM=";
+      url = "https://www.bing.com/th?id=OHR.RegistanUzbekistan_EN-US7287760362_UHD.jpg";
+      sha256 = "sha256-Ta9xKnD5wu64qG4yxOo4e1qD36nMJAbK/7d5NZ43TYk=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -131,11 +131,11 @@
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.3.0";
+    version = "5.4.1";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.3.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.3.0.zip";
-      sha256 = "sha256-SCiRpqoUy+TKkiOrhjL5dPvYCMlxnEaVUb0Cjiu3674=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.4.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.4.1.zip";
+      sha256 = "sha256-YsfXN7m2kHiqfSUzny190TFVdFYbl0XZsEHyyqTCHYQ=";
     };
   };
   staticcheck = {

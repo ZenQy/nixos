@@ -15,6 +15,7 @@
             "repo": "Yacd-meta",
             "rev": "b66b1d0393bd284b7a40329f95eae3746bb102be",
             "sha256": "sha256-mbt7OSHNLseXRAQ8YsQL+FVK3EZ74UfbBWRddYBGUYI=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "b66b1d0393bd284b7a40329f95eae3746bb102be"
@@ -35,6 +36,7 @@
             "repo": "alist",
             "rev": "v3.35.0",
             "sha256": "sha256-N9WgaPzc8cuDN7N0Ny3t6ARGla0lCluzF2Mut3Pg880=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v3.35.0"
@@ -55,6 +57,7 @@
             "repo": "web-dist",
             "rev": "3.35.0",
             "sha256": "sha256-DGUTyPhzjV5aqKBhl+UIas/epiiqPdmIUqn1uGLDAyo=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "3.35.0"
@@ -68,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QCVn2PHcG91ptUg8CKVnVKgfCO3Dne8K8624prt2UWM=",
+            "sha256": "sha256-Ta9xKnD5wu64qG4yxOo4e1qD36nMJAbK/7d5NZ43TYk=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BigBendMilkyWay_EN-US7213876995_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.RegistanUzbekistan_EN-US7287760362_UHD.jpg"
         },
-        "version": "BigBendMilkyWay_EN-US7213876995"
+        "version": "RegistanUzbekistan_EN-US7287760362"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -105,6 +108,7 @@
             "repo": "delve",
             "rev": "v1.22.1",
             "sha256": "sha256-rR84muba8nMrPZAhH+8xXOOxBvKIsU8Xju8tG7BjqBo=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v1.22.1"
@@ -185,6 +189,7 @@
             "repo": "leetgo",
             "rev": "v1.4.7",
             "sha256": "sha256-K/PaQakX0ZLu2Uh906kZ4p8J+GV7ewAeSVFMMQiKYBA=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v1.4.7"
@@ -220,6 +225,7 @@
             "repo": "nezha",
             "rev": "f30969e946c60b382ab46d8bc13498eb7a027485",
             "sha256": "sha256-dUgN+IHF1uTnaB3+S60Vchl7vYYCXhcCTFj6JjXem5Q=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "f30969e946c60b382ab46d8bc13498eb7a027485"
@@ -232,12 +238,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.3.0.zip",
-            "sha256": "sha256-SCiRpqoUy+TKkiOrhjL5dPvYCMlxnEaVUb0Cjiu3674=",
+            "name": "material-icon-theme-5.4.1.zip",
+            "sha256": "sha256-YsfXN7m2kHiqfSUzny190TFVdFYbl0XZsEHyyqTCHYQ=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.3.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.4.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.3.0"
+        "version": "5.4.1"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -255,6 +261,7 @@
             "repo": "go-tools",
             "rev": "2023.1.7",
             "sha256": "sha256-oR3fsvZmeddN75WsxOMcYe/RAIjYz+ba03ADJfDUqNg=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "2023.1.7"
