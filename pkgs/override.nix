@@ -48,7 +48,7 @@ final: prev:
         '';
       });
     in
-    prev.wrapMpv mpv-unwrapped { scripts = with prev.mpvScripts; [ autoload ]; };
+    mpv-unwrapped.wrapper { scripts = with mpv-unwrapped.scripts; [ autoload ]; };
 
   hyprland = prev.hyprland.overrideAttrs (old: {
     postPatch = old.postPatch + ''
