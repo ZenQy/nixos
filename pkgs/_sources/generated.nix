@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "RegistanUzbekistan_EN-US7287760362";
+    version = "FlagsDC_EN-US9363778856";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.RegistanUzbekistan_EN-US7287760362_UHD.jpg";
-      sha256 = "sha256-Ta9xKnD5wu64qG4yxOo4e1qD36nMJAbK/7d5NZ43TYk=";
+      url = "https://www.bing.com/th?id=OHR.FlagsDC_EN-US9363778856_UHD.jpg";
+      sha256 = "sha256-9CdHWBgbYfJVtEV7jmb0Il+3dhnQK7Feav3C97oBbHI=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,23 +119,23 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "f30969e946c60b382ab46d8bc13498eb7a027485";
+    version = "b2740e5f3cb6eccd0c0f7e34c5db8a414f670d95";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "f30969e946c60b382ab46d8bc13498eb7a027485";
+      rev = "b2740e5f3cb6eccd0c0f7e34c5db8a414f670d95";
       fetchSubmodules = false;
-      sha256 = "sha256-dUgN+IHF1uTnaB3+S60Vchl7vYYCXhcCTFj6JjXem5Q=";
+      sha256 = "sha256-ZjiVv6RYY6CYcOKtMspRPVHLy2S8duawujYgAjQ8rno=";
     };
-    date = "2024-06-01";
+    date = "2024-06-14";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.4.1";
+    version = "5.4.2";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.4.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.4.1.zip";
-      sha256 = "sha256-YsfXN7m2kHiqfSUzny190TFVdFYbl0XZsEHyyqTCHYQ=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.4.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.4.2.zip";
+      sha256 = "sha256-Akb8JeNLs/7B0FXFeHjEXZSs5P34gIzXlpiOwDYzfKk=";
     };
   };
   staticcheck = {

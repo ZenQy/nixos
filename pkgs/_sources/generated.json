@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Ta9xKnD5wu64qG4yxOo4e1qD36nMJAbK/7d5NZ43TYk=",
+            "sha256": "sha256-9CdHWBgbYfJVtEV7jmb0Il+3dhnQK7Feav3C97oBbHI=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.RegistanUzbekistan_EN-US7287760362_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.FlagsDC_EN-US9363778856_UHD.jpg"
         },
-        "version": "RegistanUzbekistan_EN-US7287760362"
+        "version": "FlagsDC_EN-US9363778856"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -211,7 +211,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-06-01",
+        "date": "2024-06-14",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -223,12 +223,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "f30969e946c60b382ab46d8bc13498eb7a027485",
-            "sha256": "sha256-dUgN+IHF1uTnaB3+S60Vchl7vYYCXhcCTFj6JjXem5Q=",
+            "rev": "b2740e5f3cb6eccd0c0f7e34c5db8a414f670d95",
+            "sha256": "sha256-ZjiVv6RYY6CYcOKtMspRPVHLy2S8duawujYgAjQ8rno=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f30969e946c60b382ab46d8bc13498eb7a027485"
+        "version": "b2740e5f3cb6eccd0c0f7e34c5db8a414f670d95"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -238,12 +238,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.4.1.zip",
-            "sha256": "sha256-YsfXN7m2kHiqfSUzny190TFVdFYbl0XZsEHyyqTCHYQ=",
+            "name": "material-icon-theme-5.4.2.zip",
+            "sha256": "sha256-Akb8JeNLs/7B0FXFeHjEXZSs5P34gIzXlpiOwDYzfKk=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.4.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.4.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.4.1"
+        "version": "5.4.2"
     },
     "staticcheck": {
         "cargoLocks": null,
