@@ -32,10 +32,17 @@ final: prev:
   #   commandLineArgs = "--enable-wayland-ime";
   # };
 
-  obsidian = prev.obsidian.overrideAttrs (old: {
+  # obsidian = prev.obsidian.overrideAttrs (old: {
+  #   postInstall = ''
+  #     substituteInPlace $out/bin/obsidian \
+  #       --replace '--ozone-platform=wayland' '--ozone-platform=wayland --enable-wayland-ime'
+  #   '';
+  # });
+
+  anytype = prev.anytype.overrideAttrs (old: {
     postInstall = ''
-      substituteInPlace $out/bin/obsidian \
-        --replace '--ozone-platform=wayland' '--ozone-platform=wayland --enable-wayland-ime'
+      substituteInPlace $out/bin/anytype \
+        --replace '--ozone-platform-hint=auto' '--ozone-platform-hint=auto --enable-wayland-ime'
     '';
   });
 

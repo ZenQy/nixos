@@ -26,7 +26,7 @@
     kernelParams = [
       "audit=0"
       "net.ifnames=0"
-      "ipv6.disable=1"
+      # "ipv6.disable=1"
       "consoleblank=0"
       "console=ttyAML0,115200n8"
       "console=tty0"

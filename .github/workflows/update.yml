@@ -103,6 +103,9 @@ jobs:
               fi
             done
           fi
+          if [[ $pkgs_list == '[]' ]]; then
+            pkgs_list='[ "bingimg" ]'
+          fi
           echo $pkgs_list
           echo "matrix=$(echo $pkgs_list)" >> $GITHUB_OUTPUT
 
