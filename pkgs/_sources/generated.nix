@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "FlagsDC_EN-US9363778856";
+    version = "NazareWave_EN-US9510827848";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.FlagsDC_EN-US9363778856_UHD.jpg";
-      sha256 = "sha256-9CdHWBgbYfJVtEV7jmb0Il+3dhnQK7Feav3C97oBbHI=";
+      url = "https://www.bing.com/th?id=OHR.NazareWave_EN-US9510827848_UHD.jpg";
+      sha256 = "sha256-X+A+CbSwwUSgdwCC6yXX2/THRMQNxIez39fptPUZfo4=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "b2740e5f3cb6eccd0c0f7e34c5db8a414f670d95";
+    version = "db5e94d0deb60c448495f8ee25e7246c04ff99db";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "b2740e5f3cb6eccd0c0f7e34c5db8a414f670d95";
+      rev = "db5e94d0deb60c448495f8ee25e7246c04ff99db";
       fetchSubmodules = false;
-      sha256 = "sha256-ZjiVv6RYY6CYcOKtMspRPVHLy2S8duawujYgAjQ8rno=";
+      sha256 = "sha256-UBZ/s854uS7GYdoN78fvIHm2DAwv0zyt0NfDYvHFXEc=";
     };
-    date = "2024-06-14";
+    date = "2024-06-15";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
