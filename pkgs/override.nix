@@ -32,17 +32,10 @@ final: prev:
   #   commandLineArgs = "--enable-wayland-ime";
   # };
 
-  # obsidian = prev.obsidian.overrideAttrs (old: {
-  #   postInstall = ''
-  #     substituteInPlace $out/bin/obsidian \
-  #       --replace '--ozone-platform=wayland' '--ozone-platform=wayland --enable-wayland-ime'
-  #   '';
-  # });
-
-  anytype = prev.anytype.overrideAttrs (old: {
+  obsidian = prev.obsidian.overrideAttrs (old: {
     postInstall = ''
-      substituteInPlace $out/bin/anytype \
-        --replace '--ozone-platform-hint=auto' '--ozone-platform-hint=auto --enable-wayland-ime'
+      substituteInPlace $out/bin/obsidian \
+        --replace '--ozone-platform=wayland' '--ozone-platform=wayland --enable-wayland-ime'
     '';
   });
 
@@ -57,7 +50,7 @@ final: prev:
     in
     mpv-unwrapped.wrapper {
       mpv = mpv-unwrapped;
-      scripts = with mpv-unwrapped.scripts; [ autoload ]; 
+      scripts = with mpv-unwrapped.scripts; [ autoload ];
     };
 
   hyprland = prev.hyprland.overrideAttrs (old: {

@@ -43,6 +43,7 @@
       "/var/cache"
       "/var/lib"
       "/var/log"
+      "/root/.ssh"
     ];
 
     files = [

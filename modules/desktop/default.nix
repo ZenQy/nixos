@@ -156,8 +156,7 @@
     ## Editor ##
     vscode-with-extensions
     # vscodium
-    # obsidian
-    anytype
+    obsidian
     sqlitebrowser
     ## Others ##
     tdesktop
