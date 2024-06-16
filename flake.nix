@@ -50,14 +50,10 @@
           d = self.nixosModules.desktop;
           s = self.nixosModules.server;
           hosts = {
-            hp = d;
             beelink = d;
             cc = s;
-            tokyo-1 = s;
-            tokyo-2 = s;
-            osaka-1 = s;
-            osaka-2 = s;
-            osaka-arm = s;
+            oracle = s;
+            oracle-arm = s;
             crbs = s;
             rock-5b = s;
             tx3 = s;

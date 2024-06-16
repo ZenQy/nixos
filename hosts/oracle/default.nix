@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../oracle-hardware.nix
+    ./hardware.nix
   ];
 
   systemd.network.networks.default = {
