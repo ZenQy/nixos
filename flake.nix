@@ -52,8 +52,11 @@
           hosts = {
             beelink = d;
             cc = s;
-            oracle = s;
-            oracle-arm = s;
+            tokyo-1 = s;
+            tokyo-2 = s;
+            osaka-1 = s;
+            osaka-2 = s;
+            osaka-arm = s;
             crbs = s;
             rock-5b = s;
             tx3 = s;
