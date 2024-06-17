@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-X+A+CbSwwUSgdwCC6yXX2/THRMQNxIez39fptPUZfo4=",
+            "sha256": "sha256-PDvit/Y95/K7rI+urPC3CkLVkc5YkFgHMRLNZHwyKrI=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.NazareWave_EN-US9510827848_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.HummingThistle_EN-US9897642087_UHD.jpg"
         },
-        "version": "NazareWave_EN-US9510827848"
+        "version": "HummingThistle_EN-US9897642087"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -85,12 +85,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "vscode-eslint-3.0.7.zip",
-            "sha256": "sha256-PirVZb6yaNvBdmJYXY6iGYEuHOiVkYH5LHTVfSUqMQ4=",
+            "name": "vscode-eslint-3.0.10.zip",
+            "sha256": "sha256-EVmexnTIQQDmj25/rql3eCfJd47zRui3TpHol6l0Vgs=",
             "type": "url",
-            "url": "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.7/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.10/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "3.0.7"
+        "version": "3.0.10"
     },
     "dlv-dap": {
         "cargoLocks": null,
@@ -211,7 +211,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-06-15",
+        "date": "2024-06-16",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -223,12 +223,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "db5e94d0deb60c448495f8ee25e7246c04ff99db",
-            "sha256": "sha256-UBZ/s854uS7GYdoN78fvIHm2DAwv0zyt0NfDYvHFXEc=",
+            "rev": "ce66f72cf9a13de9e936c7a3e70ff30847b97429",
+            "sha256": "sha256-AmqAdUMa76zakJEeciOr80t1t86NMpOtcM4W/Y95gV0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "db5e94d0deb60c448495f8ee25e7246c04ff99db"
+        "version": "ce66f72cf9a13de9e936c7a3e70ff30847b97429"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,

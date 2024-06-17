@@ -37,19 +37,19 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "NazareWave_EN-US9510827848";
+    version = "HummingThistle_EN-US9897642087";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.NazareWave_EN-US9510827848_UHD.jpg";
-      sha256 = "sha256-X+A+CbSwwUSgdwCC6yXX2/THRMQNxIez39fptPUZfo4=";
+      url = "https://www.bing.com/th?id=OHR.HummingThistle_EN-US9897642087_UHD.jpg";
+      sha256 = "sha256-PDvit/Y95/K7rI+urPC3CkLVkc5YkFgHMRLNZHwyKrI=";
     };
   };
   dbaeumer_vscode-eslint = {
     pname = "dbaeumer_vscode-eslint";
-    version = "3.0.7";
+    version = "3.0.10";
     src = fetchurl {
-      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.7/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "vscode-eslint-3.0.7.zip";
-      sha256 = "sha256-PirVZb6yaNvBdmJYXY6iGYEuHOiVkYH5LHTVfSUqMQ4=";
+      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.10/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "vscode-eslint-3.0.10.zip";
+      sha256 = "sha256-EVmexnTIQQDmj25/rql3eCfJd47zRui3TpHol6l0Vgs=";
     };
   };
   dlv-dap = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "db5e94d0deb60c448495f8ee25e7246c04ff99db";
+    version = "ce66f72cf9a13de9e936c7a3e70ff30847b97429";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "db5e94d0deb60c448495f8ee25e7246c04ff99db";
+      rev = "ce66f72cf9a13de9e936c7a3e70ff30847b97429";
       fetchSubmodules = false;
-      sha256 = "sha256-UBZ/s854uS7GYdoN78fvIHm2DAwv0zyt0NfDYvHFXEc=";
+      sha256 = "sha256-AmqAdUMa76zakJEeciOr80t1t86NMpOtcM4W/Y95gV0=";
     };
-    date = "2024-06-15";
+    date = "2024-06-16";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
