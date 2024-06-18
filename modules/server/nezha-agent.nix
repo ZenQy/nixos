@@ -1,5 +1,4 @@
-{ config, lib, secrets, ... }:
-with builtins;
+{ lib, secrets, ... }:
 
 {
   services.nezha-agent = {

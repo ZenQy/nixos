@@ -79,9 +79,4 @@
     wget
   ];
 
-  environment.variables = {
-    LEETCODE_SESSION = secrets.leetcode.SESSION;
-    LEETCODE_CSRFTOKEN = secrets.leetcode.CSRFTOKEN;
-  };
-
 }

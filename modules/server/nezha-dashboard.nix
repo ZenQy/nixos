@@ -1,5 +1,6 @@
 { config, lib, pkgs, secrets, ... }:
 with lib;
+
 let
   cfg = config.zenith.nezha-dashboard;
 in
