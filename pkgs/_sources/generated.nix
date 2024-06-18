@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "HummingThistle_EN-US9897642087";
+    version = "LupinIceland_EN-US0093427185";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HummingThistle_EN-US9897642087_UHD.jpg";
-      sha256 = "sha256-PDvit/Y95/K7rI+urPC3CkLVkc5YkFgHMRLNZHwyKrI=";
+      url = "https://www.bing.com/th?id=OHR.LupinIceland_EN-US0093427185_UHD.jpg";
+      sha256 = "sha256-aOOlg2J5vqxzdXd6z8Khni5koXVUZijMjlTHwqj8yM4=";
     };
   };
   dbaeumer_vscode-eslint = {
