@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-aOOlg2J5vqxzdXd6z8Khni5koXVUZijMjlTHwqj8yM4=",
+            "sha256": "sha256-8rQEkMCR6zI/nHkJiBGIeZdNiK8C27afJ6355P3D86g=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.LupinIceland_EN-US0093427185_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.LawrenceMosaic_EN-US0314379909_UHD.jpg"
         },
-        "version": "LupinIceland_EN-US0093427185"
+        "version": "LawrenceMosaic_EN-US0314379909"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,

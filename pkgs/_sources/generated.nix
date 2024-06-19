@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "LupinIceland_EN-US0093427185";
+    version = "LawrenceMosaic_EN-US0314379909";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.LupinIceland_EN-US0093427185_UHD.jpg";
-      sha256 = "sha256-aOOlg2J5vqxzdXd6z8Khni5koXVUZijMjlTHwqj8yM4=";
+      url = "https://www.bing.com/th?id=OHR.LawrenceMosaic_EN-US0314379909_UHD.jpg";
+      sha256 = "sha256-8rQEkMCR6zI/nHkJiBGIeZdNiK8C27afJ6355P3D86g=";
     };
   };
   dbaeumer_vscode-eslint = {
