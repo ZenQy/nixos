@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8rQEkMCR6zI/nHkJiBGIeZdNiK8C27afJ6355P3D86g=",
+            "sha256": "sha256-qf7dyGq6gQ2bvTHqXH1v0NbiPQQXqJ//G14H2CItsag=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.LawrenceMosaic_EN-US0314379909_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.KokinoMacedonia_EN-US0466604378_UHD.jpg"
         },
-        "version": "LawrenceMosaic_EN-US0314379909"
+        "version": "KokinoMacedonia_EN-US0466604378"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,

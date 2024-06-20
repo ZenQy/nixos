@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "LawrenceMosaic_EN-US0314379909";
+    version = "KokinoMacedonia_EN-US0466604378";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.LawrenceMosaic_EN-US0314379909_UHD.jpg";
-      sha256 = "sha256-8rQEkMCR6zI/nHkJiBGIeZdNiK8C27afJ6355P3D86g=";
+      url = "https://www.bing.com/th?id=OHR.KokinoMacedonia_EN-US0466604378_UHD.jpg";
+      sha256 = "sha256-qf7dyGq6gQ2bvTHqXH1v0NbiPQQXqJ//G14H2CItsag=";
     };
   };
   dbaeumer_vscode-eslint = {
