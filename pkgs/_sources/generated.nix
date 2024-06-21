@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "KokinoMacedonia_EN-US0466604378";
+    version = "LewaGiraffe_EN-US0571205457";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.KokinoMacedonia_EN-US0466604378_UHD.jpg";
-      sha256 = "sha256-qf7dyGq6gQ2bvTHqXH1v0NbiPQQXqJ//G14H2CItsag=";
+      url = "https://www.bing.com/th?id=OHR.LewaGiraffe_EN-US0571205457_UHD.jpg";
+      sha256 = "sha256-s8CIh9HwpD4EHCPNGGajAP5vMLotIe5qF7hlRN6tp2w=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -160,11 +160,11 @@
   };
   usernamehw_errorlens = {
     pname = "usernamehw_errorlens";
-    version = "3.18.0";
+    version = "3.19.0";
     src = fetchurl {
-      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.18.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "errorlens-3.18.0.zip";
-      sha256 = "sha256-sRZRBUne9IqDBSe4BXyqBqirIyjeP03B2w9+ptNrJl0=";
+      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.19.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "errorlens-3.19.0.zip";
+      sha256 = "sha256-duljH6bEZmtOmtLh6axwjOJrx3B6RShShufSW4l/oX0=";
     };
   };
   vue_volar = {
