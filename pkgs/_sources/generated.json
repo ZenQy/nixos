@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-s8CIh9HwpD4EHCPNGGajAP5vMLotIe5qF7hlRN6tp2w=",
+            "sha256": "sha256-Xs4lSJ6j7SG6MWmdlnppOMZbzHGqlikI37RscSlRcBY=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.LewaGiraffe_EN-US0571205457_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.BrazilRainforest_EN-US0704211658_UHD.jpg"
         },
-        "version": "LewaGiraffe_EN-US0571205457"
+        "version": "BrazilRainforest_EN-US0704211658"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -211,7 +211,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-06-16",
+        "date": "2024-06-22",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -223,12 +223,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "ce66f72cf9a13de9e936c7a3e70ff30847b97429",
-            "sha256": "sha256-AmqAdUMa76zakJEeciOr80t1t86NMpOtcM4W/Y95gV0=",
+            "rev": "65dee231373903af06af05598e81b84116901d22",
+            "sha256": "sha256-MwWLladjd1nTvSzXHNJjHIqDydjBis+iWFsYuFsBLrw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ce66f72cf9a13de9e936c7a3e70ff30847b97429"
+        "version": "65dee231373903af06af05598e81b84116901d22"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -289,12 +289,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "errorlens-3.19.0.zip",
-            "sha256": "sha256-duljH6bEZmtOmtLh6axwjOJrx3B6RShShufSW4l/oX0=",
+            "name": "errorlens-3.20.0.zip",
+            "sha256": "sha256-0gCT+u6rfkEcWcdzqRdc4EosROllD/Q0TIOQ4k640j0=",
             "type": "url",
-            "url": "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.19.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.20.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "3.19.0"
+        "version": "3.20.0"
     },
     "vue_volar": {
         "cargoLocks": null,
