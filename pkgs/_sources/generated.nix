@@ -3,15 +3,15 @@
 {
   Yacd-meta = {
     pname = "Yacd-meta";
-    version = "b66b1d0393bd284b7a40329f95eae3746bb102be";
+    version = "e3e76f51c846e3f33862474b7f88cd83e3525dd1";
     src = fetchFromGitHub {
       owner = "MetaCubeX";
       repo = "Yacd-meta";
-      rev = "b66b1d0393bd284b7a40329f95eae3746bb102be";
+      rev = "e3e76f51c846e3f33862474b7f88cd83e3525dd1";
       fetchSubmodules = false;
-      sha256 = "sha256-mbt7OSHNLseXRAQ8YsQL+FVK3EZ74UfbBWRddYBGUYI=";
+      sha256 = "sha256-VmUM5y5f/y3s40o8WAd/3ywe/ExpYy94er/CcG32yH0=";
     };
-    date = "2023-12-29";
+    date = "2024-06-23";
   };
   alist = {
     pname = "alist";
@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "BrazilRainforest_EN-US0704211658";
+    version = "FloresIsland_EN-US1042279828";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.BrazilRainforest_EN-US0704211658_UHD.jpg";
-      sha256 = "sha256-Xs4lSJ6j7SG6MWmdlnppOMZbzHGqlikI37RscSlRcBY=";
+      url = "https://www.bing.com/th?id=OHR.FloresIsland_EN-US1042279828_UHD.jpg";
+      sha256 = "sha256-FIrZTuDDHNGaW6kNQ/IMfL05Xf74PkGixZeAL906Nro=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "65dee231373903af06af05598e81b84116901d22";
+    version = "877b4cd66687757287e264210b2ab66f735de831";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "65dee231373903af06af05598e81b84116901d22";
+      rev = "877b4cd66687757287e264210b2ab66f735de831";
       fetchSubmodules = false;
-      sha256 = "sha256-MwWLladjd1nTvSzXHNJjHIqDydjBis+iWFsYuFsBLrw=";
+      sha256 = "sha256-SYUBVtcJlIy79ehrLtHPkSkUoNqM5jKfZdvFOvC9Ic4=";
     };
-    date = "2024-06-22";
+    date = "2024-06-23";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -169,11 +169,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.0.21";
+    version = "2.0.22";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.21/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.0.21.zip";
-      sha256 = "sha256-7GyCilXKo4YEuHxZJmglLKeS+67vSLem8aO4+NKLD5U=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.22/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.0.22.zip";
+      sha256 = "sha256-P996wg8offuqEdNLQjt/cr/0i3gt7Gucqvux/BHw3LA=";
     };
   };
 }
