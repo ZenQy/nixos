@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-FIrZTuDDHNGaW6kNQ/IMfL05Xf74PkGixZeAL906Nro=",
+            "sha256": "sha256-6Ak07DUgqqiujkPShvkg+Z+jJFpezHEnXiOj1CVQcWE=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.FloresIsland_EN-US1042279828_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.FireWave_EN-US1154414797_UHD.jpg"
         },
-        "version": "FloresIsland_EN-US1042279828"
+        "version": "FireWave_EN-US1154414797"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -211,7 +211,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-06-23",
+        "date": "2024-06-25",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -223,12 +223,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "877b4cd66687757287e264210b2ab66f735de831",
-            "sha256": "sha256-SYUBVtcJlIy79ehrLtHPkSkUoNqM5jKfZdvFOvC9Ic4=",
+            "rev": "a38d7bb51d6140fed36265871c8ba74fa1d8c992",
+            "sha256": "sha256-MX9a3W4PvHLjZCICpK12fiPrlmHqWaPusDoDyHMt1Uw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "877b4cd66687757287e264210b2ab66f735de831"
+        "version": "a38d7bb51d6140fed36265871c8ba74fa1d8c992"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,

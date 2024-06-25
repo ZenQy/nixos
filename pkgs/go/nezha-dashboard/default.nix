@@ -2,7 +2,7 @@
 
 buildGoModule {
   inherit (source) pname version src;
-  vendorHash = "sha256-vUcGzdfp9X5ROtrFGsKc6bn7TKOjHL3d0GLdmEFvNsw=";
+  vendorHash = "sha256-1xB9spEmYvaWs3qZEXxVxRirKSrv+vUwtkEC5dUcIFc=";
 
   doCheck = false;
   subPackages = [ "cmd/dashboard" ];

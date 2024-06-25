@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "FloresIsland_EN-US1042279828";
+    version = "FireWave_EN-US1154414797";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.FloresIsland_EN-US1042279828_UHD.jpg";
-      sha256 = "sha256-FIrZTuDDHNGaW6kNQ/IMfL05Xf74PkGixZeAL906Nro=";
+      url = "https://www.bing.com/th?id=OHR.FireWave_EN-US1154414797_UHD.jpg";
+      sha256 = "sha256-6Ak07DUgqqiujkPShvkg+Z+jJFpezHEnXiOj1CVQcWE=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "877b4cd66687757287e264210b2ab66f735de831";
+    version = "a38d7bb51d6140fed36265871c8ba74fa1d8c992";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "877b4cd66687757287e264210b2ab66f735de831";
+      rev = "a38d7bb51d6140fed36265871c8ba74fa1d8c992";
       fetchSubmodules = false;
-      sha256 = "sha256-SYUBVtcJlIy79ehrLtHPkSkUoNqM5jKfZdvFOvC9Ic4=";
+      sha256 = "sha256-MX9a3W4PvHLjZCICpK12fiPrlmHqWaPusDoDyHMt1Uw=";
     };
-    date = "2024-06-23";
+    date = "2024-06-25";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
