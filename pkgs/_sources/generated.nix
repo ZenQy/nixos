@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "FireWave_EN-US1154414797";
+    version = "CardinalfishAnemone_EN-US1278259894";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.FireWave_EN-US1154414797_UHD.jpg";
-      sha256 = "sha256-6Ak07DUgqqiujkPShvkg+Z+jJFpezHEnXiOj1CVQcWE=";
+      url = "https://www.bing.com/th?id=OHR.CardinalfishAnemone_EN-US1278259894_UHD.jpg";
+      sha256 = "sha256-1Shc5oKA3V5+caoxlWWgI58pUZL5xy4dgMaA0naJqVk=";
     };
   };
   dbaeumer_vscode-eslint = {
