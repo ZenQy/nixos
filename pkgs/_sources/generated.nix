@@ -3,15 +3,15 @@
 {
   Yacd-meta = {
     pname = "Yacd-meta";
-    version = "e3e76f51c846e3f33862474b7f88cd83e3525dd1";
+    version = "186b3a3d4ba5590d9525b90fafcadace043788ac";
     src = fetchFromGitHub {
       owner = "MetaCubeX";
       repo = "Yacd-meta";
-      rev = "e3e76f51c846e3f33862474b7f88cd83e3525dd1";
+      rev = "186b3a3d4ba5590d9525b90fafcadace043788ac";
       fetchSubmodules = false;
-      sha256 = "sha256-VmUM5y5f/y3s40o8WAd/3ywe/ExpYy94er/CcG32yH0=";
+      sha256 = "sha256-n0MWfM8kQvQSZcg4Ri/QNZ1vUIwa0xRdmAhEC4YLmJU=";
     };
-    date = "2024-06-23";
+    date = "2024-06-27";
   };
   alist = {
     pname = "alist";
@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "CardinalfishAnemone_EN-US1278259894";
+    version = "FlorenceDuomo_EN-US1448955167";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.CardinalfishAnemone_EN-US1278259894_UHD.jpg";
-      sha256 = "sha256-1Shc5oKA3V5+caoxlWWgI58pUZL5xy4dgMaA0naJqVk=";
+      url = "https://www.bing.com/th?id=OHR.FlorenceDuomo_EN-US1448955167_UHD.jpg";
+      sha256 = "sha256-mYIJMlV8DgSj52LA2LlNsy08JzfxDGpB3mcr2TYYvig=";
     };
   };
   dbaeumer_vscode-eslint = {
