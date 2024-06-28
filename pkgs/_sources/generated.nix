@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "FlorenceDuomo_EN-US1448955167";
+    version = "ChristopherPark_EN-US9362447266";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.FlorenceDuomo_EN-US1448955167_UHD.jpg";
-      sha256 = "sha256-mYIJMlV8DgSj52LA2LlNsy08JzfxDGpB3mcr2TYYvig=";
+      url = "https://www.bing.com/th?id=OHR.ChristopherPark_EN-US9362447266_UHD.jpg";
+      sha256 = "sha256-CVVIRwdkBGjvdVu6iGqOOBLsndEuJEQlKLmCPDYJZpE=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "a38d7bb51d6140fed36265871c8ba74fa1d8c992";
+    version = "740d15bf795b1636d02550e0e351264564c346c0";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "a38d7bb51d6140fed36265871c8ba74fa1d8c992";
+      rev = "740d15bf795b1636d02550e0e351264564c346c0";
       fetchSubmodules = false;
-      sha256 = "sha256-MX9a3W4PvHLjZCICpK12fiPrlmHqWaPusDoDyHMt1Uw=";
+      sha256 = "sha256-05JTdb1tvG6c/PA04qZrHdeYcZ/pOn7SIOd1z8oUHTw=";
     };
-    date = "2024-06-25";
+    date = "2024-06-28";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";

@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mYIJMlV8DgSj52LA2LlNsy08JzfxDGpB3mcr2TYYvig=",
+            "sha256": "sha256-CVVIRwdkBGjvdVu6iGqOOBLsndEuJEQlKLmCPDYJZpE=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.FlorenceDuomo_EN-US1448955167_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ChristopherPark_EN-US9362447266_UHD.jpg"
         },
-        "version": "FlorenceDuomo_EN-US1448955167"
+        "version": "ChristopherPark_EN-US9362447266"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -211,7 +211,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-06-25",
+        "date": "2024-06-28",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -223,12 +223,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "a38d7bb51d6140fed36265871c8ba74fa1d8c992",
-            "sha256": "sha256-MX9a3W4PvHLjZCICpK12fiPrlmHqWaPusDoDyHMt1Uw=",
+            "rev": "740d15bf795b1636d02550e0e351264564c346c0",
+            "sha256": "sha256-05JTdb1tvG6c/PA04qZrHdeYcZ/pOn7SIOd1z8oUHTw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a38d7bb51d6140fed36265871c8ba74fa1d8c992"
+        "version": "740d15bf795b1636d02550e0e351264564c346c0"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
