@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "ChristopherPark_EN-US9362447266";
+    version = "TourCorsica_EN-US3437831281";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.ChristopherPark_EN-US9362447266_UHD.jpg";
-      sha256 = "sha256-CVVIRwdkBGjvdVu6iGqOOBLsndEuJEQlKLmCPDYJZpE=";
+      url = "https://www.bing.com/th?id=OHR.TourCorsica_EN-US3437831281_UHD.jpg";
+      sha256 = "sha256-eLNIEsvCW0I5yz1JoqMTvTbl+S6yKkU1z5LKLSEtSj4=";
     };
   };
   dbaeumer_vscode-eslint = {
