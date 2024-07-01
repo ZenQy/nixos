@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "TourCorsica_EN-US3437831281";
+    version = "FisgardLighthouse_EN-US3880792118";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.TourCorsica_EN-US3437831281_UHD.jpg";
-      sha256 = "sha256-eLNIEsvCW0I5yz1JoqMTvTbl+S6yKkU1z5LKLSEtSj4=";
+      url = "https://www.bing.com/th?id=OHR.FisgardLighthouse_EN-US3880792118_UHD.jpg";
+      sha256 = "sha256-Jir154hu1Lu04NNg2fxmgzV+EuMjeZSNMl7z68cQbg8=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -169,11 +169,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.0.22";
+    version = "2.0.24";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.22/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.0.22.zip";
-      sha256 = "sha256-P996wg8offuqEdNLQjt/cr/0i3gt7Gucqvux/BHw3LA=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.24/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.0.24.zip";
+      sha256 = "sha256-7YjUh+IZp+HMkrh31Solj57etmYrOrdeMjAaiKdj8iE=";
     };
   };
 }
