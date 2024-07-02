@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "FisgardLighthouse_EN-US3880792118";
+    version = "ItalicaRuins_EN-US4110786318";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.FisgardLighthouse_EN-US3880792118_UHD.jpg";
-      sha256 = "sha256-Jir154hu1Lu04NNg2fxmgzV+EuMjeZSNMl7z68cQbg8=";
+      url = "https://www.bing.com/th?id=OHR.ItalicaRuins_EN-US4110786318_UHD.jpg";
+      sha256 = "sha256-jSo8pxWZ7MgoGPRqYur8kacdc4qSUA5VA0l3toNiNw8=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "740d15bf795b1636d02550e0e351264564c346c0";
+    version = "0613b0022ddc9b99ffc258eb0e14b040cf65313e";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "740d15bf795b1636d02550e0e351264564c346c0";
+      rev = "0613b0022ddc9b99ffc258eb0e14b040cf65313e";
       fetchSubmodules = false;
-      sha256 = "sha256-05JTdb1tvG6c/PA04qZrHdeYcZ/pOn7SIOd1z8oUHTw=";
+      sha256 = "sha256-ERiMu5Pc19hDdBJNauU+kH7ZLh0+xkwwW8zo/F2D1No=";
     };
-    date = "2024-06-28";
+    date = "2024-07-02";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
