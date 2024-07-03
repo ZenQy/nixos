@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "ItalicaRuins_EN-US4110786318";
+    version = "MeerkatManor_EN-US4231814766";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.ItalicaRuins_EN-US4110786318_UHD.jpg";
-      sha256 = "sha256-jSo8pxWZ7MgoGPRqYur8kacdc4qSUA5VA0l3toNiNw8=";
+      url = "https://www.bing.com/th?id=OHR.MeerkatManor_EN-US4231814766_UHD.jpg";
+      sha256 = "sha256-j+eBfQEnBV/4ut65SrJrtet5LJ0aIbC1Aw7qJWcTkUI=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "0613b0022ddc9b99ffc258eb0e14b040cf65313e";
+    version = "cfa425bb3364dbf17014309869270c178cb8042c";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "0613b0022ddc9b99ffc258eb0e14b040cf65313e";
+      rev = "cfa425bb3364dbf17014309869270c178cb8042c";
       fetchSubmodules = false;
-      sha256 = "sha256-ERiMu5Pc19hDdBJNauU+kH7ZLh0+xkwwW8zo/F2D1No=";
+      sha256 = "sha256-9oYL/IH5uiZ8cY7zArylTxkujjIGlm3CDjs9f1mhAW8=";
     };
-    date = "2024-07-02";
+    date = "2024-07-03";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";

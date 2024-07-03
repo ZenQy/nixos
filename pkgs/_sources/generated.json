@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-jSo8pxWZ7MgoGPRqYur8kacdc4qSUA5VA0l3toNiNw8=",
+            "sha256": "sha256-j+eBfQEnBV/4ut65SrJrtet5LJ0aIbC1Aw7qJWcTkUI=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.ItalicaRuins_EN-US4110786318_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MeerkatManor_EN-US4231814766_UHD.jpg"
         },
-        "version": "ItalicaRuins_EN-US4110786318"
+        "version": "MeerkatManor_EN-US4231814766"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -211,7 +211,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-07-02",
+        "date": "2024-07-03",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -223,12 +223,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "0613b0022ddc9b99ffc258eb0e14b040cf65313e",
-            "sha256": "sha256-ERiMu5Pc19hDdBJNauU+kH7ZLh0+xkwwW8zo/F2D1No=",
+            "rev": "cfa425bb3364dbf17014309869270c178cb8042c",
+            "sha256": "sha256-9oYL/IH5uiZ8cY7zArylTxkujjIGlm3CDjs9f1mhAW8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0613b0022ddc9b99ffc258eb0e14b040cf65313e"
+        "version": "cfa425bb3364dbf17014309869270c178cb8042c"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
