@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MeerkatManor_EN-US4231814766";
+    version = "HudsonFireworks_EN-US4304057228";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MeerkatManor_EN-US4231814766_UHD.jpg";
-      sha256 = "sha256-j+eBfQEnBV/4ut65SrJrtet5LJ0aIbC1Aw7qJWcTkUI=";
+      url = "https://www.bing.com/th?id=OHR.HudsonFireworks_EN-US4304057228_UHD.jpg";
+      sha256 = "sha256-vwgV8dLZ5f23BmIg0RRle/h+y5mhVJEuEnqDsY3VDmU=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "cfa425bb3364dbf17014309869270c178cb8042c";
+    version = "0501e120f64e48b1b564d53e2c485ccf703ec6d5";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "cfa425bb3364dbf17014309869270c178cb8042c";
+      rev = "0501e120f64e48b1b564d53e2c485ccf703ec6d5";
       fetchSubmodules = false;
-      sha256 = "sha256-9oYL/IH5uiZ8cY7zArylTxkujjIGlm3CDjs9f1mhAW8=";
+      sha256 = "sha256-SGo6TE8jKagBFvX4iR96IO5nRzTdHnOKMO1gA+wi31k=";
     };
-    date = "2024-07-03";
+    date = "2024-07-04";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
@@ -169,11 +169,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.0.24";
+    version = "2.0.26";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.24/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.0.24.zip";
-      sha256 = "sha256-7YjUh+IZp+HMkrh31Solj57etmYrOrdeMjAaiKdj8iE=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.26/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.0.26.zip";
+      sha256 = "sha256-EeJT4lG361TwpsvTVO0oFosHBtWnyiSRyCVcCsjpSBI=";
     };
   };
 }
