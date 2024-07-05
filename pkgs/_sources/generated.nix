@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "HudsonFireworks_EN-US4304057228";
+    version = "NoahBeach_EN-US4383778312";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HudsonFireworks_EN-US4304057228_UHD.jpg";
-      sha256 = "sha256-vwgV8dLZ5f23BmIg0RRle/h+y5mhVJEuEnqDsY3VDmU=";
+      url = "https://www.bing.com/th?id=OHR.NoahBeach_EN-US4383778312_UHD.jpg";
+      sha256 = "sha256-n/yKMA9UYtdpeN1TDhdnAi4kjGErLYrW1gCldfXqKSw=";
     };
   };
   dbaeumer_vscode-eslint = {
