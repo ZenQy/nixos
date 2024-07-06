@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "NoahBeach_EN-US4383778312";
+    version = "ConwyRiver_EN-US4472231451";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.NoahBeach_EN-US4383778312_UHD.jpg";
-      sha256 = "sha256-n/yKMA9UYtdpeN1TDhdnAi4kjGErLYrW1gCldfXqKSw=";
+      url = "https://www.bing.com/th?id=OHR.ConwyRiver_EN-US4472231451_UHD.jpg";
+      sha256 = "sha256-R7H1cSd3LXJSAC0urkwWUe5m73n91F9Nk9NYHU2Skq0=";
     };
   };
   dbaeumer_vscode-eslint = {

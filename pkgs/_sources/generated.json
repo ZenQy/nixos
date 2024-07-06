@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-n/yKMA9UYtdpeN1TDhdnAi4kjGErLYrW1gCldfXqKSw=",
+            "sha256": "sha256-R7H1cSd3LXJSAC0urkwWUe5m73n91F9Nk9NYHU2Skq0=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.NoahBeach_EN-US4383778312_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ConwyRiver_EN-US4472231451_UHD.jpg"
         },
-        "version": "NoahBeach_EN-US4383778312"
+        "version": "ConwyRiver_EN-US4472231451"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
