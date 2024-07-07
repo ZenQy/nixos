@@ -3,10 +3,6 @@
 {
   imports = [
     ./hardware.nix
-    ../tx3/sing-box.nix
-  ];
-  nix.settings.substituters = [
-    "https://mirrors.ustc.edu.cn/nix-channels/store"
   ];
 
   systemd.network.networks.default = {

@@ -1,71 +1,26 @@
-{ lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  services.navidrome = {
+  # services.navidrome = {
+  #   enable = true;
+  #   settings = {
+  #     Address = "0.0.0.0";
+  #     Port = 4533;
+  #     ScanSchedule = "@daily";
+  #     MusicFolder = "/storage/music";
+  #     DefaultLanguage = "zh-Hans";
+  #   };
+  # };
+  # systemd.services.navidrome.serviceConfig = with lib;{
+  #   User = mkForce "nixos";
+  #   Group = mkForce "wheel";
+  # };
+  services.aria2 = {
     enable = true;
     settings = {
-      Address = "0.0.0.0";
-      Port = 4533;
-      ScanSchedule = "@daily";
-      MusicFolder = "/storage/music";
-      DefaultLanguage = "zh-Hans";
+      dir = "/storage/aria2";
     };
-  };
-  systemd.services.navidrome.serviceConfig = with lib;{
-    # DynamicUser = mkForce false;
-    User = mkForce "nixos";
-    Group = mkForce "wheel";
-  };
-
-  systemd.services.aria2 = {
-    description = "aria2 Service";
-    after = [ "network.target" ];
-    wantedBy = [ "multi-user.target" ];
-    preStart =
-      let
-        path = "/var/lib/aria2";
-        settings = {
-          # 配置参考https://github.com/P3TERX/aria2.conf/blob/master/aria2.conf
-          dir = "/storage/aria2";
-          disk-cache = "64M";
-          file-allocation = "falloc"; # 建议：机械硬盘falloc；固态硬盘none
-          no-file-allocation-limit = "64M";
-          continue = true;
-          always-resume = false;
-          max-resume-failure-tries = 0;
-          remote-time = true;
-          input-file = "aria2.session";
-          save-session = "aria2.session";
-          save-session-interval = 1;
-          http-accept-gzip = true;
-          content-disposition-default-utf8 = true;
-          enable-rpc = true;
-          rpc-listen-all = true;
-          rpc-allow-origin-all = true;
-          rpc-secure = false;
-          check-certificate = false;
-        };
-        conf = lib.generators.toKeyValue { } settings;
-      in
-      ''
-        if [[ ! -e "${path}/${settings.save-session}" ]]
-        then
-          touch "${path}/${settings.save-session}"
-        fi
-        echo "${conf}" > aria2.conf
-      '';
-    serviceConfig = {
-      User = "nixos";
-      Group = "wheel";
-      StateDirectory = "aria2";
-      RuntimeDirectory = "aria2";
-      WorkingDirectory = "/var/lib/aria2";
-      ExecStart = ''
-        ${pkgs.aria2}/bin/aria2c --conf-path=/var/lib/aria2/aria2.conf
-      '';
-      ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
-      Restart = "on-abort";
-    };
+    rpcSecretFile = builtins.toFile "aria2.txt" "";
   };
 
   systemd.services.alist = {
@@ -93,7 +48,7 @@
   };
 
   services.cron.systemCronJobs = [
-    "0 2 * * *  nixos  ${pkgs.curl}/bin/curl https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6Plus.m3u -o /storage/ipv6Plus.m3u"
+    "0 2 * * *  nixos  ${pkgs.curl}/bin/curl https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -o /storage/ipv6.m3u"
   ];
 
   services.caddy = {

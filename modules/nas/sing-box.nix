@@ -1,4 +1,4 @@
-{ pkgs, lib, secrets, ... }:
+{ pkgs, secrets, ... }:
 
 let
   settings = {
@@ -209,7 +209,7 @@ in
 {
   services.sing-box = {
     enable = true;
-    settings = lib.mkForce settings;
+    inherit settings;
   };
 
   boot.kernel.sysctl = {

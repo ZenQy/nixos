@@ -9,13 +9,14 @@
           layer = "top";
           position = "top";
           height = 30;
+
           modules-left = [
             "hyprland/workspaces"
-            # "sway/workspaces"
+            # "wlr/workspaces"
           ];
           modules-center = [
             "hyprland/window"
-            # "sway/window"
+            # "wlr/window"
           ];
           modules-right = [
             "idle_inhibitor"
@@ -30,6 +31,7 @@
             "clock"
             "tray"
           ];
+
           "hyprland/workspaces" = {
             format = "{icon}";
             format-icons = {
@@ -53,7 +55,8 @@
             separate-outputs = true;
             max-length = 100;
           };
-          # "sway/workspaces" = {
+
+          # "wlr/workspaces" = {
           #   format = "{icon}";
           #   format-icons = {
           #     "1" = "";
@@ -65,7 +68,7 @@
           #     default = "";
           #   };
           # };
-          # "sway/window" = {
+          # "wlr/window" = {
           #   format = " {title}";
           #   max-length = 100;
           #   rewrite = {
@@ -73,6 +76,7 @@
           #     "(.*) - Untitled\(Workspace\) - Visual Studio Code" = " $1";
           #   };
           # };
+
           idle_inhibitor = {
             format = "{icon}";
             format-icons = { activated = ""; deactivated = ""; };
@@ -90,12 +94,6 @@
             format-connected-battery = " {device_alias} {device_battery_percentage}%";
             format-device-preference = [ "" "" "" ];
           };
-          # pulseaudio = {
-          #   format = " { volume }% {icon}";
-          #   format-muted = "";
-          #   format-icons = [ "" "" "" ];
-          #   on-click = "pavucontrol";
-          # };
           wireplumber = {
             format = "{volume}% {icon}";
             format-muted = "";

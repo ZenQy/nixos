@@ -17,6 +17,7 @@
       this = import ./pkgs;
       desktop = import ./modules "desktop";
       server = import ./modules "server";
+      nas = import ./modules "nas";
       systems = [ "x86_64-linux" "aarch64-linux" ];
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
 
@@ -58,8 +59,8 @@
             osaka-2 = s;
             osaka-arm = s;
             crbs = s;
-            rock-5b = s;
-            tx3 = s;
+            rock-5b = nas;
+            tx3 = nas;
           };
         in
         builtins.mapAttrs
