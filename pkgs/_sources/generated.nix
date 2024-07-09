@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "NorwayBlueberries_EN-US4598733420";
+    version = "TalampayaNP_EN-US4761770918";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.NorwayBlueberries_EN-US4598733420_UHD.jpg";
-      sha256 = "sha256-+5IP9cwRTGFOss5ZY39fpb6695I8TlUYPl4QC2bdO5o=";
+      url = "https://www.bing.com/th?id=OHR.TalampayaNP_EN-US4761770918_UHD.jpg";
+      sha256 = "sha256-VtBgM35fIOBTSBqBEekvUzLQeqZJrxoAbZK2GlYckdc=";
     };
   };
   dbaeumer_vscode-eslint = {
