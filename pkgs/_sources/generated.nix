@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "TalampayaNP_EN-US4761770918";
+    version = "CollaredAracari_EN-US4924599176";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.TalampayaNP_EN-US4761770918_UHD.jpg";
-      sha256 = "sha256-VtBgM35fIOBTSBqBEekvUzLQeqZJrxoAbZK2GlYckdc=";
+      url = "https://www.bing.com/th?id=OHR.CollaredAracari_EN-US4924599176_UHD.jpg";
+      sha256 = "sha256-ppbWKV2k+NaWRblMG7pt6OQbKmtVI/H19RxwY0buFFU=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "4df60c69555238e63a10d8df5c364b7eabb57b84";
+    version = "e7c6984c72ea23835ec815b295b2290f3a7496d4";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "4df60c69555238e63a10d8df5c364b7eabb57b84";
+      rev = "e7c6984c72ea23835ec815b295b2290f3a7496d4";
       fetchSubmodules = false;
-      sha256 = "sha256-Pfxd+Le57lTWnVlOIzDO3I8kBp8Y5yZ8RBGByc+yxWU=";
+      sha256 = "sha256-7DPp/1YtjmcD8hLnWA+8oYjObJ8BO/mkV5TVwB1KFro=";
     };
-    date = "2024-07-07";
+    date = "2024-07-10";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
