@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "CollaredAracari_EN-US4924599176";
+    version = "GangiSicily_EN-US5325083744";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.CollaredAracari_EN-US4924599176_UHD.jpg";
-      sha256 = "sha256-ppbWKV2k+NaWRblMG7pt6OQbKmtVI/H19RxwY0buFFU=";
+      url = "https://www.bing.com/th?id=OHR.GangiSicily_EN-US5325083744_UHD.jpg";
+      sha256 = "sha256-khA+/gxeCzFD8kpYwmNX+RAj+tdM/0XOmO86M8DuDgs=";
     };
   };
   dbaeumer_vscode-eslint = {
