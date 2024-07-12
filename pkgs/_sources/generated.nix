@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "GangiSicily_EN-US5325083744";
+    version = "RainierWildflowers_EN-US8010104719";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.GangiSicily_EN-US5325083744_UHD.jpg";
-      sha256 = "sha256-khA+/gxeCzFD8kpYwmNX+RAj+tdM/0XOmO86M8DuDgs=";
+      url = "https://www.bing.com/th?id=OHR.RainierWildflowers_EN-US8010104719_UHD.jpg";
+      sha256 = "sha256-X0JYMcfGi2BLDaqTFYQ7CJM19us5+ZjhRsxqeCe/kmg=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,15 +119,15 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "e7c6984c72ea23835ec815b295b2290f3a7496d4";
+    version = "17373e2dee867c0b1e74669f57fff913faf057f4";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "e7c6984c72ea23835ec815b295b2290f3a7496d4";
+      rev = "17373e2dee867c0b1e74669f57fff913faf057f4";
       fetchSubmodules = false;
-      sha256 = "sha256-7DPp/1YtjmcD8hLnWA+8oYjObJ8BO/mkV5TVwB1KFro=";
+      sha256 = "sha256-bUGaOgzedKIhD+m1pDKQ6SOMtW9ofnjW4ztOItOue7s=";
     };
-    date = "2024-07-10";
+    date = "2024-07-12";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";

@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-khA+/gxeCzFD8kpYwmNX+RAj+tdM/0XOmO86M8DuDgs=",
+            "sha256": "sha256-X0JYMcfGi2BLDaqTFYQ7CJM19us5+ZjhRsxqeCe/kmg=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.GangiSicily_EN-US5325083744_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.RainierWildflowers_EN-US8010104719_UHD.jpg"
         },
-        "version": "GangiSicily_EN-US5325083744"
+        "version": "RainierWildflowers_EN-US8010104719"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -211,7 +211,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-07-10",
+        "date": "2024-07-12",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -223,12 +223,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "e7c6984c72ea23835ec815b295b2290f3a7496d4",
-            "sha256": "sha256-7DPp/1YtjmcD8hLnWA+8oYjObJ8BO/mkV5TVwB1KFro=",
+            "rev": "17373e2dee867c0b1e74669f57fff913faf057f4",
+            "sha256": "sha256-bUGaOgzedKIhD+m1pDKQ6SOMtW9ofnjW4ztOItOue7s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e7c6984c72ea23835ec815b295b2290f3a7496d4"
+        "version": "17373e2dee867c0b1e74669f57fff913faf057f4"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
