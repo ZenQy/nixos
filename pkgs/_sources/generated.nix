@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "CappadociaRocks_EN-US8162611189";
+    version = "TateishiPark_EN-US8384642632";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.CappadociaRocks_EN-US8162611189_UHD.jpg";
-      sha256 = "sha256-A458S3cJWRawbBkvAWUYFl4QpExVRHuI9vDe0EF3ncg=";
+      url = "https://www.bing.com/th?id=OHR.TateishiPark_EN-US8384642632_UHD.jpg";
+      sha256 = "sha256-gSBcQSUJqC+tgxGPL74LvfIXy8ehABAdKDD7xCs4A6M=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -119,23 +119,23 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "ada344cd6be202df35bb2c4b52b8c31aa51cd236";
+    version = "34fedd91d2be1e1494cd1bd9643b5d9805aeb84c";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "ada344cd6be202df35bb2c4b52b8c31aa51cd236";
+      rev = "34fedd91d2be1e1494cd1bd9643b5d9805aeb84c";
       fetchSubmodules = false;
-      sha256 = "sha256-ynA2qROY2JcHmesMMKkEfTDx59ATfk6b5IvN8i++nn4=";
+      sha256 = "sha256-Wu2S4sA0KidSSXut80EIAxQY7ynG7j6FSmL0R1qhNdo=";
     };
-    date = "2024-07-13";
+    date = "2024-07-15";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.4.2";
+    version = "5.5.1";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.4.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.4.2.zip";
-      sha256 = "sha256-Akb8JeNLs/7B0FXFeHjEXZSs5P34gIzXlpiOwDYzfKk=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.5.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.5.1.zip";
+      sha256 = "sha256-OBYZUp/b5YAg3RAdJDycMZqB/72IxLYic4ev+LDIGTI=";
     };
   };
   staticcheck = {
