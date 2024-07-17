@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-gSBcQSUJqC+tgxGPL74LvfIXy8ehABAdKDD7xCs4A6M=",
+            "sha256": "sha256-CRzMuSatlY+tdRupyQv6JIzmVGb4MehlveV3xhmrMQc=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.TateishiPark_EN-US8384642632_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MedievalRothenburg_EN-US8575765997_UHD.jpg"
         },
-        "version": "TateishiPark_EN-US8384642632"
+        "version": "MedievalRothenburg_EN-US8575765997"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -106,12 +106,12 @@
             "name": null,
             "owner": "go-delve",
             "repo": "delve",
-            "rev": "v1.22.1",
-            "sha256": "sha256-rR84muba8nMrPZAhH+8xXOOxBvKIsU8Xju8tG7BjqBo=",
+            "rev": "v1.23.0",
+            "sha256": "sha256-LtrPcYyuobHq6O3/vBKLTOMZfpYL7P3mtGfVqCMV9iM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.22.1"
+        "version": "v1.23.0"
     },
     "fcitx5-pinyin-zhwiki": {
         "cargoLocks": null,
@@ -136,12 +136,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "go-0.41.4.zip",
-            "sha256": "sha256-ntrEI/l+UjzqGJmtyfVf/+sZJstZy3fm/PSWKTd7/Q0=",
+            "name": "go-0.42.0.zip",
+            "sha256": "sha256-9Hye5EzLsYH8X3GN4+4n3jNJ1PYD7BVfzO8zKoghQdU=",
             "type": "url",
-            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.42.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.41.4"
+        "version": "0.42.0"
     },
     "it-tools": {
         "cargoLocks": null,
@@ -211,7 +211,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-07-15",
+        "date": "2024-07-17",
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -223,12 +223,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "34fedd91d2be1e1494cd1bd9643b5d9805aeb84c",
-            "sha256": "sha256-Wu2S4sA0KidSSXut80EIAxQY7ynG7j6FSmL0R1qhNdo=",
+            "rev": "d8f42364040cd0680226b0f7d72ab1955926f352",
+            "sha256": "sha256-NI0ozIejTfDM6ds7Kqzp62+LYfLNQJlL/NdqAryPzds=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "34fedd91d2be1e1494cd1bd9643b5d9805aeb84c"
+        "version": "d8f42364040cd0680226b0f7d72ab1955926f352"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -238,12 +238,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.5.1.zip",
-            "sha256": "sha256-OBYZUp/b5YAg3RAdJDycMZqB/72IxLYic4ev+LDIGTI=",
+            "name": "material-icon-theme-5.6.0.zip",
+            "sha256": "sha256-AoFJe//lOcwPrm91hw9dFYCJD3P78gPXiSnbnqka5A0=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.5.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.6.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.5.1"
+        "version": "5.6.0"
     },
     "staticcheck": {
         "cargoLocks": null,

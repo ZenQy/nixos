@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "TateishiPark_EN-US8384642632";
+    version = "MedievalRothenburg_EN-US8575765997";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.TateishiPark_EN-US8384642632_UHD.jpg";
-      sha256 = "sha256-gSBcQSUJqC+tgxGPL74LvfIXy8ehABAdKDD7xCs4A6M=";
+      url = "https://www.bing.com/th?id=OHR.MedievalRothenburg_EN-US8575765997_UHD.jpg";
+      sha256 = "sha256-CRzMuSatlY+tdRupyQv6JIzmVGb4MehlveV3xhmrMQc=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -54,13 +54,13 @@
   };
   dlv-dap = {
     pname = "dlv-dap";
-    version = "v1.22.1";
+    version = "v1.23.0";
     src = fetchFromGitHub {
       owner = "go-delve";
       repo = "delve";
-      rev = "v1.22.1";
+      rev = "v1.23.0";
       fetchSubmodules = false;
-      sha256 = "sha256-rR84muba8nMrPZAhH+8xXOOxBvKIsU8Xju8tG7BjqBo=";
+      sha256 = "sha256-LtrPcYyuobHq6O3/vBKLTOMZfpYL7P3mtGfVqCMV9iM=";
     };
   };
   fcitx5-pinyin-zhwiki = {
@@ -73,11 +73,11 @@
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.41.4";
+    version = "0.42.0";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.41.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.41.4.zip";
-      sha256 = "sha256-ntrEI/l+UjzqGJmtyfVf/+sZJstZy3fm/PSWKTd7/Q0=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.42.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.42.0.zip";
+      sha256 = "sha256-9Hye5EzLsYH8X3GN4+4n3jNJ1PYD7BVfzO8zKoghQdU=";
     };
   };
   it-tools = {
@@ -119,23 +119,23 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "34fedd91d2be1e1494cd1bd9643b5d9805aeb84c";
+    version = "d8f42364040cd0680226b0f7d72ab1955926f352";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "34fedd91d2be1e1494cd1bd9643b5d9805aeb84c";
+      rev = "d8f42364040cd0680226b0f7d72ab1955926f352";
       fetchSubmodules = false;
-      sha256 = "sha256-Wu2S4sA0KidSSXut80EIAxQY7ynG7j6FSmL0R1qhNdo=";
+      sha256 = "sha256-NI0ozIejTfDM6ds7Kqzp62+LYfLNQJlL/NdqAryPzds=";
     };
-    date = "2024-07-15";
+    date = "2024-07-17";
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.5.1";
+    version = "5.6.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.5.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.5.1.zip";
-      sha256 = "sha256-OBYZUp/b5YAg3RAdJDycMZqB/72IxLYic4ev+LDIGTI=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.6.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.6.0.zip";
+      sha256 = "sha256-AoFJe//lOcwPrm91hw9dFYCJD3P78gPXiSnbnqka5A0=";
     };
   };
   staticcheck = {
