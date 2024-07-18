@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MedievalRothenburg_EN-US8575765997";
+    version = "MayotteCoral_EN-US4102346691";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MedievalRothenburg_EN-US8575765997_UHD.jpg";
-      sha256 = "sha256-CRzMuSatlY+tdRupyQv6JIzmVGb4MehlveV3xhmrMQc=";
+      url = "https://www.bing.com/th?id=OHR.MayotteCoral_EN-US4102346691_UHD.jpg";
+      sha256 = "sha256-9dmvb7SMlnxI1KyHWOpdy8G3ia2Zmgf8a3HRa25NHBk=";
     };
   };
   dbaeumer_vscode-eslint = {
