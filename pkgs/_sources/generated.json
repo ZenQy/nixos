@@ -71,11 +71,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9dmvb7SMlnxI1KyHWOpdy8G3ia2Zmgf8a3HRa25NHBk=",
+            "sha256": "sha256-80kVGJTWPVw0I854dpbKVLXsY0xEBYO34dAsmbB1374=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.MayotteCoral_EN-US4102346691_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.YoungJaguar_EN-US8866928893_UHD.jpg"
         },
-        "version": "MayotteCoral_EN-US4102346691"
+        "version": "YoungJaguar_EN-US8866928893"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,

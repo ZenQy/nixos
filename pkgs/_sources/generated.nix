@@ -37,10 +37,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MayotteCoral_EN-US4102346691";
+    version = "YoungJaguar_EN-US8866928893";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MayotteCoral_EN-US4102346691_UHD.jpg";
-      sha256 = "sha256-9dmvb7SMlnxI1KyHWOpdy8G3ia2Zmgf8a3HRa25NHBk=";
+      url = "https://www.bing.com/th?id=OHR.YoungJaguar_EN-US8866928893_UHD.jpg";
+      sha256 = "sha256-80kVGJTWPVw0I854dpbKVLXsY0xEBYO34dAsmbB1374=";
     };
   };
   dbaeumer_vscode-eslint = {
