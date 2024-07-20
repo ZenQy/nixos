@@ -1,25 +1,4 @@
 {
-    "Yacd-meta": {
-        "cargoLocks": null,
-        "date": "2024-06-27",
-        "extract": null,
-        "name": "Yacd-meta",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "MetaCubeX",
-            "repo": "Yacd-meta",
-            "rev": "186b3a3d4ba5590d9525b90fafcadace043788ac",
-            "sha256": "sha256-n0MWfM8kQvQSZcg4Ri/QNZ1vUIwa0xRdmAhEC4YLmJU=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "186b3a3d4ba5590d9525b90fafcadace043788ac"
-    },
     "alist": {
         "cargoLocks": null,
         "date": null,
@@ -71,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-80kVGJTWPVw0I854dpbKVLXsY0xEBYO34dAsmbB1374=",
+            "sha256": "sha256-QzmnESufc5G9+u4e/gPqGZ4ZM4/WdsH1mEzEnXRJRCM=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.YoungJaguar_EN-US8866928893_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MineralMoon_EN-US8936600169_UHD.jpg"
         },
-        "version": "YoungJaguar_EN-US8866928893"
+        "version": "MineralMoon_EN-US8936600169"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -113,20 +92,20 @@
         },
         "version": "v1.23.0"
     },
-    "fcitx5-pinyin-zhwiki": {
+    "fcitx5-pinyin-zenith": {
         "cargoLocks": null,
         "date": null,
         "extract": null,
-        "name": "fcitx5-pinyin-zhwiki",
+        "name": "fcitx5-pinyin-zenith",
         "passthru": null,
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uRpKPq+/xJ8akKB8ol/JRF79VfDIQ8L4SxLDXzpfPxg=",
+            "sha256": "sha256-D7x7OfwbHKHWATxgzo6OKu1bosMqoujICJJev6HL4Vk=",
             "type": "url",
-            "url": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.5/zhwiki-20240509.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2024.07.14/zenith.dict"
         },
-        "version": "20240509"
+        "version": "v2024.07.14"
     },
     "golang_go": {
         "cargoLocks": null,
@@ -194,6 +173,21 @@
         },
         "version": "v1.4.7"
     },
+    "metacubexd": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "metacubexd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-bNTuV3uee4J82wcxP0cKy3LtLKaXkDyGY0xB8RLvp74=",
+            "type": "url",
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.141.1/compressed-dist.tgz"
+        },
+        "version": "v1.141.1"
+    },
     "mhutchie_git-graph": {
         "cargoLocks": null,
         "date": null,
@@ -211,7 +205,7 @@
     },
     "nezha-dashboard": {
         "cargoLocks": null,
-        "date": "2024-07-17",
+        "date": null,
         "extract": null,
         "name": "nezha-dashboard",
         "passthru": null,
@@ -223,12 +217,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "d8f42364040cd0680226b0f7d72ab1955926f352",
-            "sha256": "sha256-NI0ozIejTfDM6ds7Kqzp62+LYfLNQJlL/NdqAryPzds=",
+            "rev": "v0.18.1",
+            "sha256": "sha256-E3ZoP6CHZMxWNySMnnfj0TgeFZVil+jeUAYV9SCuXJQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d8f42364040cd0680226b0f7d72ab1955926f352"
+        "version": "v0.18.1"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
