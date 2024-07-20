@@ -12,7 +12,7 @@ fetch.github = "go-delve/delve"
 # fetch.github = "nezhahq/agent"
 
 [nezha-dashboard]
-src.git = "https://github.com/naiba/nezha"
+src.github = "naiba/nezha"
 fetch.github = "naiba/nezha"
 
 [staticcheck]

@@ -2,7 +2,8 @@
 
 {
   i18n.inputMethod = {
-    enabled = "fcitx5";
+    enable = true;
+    type = "fcitx5";
     fcitx5 = {
       waylandFrontend = true;
       addons = with pkgs; [
@@ -16,6 +17,9 @@
       settings = {
         globalOptions = {
           "Hotkey/TriggerKeys"."0" = "Control+Shift+Shift_L";
+          "Behavior/DisabledAddons"."0" = "fcitx4frontend";
+          "Behavior/DisabledAddons"."1" = "ibusfrontend";
+          "Behavior/DisabledAddons"."2" = "xim";
         };
         inputMethod = {
           "Groups/0" = {
