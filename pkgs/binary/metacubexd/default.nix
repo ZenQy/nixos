@@ -4,12 +4,13 @@ stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
 
   installPhase = ''
+    cd ..
     find . -name '*' -exec install -Dm644 {} "$out/{}" \;
   '';
 
   meta = with lib; {
-    description = "Yet Another Clash Dashboard";
-    homepage = "https://github.com/MetaCubeX/Yacd-meta";
+    description = "Mihomo Dashboard, The Official One, XD";
+    homepage = "https://github.com/MetaCubeX/metacubexd";
     license = licenses.mit;
     maintainers = [{
       name = "ZenQy";

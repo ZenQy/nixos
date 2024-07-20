@@ -1,7 +1,7 @@
-[fcitx5-pinyin-zhwiki]
-src.archpkg = "fcitx5-pinyin-zhwiki"
-src.prefix = "0.2.5."
-fetch.url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.5/zhwiki-$ver.dict"
+[fcitx5-pinyin-zenith]
+src.github = "ZenQy/scel2dict"
+fetch.url = "https://github.com/ZenQy/scel2dict/releases/download/$ver/zenith.dict"
+
 
 [dlv-dap]
 src.github = "go-delve/delve"
@@ -73,10 +73,9 @@ fetch.github = "j178/leetgo"
 # src.prefix = "v"
 # fetch.tarball = "https://github.com/coder/code-server/releases/download/v$ver/code-server-$ver-linux-arm64.tar.gz"
 
-[Yacd-meta]
-src.git = "https://github.com/MetaCubeX/Yacd-meta"
-src.branch = "gh-pages"
-fetch.github = "MetaCubeX/Yacd-meta"
+[metacubexd]
+src.github = "MetaCubeX/metacubexd"
+fetch.url = "https://github.com/MetaCubeX/metacubexd/releases/download/$ver/compressed-dist.tgz"
 
 [alist]
 src.github_tag = "alist-org/alist"

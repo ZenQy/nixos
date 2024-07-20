@@ -4,18 +4,18 @@ stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
   dontUnpack = true;
   installPhase = ''
-    install -Dm644 $src $out/share/fcitx5/pinyin/dictionaries/zhwiki.dict
+    install -Dm644 $src $out/share/fcitx5/pinyin/dictionaries/zenith.dict
   '';
   meta = with lib; {
-    description = "zhwiki dictionary for fcitx5-pinyin and rime";
-    homepage = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki";
+    description = "Transform sogou dictionary for Fcitx5";
+    homepage = "https://github.com/ZenQy/scel2dict";
     maintainers = [
       {
         name = "ZenQy";
         email = "zenqy.qin@gmail.com";
       }
     ];
-    license = licenses.unlicense;
+    license = licenses.mit;
     platforms = platforms.linux;
   };
 }
