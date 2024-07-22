@@ -3,32 +3,32 @@
 {
   alist = {
     pname = "alist";
-    version = "v3.35.0";
+    version = "v3.36.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.35.0";
+      rev = "v3.36.0";
       fetchSubmodules = false;
-      sha256 = "sha256-N9WgaPzc8cuDN7N0Ny3t6ARGla0lCluzF2Mut3Pg880=";
+      sha256 = "sha256-l0/DS7ZSuto8QHvSf1ae7wy/a7yqp05koWpb+ExvJJk=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.35.0";
+    version = "3.36.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "web-dist";
-      rev = "3.35.0";
+      rev = "3.36.0";
       fetchSubmodules = false;
-      sha256 = "sha256-DGUTyPhzjV5aqKBhl+UIas/epiiqPdmIUqn1uGLDAyo=";
+      sha256 = "sha256-z65J5iRs38mJy1KEZ+QMHVMUS52SzVMKxPefli3m4iQ=";
     };
   };
   bingimg = {
     pname = "bingimg";
-    version = "MineralMoon_EN-US8936600169";
+    version = "HammockCamping_EN-US9298465355";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MineralMoon_EN-US8936600169_UHD.jpg";
-      sha256 = "sha256-QzmnESufc5G9+u4e/gPqGZ4ZM4/WdsH1mEzEnXRJRCM=";
+      url = "https://www.bing.com/th?id=OHR.HammockCamping_EN-US9298465355_UHD.jpg";
+      sha256 = "sha256-vRvpIBuNowHMQ/UeO5xVlD0iCMa9cJMQd8dfiP8aRvs=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -126,11 +126,11 @@
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.6.0";
+    version = "5.7.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.6.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.6.0.zip";
-      sha256 = "sha256-AoFJe//lOcwPrm91hw9dFYCJD3P78gPXiSnbnqka5A0=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.7.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.7.0.zip";
+      sha256 = "sha256-1rfgDnU24VkHvzkAlVWabDhO/a+pWX9tvPHkgqROnnc=";
     };
   };
   staticcheck = {
@@ -164,11 +164,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.0.26";
+    version = "2.0.28";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.26/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.0.26.zip";
-      sha256 = "sha256-EeJT4lG361TwpsvTVO0oFosHBtWnyiSRyCVcCsjpSBI=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.28/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.0.28.zip";
+      sha256 = "sha256-f0nnmQemu6DxveQfJJrZGrj3dOTHhH1wYJGnNJlM6sU=";
     };
   };
 }

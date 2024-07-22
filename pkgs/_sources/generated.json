@@ -13,12 +13,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.35.0",
-            "sha256": "sha256-N9WgaPzc8cuDN7N0Ny3t6ARGla0lCluzF2Mut3Pg880=",
+            "rev": "v3.36.0",
+            "sha256": "sha256-l0/DS7ZSuto8QHvSf1ae7wy/a7yqp05koWpb+ExvJJk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.35.0"
+        "version": "v3.36.0"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "web-dist",
-            "rev": "3.35.0",
-            "sha256": "sha256-DGUTyPhzjV5aqKBhl+UIas/epiiqPdmIUqn1uGLDAyo=",
+            "rev": "3.36.0",
+            "sha256": "sha256-z65J5iRs38mJy1KEZ+QMHVMUS52SzVMKxPefli3m4iQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3.35.0"
+        "version": "3.36.0"
     },
     "bingimg": {
         "cargoLocks": null,
@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QzmnESufc5G9+u4e/gPqGZ4ZM4/WdsH1mEzEnXRJRCM=",
+            "sha256": "sha256-vRvpIBuNowHMQ/UeO5xVlD0iCMa9cJMQd8dfiP8aRvs=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.MineralMoon_EN-US8936600169_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.HammockCamping_EN-US9298465355_UHD.jpg"
         },
-        "version": "MineralMoon_EN-US8936600169"
+        "version": "HammockCamping_EN-US9298465355"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -232,12 +232,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.6.0.zip",
-            "sha256": "sha256-AoFJe//lOcwPrm91hw9dFYCJD3P78gPXiSnbnqka5A0=",
+            "name": "material-icon-theme-5.7.0.zip",
+            "sha256": "sha256-1rfgDnU24VkHvzkAlVWabDhO/a+pWX9tvPHkgqROnnc=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.6.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.7.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.6.0"
+        "version": "5.7.0"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -298,11 +298,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "volar-2.0.26.zip",
-            "sha256": "sha256-EeJT4lG361TwpsvTVO0oFosHBtWnyiSRyCVcCsjpSBI=",
+            "name": "volar-2.0.28.zip",
+            "sha256": "sha256-f0nnmQemu6DxveQfJJrZGrj3dOTHhH1wYJGnNJlM6sU=",
             "type": "url",
-            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.26/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.28/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "2.0.26"
+        "version": "2.0.28"
     }
 }
