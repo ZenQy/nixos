@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "HammockCamping_EN-US9298465355";
+    version = "MethoniCastle_EN-US9447007951";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HammockCamping_EN-US9298465355_UHD.jpg";
-      sha256 = "sha256-vRvpIBuNowHMQ/UeO5xVlD0iCMa9cJMQd8dfiP8aRvs=";
+      url = "https://www.bing.com/th?id=OHR.MethoniCastle_EN-US9447007951_UHD.jpg";
+      sha256 = "sha256-qbTLZLAOy3YdrJ4qednVQ6TYTONDfXgY5wbG+x1IFQM=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.141.1";
+    version = "v1.141.2";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.141.1/compressed-dist.tgz";
-      sha256 = "sha256-bNTuV3uee4J82wcxP0cKy3LtLKaXkDyGY0xB8RLvp74=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.141.2/compressed-dist.tgz";
+      sha256 = "sha256-3VFCgl9r9hZKR/TuRMlsWemzr8dgdxfPPIQstKx0EOY=";
     };
   };
   mhutchie_git-graph = {
