@@ -43,7 +43,7 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Install nixFlake
-        uses: cachix/install-nix-action@v25
+        uses: cachix/install-nix-action@v27
 
       - name: Day of week
         run: |
@@ -135,14 +135,14 @@ jobs:
         run: git pull
 
       - name: Install nixFlake
-        uses: cachix/install-nix-action@v25
+        uses: cachix/install-nix-action@v27
         with:
           extra_nix_config: |
             trusted-public-keys = zenqy.cachix.org-1:G5csLBsu/kQIOXU7XUiqeMacwzN1WQWv0+GysTVmJgo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
             substituters = https://zenqy.cachix.org/ https://cache.nixos.org/
           
       - name: Use Cachix
-        uses: cachix/cachix-action@v14
+        uses: cachix/cachix-action@v15
         with:
           name: zenqy
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
