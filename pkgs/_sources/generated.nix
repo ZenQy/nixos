@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MethoniCastle_EN-US9447007951";
+    version = "SheepCousins_EN-US9566915151";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MethoniCastle_EN-US9447007951_UHD.jpg";
-      sha256 = "sha256-qbTLZLAOy3YdrJ4qednVQ6TYTONDfXgY5wbG+x1IFQM=";
+      url = "https://www.bing.com/th?id=OHR.SheepCousins_EN-US9566915151_UHD.jpg";
+      sha256 = "sha256-UuK1mXqGhDLBkkFpUEndRazQUnXbd81VFnUZdrQbJOs=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.141.2";
+    version = "v1.143.0";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.141.2/compressed-dist.tgz";
-      sha256 = "sha256-3VFCgl9r9hZKR/TuRMlsWemzr8dgdxfPPIQstKx0EOY=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.143.0/compressed-dist.tgz";
+      sha256 = "sha256-6BoQOjkOkwn//gM2g5d1yxKElekH/Z2H+/jztca/Kr4=";
     };
   };
   mhutchie_git-graph = {
@@ -115,13 +115,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.18.1";
+    version = "v0.18.2";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.18.1";
+      rev = "v0.18.2";
       fetchSubmodules = false;
-      sha256 = "sha256-E3ZoP6CHZMxWNySMnnfj0TgeFZVil+jeUAYV9SCuXJQ=";
+      sha256 = "sha256-6Q4Fg6AcI9T3egRLylHqFdVGjowJAruEOjF/LhlpAaM=";
     };
   };
   pkief_material-icon-theme = {
