@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "SheepCousins_EN-US9566915151";
+    version = "SmokyMountainTrail_EN-US9730767535";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SheepCousins_EN-US9566915151_UHD.jpg";
-      sha256 = "sha256-UuK1mXqGhDLBkkFpUEndRazQUnXbd81VFnUZdrQbJOs=";
+      url = "https://www.bing.com/th?id=OHR.SmokyMountainTrail_EN-US9730767535_UHD.jpg";
+      sha256 = "sha256-mMbi+ruxGPGUyL14W3Zv/u+tbqRo11Z663yguHGvlqo=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.143.0";
+    version = "v1.143.1";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.143.0/compressed-dist.tgz";
-      sha256 = "sha256-6BoQOjkOkwn//gM2g5d1yxKElekH/Z2H+/jztca/Kr4=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.143.1/compressed-dist.tgz";
+      sha256 = "sha256-3+nGGWcOUnDIp9+AMxfd72QOvPkRqQKwRMPFmILjCJQ=";
     };
   };
   mhutchie_git-graph = {
@@ -126,11 +126,11 @@
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.7.0";
+    version = "5.8.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.7.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.7.0.zip";
-      sha256 = "sha256-1rfgDnU24VkHvzkAlVWabDhO/a+pWX9tvPHkgqROnnc=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.8.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.8.0.zip";
+      sha256 = "sha256-L16dxKXmzK7pI5E4sZ6nBXRazBbg84rp2XY9RljkEuk=";
     };
   };
   staticcheck = {
