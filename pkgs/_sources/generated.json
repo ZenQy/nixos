@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mMbi+ruxGPGUyL14W3Zv/u+tbqRo11Z663yguHGvlqo=",
+            "sha256": "sha256-KNflMjpAAm9aYRZ023BdNmsp8uI9GCckj9bRKBKKWUc=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.SmokyMountainTrail_EN-US9730767535_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PontNeuf_EN-US5735328254_UHD.jpg"
         },
-        "version": "SmokyMountainTrail_EN-US9730767535"
+        "version": "PontNeuf_EN-US5735328254"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,

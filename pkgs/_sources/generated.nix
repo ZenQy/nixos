@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "SmokyMountainTrail_EN-US9730767535";
+    version = "PontNeuf_EN-US5735328254";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SmokyMountainTrail_EN-US9730767535_UHD.jpg";
-      sha256 = "sha256-mMbi+ruxGPGUyL14W3Zv/u+tbqRo11Z663yguHGvlqo=";
+      url = "https://www.bing.com/th?id=OHR.PontNeuf_EN-US5735328254_UHD.jpg";
+      sha256 = "sha256-KNflMjpAAm9aYRZ023BdNmsp8uI9GCckj9bRKBKKWUc=";
     };
   };
   dbaeumer_vscode-eslint = {
