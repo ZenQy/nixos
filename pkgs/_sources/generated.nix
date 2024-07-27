@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "PontNeuf_EN-US5735328254";
+    version = "RhinelandVineyards_EN-US5864380431";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.PontNeuf_EN-US5735328254_UHD.jpg";
-      sha256 = "sha256-KNflMjpAAm9aYRZ023BdNmsp8uI9GCckj9bRKBKKWUc=";
+      url = "https://www.bing.com/th?id=OHR.RhinelandVineyards_EN-US5864380431_UHD.jpg";
+      sha256 = "sha256-tgK8S/UbVDulOz1o77o8vmpKaqMndi290e4zlpXlPw0=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.143.1";
+    version = "v1.143.2";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.143.1/compressed-dist.tgz";
-      sha256 = "sha256-3+nGGWcOUnDIp9+AMxfd72QOvPkRqQKwRMPFmILjCJQ=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.143.2/compressed-dist.tgz";
+      sha256 = "sha256-W7HoKwWwzqrH7SniY7r8sTl5c0f3RM5JOkkQZfBmphQ=";
     };
   };
   mhutchie_git-graph = {
