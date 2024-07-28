@@ -3,7 +3,6 @@
 {
   imports = [
     ./hardware.nix
-    ./services.nix
   ];
 
   systemd.network.networks.default = {
