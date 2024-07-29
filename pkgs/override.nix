@@ -20,6 +20,7 @@ final: prev:
       # github_vscode-github-actions
       tamasfe_even-better-toml
       usernamehw_errorlens
+      rust-lang_rust-analyzer
     ];
   };
 

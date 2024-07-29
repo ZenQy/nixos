@@ -10,9 +10,9 @@
         path = "/var/lib/aria2";
         settings = {
           # 配置参考https://github.com/P3TERX/aria2.conf/blob/master/aria2.conf
-          dir = "/home/nixos/storage/aria2";
+          dir = "/storage/aria2";
           disk-cache = "64M";
-          file-allocation = "falloc"; # 建议：机械硬盘falloc；固态硬盘none
+          file-allocation = "none"; # 建议：机械硬盘falloc；固态硬盘none
           no-file-allocation-limit = "64M";
           continue = true;
           always-resume = false;
@@ -28,16 +28,6 @@
           rpc-allow-origin-all = true;
           rpc-secure = false;
           check-certificate = false;
-          # PT
-          enable-dht = false;
-          enable-dht6 = false;
-          peer-id-prefix = "-TR2940-";
-          user-agent = "Transmission/2.94";
-          peer-agent = "Transmission/2.94";
-          bt-tracker-interval = 60;
-          bt-max-peers = 30;
-          bt-enable-lpd = false;
-          enable-peer-exchange = false;
         };
         conf = lib.generators.toKeyValue { } settings;
       in
@@ -87,22 +77,21 @@
   };
 
   services.cron.systemCronJobs = [
-    "0 2 * * *  nixos  ${pkgs.curl}/bin/curl https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -o /home/nixos/storage/ipv6.m3u"
+    "0 2 * * *  nixos  ${pkgs.curl}/bin/curl https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -o /storage/ipv6.m3u"
   ];
 
-  systemd.services.caddy.serviceConfig.ProtectHome = lib.mkForce false;
   services.caddy = {
     enable = true;
     extraConfig = ''
-      http://10.0.0.11:6868 {
-        root * ${pkgs.ariang} /share/ariang
+      http://10.0.0.8:6868 {
+        root * ${pkgs.ariang}/share/ariang
         file_server browse
       }
-      http://10.0.0.11:8080 {
-        root * /home/nixos/storage
+      http://10.0.0.8:8080 {
+        root * /storage
         file_server browse
       }
-      10.0.0.11 {
+      10.0.0.8 {
         reverse_proxy :5244
       }
     '';

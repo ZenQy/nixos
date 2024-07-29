@@ -51,6 +51,10 @@ fetch.vsmarketplace = "usernamehw.errorlens"
 src.vsmarketplace = "tamasfe.even-better-toml"
 fetch.vsmarketplace = "tamasfe.even-better-toml"
 
+[rust-lang_rust-analyzer]
+src.vsmarketplace = "rust-lang.rust-analyzer"
+fetch.vsmarketplace = "rust-lang.rust-analyzer"
+
 [bingimg]
 src.webpage = "https://www.bing.com/"
 src.regex = "id=OHR\\.(.*?)_tmb\\.jpg"
