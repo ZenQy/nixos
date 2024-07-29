@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-tgK8S/UbVDulOz1o77o8vmpKaqMndi290e4zlpXlPw0=",
+            "sha256": "sha256-sr4ZrPo9F4ZSzaOIOp01wgBW5f4fxp4UjhjwZJfPkHo=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.RhinelandVineyards_EN-US5864380431_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CorbettTigers_EN-US6183924498_UHD.jpg"
         },
-        "version": "RhinelandVineyards_EN-US5864380431"
+        "version": "CorbettTigers_EN-US6183924498"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -182,11 +182,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-W7HoKwWwzqrH7SniY7r8sTl5c0f3RM5JOkkQZfBmphQ=",
+            "sha256": "sha256-mKkHatVBsnVtg0artIdRYd1P/6OBvSk5XctwjLJeoxo=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.143.2/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.143.4/compressed-dist.tgz"
         },
-        "version": "v1.143.2"
+        "version": "v1.143.4"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v0.18.2",
-            "sha256": "sha256-6Q4Fg6AcI9T3egRLylHqFdVGjowJAruEOjF/LhlpAaM=",
+            "rev": "v0.18.5",
+            "sha256": "sha256-UTZLF6xUYUjcDQ+rNYNnLIrNzavvw+QWYWhTVVO7tq8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.18.2"
+        "version": "v0.18.5"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -238,6 +238,21 @@
             "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.8.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
         "version": "5.8.0"
+    },
+    "rust-lang_rust-analyzer": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "rust-lang_rust-analyzer",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": "rust-analyzer-0.4.2052.zip",
+            "sha256": "sha256-LxpvqMkm89kFv2+OjLxUy+Aowk+ibc3SvfKoDnJWMAQ=",
+            "type": "url",
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2052/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+        },
+        "version": "0.4.2052"
     },
     "staticcheck": {
         "cargoLocks": null,
