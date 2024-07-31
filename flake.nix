@@ -46,6 +46,25 @@
           this.packages pkgs
         );
 
+      apps = forAllSystems
+        (system:
+          let
+            pkgs = import nixpkgs { inherit system; };
+            home = import ./modules/desktop/home {
+              inherit pkgs;
+              lib = nixpkgs.lib;
+            };
+          in
+          {
+            default = {
+              type = "app";
+              program = "${home.gen}";
+            };
+          }
+        );
+
+
+
       nixosConfigurations =
         let
           d = self.nixosModules.desktop;
