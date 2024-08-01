@@ -3,6 +3,9 @@
 let
   settings =
     let
+      process_name_direct = [
+        "transmission-daemon"
+      ];
       domain_suffix_proxy = [
         "googleapis.cn"
       ];
@@ -31,6 +34,10 @@ let
         rules = [
           {
             outbound = "any";
+            server = "dns_direct";
+          }
+          {
+            process_name = process_name_direct;
             server = "dns_direct";
           }
           {
@@ -82,6 +89,10 @@ let
           {
             protocol = "dns";
             outbound = "dns-out";
+          }
+          {
+            process_name = process_name_direct;
+            outbound = "direct";
           }
           {
             domain_suffix = domain_suffix_proxy;

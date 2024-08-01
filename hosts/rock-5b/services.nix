@@ -76,6 +76,21 @@
     };
   };
 
+  services.transmission = {
+    enable = true;
+    user = "nixos";
+    group = "wheel";
+    webHome = pkgs.flood-for-transmission;
+    package = pkgs.transmission_4;
+    settings = {
+      dht-enabled = false;
+      download-dir = "/storage/transmission";
+      incomplete-dir-enabled = false;
+      rpc-bind-address = "0.0.0.0";
+      rpc-whitelist = "127.0.0.1,10.0.0.*";
+    };
+  };
+
   services.cron.systemCronJobs = [
     "0 2 * * *  nixos  ${pkgs.curl}/bin/curl https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -o /storage/ipv6.m3u"
   ];
