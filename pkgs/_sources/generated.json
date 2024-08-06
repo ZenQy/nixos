@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-4dcDxAKvk1RGnu27J+GOfDIYJiORifrdjsUV9n3ipA4=",
+            "sha256": "sha256-K0zXKFyOI+tLHgrZ1C6yeLW1rkbq5chDtqXc4qqlqV0=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.HertfordshireLavender_EN-US6911884438_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MolokiniHawaii_EN-US7128254175_UHD.jpg"
         },
-        "version": "HertfordshireLavender_EN-US6911884438"
+        "version": "MolokiniHawaii_EN-US7128254175"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2061.zip",
-            "sha256": "sha256-rT+dL/JvUJgMiw0fl6Pki2L7OMW6IezxzlozAilwSN8=",
+            "name": "rust-analyzer-0.4.2063.zip",
+            "sha256": "sha256-y4cz/e5CW6rJ6QPEv1jWSk2szx2mPpVW7SFhTZ9Ozu4=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2061/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2063/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2061"
+        "version": "0.4.2063"
     },
     "staticcheck": {
         "cargoLocks": null,
