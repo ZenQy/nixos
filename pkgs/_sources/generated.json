@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-TizuD22pdWUPuhETqr3f3jxDm+EZcELQ9pqojb6s0V0=",
+            "sha256": "sha256-qM7C5zGXyLsGZp1L9/QN2a0Elqmed6ZzojuJyjnA/zc=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.MichiganLighthouse_EN-US2082743301_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.SpottedOwlet_EN-US7339417169_UHD.jpg"
         },
-        "version": "MichiganLighthouse_EN-US2082743301"
+        "version": "SpottedOwlet_EN-US7339417169"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2064.zip",
-            "sha256": "sha256-liIGloTkLmifmoO4MfwCx9JcU1ZnbFe6dRfGaxEkvfA=",
+            "name": "rust-analyzer-0.4.2065.zip",
+            "sha256": "sha256-PGBlvPgaNwLYkhEa2v+5Jp3RUzXj/ouhdoWcRQr92UM=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2064/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2065/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2064"
+        "version": "0.4.2065"
     },
     "staticcheck": {
         "cargoLocks": null,
