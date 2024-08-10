@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "IncaRuinPeru_EN-US1209778539";
+    version = "JoshuaTreeNP_EN-US1399159741";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.IncaRuinPeru_EN-US1209778539_UHD.jpg";
-      sha256 = "sha256-F6vaZIU5iy1ANQXMIjNJb+UaR/qoy/Yb4bdywi1E0ts=";
+      url = "https://www.bing.com/th?id=OHR.JoshuaTreeNP_EN-US1399159741_UHD.jpg";
+      sha256 = "sha256-A8eL6ZPQhhbbOZ0xb0pjUgMjoVhKHfcOMaJessGlB2o=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.144.0";
+    version = "v1.144.1";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.144.0/compressed-dist.tgz";
-      sha256 = "sha256-L9YfMjOl+EaE4JYcIQ1z7WI7n74CmwaVdhWJE9glh24=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.144.1/compressed-dist.tgz";
+      sha256 = "sha256-wMxSt/u9jQQ9RyRar5ArfEAQCWDJIMzZ0bMxoyrrIRk=";
     };
   };
   mhutchie_git-graph = {
@@ -115,31 +115,31 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.18.7";
+    version = "v0.18.8";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.18.7";
+      rev = "v0.18.8";
       fetchSubmodules = false;
-      sha256 = "sha256-8yqEWCkmsiypst1r7fPKCeWJmfn4Sd+ZSfSTB7lRDy8=";
+      sha256 = "sha256-x3g4lNFvkCZr3k5txAHXNO7GrzVWSG2/6DdA90Hl8VM=";
     };
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.8.0";
+    version = "5.9.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.8.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.8.0.zip";
-      sha256 = "sha256-L16dxKXmzK7pI5E4sZ6nBXRazBbg84rp2XY9RljkEuk=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.9.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.9.0.zip";
+      sha256 = "sha256-Ms6XkYWWC8pq7qiyuH62hdOfRJUNqn0k1s3ZfgP6xAM=";
     };
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2066";
+    version = "0.4.2067";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2066/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2066.zip";
-      sha256 = "sha256-gUxEn4Ls/O8AQRQ8BTsrNY7jPRWwqN1VoFFG7ZkR2BM=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2067/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2067.zip";
+      sha256 = "sha256-BhvknZnoWmHRVydvuuSBqUO+ywZkgOAJQg54B1fSb8w=";
     };
   };
   staticcheck = {
