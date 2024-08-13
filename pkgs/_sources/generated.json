@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ip1Tb76J08WOJHqh+xjCpldCj2X5O5Vcojyjep3Zl9c=",
+            "sha256": "sha256-QGJ+82V0UlvjifpY7JF4AgCYUcy9hewfBigi2ejNWt4=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.ElephantsAmboseli_EN-US1913542949_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.DugiOtokCroatia_EN-US1981524043_UHD.jpg"
         },
-        "version": "ElephantsAmboseli_EN-US1913542949"
+        "version": "DugiOtokCroatia_EN-US1981524043"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -64,12 +64,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "vscode-eslint-3.0.11.zip",
-            "sha256": "sha256-utac9Xx6K7bIyL4gYB7eh+VNVvK6lQaUHPuiiPP34Fo=",
+            "name": "vscode-eslint-3.0.13.zip",
+            "sha256": "sha256-l5VvhQPxPaQsPhXUbFW2yGJjaqnNvijn4QkXPjf1WXo=",
             "type": "url",
-            "url": "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.11/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.13/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "3.0.11"
+        "version": "3.0.13"
     },
     "dlv-dap": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v0.18.11",
-            "sha256": "sha256-q4V+9IpWagWCROkva+X4BbRgVTBW3ZyxeOK9gUYRWrw=",
+            "rev": "v0.18.14",
+            "sha256": "sha256-L3tGZ/xv/UNiGP2dDWLzTH9bLDOA3UOJzK4u2Q1bvG8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.18.11"
+        "version": "v0.18.14"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2069.zip",
-            "sha256": "sha256-SqSrRIrw+QwKJoW7kVqgtfiRpsKCpSta0SyYSHwksic=",
+            "name": "rust-analyzer-0.4.2071.zip",
+            "sha256": "sha256-wkhobCK9m2Dql4w46CPmRaMS89m4CNlAl1EgeySEpZc=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2069/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2071/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2069"
+        "version": "0.4.2071"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -268,12 +268,12 @@
             "name": null,
             "owner": "dominikh",
             "repo": "go-tools",
-            "rev": "2023.1.7",
-            "sha256": "sha256-oR3fsvZmeddN75WsxOMcYe/RAIjYz+ba03ADJfDUqNg=",
+            "rev": "2024.1",
+            "sha256": "sha256-uk2U8Jp/myJA6rmw+pk3DmmFLMqzfg8uudgTgc2Us5c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2023.1.7"
+        "version": "2024.1"
     },
     "tamasfe_even-better-toml": {
         "cargoLocks": null,

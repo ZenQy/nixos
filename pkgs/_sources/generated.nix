@@ -25,19 +25,19 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "ElephantsAmboseli_EN-US1913542949";
+    version = "DugiOtokCroatia_EN-US1981524043";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.ElephantsAmboseli_EN-US1913542949_UHD.jpg";
-      sha256 = "sha256-ip1Tb76J08WOJHqh+xjCpldCj2X5O5Vcojyjep3Zl9c=";
+      url = "https://www.bing.com/th?id=OHR.DugiOtokCroatia_EN-US1981524043_UHD.jpg";
+      sha256 = "sha256-QGJ+82V0UlvjifpY7JF4AgCYUcy9hewfBigi2ejNWt4=";
     };
   };
   dbaeumer_vscode-eslint = {
     pname = "dbaeumer_vscode-eslint";
-    version = "3.0.11";
+    version = "3.0.13";
     src = fetchurl {
-      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.11/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "vscode-eslint-3.0.11.zip";
-      sha256 = "sha256-utac9Xx6K7bIyL4gYB7eh+VNVvK6lQaUHPuiiPP34Fo=";
+      url = "https://dbaeumer.gallery.vsassets.io/_apis/public/gallery/publisher/dbaeumer/extension/vscode-eslint/3.0.13/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "vscode-eslint-3.0.13.zip";
+      sha256 = "sha256-l5VvhQPxPaQsPhXUbFW2yGJjaqnNvijn4QkXPjf1WXo=";
     };
   };
   dlv-dap = {
@@ -115,13 +115,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.18.11";
+    version = "v0.18.14";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.18.11";
+      rev = "v0.18.14";
       fetchSubmodules = false;
-      sha256 = "sha256-q4V+9IpWagWCROkva+X4BbRgVTBW3ZyxeOK9gUYRWrw=";
+      sha256 = "sha256-L3tGZ/xv/UNiGP2dDWLzTH9bLDOA3UOJzK4u2Q1bvG8=";
     };
   };
   pkief_material-icon-theme = {
@@ -135,22 +135,22 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2069";
+    version = "0.4.2071";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2069/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2069.zip";
-      sha256 = "sha256-SqSrRIrw+QwKJoW7kVqgtfiRpsKCpSta0SyYSHwksic=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2071/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2071.zip";
+      sha256 = "sha256-wkhobCK9m2Dql4w46CPmRaMS89m4CNlAl1EgeySEpZc=";
     };
   };
   staticcheck = {
     pname = "staticcheck";
-    version = "2023.1.7";
+    version = "2024.1";
     src = fetchFromGitHub {
       owner = "dominikh";
       repo = "go-tools";
-      rev = "2023.1.7";
+      rev = "2024.1";
       fetchSubmodules = false;
-      sha256 = "sha256-oR3fsvZmeddN75WsxOMcYe/RAIjYz+ba03ADJfDUqNg=";
+      sha256 = "sha256-uk2U8Jp/myJA6rmw+pk3DmmFLMqzfg8uudgTgc2Us5c=";
     };
   };
   tamasfe_even-better-toml = {
