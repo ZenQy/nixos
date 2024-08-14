@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QGJ+82V0UlvjifpY7JF4AgCYUcy9hewfBigi2ejNWt4=",
+            "sha256": "sha256-d/6IYXWFe14avxhoDWEsrvWxN5gVVsggHM49yFqd/mU=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.DugiOtokCroatia_EN-US1981524043_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.WatarrkaLizard_EN-US2106702347_UHD.jpg"
         },
-        "version": "DugiOtokCroatia_EN-US1981524043"
+        "version": "WatarrkaLizard_EN-US2106702347"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2071.zip",
-            "sha256": "sha256-wkhobCK9m2Dql4w46CPmRaMS89m4CNlAl1EgeySEpZc=",
+            "name": "rust-analyzer-0.4.2072.zip",
+            "sha256": "sha256-wrufeythAwl6DNR4cm7FkBdQ4S+Gs1Nlq/nQdT2gB4k=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2071/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2072/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2071"
+        "version": "0.4.2072"
     },
     "staticcheck": {
         "cargoLocks": null,
