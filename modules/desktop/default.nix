@@ -60,7 +60,7 @@
     # mitmproxy
     # python3
     # python3Packages.pip
-
+    gpt4all
   ];
 
   xdg.mime = {

@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    ungoogled-chromium
+    chromium
   ];
   programs.chromium = {
     enable = true;

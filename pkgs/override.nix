@@ -54,11 +54,4 @@ final: prev:
       scripts = with mpv-unwrapped.scripts; [ autoload ];
     };
 
-  hyprland = prev.hyprland.overrideAttrs (old: {
-    postPatch = old.postPatch + ''
-      substituteInPlace src/config/ConfigManager.cpp \
-        --replace 'getenv("XDG_CONFIG_HOME")' '"/etc/xdg"'
-    '';
-  });
-
 }

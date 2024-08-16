@@ -11,13 +11,16 @@
           height = 30;
 
           modules-left = [
-            "hyprland/workspaces"
-            # "wlr/workspaces"
+            # "hyprland/workspaces"
+            "sway/workspaces"
+            # "custom/workspaces"
           ];
+
           modules-center = [
-            "hyprland/window"
-            # "wlr/window"
+            # "hyprland/window"
+            "sway/window"
           ];
+
           modules-right = [
             "idle_inhibitor"
             "custom/weather"
@@ -32,31 +35,7 @@
             "tray"
           ];
 
-          "hyprland/workspaces" = {
-            format = "{icon}";
-            format-icons = {
-              "1" = "";
-              "2" = "";
-              "3" = "";
-              "4" = "";
-              "5" = "";
-              active = "";
-              default = "";
-            };
-            on-scroll-up = "hyprctl dispatch workspace e-1";
-            on-scroll-down = "hyprctl dispatch workspace e+1";
-          };
-          "hyprland/window" = {
-            format = " {}";
-            rewrite = {
-              "(.*) - Personal - Microsoft Edge" = "🌎 $1";
-              "(.*) - Untitled\(Workspace\) - Visual Studio Code" = " $1";
-            };
-            separate-outputs = true;
-            max-length = 100;
-          };
-
-          # "wlr/workspaces" = {
+          # "hyprland/workspaces" = {
           #   format = "{icon}";
           #   format-icons = {
           #     "1" = "";
@@ -67,26 +46,58 @@
           #     active = "";
           #     default = "";
           #   };
+          #   on-scroll-up = "hyprctl dispatch workspace e-1";
+          #   on-scroll-down = "hyprctl dispatch workspace e+1";
           # };
-          # "wlr/window" = {
-          #   format = " {title}";
-          #   max-length = 100;
+          # "hyprland/window" = {
+          #   format = " {}";
           #   rewrite = {
           #     "(.*) - Personal - Microsoft Edge" = "🌎 $1";
           #     "(.*) - Untitled\(Workspace\) - Visual Studio Code" = " $1";
           #   };
+          #   separate-outputs = true;
+          #   max-length = 100;
+          # };
+
+          "sway/workspaces" = {
+            format = "{icon}";
+            format-icons = {
+              "1" = "";
+              "2" = "";
+              "3" = "";
+              "4" = "";
+              "5" = "";
+              active = "";
+              default = "";
+            };
+          };
+
+          "sway/window" = {
+            format = " {title}";
+            max-length = 100;
+            rewrite = {
+              "(.*) - Personal - Microsoft Edge" = "🌎 $1";
+              "(.*) - Untitled\(Workspace\) - Visual Studio Code" = " $1";
+            };
+          };
+
+          # "custom/workspaces" = {
+          #   exec = "${./dotfiles/niri/niri-workspaces.sh} \"$WAYBAR_OUTPUT_NAME\"";
+          #   signal = 8;
           # };
 
           idle_inhibitor = {
             format = "{icon}";
             format-icons = { activated = ""; deactivated = ""; };
           };
+
           "custom/weather" = {
             format = "{}";
             interval = 60;
             escape = true;
             exec = "curl -s 'https://wttr.in/Fengyang?format=1'";
           };
+
           bluetooth = {
             format = " {status}";
             format-disabled = "";
@@ -94,6 +105,7 @@
             format-connected-battery = " {device_alias} {device_battery_percentage}%";
             format-device-preference = [ "" "" "" ];
           };
+
           wireplumber = {
             format = "{volume}% {icon}";
             format-muted = "";
@@ -102,18 +114,22 @@
             max-volume = 100.0;
             scroll-step = 1.0;
           };
+
           network = {
             format-wifi = "{essid} ";
             format-ethernet = "{ifname} ";
             format-disconnected = "";
           };
+
           cpu = {
             format = "{usage}% ";
             tooltip = false;
           };
+
           memory = {
             format = "{}% ";
           };
+
           temperature = {
             critical-threshold = 80;
             format = "{temperatureC}°C {icon}";
@@ -121,21 +137,25 @@
             interval = 10;
             thermal-zone = 1;
           };
+
           # backlight = {
           #   format = "{percent}% {icon}";
           #   format-icons = [ "" "" ];
           #   on-scroll-down = "brightnessctl set 3%-";
           #   on-scroll-up = "brightnessctl set +3%";
           # };
+
           clock = {
             format = "{:%H:%M} ";
             format-alt = "{:%Y-%m-%d} ";
             tooltip-format = "<tt><small>{calendar}</small></tt>";
           };
+
           tray = {
             icon-size = 25;
             spacing = 10;
           };
+
         };
       in
       builtins.toJSON conf;

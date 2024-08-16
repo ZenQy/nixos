@@ -13,5 +13,8 @@
     };
   };
 
+  environment.systemPackages = with pkgs; [
+    niri
+  ];
 }
 

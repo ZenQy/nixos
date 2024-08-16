@@ -139,7 +139,7 @@
     src = fetchurl {
       url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2073/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "rust-analyzer-0.4.2073.zip";
-      sha256 = "sha256-r5zWw6hlETlw6hr0/lT8J+IOvYIwuOAobUdJj+y/iDU=";
+      sha256 = "sha256-mWruM8jH2Sd5sa0PSCIiTYW3N8l/V68Mmba4ylclnZw=";
     };
   };
   staticcheck = {
