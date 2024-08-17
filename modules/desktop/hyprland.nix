@@ -15,7 +15,7 @@ with builtins;
 
   programs.hyprland = {
     enable = true;
-    xwayland.enable = false;
+    # xwayland.enable = false;
   };
 
   environment.etc = {

@@ -11,14 +11,14 @@
           height = 30;
 
           modules-left = [
-            # "hyprland/workspaces"
-            "sway/workspaces"
+            "hyprland/workspaces"
+            # "sway/workspaces"
             # "custom/workspaces"
           ];
 
           modules-center = [
-            # "hyprland/window"
-            "sway/window"
+            "hyprland/window"
+            # "sway/window"
           ];
 
           modules-right = [
@@ -35,31 +35,7 @@
             "tray"
           ];
 
-          # "hyprland/workspaces" = {
-          #   format = "{icon}";
-          #   format-icons = {
-          #     "1" = "";
-          #     "2" = "";
-          #     "3" = "";
-          #     "4" = "";
-          #     "5" = "";
-          #     active = "";
-          #     default = "";
-          #   };
-          #   on-scroll-up = "hyprctl dispatch workspace e-1";
-          #   on-scroll-down = "hyprctl dispatch workspace e+1";
-          # };
-          # "hyprland/window" = {
-          #   format = " {}";
-          #   rewrite = {
-          #     "(.*) - Personal - Microsoft Edge" = "🌎 $1";
-          #     "(.*) - Untitled\(Workspace\) - Visual Studio Code" = " $1";
-          #   };
-          #   separate-outputs = true;
-          #   max-length = 100;
-          # };
-
-          "sway/workspaces" = {
+          "hyprland/workspaces" = {
             format = "{icon}";
             format-icons = {
               "1" = "";
@@ -70,20 +46,46 @@
               active = "";
               default = "";
             };
+            on-scroll-up = "hyprctl dispatch workspace e-1";
+            on-scroll-down = "hyprctl dispatch workspace e+1";
           };
 
-          "sway/window" = {
-            format = " {title}";
-            max-length = 100;
+          "hyprland/window" = {
+            format = " {}";
             rewrite = {
               "(.*) - Personal - Microsoft Edge" = "🌎 $1";
               "(.*) - Untitled\(Workspace\) - Visual Studio Code" = " $1";
             };
+            separate-outputs = true;
+            max-length = 100;
           };
 
+          # "sway/workspaces" = {
+          #   format = "{icon}";
+          #   format-icons = {
+          #     "1" = "";
+          #     "2" = "";
+          #     "3" = "";
+          #     "4" = "";
+          #     "5" = "";
+          #     active = "";
+          #     default = "";
+          #   };
+          # };
+
+          # "sway/window" = {
+          #   format = " {title}";
+          #   max-length = 100;
+          #   rewrite = {
+          #     "(.*) - Personal - Microsoft Edge" = "🌎 $1";
+          #     "(.*) - Untitled\(Workspace\) - Visual Studio Code" = " $1";
+          #   };
+          # };
+
           # "custom/workspaces" = {
-          #   exec = "${./dotfiles/niri/niri-workspaces.sh} \"$WAYBAR_OUTPUT_NAME\"";
-          #   signal = 8;
+          #   format = "{}";
+          #   interval = 2;
+          #   exec = "/home/nixos/.config/niri/niri-workspaces.sh HDMI-A-1";
           # };
 
           idle_inhibitor = {
@@ -95,7 +97,7 @@
             format = "{}";
             interval = 60;
             escape = true;
-            exec = "curl -s 'https://wttr.in/Fengyang?format=1'";
+            exec = "${pkgs.curl}/bin/curl -s 'https://wttr.in/Fengyang?format=1'";
           };
 
           bluetooth = {
@@ -162,8 +164,3 @@
     "xdg/waybar/style.css".source = ./dotfiles/waybar/style.css;
   };
 }
-
-
-
-
-

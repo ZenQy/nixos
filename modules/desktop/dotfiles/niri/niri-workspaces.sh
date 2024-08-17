@@ -7,9 +7,8 @@ focus-workspace)
 	set -e
 
 	monitor=$1
-
-	active=""
-	inactive=""
+	active=""
+	inactive=""
 
 	workspace_str=""
 

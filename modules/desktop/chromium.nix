@@ -33,13 +33,14 @@
     homepageLocation = "https://go.itab.link";
 
     extraOpts = {
-      "HomepageIsNewTabPage" = false;
-      "ShowHomeButton" = true;
-      "BrowserSignin" = 0;
-      "SyncDisabled" = true;
-      "PasswordManagerEnabled" = false;
-      "SpellcheckEnabled" = false;
-      "TranslateEnabled" = false;
+      HomepageIsNewTabPage = false;
+      ShowHomeButton = true;
+      BrowserSignin = 0;
+      SyncDisabled = true;
+      PasswordManagerEnabled = false;
+      SpellcheckEnabled = false;
+      TranslateEnabled = false;
+      DefaultNotificationsSetting = 2;
     };
   };
 }

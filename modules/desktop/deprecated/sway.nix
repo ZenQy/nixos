@@ -18,6 +18,7 @@ with builtins;
     extraPackages = with pkgs; [
       swaylock
     ];
+    xwayland.enable = false;
   };
 
   environment.etc = {

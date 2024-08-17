@@ -15,6 +15,7 @@
 
   environment.systemPackages = with pkgs; [
     niri
+    fuzzel
   ];
 }
 
