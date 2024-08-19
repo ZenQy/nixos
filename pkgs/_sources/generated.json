@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-GlRwu7lpSdgJXr0I6bn99wxxPfCtEONzj8BlMqQRylY=",
+            "sha256": "sha256-AJXpRF+qVAwszFpbDme3w0LRvY1pdNdZhkgE5YZP458=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.AlfanzinaLighthouse_EN-US9545750672_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.FlightMuseum_EN-US0151236175_UHD.jpg"
         },
-        "version": "AlfanzinaLighthouse_EN-US9545750672"
+        "version": "FlightMuseum_EN-US0151236175"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2075.zip",
-            "sha256": "sha256-nCtDwyBP30hc4gaiR7pKgyjUtHClqEcfZfZmuqT9XKg=",
+            "name": "rust-analyzer-0.4.2077.zip",
+            "sha256": "sha256-XmHe3tWuWTNy2PZCnnX0Ra+I2nPvU3tIEoaIcyhs8xY=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2075/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2077/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2075"
+        "version": "0.4.2077"
     },
     "staticcheck": {
         "cargoLocks": null,
