@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-AJXpRF+qVAwszFpbDme3w0LRvY1pdNdZhkgE5YZP458=",
+            "sha256": "sha256-31Mf9QH9P+R9LIJ8JWhqHdWH7EpG+LbfU8pTCrEDkQA=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.FlightMuseum_EN-US0151236175_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.TetonSunrise_EN-US0849252457_UHD.jpg"
         },
-        "version": "FlightMuseum_EN-US0151236175"
+        "version": "TetonSunrise_EN-US0849252457"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -182,11 +182,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-o4n/dm0spd1PkEOqE3QIpKNzfG37n6wXA8r1ohrS8Lg=",
+            "sha256": "sha256-a4TG3WKwM08ro+/QRJ1tCaT5BRewid3of4Qmm5Zlss8=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.144.2/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.145.0/compressed-dist.tgz"
         },
-        "version": "v1.144.2"
+        "version": "v1.145.0"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v0.19.0",
-            "sha256": "sha256-AvWA9g3DqiQk1y8xuFqkknXocFzRLw92wYdu7n5FFzY=",
+            "rev": "v0.19.1",
+            "sha256": "sha256-R6dc5INNZdtIuoFm0E2ne6OLKVZnULK6sg51twryD/I=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.19.0"
+        "version": "v0.19.1"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2077.zip",
-            "sha256": "sha256-XmHe3tWuWTNy2PZCnnX0Ra+I2nPvU3tIEoaIcyhs8xY=",
+            "name": "rust-analyzer-0.4.2079.zip",
+            "sha256": "sha256-DNBnyqSQ7Nnnb3lqb15C7T95xYb+v6lQj/q6iqnWcZs=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2077/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2079/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2077"
+        "version": "0.4.2079"
     },
     "staticcheck": {
         "cargoLocks": null,
