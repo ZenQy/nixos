@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-18K3UyYee0JvbDSzRFVAg3Uh1e8MvIQ0Bp9kliI1aBU=",
+            "sha256": "sha256-W7WlV4qNQ590mXoYTs7bHcGlToo2Zlx2Ix33UDihF8M=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.OceanCityMD_EN-US1389904046_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PrasatPhanom_EN-US7990643175_UHD.jpg"
         },
-        "version": "OceanCityMD_EN-US1389904046"
+        "version": "PrasatPhanom_EN-US7990643175"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2081.zip",
-            "sha256": "sha256-iYFw3nDXbTyaAKnRo0quA0my6y2gopJ7DVnPBz/qYPI=",
+            "name": "rust-analyzer-0.4.2082.zip",
+            "sha256": "sha256-9k/jXvj0b/FzP2RpdREE37MlEt/YCNiQwvFZZoeIpFU=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2081/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2082/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2081"
+        "version": "0.4.2082"
     },
     "staticcheck": {
         "cargoLocks": null,
