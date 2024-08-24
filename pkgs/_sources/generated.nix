@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "PrasatPhanom_EN-US7990643175";
+    version = "KatahdinWoods_EN-US8182768375";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.PrasatPhanom_EN-US7990643175_UHD.jpg";
-      sha256 = "sha256-W7WlV4qNQ590mXoYTs7bHcGlToo2Zlx2Ix33UDihF8M=";
+      url = "https://www.bing.com/th?id=OHR.KatahdinWoods_EN-US8182768375_UHD.jpg";
+      sha256 = "sha256-8W2jjAHEBsYpoLQjXF76LgfeH3iOpZBJjmVdFEUNuuE=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -115,13 +115,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.19.3";
+    version = "v0.19.4";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.19.3";
+      rev = "v0.19.4";
       fetchSubmodules = false;
-      sha256 = "sha256-E/lWboRbDdvmN1X9mjIvGVaMZiWhUG06N07T7qIzSmg=";
+      sha256 = "sha256-kmKyEM+wiTOuskbaPwKyFyjZ1LP2/+U5XAJkwy4w2Ng=";
     };
   };
   pkief_material-icon-theme = {
@@ -135,11 +135,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2082";
+    version = "0.4.2083";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2082/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2082.zip";
-      sha256 = "sha256-9k/jXvj0b/FzP2RpdREE37MlEt/YCNiQwvFZZoeIpFU=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2083/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2083.zip";
+      sha256 = "sha256-mD70tMvl7O0Jjegfap2ncvK+G96W8/JMvv0owrzSjYw=";
     };
   };
   staticcheck = {
