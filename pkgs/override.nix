@@ -12,8 +12,9 @@ final: prev:
     vscodeExtensions = with prev; [
       mhutchie_git-graph
       # eamodio_gitlens
-      # vue_volar
+      vue_volar
       # dbaeumer_vscode-eslint
+      vscode-extensions.biomejs.biome
       golang_go
       pkief_material-icon-theme
       jnoortheen_nix-ide

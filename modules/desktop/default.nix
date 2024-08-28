@@ -54,7 +54,7 @@
     tdesktop
     hugo
     android-tools
-    # nodejs-slim_latest
+    vue-language-server
     # yarn
     # mdbook
     # mitmproxy
