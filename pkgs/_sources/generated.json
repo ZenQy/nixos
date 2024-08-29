@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-wBVoEIsJLWP8xprAzGZYLh/555ymitmkJhHRxpeJgIY=",
+            "sha256": "sha256-8dHsX/ZAeJp/Rni2i3GRtNL5uPfbmyJVV4aWVVgrkBg=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.ParalympicsParis_EN-US0355511969_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CastellfollitSpain_EN-US8880313790_UHD.jpg"
         },
-        "version": "ParalympicsParis_EN-US0355511969"
+        "version": "CastellfollitSpain_EN-US8880313790"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -182,11 +182,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-CbDerDNqJ8jWn8CBOjZtgOssv93rOBFKs7PL24/wKvc=",
+            "sha256": "sha256-vDtUoNUVqrhfBnN0I1p72Clm1ttzc3Nh3vnazPwI8dw=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.146.2/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.147.0/compressed-dist.tgz"
         },
-        "version": "v1.146.2"
+        "version": "v1.147.0"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -232,12 +232,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.9.0.zip",
-            "sha256": "sha256-Ms6XkYWWC8pq7qiyuH62hdOfRJUNqn0k1s3ZfgP6xAM=",
+            "name": "material-icon-theme-5.10.0.zip",
+            "sha256": "sha256-7JuYT3hJNki/XS0pOsNIHiiFserd6lARhMMiT6pFE3E=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.9.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.10.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.9.0"
+        "version": "5.10.0"
     },
     "rust-lang_rust-analyzer": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2090.zip",
-            "sha256": "sha256-zIwoOjFTlTBrQ3bWfrJyLDrsTVKIXUFORxi2dCknK/g=",
+            "name": "rust-analyzer-0.4.2091.zip",
+            "sha256": "sha256-4TFRxv+MjtXfGLKH9mxGO7U+GgKE97zqMvNv9pMuU9I=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2090/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2091/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2090"
+        "version": "0.4.2091"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -313,11 +313,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "volar-2.0.28.zip",
-            "sha256": "sha256-f0nnmQemu6DxveQfJJrZGrj3dOTHhH1wYJGnNJlM6sU=",
+            "name": "volar-2.1.2.zip",
+            "sha256": "sha256-3NAj86OOELWYOZjVVHYMmKwTqgyvnp3OcH38uS9j89o=",
             "type": "url",
-            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.0.28/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.1.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "2.0.28"
+        "version": "2.1.2"
     }
 }
