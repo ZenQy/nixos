@@ -7,7 +7,7 @@ final: prev:
 {
   vscode-with-extensions = prev.vscode-with-extensions.override {
     vscode = prev.vscodium.override {
-      commandLineArgs = "--enable-wayland-ime";
+      commandLineArgs = "--enable-wayland-ime --wayland-text-input-version=3";
     };
     vscodeExtensions = with prev; [
       mhutchie_git-graph

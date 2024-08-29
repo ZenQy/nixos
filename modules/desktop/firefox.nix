@@ -33,6 +33,10 @@
           installation_mode = "force_installed";
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/scriptcat/latest.xpi";
         };
+        "{e9c422a1-5740-4c0a-a10e-867939119613}" = {
+          installation_mode = "force_installed";
+          install_url = "https://github.com/pt-plugins/PT-Plugin-Plus/releases/download/v1.6.1.2723/PT-Plugin-Plus-1.6.1.2723.xpi";
+        };
       };
     };
   };
