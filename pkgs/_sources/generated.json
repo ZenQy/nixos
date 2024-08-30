@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8dHsX/ZAeJp/Rni2i3GRtNL5uPfbmyJVV4aWVVgrkBg=",
+            "sha256": "sha256-0dn6G/FTCKAzyAH6wISDZJRzFG1QmOsBMnX8kE9Sito=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.CastellfollitSpain_EN-US8880313790_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.WhaleSharkDay_EN-US8979838463_UHD.jpg"
         },
-        "version": "CastellfollitSpain_EN-US8880313790"
+        "version": "WhaleSharkDay_EN-US8979838463"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2091.zip",
-            "sha256": "sha256-4TFRxv+MjtXfGLKH9mxGO7U+GgKE97zqMvNv9pMuU9I=",
+            "name": "rust-analyzer-0.4.2092.zip",
+            "sha256": "sha256-i/kbpMvJ/ElaeP2vZE3Iq0zN98VIpOgABHT7BXk8wvc=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2091/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2092/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2091"
+        "version": "0.4.2092"
     },
     "staticcheck": {
         "cargoLocks": null,
