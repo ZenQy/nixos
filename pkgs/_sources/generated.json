@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-IjvYiBY8yrVa5ISAf8GjzGTJ8P2Rg89B+2jmxrzE/u8=",
+            "sha256": "sha256-7pu7cEZcwEtU05pMaPKGKd482YYQLZjMjllkuuRUkxw=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.DjanetAlgeria_EN-US9175224323_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.KansasMural_EN-US9504361321_UHD.jpg"
         },
-        "version": "DjanetAlgeria_EN-US9175224323"
+        "version": "KansasMural_EN-US9504361321"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -101,11 +101,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-jmX49TYg7eE6rNy9cDjyoSAyuNs34rw90066EDyfoYc=",
+            "sha256": "sha256-zBfx2ZBdyoZUWuTBrm9o2aevpNiBREYDDS8JBch6j4s=",
             "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2024.08.02/zenith.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2024.09.02/zenith.dict"
         },
-        "version": "v2024.08.02"
+        "version": "v2024.09.02"
     },
     "golang_go": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v0.19.6",
-            "sha256": "sha256-iAhgl+BXvAZfjN8Y60pi3dgVCv9WNt2qdyOOrFL6MLk=",
+            "rev": "v0.19.8",
+            "sha256": "sha256-zlgS3k4AK4lC6Ws6aPlFznD0JTOtyTVtjLIdKcwAlCA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.19.6"
+        "version": "v0.19.8"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2093.zip",
-            "sha256": "sha256-UCIpadrW7eJmwuqUeCvS5RAIsYZbJyud7K09sugZwtE=",
+            "name": "rust-analyzer-0.4.2095.zip",
+            "sha256": "sha256-buQuroV7OQK96uRWX+rcdquguv3N8xzJ5c5jl9vOYhw=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2093/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2095/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2093"
+        "version": "0.4.2095"
     },
     "staticcheck": {
         "cargoLocks": null,
