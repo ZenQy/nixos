@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-a1gCQtwK3q6YuCSpvgWi/Sl0JrC0aNjEUJNK1n8jsb8=",
+            "sha256": "sha256-nO2Ws+pCHTTT4xJA+UKTepij0PNbiMSPn2qA+raDjFw=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.DuskyOwls_EN-US9845705930_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.TIFF2024_EN-US9586964456_UHD.jpg"
         },
-        "version": "DuskyOwls_EN-US9845705930"
+        "version": "TIFF2024_EN-US9586964456"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -166,12 +166,12 @@
             "name": null,
             "owner": "j178",
             "repo": "leetgo",
-            "rev": "v1.4.8",
-            "sha256": "sha256-4Y/NwgLNBdd2uL7oiIdM1I08ZnLjreHf397s/vhS+Ac=",
+            "rev": "v1.4.9",
+            "sha256": "sha256-FlQYTNz1Fh0igwnufjVXN4bsUYBB1kls19D+/v7Ztps=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.4.8"
+        "version": "v1.4.9"
     },
     "metacubexd": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2098.zip",
-            "sha256": "sha256-kLgt2phroTy8v6hE1yZU8ivr7Q7XSDrrvUubLa5rvEg=",
+            "name": "rust-analyzer-0.4.2099.zip",
+            "sha256": "sha256-kZh+yFBqKmLhCvVfes4SgZ81NObKy1HVnmvZG+1xt0I=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2098/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2099/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2098"
+        "version": "0.4.2099"
     },
     "staticcheck": {
         "cargoLocks": null,
