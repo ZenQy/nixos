@@ -80,7 +80,7 @@ with builtins;
       windowrulev2 = opacity 0.75 0.5,floating:1
       windowrulev2 = opacity 1 1,class:^(fcitx)$
       windowrulev2 = opacity 0.75 0.5,class:^(foot)$
-      windowrulev2 = opacity 0.75 0.5,class:^(codium-url-handler)$
+      windowrulev2 = opacity 0.85 0.5,class:^(codium-url-handler)$
       
       bind = $mod, Return, exec, foot
       bind = $mod SHIFT, Q, killactive,

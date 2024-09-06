@@ -7,7 +7,7 @@ final: prev:
 {
   vscode-with-extensions = prev.vscode-with-extensions.override {
     vscode = prev.vscodium.override {
-      commandLineArgs = "--enable-wayland-ime --wayland-text-input-version=3";
+      commandLineArgs = "--enable-wayland-ime";
     };
     vscodeExtensions = with prev; [
       mhutchie_git-graph
@@ -26,7 +26,7 @@ final: prev:
   };
 
   chromium = prev.chromium.override {
-    commandLineArgs = "--enable-wayland-ime --force-dark-mode";
+    commandLineArgs = "--enable-wayland-ime --wayland-text-input-version=3 --force-dark-mode";
   };
 
   # vivaldi = prev.vivaldi.override {

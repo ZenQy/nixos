@@ -14,9 +14,9 @@
       # Extension Manager
       # "gjldcdngmdknpinoemndlidpcabkggco"
       # Tampermonkey BETA
-      # "gcalenpjmijncebpfijmoaglllgpjagf"
+      "gcalenpjmijncebpfijmoaglllgpjagf"
       # scriptcat
-      "ndcooeababalnlpkfedmmbbbgkljhpjf"
+      # "ndcooeababalnlpkfedmmbbbgkljhpjf"
       # Stylus
       # "clngdbkpkpeebahjckkjfobafhncgmne" 
       # 沙拉查词
@@ -41,6 +41,11 @@
       SpellcheckEnabled = false;
       TranslateEnabled = false;
       DefaultNotificationsSetting = 2;
+      RestoreOnStartup = 4;
+      RestoreOnStartupURLs = [
+        "https://go.itab.link"
+      ];
+      AutoplayAllowed = false;
     };
   };
 }
