@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-nO2Ws+pCHTTT4xJA+UKTepij0PNbiMSPn2qA+raDjFw=",
+            "sha256": "sha256-6/EN7W6tOHW3I3TUL9acfaMa+4Lmq3Qd97UwxdX9xA4=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.TIFF2024_EN-US9586964456_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.GlenariffPark_EN-US3914128007_UHD.jpg"
         },
-        "version": "TIFF2024_EN-US9586964456"
+        "version": "GlenariffPark_EN-US3914128007"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v0.19.8",
-            "sha256": "sha256-zlgS3k4AK4lC6Ws6aPlFznD0JTOtyTVtjLIdKcwAlCA=",
+            "rev": "v0.19.9",
+            "sha256": "sha256-KDEdUaLU3eF7LlZw3bT+EnyYMs1xdG1jNXl2kU057cc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.19.8"
+        "version": "v0.19.9"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2099.zip",
-            "sha256": "sha256-kZh+yFBqKmLhCvVfes4SgZ81NObKy1HVnmvZG+1xt0I=",
+            "name": "rust-analyzer-0.4.2100.zip",
+            "sha256": "sha256-vIgd8vbc1Vi7fiRKEiggLy/EOiH4Jbb6cj/UeEa0dL4=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2099/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2100/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2099"
+        "version": "0.4.2100"
     },
     "staticcheck": {
         "cargoLocks": null,
