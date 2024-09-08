@@ -11,6 +11,7 @@ let
       ];
       domain_suffix_direct = [
         ".cn"
+        "epicgames.com"
         "msftconnecttest.com"
         "blizzard.com"
         "test-ipv6.com"

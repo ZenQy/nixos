@@ -25,9 +25,9 @@ final: prev:
     ];
   };
 
-  chromium = prev.chromium.override {
-    commandLineArgs = "--enable-wayland-ime --wayland-text-input-version=3 --force-dark-mode";
-  };
+  # chromium = prev.chromium.override {
+  #   commandLineArgs = "--enable-wayland-ime --wayland-text-input-version=3 --force-dark-mode";
+  # };
 
   # vivaldi = prev.vivaldi.override {
   #   proprietaryCodecs = true;
