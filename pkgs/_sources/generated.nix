@@ -3,32 +3,32 @@
 {
   alist = {
     pname = "alist";
-    version = "v3.36.0";
+    version = "v3.37.1";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.36.0";
+      rev = "v3.37.1";
       fetchSubmodules = false;
-      sha256 = "sha256-l0/DS7ZSuto8QHvSf1ae7wy/a7yqp05koWpb+ExvJJk=";
+      sha256 = "sha256-N1C3v0UnSYySVmIBmQsxSQbfwo/ep9GzWlfQM8iJY0I=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.36.0";
+    version = "3.37.1";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "web-dist";
-      rev = "3.36.0";
+      rev = "3.37.1";
       fetchSubmodules = false;
-      sha256 = "sha256-z65J5iRs38mJy1KEZ+QMHVMUS52SzVMKxPefli3m4iQ=";
+      sha256 = "sha256-oc6wZqS7mkU5wMr/j2gEwzuO53w5cWhqeZt2AkCJo4I=";
     };
   };
   bingimg = {
     pname = "bingimg";
-    version = "SantaCruzHummer_EN-US4047958707";
+    version = "IguazuRainbow_EN-US4361499337";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SantaCruzHummer_EN-US4047958707_UHD.jpg";
-      sha256 = "sha256-/l/Q82r43JLkLeQmjmtYXzJOKigqxuhQloVWkGajSQY=";
+      url = "https://www.bing.com/th?id=OHR.IguazuRainbow_EN-US4361499337_UHD.jpg";
+      sha256 = "sha256-c6Ypg3VNXFy0cIyg+CfLMm6W5Im1aJ6xWqd52zVcQN8=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -61,11 +61,11 @@
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.43.0";
+    version = "0.43.1";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.43.0.zip";
-      sha256 = "sha256-h/EZ6oD28zOw80DWEDJqAHkG95nbizNUgl8NyMNfTlk=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.43.1.zip";
+      sha256 = "sha256-Jw7adEZi7TWxhCW6AiH8Ymdd26TnHWXy5epQUy4WK7Y=";
     };
   };
   it-tools = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.147.0";
+    version = "v1.148.0";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.147.0/compressed-dist.tgz";
-      sha256 = "sha256-vDtUoNUVqrhfBnN0I1p72Clm1ttzc3Nh3vnazPwI8dw=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.148.0/compressed-dist.tgz";
+      sha256 = "sha256-nP7oCJ014UrqSBghedhVlJe1k3MttJgMErOlwWRrzUU=";
     };
   };
   mhutchie_git-graph = {
@@ -135,11 +135,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2101";
+    version = "0.4.2103";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2101/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2101.zip";
-      sha256 = "sha256-6CRnez4XvB4ZM5qiat4NJDsqwV23r6IL0bovJ2WaiEM=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2103/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2103.zip";
+      sha256 = "sha256-741R0IO+GUWXbqqdNdp+pNlhOmbCXThrWPLnAUHhwbs=";
     };
   };
   staticcheck = {

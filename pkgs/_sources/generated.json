@@ -13,12 +13,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.36.0",
-            "sha256": "sha256-l0/DS7ZSuto8QHvSf1ae7wy/a7yqp05koWpb+ExvJJk=",
+            "rev": "v3.37.1",
+            "sha256": "sha256-N1C3v0UnSYySVmIBmQsxSQbfwo/ep9GzWlfQM8iJY0I=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.36.0"
+        "version": "v3.37.1"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "web-dist",
-            "rev": "3.36.0",
-            "sha256": "sha256-z65J5iRs38mJy1KEZ+QMHVMUS52SzVMKxPefli3m4iQ=",
+            "rev": "3.37.1",
+            "sha256": "sha256-oc6wZqS7mkU5wMr/j2gEwzuO53w5cWhqeZt2AkCJo4I=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3.36.0"
+        "version": "3.37.1"
     },
     "bingimg": {
         "cargoLocks": null,
@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/l/Q82r43JLkLeQmjmtYXzJOKigqxuhQloVWkGajSQY=",
+            "sha256": "sha256-c6Ypg3VNXFy0cIyg+CfLMm6W5Im1aJ6xWqd52zVcQN8=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.SantaCruzHummer_EN-US4047958707_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.IguazuRainbow_EN-US4361499337_UHD.jpg"
         },
-        "version": "SantaCruzHummer_EN-US4047958707"
+        "version": "IguazuRainbow_EN-US4361499337"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -115,12 +115,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "go-0.43.0.zip",
-            "sha256": "sha256-h/EZ6oD28zOw80DWEDJqAHkG95nbizNUgl8NyMNfTlk=",
+            "name": "go-0.43.1.zip",
+            "sha256": "sha256-Jw7adEZi7TWxhCW6AiH8Ymdd26TnHWXy5epQUy4WK7Y=",
             "type": "url",
-            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.43.0"
+        "version": "0.43.1"
     },
     "it-tools": {
         "cargoLocks": null,
@@ -182,11 +182,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vDtUoNUVqrhfBnN0I1p72Clm1ttzc3Nh3vnazPwI8dw=",
+            "sha256": "sha256-nP7oCJ014UrqSBghedhVlJe1k3MttJgMErOlwWRrzUU=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.147.0/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.148.0/compressed-dist.tgz"
         },
-        "version": "v1.147.0"
+        "version": "v1.148.0"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2101.zip",
-            "sha256": "sha256-6CRnez4XvB4ZM5qiat4NJDsqwV23r6IL0bovJ2WaiEM=",
+            "name": "rust-analyzer-0.4.2103.zip",
+            "sha256": "sha256-741R0IO+GUWXbqqdNdp+pNlhOmbCXThrWPLnAUHhwbs=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2101/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2103/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2101"
+        "version": "0.4.2103"
     },
     "staticcheck": {
         "cargoLocks": null,
