@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-g9Y/ab1N+Wf7ai2Gvh2ja6qbD1geB/S9CitvmCsYrZU=",
+            "sha256": "sha256-u/wTRWMF1pHAPzJAtzctTOrOK8NU3ZlJMJ3TVHGFc8w=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BridgeLisbon_EN-US4458392664_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ManhattanMemorial_EN-US4528393468_UHD.jpg"
         },
-        "version": "BridgeLisbon_EN-US4458392664"
+        "version": "ManhattanMemorial_EN-US4528393468"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v0.19.10",
-            "sha256": "sha256-qpr8rF/bQEQaNshJVT9v699q6a3auI5Q7nppSeHwkDc=",
+            "rev": "v0.19.11",
+            "sha256": "sha256-dAPNcvlNP5vtMXwjueAnH5CMxULZsv3PWVFZLFSUCqs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.19.10"
+        "version": "v0.19.11"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2105.zip",
-            "sha256": "sha256-9TENpcgKu8lWkMNLyyRkFrrKsoB8Tiq76vLwSPPn1C4=",
+            "name": "rust-analyzer-0.4.2106.zip",
+            "sha256": "sha256-LJDR3xqW808lwUVOcxP7R3cCd3Z2SwCwYMLq1m1yUdw=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2105/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2106/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2105"
+        "version": "0.4.2106"
     },
     "staticcheck": {
         "cargoLocks": null,
