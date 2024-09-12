@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-u/wTRWMF1pHAPzJAtzctTOrOK8NU3ZlJMJ3TVHGFc8w=",
+            "sha256": "sha256-iVXR5lqUQywslJgXELZiJbSOOItL1YGavhJdXNi6ABE=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.ManhattanMemorial_EN-US4528393468_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.DolphinReunion_EN-US4598756391_UHD.jpg"
         },
-        "version": "ManhattanMemorial_EN-US4528393468"
+        "version": "DolphinReunion_EN-US4598756391"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -182,11 +182,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-nP7oCJ014UrqSBghedhVlJe1k3MttJgMErOlwWRrzUU=",
+            "sha256": "sha256-TsgvVSR10zrtrrYY4pd9FqQVgst0MYYAj7eBlsrcbXw=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.148.0/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.148.1/compressed-dist.tgz"
         },
-        "version": "v1.148.0"
+        "version": "v1.148.1"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2106.zip",
-            "sha256": "sha256-LJDR3xqW808lwUVOcxP7R3cCd3Z2SwCwYMLq1m1yUdw=",
+            "name": "rust-analyzer-0.4.2107.zip",
+            "sha256": "sha256-XGjeGTF8gGpSeVNagIbornDKgY+eUzplv3DasuwO4TM=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2106/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2107/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2106"
+        "version": "0.4.2107"
     },
     "staticcheck": {
         "cargoLocks": null,
