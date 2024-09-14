@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "PointReyes_EN-US4731803211";
+    version = "RapaNuiSunrise_EN-US4872610843";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.PointReyes_EN-US4731803211_UHD.jpg";
-      sha256 = "sha256-jtvh7K93u+5yHqn+oSXOOou4C9MOd16Lc+o2xoNau0g=";
+      url = "https://www.bing.com/th?id=OHR.RapaNuiSunrise_EN-US4872610843_UHD.jpg";
+      sha256 = "sha256-HSO0gioF7w/+6X5mq3bN7QqTIFJ6V45RnMAzXOJWR/Y=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.148.1";
+    version = "v1.149.0";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.148.1/compressed-dist.tgz";
-      sha256 = "sha256-TsgvVSR10zrtrrYY4pd9FqQVgst0MYYAj7eBlsrcbXw=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.149.0/compressed-dist.tgz";
+      sha256 = "sha256-xEVtpcVuS51yDNUPIssidkU9RGt1B1YHHDbmH55dGg8=";
     };
   };
   mhutchie_git-graph = {
@@ -135,11 +135,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2108";
+    version = "0.4.2109";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2108/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2108.zip";
-      sha256 = "sha256-LVarZAUL7a6xqcffOFHraJCbYRZF7a3THXgEbMO+HiQ=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2109/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2109.zip";
+      sha256 = "sha256-lZzGIDAx0d201tEciKHZ9ZsK4uZx1aMMGl13B4Iq+iU=";
     };
   };
   staticcheck = {
