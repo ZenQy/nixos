@@ -12,6 +12,7 @@
       "media.hardware-video-decoding.force-enabled" = true;
       "media.autoplay.default" = 0;
       "browser.search.region" = "US";
+      "browser.newtabpage.activity-stream.showWeather" = false;
     };
     policies = {
       Homepage = {
