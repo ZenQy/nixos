@@ -13,12 +13,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.37.2",
-            "sha256": "sha256-num/144OdaQL8d+wKpk9Oj65IYicBM3hSZRtzbNGc8Y=",
+            "rev": "v3.37.3",
+            "sha256": "sha256-1xrisAzbouve+yKauQJntd86KkqquG1RcYlQ1wcIt14=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.37.2"
+        "version": "v3.37.3"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-HSO0gioF7w/+6X5mq3bN7QqTIFJ6V45RnMAzXOJWR/Y=",
+            "sha256": "sha256-+sC2mJr+wc0xIiETfHOBfBQYwm1hFgzHkQf8smEAYN0=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.RapaNuiSunrise_EN-US4872610843_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.SunriseWallabies_EN-US5210230008_UHD.jpg"
         },
-        "version": "RapaNuiSunrise_EN-US4872610843"
+        "version": "SunriseWallabies_EN-US5210230008"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2109.zip",
-            "sha256": "sha256-lZzGIDAx0d201tEciKHZ9ZsK4uZx1aMMGl13B4Iq+iU=",
+            "name": "rust-analyzer-0.4.2111.zip",
+            "sha256": "sha256-8qLt9zvvzyVqEUAZq2Y9dCFjP7MixzjtjtBuEfT58Kc=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2109/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2111/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2109"
+        "version": "0.4.2111"
     },
     "staticcheck": {
         "cargoLocks": null,
