@@ -16,7 +16,7 @@
   environment.systemPackages = with pkgs; [
     nodePackages_latest.nodejs
     # nodePackages.eslint
-    biome
+    # oxlint
   ];
 
 
