@@ -3,13 +3,13 @@
 {
   alist = {
     pname = "alist";
-    version = "v3.37.3";
+    version = "v3.37.4";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.37.3";
+      rev = "v3.37.4";
       fetchSubmodules = false;
-      sha256 = "sha256-1xrisAzbouve+yKauQJntd86KkqquG1RcYlQ1wcIt14=";
+      sha256 = "sha256-xNkcekxb0Aw7trBPxc0/Akb0ntx4DKM9b+i5SQju2lw=";
     };
   };
   alist-web = {
@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MidAutumnSingapore_EN-US5283310908";
+    version = "GujoHachiman_EN-US5502837623";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MidAutumnSingapore_EN-US5283310908_UHD.jpg";
-      sha256 = "sha256-PIV0s+tXiRClaoLdxbCKngvEwBPqAvZkNbiIj7ayE4o=";
+      url = "https://www.bing.com/th?id=OHR.GujoHachiman_EN-US5502837623_UHD.jpg";
+      sha256 = "sha256-MsA/ruFr7TS5apj1wx/GTFqmw63VYQHBBo+8VthNx4c=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -135,11 +135,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2113";
+    version = "0.4.2114";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2113/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2113.zip";
-      sha256 = "sha256-pnFZpOGEVPys6aIspUgylc7K4eeL1HC8PzyfP222SZQ=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2114/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2114.zip";
+      sha256 = "sha256-WyRxU6V20OC0xRaFmWaHSbKD2c6CPsLDTMUyQw1HVwM=";
     };
   };
   staticcheck = {
