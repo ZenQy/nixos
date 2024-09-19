@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "GujoHachiman_EN-US5502837623";
+    version = "PiratePlayground_EN-US3254868743";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.GujoHachiman_EN-US5502837623_UHD.jpg";
-      sha256 = "sha256-MsA/ruFr7TS5apj1wx/GTFqmw63VYQHBBo+8VthNx4c=";
+      url = "https://www.bing.com/th?id=OHR.PiratePlayground_EN-US3254868743_UHD.jpg";
+      sha256 = "sha256-J9lc2iSnXs1UqRmXy3xmC8f1zCciEJd7QFB9eSZY5zs=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -139,7 +139,7 @@
     src = fetchurl {
       url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2114/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "rust-analyzer-0.4.2114.zip";
-      sha256 = "sha256-WyRxU6V20OC0xRaFmWaHSbKD2c6CPsLDTMUyQw1HVwM=";
+      sha256 = "sha256-Rp48xclsncRlOyVBWOfDPHIiHnxXYeG2HH3RBD+w1wo=";
     };
   };
   staticcheck = {
