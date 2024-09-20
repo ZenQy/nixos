@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "PiratePlayground_EN-US3254868743";
+    version = "OcracokeLight_EN-US3638306974";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.PiratePlayground_EN-US3254868743_UHD.jpg";
-      sha256 = "sha256-J9lc2iSnXs1UqRmXy3xmC8f1zCciEJd7QFB9eSZY5zs=";
+      url = "https://www.bing.com/th?id=OHR.OcracokeLight_EN-US3638306974_UHD.jpg";
+      sha256 = "sha256-DuDKqYNwmZ63Sjb5ccLVUB1BNevcRHc1vy8Omwa51bU=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -126,11 +126,11 @@
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.10.0";
+    version = "5.11.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.10.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.10.0.zip";
-      sha256 = "sha256-7JuYT3hJNki/XS0pOsNIHiiFserd6lARhMMiT6pFE3E=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.11.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.11.0.zip";
+      sha256 = "sha256-wTlktzQvkJrZc+yZv50p4VDj8jiC4JG/0TYS59EFYO0=";
     };
   };
   rust-lang_rust-analyzer = {
