@@ -11,7 +11,7 @@
       if (subject.isInGroup("wheel")) {
         return polkit.Result.YES;
       }
-    });  
+    });
   '';
 
   services.xserver.excludePackages = [ pkgs.xterm ];
@@ -30,8 +30,9 @@
     cargo
     rust-analyzer
     ## Nix ##
-    nil
-    nixpkgs-fmt
+    # nil
+    nixfmt
+    nixd
     ## File Manager ##
     pcmanfm
     numix-icon-theme-circle
@@ -47,6 +48,7 @@
     # you-get
     ## Editor ##
     vscode-with-extensions
+    zed-editor
     # vscodium
     obsidian
     sqlitebrowser
@@ -71,16 +73,14 @@
   };
 
   programs.dconf.profiles = {
-    user.databases = [
-      {
-        settings = {
-          "org/gnome/desktop/interface" = {
-            gtk-theme = "Numix-Circle";
-            icon-theme = "Numix-Circle";
-          };
+    user.databases = [{
+      settings = {
+        "org/gnome/desktop/interface" = {
+          gtk-theme = "Numix-Circle";
+          icon-theme = "Numix-Circle";
         };
-      }
-    ];
+      };
+    }];
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

@@ -81,7 +81,7 @@ with builtins;
       windowrulev2 = opacity 1 1,class:^(fcitx)$
       windowrulev2 = opacity 0.75 0.5,class:^(foot)$
       windowrulev2 = opacity 0.85 0.5,class:^(codium-url-handler)$
-      
+
       bind = $mod, Return, exec, foot
       bind = $mod SHIFT, Q, killactive,
       bind = $mod SHIFT, E, exit,
@@ -98,20 +98,15 @@ with builtins;
       bindm = $mod, mouse:273, resizewindow
       bind = $mod, D, exec, ${pkgs.fuzzel}/bin/fuzzel
       bind = $mod, Print, exec, ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp)" $HOME/Pictures/$(date +"%F_%T").png
-    '' + concatStringsSep "\n" (genList
-      (
-        x:
-        let
-          c = x + 1;
-          num = toString (c - c / 10 * 10);
-          ws = toString c;
-        in
-        ''
-          bind = $mod, ${num}, workspace, ${ws}
-          bind = $mod SHIFT, ${num}, movetoworkspace, ${ws}
-        ''
-      ) 10);
+    '' + concatStringsSep "\n" (genList (x:
+      let
+        c = x + 1;
+        num = toString (c - c / 10 * 10);
+        ws = toString c;
+      in ''
+        bind = $mod, ${num}, workspace, ${ws}
+        bind = $mod SHIFT, ${num}, movetoworkspace, ${ws}
+      '') 10);
   };
 
 }
-

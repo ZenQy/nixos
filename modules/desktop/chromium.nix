@@ -1,9 +1,7 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-    chromium
-  ];
+  environment.systemPackages = with pkgs; [ chromium ];
   programs.chromium = {
     enable = true;
     extensions = [
@@ -42,9 +40,7 @@
       TranslateEnabled = false;
       DefaultNotificationsSetting = 2;
       RestoreOnStartup = 4;
-      RestoreOnStartupURLs = [
-        "https://go.itab.link"
-      ];
+      RestoreOnStartupURLs = [ "https://go.itab.link" ];
       AutoplayAllowed = false;
     };
   };
