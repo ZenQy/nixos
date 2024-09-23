@@ -7,7 +7,7 @@
   # services.gnome.gnome-keyring.enable = false;
   security.sudo.wheelNeedsPassword = false;
   security.polkit.extraConfig = ''
-    polkit.addRule(function(action, subject) {
+    polkit.addAdminRule(function(action, subject) {
       if (subject.isInGroup("wheel")) {
         return polkit.Result.YES;
       }
@@ -31,15 +31,17 @@
     rust-analyzer
     ## Nix ##
     # nil
-    nixfmt
+    nixfmt-rfc-style
     nixd
     ## File Manager ##
     pcmanfm
-    numix-icon-theme-circle
+    nordzy-icon-theme
+    nordzy-cursor-theme
     xarchiver
     xdg-utils
     p7zip
     unrar
+    # gnome-tweaks
     ## Download ##
     wget
     # axel
@@ -73,14 +75,18 @@
   };
 
   programs.dconf.profiles = {
-    user.databases = [{
-      settings = {
-        "org/gnome/desktop/interface" = {
-          gtk-theme = "Numix-Circle";
-          icon-theme = "Numix-Circle";
+    user.databases = [
+      {
+        settings = {
+          "org/gnome/desktop/interface" = {
+            cursor-theme = "Nordzy-cursors";
+            font-hinting = "medium";
+            gtk-theme = "HighContrastInverse";
+            icon-theme = "Nordzy-dark";
+          };
         };
-      };
-    }];
+      }
+    ];
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
