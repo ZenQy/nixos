@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/j3Gg8jkMboEJ9aY5QYqPLtF3um5psr9/5wTMMm7NaU=",
+            "sha256": "sha256-VpxHCz/M99w5YSSn153zZxUJRnMursqSsi1HxM8ZKOo=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.EuropaMoon_EN-US8269574935_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ElephantTeacher_EN-US8363933732_UHD.jpg"
         },
-        "version": "EuropaMoon_EN-US8269574935"
+        "version": "ElephantTeacher_EN-US8363933732"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2133.zip",
-            "sha256": "sha256-r16/hbMiuUqkpjQGKrM/353PdcMP2m01t9d+KHWtSBY=",
+            "name": "rust-analyzer-0.4.2134.zip",
+            "sha256": "sha256-1iavhrvjkNUNnhrybFWBSN865Aw/4mwz6/8dLsa4+YQ=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2133/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2134/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2133"
+        "version": "0.4.2134"
     },
     "staticcheck": {
         "cargoLocks": null,
