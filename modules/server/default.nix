@@ -4,7 +4,7 @@
 
   services.openssh = {
     enable = true;
-    # ports = [ secrets.openssh.port ];
+    ports = [ secrets.openssh.port ];
     settings = {
       PasswordAuthentication = false;
       PermitRootLogin = "prohibit-password";
