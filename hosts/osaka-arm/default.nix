@@ -1,4 +1,9 @@
-{ config, pkgs, secrets, ... }:
+{
+  config,
+  pkgs,
+  secrets,
+  ...
+}:
 
 {
   imports = [
@@ -25,14 +30,19 @@
       user = "nixos";
       group = "wheel";
       host = "127.0.0.1";
-      extraPackages = with pkgs;[
-        nil
-        nixpkgs-fmt
+      extraPackages = with pkgs; [
+        nixfmt-rfc-style
+        nixd
 
         go
         gopls
         dlv-dap
         staticcheck
+
+        rustc
+        rustfmt
+        cargo
+        rust-analyzer
 
         gcc
         leetgo

@@ -247,8 +247,8 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2134.zip",
-            "sha256": "sha256-1iavhrvjkNUNnhrybFWBSN865Aw/4mwz6/8dLsa4+YQ=",
+            "name": "rust-analyzer-0.4.2128.zip",
+            "sha256": "sha256-C6mQxko4kiSV/bb1JniuATsuqQX61tUsdfXxPGGBJQQ=",
             "type": "url",
             "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2134/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },

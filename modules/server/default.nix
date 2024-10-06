@@ -4,7 +4,7 @@
 
   services.openssh = {
     enable = true;
-    ports = [ secrets.openssh.port ];
+    # ports = [ secrets.openssh.port ];
     settings = {
       PasswordAuthentication = false;
       PermitRootLogin = "prohibit-password";
@@ -14,10 +14,9 @@
   users.users =
     let
       opensshKeys = {
-        openssh.authorizedKeys.keys =
-          [
-            secrets.openssh.key
-          ];
+        openssh.authorizedKeys.keys = [
+          secrets.openssh.key
+        ];
       };
     in
     {

@@ -12,11 +12,11 @@
       # Extension Manager
       # "gjldcdngmdknpinoemndlidpcabkggco"
       # Tampermonkey BETA
-      "gcalenpjmijncebpfijmoaglllgpjagf"
+      # "gcalenpjmijncebpfijmoaglllgpjagf"
       # scriptcat
-      # "ndcooeababalnlpkfedmmbbbgkljhpjf"
+      "ndcooeababalnlpkfedmmbbbgkljhpjf"
       # Stylus
-      # "clngdbkpkpeebahjckkjfobafhncgmne" 
+      # "clngdbkpkpeebahjckkjfobafhncgmne"
       # 沙拉查词
       # "cdonnmffkdaoajfknoeeecmchibpmkmg"
       # Web Clipper
