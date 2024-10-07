@@ -7,7 +7,7 @@
   # services.gnome.gnome-keyring.enable = false;
   security.sudo.wheelNeedsPassword = false;
   security.polkit.extraConfig = ''
-    polkit.addAdminRule(function(action, subject) {
+    polkit.addRule(function(action, subject) {
       if (subject.isInGroup("wheel")) {
         return polkit.Result.YES;
       }

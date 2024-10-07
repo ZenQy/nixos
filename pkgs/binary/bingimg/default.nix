@@ -1,6 +1,11 @@
-{ source, stdenv, lib, imagemagick }:
+{
+  source,
+  stdenvNoCC,
+  lib,
+  imagemagick,
+}:
 
-stdenv.mkDerivation {
+stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
 
   dontUnpack = true;
