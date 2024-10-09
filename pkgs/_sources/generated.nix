@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MototiOctopus_EN-US8820270832";
+    version = "AspensColorado_EN-US9105602602";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MototiOctopus_EN-US8820270832_UHD.jpg";
-      sha256 = "sha256-hIt+9jdQ0eR3wlMVOSt4by6iWYXMWfYIw/IiobRhz8w=";
+      url = "https://www.bing.com/th?id=OHR.AspensColorado_EN-US9105602602_UHD.jpg";
+      sha256 = "sha256-Q67GPSX0LNxn1WgnxQS5kILoSf+S6+cCpNa2f56bRVk=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.151.0";
+    version = "v1.152.0";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.151.0/compressed-dist.tgz";
-      sha256 = "sha256-xpB99unsiGuLG2AucWIDR9vZapjHbUabOjgoGxlh/oQ=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.152.0/compressed-dist.tgz";
+      sha256 = "sha256-D9KM3qaamFEZOe1zkRfDs2ia0G6gzJrlBdkNhYBpV68=";
     };
   };
   mhutchie_git-graph = {
@@ -115,13 +115,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.19.18";
+    version = "v0.19.19";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.19.18";
+      rev = "v0.19.19";
       fetchSubmodules = false;
-      sha256 = "sha256-AbipKLS6dVFf3DdxxvsV/UyTgsi4Hv2S+rtpioauncM=";
+      sha256 = "sha256-/JlebZUHSY/TnszaXSgQO9clpRX53zwgU13invkBVxk=";
     };
   };
   pkief_material-icon-theme = {
@@ -135,11 +135,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2139";
+    version = "0.4.2140";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2139/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2139.zip";
-      sha256 = "sha256-zM1+q1sWzvSt6ovDyqcaRer/3dIV0xIP416KwXwTgXI=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2140/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2140.zip";
+      sha256 = "sha256-qeCUUNPVMdlRs/6LcGORQHYmOQRRlbL9Ppfhjm0Idnw=";
     };
   };
   staticcheck = {
