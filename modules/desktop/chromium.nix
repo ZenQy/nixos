@@ -42,6 +42,7 @@
       RestoreOnStartup = 4;
       RestoreOnStartupURLs = [ "https://go.itab.link" ];
       AutoplayAllowed = false;
+      BackgroundModeEnabled = false;
     };
   };
 }
