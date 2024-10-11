@@ -15,7 +15,7 @@ buildGoModule rec {
     sed -i "s|WebVersion string|WebVersion string = \"${alist-web.version}\"|g" internal/conf/var.go
   '';
 
-  vendorHash = "sha256-entZnmjqsJDHYRkFwXtpJyZSG2Dl2YRtpBT9rcvb9jI=";
+  vendorHash = "sha256-qSbvb2/y5rdS/OCutNEcRDUQBCAgNudux8XDnY9TRSo=";
 
   doCheck = false;
   subPackages = [ "./" ];
