@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [ ungoogled-chromium ];
+  environment.systemPackages = with pkgs; [ chromium ];
   programs.chromium = {
     enable = true;
     extensions = [

@@ -36,14 +36,7 @@
         };
         "{e9c422a1-5740-4c0a-a10e-867939119613}" = {
           installation_mode = "force_installed";
-          install_url =
-            with builtins;
-            let
-              url = "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/releases";
-              releases = head (fromJSON (readFile (fetchurl url)));
-              version = substring 1 (stringLength (releases.name)) releases.name;
-            in
-            "https://github.com/pt-plugins/PT-Plugin-Plus/releases/download/v${version}/PT-Plugin-Plus-${version}.xpi";
+          install_url = "https://github.com/pt-plugins/PT-Plugin-Plus/releases/download/v1.6.1.2749/PT-Plugin-Plus-1.6.1.2749.xpi";
         };
       };
     };

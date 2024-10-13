@@ -19,7 +19,10 @@ let
       ];
     in
     {
-      log = { level = "warn"; timestamp = false; };
+      log = {
+        level = "warn";
+        timestamp = false;
+      };
       dns = {
         servers = [
           {
@@ -43,11 +46,19 @@ let
           }
           {
             domain_suffix = domain_suffix_proxy;
-            server = "proxy";
+            server = "dns_fakeip";
           }
           {
             domain_suffix = domain_suffix_direct;
             server = "dns_direct";
+          }
+          {
+            rule_set = "geosite-geolocation-cn@ads";
+            server = "dns_fakeip";
+          }
+          {
+            rule_set = "geosite-geolocation-!cn@ads";
+            server = "dns_fakeip";
           }
           {
             rule_set = "geosite-cn";
@@ -85,6 +96,20 @@ let
             url = "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs";
             download_detour = "proxy";
           }
+          {
+            tag = "geosite-geolocation-cn@ads";
+            type = "remote";
+            format = "binary";
+            url = "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geosite-geolocation-cn@ads.srs";
+            download_detour = "proxy";
+          }
+          {
+            tag = "geosite-geolocation-!cn@ads";
+            type = "remote";
+            format = "binary";
+            url = "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geosite-geolocation-!cn@ads.srs";
+            download_detour = "proxy";
+          }
         ];
         rules = [
           {
@@ -103,6 +128,14 @@ let
             domain_suffix = domain_suffix_direct;
             ip_is_private = true;
             outbound = "direct";
+          }
+          {
+            rule_set = "geosite-geolocation-cn@ads";
+            server = "block";
+          }
+          {
+            rule_set = "geosite-geolocation-!cn@ads";
+            server = "block";
           }
           {
             rule_set = "geosite-cn";
@@ -142,10 +175,20 @@ let
             zero_rtt_handshake = false;
             heartbeat = "10s";
             network = "tcp";
-            tls = { enabled = true; alpn = [ "h3" ]; };
+            tls = {
+              enabled = true;
+              alpn = [ "h3" ];
+            };
             tcp_fast_open = true;
           };
-          tuicList = [ "cc" "tokyo-1" "tokyo-2" "osaka-1" "osaka-2" "crbs" ];
+          tuicList = [
+            "cc"
+            "tokyo-1"
+            "tokyo-2"
+            "osaka-1"
+            "osaka-2"
+            "crbs"
+          ];
           trojanSet = {
             type = "trojan";
             server_port = 443;
@@ -158,35 +201,61 @@ let
               max_early_data = 2048;
             };
           };
-          trojanList = [ "natvps-ca" "natvps-jp" "natseek-us" "natseek-jp" ];
+          trojanList = [
+            "natvps-ca"
+            "natvps-jp"
+          ];
         in
-        map
-          (tag: tuicSet // {
+        map (
+          tag:
+          tuicSet
+          // {
             inherit tag;
             server = "${tag}.${secrets.domain}";
-          })
-          tuicList ++
-        map
-          (tag: trojanSet // {
+          }
+        ) tuicList
+        ++ map (
+          tag:
+          trojanSet
+          // {
             inherit tag;
             server = "${tag}.${secrets.domain}";
-          })
-          trojanList ++
-        [
+          }
+        ) trojanList
+        ++ [
+          {
+            tag = "cloudflare";
+            type = "trojan";
+            server = "www.visa.com.sg";
+            server_port = 443;
+            inherit (secrets.sing-box.trojan) password;
+            tls.enabled = true;
+            multiplex.enabled = true;
+            transport = {
+              type = "ws";
+              headers.Host = "$cf.${secrets.domain}";
+              inherit (secrets.sing-box.trojan) path;
+              max_early_data = 2048;
+            };
+          }
           {
             tag = "proxy";
             type = "selector";
-            outbounds = [ "tuic" "trojan" "direct" ];
+            outbounds = [
+              "tuic"
+              "trojan"
+              "direct"
+            ];
           }
           {
             tag = "tuic";
-            type = "selector";
+            type = "urltest";
             outbounds = tuicList;
           }
           {
             tag = "trojan";
-            type = "selector";
-            outbounds = trojanList;
+            type = "urltest";
+            outbounds = trojanList ++ [ "cloudflare" ];
           }
           {
             type = "direct";
@@ -226,4 +295,3 @@ in
     "net.ipv6.conf.all.forwarding" = 1;
   };
 }
-
