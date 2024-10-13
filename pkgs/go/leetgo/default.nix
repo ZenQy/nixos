@@ -1,4 +1,8 @@
-{ source, buildGo122Module, lib }:
+{
+  source,
+  buildGo122Module,
+  lib,
+}:
 
 buildGo122Module {
   inherit (source) pname version src;

@@ -1,4 +1,12 @@
-{ source, lib, buildNpmPackage, python3, makeWrapper, nodejs, android-tools }:
+{
+  source,
+  lib,
+  buildNpmPackage,
+  python3,
+  makeWrapper,
+  nodejs,
+  android-tools,
+}:
 
 buildNpmPackage rec {
   inherit (source) pname version src;

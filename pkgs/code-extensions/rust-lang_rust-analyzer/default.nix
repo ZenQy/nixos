@@ -1,4 +1,8 @@
-{ source, lib, vscode-utils }:
+{
+  source,
+  lib,
+  vscode-utils,
+}:
 
 with builtins;
 
@@ -13,7 +17,6 @@ vscode-utils.buildVscodeMarketplaceExtension {
       name = head (tail list);
       version = source.version;
     };
-
 
   meta = with lib; {
     license = licenses.asl20;

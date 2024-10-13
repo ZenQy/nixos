@@ -1,34 +1,35 @@
-{ source
-, stdenv
-, lib
+{
+  source,
+  stdenv,
+  lib,
 
-, binutils-unwrapped
-, xz
-, gnutar
-, file
+  binutils-unwrapped,
+  xz,
+  gnutar,
+  file,
 
-, glibc
-, glib
-, nss
-, nspr
-, atk
-, at-spi2-atk
-, xorg
-, cups
-, dbus
-, expat
-, libdrm
-, libxkbcommon
-, gtk3
-, pango
-, cairo
-, gdk-pixbuf
-, mesa
-, alsa-lib
-, at-spi2-core
-, libuuid
-, systemd
-, wayland
+  glibc,
+  glib,
+  nss,
+  nspr,
+  atk,
+  at-spi2-atk,
+  xorg,
+  cups,
+  dbus,
+  expat,
+  libdrm,
+  libxkbcommon,
+  gtk3,
+  pango,
+  cairo,
+  gdk-pixbuf,
+  mesa,
+  alsa-lib,
+  at-spi2-core,
+  libuuid,
+  systemd,
+  wayland,
 }:
 
 let
@@ -161,8 +162,8 @@ stdenv.mkDerivation rec {
 
     for icon in '16' '24' '32' '48' '64' '128' '256'
     do
-      ${ "icon_source=$out/opt/microsoft/${shortName}/product_logo_\${icon}.png" }
-      ${ "icon_target=$out/share/icons/hicolor/\${icon}x\${icon}/apps" }
+      ${"icon_source=$out/opt/microsoft/${shortName}/product_logo_\${icon}.png"}
+      ${"icon_target=$out/share/icons/hicolor/\${icon}x\${icon}/apps"}
       mkdir -p $icon_target
       cp $icon_source $icon_target/microsoft-edge.png
     done

@@ -76,9 +76,7 @@ with builtins;
           Chromium-browser = 2;
           Logseq = 4;
         };
-        conf = set: f: concatStringsSep "\n"
-          (attrValues
-            (mapAttrs (n: v: f n v) set));
+        conf = set: f: concatStringsSep "\n" (attrValues (mapAttrs (n: v: f n v) set));
       in
       ''
         ${conf set (n: v: "set \$${n} ${v}")}
@@ -97,7 +95,7 @@ with builtins;
           scale 1.5
         }
         exec_always --no-startup-id fcitx5
-        
+
         # swaymsg -t get_tree
         assign {
           ${conf app_id (n: v: "[app_id = \"${n}\"] ${toString v}")}
@@ -109,8 +107,9 @@ with builtins;
         include /etc/sway/config.d/*
       '';
 
-    "sway/config.d/workspace.conf".text = concatStringsSep "\n" (genList
-      (x:
+    "sway/config.d/workspace.conf".text = concatStringsSep "\n" (
+      genList (
+        x:
         let
           c = x + 1;
           num = toString (c - c / 10 * 10);
@@ -120,36 +119,37 @@ with builtins;
           bindsym $mod+${num} workspace number ${ws}
           bindsym $mod+Shift+${num} move container to workspace number ${ws}
         ''
-      ) 10);
+      ) 10
+    );
     "sway/config.d/move.conf".text =
       let
-        list = [ "left" "down" "up" "right" ];
+        list = [
+          "left"
+          "down"
+          "up"
+          "right"
+        ];
         firstUpper = x: lib.toUpper (substring 0 1 x) + substring 1 ((stringLength x) - 1) x;
-        resize = concatStringsSep "\n"
-          (map
-            (x:
-              let
-                action = x: if x == "left" || x == "up" then "shrink" else "grow";
-              in
-              ''
-                bindsym ''$${x} resize ${action x} width 10px
-                bindsym ${firstUpper x} resize ${action x} width 10px
-              ''
-            )
-            list
-          );
-        bindsym = concatStringsSep "\n"
-          (map
-            (x:
-              ''
-                bindsym $mod+''$${x} focus ${x}
-                bindsym $mod+${firstUpper x} focus ${x}
-                bindsym $mod+Shift+''$${x} move ${x}
-                bindsym $mod+Shift+${firstUpper x} move ${x}
-              ''
-            )
-            list
-          );
+        resize = concatStringsSep "\n" (
+          map (
+            x:
+            let
+              action = x: if x == "left" || x == "up" then "shrink" else "grow";
+            in
+            ''
+              bindsym ''$${x} resize ${action x} width 10px
+              bindsym ${firstUpper x} resize ${action x} width 10px
+            ''
+          ) list
+        );
+        bindsym = concatStringsSep "\n" (
+          map (x: ''
+            bindsym $mod+''$${x} focus ${x}
+            bindsym $mod+${firstUpper x} focus ${x}
+            bindsym $mod+Shift+''$${x} move ${x}
+            bindsym $mod+Shift+${firstUpper x} move ${x}
+          '') list
+        );
       in
       ''
         bindsym $mod+r mode "resize"
@@ -170,4 +170,3 @@ with builtins;
   };
 
 }
-

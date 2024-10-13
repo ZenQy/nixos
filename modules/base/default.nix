@@ -1,6 +1,5 @@
 { pkgs, secrets, ... }:
 
-
 {
   system.stateVersion = "24.11";
   # nix
@@ -13,7 +12,10 @@
       experimental-features = nix-command flakes
       allow-import-from-derivation = true
     '';
-    settings.trusted-users = [ "root" "nixos" ];
+    settings.trusted-users = [
+      "root"
+      "nixos"
+    ];
     settings.substituters = [ secrets.cachix.cacheURL ];
     settings.trusted-public-keys = [ secrets.cachix.public-key ];
   };

@@ -1,9 +1,18 @@
-{ source, lib, stdenv, nodejs, makeWrapper }:
+{
+  source,
+  lib,
+  stdenv,
+  nodejs,
+  makeWrapper,
+}:
 
 stdenv.mkDerivation rec {
   inherit (source) pname version src;
 
-  nativeBuildInputs = [ nodejs makeWrapper ];
+  nativeBuildInputs = [
+    nodejs
+    makeWrapper
+  ];
 
   installPhase = ''
     mkdir -p $out/libexec/${pname} $out/bin
@@ -18,10 +27,12 @@ stdenv.mkDerivation rec {
     description = "Run VS Code on a remote server";
     homepage = "https://github.com/coder/code-server";
     license = licenses.mit;
-    maintainers = [{
-      name = "ZenQy";
-      email = "zenqy.qin@gmail.com";
-    }];
+    maintainers = [
+      {
+        name = "ZenQy";
+        email = "zenqy.qin@gmail.com";
+      }
+    ];
     mainProgram = "code-server";
     platforms = [ "aarch64-linux" ];
   };

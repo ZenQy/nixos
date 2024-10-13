@@ -1,4 +1,9 @@
-{ source, lib, stdenvNoCC, unzip }:
+{
+  source,
+  lib,
+  stdenvNoCC,
+  unzip,
+}:
 
 stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
@@ -17,10 +22,12 @@ stdenvNoCC.mkDerivation {
     description = "Collection of handy online tools for developers, with great UX.";
     homepage = "https://github.com/CorentinTh/it-tools";
     license = licenses.gpl3Plus;
-    maintainers = [{
-      name = "ZenQy";
-      email = "zenqy.qin@gmail.com";
-    }];
+    maintainers = [
+      {
+        name = "ZenQy";
+        email = "zenqy.qin@gmail.com";
+      }
+    ];
     platforms = platforms.all;
   };
 }

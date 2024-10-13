@@ -1,4 +1,8 @@
-{ source, lib, stdenvNoCC }:
+{
+  source,
+  lib,
+  stdenvNoCC,
+}:
 
 stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
@@ -12,10 +16,12 @@ stdenvNoCC.mkDerivation {
     description = "Mihomo Dashboard, The Official One, XD";
     homepage = "https://github.com/MetaCubeX/metacubexd";
     license = licenses.mit;
-    maintainers = [{
-      name = "ZenQy";
-      email = "zenqy.qin@gmail.com";
-    }];
+    maintainers = [
+      {
+        name = "ZenQy";
+        email = "zenqy.qin@gmail.com";
+      }
+    ];
     platforms = platforms.all;
   };
 }

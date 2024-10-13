@@ -1,5 +1,9 @@
-{ source, lib, buildGoModule, alist-web, }:
-with builtins;
+{
+  source,
+  lib,
+  buildGoModule,
+  alist-web,
+}:
 
 buildGoModule rec {
   inherit (source) pname version src;

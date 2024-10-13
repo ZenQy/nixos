@@ -1,9 +1,19 @@
-{ source, lib, stdenv, unzip, makeWrapper, electron }:
+{
+  source,
+  lib,
+  stdenv,
+  unzip,
+  makeWrapper,
+  electron,
+}:
 
 stdenv.mkDerivation rec {
   inherit (source) pname version src;
 
-  nativeBuildInputs = [ makeWrapper unzip ];
+  nativeBuildInputs = [
+    makeWrapper
+    unzip
+  ];
   installPhase = ''
     mkdir -p $out/share/${pname}
     cp -a resources $out/share/${pname}

@@ -1,4 +1,8 @@
-{ source, lib, mkYarnPackage }:
+{
+  source,
+  lib,
+  mkYarnPackage,
+}:
 
 mkYarnPackage {
   inherit (source) pname version src;

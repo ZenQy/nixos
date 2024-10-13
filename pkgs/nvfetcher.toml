@@ -92,3 +92,7 @@ fetch.github = "alist-org/web-dist"
 src.github = "CorentinTh/it-tools"
 src.prefix = "v"
 fetch.url = "https://github.com/CorentinTh/it-tools/releases/download/v$ver/it-tools-$ver.zip"
+
+[vitejs]
+src.github_tag = "vitejs/vite"
+fetch.github = "vitejs/vite"

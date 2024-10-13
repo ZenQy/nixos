@@ -1,4 +1,4 @@
-{ pkgs, lib }:
+{ pkgs }:
 
 with builtins;
 
@@ -13,31 +13,26 @@ let
       path = ".config/niri/config.kdl";
     };
   };
-  cmd = map
-    (name:
-      let
-        fullpath = "/home/nixos/" + conf.${name}.path;
-        source = conf.${name}.file;
-        target = substring 0 ((stringLength fullpath) - (stringLength (baseNameOf fullpath))) fullpath;
-      in
-      ''
-        mkdir -p ${target}
-        cat ${source} > ${fullpath}
-      '')
-    (attrNames conf);
+  cmd = map (
+    name:
+    let
+      fullpath = "/home/nixos/" + conf.${name}.path;
+      source = conf.${name}.file;
+      target = substring 0 ((stringLength fullpath) - (stringLength (baseNameOf fullpath))) fullpath;
+    in
+    ''
+      mkdir -p ${target}
+      cat ${source} > ${fullpath}
+    ''
+  ) (attrNames conf);
 
-  script = ''
-    #!/usr/bin/env bash
-  '' + concatStringsSep "\n" cmd;
+  script =
+    ''
+      #!/usr/bin/env bash
+    ''
+    + concatStringsSep "\n" cmd;
 
 in
 {
   gen = pkgs.writeScript "gen.sh" script;
 }
-
-
-
-
-
-
-

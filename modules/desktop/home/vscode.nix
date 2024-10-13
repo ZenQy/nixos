@@ -61,6 +61,3 @@
   "files.autoSave" = "afterDelay";
   "rust-analyzer.server.path" = "/run/current-system/sw/bin/rust-analyzer";
 }
-
-
-	

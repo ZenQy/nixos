@@ -1,4 +1,8 @@
-{ source, lib, vscode-utils }:
+{
+  source,
+  lib,
+  vscode-utils,
+}:
 
 with builtins;
 
