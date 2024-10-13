@@ -100,14 +100,14 @@ let
             tag = "geosite-geolocation-cn@ads";
             type = "remote";
             format = "binary";
-            url = "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geosite-geolocation-cn@ads.srs";
+            url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn@ads.srs";
             download_detour = "proxy";
           }
           {
             tag = "geosite-geolocation-!cn@ads";
             type = "remote";
             format = "binary";
-            url = "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geosite-geolocation-!cn@ads.srs";
+            url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn@ads.srs";
             download_detour = "proxy";
           }
         ];
@@ -131,11 +131,11 @@ let
           }
           {
             rule_set = "geosite-geolocation-cn@ads";
-            server = "block";
+            outbound = "block";
           }
           {
             rule_set = "geosite-geolocation-!cn@ads";
-            server = "block";
+            outbound = "block";
           }
           {
             rule_set = "geosite-cn";
@@ -229,13 +229,14 @@ let
             server = "www.visa.com.sg";
             server_port = 443;
             inherit (secrets.sing-box.trojan) password;
-            tls.enabled = true;
-            multiplex.enabled = true;
+            tls = {
+              enabled = true;
+              server_name = "cf.${secrets.domain}";
+            };
             transport = {
               type = "ws";
-              headers.Host = "$cf.${secrets.domain}";
+              headers.Host = "cf.${secrets.domain}";
               inherit (secrets.sing-box.trojan) path;
-              max_early_data = 2048;
             };
           }
           {
