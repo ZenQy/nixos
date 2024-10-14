@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-LPsxazGnNOsJLd9VrMkF2WMtdc/zwV43XJGJY0wBZ2s=",
+            "sha256": "sha256-7M6M2Ti3e12Kz3SIuTmCOrG5Tuh1lAi/aLdfR6HkcMI=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.QuebecDuck_EN-US9387855720_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PuebloNankoweap_EN-US9631367700_UHD.jpg"
         },
-        "version": "QuebecDuck_EN-US9387855720"
+        "version": "PuebloNankoweap_EN-US9631367700"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -182,11 +182,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-sWylDL1ZfscBh2vi4w4rv42+rj5mylcfE3jNLwXTUR8=",
+            "sha256": "sha256-43QwxLp8MsbMNKzY4fBsNU+5mjzPEZZT0fa6/pLeGg0=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.167.1/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.167.4/compressed-dist.tgz"
         },
-        "version": "v1.167.1"
+        "version": "v1.167.4"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2143.zip",
-            "sha256": "sha256-AiCpFS/YNSLJwcgXtWX0jKCLlffTgYRpTN7bc6nAcgA=",
+            "name": "rust-analyzer-0.4.2145.zip",
+            "sha256": "sha256-nlTTEuf4mLd7y7Th2VPMNqZukLdDkGAfXtZTv+ynx/g=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2143/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2145/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2143"
+        "version": "0.4.2145"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -304,6 +304,27 @@
             "url": "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.20.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
         "version": "3.20.0"
+    },
+    "vitejs": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "vitejs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "vitejs",
+            "repo": "vite",
+            "rev": "v6.0.0-beta.2",
+            "sha256": "sha256-tn3vyFGtmC95euc/1+k0FruAWhHKd6IG1/40XhPhvfk=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v6.0.0-beta.2"
     },
     "vue_volar": {
         "cargoLocks": null,

@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "QuebecDuck_EN-US9387855720";
+    version = "PuebloNankoweap_EN-US9631367700";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.QuebecDuck_EN-US9387855720_UHD.jpg";
-      sha256 = "sha256-LPsxazGnNOsJLd9VrMkF2WMtdc/zwV43XJGJY0wBZ2s=";
+      url = "https://www.bing.com/th?id=OHR.PuebloNankoweap_EN-US9631367700_UHD.jpg";
+      sha256 = "sha256-7M6M2Ti3e12Kz3SIuTmCOrG5Tuh1lAi/aLdfR6HkcMI=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.167.1";
+    version = "v1.167.4";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.167.1/compressed-dist.tgz";
-      sha256 = "sha256-sWylDL1ZfscBh2vi4w4rv42+rj5mylcfE3jNLwXTUR8=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.167.4/compressed-dist.tgz";
+      sha256 = "sha256-43QwxLp8MsbMNKzY4fBsNU+5mjzPEZZT0fa6/pLeGg0=";
     };
   };
   mhutchie_git-graph = {
@@ -135,11 +135,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2143";
+    version = "0.4.2145";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2143/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2143.zip";
-      sha256 = "sha256-AiCpFS/YNSLJwcgXtWX0jKCLlffTgYRpTN7bc6nAcgA=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2145/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2145.zip";
+      sha256 = "sha256-nlTTEuf4mLd7y7Th2VPMNqZukLdDkGAfXtZTv+ynx/g=";
     };
   };
   staticcheck = {
@@ -169,6 +169,17 @@
       url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.20.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "errorlens-3.20.0.zip";
       sha256 = "sha256-0gCT+u6rfkEcWcdzqRdc4EosROllD/Q0TIOQ4k640j0=";
+    };
+  };
+  vitejs = {
+    pname = "vitejs";
+    version = "v6.0.0-beta.2";
+    src = fetchFromGitHub {
+      owner = "vitejs";
+      repo = "vite";
+      rev = "v6.0.0-beta.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-tn3vyFGtmC95euc/1+k0FruAWhHKd6IG1/40XhPhvfk=";
     };
   };
   vue_volar = {
