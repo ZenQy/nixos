@@ -183,11 +183,12 @@ let
           };
           tuicList = [
             "cc"
+            "claw"
+            "crbs"
             "tokyo-1"
             "tokyo-2"
             "osaka-1"
             "osaka-2"
-            "crbs"
           ];
           trojanSet = {
             type = "trojan";
@@ -250,12 +251,12 @@ let
           }
           {
             tag = "tuic";
-            type = "urltest";
+            type = "selector";
             outbounds = tuicList;
           }
           {
             tag = "trojan";
-            type = "urltest";
+            type = "selector";
             outbounds = trojanList ++ [ "cloudflare" ];
           }
           {

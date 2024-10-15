@@ -86,6 +86,7 @@
           hosts = {
             beelink = d;
             cc = s;
+            claw = s;
             tokyo-1 = s;
             tokyo-2 = s;
             osaka-1 = s;
