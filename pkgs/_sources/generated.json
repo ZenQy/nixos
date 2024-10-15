@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7M6M2Ti3e12Kz3SIuTmCOrG5Tuh1lAi/aLdfR6HkcMI=",
+            "sha256": "sha256-Cch4VIkj1dkdltYhDbxmIT15xEINKxl/kjtZNO8+2V8=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.PuebloNankoweap_EN-US9631367700_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MaraMigration_EN-US9704012409_UHD.jpg"
         },
-        "version": "PuebloNankoweap_EN-US9631367700"
+        "version": "MaraMigration_EN-US9704012409"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2145.zip",
-            "sha256": "sha256-nlTTEuf4mLd7y7Th2VPMNqZukLdDkGAfXtZTv+ynx/g=",
+            "name": "rust-analyzer-0.4.2147.zip",
+            "sha256": "sha256-K7nMEU/XcPWFhJ9RZh5HRfqgAcdt1LPjR2yK8PljKWY=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2145/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2147/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2145"
+        "version": "0.4.2147"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -319,12 +319,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.0.0-beta.2",
-            "sha256": "sha256-tn3vyFGtmC95euc/1+k0FruAWhHKd6IG1/40XhPhvfk=",
+            "rev": "v6.0.0-beta.3",
+            "sha256": "sha256-uyRiCoFKCzbZciCYx4a5OZaVxlxXUBxfEJFPeUbUfd0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.0.0-beta.2"
+        "version": "v6.0.0-beta.3"
     },
     "vue_volar": {
         "cargoLocks": null,
