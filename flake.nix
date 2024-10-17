@@ -4,8 +4,8 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     secrets = {
-      url = "/home/nixos/Documents/nixos-secrets";
-      # url = "git+ssh://git@github.com/zenqy/nixos-secrets";
+      # url = "/home/nixos/Documents/nixos-secrets";
+      url = "git+ssh://git@github.com/zenqy/nixos-secrets";
       flake = false;
     };
     impermanence.url = "github:nix-community/impermanence";
