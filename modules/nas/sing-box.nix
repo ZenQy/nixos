@@ -126,6 +126,7 @@ let
           }
           {
             domain_suffix = domain_suffix_direct;
+            ip_cidr = [ "140.83.61.201" ];
             ip_is_private = true;
             outbound = "direct";
           }
@@ -165,31 +166,6 @@ let
       ];
       outbounds =
         let
-          tuicSet = {
-            type = "tuic";
-            server_port = 443;
-            inherit (secrets.sing-box.tuic) uuid password;
-            congestion_control = "bbr";
-            udp_relay_mode = "native";
-            udp_over_stream = false;
-            zero_rtt_handshake = false;
-            heartbeat = "10s";
-            network = "tcp";
-            tls = {
-              enabled = true;
-              alpn = [ "h3" ];
-            };
-            tcp_fast_open = true;
-          };
-          tuicList = [
-            "cc"
-            "claw"
-            "crbs"
-            "tokyo-1"
-            "tokyo-2"
-            "osaka-1"
-            "osaka-2"
-          ];
           trojanSet = {
             type = "trojan";
             server_port = 443;
@@ -198,29 +174,31 @@ let
             multiplex.enabled = true;
             transport = {
               type = "ws";
-              inherit (secrets.sing-box.trojan) path;
-              max_early_data = 2048;
             };
           };
           trojanList = [
+            "claw"
+            "tokyo-1"
             "natvps-ca"
             "natvps-jp"
           ];
         in
         map (
           tag:
-          tuicSet
+          trojanSet
           // {
-            inherit tag;
-            server = "${tag}.${secrets.domain}";
+            tag = "claw⭢${tag}";
+            server = "claw.${secrets.domain}";
+            transport.path = "/${tag}";
           }
-        ) tuicList
+        ) (builtins.filter (x: x != "claw") trojanList)
         ++ map (
           tag:
           trojanSet
           // {
             inherit tag;
             server = "${tag}.${secrets.domain}";
+            transport.path = "/${tag}";
           }
         ) trojanList
         ++ [
@@ -237,27 +215,18 @@ let
             transport = {
               type = "ws";
               headers.Host = "cf.${secrets.domain}";
-              inherit (secrets.sing-box.trojan) path;
+              path = "/8PtaCVX69w3a4X";
             };
           }
           {
             tag = "proxy";
             type = "selector";
             outbounds = [
-              "tuic"
-              "trojan"
+              "natvps-ca"
+              "natvps-jp"
+              "cloudflare"
               "direct"
             ];
-          }
-          {
-            tag = "tuic";
-            type = "selector";
-            outbounds = tuicList;
-          }
-          {
-            tag = "trojan";
-            type = "selector";
-            outbounds = trojanList ++ [ "cloudflare" ];
           }
           {
             type = "direct";
