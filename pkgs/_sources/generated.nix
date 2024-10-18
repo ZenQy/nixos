@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MarsDunes_EN-US3465209450";
+    version = "CentralParkAutumn_EN-US2354288950";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MarsDunes_EN-US3465209450_UHD.jpg";
-      sha256 = "sha256-vG4LI/oFcYSlYWVIVAP7X9BmN74BkgTgebqZDgIQiAo=";
+      url = "https://www.bing.com/th?id=OHR.CentralParkAutumn_EN-US2354288950_UHD.jpg";
+      sha256 = "sha256-GtVO02eQd8cM2WbgiJRs/vFg91RPImIRrIONdv10xbM=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -115,13 +115,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.20.1";
+    version = "v0.20.3";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.20.1";
+      rev = "v0.20.3";
       fetchSubmodules = false;
-      sha256 = "sha256-iA7CQsGaFsYrFE66sY//k/ib+uVg8FcDkU8kn8H3cF8=";
+      sha256 = "sha256-eKyRXeZSjdnr1eJHvDn6tjY8vnzf+c+eXb8nT3eCudA=";
     };
   };
   pkief_material-icon-theme = {
