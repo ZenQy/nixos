@@ -10,7 +10,9 @@ let
         "googleapis.cn"
       ];
       domain_suffix_direct = [
+        secrets.domain
         ".cn"
+        "allawnfs.com"
         "epicgames.com"
         "msftconnecttest.com"
         "blizzard.com"
@@ -126,7 +128,6 @@ let
           }
           {
             domain_suffix = domain_suffix_direct;
-            ip_cidr = [ "140.83.61.201" ];
             ip_is_private = true;
             outbound = "direct";
           }
@@ -166,41 +167,48 @@ let
       ];
       outbounds =
         let
-          trojanSet = {
+          trojan = {
             type = "trojan";
             server_port = 443;
             inherit (secrets.sing-box.trojan) password;
             tls.enabled = true;
             multiplex.enabled = true;
-            transport = {
-              type = "ws";
-            };
           };
-          trojanList = [
+          tagList = [
             "claw"
+            "crbs"
+            "osaka-1"
+            "osaka-2"
             "tokyo-1"
+            "tokyo-2"
             "natvps-ca"
             "natvps-jp"
           ];
         in
         map (
           tag:
-          trojanSet
+          trojan
           // {
             tag = "claw⭢${tag}";
             server = "claw.${secrets.domain}";
-            transport.path = "/${tag}";
+            transport = {
+              type = "ws";
+              path = "/${tag}";
+            };
           }
-        ) (builtins.filter (x: x != "claw") trojanList)
+        ) (builtins.filter (x: x != "claw") tagList)
         ++ map (
           tag:
-          trojanSet
+          trojan
           // {
             inherit tag;
             server = "${tag}.${secrets.domain}";
-            transport.path = "/${tag}";
+            transport = {
+              type = "ws";
+              path = "/${tag}";
+            };
           }
-        ) trojanList
+        ) tagList
         ++ [
           {
             tag = "cloudflare";
@@ -221,12 +229,13 @@ let
           {
             tag = "proxy";
             type = "selector";
-            outbounds = [
-              "natvps-ca"
-              "natvps-jp"
-              "cloudflare"
-              "direct"
-            ];
+            outbounds =
+              tagList
+              ++ map (tag: "claw⭢${tag}") (builtins.filter (x: x != "claw") tagList)
+              ++ [
+                "cloudflare"
+                "direct"
+              ];
           }
           {
             type = "direct";
