@@ -89,7 +89,7 @@ jobs:
             pkgs_new=$(nix flake show --json | jq '.packages."x86_64-linux"')
             # pkgs=$(echo $pkgs_list | jq -r '.[]')
             hashpkgs="$(ls pkgs/go) $(ls pkgs/others)"
-            hashpkgs="$(ls pkgs/go)"
+            # hashpkgs="$(ls pkgs/go)"
             for pkg in $pkgs; do
               echo 正在执行$pkg...
               pkg_old=$(echo $pkgs_old | jq ".\"$pkg\".name")
