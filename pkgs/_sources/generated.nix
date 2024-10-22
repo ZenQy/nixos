@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "AutumnCypress_EN-US2771131028";
+    version = "MonsterDoor_EN-US2973387472";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.AutumnCypress_EN-US2771131028_UHD.jpg";
-      sha256 = "sha256-Ldr9P5/Bo4mYtSrrbDp4WkmH/cHJIRkT/6d6NbNanJU=";
+      url = "https://www.bing.com/th?id=OHR.MonsterDoor_EN-US2973387472_UHD.jpg";
+      sha256 = "sha256-T+N15GW0C4qixFwW6YbiUFWWByCtEkr/zJxALNUNCZY=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -70,10 +70,10 @@
   };
   it-tools = {
     pname = "it-tools";
-    version = "2024.5.13-a0bc346";
+    version = "2024.10.22-7ca5933";
     src = fetchurl {
-      url = "https://github.com/CorentinTh/it-tools/releases/download/v2024.5.13-a0bc346/it-tools-2024.5.13-a0bc346.zip";
-      sha256 = "sha256-nqcSx/7BdmOtib/q+XZHe2ENC54dcTpgVsFQaaySZJM=";
+      url = "https://github.com/CorentinTh/it-tools/releases/download/v2024.10.22-7ca5933/it-tools-2024.10.22-7ca5933.zip";
+      sha256 = "sha256-7vJ21nXbYFO9xlzYSCpWZ4VWHHDu1QNaDgWw5iewmJ0=";
     };
   };
   jnoortheen_nix-ide = {
@@ -135,11 +135,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2153";
+    version = "0.4.2155";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2153/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2153.zip";
-      sha256 = "sha256-Nssauqi+w9HYUGX2X4LJwKpKcSGnzt8kD1Bg0TB92yI=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2155/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2155.zip";
+      sha256 = "sha256-dPXy6HvWnWQsMidGxX3DNJNHKH4To6lZFzI+Z4YZZ0I=";
     };
   };
   staticcheck = {
