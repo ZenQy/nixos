@@ -155,12 +155,13 @@ let
         {
           type = "tun";
           tag = "tun-in";
-          inet4_address = "172.16.0.1/30";
-          inet6_address = "fd00::1/126";
-          mtu = 1400;
+          address = [
+            "172.16.0.1/30"
+            "fd00::1/126"
+          ];
+          mtu = 9000;
           auto_route = true;
           strict_route = false;
-          stack = "gvisor";
           sniff = true;
           sniff_override_destination = false;
         }

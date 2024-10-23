@@ -51,7 +51,7 @@
                   listen_port = 443;
                   tls = {
                     enabled = true;
-                    server_name = domain;
+                    alpn = [ "h2" ];
                     acme = {
                       inherit domain;
                       email = "zenqy.qin@gmail.com";
