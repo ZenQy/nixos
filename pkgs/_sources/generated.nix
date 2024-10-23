@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MonsterDoor_EN-US2973387472";
+    version = "MadameSherriCastle_EN-US3066456106";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MonsterDoor_EN-US2973387472_UHD.jpg";
-      sha256 = "sha256-T+N15GW0C4qixFwW6YbiUFWWByCtEkr/zJxALNUNCZY=";
+      url = "https://www.bing.com/th?id=OHR.MadameSherriCastle_EN-US3066456106_UHD.jpg";
+      sha256 = "sha256-zZ4DqCNyB/wpcMo7qOISPwHvBshPu5BWS+Pkw+AXojY=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -126,20 +126,20 @@
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.11.1";
+    version = "5.12.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.11.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.11.1.zip";
-      sha256 = "sha256-TREtiueZdrNvmCKddy0gjupv1/2MXUMz1s398Y/etjg=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.12.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.12.0.zip";
+      sha256 = "sha256-FLHEaWFZ9JAy8S1il10D/2qQG7aNH8n6iA+kFhUTZVs=";
     };
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2155";
+    version = "0.4.2156";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2155/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2155.zip";
-      sha256 = "sha256-dPXy6HvWnWQsMidGxX3DNJNHKH4To6lZFzI+Z4YZZ0I=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2156/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2156.zip";
+      sha256 = "sha256-i5VATly85L/ZyUMi2LaG1GxBGZNKf5ql/WkxYjhq2xM=";
     };
   };
   staticcheck = {
@@ -173,13 +173,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v5.4.9";
+    version = "v5.4.10";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v5.4.9";
+      rev = "v5.4.10";
       fetchSubmodules = false;
-      sha256 = "sha256-vqfYVvgaVcpB+yfOA3t/J0VL6YPIYXbA/+Vxpp6Hv8Q=";
+      sha256 = "sha256-UeuyxQK/foX329hdkXGRdJfbs3RRUToixL66KqHw17M=";
     };
   };
   vue_volar = {
