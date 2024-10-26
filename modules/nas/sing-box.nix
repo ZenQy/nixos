@@ -10,7 +10,7 @@ let
         "googleapis.cn"
       ];
       domain_suffix_direct = [
-        secrets.domain
+        "s.${secrets.domain}"
         ".cn"
         "allawnfs.com"
         "epicgames.com"
@@ -172,7 +172,10 @@ let
             type = "trojan";
             server_port = 443;
             inherit (secrets.sing-box.trojan) password;
-            tls.enabled = true;
+            tls = {
+              enabled = true;
+              utls.enabled = true;
+            };
             multiplex.enabled = true;
           };
           tagList = [
@@ -190,7 +193,7 @@ let
           tag:
           trojan
           // {
-            tag = "claw⭢${tag}";
+            tag = "claw→${tag}";
             server = "claw.${secrets.domain}";
             transport = {
               type = "ws";
@@ -232,7 +235,7 @@ let
             type = "selector";
             outbounds =
               tagList
-              ++ map (tag: "claw⭢${tag}") (builtins.filter (x: x != "claw") tagList)
+              ++ map (tag: "claw→${tag}") (builtins.filter (x: x != "claw") tagList)
               ++ [
                 "cloudflare"
                 "direct"
