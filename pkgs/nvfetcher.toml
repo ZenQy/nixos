@@ -94,5 +94,6 @@ src.prefix = "v"
 fetch.url = "https://github.com/CorentinTh/it-tools/releases/download/v$ver/it-tools-$ver.zip"
 
 [vitejs]
-src.github = "vitejs/vite"
+src.github_tag = "vitejs/vite"
+src.exclude_regex = ".*(alpha|beta|@).*"
 fetch.github = "vitejs/vite"
