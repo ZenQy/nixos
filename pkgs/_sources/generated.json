@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-XzXfs60UpHmAmcGh8kOox5uGb1NuSJslr1mwmH3LuJM=",
+            "sha256": "sha256-CU6NRwchSZvwfq8hzZ3cQ9QxJ16qxj9QPWdpyjTY5nY=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BodieCalifornia_EN-US3185568116_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.HauntedEdinburgh_EN-US3906244993_UHD.jpg"
         },
-        "version": "BodieCalifornia_EN-US3185568116"
+        "version": "HauntedEdinburgh_EN-US3906244993"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v0.20.4",
-            "sha256": "sha256-I9hHrDrHEAQ+kMc2oV65XAFt/XmDOO7wERfSVY0yCgo=",
+            "rev": "v0.20.6",
+            "sha256": "sha256-A/9l8W0fOrVXoh8TA1NFMlCs+8unc+jgmmVMPfFheWI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.20.4"
+        "version": "v0.20.6"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2157.zip",
-            "sha256": "sha256-7B8TI/x+jsrGGnvrkll8IiFW7NFhQb5xk6S03HLlB+c=",
+            "name": "rust-analyzer-0.4.2164.zip",
+            "sha256": "sha256-KQBEYpg48IQ0FXz0vlhfUAIRB9DqU3xL9PrYcYX+xJ4=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2157/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2164/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2157"
+        "version": "0.4.2164"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -334,11 +334,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "volar-2.1.6.zip",
-            "sha256": "sha256-Z5rFQBc6u14K8cugFzV5sekwRkEwtOoRESUvABOTpP8=",
+            "name": "volar-2.1.10.zip",
+            "sha256": "sha256-uyMeoJ8EqAEbFhp0SjFw30U6TSw1SAmo1odSf85VLb8=",
             "type": "url",
-            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.1.6/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.1.10/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "2.1.6"
+        "version": "2.1.10"
     }
 }
