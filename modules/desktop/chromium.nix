@@ -34,7 +34,7 @@
       HomepageIsNewTabPage = false;
       ShowHomeButton = true;
       BrowserSignin = 0;
-      SyncDisabled = true;
+      SyncDisabled = false;
       PasswordManagerEnabled = false;
       SpellcheckEnabled = false;
       TranslateEnabled = false;

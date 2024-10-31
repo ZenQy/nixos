@@ -1,8 +1,9 @@
-{ source
-, lib
-, stdenv
-, pnpm
-, nodejs
+{
+  source,
+  lib,
+  stdenv,
+  pnpm,
+  nodejs,
 }:
 
 stdenv.mkDerivation {
@@ -10,7 +11,7 @@ stdenv.mkDerivation {
 
   pnpmDeps = pnpm.fetchDeps {
     inherit (source) pname version src;
-    hash = "sha256-OLBMqD0JyngW8DXnPI+09PZZuO3wMPEZrCh2pTcY2ck=";
+    hash = "sha256-UmUsMwtKO881VZj+v9ib6VBygmeFH4FaoqH+VQXcUdk=";
   };
 
   nativeBuildInputs = [

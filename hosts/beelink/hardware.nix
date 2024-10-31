@@ -4,27 +4,40 @@
 { modulesPath, ... }:
 
 {
-  imports =
-    [
-      (modulesPath + "/installer/scan/not-detected.nix")
-    ];
+  imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
+  ];
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" "thunderbolt" "usb_storage" "usbhid" "sd_mod" ];
+  boot.initrd.availableKernelModules = [
+    "xhci_pci"
+    "nvme"
+    "thunderbolt"
+    "usb_storage"
+    "usbhid"
+    "sd_mod"
+  ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
-  boot.kernelParams = [ "ipv6.disable=1" ];
+  boot.kernelParams = [ ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
     device = "tmpfs";
     fsType = "tmpfs";
-    options = [ "relatime" "mode=755" ];
+    options = [
+      "relatime"
+      "mode=755"
+    ];
   };
 
   fileSystems."/nix" = {
     device = "/dev/disk/by-label/NixOS";
     fsType = "btrfs";
-    options = [ "compress-force=zstd" "nosuid" "nodev" ];
+    options = [
+      "compress-force=zstd"
+      "nosuid"
+      "nodev"
+    ];
   };
 
   fileSystems."/boot" = {

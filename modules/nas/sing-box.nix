@@ -30,6 +30,7 @@ let
           {
             tag = "dns_fakeip";
             address = "fakeip";
+            strategy = "ipv4_only";
           }
           {
             tag = "dns_direct";
@@ -73,11 +74,10 @@ let
           }
         ];
         final = "dns_direct";
-        independent_cache = true;
+        strategy = "prefer_ipv6";
         fakeip = {
           enabled = true;
           inet4_range = "198.18.0.0/15";
-          inet6_range = "fc00::/18";
         };
       };
       route = {
@@ -157,11 +157,11 @@ let
           tag = "tun-in";
           address = [
             "172.16.0.1/30"
-            "fd00::1/126"
           ];
           mtu = 9000;
           auto_route = true;
           strict_route = false;
+          stack = "gvisor";
           sniff = true;
           sniff_override_destination = false;
         }
