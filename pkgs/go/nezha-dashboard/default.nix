@@ -1,20 +1,23 @@
-{ source
-, buildGoModule
-, lib
-,
+{
+  source,
+  buildGoModule,
+  lib,
+  geoip,
 }:
 
 buildGoModule {
   inherit (source) pname version src;
-  vendorHash = "sha256-/s1tNB2+lCZmdr5+FNp3LCDV2SMqRoCE2VywKPYwsI4=";
+  vendorHash = "sha256-IMS9o9f/65r4RClg1/0gAb/zbXvky8NTYrhOfXeDXEo=";
 
   doCheck = false;
   subPackages = [ "cmd/dashboard" ];
 
   postPatch = ''
+    cp -f ${geoip}/geoip.db pkg/geoip
+    chmod +w pkg/geoip/geoip.db
+
     sed -i "s|data/config|/etc/nezha/dashboard|g" cmd/dashboard/main.go
     sed -i "s|data/sqlite|/etc/nezha/dashboard|g" cmd/dashboard/main.go
-    # sed -i "s|resource/|$out/share/resource/|g" cmd/dashboard/controller/controller.go
   '';
 
   postInstall = ''

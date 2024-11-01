@@ -163,7 +163,7 @@ let
           strict_route = false;
           stack = "gvisor";
           sniff = true;
-          sniff_override_destination = false;
+          sniff_override_destination = true;
         }
       ];
       outbounds =
