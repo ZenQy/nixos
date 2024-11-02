@@ -3,13 +3,13 @@
 {
   alist = {
     pname = "alist";
-    version = "v3.39.0";
+    version = "v3.39.1";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.39.0";
+      rev = "v3.39.1";
       fetchSubmodules = false;
-      sha256 = "sha256-DKf4SqcC4L3rEX098W6FSZJvvlXzIdWtt+sdu+sEYJY=";
+      sha256 = "sha256-x8H+1x3mpJHf/sSswpVCDceHL6+TO2jUdSh0MmiksHU=";
     };
   };
   alist-web = {
@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "HovenweepRuins_EN-US3883549583";
+    version = "BisonYellowstone_EN-US4259322652";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HovenweepRuins_EN-US3883549583_UHD.jpg";
-      sha256 = "sha256-Yu1dHsGmhyCmeOmLi3edia9cWvuC8BAmZ+mmyUmcmPQ=";
+      url = "https://www.bing.com/th?id=OHR.BisonYellowstone_EN-US4259322652_UHD.jpg";
+      sha256 = "sha256-f/LOh4MMrXo0MUSiHUSqUl5FK3MkV3C3z9+IiCqqYHs=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -64,7 +64,7 @@
     version = "202411";
     src = fetchurl {
       url = "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2";
-      sha256 = "sha256-+TBF10StzKjoaQj9/r7iAntw2ys+cGHy7twf+Bcc9Y4=";
+      sha256 = "sha256-zUkLcM6w7/9C15V7mMcQFAYfBaGdVfnWEgQnzt69kSk=";
     };
   };
   golang_go = {
@@ -143,11 +143,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2166";
+    version = "0.4.2167";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2166/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2166.zip";
-      sha256 = "sha256-oxFFkZ0tF/CiMKxYdTyf75WbKtbxCgZ+DIwYOu7orG0=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2167/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2167.zip";
+      sha256 = "sha256-9tegE7ESW9xWtUYCvkRAO0Eq+9nvjbXRQljggRparUo=";
     };
   };
   staticcheck = {
