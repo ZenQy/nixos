@@ -98,6 +98,7 @@ jobs:
                 pkgs_list=$(echo $pkgs_list | jq "del(.[] | select(. == \"$pkg\"))")
               else
                 if [[ $(echo $hashpkgs | grep $pkg) != "" ]]; then
+                  sed -i 's/ash = "sha256-/ash = "0000000/g' pkgs/{go,others}/$pkg/default.nix || true
                   ./result/bin/nix-update $pkg --flake --version=skip
                 fi
               fi
