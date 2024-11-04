@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "BisonYellowstone_EN-US4259322652";
+    version = "CumbriaAutumn_EN-US4102686749";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.BisonYellowstone_EN-US4259322652_UHD.jpg";
-      sha256 = "sha256-f/LOh4MMrXo0MUSiHUSqUl5FK3MkV3C3z9+IiCqqYHs=";
+      url = "https://www.bing.com/th?id=OHR.CumbriaAutumn_EN-US4102686749_UHD.jpg";
+      sha256 = "sha256-8PbagILvbdeNAqjG5knwZOnO5tZh3omw0Hydg52PH7M=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -64,7 +64,7 @@
     version = "202411";
     src = fetchurl {
       url = "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2";
-      sha256 = "sha256-zUkLcM6w7/9C15V7mMcQFAYfBaGdVfnWEgQnzt69kSk=";
+      sha256 = "sha256-evQkDccPrkN8P4JwuwmFuoi2vh00mAeLtSR0FRxE7q4=";
     };
   };
   golang_go = {
@@ -95,13 +95,13 @@
   };
   leetgo = {
     pname = "leetgo";
-    version = "v1.4.9";
+    version = "v1.4.10";
     src = fetchFromGitHub {
       owner = "j178";
       repo = "leetgo";
-      rev = "v1.4.9";
+      rev = "v1.4.10";
       fetchSubmodules = false;
-      sha256 = "sha256-FlQYTNz1Fh0igwnufjVXN4bsUYBB1kls19D+/v7Ztps=";
+      sha256 = "sha256-0cBhJfxzzZ5IrVVYNWVoKK9c1baj5U2CvDO52wdsjcs=";
     };
   };
   metacubexd = {
@@ -123,13 +123,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.20.7";
+    version = "v0.20.8";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.20.7";
+      rev = "v0.20.8";
       fetchSubmodules = false;
-      sha256 = "sha256-cVl0ARqCDeNWPYXN41Iewjt6w/bjrbg9hoxmj+lRZUw=";
+      sha256 = "sha256-QtuJMT1e7aO6ZyvtgdO753yUt/xPl1ylJw75eAe3uPQ=";
     };
   };
   pkief_material-icon-theme = {
@@ -143,11 +143,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2167";
+    version = "0.4.2171";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2167/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2167.zip";
-      sha256 = "sha256-9tegE7ESW9xWtUYCvkRAO0Eq+9nvjbXRQljggRparUo=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2171/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2171.zip";
+      sha256 = "sha256-qHHhUeobCGVu//ghvNLUU3U/2rpnwk6J1T06liKHOzM=";
     };
   };
   staticcheck = {
