@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "CumbriaAutumn_EN-US4102686749";
+    version = "DCSunrise_EN-US2459275186";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.CumbriaAutumn_EN-US4102686749_UHD.jpg";
-      sha256 = "sha256-8PbagILvbdeNAqjG5knwZOnO5tZh3omw0Hydg52PH7M=";
+      url = "https://www.bing.com/th?id=OHR.DCSunrise_EN-US2459275186_UHD.jpg";
+      sha256 = "sha256-MK+9alC07k4OA+SWmW7gnx/nGIIwX4E5aWUoKcoK3a0=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -64,7 +64,7 @@
     version = "202411";
     src = fetchurl {
       url = "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2";
-      sha256 = "sha256-evQkDccPrkN8P4JwuwmFuoi2vh00mAeLtSR0FRxE7q4=";
+      sha256 = "sha256-QgECBlmjgUYq2XxZAhE78IX6TqCexN8Tb+4DwA5OxLA=";
     };
   };
   golang_go = {
@@ -123,13 +123,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.20.8";
+    version = "v0.20.9";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.20.8";
+      rev = "v0.20.9";
       fetchSubmodules = false;
-      sha256 = "sha256-QtuJMT1e7aO6ZyvtgdO753yUt/xPl1ylJw75eAe3uPQ=";
+      sha256 = "sha256-Joisnq/TgrLFQELdF5lobWfLtIL0R9JLydsBOBW2BOU=";
     };
   };
   pkief_material-icon-theme = {
@@ -143,11 +143,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2171";
+    version = "0.4.2173";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2171/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2171.zip";
-      sha256 = "sha256-qHHhUeobCGVu//ghvNLUU3U/2rpnwk6J1T06liKHOzM=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2173/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2173.zip";
+      sha256 = "sha256-cQbDXcU2Bn6RArY8sb/xacpdl8vlqTFkPiqJecd6N48=";
     };
   };
   staticcheck = {
