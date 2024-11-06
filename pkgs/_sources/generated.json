@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-MK+9alC07k4OA+SWmW7gnx/nGIIwX4E5aWUoKcoK3a0=",
+            "sha256": "sha256-psMzLeasQZv44XZycj2dPzyClfgK/bsNFuJW7NUGVyM=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.DCSunrise_EN-US2459275186_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ShiShiBeach_EN-US4231457607_UHD.jpg"
         },
-        "version": "DCSunrise_EN-US2459275186"
+        "version": "ShiShiBeach_EN-US4231457607"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -116,7 +116,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QgECBlmjgUYq2XxZAhE78IX6TqCexN8Tb+4DwA5OxLA=",
+            "sha256": "sha256-3BXJKTWpyM6qTT7E6hgxOXNxl7hOC5R8nYMdwKZQKnA=",
             "type": "url",
             "url": "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2"
         },
@@ -232,12 +232,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v0.20.9",
-            "sha256": "sha256-Joisnq/TgrLFQELdF5lobWfLtIL0R9JLydsBOBW2BOU=",
+            "rev": "v0.20.10",
+            "sha256": "sha256-fgOb1OdPDRbGT4d8TaiBhuSz7nfwDRkOzYvFLydGuwY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.20.9"
+        "version": "v0.20.10"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.12.0.zip",
-            "sha256": "sha256-FLHEaWFZ9JAy8S1il10D/2qQG7aNH8n6iA+kFhUTZVs=",
+            "name": "material-icon-theme-5.13.0.zip",
+            "sha256": "sha256-K06f85zqOWKomWeZinqVbTnmAhzpFDxOk6NccuU5QGw=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.12.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.13.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.12.0"
+        "version": "5.13.0"
     },
     "rust-lang_rust-analyzer": {
         "cargoLocks": null,
@@ -262,12 +262,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2173.zip",
-            "sha256": "sha256-cQbDXcU2Bn6RArY8sb/xacpdl8vlqTFkPiqJecd6N48=",
+            "name": "rust-analyzer-0.4.2174.zip",
+            "sha256": "sha256-5+/FXBhmdN7BFYjdc9lDZ75pQA3/mnZM0WmxKeEpOH0=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2173/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2174/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2173"
+        "version": "0.4.2174"
     },
     "staticcheck": {
         "cargoLocks": null,
