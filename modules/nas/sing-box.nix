@@ -10,7 +10,7 @@ let
         "googleapis.cn"
       ];
       domain_suffix_direct = [
-        "s.${secrets.domain}"
+        "nezha.${secrets.domain}"
         ".cn"
         "allawnfs.com"
         "epicgames.com"
@@ -178,16 +178,7 @@ let
             };
             multiplex.enabled = true;
           };
-          tagList = [
-            "claw"
-            "crbs"
-            "osaka-1"
-            "osaka-2"
-            "tokyo-1"
-            "tokyo-2"
-            "natvps-ca"
-            "natvps-jp"
-          ];
+          tagList = builtins.attrNames secrets.sing-box.trojan.port;
         in
         map (
           tag:
@@ -242,16 +233,16 @@ let
               ];
           }
           {
-            type = "direct";
             tag = "direct";
+            type = "direct";
           }
           {
-            type = "block";
             tag = "block";
+            type = "block";
           }
           {
-            type = "dns";
             tag = "dns-out";
+            type = "dns";
           }
         ];
       experimental = {

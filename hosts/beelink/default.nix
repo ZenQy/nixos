@@ -7,20 +7,24 @@
   nix.settings.substituters = [
     "https://mirrors.ustc.edu.cn/nix-channels/store"
   ];
-  networking.wireless = {
+  networking.wireless = with builtins; {
     enable = true;
     networks =
       let
-        list = map (x: { name = x; value = { psk = secrets.wireless."${x}".password; }; })
-          [ "Redmi_5G_4504" "160244823-5G" "iQOO_Neo5" "CMCC-ABA2" ];
+        s = secrets.wireless.password;
+        list = map (x: {
+          name = x;
+          value = {
+            psk = s."${x}";
+          };
+        }) (attrNames s);
       in
-      builtins.listToAttrs list;
+      listToAttrs list;
   };
   systemd.network.networks =
     let
       n = {
         gateway = [ "10.0.0.11" ];
-        dns = [ "114.114.114.114" ];
         DHCP = "no";
       };
     in

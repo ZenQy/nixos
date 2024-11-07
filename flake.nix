@@ -12,6 +12,7 @@
   };
 
   outputs =
+
     {
       self,
       nixpkgs,
@@ -21,9 +22,6 @@
 
     let
       this = import ./pkgs;
-      desktop = import ./modules "desktop";
-      server = import ./modules "server";
-      nas = import ./modules "nas";
       systems = [
         "x86_64-linux"
         "aarch64-linux"
@@ -34,20 +32,6 @@
     {
       overlays.default =
         final: prev: (nixpkgs.lib.composeExtensions this.overlay (import ./pkgs/override.nix) final prev);
-
-      nixosModules.desktop =
-        { ... }:
-        {
-          imports = [
-            desktop
-            impermanence.nixosModule
-          ];
-        };
-      nixosModules.server =
-        { ... }:
-        {
-          imports = [ server ];
-        };
 
       packages = forAllSystems (
         system:
@@ -80,24 +64,45 @@
       );
 
       nixosConfigurations =
+        with builtins;
         let
-          d = self.nixosModules.desktop;
-          s = self.nixosModules.server;
-          hosts = {
-            beelink = d;
-            cc = s;
-            claw = s;
-            tokyo-1 = s;
-            tokyo-2 = s;
-            osaka-1 = s;
-            osaka-2 = s;
-            osaka-arm = s;
-            crbs = s;
-            rock-5b = nas;
-            tx3 = nas;
+          modules_ = {
+            desktop = [
+              (import ./modules "desktop")
+              impermanence.nixosModule
+            ];
+            server = [ (import ./modules "server") ];
+            nas = [ (import ./modules "nas") ];
           };
+
+          hostList = {
+            desktop = [ "beelink" ];
+            server = [
+              "claw"
+              "tokyo-1"
+              "tokyo-2"
+              "osaka-1"
+              "osaka-2"
+              "osaka-arm"
+              "crbs"
+            ];
+            nas = [
+              "rock-5b"
+              "tx3"
+            ];
+          };
+
+          hosts = listToAttrs (
+            concatMap (
+              type:
+              map (host: {
+                name = host;
+                value = modules_.${type};
+              }) hostList.${type}
+            ) (attrNames hostList)
+          );
         in
-        builtins.mapAttrs (
+        mapAttrs (
           host: module:
           nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
@@ -105,14 +110,13 @@
               secrets = import (secrets + "/secrets.nix");
             };
             modules = [
-              ./hosts/${host}
+              (import ./hosts/${host})
               {
                 nixpkgs.overlays = [ self.overlays.default ];
                 nix.nixPath = [ "nixpkgs=${nixpkgs}" ];
                 networking.hostName = host;
               }
-              module
-            ];
+            ] ++ module;
           }
         ) hosts;
     };

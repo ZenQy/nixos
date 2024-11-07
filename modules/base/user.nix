@@ -8,8 +8,8 @@
       isNormalUser = true;
       description = "ZenQy Qin";
       group = "wheel";
-      password = secrets.user.zenith.password;
+      password = secrets.user.password.zenith;
     };
-    root.password = secrets.user.root.password;
+    root.password = secrets.user.password.root;
   };
 }
