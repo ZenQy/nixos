@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-psMzLeasQZv44XZycj2dPzyClfgK/bsNFuJW7NUGVyM=",
+            "sha256": "sha256-5SwIdZy5lCeqZMEyuXuJYtEcxicapZOiu8uR7OE1Su0=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.ShiShiBeach_EN-US4231457607_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CanadaWolves_EN-US4285635290_UHD.jpg"
         },
-        "version": "ShiShiBeach_EN-US4231457607"
+        "version": "CanadaWolves_EN-US4285635290"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -116,7 +116,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-3BXJKTWpyM6qTT7E6hgxOXNxl7hOC5R8nYMdwKZQKnA=",
+            "sha256": "sha256-Mw7px5yQ/p5gYZ/2NOVFMRRaQ2X4w0uh9sX0gEZWt10=",
             "type": "url",
             "url": "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2"
         },
@@ -262,12 +262,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2174.zip",
-            "sha256": "sha256-5+/FXBhmdN7BFYjdc9lDZ75pQA3/mnZM0WmxKeEpOH0=",
+            "name": "rust-analyzer-0.4.2175.zip",
+            "sha256": "sha256-8M1e8hl57q1y8jShi7RNjnvIMzBGm0u+sYQWtgct4bQ=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2174/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2175/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2174"
+        "version": "0.4.2175"
     },
     "staticcheck": {
         "cargoLocks": null,
