@@ -91,7 +91,7 @@ with builtins;
         bar swaybar_command waybar
         input * xkb_numlock enable
         output * {
-          bg ${pkgs.bingimg}/bingimg.jpg fill
+          bg ${pkgs.bingimg}/share/bingimg.jpg fill
           scale 1.5
         }
         exec_always --no-startup-id fcitx5
@@ -164,7 +164,7 @@ with builtins;
     "swaylock/config".text = ''
       show-failed-attempts
       daemonize
-      image=${pkgs.bingimg}/bingimg-blur.jpg
+      image=${pkgs.bingimg}/share/bingimg-blur.jpg
       scaling=fill
     '';
   };

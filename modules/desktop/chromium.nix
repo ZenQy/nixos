@@ -2,11 +2,16 @@
 
 {
   environment.systemPackages = with pkgs; [ chromium ];
+  environment.variables = {
+    GOOGLE_DEFAULT_CLIENT_ID = "77185425430.apps.googleusercontent.com";
+    GOOGLE_DEFAULT_CLIENT_SECRET = "OTJgUOQcT7lO7GsGZq2G4IlT";
+  };
+
   programs.chromium = {
     enable = true;
     extensions = [
       # PT Plugin Plus
-      "dmmjlmbkigbgpnjfiimhlnbnmppjhpea;https://raw.githubusercontent.com/pt-plugins/PT-Plugin-Plus/gh-pages/update/canary.xml"
+      # "dmmjlmbkigbgpnjfiimhlnbnmppjhpea;https://raw.githubusercontent.com/pt-plugins/PT-Plugin-Plus/gh-pages/update/canary.xml"
       # uBlock Origin
       "cjpalhdlnbpafiamejdnhcphjbkeiagm"
       # Extension Manager
@@ -33,7 +38,7 @@
     extraOpts = {
       HomepageIsNewTabPage = false;
       ShowHomeButton = true;
-      BrowserSignin = 0;
+      BrowserSignin = 1;
       SyncDisabled = false;
       PasswordManagerEnabled = false;
       SpellcheckEnabled = false;

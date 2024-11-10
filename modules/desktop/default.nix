@@ -14,7 +14,7 @@
     });
   '';
 
-  services.xserver.excludePackages = [ pkgs.xterm ];
+  # services.xserver.excludePackages = [ pkgs.xterm ];
   environment.systemPackages = with pkgs; [
     ## Go ##
     go
@@ -64,6 +64,7 @@
     # mitmproxy
     # python3
     # python3Packages.pip
+    # dig
   ];
 
   xdg.mime = {

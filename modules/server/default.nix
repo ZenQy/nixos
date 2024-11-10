@@ -24,6 +24,9 @@
       nixos = opensshKeys;
     };
 
+  boot.kernelParams = [
+    "net.ifnames=0"
+  ];
   boot.kernel.sysctl = {
     "net.core.default_qdisc" = "fq";
     "net.core.rmem_default" = 1048576;

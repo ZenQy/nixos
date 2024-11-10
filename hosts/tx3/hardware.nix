@@ -23,14 +23,13 @@
     loader.generic-extlinux-compatible.enable = true;
     loader.generic-extlinux-compatible.configurationLimit = 2;
     # kernelPackages = pkgs.linuxPackages_latest;
-    kernelParams = [
-      "audit=0"
-      "net.ifnames=0"
-      # "ipv6.disable=1"
-      "consoleblank=0"
-      "console=ttyAML0,115200n8"
-      "console=tty0"
-    ];
+    # kernelParams = [
+    #   "audit=0"
+    #   # "ipv6.disable=1"
+    #   "consoleblank=0"
+    #   "console=ttyAML0,115200n8"
+    #   "console=tty0"
+    # ];
   };
 
   nixpkgs.hostPlatform.system = "aarch64-linux";
@@ -38,7 +37,11 @@
   fileSystems."/" = {
     device = "/dev/disk/by-label/ROOTFS_EMMC";
     fsType = "btrfs";
-    options = [ "compress-force=zstd" "nosuid" "nodev" ];
+    options = [
+      "compress-force=zstd"
+      "nosuid"
+      "nodev"
+    ];
   };
 
   fileSystems."/boot" = {

@@ -10,17 +10,23 @@
 
   nixpkgs.hostPlatform.system = "aarch64-linux";
   boot = {
-    initrd.availableKernelModules = [ "nvme" "sd_mod" ];
+    initrd.availableKernelModules = [
+      "nvme"
+      "sd_mod"
+    ];
     initrd.kernelModules = [ ];
     kernelModules = [ ];
-    kernelParams = [ ];
     extraModulePackages = [ ];
   };
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/ROOTFS";
     fsType = "btrfs";
-    options = [ "compress-force=zstd" "nosuid" "nodev" ];
+    options = [
+      "compress-force=zstd"
+      "nosuid"
+      "nodev"
+    ];
   };
 
   fileSystems."/boot" = {

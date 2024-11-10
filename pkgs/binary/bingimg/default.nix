@@ -11,8 +11,8 @@ stdenvNoCC.mkDerivation {
   dontUnpack = true;
   nativeBuildInputs = [ imagemagick ];
   installPhase = ''
-    install -Dm644 $src $out/bingimg.jpg
-    convert -blur 14x5 $out/bingimg.jpg $out/bingimg-blur.jpg
+    install -Dm644 $src $out/share/bingimg.jpg
+    convert -blur 14x5 $src $out/share/bingimg-blur.jpg
   '';
 
   meta = with lib; {
