@@ -88,8 +88,6 @@ jobs:
           if [[ $WEEK != '1' ]]; then
             pkgs_new=$(nix flake show --json | jq '.packages."x86_64-linux"')
             pkgs=$(echo $pkgs_list | jq -r '.[]')
-            hashpkgs="$(ls pkgs/go) $(ls pkgs/others)"
-            # hashpkgs="$(ls pkgs/go)"
             for pkg in $pkgs; do
               echo 正在执行$pkg...
               pkg_old=$(echo $pkgs_old | jq ".\"$pkg\".name")
@@ -97,7 +95,7 @@ jobs:
               if [[ $pkg_old == $pkg_new ]]; then
                 pkgs_list=$(echo $pkgs_list | jq "del(.[] | select(. == \"$pkg\"))")
               else
-                if [[ $(echo $hashpkgs | grep $pkg) != "" ]]; then
+                if [[ -d pkgs/go/$pkg ]] || [[ -d pkgs/others/$pkg ]]; then
                   sed -i 's/ash = "sha256-/ash = "0000000/g' pkgs/{go,others}/$pkg/default.nix || true
                   ./result/bin/nix-update $pkg --flake --version=skip
                 fi

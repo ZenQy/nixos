@@ -1,10 +1,10 @@
 {
   source,
-  buildGo122Module,
+  buildGo123Module,
   lib,
 }:
 
-buildGo122Module {
+buildGo123Module {
   inherit (source) pname version src;
 
   vendorHash = "sha256-1/U+sPauV3kYvQKTGSuX9FvvEFNsksTPXtfZH0a/o0s=";
