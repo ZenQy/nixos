@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "GlacialRivers_EN-US4356459123";
+    version = "KelpForest_EN-US4745308334";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.GlacialRivers_EN-US4356459123_UHD.jpg";
-      sha256 = "sha256-+odt8R11u6T0XAAF5AuECwDG5P+nPsYN4wR7GrDAfUU=";
+      url = "https://www.bing.com/th?id=OHR.KelpForest_EN-US4745308334_UHD.jpg";
+      sha256 = "sha256-DH71XbhVO5hGgafGBQECX9fQHSJupmA8VQ1CUFvDNxI=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -64,7 +64,7 @@
     version = "202411";
     src = fetchurl {
       url = "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2";
-      sha256 = "sha256-QcvQh5x++TPQ+X5gR9DNpakgChCjcTcb6ulalQSQmF8=";
+      sha256 = "sha256-WFGs7DasE36AM1QDjBmJppt3BE8URzbBo9wujV6hVoE=";
     };
   };
   golang_go = {
@@ -95,21 +95,21 @@
   };
   leetgo = {
     pname = "leetgo";
-    version = "v1.4.10";
+    version = "v1.4.11";
     src = fetchFromGitHub {
       owner = "j178";
       repo = "leetgo";
-      rev = "v1.4.10";
+      rev = "v1.4.11";
       fetchSubmodules = false;
-      sha256 = "sha256-0cBhJfxzzZ5IrVVYNWVoKK9c1baj5U2CvDO52wdsjcs=";
+      sha256 = "sha256-3euD5njhZowFOhR6sYym+qV2+ioYRXbdhSI1V4vhxxI=";
     };
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.169.0";
+    version = "v1.171.0";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.169.0/compressed-dist.tgz";
-      sha256 = "sha256-9nd55kV+2YLBBF2Qpz0HpuH4I5/8zzqA2TUMHxCgs+s=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.171.0/compressed-dist.tgz";
+      sha256 = "sha256-hF4m7dwH6mNHcjQzamTjJepCgoYCVLFVEpJwnzMxqlg=";
     };
   };
   mhutchie_git-graph = {
@@ -123,31 +123,31 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.20.10";
+    version = "v0.20.12";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.20.10";
+      rev = "v0.20.12";
       fetchSubmodules = false;
-      sha256 = "sha256-fgOb1OdPDRbGT4d8TaiBhuSz7nfwDRkOzYvFLydGuwY=";
+      sha256 = "sha256-hKishk19jdnXOQZYRTPFA1UPBThSxB+d6zaYwaJHZfA=";
     };
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.13.0";
+    version = "5.14.1";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.13.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.13.0.zip";
-      sha256 = "sha256-K06f85zqOWKomWeZinqVbTnmAhzpFDxOk6NccuU5QGw=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.14.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.14.1.zip";
+      sha256 = "sha256-a3yb5moSyViJRznzABHajWbdKW096Lla26pVeFghpDo=";
     };
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2176";
+    version = "0.4.2182";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2176/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2176.zip";
-      sha256 = "sha256-8nX+hzJRuux1ACdzQ5rpSTt3ZT5loYp9SM6sAQTsQ3A=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2182/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2182.zip";
+      sha256 = "sha256-IYk0NRe26jz8d7mCMJIsjgRY2zvxOyhoPMdyTCXhC4Q=";
     };
   };
   staticcheck = {
@@ -181,13 +181,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v5.4.10";
+    version = "v5.4.11";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v5.4.10";
+      rev = "v5.4.11";
       fetchSubmodules = false;
-      sha256 = "sha256-UeuyxQK/foX329hdkXGRdJfbs3RRUToixL66KqHw17M=";
+      sha256 = "sha256-OBx6Qf8a4Hfxn3up0aISEA5+zG1ld69kvnj+REuuNtU=";
     };
   };
   vue_volar = {

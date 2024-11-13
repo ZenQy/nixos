@@ -7,7 +7,7 @@
 buildGo123Module {
   inherit (source) pname version src;
 
-  vendorHash = "sha256-1/U+sPauV3kYvQKTGSuX9FvvEFNsksTPXtfZH0a/o0s=";
+  vendorHash = "sha256-VrCdDHqq1ZPyK1Izh+E4O3E/iXyAHNQ3ANiCF0PkVBo=";
 
   doCheck = false;
   subPackages = [ "./" ];

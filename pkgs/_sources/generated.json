@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-+odt8R11u6T0XAAF5AuECwDG5P+nPsYN4wR7GrDAfUU=",
+            "sha256": "sha256-DH71XbhVO5hGgafGBQECX9fQHSJupmA8VQ1CUFvDNxI=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.GlacialRivers_EN-US4356459123_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.KelpForest_EN-US4745308334_UHD.jpg"
         },
-        "version": "GlacialRivers_EN-US4356459123"
+        "version": "KelpForest_EN-US4745308334"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -116,7 +116,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QcvQh5x++TPQ+X5gR9DNpakgChCjcTcb6ulalQSQmF8=",
+            "sha256": "sha256-WFGs7DasE36AM1QDjBmJppt3BE8URzbBo9wujV6hVoE=",
             "type": "url",
             "url": "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2"
         },
@@ -181,12 +181,12 @@
             "name": null,
             "owner": "j178",
             "repo": "leetgo",
-            "rev": "v1.4.10",
-            "sha256": "sha256-0cBhJfxzzZ5IrVVYNWVoKK9c1baj5U2CvDO52wdsjcs=",
+            "rev": "v1.4.11",
+            "sha256": "sha256-3euD5njhZowFOhR6sYym+qV2+ioYRXbdhSI1V4vhxxI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.4.10"
+        "version": "v1.4.11"
     },
     "metacubexd": {
         "cargoLocks": null,
@@ -197,11 +197,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9nd55kV+2YLBBF2Qpz0HpuH4I5/8zzqA2TUMHxCgs+s=",
+            "sha256": "sha256-hF4m7dwH6mNHcjQzamTjJepCgoYCVLFVEpJwnzMxqlg=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.169.0/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.171.0/compressed-dist.tgz"
         },
-        "version": "v1.169.0"
+        "version": "v1.171.0"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -232,12 +232,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v0.20.10",
-            "sha256": "sha256-fgOb1OdPDRbGT4d8TaiBhuSz7nfwDRkOzYvFLydGuwY=",
+            "rev": "v0.20.12",
+            "sha256": "sha256-hKishk19jdnXOQZYRTPFA1UPBThSxB+d6zaYwaJHZfA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.20.10"
+        "version": "v0.20.12"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.13.0.zip",
-            "sha256": "sha256-K06f85zqOWKomWeZinqVbTnmAhzpFDxOk6NccuU5QGw=",
+            "name": "material-icon-theme-5.14.1.zip",
+            "sha256": "sha256-a3yb5moSyViJRznzABHajWbdKW096Lla26pVeFghpDo=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.13.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.14.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.13.0"
+        "version": "5.14.1"
     },
     "rust-lang_rust-analyzer": {
         "cargoLocks": null,
@@ -262,12 +262,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2176.zip",
-            "sha256": "sha256-8nX+hzJRuux1ACdzQ5rpSTt3ZT5loYp9SM6sAQTsQ3A=",
+            "name": "rust-analyzer-0.4.2182.zip",
+            "sha256": "sha256-IYk0NRe26jz8d7mCMJIsjgRY2zvxOyhoPMdyTCXhC4Q=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2176/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2182/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2176"
+        "version": "0.4.2182"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -334,12 +334,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v5.4.10",
-            "sha256": "sha256-UeuyxQK/foX329hdkXGRdJfbs3RRUToixL66KqHw17M=",
+            "rev": "v5.4.11",
+            "sha256": "sha256-OBx6Qf8a4Hfxn3up0aISEA5+zG1ld69kvnj+REuuNtU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.4.10"
+        "version": "v5.4.11"
     },
     "vue_volar": {
         "cargoLocks": null,
