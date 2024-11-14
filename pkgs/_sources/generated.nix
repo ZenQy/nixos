@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "KelpForest_EN-US4745308334";
+    version = "ManarolaItaly_EN-US4826543395";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.KelpForest_EN-US4745308334_UHD.jpg";
-      sha256 = "sha256-DH71XbhVO5hGgafGBQECX9fQHSJupmA8VQ1CUFvDNxI=";
+      url = "https://www.bing.com/th?id=OHR.ManarolaItaly_EN-US4826543395_UHD.jpg";
+      sha256 = "sha256-YVUY0EpgY3GU3rK3xdD3MB44PsIJ/NK2tCJvPQ+PJgQ=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -64,7 +64,7 @@
     version = "202411";
     src = fetchurl {
       url = "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2";
-      sha256 = "sha256-WFGs7DasE36AM1QDjBmJppt3BE8URzbBo9wujV6hVoE=";
+      sha256 = "sha256-O6hhq5dY6EEe3/7+JWTXBY/tJuao+AYA7u2tAugGWjY=";
     };
   };
   golang_go = {
@@ -123,13 +123,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v0.20.12";
+    version = "v0.20.13";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v0.20.12";
+      rev = "v0.20.13";
       fetchSubmodules = false;
-      sha256 = "sha256-hKishk19jdnXOQZYRTPFA1UPBThSxB+d6zaYwaJHZfA=";
+      sha256 = "sha256-fJvL2cESQoiW93aj2RHPyZXvP8246Mf8hIRiP/DSRRY=";
     };
   };
   pkief_material-icon-theme = {
@@ -143,11 +143,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2182";
+    version = "0.4.2183";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2182/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2182.zip";
-      sha256 = "sha256-IYk0NRe26jz8d7mCMJIsjgRY2zvxOyhoPMdyTCXhC4Q=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2183/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2183.zip";
+      sha256 = "sha256-VIBOPMlwiD3xkeOOwZXfEQNi36OcNJsLouLmvzONp5E=";
     };
   };
   staticcheck = {
