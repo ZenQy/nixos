@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-YVUY0EpgY3GU3rK3xdD3MB44PsIJ/NK2tCJvPQ+PJgQ=",
+            "sha256": "sha256-YpwGLA/BrZyjcsr5vjfm4FvFzGotPOEqNP+tRgU+Z1g=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.ManarolaItaly_EN-US4826543395_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.YiPengLanterns_EN-US2889801198_UHD.jpg"
         },
-        "version": "ManarolaItaly_EN-US4826543395"
+        "version": "YiPengLanterns_EN-US2889801198"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -116,7 +116,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-O6hhq5dY6EEe3/7+JWTXBY/tJuao+AYA7u2tAugGWjY=",
+            "sha256": "sha256-bFjjO5aAVRLU4afGTrJazTDpuhOT1WafD2Dq1c7QZK0=",
             "type": "url",
             "url": "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2"
         },
@@ -262,12 +262,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2183.zip",
-            "sha256": "sha256-VIBOPMlwiD3xkeOOwZXfEQNi36OcNJsLouLmvzONp5E=",
+            "name": "rust-analyzer-0.4.2184.zip",
+            "sha256": "sha256-qQV1xI9IOzWxDYDpymH685A5QOpqyTeZo6IOYxgY0zA=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2183/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2184/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2183"
+        "version": "0.4.2184"
     },
     "staticcheck": {
         "cargoLocks": null,
