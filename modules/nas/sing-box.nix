@@ -10,14 +10,13 @@ let
       servers = [
         {
           tag = "dns_proxy";
-          address = "1.1.1.1";
+          address = "https://1.1.1.1/dns-query";
           strategy = "ipv4_only";
           detour = "proxy";
         }
         {
           tag = "dns_direct";
-          address = "223.5.5.5";
-          strategy = "prefer_ipv6";
+          address = "https://223.5.5.5/dns-query";
           detour = "direct";
         }
         {
@@ -28,6 +27,14 @@ let
       rules = [
         {
           outbound = "any";
+          server = "dns_direct";
+        }
+        {
+          clash_mode = "global";
+          server = "dns_proxy";
+        }
+        {
+          clash_mode = "direct";
           server = "dns_direct";
         }
         {
@@ -52,6 +59,7 @@ let
         }
       ];
       final = "dns_proxy";
+      strategy = "prefer_ipv6";
     };
     route = {
       geosite.path = "/etc/sing-box/geosite.db";
@@ -64,12 +72,12 @@ let
             {
               process_name = [
                 "transmission-daemon"
-                "adgardhome"
               ];
             }
             {
               domain_suffix = [
                 "nezha.${secrets.domain}"
+                "oracle.com"
                 ".cn"
                 "allawnfs.com"
                 "epicgames.com"
@@ -131,6 +139,14 @@ let
           outbound = "direct";
         }
         {
+          clash_mode = "global";
+          outbound = "proxy";
+        }
+        {
+          clash_mode = "direct";
+          outbound = "direct";
+        }
+        {
           rule_set = "rule_set_direct";
           outbound = "direct";
         }
@@ -163,7 +179,8 @@ let
         type = "tun";
         tag = "tun-in";
         address = [
-          "172.16.0.1/30"
+          "172.18.0.1/24"
+          "fdfe:dcba:9876::1/64"
         ];
         mtu = 1500;
         auto_route = true;
@@ -236,7 +253,6 @@ let
             ++ map (tag: "claw→${tag}") (builtins.filter (x: x != "claw") tagList)
             ++ [
               "cloudflare"
-              "direct"
             ];
         }
         {
