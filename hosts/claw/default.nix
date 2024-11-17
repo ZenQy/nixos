@@ -6,7 +6,7 @@
   ];
 
   systemd.network.networks.default = {
-    name = "ens5";
+    name = "eth0";
     DHCP = "yes";
   };
 

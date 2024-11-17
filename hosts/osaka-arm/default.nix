@@ -11,7 +11,7 @@
   ];
 
   systemd.network.networks.default = {
-    name = "enp0s3";
+    name = "eth0";
     DHCP = "yes";
   };
   zenith = {

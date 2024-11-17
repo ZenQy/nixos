@@ -6,7 +6,7 @@
   ];
 
   systemd.network.networks.default = {
-    name = "enp3s0";
+    name = "eth0";
     address = secrets.crunchbits.address;
     routes = [
       { Gateway = secrets.crunchbits.gateway.ipv4; }
