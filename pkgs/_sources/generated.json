@@ -13,12 +13,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.39.1",
-            "sha256": "sha256-x8H+1x3mpJHf/sSswpVCDceHL6+TO2jUdSh0MmiksHU=",
+            "rev": "v3.39.4",
+            "sha256": "sha256-S4GrBmSmJWsgM4+lTcM0yQ0BWcPcx243npkwRu6wUGg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.39.1"
+        "version": "v3.39.4"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "web-dist",
-            "rev": "3.39.0",
-            "sha256": "sha256-lwIWR2B0d4JH6rOwa8YL5FN3Q5ap+/rqqI7en9q0+mM=",
+            "rev": "3.39.2",
+            "sha256": "sha256-4BkKfRd26A3vze5Xb9SRZ0inWQyhfEa7+nHO1+TfSlI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3.39.0"
+        "version": "3.39.2"
     },
     "bingimg": {
         "cargoLocks": null,
@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ApdXz7+pM94W2YHl0YaZ6YIIPpKVq5kmBtB8aJuGvro=",
+            "sha256": "sha256-KZk/SHd470LvHmHJBHk8scztpyGTLyAoVgdcqboq0Kc=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.FrieslandNetherlands_EN-US3770890281_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PorthcawlLighthouse_EN-US4147042402_UHD.jpg"
         },
-        "version": "FrieslandNetherlands_EN-US3770890281"
+        "version": "PorthcawlLighthouse_EN-US4147042402"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -107,21 +107,6 @@
         },
         "version": "v2024.11.02"
     },
-    "geoip": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "geoip",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-EbG63DVzo0kNoSiJOMsjruVDtbAbW76Tp1b6VtDkSSg=",
-            "type": "url",
-            "url": "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2"
-        },
-        "version": "202411"
-    },
     "golang_go": {
         "cargoLocks": null,
         "date": null,
@@ -130,12 +115,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "go-0.43.2.zip",
-            "sha256": "sha256-LFJLU4Vodo8rGgQ5waxlN70jr0TZUMlknmqfx259egE=",
+            "name": "go-0.43.3.zip",
+            "sha256": "sha256-c8xsK7ncqG49lyAg4DP/ijDpvlgTNpkX/yOrF00n8Ak=",
             "type": "url",
-            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.43.2"
+        "version": "0.43.3"
     },
     "it-tools": {
         "cargoLocks": null,
@@ -262,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2185.zip",
-            "sha256": "sha256-KATH7eLe4aRqOgE/pyvPrLrFeBGEjb/GJYS9aQs1bfU=",
+            "name": "rust-analyzer-0.4.2187.zip",
+            "sha256": "sha256-32H8c//DtSUkgW8qBniimrpegU5SKQ+VPUUw8WziGwo=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2185/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2187/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2185"
+        "version": "0.4.2187"
     },
     "staticcheck": {
         "cargoLocks": null,
