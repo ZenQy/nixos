@@ -2,7 +2,6 @@
   source,
   buildGoModule,
   lib,
-  geoip,
 }:
 
 buildGoModule {
@@ -10,15 +9,9 @@ buildGoModule {
   vendorHash = "sha256-SYefkgc0CsAEdkL7rxu9fpz7dpBnx1LwabIadUeOKco=";
 
   doCheck = false;
+
   subPackages = [ "cmd/dashboard" ];
-
-  postPatch = ''
-    cp -f ${geoip}/geoip.db pkg/geoip
-    chmod +w pkg/geoip/geoip.db
-
-    sed -i "s|data/config|/etc/nezha/dashboard|g" cmd/dashboard/main.go
-    sed -i "s|data/sqlite|/etc/nezha/dashboard|g" cmd/dashboard/main.go
-  '';
+  patches = [ ./main.patch ];
 
   postInstall = ''
     mv $out/bin/dashboard $out/bin/nezha-dashboard

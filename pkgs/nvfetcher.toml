@@ -97,7 +97,3 @@ fetch.url = "https://github.com/CorentinTh/it-tools/releases/download/v$ver/it-t
 src.github_tag = "vitejs/vite"
 src.exclude_regex = ".*(alpha|beta|@).*"
 fetch.github = "vitejs/vite"
-
-[geoip]
-src.cmd = "date +%Y%m"
-fetch.url = "https://ipinfo.io/data/free/country.mmdb?token=6c1123281048d2"

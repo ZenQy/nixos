@@ -1,0 +1,60 @@
+diff --git a/cmd/dashboard/main.go b/cmd/dashboard/main.go
+index 6c68653..8a5d3e6 100644
+--- a/cmd/dashboard/main.go
++++ b/cmd/dashboard/main.go
+@@ -30,8 +30,8 @@ var (
+ func init() {
+ 	flag.CommandLine.ParseErrorsWhitelist.UnknownFlags = true
+ 	flag.BoolVarP(&dashboardCliParam.Version, "version", "v", false, "查看当前版本号")
+-	flag.StringVarP(&dashboardCliParam.ConfigFile, "config", "c", "data/config.yaml", "配置文件路径")
+-	flag.StringVar(&dashboardCliParam.DatebaseLocation, "db", "data/sqlite.db", "Sqlite3数据库文件路径")
++	flag.StringVarP(&dashboardCliParam.ConfigFile, "config", "c", "/etc/nezha/dashboard.yaml", "配置文件路径")
++	flag.StringVar(&dashboardCliParam.DatebaseLocation, "db", "/etc/nezha/dashboard.db", "Sqlite3数据库文件路径")
+ 	flag.Parse()
+ }
+ 
+diff --git a/service/rpc/nezha.go b/service/rpc/nezha.go
+index f95d663..9b90950 100644
+--- a/service/rpc/nezha.go
++++ b/service/rpc/nezha.go
+@@ -3,15 +3,17 @@ package rpc
+ import (
+ 	"context"
+ 	"fmt"
++	"io"
+ 	"log"
+-	"net"
++	"net/http"
++	"strings"
+ 	"sync"
+ 	"time"
+ 
+ 	"github.com/naiba/nezha/pkg/ddns"
+-	"github.com/naiba/nezha/pkg/geoip"
+ 	"github.com/naiba/nezha/pkg/grpcx"
+ 	"github.com/naiba/nezha/pkg/utils"
++	"github.com/tidwall/gjson"
+ 
+ 	"github.com/jinzhu/copier"
+ 	"github.com/nicksnyder/go-i18n/v2/i18n"
+@@ -221,13 +223,17 @@ func (s *NezhaHandler) LookupGeoIP(c context.Context, r *pb.GeoIP) (*pb.GeoIP, e
+ 	}
+ 
+ 	// 根据内置数据库查询 IP 地理位置
+-	record := &geoip.IPInfo{}
+ 	ip := r.GetIp()
+-	netIP := net.ParseIP(ip)
+-	location, err := geoip.Lookup(netIP, record)
++	resp, err := http.Get("https://ipinfo.io/" + ip + "/json")
+ 	if err != nil {
+ 		return nil, err
+ 	}
++	defer resp.Body.Close()
++	body, err := io.ReadAll(resp.Body)
++	if err != nil {
++		return nil, err
++	}
++	location := strings.ToLower(gjson.GetBytes(body, "country").String())
+ 
+ 	// 将地区码写入到 Host
+ 	singleton.ServerLock.RLock()
