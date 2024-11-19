@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "PorthcawlLighthouse_EN-US4147042402";
+    version = "TasmansArch_EN-US4274981499";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.PorthcawlLighthouse_EN-US4147042402_UHD.jpg";
-      sha256 = "sha256-KZk/SHd470LvHmHJBHk8scztpyGTLyAoVgdcqboq0Kc=";
+      url = "https://www.bing.com/th?id=OHR.TasmansArch_EN-US4274981499_UHD.jpg";
+      sha256 = "sha256-9i1D+6/ifnNoPy3bLV7plM3cLRivrVUsxKFvGF08pQk=";
     };
   };
   dbaeumer_vscode-eslint = {
