@@ -1,4 +1,4 @@
-{ pkgs, secrets, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -7,11 +7,14 @@
 
   systemd.network.networks.default = {
     name = "eth0";
-    address = secrets.crunchbits.address;
+    address = [
+      "104.36.86.45/22"
+      "2606:a8c0:3:148::a/64"
+    ];
     routes = [
-      { Gateway = secrets.crunchbits.gateway.ipv4; }
+      { Gateway = "104.36.84.1"; }
       {
-        Gateway = secrets.crunchbits.gateway.ipv6;
+        Gateway = "2606:a8c0:3::1";
         GatewayOnLink = true;
       }
     ];

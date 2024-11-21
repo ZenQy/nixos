@@ -84,7 +84,6 @@
               "osaka-1"
               "osaka-2"
               "osaka-arm"
-              "crbs"
             ];
             nas = [
               "rock-5b"
