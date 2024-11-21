@@ -1,7 +1,7 @@
 { pkgs, secrets, ... }:
 
 {
-  system.stateVersion = "24.11";
+  system.stateVersion = "25.05";
   # nix
   nix = {
     # optimise.automatic = true;

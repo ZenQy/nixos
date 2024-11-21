@@ -17,7 +17,6 @@
       let
         tagList = [
           "claw"
-          "crbs"
           "osaka-1"
           "osaka-2"
           "tokyo-1"
