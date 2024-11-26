@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xgwnI9jmAk4ghM7RgcIS+Oqm+H7AqUS6xD/3l4N2YnU=",
+            "sha256": "sha256-BZ9X59bpEUo1/b4Q8ds0DhtzW8oYpNTSdiTkGi7yDfc=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.AmboseliGiraffes_EN-US9072366924_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.TrulliGrove_EN-US5919292259_UHD.jpg"
         },
-        "version": "AmboseliGiraffes_EN-US9072366924"
+        "version": "TrulliGrove_EN-US5919292259"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -247,12 +247,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2195.zip",
-            "sha256": "sha256-1T0zdBivRQACZrDe/JHudyZovI/KlU8lLum2Bysj6Ek=",
+            "name": "rust-analyzer-0.4.2197.zip",
+            "sha256": "sha256-VkueqkidrIVekbKr0iGi4z1arCz4vphsGP1PnkhrZEs=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2195/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2197/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2195"
+        "version": "0.4.2197"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -319,12 +319,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v5.4.11",
-            "sha256": "sha256-OBx6Qf8a4Hfxn3up0aISEA5+zG1ld69kvnj+REuuNtU=",
+            "rev": "v6.0.0",
+            "sha256": "sha256-MpdPdFD4Ro5XLC0nRkTCzg6Nb90LzPmR0B4y9jd0bsY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.4.11"
+        "version": "v6.0.0"
     },
     "vue_volar": {
         "cargoLocks": null,
