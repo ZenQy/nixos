@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "TrulliGrove_EN-US5919292259";
+    version = "SemoisRiver_EN-US6047540380";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.TrulliGrove_EN-US5919292259_UHD.jpg";
-      sha256 = "sha256-BZ9X59bpEUo1/b4Q8ds0DhtzW8oYpNTSdiTkGi7yDfc=";
+      url = "https://www.bing.com/th?id=OHR.SemoisRiver_EN-US6047540380_UHD.jpg";
+      sha256 = "sha256-CM24t39OWytWaBSH1VL9dmKD26wnn4Zu24UAI+3YTFg=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.173.0";
+    version = "v1.173.1";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.173.0/compressed-dist.tgz";
-      sha256 = "sha256-q3NsWSmT0tOvywWUjdUyF7ceEkXTMvCoTjGhRGj+o0o=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.173.1/compressed-dist.tgz";
+      sha256 = "sha256-5XPO2oZwul+mRrCnmZcgxoJNwHbRhCW5/DpL4k9NwGY=";
     };
   };
   mhutchie_git-graph = {
@@ -173,13 +173,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v6.0.0";
+    version = "v6.0.1";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v6.0.0";
+      rev = "v6.0.1";
       fetchSubmodules = false;
-      sha256 = "sha256-MpdPdFD4Ro5XLC0nRkTCzg6Nb90LzPmR0B4y9jd0bsY=";
+      sha256 = "sha256-4fTEND1xCgALns0WQr6xXWwyckSXrGq4VdgHB8uKhW0=";
     };
   };
   vue_volar = {
