@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "SemoisRiver_EN-US6047540380";
+    version = "HelsinkiDusk_EN-US7738977648";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SemoisRiver_EN-US6047540380_UHD.jpg";
-      sha256 = "sha256-CM24t39OWytWaBSH1VL9dmKD26wnn4Zu24UAI+3YTFg=";
+      url = "https://www.bing.com/th?id=OHR.HelsinkiDusk_EN-US7738977648_UHD.jpg";
+      sha256 = "sha256-ynUvxIKrrtX6ub+eElkqvRq3OumwKnfZOsNoUd19jc0=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -53,19 +53,19 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2024.11.02";
+    version = "v2024.12.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2024.11.02/zenith.dict";
-      sha256 = "sha256-KkAi6VdW/rARwVR+3kP4Xbn4/bbQTTn3osJJyv7jCnc=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2024.12.02/zenith.dict";
+      sha256 = "sha256-fRXJDPbrWep9A5GmtYY3wLmq3VCFdZdfc3gpF8hQoxY=";
     };
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.43.3";
+    version = "0.43.4";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.43.3.zip";
-      sha256 = "sha256-c8xsK7ncqG49lyAg4DP/ijDpvlgTNpkX/yOrF00n8Ak=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.43.4.zip";
+      sha256 = "sha256-/K6eXCOaTEjDQKwA3LeMpxBGA03/pAmGmnU8TZnA+OM=";
     };
   };
   it-tools = {
@@ -98,10 +98,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.173.1";
+    version = "v1.173.3";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.173.1/compressed-dist.tgz";
-      sha256 = "sha256-5XPO2oZwul+mRrCnmZcgxoJNwHbRhCW5/DpL4k9NwGY=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.173.3/compressed-dist.tgz";
+      sha256 = "sha256-sB4QzSu/KPA9R3ERtPbycu7sA/mxgi0PYl3A+erDjkA=";
     };
   };
   mhutchie_git-graph = {
@@ -115,20 +115,20 @@
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.14.1";
+    version = "5.15.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.14.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.14.1.zip";
-      sha256 = "sha256-a3yb5moSyViJRznzABHajWbdKW096Lla26pVeFghpDo=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.15.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.15.0.zip";
+      sha256 = "sha256-wIde2Kz9+peLycRjx78yXDF3lMPUEO1TCqN925rZEOw=";
     };
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2197";
+    version = "0.4.2208";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2197/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2197.zip";
-      sha256 = "sha256-VkueqkidrIVekbKr0iGi4z1arCz4vphsGP1PnkhrZEs=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2208/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2208.zip";
+      sha256 = "sha256-nypVo7CSjgN08D8OAeGCRNGEotwLsUzL8oZi7GwSP1A=";
     };
   };
   staticcheck = {
@@ -162,13 +162,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v6.0.1";
+    version = "v6.0.3";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v6.0.1";
+      rev = "v6.0.3";
       fetchSubmodules = false;
-      sha256 = "sha256-4fTEND1xCgALns0WQr6xXWwyckSXrGq4VdgHB8uKhW0=";
+      sha256 = "sha256-oIgm+Vu695yBQzCBzZCgj3NzVYehXs+BmMEPtUCNYMg=";
     };
   };
   vue_volar = {
