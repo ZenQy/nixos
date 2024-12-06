@@ -11,7 +11,7 @@ buildGoModule {
   doCheck = false;
 
   subPackages = [ "cmd/dashboard" ];
-  patches = [ ./main.patch ];
+  # patches = [ ./main.patch ];
 
   postInstall = ''
     mv $out/bin/dashboard $out/bin/nezha-dashboard
