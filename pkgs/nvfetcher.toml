@@ -11,8 +11,8 @@ fetch.github = "go-delve/delve"
 # fetch.github = "nezhahq/agent"
 
 [nezha-dashboard]
-src.github = "naiba/nezha"
-fetch.github = "naiba/nezha"
+src.github = "nezhahq/nezha"
+fetch.github = "nezhahq/nezha"
 
 [staticcheck]
 src.github = "dominikh/go-tools"
