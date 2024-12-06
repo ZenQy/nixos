@@ -113,17 +113,6 @@
       sha256 = "sha256-sHeaMMr5hmQ0kAFZxxMiRk6f0mfjkg2XMnA4Gf+DHwA=";
     };
   };
-  nezha-dashboard = {
-    pname = "nezha-dashboard";
-    version = "v0.20.13";
-    src = fetchFromGitHub {
-      owner = "naiba";
-      repo = "nezha";
-      rev = "v0.20.13";
-      fetchSubmodules = false;
-      sha256 = "sha256-fJvL2cESQoiW93aj2RHPyZXvP8246Mf8hIRiP/DSRRY=";
-    };
-  };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
     version = "5.14.1";
