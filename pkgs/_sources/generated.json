@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1i7aqgcb6EYYbcTE5ddgB0l/wst3VyYEU5qHAQ5AzWY=",
+            "sha256": "sha256-/W4ShSNWfiBmX2hNpQbiwMkEkO6YCHmgYNScgOD/U68=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.NewHavenBridge_EN-US7922266620_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.GuanacosChile_EN-US8209106662_UHD.jpg"
         },
-        "version": "NewHavenBridge_EN-US7922266620"
+        "version": "GuanacosChile_EN-US8209106662"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -226,12 +226,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2209.zip",
-            "sha256": "sha256-qIknmBtAkHLKJqKjXHVgVR/iIMQNTAqo2ANb7G1UqGY=",
+            "name": "rust-analyzer-0.4.2211.zip",
+            "sha256": "sha256-+P6dcmUqjKNXTtqP68A/ft/s6Xi5Cz8Jk85qiT3QdhM=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2209/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2211/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2209"
+        "version": "0.4.2211"
     },
     "staticcheck": {
         "cargoLocks": null,
