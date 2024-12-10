@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/W4ShSNWfiBmX2hNpQbiwMkEkO6YCHmgYNScgOD/U68=",
+            "sha256": "sha256-+8DZuRRRLHzRL53C2nnlxdx5MgaYp3lOcQmC7FKVMAI=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.GuanacosChile_EN-US8209106662_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CornwallSnow_EN-US8476437458_UHD.jpg"
         },
-        "version": "GuanacosChile_EN-US8209106662"
+        "version": "CornwallSnow_EN-US8476437458"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -226,12 +226,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2211.zip",
-            "sha256": "sha256-+P6dcmUqjKNXTtqP68A/ft/s6Xi5Cz8Jk85qiT3QdhM=",
+            "name": "rust-analyzer-0.4.2213.zip",
+            "sha256": "sha256-hha1Ct3rWoX0cW/+Dzh+v3L6vedA70ovvtzI+yQip6w=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2211/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2213/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2211"
+        "version": "0.4.2213"
     },
     "staticcheck": {
         "cargoLocks": null,
