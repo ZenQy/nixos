@@ -1,4 +1,49 @@
 {
+    "ArtemisClient": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "ArtemisClient",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": "Artemis.tar.gz",
+            "sha256": "sha256-8E0oz+k8pCZHh27pQj2gzig0m+sivJvSaHYttnabxss=",
+            "type": "url",
+            "url": "https://github.com/kwaitsing/Artemis/archive/refs/tags/DimLight@build1.0.0.tar.gz"
+        },
+        "version": "DimLight@build1.0.0"
+    },
+    "ArtemisServer": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "ArtemisServer",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": "Artemis.tar.gz",
+            "sha256": "sha256-8E0oz+k8pCZHh27pQj2gzig0m+sivJvSaHYttnabxss=",
+            "type": "url",
+            "url": "https://github.com/kwaitsing/Artemis/archive/refs/tags/DimLight@build1.0.0.tar.gz"
+        },
+        "version": "DimLight@build1.0.0"
+    },
+    "ArtemisWeb": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "ArtemisWeb",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-ryjXR/roxu2Z+txrOd6FTfKzfBXzNN09UiS6RtSnqn8=",
+            "type": "url",
+            "url": "https://github.com/kwaitsing/Artemis/releases/download/DimLight@build1.0.0/frontend.tar.gz"
+        },
+        "version": "DimLight@build1.0.0"
+    },
     "alist": {
         "cargoLocks": null,
         "date": null,
@@ -13,12 +58,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.40.0",
-            "sha256": "sha256-D2XwY2D5WS7VoidmpEM5KyMA1NsZjlUV6Xs2uSj6+BE=",
+            "rev": "v3.41.0",
+            "sha256": "sha256-pGOdTBzAEW8KZAoGMoUgwqkkMFBav86puODNHMvEIBg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.40.0"
+        "version": "v3.41.0"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -34,12 +79,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "web-dist",
-            "rev": "3.39.2",
-            "sha256": "sha256-4BkKfRd26A3vze5Xb9SRZ0inWQyhfEa7+nHO1+TfSlI=",
+            "rev": "3.41.0",
+            "sha256": "sha256-tK1byiwtE9oMmRWEUJGVwenCJRC6CYGIGtl+r+2Nn00=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3.39.2"
+        "version": "3.41.0"
     },
     "bingimg": {
         "cargoLocks": null,
@@ -50,11 +95,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-CM24t39OWytWaBSH1VL9dmKD26wnn4Zu24UAI+3YTFg=",
+            "sha256": "sha256-5LjgZC3xnGnynm2x3ffhFOZzEYToAdG06aX5WCn0dbo=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.SemoisRiver_EN-US6047540380_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ChristmasBudapest_EN-US0865695821_UHD.jpg"
         },
-        "version": "SemoisRiver_EN-US6047540380"
+        "version": "ChristmasBudapest_EN-US0865695821"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -101,11 +146,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-KkAi6VdW/rARwVR+3kP4Xbn4/bbQTTn3osJJyv7jCnc=",
+            "sha256": "sha256-fRXJDPbrWep9A5GmtYY3wLmq3VCFdZdfc3gpF8hQoxY=",
             "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2024.11.02/zenith.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2024.12.02/zenith.dict"
         },
-        "version": "v2024.11.02"
+        "version": "v2024.12.02"
     },
     "golang_go": {
         "cargoLocks": null,
@@ -115,12 +160,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "go-0.43.3.zip",
-            "sha256": "sha256-c8xsK7ncqG49lyAg4DP/ijDpvlgTNpkX/yOrF00n8Ak=",
+            "name": "go-0.43.4.zip",
+            "sha256": "sha256-/K6eXCOaTEjDQKwA3LeMpxBGA03/pAmGmnU8TZnA+OM=",
             "type": "url",
-            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.3/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.43.3"
+        "version": "0.43.4"
     },
     "it-tools": {
         "cargoLocks": null,
@@ -182,11 +227,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-5XPO2oZwul+mRrCnmZcgxoJNwHbRhCW5/DpL4k9NwGY=",
+            "sha256": "sha256-sB4QzSu/KPA9R3ERtPbycu7sA/mxgi0PYl3A+erDjkA=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.173.1/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.173.3/compressed-dist.tgz"
         },
-        "version": "v1.173.1"
+        "version": "v1.173.3"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -203,27 +248,6 @@
         },
         "version": "1.30.0"
     },
-    "nezha-dashboard": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "nezha-dashboard",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "naiba",
-            "repo": "nezha",
-            "rev": "v0.20.13",
-            "sha256": "sha256-fJvL2cESQoiW93aj2RHPyZXvP8246Mf8hIRiP/DSRRY=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v0.20.13"
-    },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
         "date": null,
@@ -232,12 +256,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.14.1.zip",
-            "sha256": "sha256-a3yb5moSyViJRznzABHajWbdKW096Lla26pVeFghpDo=",
+            "name": "material-icon-theme-5.15.0.zip",
+            "sha256": "sha256-wIde2Kz9+peLycRjx78yXDF3lMPUEO1TCqN925rZEOw=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.14.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.15.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.14.1"
+        "version": "5.15.0"
     },
     "rust-lang_rust-analyzer": {
         "cargoLocks": null,
@@ -247,12 +271,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2197.zip",
-            "sha256": "sha256-VkueqkidrIVekbKr0iGi4z1arCz4vphsGP1PnkhrZEs=",
+            "name": "rust-analyzer-0.4.2216.zip",
+            "sha256": "sha256-UvrOy94AFcqLsDFFiSFPecFMvGVW8rMB1tHXhMRV4U0=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2197/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2216/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2197"
+        "version": "0.4.2216"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -319,12 +343,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.0.1",
-            "sha256": "sha256-4fTEND1xCgALns0WQr6xXWwyckSXrGq4VdgHB8uKhW0=",
+            "rev": "v6.0.3",
+            "sha256": "sha256-oIgm+Vu695yBQzCBzZCgj3NzVYehXs+BmMEPtUCNYMg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.0.1"
+        "version": "v6.0.3"
     },
     "vue_volar": {
         "cargoLocks": null,
