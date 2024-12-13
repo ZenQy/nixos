@@ -1,4 +1,4 @@
-{ secrets, ... }:
+{ secrets, pkgs, ... }:
 
 {
   imports = [
@@ -15,31 +15,20 @@
     extraConfig =
       with builtins;
       let
-        tagList = [
-          "claw"
-          "osaka-1"
-          "osaka-2"
-          "tokyo-1"
-          "tokyo-2"
-          "natvps-ca"
-          "natvps-jp"
-        ];
-        domain =
-          tag:
-          let
-            tagNew = if substring 0 6 tag == "natvps" then tag + "-raw" else tag;
-          in
-          if tagNew == "claw" then "" else "${tagNew}.${secrets.domain}";
+        tagList = attrNames secrets.sing-box.trojan.port;
+        short = tag: substring 9 (stringLength tag) tag;
+        domain = tag: if tag == "claw" then "" else "${tag}.${secrets.domain}";
         config = concatStringsSep "\n" (
           map (
-            tag: "reverse_proxy /${tag} ${domain tag}:${toString secrets.sing-box.trojan.port.${tag}}"
+            tag:
+            "reverse_proxy /${short tag} ${domain (short tag)}:${toString secrets.sing-box.trojan.port.${tag}}"
           ) tagList
         );
       in
       ''
         claw.${secrets.domain} {
-          root * /nix/store
-          file_server
+          root * ${pkgs.caddy}/share
+          file_server browse
           
           ${config}
         }

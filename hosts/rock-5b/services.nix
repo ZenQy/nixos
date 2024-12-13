@@ -101,15 +101,15 @@
   services.caddy = {
     enable = true;
     extraConfig = ''
-      http://10.0.0.11:6868 {
+      http://10.0.0.12:6868 {
         root * ${pkgs.ariang}/share/ariang
         file_server browse
       }
-      http://10.0.0.11:8080 {
+      http://10.0.0.12:8080 {
         root * /storage
         file_server browse
       }
-      10.0.0.11 {
+      10.0.0.12 {
         reverse_proxy :5244
       }
     '';

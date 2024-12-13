@@ -10,9 +10,9 @@ fetch.github = "go-delve/delve"
 # src.github = "nezhahq/agent"
 # fetch.github = "nezhahq/agent"
 
-[nezha-dashboard]
-src.github = "naiba/nezha"
-fetch.github = "naiba/nezha"
+# [nezha-dashboard]
+# src.github = "naiba/nezha"
+# fetch.github = "naiba/nezha"
 
 [staticcheck]
 src.github = "dominikh/go-tools"
@@ -97,3 +97,17 @@ fetch.url = "https://github.com/CorentinTh/it-tools/releases/download/v$ver/it-t
 src.github_tag = "vitejs/vite"
 src.exclude_regex = ".*(alpha|beta|@).*"
 fetch.github = "vitejs/vite"
+
+[ArtemisWeb]
+src.github = "kwaitsing/Artemis"
+fetch.url = "https://github.com/kwaitsing/Artemis/releases/download/$ver/frontend.tar.gz"
+
+[ArtemisClient]
+src.github = "kwaitsing/Artemis"
+fetch.url = "https://github.com/kwaitsing/Artemis/archive/refs/tags/$ver.tar.gz"
+url.name = "Artemis.tar.gz"
+
+[ArtemisServer]
+src.github = "kwaitsing/Artemis"
+fetch.url = "https://github.com/kwaitsing/Artemis/archive/refs/tags/$ver.tar.gz"
+url.name = "Artemis.tar.gz"

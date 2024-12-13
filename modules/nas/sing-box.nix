@@ -15,6 +15,12 @@ let
           detour = "proxy";
         }
         {
+          tag = "dns_alice";
+          address = "https://154.12.177.22/dns-query";
+          strategy = "ipv4_only";
+          detour = "🇭🇰";
+        }
+        {
           tag = "dns_direct";
           address = "https://223.5.5.5/dns-query";
           detour = "direct";
@@ -36,6 +42,10 @@ let
         {
           clash_mode = "direct";
           server = "dns_direct";
+        }
+        {
+          rule_set = "rule_set_alice";
+          server = "dns_alice";
         }
         {
           rule_set = "rule_set_direct";
@@ -66,17 +76,64 @@ let
       geoip.path = "/etc/sing-box/geoip.db";
       rule_set = [
         {
+          tag = "rule_set_alice";
+          type = "inline";
+          rules = [
+            {
+              domain_suffix = [
+                # ChatGPT 
+                "openai.com"
+                "chatgpt.com"
+                "chat.com"
+                "oaistatic.com"
+                "oaiusercontent.com"
+                "chat.comopenai.com.cdn.cloudflare.net"
+                "openaiapi-site.azureedge.net"
+                "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+                "openaicomproductionae4b.blob.core.windows.net"
+                "production-openaicom-storage.azureedge.net"
+                "byteoversea.com"
+                "ibytedtos.com"
+                "ipstatp.com"
+                "muscdn.com"
+                "musical.ly"
+                # tiktok DNS解锁
+                "tik-tokapi.com"
+                "tiktok.com"
+                "tiktokcdn.com"
+                "tiktokv.com"
+                "ggpht.cn"
+                "ggpht.com"
+                "googlevideo.com"
+                "gvt2.com"
+                # Youtube DNS解锁
+                "withyoutube.com"
+                "youtube-nocookie.com"
+                "youtube.com"
+                "youtubeeducation.com"
+                "youtubefanfest.com"
+                "youtubegaming.com"
+                "youtubego.com"
+                "youtubei.googleapis.com"
+                "youtubekids.com"
+                "youtubemobilesupport.com"
+                "ytimg.com"
+              ];
+            }
+          ];
+        }
+        {
           tag = "rule_set_direct";
           type = "inline";
           rules = [
             {
               process_name = [
                 "transmission-daemon"
+                "nezha-agent"
               ];
             }
             {
               domain_suffix = [
-                "nezha.${secrets.domain}"
                 "oracle.com"
                 ".cn"
                 "allawnfs.com"
@@ -151,6 +208,10 @@ let
           outbound = "direct";
         }
         {
+          rule_set = "rule_set_alice";
+          outbound = "🇭🇰";
+        }
+        {
           rule_set = "rule_set_proxy";
           outbound = "proxy";
         }
@@ -202,7 +263,10 @@ let
           };
           multiplex.enabled = true;
         };
-        tagList = builtins.attrNames secrets.sing-box.trojan.port;
+        tags = builtins.attrNames secrets.sing-box.trojan.port;
+        tagList = map (x: builtins.substring 9 (builtins.stringLength x) x) tags;
+        group = builtins.groupBy (builtins.substring 0 8) tags;
+
       in
       map (
         tag:
@@ -248,12 +312,7 @@ let
         {
           tag = "proxy";
           type = "selector";
-          outbounds =
-            tagList
-            ++ map (tag: "claw→${tag}") (builtins.filter (x: x != "claw") tagList)
-            ++ [
-              "cloudflare"
-            ];
+          outbounds = builtins.attrNames group ++ [ "cloudflare" ];
         }
         {
           tag = "direct";
@@ -267,7 +326,16 @@ let
           tag = "dns-out";
           type = "dns";
         }
-      ];
+      ]
+      ++ map (tag: {
+        inherit tag;
+        type = "urltest";
+        outbounds =
+          let
+            list = map (l: builtins.substring 9 (builtins.stringLength l) l) group.${tag};
+          in
+          map (y: "claw→${y}") (builtins.filter (y: y != "claw") list) ++ list;
+      }) (builtins.attrNames group);
     experimental = {
       cache_file = {
         enabled = true;
