@@ -38,7 +38,7 @@
                 trojan
                 // {
                   listen = "127.0.0.1";
-                  listen_port = secrets.sing-box.trojan.port.claw;
+                  listen_port = secrets.sing-box.trojan.port;
                 }
               )
             ]
@@ -63,7 +63,7 @@
                 trojan
                 // {
                   listen = "::";
-                  listen_port = secrets.sing-box.trojan.port.${config.networking.hostName};
+                  listen_port = secrets.sing-box.trojan.port;
                 }
               )
             ]

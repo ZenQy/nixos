@@ -16,7 +16,7 @@
   };
   zenith = {
     cachix.enable = true;
-    nezha-dashboard.enable = true;
+    # nezha-dashboard.enable = true;
   };
   services = {
     sing-box.enable = false;

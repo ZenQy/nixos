@@ -15,14 +15,14 @@
     extraConfig =
       with builtins;
       let
-        tagList = attrNames secrets.sing-box.trojan.port;
-        short = tag: substring 9 (stringLength tag) tag;
         domain = tag: if tag == "claw" then "" else "${tag}.${secrets.domain}";
         config = concatStringsSep "\n" (
-          map (
-            tag:
-            "reverse_proxy /${short tag} ${domain (short tag)}:${toString secrets.sing-box.trojan.port.${tag}}"
-          ) tagList
+          concatMap (
+            flag:
+            map (
+              tag: "reverse_proxy /${tag} ${domain tag}:${toString secrets.sing-box.trojan.port}"
+            ) secrets.hosts.${flag}
+          ) (attrNames secrets.hosts)
         );
       in
       ''

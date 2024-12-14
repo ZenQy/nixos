@@ -4,7 +4,7 @@
 
   imports = [
     ../server
-    ../server/nezha-agent.nix
+    # ../server/nezha-agent.nix
   ];
 
   nix.settings.substituters = [
