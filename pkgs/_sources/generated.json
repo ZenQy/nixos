@@ -95,11 +95,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uNGd719Uxa1f6n3iNy9EHeUqs5V0pOmMFfYQRMGRAu0=",
+            "sha256": "sha256-+eH+kVJumy5tNC+Xp/NNDO8Ls1mrrqwYpnuZ1UiWf5E=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.NorthernHawkOwl_EN-US7592435350_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.SalzburgSnow_EN-US8262729220_UHD.jpg"
         },
-        "version": "NorthernHawkOwl_EN-US7592435350"
+        "version": "SalzburgSnow_EN-US8262729220"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -160,12 +160,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "go-0.43.4.zip",
-            "sha256": "sha256-/K6eXCOaTEjDQKwA3LeMpxBGA03/pAmGmnU8TZnA+OM=",
+            "name": "go-0.44.0.zip",
+            "sha256": "sha256-ecLpTPMonwCNfZQ3cmuIzFHkSUb37JWLCDy6oODnc0c=",
             "type": "url",
-            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.44.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.43.4"
+        "version": "0.44.0"
     },
     "it-tools": {
         "cargoLocks": null,
@@ -271,12 +271,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2217.zip",
-            "sha256": "sha256-DBNzWX8vf23EGcuRl0ob9XdqnjXIu/ry2uTHQOR0qBA=",
+            "name": "rust-analyzer-0.4.2219.zip",
+            "sha256": "sha256-15kd+sFeAhoipkOuq/iBGdbq+xNqrLW8+h7W6qOIVyM=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2217/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2219/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2217"
+        "version": "0.4.2219"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -322,12 +322,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "errorlens-3.20.0.zip",
-            "sha256": "sha256-0gCT+u6rfkEcWcdzqRdc4EosROllD/Q0TIOQ4k640j0=",
+            "name": "errorlens-3.21.0.zip",
+            "sha256": "sha256-E0tSaaoAO68aNK0W1Ji7zthEEnLRzgDZDnDmP4q/Bxk=",
             "type": "url",
-            "url": "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.20.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.21.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "3.20.0"
+        "version": "3.21.0"
     },
     "vitejs": {
         "cargoLocks": null,

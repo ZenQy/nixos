@@ -51,10 +51,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "NorthernHawkOwl_EN-US7592435350";
+    version = "SalzburgSnow_EN-US8262729220";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.NorthernHawkOwl_EN-US7592435350_UHD.jpg";
-      sha256 = "sha256-uNGd719Uxa1f6n3iNy9EHeUqs5V0pOmMFfYQRMGRAu0=";
+      url = "https://www.bing.com/th?id=OHR.SalzburgSnow_EN-US8262729220_UHD.jpg";
+      sha256 = "sha256-+eH+kVJumy5tNC+Xp/NNDO8Ls1mrrqwYpnuZ1UiWf5E=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -87,11 +87,11 @@
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.43.4";
+    version = "0.44.0";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.43.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.43.4.zip";
-      sha256 = "sha256-/K6eXCOaTEjDQKwA3LeMpxBGA03/pAmGmnU8TZnA+OM=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.44.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.44.0.zip";
+      sha256 = "sha256-ecLpTPMonwCNfZQ3cmuIzFHkSUb37JWLCDy6oODnc0c=";
     };
   };
   it-tools = {
@@ -150,11 +150,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2217";
+    version = "0.4.2219";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2217/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2217.zip";
-      sha256 = "sha256-DBNzWX8vf23EGcuRl0ob9XdqnjXIu/ry2uTHQOR0qBA=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2219/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2219.zip";
+      sha256 = "sha256-15kd+sFeAhoipkOuq/iBGdbq+xNqrLW8+h7W6qOIVyM=";
     };
   };
   staticcheck = {
@@ -179,11 +179,11 @@
   };
   usernamehw_errorlens = {
     pname = "usernamehw_errorlens";
-    version = "3.20.0";
+    version = "3.21.0";
     src = fetchurl {
-      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.20.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "errorlens-3.20.0.zip";
-      sha256 = "sha256-0gCT+u6rfkEcWcdzqRdc4EosROllD/Q0TIOQ4k640j0=";
+      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.21.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "errorlens-3.21.0.zip";
+      sha256 = "sha256-E0tSaaoAO68aNK0W1Ji7zthEEnLRzgDZDnDmP4q/Bxk=";
     };
   };
   vitejs = {
