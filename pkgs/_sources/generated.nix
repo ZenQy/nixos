@@ -51,10 +51,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "ReinefjordenNorway_EN-US8636083241";
+    version = "NutcrackerBallet_EN-US8927830113";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.ReinefjordenNorway_EN-US8636083241_UHD.jpg";
-      sha256 = "sha256-CZcWSf9l8fGG72RYBByL1hgvPw4ygVX+zUsGhlCMYY0=";
+      url = "https://www.bing.com/th?id=OHR.NutcrackerBallet_EN-US8927830113_UHD.jpg";
+      sha256 = "sha256-blDUy02+6k03Cn1e3yQk338tXdEC9wv84s8wr+TPuY8=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -68,13 +68,13 @@
   };
   dlv-dap = {
     pname = "dlv-dap";
-    version = "v1.23.1";
+    version = "v1.24.0";
     src = fetchFromGitHub {
       owner = "go-delve";
       repo = "delve";
-      rev = "v1.23.1";
+      rev = "v1.24.0";
       fetchSubmodules = false;
-      sha256 = "sha256-+qC5fFBuQchz1dMP5AezWkkD2anZshN1wIteKce0Ecw=";
+      sha256 = "sha256-R1MTMRAIceHv9apKTV+k4d8KoBaRJSZCflxqhgfQWu4=";
     };
   };
   fcitx5-pinyin-zenith = {
@@ -150,11 +150,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2221";
+    version = "0.4.2222";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2221/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2221.zip";
-      sha256 = "sha256-9lsyteFc1vhJOYlRP0lCv1ww734TkCWDhGsAmYcdoFM=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2222/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2222.zip";
+      sha256 = "sha256-3bsJRR2H2pyzH4jddG+G+UNXtN5uXwUCzvMFL76rL9Y=";
     };
   };
   staticcheck = {
