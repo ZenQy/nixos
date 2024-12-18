@@ -25,6 +25,7 @@
     };
 
   boot.kernelParams = [
+    "audit=0"
     "net.ifnames=0"
   ];
   boot.kernel.sysctl = {

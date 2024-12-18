@@ -15,12 +15,6 @@ let
         detour = "proxy";
       }
       {
-        tag = "dns_alice";
-        address = "154.12.177.22";
-        strategy = "ipv4_only";
-        detour = "🇭🇰";
-      }
-      {
         tag = "dns_direct";
         address = "https://223.5.5.5/dns-query";
         detour = "direct";
@@ -42,10 +36,6 @@ let
       {
         clash_mode = "direct";
         server = "dns_direct";
-      }
-      {
-        rule_set = "rule_set_alice";
-        server = "dns_alice";
       }
       {
         rule_set = "rule_set_direct";
@@ -75,53 +65,6 @@ let
     geosite.path = "/etc/sing-box/geosite.db";
     geoip.path = "/etc/sing-box/geoip.db";
     rule_set = [
-      {
-        tag = "rule_set_alice";
-        type = "inline";
-        rules = [
-          {
-            domain_suffix = [
-              # ChatGPT 
-              "openai.com"
-              "chatgpt.com"
-              "chat.com"
-              "oaistatic.com"
-              "oaiusercontent.com"
-              "chat.comopenai.com.cdn.cloudflare.net"
-              "openaiapi-site.azureedge.net"
-              "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
-              "openaicomproductionae4b.blob.core.windows.net"
-              "production-openaicom-storage.azureedge.net"
-              "byteoversea.com"
-              "ibytedtos.com"
-              "ipstatp.com"
-              "muscdn.com"
-              "musical.ly"
-              # tiktok DNS解锁
-              "tik-tokapi.com"
-              "tiktok.com"
-              "tiktokcdn.com"
-              "tiktokv.com"
-              "ggpht.cn"
-              "ggpht.com"
-              "googlevideo.com"
-              "gvt2.com"
-              # Youtube DNS解锁
-              "withyoutube.com"
-              "youtube-nocookie.com"
-              "youtube.com"
-              "youtubeeducation.com"
-              "youtubefanfest.com"
-              "youtubegaming.com"
-              "youtubego.com"
-              "youtubei.googleapis.com"
-              "youtubekids.com"
-              "youtubemobilesupport.com"
-              "ytimg.com"
-            ];
-          }
-        ];
-      }
       {
         tag = "rule_set_direct";
         type = "inline";
@@ -206,10 +149,6 @@ let
       {
         rule_set = "rule_set_direct";
         outbound = "direct";
-      }
-      {
-        rule_set = "rule_set_alice";
-        outbound = "🇭🇰";
       }
       {
         rule_set = "rule_set_proxy";
@@ -323,9 +262,26 @@ let
         };
       }
       {
-        tag = "proxy";
+        tag = "auto";
         type = "urltest";
-        outbounds = hostList ++ [ "cloudflare" ];
+        outbounds = hostList;
+      }
+      {
+        tag = "proxy";
+        type = "selector";
+        outbounds =
+          let
+            raw = concatLists (attrValues hostList);
+            fwd = map (x: "claw→${x}") (filter (x: x != "claw") raw);
+
+          in
+          [
+            "auto"
+            "cloudflare"
+          ]
+          ++ raw
+          ++ fwd;
+        default = "auto";
       }
       {
         tag = "direct";

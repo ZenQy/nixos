@@ -84,6 +84,8 @@
               "osaka-1"
               "osaka-2"
               "osaka-arm"
+              "natvps"
+              "alice"
             ];
             nas = [
               "rock-5b"
@@ -109,7 +111,7 @@
               secrets = import (secrets + "/secrets.nix");
             };
             modules = [
-              (import ./hosts/${host})
+              ./hosts/${host}
               {
                 nixpkgs.overlays = [ self.overlays.default ];
                 nix.nixPath = [ "nixpkgs=${nixpkgs}" ];

@@ -69,9 +69,21 @@
             ]
         );
       outbounds = [
-        {
-          type = "direct";
-        }
+        (
+          if config.networking.hostName == "alice" then
+            {
+              type = "socks";
+              server = "2a14:67c0:100::af";
+              server_port = 40000;
+              version = "5";
+              username = "alice";
+              password = "alicefofo123..@";
+            }
+          else
+            {
+              type = "direct";
+            }
+        )
       ];
       route = {
         geosite.path = "/etc/sing-box/geosite.db";
