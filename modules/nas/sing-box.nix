@@ -220,7 +220,7 @@ let
             };
           }
           // shared
-        ) hosts.${flag};
+        ) secrets.hosts.${flag};
         fwd = map (
           tag:
           {
@@ -271,7 +271,7 @@ let
         type = "selector";
         outbounds =
           let
-            raw = concatLists (attrValues hostList);
+            raw = concatLists (attrValues secrets.hosts);
             fwd = map (x: "claw→${x}") (filter (x: x != "claw") raw);
 
           in
