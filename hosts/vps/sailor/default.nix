@@ -1,4 +1,4 @@
-{ ... }:
+{ secrets, ... }:
 
 {
   imports = [
@@ -8,17 +8,15 @@
   systemd.network.networks.default = {
     name = "eth0";
     address = [
-      "192.168.202.27/24"
-      "2607:5300:60:2288:1c::a/80"
+      secrets.sailor.ipv4.ip
+      secrets.sailor.ipv6.ip
     ];
     routes = [
-      { Gateway = "192.168.202.1"; }
+      { Gateway = secrets.sailor.ipv4.gateway; }
       {
-        Gateway = "2607:5300:60:2288:2::2";
+        Gateway = secrets.sailor.ipv6.gateway;
         GatewayOnLink = true;
       }
     ];
   };
-
-  services.openssh.ports = [ 22 ];
 }

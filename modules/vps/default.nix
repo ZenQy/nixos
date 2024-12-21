@@ -1,7 +1,6 @@
 { secrets, ... }:
 
 {
-
   services.openssh = {
     enable = true;
     ports = [ secrets.openssh.port ];

@@ -1,4 +1,4 @@
-{ ... }:
+{ secrets, ... }:
 
 {
   imports = [
@@ -8,11 +8,11 @@
   systemd.network.networks.default = {
     name = "eth0";
     address = [
-      "2a14:67c0:300::eb/128"
+      secrets.alice.ipv6.ip
     ];
     routes = [
       {
-        Gateway = "2a14:67c0:300::1";
+        Gateway = secrets.alice.ipv6.gateway;
         GatewayOnLink = true;
       }
     ];

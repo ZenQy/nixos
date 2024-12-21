@@ -1,10 +1,9 @@
 { ... }:
 
 {
-
   imports = [
-    ../server
-    # ../server/nezha-agent.nix
+    ../vps
+    # ../vps/nezha-agent.nix
   ];
 
   nix.settings.substituters = [

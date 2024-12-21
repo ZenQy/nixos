@@ -66,59 +66,36 @@
       nixosConfigurations =
         with builtins;
         let
-          modules_ = {
-            desktop = [
-              (import ./modules "desktop")
-              impermanence.nixosModule
-            ];
-            server = [ (import ./modules "server") ];
-            nas = [ (import ./modules "nas") ];
-          };
+          category = filter (x: x != "deprecated") (attrNames (readDir ./hosts));
+          hosts = cate: attrNames (readDir ./hosts/${cate});
 
-          hostList = {
-            desktop = [ "beelink" ];
-            server = [
-              "claw"
-              "tokyo-1"
-              "tokyo-2"
-              "osaka-1"
-              "osaka-2"
-              "osaka-arm"
-              "natvps"
-              "alice"
-            ];
-            nas = [
-              "rock-5b"
-              "tx3"
-            ];
-          };
-
-          hosts = listToAttrs (
-            concatMap (
-              type:
-              map (host: {
-                name = host;
-                value = modules_.${type};
-              }) hostList.${type}
-            ) (attrNames hostList)
-          );
-        in
-        mapAttrs (
-          host: module:
-          nixpkgs.lib.nixosSystem {
-            system = "x86_64-linux";
-            specialArgs = {
-              secrets = import (secrets + "/secrets.nix");
+          value =
+            cate: host:
+            nixpkgs.lib.nixosSystem {
+              system = "x86_64-linux";
+              specialArgs = {
+                secrets = import (secrets + "/secrets.nix");
+              };
+              modules = [
+                ./hosts/${cate}/${host}
+                (import ./modules cate)
+                (if cate == "desktop" then (impermanence.nixosModule) else { })
+                {
+                  nixpkgs.overlays = [ self.overlays.default ];
+                  nix.nixPath = [ "nixpkgs=${nixpkgs}" ];
+                  networking.hostName = host;
+                }
+              ];
             };
-            modules = [
-              ./hosts/${host}
-              {
-                nixpkgs.overlays = [ self.overlays.default ];
-                nix.nixPath = [ "nixpkgs=${nixpkgs}" ];
-                networking.hostName = host;
-              }
-            ] ++ module;
-          }
-        ) hosts;
+        in
+        listToAttrs (
+          concatMap (
+            cate:
+            map (host: {
+              name = host;
+              value = value cate host;
+            }) (hosts cate)
+          ) category
+        );
     };
 }
