@@ -2,11 +2,11 @@
   "nodes": {
     "impermanence": {
       "locked": {
-        "lastModified": 1734200366,
-        "narHash": "sha256-0NursoP4BUdnc+wy+Mq3icHkXu/RgP1Sjo0MJxV2+Dw=",
+        "lastModified": 1734772301,
+        "narHash": "sha256-mQEQQzCTUlDiEw/EbblB510P/GQOmIPtKoJrqDqeGVc=",
         "owner": "nix-community",
         "repo": "impermanence",
-        "rev": "c6323585fa0035d780e3d8906eb1b24b65d19a48",
+        "rev": "0ab2f858dfefe73402eb53fbe6a3bad4f6702d5f",
         "type": "github"
       },
       "original": {
@@ -41,11 +41,11 @@
     "secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1734531803,
-        "narHash": "sha256-V+g/cu+mo0gqPh0mZ3mr7RRN1akKZ+sgjE552EwCRyA=",
+        "lastModified": 1734785459,
+        "narHash": "sha256-Mu8Eeck36sRtbbRLuImHXiMQO86WCnQDNTJFSBEmKh4=",
         "ref": "refs/heads/main",
-        "rev": "63bfdaa3e9c2e8a073856ec45e09686a389b7b3c",
-        "revCount": 29,
+        "rev": "5fa2456b7e8feddaf0ec1783a89af8102bd6f7c2",
+        "revCount": 30,
         "type": "git",
         "url": "ssh://git@github.com/zenqy/nixos-secrets"
       },
