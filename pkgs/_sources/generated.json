@@ -95,11 +95,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-CsK92LuYyVmj8lmkALlqsOPYow68DZPRdonseN0KtzA=",
+            "sha256": "sha256-bhTIxXTkVyoq9oGuXqDf3FTqbHqfkwTLRrNLvuWjCRM=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BavarianWinter_EN-US9813996975_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.FestivusCranes_EN-US0396321898_UHD.jpg"
         },
-        "version": "BavarianWinter_EN-US9813996975"
+        "version": "FestivusCranes_EN-US0396321898"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -271,12 +271,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2225.zip",
-            "sha256": "sha256-1GIOBSr9SFrX51RPqXAA7iUoj1PLKUXn6LEUSKtMbYA=",
+            "name": "rust-analyzer-0.4.2227.zip",
+            "sha256": "sha256-DtaBtJkJO3ErYpdjA/vCEmZ48OSiXFh79nvrgVjxenE=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2225/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2227/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2225"
+        "version": "0.4.2227"
     },
     "staticcheck": {
         "cargoLocks": null,
