@@ -24,14 +24,15 @@
   systemd.network.networks =
     let
       n = {
-        routes = [
-          { Gateway = "10.0.0.11"; }
-          {
-            Gateway = secrets.beelink.ipv6.gateway;
-            GatewayOnLink = true;
-          }
+        gateway = [
+          "10.0.0.11"
+          secrets.beelink.ipv6.gateway
         ];
         DHCP = "no";
+        networkConfig = {
+          IPv6AcceptRA = "no";
+          LinkLocalAddressing = "no";
+        };
       };
     in
     {
@@ -43,7 +44,6 @@
         name = "enp4s0";
         address = [
           "10.0.0.40/24"
-          secrets.beelink.ipv6.ip
         ];
       } // n;
       wlp5s0 = {

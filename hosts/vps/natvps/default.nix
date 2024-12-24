@@ -18,6 +18,11 @@
         GatewayOnLink = true;
       }
     ];
+    DHCP = "no";
+    networkConfig = {
+      IPv6AcceptRA = "no";
+      LinkLocalAddressing = "no";
+    };
   };
 
   services.openssh.ports = [ 22 ];
