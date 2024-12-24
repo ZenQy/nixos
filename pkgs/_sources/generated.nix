@@ -51,10 +51,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "FestivusCranes_EN-US0396321898";
+    version = "SantaSnowglobe_EN-US0704281966";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.FestivusCranes_EN-US0396321898_UHD.jpg";
-      sha256 = "sha256-bhTIxXTkVyoq9oGuXqDf3FTqbHqfkwTLRrNLvuWjCRM=";
+      url = "https://www.bing.com/th?id=OHR.SantaSnowglobe_EN-US0704281966_UHD.jpg";
+      sha256 = "sha256-PZCnsgcEv/a2yyimM3VUIdWScObQJYdij+3KNkz1Hz0=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -124,10 +124,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.174.2";
+    version = "v1.176.0";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.174.2/compressed-dist.tgz";
-      sha256 = "sha256-vRfhs1IPdpCFvlQNozr7rso+BQsZMkc1qTgSdDJweME=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.176.0/compressed-dist.tgz";
+      sha256 = "sha256-M7ISDdnZre/ppBx7Kd/KeK6vEJPkXs4nshVRAx/shaA=";
     };
   };
   mhutchie_git-graph = {
@@ -150,11 +150,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2227";
+    version = "0.4.2229";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2227/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2227.zip";
-      sha256 = "sha256-DtaBtJkJO3ErYpdjA/vCEmZ48OSiXFh79nvrgVjxenE=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2229/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2229.zip";
+      sha256 = "sha256-QPLmQSVP4lXP0VA3j2iJjPFMLmTrXfdN2dQurZ+YMk0=";
     };
   };
   staticcheck = {
@@ -199,11 +199,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.1.10";
+    version = "2.2.0";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.1.10/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.1.10.zip";
-      sha256 = "sha256-uyMeoJ8EqAEbFhp0SjFw30U6TSw1SAmo1odSf85VLb8=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.2.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.2.0.zip";
+      sha256 = "sha256-4aZX1/ja7rneT4mPTCL4PNWDRQz1SDs7KAVI0NtbTFs=";
     };
   };
 }
