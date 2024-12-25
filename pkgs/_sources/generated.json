@@ -1,49 +1,4 @@
 {
-    "ArtemisClient": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "ArtemisClient",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": "Artemis.tar.gz",
-            "sha256": "sha256-8E0oz+k8pCZHh27pQj2gzig0m+sivJvSaHYttnabxss=",
-            "type": "url",
-            "url": "https://github.com/kwaitsing/Artemis/archive/refs/tags/DimLight@build1.0.0.tar.gz"
-        },
-        "version": "DimLight@build1.0.0"
-    },
-    "ArtemisServer": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "ArtemisServer",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": "Artemis.tar.gz",
-            "sha256": "sha256-8E0oz+k8pCZHh27pQj2gzig0m+sivJvSaHYttnabxss=",
-            "type": "url",
-            "url": "https://github.com/kwaitsing/Artemis/archive/refs/tags/DimLight@build1.0.0.tar.gz"
-        },
-        "version": "DimLight@build1.0.0"
-    },
-    "ArtemisWeb": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "ArtemisWeb",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-ryjXR/roxu2Z+txrOd6FTfKzfBXzNN09UiS6RtSnqn8=",
-            "type": "url",
-            "url": "https://github.com/kwaitsing/Artemis/releases/download/DimLight@build1.0.0/frontend.tar.gz"
-        },
-        "version": "DimLight@build1.0.0"
-    },
     "alist": {
         "cargoLocks": null,
         "date": null,
@@ -95,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-PZCnsgcEv/a2yyimM3VUIdWScObQJYdij+3KNkz1Hz0=",
+            "sha256": "sha256-eQPW14p2JMe4QwIqT/gz9UuXjFEiBgJitBPmlxMI1A4=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.SantaSnowglobe_EN-US0704281966_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ReindeerTrio_EN-US1000272747_UHD.jpg"
         },
-        "version": "SantaSnowglobe_EN-US0704281966"
+        "version": "ReindeerTrio_EN-US1000272747"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -271,12 +226,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2229.zip",
-            "sha256": "sha256-QPLmQSVP4lXP0VA3j2iJjPFMLmTrXfdN2dQurZ+YMk0=",
+            "name": "rust-analyzer-0.4.2230.zip",
+            "sha256": "sha256-7XCLn1ZJYVuufZPQ4y8P7aslbJMrNM1xPPQ+PVOquJg=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2229/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2230/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2229"
+        "version": "0.4.2230"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -313,6 +268,21 @@
             "url": "https://tamasfe.gallery.vsassets.io/_apis/public/gallery/publisher/tamasfe/extension/even-better-toml/0.21.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
         "version": "0.21.2"
+    },
+    "tv": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "tv",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-szh87KxyiUVYanOoTJNvhx6wIVuXaPQSaT3F1TpiF+w=",
+            "type": "url",
+            "url": "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20241222090818.zip"
+        },
+        "version": "v20241222"
     },
     "usernamehw_errorlens": {
         "cargoLocks": null,
