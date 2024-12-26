@@ -7,7 +7,6 @@
   formats,
   nezha-theme-admin,
   nezha-theme-user,
-  withThemes ? [ ],
 }:
 
 let
@@ -20,32 +19,28 @@ let
         path = "${fontendName theme.pname}-dist";
         name = fontendName theme.pname;
         repository = theme.meta.homepage;
-        author = theme.src.owner;
         version = theme.version;
-        isofficial = false;
-        isadmin = false;
+        isofficial = true;
       };
     in
-    (formats.yaml { }).generate "frontend-templates.yaml" (
-      [
-        (
-          mkTemplate nezha-theme-admin
-          // {
-            name = "OfficialAdmin";
-            isadmin = true;
-            isofficial = true;
-          }
-        )
-        (
-          mkTemplate nezha-theme-user
-          // {
-            name = "Official";
-            isofficial = true;
-          }
-        )
-      ]
-      ++ map mkTemplate withThemes
-    );
+    (formats.yaml { }).generate "frontend-templates.yaml" [
+      (
+        mkTemplate nezha-theme-admin
+        // {
+          name = "OfficialAdmin";
+          author = "nezhahq";
+          isadmin = true;
+        }
+      )
+      (
+        mkTemplate nezha-theme-user
+        // {
+          name = "Official";
+          author = "dominikh";
+          isadmin = false;
+        }
+      )
+    ];
 
 in
 
@@ -61,13 +56,10 @@ buildGo123Module {
       cp ${frontend-templates} service/singleton/frontend-templates.yaml
     ''
     + lib.concatStringsSep "\n" (
-      map (theme: "cp -r ${theme} cmd/dashboard/${fontendName theme.pname}-dist") (
-        [
-          nezha-theme-admin
-          nezha-theme-user
-        ]
-        ++ withThemes
-      )
+      map (theme: "cp -r ${theme} cmd/dashboard/${fontendName theme.pname}-dist") [
+        nezha-theme-admin
+        nezha-theme-user
+      ]
     );
 
   patches = [
