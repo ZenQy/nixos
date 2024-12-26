@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-eQPW14p2JMe4QwIqT/gz9UuXjFEiBgJitBPmlxMI1A4=",
+            "sha256": "sha256-ubxmvsfjAvIMCiPbK6NG8i+sob8iWgWU6I+2h++ADgA=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.ReindeerTrio_EN-US1000272747_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MouseholeXmas_EN-US1272999190_UHD.jpg"
         },
-        "version": "ReindeerTrio_EN-US1000272747"
+        "version": "MouseholeXmas_EN-US1272999190"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -203,6 +203,78 @@
         },
         "version": "1.30.0"
     },
+    "nezha-agent": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "nezha-agent",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "nezhahq",
+            "repo": "agent",
+            "rev": "v1.4.1",
+            "sha256": "sha256-a2qBdD2TVm2bgz9cxlrrcQi72qWG+7l87BvpSz85L5I=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.4.1"
+    },
+    "nezha-dashboard": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "nezha-dashboard",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "naiba",
+            "repo": "nezha",
+            "rev": "v1.4.7",
+            "sha256": "sha256-R3qZfHsqsMrVDNyik+Lovjo1/WQEMZUMjUPQ9A3/uwU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.4.7"
+    },
+    "nezha-theme-admin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "nezha-theme-admin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-8ucjVTt2OKp+oMlCONHFdC6IHReI8VFGuPvToIkfb1U=",
+            "type": "url",
+            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.4.4/dist.zip"
+        },
+        "version": "v1.4.4"
+    },
+    "nezha-theme-user": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "nezha-theme-user",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-KOYxp8JV80qo5jFDegK1QMJ5Yi7SPrya3/TE8MbhunA=",
+            "type": "url",
+            "url": "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.10.3/dist.zip"
+        },
+        "version": "v1.10.3"
+    },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
         "date": null,
@@ -226,12 +298,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2230.zip",
-            "sha256": "sha256-7XCLn1ZJYVuufZPQ4y8P7aslbJMrNM1xPPQ+PVOquJg=",
+            "name": "rust-analyzer-0.4.2232.zip",
+            "sha256": "sha256-ubDEkucFhhpp9Zqhmaa4xvZQVFNdTD3DvD9m76MvaN4=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2230/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2232/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2230"
+        "version": "0.4.2232"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -313,12 +385,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.0.5",
-            "sha256": "sha256-4IpApdtzL66WCO5jYf+fw5C+eBN7F3CH7nIOrveSQUM=",
+            "rev": "v6.0.6",
+            "sha256": "sha256-jhuqTsCZ9PHBcrD0MXfEgVddwYlpHqV1KcV9i4qYIts=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.0.5"
+        "version": "v6.0.6"
     },
     "vue_volar": {
         "cargoLocks": null,
