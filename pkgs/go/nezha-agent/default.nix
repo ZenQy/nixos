@@ -1,18 +1,22 @@
 {
   source,
-  buildGoModule,
   lib,
+  buildGoModule,
+  stdenv,
 }:
-
-buildGoModule rec {
+buildGoModule {
   inherit (source) pname version src;
-  vendorHash = "sha256-ZlheRFgl3vsUXVx8PKZQ59kme2NC31OQAL6EaNhbf70=";
 
-  doCheck = false;
+  vendorHash = "sha256-2N86ll9y0YYH6fRyrnJuwzN6adgT47izl0jA6GYWp5E=";
+
   ldflags = [
-    "-X main.version=${version}"
+    "-s"
+    "-w"
+    "-X github.com/nezhahq/agent/pkg/monitor.Version=${source.version}"
+    "-X main.arch=${stdenv.hostPlatform.system}"
   ];
 
+  doCheck = false;
   postInstall = ''
     mv $out/bin/agent $out/bin/nezha-agent
   '';

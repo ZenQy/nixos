@@ -94,9 +94,23 @@
     };
   };
 
-  services.cron.systemCronJobs = [
-    "0 2 * * *  nixos  ${pkgs.curl}/bin/curl https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -o /storage/ipv6.m3u"
-  ];
+  systemd.services.tv = {
+    description = "IPTV源收集工具";
+    after = [ "network.target" ];
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig = {
+      User = "nixos";
+      Group = "wheel";
+      StateDirectory = "tv";
+      RuntimeDirectory = "tv";
+      WorkingDirectory = /var/lib/tv;
+      ExecStart = ''
+        ${pkgs.tv}/bin/tv -tv=true -aesKey="9slpktrqwowlp74qb2ichpfktey64p90"
+      '';
+      RestartSec = 5;
+      Restart = "on-failure";
+    };
+  };
 
   services.caddy = {
     enable = true;

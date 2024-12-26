@@ -6,13 +6,21 @@ fetch.url = "https://github.com/ZenQy/scel2dict/releases/download/$ver/zenith.di
 src.github = "go-delve/delve"
 fetch.github = "go-delve/delve"
 
-# [nezha-agent]
-# src.github = "nezhahq/agent"
-# fetch.github = "nezhahq/agent"
+[nezha-agent]
+src.github = "nezhahq/agent"
+fetch.github = "nezhahq/agent"
 
-# [nezha-dashboard]
-# src.github = "naiba/nezha"
-# fetch.github = "naiba/nezha"
+[nezha-dashboard]
+src.github = "naiba/nezha"
+fetch.github = "naiba/nezha"
+
+[nezha-theme-user]
+src.github = "hamster1963/nezha-dash-v1"
+fetch.url = "https://github.com/hamster1963/nezha-dash-v1/releases/download/$ver/dist.zip"
+
+[nezha-theme-admin]
+src.github = "nezhahq/admin-frontend"
+fetch.url = "https://github.com/nezhahq/admin-frontend/releases/download/$ver/dist.zip"
 
 [staticcheck]
 src.github = "dominikh/go-tools"
