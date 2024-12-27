@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MouseholeXmas_EN-US1272999190";
+    version = "LakeBledSnow_EN-US5836531079";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MouseholeXmas_EN-US1272999190_UHD.jpg";
-      sha256 = "sha256-ubxmvsfjAvIMCiPbK6NG8i+sob8iWgWU6I+2h++ADgA=";
+      url = "https://www.bing.com/th?id=OHR.LakeBledSnow_EN-US5836531079_UHD.jpg";
+      sha256 = "sha256-ZjH202m+jk9+kyj1nvZ9Kc/WiFv8Oaf6CnBiZARra48=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -126,13 +126,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v1.4.7";
+    version = "v1.4.9";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v1.4.7";
+      rev = "v1.4.9";
       fetchSubmodules = false;
-      sha256 = "sha256-R3qZfHsqsMrVDNyik+Lovjo1/WQEMZUMjUPQ9A3/uwU=";
+      sha256 = "sha256-b9icrPUNmlaZUK6+fxXQ+vBhuxeygdUCYUj3yuCawsQ=";
     };
   };
   nezha-theme-admin = {
@@ -162,11 +162,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2232";
+    version = "0.4.2233";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2232/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2232.zip";
-      sha256 = "sha256-ubDEkucFhhpp9Zqhmaa4xvZQVFNdTD3DvD9m76MvaN4=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2233/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2233.zip";
+      sha256 = "sha256-TfrZvLaMQz1z1Ut8yllcXgPhOiRpGYQmN3gwd2a+qaA=";
     };
   };
   staticcheck = {
@@ -194,7 +194,7 @@
     version = "v20241222";
     src = fetchurl {
       url = "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20241222090818.zip";
-      sha256 = "sha256-szh87KxyiUVYanOoTJNvhx6wIVuXaPQSaT3F1TpiF+w=";
+      sha256 = "sha256-pWZOzGd6kuqRkfeMDKYWHwl49P0nxjfTzYqq1oNHYbs=";
     };
   };
   usernamehw_errorlens = {
