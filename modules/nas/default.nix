@@ -3,7 +3,7 @@
 {
   imports = [
     ../vps
-    # ../vps/nezha-agent.nix
+    ../vps/nezha-agent.nix
   ];
 
   nix.settings.substituters = [
