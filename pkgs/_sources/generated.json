@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ZjH202m+jk9+kyj1nvZ9Kc/WiFv8Oaf6CnBiZARra48=",
+            "sha256": "sha256-EPZNTOoY0CSiX7aMtYu650l9Vh/PZKH9Li2hji7C5go=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.LakeBledSnow_EN-US5836531079_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CoralTurtle_EN-US6100263163_UHD.jpg"
         },
-        "version": "LakeBledSnow_EN-US5836531079"
+        "version": "CoralTurtle_EN-US6100263163"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -166,12 +166,12 @@
             "name": null,
             "owner": "j178",
             "repo": "leetgo",
-            "rev": "v1.4.11",
-            "sha256": "sha256-3euD5njhZowFOhR6sYym+qV2+ioYRXbdhSI1V4vhxxI=",
+            "rev": "v1.4.13",
+            "sha256": "sha256-KEfRsaBsMCKO66HW71gNzHzZkun1yo6a05YqAvafomM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.4.11"
+        "version": "v1.4.13"
     },
     "metacubexd": {
         "cargoLocks": null,
@@ -182,11 +182,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-M7ISDdnZre/ppBx7Kd/KeK6vEJPkXs4nshVRAx/shaA=",
+            "sha256": "sha256-ThoTrvItuHT2K5PBcuKOkABe6fTDSRnMKBeTQaTWvgg=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.176.0/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.176.1/compressed-dist.tgz"
         },
-        "version": "v1.176.0"
+        "version": "v1.176.1"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -298,12 +298,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2233.zip",
-            "sha256": "sha256-TfrZvLaMQz1z1Ut8yllcXgPhOiRpGYQmN3gwd2a+qaA=",
+            "name": "rust-analyzer-0.4.2234.zip",
+            "sha256": "sha256-pfSwMtHPwdCd8HS20Fq7AvicAwQfB6g0+Qa4vx7UM6E=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2233/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2234/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2233"
+        "version": "0.4.2234"
     },
     "staticcheck": {
         "cargoLocks": null,
