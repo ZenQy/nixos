@@ -11,7 +11,6 @@ let
       {
         tag = "dns_proxy";
         address = "https://1.1.1.1/dns-query";
-        strategy = "ipv4_only";
         detour = "proxy";
       }
       {

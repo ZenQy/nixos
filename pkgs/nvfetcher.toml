@@ -106,20 +106,6 @@ src.github_tag = "vitejs/vite"
 src.exclude_regex = ".*(alpha|beta|@).*"
 fetch.github = "vitejs/vite"
 
-# [ArtemisWeb]
-# src.github = "kwaitsing/Artemis"
-# fetch.url = "https://github.com/kwaitsing/Artemis/releases/download/$ver/frontend.tar.gz"
-
-# [ArtemisClient]
-# src.github = "kwaitsing/Artemis"
-# fetch.url = "https://github.com/kwaitsing/Artemis/archive/refs/tags/$ver.tar.gz"
-# url.name = "Artemis.tar.gz"
-
-# [ArtemisServer]
-# src.github = "kwaitsing/Artemis"
-# fetch.url = "https://github.com/kwaitsing/Artemis/archive/refs/tags/$ver.tar.gz"
-# url.name = "Artemis.tar.gz"
-
 [tv]
-src.manual = "v20241222"
-fetch.url = "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20241222090818.zip"
+src.manual = "20241227144208"
+fetch.url = "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_$ver.zip"
