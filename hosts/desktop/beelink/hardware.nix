@@ -103,7 +103,6 @@
     alsa.enable = true;
     pulse.enable = true;
   };
-  # services.xserver.videoDrivers = [ "amdgpu" ];
 
   hardware.amdgpu.initrd.enable = true;
 

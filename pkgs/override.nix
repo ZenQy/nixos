@@ -7,7 +7,7 @@ final: prev:
 {
   vscode-with-extensions = prev.vscode-with-extensions.override {
     vscode = prev.vscodium.override {
-      commandLineArgs = "--enable-wayland-ime";
+      commandLineArgs = "--wayland-text-input-version=3";
     };
     vscodeExtensions = with prev; [
       mhutchie_git-graph
@@ -36,7 +36,7 @@ final: prev:
   obsidian = prev.obsidian.overrideAttrs (old: {
     postInstall = ''
       substituteInPlace $out/bin/obsidian \
-        --replace '--ozone-platform=wayland' '--ozone-platform=wayland --enable-wayland-ime'
+        --replace '--ozone-platform=wayland' '--ozone-platform=wayland --wayland-text-input-version=3'
     '';
   });
 

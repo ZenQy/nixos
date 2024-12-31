@@ -11,20 +11,20 @@
           height = 30;
 
           modules-left = [
-            "hyprland/workspaces"
+            # "hyprland/workspaces"
             # "sway/workspaces"
-            # "niri/workspaces"
+            "niri/workspaces"
           ];
 
           modules-center = [
-            "hyprland/window"
+            # "hyprland/window"
             # "sway/window"
-            # "niri/window"
+            "niri/window"
           ];
 
           modules-right = [
-            "idle_inhibitor"
-            "custom/weather"
+            # "idle_inhibitor"
+            # "custom/weather"
             "wireplumber"
             "network"
             "bluetooth"
@@ -36,30 +36,30 @@
             "tray"
           ];
 
-          "hyprland/workspaces" = {
-            format = "{icon}";
-            format-icons = {
-              "1" = "";
-              "2" = "";
-              "3" = "";
-              "4" = "";
-              "5" = "";
-              active = "";
-              default = "";
-            };
-            on-scroll-up = "hyprctl dispatch workspace e-1";
-            on-scroll-down = "hyprctl dispatch workspace e+1";
-          };
+          # "hyprland/workspaces" = {
+          #   format = "{icon}";
+          #   format-icons = {
+          #     "1" = "";
+          #     "2" = "";
+          #     "3" = "";
+          #     "4" = "";
+          #     "5" = "";
+          #     active = "";
+          #     default = "";
+          #   };
+          #   on-scroll-up = "hyprctl dispatch workspace e-1";
+          #   on-scroll-down = "hyprctl dispatch workspace e+1";
+          # };
 
-          "hyprland/window" = {
-            format = " {}";
-            rewrite = {
-              "(.*) - Personal - Microsoft Edge" = "🌎 $1";
-              "(.*) - Untitled(Workspace) - VSCodium" = " $1";
-            };
-            separate-outputs = true;
-            max-length = 100;
-          };
+          # "hyprland/window" = {
+          #   format = " {}";
+          #   rewrite = {
+          #     "(.*) - Personal - Microsoft Edge" = "🌎 $1";
+          #     "(.*) - Untitled(Workspace) - VSCodium" = " $1";
+          #   };
+          #   separate-outputs = true;
+          #   max-length = 100;
+          # };
 
           # "sway/workspaces" = {
           #   format = "{icon}";
@@ -83,42 +83,42 @@
           #   };
           # };
 
-          # "niri/workspaces" = {
-          #   format = "{icon}";
-          #   format-icons = {
-          #     "1" = "";
-          #     "2" = "";
-          #     "3" = "";
-          #     "4" = "";
-          #     "5" = "";
-          #     active = "";
-          #     default = "";
-          #   };
-          # };
-
-          # "niri/window" = {
-          #   format = " {title}";
-          #   max-length = 100;
-          #   rewrite = {
-          #     "(.*) - Personal - Microsoft Edge" = "🌎 $1";
-          #     "(.*) - Untitled\(Workspace\) - VSCodium" = " $1";
-          #   };
-          # };
-
-          idle_inhibitor = {
+          "niri/workspaces" = {
             format = "{icon}";
             format-icons = {
-              activated = "";
-              deactivated = "";
+              "1" = "";
+              "2" = "";
+              "3" = "";
+              "4" = "";
+              "5" = "";
+              # active = "";
+              default = "";
             };
           };
 
-          "custom/weather" = {
-            format = "{}";
-            interval = 60;
-            escape = true;
-            exec = "${pkgs.curl}/bin/curl -s 'https://wttr.in/Fengyang?m&format=1'";
+          "niri/window" = {
+            format = " {title}";
+            max-length = 100;
+            rewrite = {
+              "(.*) - Personal - Microsoft Edge" = "🌎 $1";
+              "(.*) - Untitled\(Workspace\) - VSCodium" = " $1";
+            };
           };
+
+          # idle_inhibitor = {
+          #   format = "{icon}";
+          #   format-icons = {
+          #     activated = "";
+          #     deactivated = "";
+          #   };
+          # };
+
+          # "custom/weather" = {
+          #   format = "{}";
+          #   interval = 60;
+          #   escape = true;
+          #   exec = "${pkgs.curl}/bin/curl -s 'https://wttr.in/Fengyang?m&format=1'";
+          # };
 
           bluetooth = {
             format = " {status}";
