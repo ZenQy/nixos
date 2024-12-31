@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-6trVcVpgZKm8dVK5l2WLa5NTsJHM5NDRPB783aLAHsA=",
+            "sha256": "sha256-IwCFjI7FkUTi6XY+z8baKrZ60it9jpqJNL9meVV/zfg=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.MountFieldNP_EN-US6905459745_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.RioNewYear_EN-US7216341802_UHD.jpg"
         },
-        "version": "MountFieldNP_EN-US6905459745"
+        "version": "RioNewYear_EN-US7216341802"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v1.4.1",
-            "sha256": "sha256-a2qBdD2TVm2bgz9cxlrrcQi72qWG+7l87BvpSz85L5I=",
+            "rev": "v1.5.0",
+            "sha256": "sha256-4Hd5C7uniwyCvXUOMbqXjsnM1u6t42ClTqm7ra1w/Ew=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.4.1"
+        "version": "v1.5.0"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
@@ -238,12 +238,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.5.1",
-            "sha256": "sha256-Tk2QVcJ0Pn/cFgUAi8apxKe3droDwBUtgBIfe8fpkq4=",
+            "rev": "v1.5.2",
+            "sha256": "sha256-E4csI0ojwwxmnFT8/Bezias99BHsKjfd5O6Z7c/8DJc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.1"
+        "version": "v1.5.2"
     },
     "nezha-theme-admin": {
         "cargoLocks": null,
@@ -254,11 +254,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-cV2H5BZPEytHrthvyrrR1/T+iEkbIf7H+EO9y36Abrc=",
+            "sha256": "sha256-vC/kc+dkwuiEiYMrY4mf0ZNUwLd3AQGVqmOjIPeQG/0=",
             "type": "url",
-            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.1/dist.zip"
+            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.2/dist.zip"
         },
-        "version": "v1.5.1"
+        "version": "v1.5.2"
     },
     "nezha-theme-user": {
         "cargoLocks": null,
@@ -298,12 +298,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2236.zip",
-            "sha256": "sha256-DonWczTJoVbVuigbkFfmEYFgZiSmmBuFD5IevNAgaCM=",
+            "name": "rust-analyzer-0.4.2238.zip",
+            "sha256": "sha256-1mPlFo94wc6wN0Fr3HZ2BwdwElMFM4pxyT0yOk5/zAc=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2236/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2238/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2236"
+        "version": "0.4.2238"
     },
     "staticcheck": {
         "cargoLocks": null,
