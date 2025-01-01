@@ -95,8 +95,8 @@ jobs:
               if [[ $pkg_old == $pkg_new ]]; then
                 pkgs_list=$(echo $pkgs_list | jq "del(.[] | select(. == \"$pkg\"))")
               else
-                if [[ -d pkgs/go/$pkg ]] || [[ -d pkgs/others/$pkg ]]; then
-                  sed -i 's/ash = "sha256-/ash = "0000000/g' pkgs/{go,others}/$pkg/default.nix || true
+                if [[ -d pkgs/go/$pkg ]] || [[ -d pkgs/node/$pkg ]]; then
+                  sed -i '/ash = "sha256-/d' pkgs/{go,node}/$pkg/default.nix || true
                   ./result/bin/nix-update $pkg --flake --version=skip
                 fi
               fi
@@ -111,8 +111,8 @@ jobs:
       - name: Commit and Push
         if: ${{ env.WEEK != '1' }}
         run: |
-          git config --global user.name 'Automation - ZenQy'
-          git config --global user.email 'zenqy.qin@gmail.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git diff-index --quiet HEAD \
           || (git commit -am "Update dependencies - Automated Commit" && git push || git stash)
 

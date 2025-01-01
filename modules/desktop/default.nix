@@ -17,21 +17,23 @@
   environment.systemPackages = with pkgs; [
     ## Go ##
     go
-    # go_1_21
     gopls
     dlv-dap
     staticcheck
     leetgo
     gcc
+
     ## Rust ##
     rustc
     rustfmt
     cargo
     rust-analyzer
+
     ## Nix ##
     # nil
     nixfmt-rfc-style
     nixd
+
     ## File Manager ##
     pcmanfm
     nordzy-icon-theme
@@ -41,24 +43,25 @@
     p7zip
     unrar
     # gnome-tweaks
+
     ## Download ##
     wget
     # axel
     # rsync
     # youtube-dl
     # you-get
+
     ## Editor ##
     vscode-with-extensions
     zed-editor
     # vscodium
     obsidian
     sqlitebrowser
+
     ## Others ##
     tdesktop
-    hugo
-    android-tools
-    vue-language-server
-    # yarn
+    # hugo
+    # android-tools
     # mdbook
     # mitmproxy
     # python3
