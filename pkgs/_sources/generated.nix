@@ -196,10 +196,10 @@
   };
   tv = {
     pname = "tv";
-    version = "20241227144208";
+    version = "20250101150436";
     src = fetchurl {
-      url = "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20241227144208.zip";
-      sha256 = "sha256-pWZOzGd6kuqRkfeMDKYWHwl49P0nxjfTzYqq1oNHYbs=";
+      url = "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20250101150436.zip";
+      sha256 = "sha256-QrOA64kNLY5ltmbBkVtuVuc+1DUf2wpaeuNI7NuvNjY=";
     };
   };
   usernamehw_errorlens = {

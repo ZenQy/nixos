@@ -1,10 +1,14 @@
-{ lib, pkgs, ... }:
+{
+  # lib,
+  pkgs,
+  ...
+}:
 
 {
   boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
   boot.supportedFilesystems = [ "ntfs" ];
   services.gvfs.enable = true;
-  services.gnome.gnome-keyring.enable = lib.mkForce false;
+  # services.gnome.gnome-keyring.enable = lib.mkForce false;
   security.sudo.wheelNeedsPassword = false;
   security.polkit.extraConfig = ''
     polkit.addRule(function(action, subject) {

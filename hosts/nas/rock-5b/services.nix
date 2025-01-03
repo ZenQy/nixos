@@ -1,4 +1,9 @@
-{ lib, pkgs, ... }:
+{
+  lib,
+  pkgs,
+  secrets,
+  ...
+}:
 
 {
   systemd.services.aria2 =
@@ -104,9 +109,7 @@
       StateDirectory = "tv";
       RuntimeDirectory = "tv";
       WorkingDirectory = /var/lib/tv;
-      ExecStart = ''
-        ${pkgs.tv}/bin/tv -tv=true -aesKey="9slpktrqwowlp74qb2ichpfktey64p90"
-      '';
+      ExecStart = "${pkgs.tv}/bin/tv -tv=true -aesKey=${secrets.tv.aesKey} -userid=${secrets.tv.userid} -token=${secrets.tv.token}";
       RestartSec = 5;
       Restart = "on-failure";
     };

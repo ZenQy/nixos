@@ -107,5 +107,5 @@ src.exclude_regex = ".*(alpha|beta|@).*"
 fetch.github = "vitejs/vite"
 
 [tv]
-src.manual = "20241227144208"
+src.manual = "20250101150436"
 fetch.url = "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_$ver.zip"
