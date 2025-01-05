@@ -59,12 +59,15 @@ jobs:
           name: zenqy
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
 
+      - name: host env
+        run: |
+          host=$(echo ${{ matrix.hosts }} | sed 's/-/_/g' | awk '{print toupper ($0)}')
+          echo host=$host >> $GITHUB_ENV
+
       - name: remote build
         run: |
           nix-env -f '<nixpkgs>' -iA nixos-rebuild
-          host=$(echo ${{ matrix.hosts }} | sed 's/-/_/g' | awk '{print toupper ($0)}')
-          echo host=$host >> $GITHUB_ENV
-          nixos-rebuild test --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[format('{0}', env.host)] }}
+          nixos-rebuild test --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.host] }}
 
       - name: Telegram notification
         if: failure()
