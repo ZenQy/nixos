@@ -6,7 +6,7 @@ on:
     inputs:
       debug_enabled:
         type: boolean
-        description: 'Run the build with tmate debugging enabled'
+        description: "Run the build with tmate debugging enabled"
         required: false
         default: false
 
@@ -23,7 +23,6 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-
       - name: Delete older workflow runs and artifacts
         uses: Mattraks/delete-workflow-runs@v2
         with:
@@ -42,6 +41,14 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - uses: actions/cache@v4
+        with:
+          path: |
+            /nix
+          key: ${{ runner.os }}-nix-${{ hashFiles('**/flake.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-nix-
+
       - name: Install nixFlake
         uses: cachix/install-nix-action@v30
 
@@ -49,7 +56,7 @@ jobs:
         run: |
           sudo timedatectl set-timezone "$TZ"
           echo WEEK=$(date +%u) >> $GITHUB_ENV
-  
+
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
@@ -69,7 +76,7 @@ jobs:
           nix flake update
 
       - name: Run nvfetcher CLI
-        run : |
+        run: |
           cd pkgs
           nix run github:berberman/nvfetcher
           nix eval -f _sources/generated.nix
@@ -79,7 +86,7 @@ jobs:
         run: nix flake check || true
 
       - name: Build nix-update CLI
-        run : |
+        run: |
           nix build github:Mic92/nix-update
 
       - id: set-matrix
@@ -95,8 +102,12 @@ jobs:
               if [[ $pkg_old == $pkg_new ]]; then
                 pkgs_list=$(echo $pkgs_list | jq "del(.[] | select(. == \"$pkg\"))")
               else
-                if [[ -d pkgs/go/$pkg ]] || [[ -d pkgs/node/$pkg ]]; then
-                  sed -i '/ash = "sha256-/d' pkgs/{go,node}/$pkg/default.nix || true
+                if [[ -d pkgs/go/$pkg ]]; then
+                  sed -i 's/"sha256\(.*\)"/sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=/g' pkgs/go/$pkg/default.nix
+                  ./result/bin/nix-update $pkg --flake --version=skip
+                fi
+                if [[ -d pkgs/node/$pkg ]]; then
+                  sed -i 's/"sha256\(.*\)"/sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=/g' pkgs/node/$pkg/default.nix
                   ./result/bin/nix-update $pkg --flake --version=skip
                 fi
               fi
@@ -121,10 +132,9 @@ jobs:
     needs: update
     strategy:
       fail-fast: false
-      matrix: 
+      matrix:
         pkgs: ${{ fromJSON(needs.update.outputs.matrix) }}
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -133,13 +143,21 @@ jobs:
       - name: update
         run: git pull
 
+      - uses: actions/cache@v4
+        with:
+          path: |
+            /nix
+          key: ${{ runner.os }}-nix-${{ hashFiles('**/flake.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-nix-
+
       - name: Install nixFlake
         uses: cachix/install-nix-action@v30
         with:
           extra_nix_config: |
             trusted-public-keys = zenqy.cachix.org-1:G5csLBsu/kQIOXU7XUiqeMacwzN1WQWv0+GysTVmJgo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
             substituters = https://zenqy.cachix.org/ https://cache.nixos.org/
-          
+
       - name: Use Cachix
         uses: cachix/cachix-action@v15
         with:

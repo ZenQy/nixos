@@ -53,7 +53,7 @@
     hideMounts = true;
 
     directories = [
-      # "/home/nixos"
+      # "/home/zenith"
       "/var/cache"
       "/var/lib"
       "/var/log"
@@ -79,7 +79,7 @@
         ".cache"
         ".config"
         ".local"
-        ".mozilla"
+        # ".mozilla"
         ".ssh"
       ];
       files = [

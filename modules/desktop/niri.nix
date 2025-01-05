@@ -12,13 +12,15 @@
     };
   };
 
-  programs.niri.enable = true;
+  # programs.niri.enable = true;
   environment.systemPackages = with pkgs; [
     niri
     fuzzel
     swaylock
     swaybg
   ];
+
+  security.pam.services.swaylock = { };
 
   environment.etc = {
     "niri/config.kdl".text =
