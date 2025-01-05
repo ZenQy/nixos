@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "VietnamFalls_EN-US9133406245";
+    version = "PlumParakeet_EN-US9359235355";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.VietnamFalls_EN-US9133406245_UHD.jpg";
-      sha256 = "sha256-1arCxgBRrNgO0qsFApuSVFaTBmSjU+L0AAi4Y8tkGX0=";
+      url = "https://www.bing.com/th?id=OHR.PlumParakeet_EN-US9359235355_UHD.jpg";
+      sha256 = "sha256-iWrfJnsNhgPpUUIToQvsCjOydqZhBy9/jF1uBuEXotQ=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -166,7 +166,7 @@
     src = fetchurl {
       url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2243/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "rust-analyzer-0.4.2243.zip";
-      sha256 = "sha256-XabKpNl0c/Fr3vrUF4k4u/Lb3O8UfUWv/MtW5sYdIKk=";
+      sha256 = "sha256-qnkvGAf+KD8P+3jN8uWdm84KPevNckAQTfkfT2XO9PA=";
     };
   };
   staticcheck = {
