@@ -238,12 +238,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.5.8",
-            "sha256": "sha256-e7vq+Lxsjk9bL02ac5OVGk3aNK9lN7gkQMx5KlAtaGc=",
+            "rev": "v1.5.10",
+            "sha256": "sha256-oi/8m/mZBIOFdr8vFGBDZjFc2cpR0pYi0RyJAIyt460=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.8"
+        "version": "v1.5.10"
     },
     "nezha-theme-admin": {
         "cargoLocks": null,
@@ -254,11 +254,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-gq1gYAQA+Fndt9beKLj8OzCsa/lgdwvFaBCM3e0Y2iY=",
+            "sha256": "sha256-O1ZrMuYfT1b7s7HTEWkSFf6pvEb6fAQjYJwfbMOQpss=",
             "type": "url",
-            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.5/dist.zip"
+            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.6/dist.zip"
         },
-        "version": "v1.5.5"
+        "version": "v1.5.6"
     },
     "nezha-theme-user": {
         "cargoLocks": null,
@@ -269,11 +269,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1fduTLkNOWEVclIMH3sZDXlPbIo1MJGLjQP1o7+O748=",
+            "sha256": "sha256-f8qooewiWCD1KtwZya/kJCwUddRcomYbdE0H9qRRkXE=",
             "type": "url",
-            "url": "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.12.2/dist.zip"
+            "url": "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.12.3/dist.zip"
         },
-        "version": "v1.12.2"
+        "version": "v1.12.3"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -299,7 +299,7 @@
         "pinned": false,
         "src": {
             "name": "rust-analyzer-0.4.2243.zip",
-            "sha256": "sha256-qnkvGAf+KD8P+3jN8uWdm84KPevNckAQTfkfT2XO9PA=",
+            "sha256": "sha256-XabKpNl0c/Fr3vrUF4k4u/Lb3O8UfUWv/MtW5sYdIKk=",
             "type": "url",
             "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2243/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },

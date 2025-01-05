@@ -126,29 +126,29 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v1.5.8";
+    version = "v1.5.10";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v1.5.8";
+      rev = "v1.5.10";
       fetchSubmodules = false;
-      sha256 = "sha256-e7vq+Lxsjk9bL02ac5OVGk3aNK9lN7gkQMx5KlAtaGc=";
+      sha256 = "sha256-oi/8m/mZBIOFdr8vFGBDZjFc2cpR0pYi0RyJAIyt460=";
     };
   };
   nezha-theme-admin = {
     pname = "nezha-theme-admin";
-    version = "v1.5.5";
+    version = "v1.5.6";
     src = fetchurl {
-      url = "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.5/dist.zip";
-      sha256 = "sha256-gq1gYAQA+Fndt9beKLj8OzCsa/lgdwvFaBCM3e0Y2iY=";
+      url = "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.6/dist.zip";
+      sha256 = "sha256-O1ZrMuYfT1b7s7HTEWkSFf6pvEb6fAQjYJwfbMOQpss=";
     };
   };
   nezha-theme-user = {
     pname = "nezha-theme-user";
-    version = "v1.12.2";
+    version = "v1.12.3";
     src = fetchurl {
-      url = "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.12.2/dist.zip";
-      sha256 = "sha256-1fduTLkNOWEVclIMH3sZDXlPbIo1MJGLjQP1o7+O748=";
+      url = "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.12.3/dist.zip";
+      sha256 = "sha256-f8qooewiWCD1KtwZya/kJCwUddRcomYbdE0H9qRRkXE=";
     };
   };
   pkief_material-icon-theme = {
@@ -166,7 +166,7 @@
     src = fetchurl {
       url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2243/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "rust-analyzer-0.4.2243.zip";
-      sha256 = "sha256-qnkvGAf+KD8P+3jN8uWdm84KPevNckAQTfkfT2XO9PA=";
+      sha256 = "sha256-XabKpNl0c/Fr3vrUF4k4u/Lb3O8UfUWv/MtW5sYdIKk=";
     };
   };
   staticcheck = {
