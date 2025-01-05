@@ -64,6 +64,10 @@ jobs:
           host=$(echo ${{ matrix.hosts }} | sed 's/-/_/g' | awk '{print toupper ($0)}')
           echo host=$host >> $GITHUB_ENV
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+
       - name: remote build
         run: |
           nix-env -f '<nixpkgs>' -iA nixos-rebuild
