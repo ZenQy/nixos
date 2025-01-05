@@ -63,7 +63,8 @@ jobs:
       - name: remote build
         run: |
           host=$(echo ${{ matrix.hosts }} | sed 's/-/_/g' | awk '{print toupper ($0)}')
-          nixos-rebuild test --flake .#${{ matrix.hosts }} --target-host root@${{ secrets.$host }}
+          echo host=$host >> $GITHUB_ENV
+          nixos-rebuild test --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.host] }}
 
       - name: Telegram notification
         if: failure()
