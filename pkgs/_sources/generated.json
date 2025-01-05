@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-IwCFjI7FkUTi6XY+z8baKrZ60it9jpqJNL9meVV/zfg=",
+            "sha256": "sha256-1arCxgBRrNgO0qsFApuSVFaTBmSjU+L0AAi4Y8tkGX0=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.RioNewYear_EN-US7216341802_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.VietnamFalls_EN-US9133406245_UHD.jpg"
         },
-        "version": "RioNewYear_EN-US7216341802"
+        "version": "VietnamFalls_EN-US9133406245"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -101,11 +101,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-fRXJDPbrWep9A5GmtYY3wLmq3VCFdZdfc3gpF8hQoxY=",
+            "sha256": "sha256-84yPARhoBqySO/Otmrx3b7KlGaemm8Q05pupMWwQc70=",
             "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2024.12.02/zenith.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2025.01.02/zenith.dict"
         },
-        "version": "v2024.12.02"
+        "version": "v2025.01.02"
     },
     "golang_go": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v1.5.0",
-            "sha256": "sha256-4Hd5C7uniwyCvXUOMbqXjsnM1u6t42ClTqm7ra1w/Ew=",
+            "rev": "v1.5.2",
+            "sha256": "sha256-RKueaEKLI5qa3o4fC+rF7XFr+UzeoJCJ/rLCb7k7gIg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.0"
+        "version": "v1.5.2"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
@@ -238,12 +238,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.5.2",
-            "sha256": "sha256-E4csI0ojwwxmnFT8/Bezias99BHsKjfd5O6Z7c/8DJc=",
+            "rev": "v1.5.8",
+            "sha256": "sha256-e7vq+Lxsjk9bL02ac5OVGk3aNK9lN7gkQMx5KlAtaGc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.2"
+        "version": "v1.5.8"
     },
     "nezha-theme-admin": {
         "cargoLocks": null,
@@ -254,11 +254,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vC/kc+dkwuiEiYMrY4mf0ZNUwLd3AQGVqmOjIPeQG/0=",
+            "sha256": "sha256-gq1gYAQA+Fndt9beKLj8OzCsa/lgdwvFaBCM3e0Y2iY=",
             "type": "url",
-            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.2/dist.zip"
+            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.5/dist.zip"
         },
-        "version": "v1.5.2"
+        "version": "v1.5.5"
     },
     "nezha-theme-user": {
         "cargoLocks": null,
@@ -269,11 +269,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-n2mlOHGEJNZVyq5+o5ztaneH5HtzajyouV9myrlI3oo=",
+            "sha256": "sha256-1fduTLkNOWEVclIMH3sZDXlPbIo1MJGLjQP1o7+O748=",
             "type": "url",
-            "url": "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.11.0/dist.zip"
+            "url": "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.12.2/dist.zip"
         },
-        "version": "v1.11.0"
+        "version": "v1.12.2"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -298,12 +298,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2238.zip",
-            "sha256": "sha256-1mPlFo94wc6wN0Fr3HZ2BwdwElMFM4pxyT0yOk5/zAc=",
+            "name": "rust-analyzer-0.4.2243.zip",
+            "sha256": "sha256-XabKpNl0c/Fr3vrUF4k4u/Lb3O8UfUWv/MtW5sYdIKk=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2238/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2243/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2238"
+        "version": "0.4.2243"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -350,11 +350,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-pWZOzGd6kuqRkfeMDKYWHwl49P0nxjfTzYqq1oNHYbs=",
+            "sha256": "sha256-QrOA64kNLY5ltmbBkVtuVuc+1DUf2wpaeuNI7NuvNjY=",
             "type": "url",
-            "url": "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20241227144208.zip"
+            "url": "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20250101150436.zip"
         },
-        "version": "20241227144208"
+        "version": "20250101150436"
     },
     "usernamehw_errorlens": {
         "cargoLocks": null,
@@ -385,12 +385,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.0.6",
-            "sha256": "sha256-jhuqTsCZ9PHBcrD0MXfEgVddwYlpHqV1KcV9i4qYIts=",
+            "rev": "v6.0.7",
+            "sha256": "sha256-Z5Z2pb0km1PQHqKuQim1g6qZjwK3PuK361cm6Rqb7Fg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.0.6"
+        "version": "v6.0.7"
     },
     "vue_volar": {
         "cargoLocks": null,
