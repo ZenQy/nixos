@@ -103,11 +103,11 @@ jobs:
                 pkgs_list=$(echo $pkgs_list | jq "del(.[] | select(. == \"$pkg\"))")
               else
                 if [[ -d pkgs/go/$pkg ]]; then
-                  sed -i 's/"sha256\(.*\)"/sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=/g' pkgs/go/$pkg/default.nix
+                  sed -i 's/"sha256\(.*\)"/"sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/g' pkgs/go/$pkg/default.nix
                   ./result/bin/nix-update $pkg --flake --version=skip
                 fi
                 if [[ -d pkgs/node/$pkg ]]; then
-                  sed -i 's/"sha256\(.*\)"/sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=/g' pkgs/node/$pkg/default.nix
+                  sed -i 's/"sha256\(.*\)"/"sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/g' pkgs/node/$pkg/default.nix
                   ./result/bin/nix-update $pkg --flake --version=skip
                 fi
               fi
