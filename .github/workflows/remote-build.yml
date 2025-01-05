@@ -11,11 +11,11 @@ on:
         default: false
 
 env:
-  # NIX_PATH: nixpkgs=channel:nixos-unstable
+  NIX_PATH: nixpkgs=channel:nixos-unstable
   TZ: Asia/Shanghai
   # NIXPKGS_ALLOW_BROKEN: 1
   # NIXPKGS_ALLOW_INSECURE: 1
-  NIX_SSHOPTS: "-P 2022"
+  NIX_SSHOPTS: "-p 2022"
 
 jobs:
   build:
@@ -61,6 +61,7 @@ jobs:
 
       - name: remote build
         run: |
+          nix-env -f '<nixpkgs>' -iA nixos-rebuild
           host=$(echo ${{ matrix.hosts }} | sed 's/-/_/g' | awk '{print toupper ($0)}')
           echo host=$host >> $GITHUB_ENV
           nixos-rebuild test --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.host] }}
