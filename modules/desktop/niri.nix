@@ -13,6 +13,15 @@
   };
 
   # programs.niri.enable = true;
+  xdg.portal = with pkgs; {
+    enable = true;
+    configPackages = [
+      niri
+    ];
+    extraPortals = [
+      xdg-desktop-portal-gtk
+    ];
+  };
   environment.systemPackages = with pkgs; [
     niri
     fuzzel
