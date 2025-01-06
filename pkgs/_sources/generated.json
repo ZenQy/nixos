@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-iWrfJnsNhgPpUUIToQvsCjOydqZhBy9/jF1uBuEXotQ=",
+            "sha256": "sha256-V4fODOZrqH5OLnslDgqTaJzBb0H2ueA8Hg04NeNLqEA=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.PlumParakeet_EN-US9359235355_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.RavennaBasilica_EN-US9585765715_UHD.jpg"
         },
-        "version": "PlumParakeet_EN-US9359235355"
+        "version": "RavennaBasilica_EN-US9585765715"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -238,12 +238,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.5.10",
-            "sha256": "sha256-oi/8m/mZBIOFdr8vFGBDZjFc2cpR0pYi0RyJAIyt460=",
+            "rev": "v1.5.11",
+            "sha256": "sha256-gF6x9MivihQGiDKhxqbwNy6MAIgD7yrYzM7RAFjfSok=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.10"
+        "version": "v1.5.11"
     },
     "nezha-theme-admin": {
         "cargoLocks": null,
@@ -254,11 +254,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-O1ZrMuYfT1b7s7HTEWkSFf6pvEb6fAQjYJwfbMOQpss=",
+            "sha256": "sha256-9ptuC2gt/smtDgrNI4ItoRUngcje1n2cZeDp53jRB/8=",
             "type": "url",
-            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.6/dist.zip"
+            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.11/dist.zip"
         },
-        "version": "v1.5.6"
+        "version": "v1.5.11"
     },
     "nezha-theme-user": {
         "cargoLocks": null,
@@ -298,12 +298,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2243.zip",
-            "sha256": "sha256-XabKpNl0c/Fr3vrUF4k4u/Lb3O8UfUWv/MtW5sYdIKk=",
+            "name": "rust-analyzer-0.4.2248.zip",
+            "sha256": "sha256-GN7fjK/ajGP6ktankF3770L9tOnOmBLMjNtks32UwHE=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2243/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2248/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2243"
+        "version": "0.4.2248"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -350,11 +350,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QrOA64kNLY5ltmbBkVtuVuc+1DUf2wpaeuNI7NuvNjY=",
+            "sha256": "sha256-VAy45E9jR/y0aKUpDnQsU9LmeyE+POV4XdOF2JLDs2E=",
             "type": "url",
-            "url": "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20250101150436.zip"
+            "url": "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20250105234451.zip"
         },
-        "version": "20250101150436"
+        "version": "20250105234451"
     },
     "usernamehw_errorlens": {
         "cargoLocks": null,
