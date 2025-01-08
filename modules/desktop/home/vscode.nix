@@ -6,7 +6,8 @@
   };
   "editor.formatOnSave" = true;
   "editor.formatOnType" = true;
-  "editor.fontFamily" = "monospace, 'Font Awesome 6 Brands Regular', 'Font Awesome 6 Free Solid', 'Font Awesome 6 Free Regular'";
+  "editor.fontFamily" =
+    "monospace, 'Font Awesome 6 Brands Regular', 'Font Awesome 6 Free Solid', 'Font Awesome 6 Free Regular'";
   "editor.fontSize" = 16;
   "editor.tabSize" = 2;
   "editor.wordWrap" = "on";
@@ -23,6 +24,7 @@
   "terminal.external.linuxExec" = "foot";
   "terminal.integrated.fontFamily" = "monospace";
   "workbench.iconTheme" = "material-icon-theme";
+  "workbench.preferredHighContrastColorTheme" = "Default Dark+";
   # "workbench.settings.useSplitJSON" = true;
   "workbench.startupEditor" = "newUntitledFile";
   "workbench.colorTheme" = "Monokai";
@@ -47,14 +49,11 @@
   "window.zoomLevel" = 1;
   "window.titleBarStyle" = "custom";
   "nix.enableLanguageServer" = true;
-  "nix.serverPath" = "nil";
+  "nix.serverPath" = "nixd";
   "nix.serverSettings" = {
-    "nil" = {
-      # "diagnostics" = {
-      #   "ignored" = [ "unused_binding" "unused_with" ];
-      # };
+    "nixd" = {
       "formatting" = {
-        "command" = [ "nixpkgs-fmt" ];
+        "command" = [ "nixfmt" ];
       };
     };
   };

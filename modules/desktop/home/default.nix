@@ -1,17 +1,21 @@
-{ pkgs }:
+{ pkgs, lib }:
 
 with builtins;
 
 let
   conf = {
     vscode = {
-      file = toFile "settings.json" (toJSON (import ./vscode.nix));
+      file = toFile "settings.json" (lib.generators.toJSON { } (import ./vscode.nix));
       path = ".config/VSCodium/User/settings.json";
     };
     niri = {
-      file = toString ./niri-config.kdl;
-      path = ".config/niri/config.kdl";
+      file = toFile "settings.json" (lib.generators.toJSON { } (import ./niri.nix));
+      path = ".config/zed/settings.json";
     };
+    # niri = {
+    #   file = toString ./niri-config.kdl;
+    #   path = ".config/niri/config.kdl";
+    # };
   };
   cmd = map (
     name:

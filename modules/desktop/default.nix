@@ -71,6 +71,7 @@
     # python3
     # python3Packages.pip
     # dig
+    ghostty
   ];
 
   xdg.mime = {
