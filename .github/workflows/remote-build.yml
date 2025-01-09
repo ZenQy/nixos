@@ -19,7 +19,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       matrix:
@@ -70,7 +70,6 @@ jobs:
 
       - name: remote build
         run: |
-          sudo -E apt -y install jq curl
           nix-env -f '<nixpkgs>' -iA nixos-rebuild
           nixos-rebuild test --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
 

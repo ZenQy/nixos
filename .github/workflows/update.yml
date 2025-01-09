@@ -18,7 +18,7 @@ env:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
@@ -111,7 +111,7 @@ jobs:
           || (git commit -am "Update dependencies - Automated Commit" && git push || git stash)
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: update
     strategy:
       fail-fast: false
