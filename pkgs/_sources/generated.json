@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-XKhaiCrz+dA23Zwo92sRyOxgElY848rqT1y1sN5v5a0=",
+            "sha256": "sha256-TKFnU/G4xt1CWPqVnQvTO4+YTxTOtgtV3qs5sXnRpsQ=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BouldersNZ_EN-US0112829210_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CarterMemorial_EN-US9400973867_UHD.jpg"
         },
-        "version": "BouldersNZ_EN-US0112829210"
+        "version": "CarterMemorial_EN-US9400973867"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -269,11 +269,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-f8qooewiWCD1KtwZya/kJCwUddRcomYbdE0H9qRRkXE=",
+            "sha256": "sha256-S48/NfjiApSzjrkRyRuDfR6mPFDkn1tdEvhY2bheCTo=",
             "type": "url",
-            "url": "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.12.3/dist.zip"
+            "url": "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.12.5/dist.zip"
         },
-        "version": "v1.12.3"
+        "version": "v1.12.5"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -298,12 +298,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2252.zip",
-            "sha256": "sha256-km57TwSSqb3H44nAejP5TTjbn5WwRkfQXhQsf5DMwso=",
+            "name": "rust-analyzer-0.4.2258.zip",
+            "sha256": "sha256-mT/RCtlMTwJ4cKK0SwZ9AVCNxfvR7aaITGaNcb8DKxE=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2252/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2258/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2252"
+        "version": "0.4.2258"
     },
     "staticcheck": {
         "cargoLocks": null,
