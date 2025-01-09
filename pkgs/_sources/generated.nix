@@ -115,13 +115,13 @@
   };
   nezha-agent = {
     pname = "nezha-agent";
-    version = "v1.5.3";
+    version = "v1.5.4";
     src = fetchFromGitHub {
       owner = "nezhahq";
       repo = "agent";
-      rev = "v1.5.3";
+      rev = "v1.5.4";
       fetchSubmodules = false;
-      sha256 = "sha256-yImkM/rbLTvqw3glrqSUO0pjQzTDR8HRR6bNrOI12w8=";
+      sha256 = "sha256-qDoS3+J4pEeAqkslWCrdC9bxHEPM4Bm7PpWv3d/jIJQ=";
     };
   };
   nezha-dashboard = {

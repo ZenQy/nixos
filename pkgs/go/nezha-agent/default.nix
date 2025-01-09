@@ -7,7 +7,7 @@
 buildGoModule {
   inherit (source) pname version src;
 
-  vendorHash = "sha256-d+xnD7LrnbiwuyNA4RIJmdsmjfdNxkW387uNyzsWSHM=";
+  vendorHash = "sha256-ed5gZe1DxV59rpBjZa6JTs4A99JWPTQvO1gr6rqWzPc=";
 
   ldflags = [
     "-s"

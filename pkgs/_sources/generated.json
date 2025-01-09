@@ -217,12 +217,12 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v1.5.3",
-            "sha256": "sha256-yImkM/rbLTvqw3glrqSUO0pjQzTDR8HRR6bNrOI12w8=",
+            "rev": "v1.5.4",
+            "sha256": "sha256-qDoS3+J4pEeAqkslWCrdC9bxHEPM4Bm7PpWv3d/jIJQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.3"
+        "version": "v1.5.4"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
