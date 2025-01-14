@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-g1Ufk18bmXNM87eKfu9s3LL02OJGEt2363pcg4YCfjo=",
+            "sha256": "sha256-1p4bASNFLNbY0oKcJLOg+hx7ZVTAvm0XYHm0WDATdcs=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BubbleLake_EN-US6558545411_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CadizSpain_EN-US9699586606_UHD.jpg"
         },
-        "version": "BubbleLake_EN-US6558545411"
+        "version": "CadizSpain_EN-US9699586606"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v1.5.4",
-            "sha256": "sha256-qDoS3+J4pEeAqkslWCrdC9bxHEPM4Bm7PpWv3d/jIJQ=",
+            "rev": "v1.5.6",
+            "sha256": "sha256-CrsTS0KxCdi7Xu1CNtIji5e9eHTVOoYiqpNFXTxsV2c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.4"
+        "version": "v1.5.6"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
@@ -244,36 +244,6 @@
             "type": "github"
         },
         "version": "v1.5.13"
-    },
-    "nezha-theme-admin": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "nezha-theme-admin",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-PQna09mm3CbDMicdV0J64WwFvoLAEvQktTyDH9t9F0o=",
-            "type": "url",
-            "url": "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.12/dist.zip"
-        },
-        "version": "v1.5.12"
-    },
-    "nezha-theme-user": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "nezha-theme-user",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-S48/NfjiApSzjrkRyRuDfR6mPFDkn1tdEvhY2bheCTo=",
-            "type": "url",
-            "url": "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.12.5/dist.zip"
-        },
-        "version": "v1.12.5"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -298,12 +268,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2260.zip",
-            "sha256": "sha256-I2zn6k2DRHmHn1fR8LBUdZuQOPfT2cyGVIwq8Euhoqo=",
+            "name": "rust-analyzer-0.4.2265.zip",
+            "sha256": "sha256-0gV9vqpWKlEa2uVVB6xgMaAt2pPCxvI+nNk2yb5cN50=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2260/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2265/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2260"
+        "version": "0.4.2265"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -340,21 +310,6 @@
             "url": "https://tamasfe.gallery.vsassets.io/_apis/public/gallery/publisher/tamasfe/extension/even-better-toml/0.21.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
         "version": "0.21.2"
-    },
-    "tv": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "tv",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-VAy45E9jR/y0aKUpDnQsU9LmeyE+POV4XdOF2JLDs2E=",
-            "type": "url",
-            "url": "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20250105234451.zip"
-        },
-        "version": "20250105234451"
     },
     "usernamehw_errorlens": {
         "cargoLocks": null,
@@ -406,5 +361,20 @@
             "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.2.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
         "version": "2.2.0"
+    },
+    "wallpapers": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "wallpapers",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-+8fub7pWNNsAljdFjo4FfsKnXZtExCG4ts4tir17fZc=",
+            "type": "url",
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.01.12/wallpaper.tar.gz"
+        },
+        "version": "v2025.01.12"
     }
 }

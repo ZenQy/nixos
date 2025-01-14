@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "BubbleLake_EN-US6558545411";
+    version = "CadizSpain_EN-US9699586606";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.BubbleLake_EN-US6558545411_UHD.jpg";
-      sha256 = "sha256-g1Ufk18bmXNM87eKfu9s3LL02OJGEt2363pcg4YCfjo=";
+      url = "https://www.bing.com/th?id=OHR.CadizSpain_EN-US9699586606_UHD.jpg";
+      sha256 = "sha256-1p4bASNFLNbY0oKcJLOg+hx7ZVTAvm0XYHm0WDATdcs=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -115,13 +115,13 @@
   };
   nezha-agent = {
     pname = "nezha-agent";
-    version = "v1.5.4";
+    version = "v1.5.6";
     src = fetchFromGitHub {
       owner = "nezhahq";
       repo = "agent";
-      rev = "v1.5.4";
+      rev = "v1.5.6";
       fetchSubmodules = false;
-      sha256 = "sha256-qDoS3+J4pEeAqkslWCrdC9bxHEPM4Bm7PpWv3d/jIJQ=";
+      sha256 = "sha256-CrsTS0KxCdi7Xu1CNtIji5e9eHTVOoYiqpNFXTxsV2c=";
     };
   };
   nezha-dashboard = {
@@ -135,22 +135,6 @@
       sha256 = "sha256-UEug8DLP3pyoWAP4+0kmKtK9FYFQkql3GrgtDTtQCIs=";
     };
   };
-  nezha-theme-admin = {
-    pname = "nezha-theme-admin";
-    version = "v1.5.12";
-    src = fetchurl {
-      url = "https://github.com/nezhahq/admin-frontend/releases/download/v1.5.12/dist.zip";
-      sha256 = "sha256-PQna09mm3CbDMicdV0J64WwFvoLAEvQktTyDH9t9F0o=";
-    };
-  };
-  nezha-theme-user = {
-    pname = "nezha-theme-user";
-    version = "v1.12.5";
-    src = fetchurl {
-      url = "https://github.com/hamster1963/nezha-dash-v1/releases/download/v1.12.5/dist.zip";
-      sha256 = "sha256-S48/NfjiApSzjrkRyRuDfR6mPFDkn1tdEvhY2bheCTo=";
-    };
-  };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
     version = "5.17.0";
@@ -162,11 +146,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2260";
+    version = "0.4.2265";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2260/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2260.zip";
-      sha256 = "sha256-I2zn6k2DRHmHn1fR8LBUdZuQOPfT2cyGVIwq8Euhoqo=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2265/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2265.zip";
+      sha256 = "sha256-0gV9vqpWKlEa2uVVB6xgMaAt2pPCxvI+nNk2yb5cN50=";
     };
   };
   staticcheck = {
@@ -187,14 +171,6 @@
       url = "https://tamasfe.gallery.vsassets.io/_apis/public/gallery/publisher/tamasfe/extension/even-better-toml/0.21.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "even-better-toml-0.21.2.zip";
       sha256 = "sha256-IbjWavQoXu4x4hpEkvkhqzbf/NhZpn8RFdKTAnRlCAg=";
-    };
-  };
-  tv = {
-    pname = "tv";
-    version = "20250105234451";
-    src = fetchurl {
-      url = "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_20250105234451.zip";
-      sha256 = "sha256-VAy45E9jR/y0aKUpDnQsU9LmeyE+POV4XdOF2JLDs2E=";
     };
   };
   usernamehw_errorlens = {
@@ -224,6 +200,14 @@
       url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.2.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "volar-2.2.0.zip";
       sha256 = "sha256-4aZX1/ja7rneT4mPTCL4PNWDRQz1SDs7KAVI0NtbTFs=";
+    };
+  };
+  wallpapers = {
+    pname = "wallpapers";
+    version = "v2025.01.12";
+    src = fetchurl {
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.01.12/wallpaper.tar.gz";
+      sha256 = "sha256-+8fub7pWNNsAljdFjo4FfsKnXZtExCG4ts4tir17fZc=";
     };
   };
 }
