@@ -2,22 +2,18 @@
   source,
   stdenvNoCC,
   lib,
-  imagemagick,
 }:
 
 stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
 
-  dontUnpack = true;
-  nativeBuildInputs = [ imagemagick ];
   installPhase = ''
-    install -Dm644 $src $out/share/bingimg.jpg
-    convert -blur 14x5 $src $out/share/bingimg-blur.jpg
+    find . -name '*.jpg' -exec install -Dm644 {} "$out/share/{}" \;
   '';
 
   meta = with lib; {
     description = "必应壁纸";
-    homepage = "https://www.bing.com/";
+    homepage = "https://github.com/ZenQy/wallpaper";
     maintainers = [
       {
         name = "ZenQy";

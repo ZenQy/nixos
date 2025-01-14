@@ -7,6 +7,7 @@
   formats,
   nezha-theme-admin,
   nezha-theme-user,
+  nezha-theme-nazhua,
 }:
 
 let
@@ -38,6 +39,14 @@ let
           name = "Official";
           author = "dominikh";
           isadmin = false;
+        }
+      )
+      (
+        mkTemplate nezha-theme-nazhua
+        // {
+          author = "hi2shark";
+          isadmin = false;
+          isofficial = false;
         }
       )
     ];

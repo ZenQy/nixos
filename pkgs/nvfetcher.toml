@@ -14,13 +14,13 @@ fetch.github = "nezhahq/agent"
 src.github = "naiba/nezha"
 fetch.github = "naiba/nezha"
 
-[nezha-theme-user]
-src.github = "hamster1963/nezha-dash-v1"
-fetch.url = "https://github.com/hamster1963/nezha-dash-v1/releases/download/$ver/dist.zip"
+# [nezha-theme-user]
+# src.github = "hamster1963/nezha-dash-v1"
+# fetch.url = "https://github.com/hamster1963/nezha-dash-v1/releases/download/$ver/dist.zip"
 
-[nezha-theme-admin]
-src.github = "nezhahq/admin-frontend"
-fetch.url = "https://github.com/nezhahq/admin-frontend/releases/download/$ver/dist.zip"
+# [nezha-theme-admin]
+# src.github = "nezhahq/admin-frontend"
+# fetch.url = "https://github.com/nezhahq/admin-frontend/releases/download/$ver/dist.zip"
 
 [staticcheck]
 src.github = "dominikh/go-tools"
@@ -106,6 +106,10 @@ src.github_tag = "vitejs/vite"
 src.exclude_regex = ".*(alpha|beta|@).*"
 fetch.github = "vitejs/vite"
 
-[tv]
-src.cmd = '''curl -H 'Content-Type: application/json' -d '{"path":"/\u6bcf\u671f\u89c6\u9891\u4e2d\u7528\u5230\u7684\u6587\u4ef6\u5206\u4eab/allinone\u4e8c\u8fdb\u5236\u6587\u4ef6"}' https://pan.v1.mk/api/fs/list | jq .data.content.[].name | grep allinone_linux_arm64_ | jq -r .[21:35]'''
-fetch.url = "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_$ver.zip"
+# [tv]
+# src.cmd = '''curl -H 'Content-Type: application/json' -d '{"path":"/\u6bcf\u671f\u89c6\u9891\u4e2d\u7528\u5230\u7684\u6587\u4ef6\u5206\u4eab/allinone\u4e8c\u8fdb\u5236\u6587\u4ef6"}' https://pan.v1.mk/api/fs/list | jq # .data.content.[].name | grep allinone_linux_arm64_ | jq -r .[21:35]'''
+# fetch.url = "https://pan.v1.mk/d/%E6%AF%8F%E6%9C%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E7%94%A8%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%86%E4%BA%AB/allinone%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/allinone_linux_arm64_$ver.zip"
+
+[wallpapers]
+src.github = "ZenQy/wallpaper"
+fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper.tar.gz"
