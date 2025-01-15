@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1p4bASNFLNbY0oKcJLOg+hx7ZVTAvm0XYHm0WDATdcs=",
+            "sha256": "sha256-pKTUvfpNGv2qVJZjxY++SQpKqHDmL7w8atTfnxlbIs4=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.CadizSpain_EN-US9699586606_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MuseumCourt_EN-US0003531841_UHD.jpg"
         },
-        "version": "CadizSpain_EN-US9699586606"
+        "version": "MuseumCourt_EN-US0003531841"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -268,12 +268,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2265.zip",
-            "sha256": "sha256-0gV9vqpWKlEa2uVVB6xgMaAt2pPCxvI+nNk2yb5cN50=",
+            "name": "rust-analyzer-0.4.2266.zip",
+            "sha256": "sha256-5jRVuvZ9fKAHFpNa0cboBNZHVo4yPIbxuexQ4/RE8UE=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2265/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2266/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2265"
+        "version": "0.4.2266"
     },
     "staticcheck": {
         "cargoLocks": null,
