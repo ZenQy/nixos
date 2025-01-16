@@ -25,10 +25,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "MuseumCourt_EN-US0003531841";
+    version = "PinnaclesPeaks_EN-US6350520288";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.MuseumCourt_EN-US0003531841_UHD.jpg";
-      sha256 = "sha256-pKTUvfpNGv2qVJZjxY++SQpKqHDmL7w8atTfnxlbIs4=";
+      url = "https://www.bing.com/th?id=OHR.PinnaclesPeaks_EN-US6350520288_UHD.jpg";
+      sha256 = "sha256-sQs2CNTwcJ0NRtVmTIYLpylBtjXcDX/CgX8J7PQaE5k=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -78,11 +78,11 @@
   };
   jnoortheen_nix-ide = {
     pname = "jnoortheen_nix-ide";
-    version = "0.3.5";
+    version = "0.3.7";
     src = fetchurl {
-      url = "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.3.5/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "nix-ide-0.3.5.zip";
-      sha256 = "sha256-hiyFZVsZkxpc2Kh0zi3NGwA/FUbetAS9khWxYesxT4s=";
+      url = "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.3.7/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "nix-ide-0.3.7.zip";
+      sha256 = "sha256-43i37O5h7BpVE9yBaLyD8UknJ46SScB6XAbayYMQSC4=";
     };
   };
   leetgo = {
@@ -146,11 +146,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2266";
+    version = "0.4.2268";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2266/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2266.zip";
-      sha256 = "sha256-5jRVuvZ9fKAHFpNa0cboBNZHVo4yPIbxuexQ4/RE8UE=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2268/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2268.zip";
+      sha256 = "sha256-wk7UZxDD/g0fDJym7ssjRc/ledV60pGDUuvLUa4CGs0=";
     };
   };
   staticcheck = {
