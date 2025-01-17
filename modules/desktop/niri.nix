@@ -32,11 +32,7 @@
   security.pam.services.swaylock = { };
 
   environment.etc = {
-    "niri/config.kdl".text =
-      builtins.readFile ./dotfiles/niri/config.kdl
-      + ''
-        spawn-at-startup  "swaybg" "-i" "${pkgs.bingimg}/share/bingimg.jpg" "-m" "fill"
-      '';
+    "niri/config.kdl".source = ./dotfiles/niri/config.kdl;
 
     "swaylock/config".text = ''
       show-failed-attempts

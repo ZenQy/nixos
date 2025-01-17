@@ -62,6 +62,10 @@ fetch.vsmarketplace = "tamasfe.even-better-toml"
 src.vsmarketplace = "rust-lang.rust-analyzer"
 fetch.vsmarketplace = "rust-lang.rust-analyzer"
 
+[SuperMonster003_autojs6-vscode-ext]
+src.vsmarketplace = "003.autojs6-vscode-ext"
+fetch.vsmarketplace = "003.autojs6-vscode-ext"
+
 [bingimg]
 src.webpage = "https://www.bing.com/"
 src.regex = "id=OHR\\.(.*?)_tmb\\.jpg"

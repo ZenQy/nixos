@@ -10,8 +10,9 @@
         let
           settings = {
             any = {
-              path = "${pkgs.bingimg}/share/bingimg.jpg";
+              path = "${pkgs.wallpapers}/share";
               mode = "stretch";
+              sorting = "random";
             };
           };
           conf = (pkgs.formats.toml { }).generate "config.toml" settings;

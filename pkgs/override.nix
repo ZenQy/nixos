@@ -21,6 +21,7 @@ final: prev:
       tamasfe_even-better-toml
       usernamehw_errorlens
       rust-lang_rust-analyzer
+      SuperMonster003_autojs6-vscode-ext
     ];
   };
 

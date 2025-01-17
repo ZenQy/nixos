@@ -8,18 +8,14 @@ with builtins;
 
 vscode-utils.buildVscodeMarketplaceExtension {
   vsix = source.src;
-  mktplcRef =
-    let
-      list = match "(.*?)_(.*?)" source.pname;
-    in
-    {
-      publisher = head list;
-      name = head (tail list);
-      version = source.version;
-    };
+  mktplcRef = {
+    publisher = "SuperMonster003";
+    name = "autojs6-vscode-ext";
+    version = source.version;
+  };
 
   meta = with lib; {
-    license = licenses.mit;
+    license = licenses.gpl3;
     maintainers = [
       {
         name = "ZenQy";
