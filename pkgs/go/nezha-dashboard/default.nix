@@ -6,7 +6,6 @@
   dbip-country-lite,
   formats,
   nezha-theme-admin,
-  nezha-theme-user,
   nezha-theme-nazhua,
 }:
 
@@ -31,14 +30,6 @@ let
           name = "OfficialAdmin";
           author = "nezhahq";
           isadmin = true;
-        }
-      )
-      (
-        mkTemplate nezha-theme-user
-        // {
-          name = "Official";
-          author = "dominikh";
-          isadmin = false;
         }
       )
       (
@@ -67,7 +58,7 @@ buildGo123Module {
     + lib.concatStringsSep "\n" (
       map (theme: "cp -r ${theme} cmd/dashboard/${fontendName theme.pname}-dist") [
         nezha-theme-admin
-        nezha-theme-user
+        nezha-theme-nazhua
       ]
     );
 

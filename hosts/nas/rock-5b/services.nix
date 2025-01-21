@@ -1,7 +1,7 @@
 {
   lib,
   pkgs,
-  # secrets,
+  secrets,
   ...
 }:
 
@@ -99,21 +99,21 @@
     };
   };
 
-  # systemd.services.tv = {
-  #   description = "IPTV源收集工具";
-  #   after = [ "network.target" ];
-  #   wantedBy = [ "multi-user.target" ];
-  #   serviceConfig = {
-  #     User = "nixos";
-  #     Group = "wheel";
-  #     StateDirectory = "tv";
-  #     RuntimeDirectory = "tv";
-  #     WorkingDirectory = /var/lib/tv;
-  #     ExecStart = "${pkgs.tv}/bin/tv -tv=true -aesKey=${secrets.tv.aesKey} -userid=${secrets.tv.userid} -token=${secrets.tv.token}";
-  #     RestartSec = 5;
-  #     Restart = "on-failure";
-  #   };
-  # };
+  systemd.services.tv = {
+    description = "IPTV源收集工具";
+    after = [ "network.target" ];
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig = {
+      User = "nixos";
+      Group = "wheel";
+      StateDirectory = "tv";
+      RuntimeDirectory = "tv";
+      WorkingDirectory = /var/lib/tv;
+      ExecStart = "${pkgs.tv}/bin/tv -tv=true -aesKey=${secrets.tv.aesKey} -userid=${secrets.tv.userid} -token=${secrets.tv.token}";
+      RestartSec = 5;
+      Restart = "on-failure";
+    };
+  };
 
   services.sing-box.enable = lib.mkForce false;
 
@@ -133,4 +133,5 @@
       }
     '';
   };
+
 }

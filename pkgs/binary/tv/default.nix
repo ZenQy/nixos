@@ -3,28 +3,32 @@
   stdenv,
   lib,
   autoPatchelfHook,
-  unzip,
+  jq,
 }:
 
-stdenv.mkDerivation {
+stdenv.mkDerivation rec {
   inherit (source) pname version src;
   nativeBuildInputs = [
     autoPatchelfHook
-    unzip
+    jq
   ];
 
   unpackPhase = ''
-    unzip $src
+    tar -xvf $src
+    list=$(cat manifest.json | jq -r ".[].Layers[]")
+    for file in $list; do
+      tar -xvf $file
+    done
   '';
 
   installPhase = ''
-    install -Dm755 allinone_linux_arm64 $out/bin/tv
+    install -Dm0755 allinone $out/bin/${pname}
   '';
 
   meta = with lib; {
     description = "IPTV源收集工具";
     homepage = "https://pan.v1.mk/";
-    license = licenses.unlicense;
+    license = licenses.unfree;
     maintainers = [
       {
         name = "ZenQy";

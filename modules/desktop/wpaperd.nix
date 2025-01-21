@@ -3,8 +3,8 @@
 {
   systemd.user.services.wpaperd = {
     description = "Modern wallpaper daemon for Wayland";
-    after = [ "network.target" ];
-    wantedBy = [ "multi-user.target" ];
+    after = [ "graphical-session.target" ];
+    wantedBy = [ "graphical-session.target" ];
     serviceConfig = {
       ExecStart =
         let
@@ -20,8 +20,8 @@
         ''
           ${pkgs.wpaperd}/bin/wpaperd -c ${conf}
         '';
-      ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
-      Restart = "on-abort";
+      ExecReload = "kill -SIGUSR2 $MAINPID";
+      Restart = "on-failure";
     };
   };
 }

@@ -29,7 +29,7 @@
         claw.${secrets.domain} {
           root * ${pkgs.caddy}/share
           file_server browse
-          
+
           ${config}
         }
       '';
