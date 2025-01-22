@@ -65,11 +65,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-NwskxvOTkPnQ4EqOMapXFZTVwINbjHOXa7RRWEg0gb4=",
+            "sha256": "sha256-mitaBuLNxolswtM/B1lRwaAnPYHxC7n//llz4F9o6PU=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.DutchSquirrel_EN-US1600993769_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PetraMonastery_EN-US1834130511_UHD.jpg"
         },
-        "version": "DutchSquirrel_EN-US1600993769"
+        "version": "PetraMonastery_EN-US1834130511"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -283,12 +283,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2275.zip",
-            "sha256": "sha256-uyxmbNBQyBaCKExEdaPunv5PzWxRb5Ps7oVpgzz+18E=",
+            "name": "rust-analyzer-0.4.2276.zip",
+            "sha256": "sha256-iJkATL1Ves2h8uz2GSV8zq6LKme1S9QzvCP4RH6AweY=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2275/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2276/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2275"
+        "version": "0.4.2276"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -337,11 +337,11 @@
             "arch": "arm64",
             "finalImageName": null,
             "finalImageTag": null,
-            "imageDigest": "sha256:f15099c44f0998261474d549e2f9212e17105e1509061648962c38134b8273da",
+            "imageDigest": "sha256:8077ced63f5c92d5f660fc0d3587b03b23aed07876f051372a26f2b53b2697c4",
             "imageName": "youshandefeiyang/allinone",
             "imageTag": "latest",
             "os": "linux",
-            "sha256": "sha256-OvcCUbN734TLvLAuGIC22GULzIPpvOML00/jIifLGno=",
+            "sha256": "sha256-YrSYY/K6xkvV/irD2fGOvEa0YEfrmYiH0ffNupfKTFk=",
             "tlsVerify": null
         },
         "version": "latest"
