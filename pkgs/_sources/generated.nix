@@ -187,8 +187,8 @@
     version = "latest";
     src = dockerTools.pullImage {
       imageName = "youshandefeiyang/allinone";
-      imageDigest = "sha256:8077ced63f5c92d5f660fc0d3587b03b23aed07876f051372a26f2b53b2697c4";
-      sha256 = "sha256-YrSYY/K6xkvV/irD2fGOvEa0YEfrmYiH0ffNupfKTFk=";
+      imageDigest = "sha256:8075e0e4bdb7610cbc3591a14cbf9367102150c278466c748878ba699695a8e8";
+      sha256 = "sha256-1hw+D1RTphJxec+Bqp+CtjIw3s4aL06N4MePYnBky6Q=";
       finalImageTag = "latest";
       os = "linux";
       arch = "arm64";
