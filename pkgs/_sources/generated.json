@@ -65,11 +65,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/IBmmdNGzH/gTWA2ZQTpByPe8HG1bWAXKQcExFMpxwc=",
+            "sha256": "sha256-a9xjc5SmHn0HrnFHt4ZXjmRgUdokeD3kTqBk5FEnrjg=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.DeerValley_EN-US2128104711_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.IcelandGeyser_EN-US7648999118_UHD.jpg"
         },
-        "version": "DeerValley_EN-US2128104711"
+        "version": "IcelandGeyser_EN-US7648999118"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -160,12 +160,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "nix-ide-0.4.2.zip",
-            "sha256": "sha256-WOzHHQZlTdDoVB90GYhuEORNPLyv/lWZBNMrIzBTWW8=",
+            "name": "nix-ide-0.4.10.zip",
+            "sha256": "sha256-UjdEST+fMkMq8OGbWoInk+7B3UlApRoaps+xAQ9uPdU=",
             "type": "url",
-            "url": "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.10/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2"
+        "version": "0.4.10"
     },
     "leetgo": {
         "cargoLocks": null,
@@ -268,12 +268,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.17.0.zip",
-            "sha256": "sha256-ohiWl/ymoWSRyL2pY9DabXfIrofL/oCDKPqvISpgUtU=",
+            "name": "material-icon-theme-5.18.0.zip",
+            "sha256": "sha256-qKU469qSSpdG4uEO9UHr1QaMz/xXIJH5+sS8gQnzJpg=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.17.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.18.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.17.0"
+        "version": "5.18.0"
     },
     "rust-lang_rust-analyzer": {
         "cargoLocks": null,
@@ -283,12 +283,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2277.zip",
-            "sha256": "sha256-iYUsV+wx0+OF2sq0Bkkak8c4SHZkt8nZQRAH4AAtStY=",
+            "name": "rust-analyzer-0.4.2278.zip",
+            "sha256": "sha256-rsbrZP+NKCMkunHy3A4xsHK23qf/+DtYipPZm6SEFhA=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2277/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2278/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2277"
+        "version": "0.4.2278"
     },
     "staticcheck": {
         "cargoLocks": null,

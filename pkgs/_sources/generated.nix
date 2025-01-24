@@ -34,10 +34,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "DeerValley_EN-US2128104711";
+    version = "IcelandGeyser_EN-US7648999118";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.DeerValley_EN-US2128104711_UHD.jpg";
-      sha256 = "sha256-/IBmmdNGzH/gTWA2ZQTpByPe8HG1bWAXKQcExFMpxwc=";
+      url = "https://www.bing.com/th?id=OHR.IcelandGeyser_EN-US7648999118_UHD.jpg";
+      sha256 = "sha256-a9xjc5SmHn0HrnFHt4ZXjmRgUdokeD3kTqBk5FEnrjg=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -87,11 +87,11 @@
   };
   jnoortheen_nix-ide = {
     pname = "jnoortheen_nix-ide";
-    version = "0.4.2";
+    version = "0.4.10";
     src = fetchurl {
-      url = "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "nix-ide-0.4.2.zip";
-      sha256 = "sha256-WOzHHQZlTdDoVB90GYhuEORNPLyv/lWZBNMrIzBTWW8=";
+      url = "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.10/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "nix-ide-0.4.10.zip";
+      sha256 = "sha256-UjdEST+fMkMq8OGbWoInk+7B3UlApRoaps+xAQ9uPdU=";
     };
   };
   leetgo = {
@@ -146,20 +146,20 @@
   };
   pkief_material-icon-theme = {
     pname = "pkief_material-icon-theme";
-    version = "5.17.0";
+    version = "5.18.0";
     src = fetchurl {
-      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.17.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "material-icon-theme-5.17.0.zip";
-      sha256 = "sha256-ohiWl/ymoWSRyL2pY9DabXfIrofL/oCDKPqvISpgUtU=";
+      url = "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.18.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "material-icon-theme-5.18.0.zip";
+      sha256 = "sha256-qKU469qSSpdG4uEO9UHr1QaMz/xXIJH5+sS8gQnzJpg=";
     };
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2277";
+    version = "0.4.2278";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2277/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2277.zip";
-      sha256 = "sha256-iYUsV+wx0+OF2sq0Bkkak8c4SHZkt8nZQRAH4AAtStY=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2278/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2278.zip";
+      sha256 = "sha256-rsbrZP+NKCMkunHy3A4xsHK23qf/+DtYipPZm6SEFhA=";
     };
   };
   staticcheck = {
