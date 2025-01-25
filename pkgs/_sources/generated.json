@@ -65,11 +65,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-a9xjc5SmHn0HrnFHt4ZXjmRgUdokeD3kTqBk5FEnrjg=",
+            "sha256": "sha256-XaSmN0Wq55ZAuRkWC/jPGX71+JOXzuu0jmqk+qDxdsg=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.IcelandGeyser_EN-US7648999118_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PortoSunset_EN-US7987153816_UHD.jpg"
         },
-        "version": "IcelandGeyser_EN-US7648999118"
+        "version": "PortoSunset_EN-US7987153816"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -253,12 +253,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.6.3",
-            "sha256": "sha256-bjSc0aw0ePf7zOa8ZsFktM/1lmZ/hoEseRx0c6XtdKE=",
+            "rev": "v1.6.4",
+            "sha256": "sha256-w+yrnIFZkYKkT79gRzBLxAOPaMUuBAZ4YhACKor18m8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.6.3"
+        "version": "v1.6.4"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -283,12 +283,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2278.zip",
-            "sha256": "sha256-rsbrZP+NKCMkunHy3A4xsHK23qf/+DtYipPZm6SEFhA=",
+            "name": "rust-analyzer-0.4.2279.zip",
+            "sha256": "sha256-j9ElNtuJTM8O/j9uos27tnySNBb4jHmtjoSfTTt11vI=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2278/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2279/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2278"
+        "version": "0.4.2279"
     },
     "staticcheck": {
         "cargoLocks": null,
