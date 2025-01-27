@@ -4,13 +4,17 @@
 { modulesPath, ... }:
 
 {
-  imports =
-    [
-      (modulesPath + "/profiles/qemu-guest.nix")
-    ];
+  imports = [
+    (modulesPath + "/profiles/qemu-guest.nix")
+  ];
 
-  nixpkgs.hostPlatform.system = "aarch64-linux";
-  boot.initrd.availableKernelModules = [ "xhci_pci" "virtio_pci" "usbhid" "sd_mod" ];
+  # nixpkgs.hostPlatform.system = "aarch64-linux";
+  boot.initrd.availableKernelModules = [
+    "xhci_pci"
+    "virtio_pci"
+    "usbhid"
+    "sd_mod"
+  ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];

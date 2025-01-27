@@ -99,22 +99,6 @@
     };
   };
 
-  systemd.services.tv = {
-    description = "IPTV源收集工具";
-    after = [ "network.target" ];
-    wantedBy = [ "multi-user.target" ];
-    serviceConfig = {
-      User = "nixos";
-      Group = "wheel";
-      StateDirectory = "tv";
-      RuntimeDirectory = "tv";
-      WorkingDirectory = /var/lib/tv;
-      ExecStart = "${pkgs.tv}/bin/tv -tv=true -aesKey=${secrets.tv.aesKey} -userid=${secrets.tv.userid} -token=${secrets.tv.token}";
-      RestartSec = 5;
-      Restart = "on-failure";
-    };
-  };
-
   services.sing-box.enable = lib.mkForce false;
 
   services.caddy = {
@@ -132,6 +116,24 @@
         reverse_proxy :5244
       }
     '';
+  };
+
+  virtualisation.oci-containers = {
+    backend = "docker";
+    containers = {
+      allinone = {
+        privileged = true;
+        ports = [ "35455:35455" ];
+        image = "youshandefeiyang/allinone";
+        imageFile = pkgs.allinone;
+        extraOptions = [ "--network=host" ];
+        cmd = [
+          "-aesKey=${secrets.tv.aesKey}"
+          "-userid=${secrets.tv.userid}"
+          "-token=${secrets.tv.token}"
+        ];
+      };
+    };
   };
 
 }

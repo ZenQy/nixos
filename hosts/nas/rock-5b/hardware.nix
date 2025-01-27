@@ -8,7 +8,7 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  nixpkgs.hostPlatform.system = "aarch64-linux";
+  # nixpkgs.hostPlatform.system = "aarch64-linux";
   boot = {
     initrd.availableKernelModules = [
       "nvme"

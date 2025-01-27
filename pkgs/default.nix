@@ -7,9 +7,7 @@ let
         mapAttrs (k: v: if k != "deprecated" && v == "directory" then k else null) (readDir dir)
       )
     );
-  packageLists = concatLists (
-    map (dir: map (subdir: "${dir}/${subdir}") (floder ./${dir})) (floder ./.)
-  );
+  packageLists = concatMap (dir: map (subdir: "${dir}/${subdir}") (floder ./${dir})) (floder ./.);
   listToSet =
     l: f:
     listToAttrs (
@@ -21,6 +19,9 @@ let
 in
 
 {
+  exclude =
+    systems: concatMap (system: if elem system (floder ./.) then floder ./${system} else [ ]) systems;
+
   packages =
     pkgs:
     listToSet (packageLists ++ attrNames ((import ./override.nix) null pkgs)) (

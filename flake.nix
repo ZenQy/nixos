@@ -12,7 +12,6 @@
   };
 
   outputs =
-
     {
       self,
       nixpkgs,
@@ -20,6 +19,7 @@
       impermanence,
     }:
 
+    with builtins;
     let
       this = import ./pkgs;
       systems = [
@@ -43,7 +43,7 @@
             config.allowUnsupportedSystem = true;
           };
         in
-        this.packages pkgs
+        removeAttrs (this.packages pkgs) (this.exclude (filter (s: s != system) systems))
       );
 
       apps = forAllSystems (
@@ -64,15 +64,27 @@
       );
 
       nixosConfigurations =
-        with builtins;
         let
           category = filter (x: x != "deprecated") (attrNames (readDir ./hosts));
           hosts = cate: attrNames (readDir ./hosts/${cate});
 
           value =
             cate: host:
+            let
+              system =
+                if
+                  elem host [
+                    "osaka-arm"
+                    "tx3"
+                    "rock-5b"
+                  ]
+                then
+                  "aarch64-linux"
+                else
+                  "x86_64-linux";
+            in
             nixpkgs.lib.nixosSystem {
-              system = "x86_64-linux";
+              inherit system;
               specialArgs = {
                 secrets = import (secrets + "/secrets.nix");
               };

@@ -110,7 +110,7 @@ src.github_tag = "vitejs/vite"
 src.exclude_regex = ".*(alpha|beta|@).*"
 fetch.github = "vitejs/vite"
 
-[tv]
+[allinone]
 src.container = "youshandefeiyang/allinone"
 src.include_regex = "latest"
 fetch.docker = "youshandefeiyang/allinone"
