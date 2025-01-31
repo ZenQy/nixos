@@ -11,7 +11,7 @@
     enable = true;
     extensions = [
       # PT Plugin Plus
-      # "dmmjlmbkigbgpnjfiimhlnbnmppjhpea;https://raw.githubusercontent.com/pt-plugins/PT-Plugin-Plus/gh-pages/update/canary.xml"
+      "dmmjlmbkigbgpnjfiimhlnbnmppjhpea;https://raw.githubusercontent.com/pt-plugins/PT-Plugin-Plus/gh-pages/update/canary.xml"
       # uBlock Origin
       "cjpalhdlnbpafiamejdnhcphjbkeiagm"
       # Extension Manager
@@ -25,9 +25,7 @@
       # 沙拉查词
       # "cdonnmffkdaoajfknoeeecmchibpmkmg"
       # Web Clipper
-      # "mhfbofiokmppgdliakminbgdgcmbhbac"
-      # MaoXian web clipper
-      # "kjahokgdcbohofgdidndeiaigkehdjdc"
+      "mhfbofiokmppgdliakminbgdgcmbhbac"
       # Vue.js devtools
       # "nhdogjmejiglipccpnnnanhbledajbpd"
       # Bitwarden

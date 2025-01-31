@@ -84,6 +84,7 @@ let
               "blizzard.com"
               "test-ipv6.com"
               "10155.com"
+              "940940.xyz"
             ];
           }
         ];
@@ -130,8 +131,11 @@ let
     ];
     rules = [
       {
+        action = "sniff";
+      }
+      {
         protocol = "dns";
-        outbound = "dns-out";
+        action = "hijack-dns";
       }
       {
         ip_is_private = true;
@@ -155,11 +159,11 @@ let
       }
       {
         rule_set = "geosite-geolocation-cn@ads";
-        outbound = "block";
+        action = "reject";
       }
       {
         rule_set = "geosite-geolocation-!cn@ads";
-        outbound = "block";
+        action = "reject";
       }
       {
         rule_set = "geosite-cn";
@@ -185,8 +189,6 @@ let
       auto_route = true;
       strict_route = false;
       stack = "gvisor";
-      sniff = true;
-      sniff_override_destination = false;
     }
   ];
   outbounds =
@@ -285,14 +287,6 @@ let
       {
         tag = "direct";
         type = "direct";
-      }
-      {
-        tag = "block";
-        type = "block";
-      }
-      {
-        tag = "dns-out";
-        type = "dns";
       }
     ];
   experimental = {

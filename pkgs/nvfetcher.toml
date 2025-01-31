@@ -117,6 +117,13 @@ fetch.docker = "youshandefeiyang/allinone"
 docker.os = "linux"
 docker.arch = "arm64"
 
+[qd]
+src.container = "qdtoday/qd"
+src.include_regex = "lite-latest"
+fetch.docker = "qdtoday/qd"
+docker.os = "linux"
+docker.arch = "arm64"
+
 [wallpapers]
 src.github = "ZenQy/wallpaper"
 fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper.tar.gz"

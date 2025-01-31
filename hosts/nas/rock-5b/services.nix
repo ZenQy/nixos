@@ -99,8 +99,6 @@
     };
   };
 
-  services.sing-box.enable = lib.mkForce false;
-
   services.caddy = {
     enable = true;
     extraConfig = ''
@@ -132,6 +130,14 @@
           "-userid=${secrets.tv.userid}"
           "-token=${secrets.tv.token}"
         ];
+      };
+      qd = {
+        ports = [ "8923:8923" ];
+        volumes = [
+          "qd/config:/usr/src/app/config"
+        ];
+        image = "qdtoday/qd";
+        imageFile = pkgs.qd;
       };
     };
   };

@@ -2,9 +2,13 @@
   source,
   lib,
   stdenv,
-  pnpm,
+  pnpm_9,
   nodejs,
 }:
+
+let
+  pnpm = pnpm_9;
+in
 
 stdenv.mkDerivation {
   inherit (source) pname version src;
