@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "AfricanMuseumDC_EN-US9749048351";
+    version = "AustriaMarmot_EN-US0012248153";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.AfricanMuseumDC_EN-US9749048351_UHD.jpg";
-      sha256 = "sha256-gWVsfGmv+zEMX10qPdKzHjt/iAqmI+sN3P/1navKd6w=";
+      url = "https://www.bing.com/th?id=OHR.AustriaMarmot_EN-US0012248153_UHD.jpg";
+      sha256 = "sha256-86qXvcl1op1GAmUqE8gEWUYDcW1T5j8un6IX4h29lm8=";
     };
   };
   dbaeumer_vscode-eslint = {
@@ -99,11 +99,11 @@
   };
   jnoortheen_nix-ide = {
     pname = "jnoortheen_nix-ide";
-    version = "0.4.11";
+    version = "0.4.12";
     src = fetchurl {
-      url = "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.11/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "nix-ide-0.4.11.zip";
-      sha256 = "sha256-Z+e4s+fcpPqxG7IU2E48Jq21FPU+DHHa+VwTEXKiznw=";
+      url = "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.12/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "nix-ide-0.4.12.zip";
+      sha256 = "sha256-3pXypgAwg/iEBUqPeNsyoX2oYqlKMVdemEhmhy1PuGU=";
     };
   };
   leetgo = {
@@ -179,11 +179,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2288";
+    version = "0.4.2289";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2288/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2288.zip";
-      sha256 = "sha256-6S1bDU8Mjqv8+wwkWyf6kB/mlOUYEK4qWcGiQl8bTE8=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2289/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2289.zip";
+      sha256 = "sha256-1j7l+uc43LlqUC8H4geHLGONlbBn/OWZrIznbkGPzng=";
     };
   };
   staticcheck = {
@@ -237,10 +237,10 @@
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2025.01.12";
+    version = "v2025.02.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.01.12/wallpaper.tar.gz";
-      sha256 = "sha256-+8fub7pWNNsAljdFjo4FfsKnXZtExCG4ts4tir17fZc=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.02.03/wallpaper.tar.gz";
+      sha256 = "sha256-6kRN/kgLY8G/MIlZ7/D80kog/8kfpWyH2Ct0GtOQtzw=";
     };
   };
 }

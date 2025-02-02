@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-gWVsfGmv+zEMX10qPdKzHjt/iAqmI+sN3P/1navKd6w=",
+            "sha256": "sha256-86qXvcl1op1GAmUqE8gEWUYDcW1T5j8un6IX4h29lm8=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.AfricanMuseumDC_EN-US9749048351_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.AustriaMarmot_EN-US0012248153_UHD.jpg"
         },
-        "version": "AfricanMuseumDC_EN-US9749048351"
+        "version": "AustriaMarmot_EN-US0012248153"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -180,12 +180,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "nix-ide-0.4.11.zip",
-            "sha256": "sha256-Z+e4s+fcpPqxG7IU2E48Jq21FPU+DHHa+VwTEXKiznw=",
+            "name": "nix-ide-0.4.12.zip",
+            "sha256": "sha256-3pXypgAwg/iEBUqPeNsyoX2oYqlKMVdemEhmhy1PuGU=",
             "type": "url",
-            "url": "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.11/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.12/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.11"
+        "version": "0.4.12"
     },
     "leetgo": {
         "cargoLocks": null,
@@ -323,12 +323,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2288.zip",
-            "sha256": "sha256-6S1bDU8Mjqv8+wwkWyf6kB/mlOUYEK4qWcGiQl8bTE8=",
+            "name": "rust-analyzer-0.4.2289.zip",
+            "sha256": "sha256-1j7l+uc43LlqUC8H4geHLGONlbBn/OWZrIznbkGPzng=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2288/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2289/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2288"
+        "version": "0.4.2289"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -426,10 +426,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-+8fub7pWNNsAljdFjo4FfsKnXZtExCG4ts4tir17fZc=",
+            "sha256": "sha256-6kRN/kgLY8G/MIlZ7/D80kog/8kfpWyH2Ct0GtOQtzw=",
             "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.01.12/wallpaper.tar.gz"
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.02.03/wallpaper.tar.gz"
         },
-        "version": "v2025.01.12"
+        "version": "v2025.02.03"
     }
 }
