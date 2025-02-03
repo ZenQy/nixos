@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-86qXvcl1op1GAmUqE8gEWUYDcW1T5j8un6IX4h29lm8=",
+            "sha256": "sha256-F7PlLa6197PVN2Nkc15827GXuubAiSn/b9jBtfDOV58=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.AustriaMarmot_EN-US0012248153_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.RibbleheadViaduct_EN-US0244245382_UHD.jpg"
         },
-        "version": "AustriaMarmot_EN-US0012248153"
+        "version": "RibbleheadViaduct_EN-US0244245382"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -323,12 +323,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2289.zip",
-            "sha256": "sha256-1j7l+uc43LlqUC8H4geHLGONlbBn/OWZrIznbkGPzng=",
+            "name": "rust-analyzer-0.4.2290.zip",
+            "sha256": "sha256-t9mrUqs4W4HU7SSI053PtYgJvKGvdD0j7rS23P5xj1Y=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2289/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2290/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2289"
+        "version": "0.4.2290"
     },
     "staticcheck": {
         "cargoLocks": null,
