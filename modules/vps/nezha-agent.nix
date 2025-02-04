@@ -59,8 +59,8 @@ in
           fi
         '';
         serviceConfig = {
-          User = "nixos";
-          Group = "wheel";
+          # User = "nixos";
+          # Group = "wheel"; ICMP-Ping 需要 root 权限
           StateDirectory = "nezha-agent";
           RuntimeDirectory = "nezha-agent";
           WorkingDirectory = path;

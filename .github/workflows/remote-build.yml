@@ -71,7 +71,7 @@ jobs:
       - name: remote build
         run: |
           nix-env -f '<nixpkgs>' -iA nixos-rebuild
-          nixos-rebuild test --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
+          nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
 
       - name: Telegram notification
         if: failure()
