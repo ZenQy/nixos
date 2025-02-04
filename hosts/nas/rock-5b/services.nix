@@ -132,9 +132,9 @@
         ];
       };
       qd = {
-        ports = [ "8923:8923" ];
+        ports = [ "8923:80" ];
         volumes = [
-          "qd/config:/usr/src/app/config"
+          "qd_config:/usr/src/app/config"
         ];
         image = "qdtoday/qd";
         imageFile = pkgs.qd;

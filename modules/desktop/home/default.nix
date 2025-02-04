@@ -5,12 +5,20 @@ with builtins;
 let
   conf = {
     vscode = {
-      file = toFile "settings.json" (lib.generators.toJSON { } (import ./vscode.nix));
+      file = toFile "settings.json" (toJSON (import ./vscode.nix));
       path = ".config/VSCodium/User/settings.json";
     };
-    niri = {
-      file = toFile "settings.json" (lib.generators.toJSON { } (import ./niri.nix));
+    zed = {
+      file = toFile "settings.json" (toJSON (import ./zed.nix));
       path = ".config/zed/settings.json";
+    };
+    go = {
+      file = toFile "go.env" ''
+        GO111MODULE=on
+        GOPROXY=https://goproxy.cn,direct
+        CGO_ENABLED=0
+      '';
+      path = ".config/go/env";
     };
     # niri = {
     #   file = toString ./niri-config.kdl;
@@ -23,10 +31,11 @@ let
       fullpath = "/home/nixos/" + conf.${name}.path;
       source = conf.${name}.file;
       target = substring 0 ((stringLength fullpath) - (stringLength (baseNameOf fullpath))) fullpath;
+      ext = concatStringsSep "" (match ".*\\.(.+?$)" fullpath);
     in
     ''
       mkdir -p ${target}
-      cat ${source} > ${fullpath}
+      ${if ext == "json" then pkgs.jq + "/bin/jq ." else "cat"} ${source} > ${fullpath}
     ''
   ) (attrNames conf);
 

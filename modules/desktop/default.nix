@@ -22,10 +22,10 @@
     ## Go ##
     go
     gopls
-    dlv-dap
-    staticcheck
+    # dlv-dap
+    # staticcheck
     leetgo
-    gcc
+    # gcc
 
     ## Rust ##
     rustc

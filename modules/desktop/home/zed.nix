@@ -2,7 +2,7 @@
   assistant = {
     default_model = {
       provider = "zed.dev";
-      model = "claude-3-5-sonnet-20240620";
+      model = "claude-3-5-sonnet-latest";
     };
     version = "2";
   };
@@ -60,7 +60,7 @@
   theme = {
     mode = "dark";
     dark = "Ayu Dark";
-    light = "One Light";
+    light = "Ayu Light";
   };
   ui_font_size = 16;
 }

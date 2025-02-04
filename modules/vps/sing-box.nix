@@ -85,10 +85,6 @@
             }
         )
       ];
-      route = {
-        geosite.path = "/etc/sing-box/geosite.db";
-        geoip.path = "/etc/sing-box/geoip.db";
-      };
     };
   };
 }

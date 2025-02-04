@@ -44,7 +44,7 @@ jobs:
         uses: cachix/install-nix-action@v30
 
       - name: Magic Nix Cache
-        uses: DeterminateSystems/magic-nix-cache-action@main
+        uses: DeterminateSystems/flakehub-cache-action@main
 
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
@@ -134,7 +134,7 @@ jobs:
             substituters = https://zenqy.cachix.org/ https://cache.nixos.org/
 
       - name: Magic Nix Cache
-        uses: DeterminateSystems/magic-nix-cache-action@main
+        uses: DeterminateSystems/flakehub-cache-action@main
 
       - name: Use Cachix
         uses: cachix/cachix-action@v15

@@ -61,8 +61,6 @@ let
     strategy = "prefer_ipv6";
   };
   route = {
-    geosite.path = "/etc/sing-box/geosite.db";
-    geoip.path = "/etc/sing-box/geoip.db";
     rule_set = [
       {
         tag = "rule_set_direct";
@@ -85,6 +83,7 @@ let
               "test-ipv6.com"
               "10155.com"
               "940940.xyz"
+              "binmt.cc"
             ];
           }
         ];
