@@ -67,11 +67,11 @@
             "arch": "arm64",
             "finalImageName": null,
             "finalImageTag": null,
-            "imageDigest": "sha256:0c78194a3ff2d34d9bdb8145e1e837c436fb1c5bcf2dcc66600d12de021b1bab",
+            "imageDigest": "sha256:9b18104442ac38b8e2f66a39911ad1c8500764d5051031a7f4169c8d36040e7c",
             "imageName": "youshandefeiyang/allinone",
             "imageTag": "latest",
             "os": "linux",
-            "sha256": "sha256-7LuTGzfuB+QO50/rfJTeHTD8n8D/yPRG4vjnDW/xex0=",
+            "sha256": "sha256-X7jRJXYDRrBdRC+XmlvvS4MrVnCtDylyrSVLOPlrCNk=",
             "tlsVerify": null
         },
         "version": "latest"
@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-f3hRTQFd5p/aLwOpYdSOcMLu8gph9Mqd/MEkc8UNhFk=",
+            "sha256": "sha256-FJkL8keLUBurGoIAvS8TE2hhf/tKma2yMX+709J9ujI=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.WhararikiBeach_EN-US3505877495_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.BlueNorway_EN-US6457602567_UHD.jpg"
         },
-        "version": "WhararikiBeach_EN-US3505877495"
+        "version": "BlueNorway_EN-US6457602567"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -273,12 +273,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.7.2",
-            "sha256": "sha256-aHUvFMMyNMuvE9m0DaOrkzNOGE62VVEfBnmaObmy+Pw=",
+            "rev": "v1.7.3",
+            "sha256": "sha256-d6ClUumYPE3toMNVoaHR7Jdu2VCn0eEr/hV88I0gBaw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.7.2"
+        "version": "v1.7.3"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -323,12 +323,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2294.zip",
-            "sha256": "sha256-SiaLRjf9Rja5sleDNaM4t4ITYT0rVDypZJlcEAjYBPs=",
+            "name": "rust-analyzer-0.4.2295.zip",
+            "sha256": "sha256-e34LEeO/kSER3M23iYhvqop9B6qu9eCNZ32pzRInl18=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2294/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2295/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2294"
+        "version": "0.4.2295"
     },
     "staticcheck": {
         "cargoLocks": null,
