@@ -15,7 +15,7 @@ buildGoModule {
     "-X github.com/nezhahq/agent/pkg/monitor.Version=${source.version}"
     "-X main.arch=${stdenv.hostPlatform.system}"
   ];
-
+  preBuild = "go generate ./...";
   doCheck = false;
   postInstall = ''
     mv $out/bin/agent $out/bin/nezha-agent
