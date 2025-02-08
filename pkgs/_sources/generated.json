@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-FJkL8keLUBurGoIAvS8TE2hhf/tKma2yMX+709J9ujI=",
+            "sha256": "sha256-Oyg65X7TCkFClBML49n/7XeclJa44ZvKeah257so0cY=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BlueNorway_EN-US6457602567_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.SnowySvaneti_EN-US6546788330_UHD.jpg"
         },
-        "version": "BlueNorway_EN-US6457602567"
+        "version": "SnowySvaneti_EN-US6546788330"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -323,12 +323,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2295.zip",
-            "sha256": "sha256-e34LEeO/kSER3M23iYhvqop9B6qu9eCNZ32pzRInl18=",
+            "name": "rust-analyzer-0.4.2296.zip",
+            "sha256": "sha256-p98Odn2qDFUaJ/jJeRKKwCCUBNVD3oVslx89ybmoe9o=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2295/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2296/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2295"
+        "version": "0.4.2296"
     },
     "staticcheck": {
         "cargoLocks": null,
