@@ -13,9 +13,6 @@ on:
 env:
   NIX_PATH: nixpkgs=channel:nixos-unstable
   TZ: Asia/Shanghai
-  # NIXPKGS_ALLOW_BROKEN: 1
-  # NIXPKGS_ALLOW_INSECURE: 1
-  NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p 2022"
 
 jobs:
   build:
@@ -63,17 +60,24 @@ jobs:
         run: |
           host=$(echo ${{ matrix.hosts }} | sed 's/-/_/g' | awk '{print toupper ($0)}')
           echo HOST=$host >> $GITHUB_ENV
-          if [[ $host == "natvps" ]]; then
-            echo NIX_SSHOPTS="-o StrictHostKeyChecking=no -p 49615" >> $GITHUB_ENV
-          fi
+          nix-env -f '<nixpkgs>' -iA nixos-rebuild
 
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
       - name: remote build
+        if: ${{ matrix.hosts == "natvps" }}
+        env:
+          NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p 49615"
         run: |
-          nix-env -f '<nixpkgs>' -iA nixos-rebuild
+          nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
+
+      - name: remote build
+        if: ${{ matrix.hosts != "natvps" }}
+        env:
+          NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p 2022"
+        run: |
           nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
 
       - name: Telegram notification
