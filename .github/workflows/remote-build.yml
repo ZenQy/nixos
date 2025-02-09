@@ -67,14 +67,14 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
       - name: remote build
-        if: ${{ matrix.hosts == "natvps" }}
+        if: ${{ matrix.hosts == 'natvps' }}
         env:
           NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p 49615"
         run: |
           nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
 
       - name: remote build
-        if: ${{ matrix.hosts != "natvps" }}
+        if: ${{ matrix.hosts != 'natvps' }}
         env:
           NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p 2022"
         run: |
