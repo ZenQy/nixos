@@ -59,10 +59,13 @@ jobs:
           name: zenqy
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
 
-      - name: host env
+      - name: Environment Prepare
         run: |
           host=$(echo ${{ matrix.hosts }} | sed 's/-/_/g' | awk '{print toupper ($0)}')
           echo HOST=$host >> $GITHUB_ENV
+          if [[ $host == "natvps" ]]; then
+            echo NIX_SSHOPTS="-o StrictHostKeyChecking=no -p 49615" >> $GITHUB_ENV
+          fi
 
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
