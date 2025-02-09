@@ -39,7 +39,8 @@ jobs:
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
+      - name: Set up WARP
+        uses: fscarmen/warp-on-actions@v1.3
       - name: Install nixFlake
         uses: cachix/install-nix-action@v30
         with:
