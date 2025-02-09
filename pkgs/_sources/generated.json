@@ -67,11 +67,11 @@
             "arch": "arm64",
             "finalImageName": null,
             "finalImageTag": null,
-            "imageDigest": "sha256:9b18104442ac38b8e2f66a39911ad1c8500764d5051031a7f4169c8d36040e7c",
+            "imageDigest": "sha256:dcab7521eb70f717424e4d430248224011490ca125b15719baea25ddb6d86ad9",
             "imageName": "youshandefeiyang/allinone",
             "imageTag": "latest",
             "os": "linux",
-            "sha256": "sha256-X7jRJXYDRrBdRC+XmlvvS4MrVnCtDylyrSVLOPlrCNk=",
+            "sha256": "sha256-ds8aT0A4JgHb1ojPXK7qdbNGW7yYmi1/m6FstQctBSM=",
             "tlsVerify": null
         },
         "version": "latest"
@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Oyg65X7TCkFClBML49n/7XeclJa44ZvKeah257so0cY=",
+            "sha256": "sha256-vM6lxLZ3I1nHKEjtDlS9ugzR2p8W/NjxKEvhEWgzt4Y=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.SnowySvaneti_EN-US6546788330_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.AlstromPoint_EN-US6746094430_UHD.jpg"
         },
-        "version": "SnowySvaneti_EN-US6546788330"
+        "version": "AlstromPoint_EN-US6746094430"
     },
     "dbaeumer_vscode-eslint": {
         "cargoLocks": null,
@@ -252,12 +252,12 @@
             "name": null,
             "owner": "nezhahq",
             "repo": "agent",
-            "rev": "v1.7.2",
-            "sha256": "sha256-4VhJtrv9+j4FgFEUOlvUEMNorzzzTfnkt3S6sHmSHKo=",
+            "rev": "v1.7.3",
+            "sha256": "sha256-ytvdfEVlZ9S5a04PnQbPbCxPjC7QvifGIOprXJIIhNo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.7.2"
+        "version": "v1.7.3"
     },
     "nezha-dashboard": {
         "cargoLocks": null,
@@ -273,12 +273,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.7.3",
-            "sha256": "sha256-d6ClUumYPE3toMNVoaHR7Jdu2VCn0eEr/hV88I0gBaw=",
+            "rev": "v1.7.4",
+            "sha256": "sha256-xqyaacRkZifRAM0lyb25biJ23Zkp/Yxy/YrkRx+3Eco=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.7.3"
+        "version": "v1.7.4"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -323,12 +323,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2296.zip",
-            "sha256": "sha256-p98Odn2qDFUaJ/jJeRKKwCCUBNVD3oVslx89ybmoe9o=",
+            "name": "rust-analyzer-0.4.2297.zip",
+            "sha256": "sha256-Yb+R2HErwbh8S/ihy9qedlt/zEEFHF5+3A+oaN4I8RM=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2296/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2297/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2296"
+        "version": "0.4.2297"
     },
     "staticcheck": {
         "cargoLocks": null,
