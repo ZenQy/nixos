@@ -39,8 +39,7 @@ jobs:
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      - name: Set up WARP
-        uses: fscarmen/warp-on-actions@v1.3
+
       - name: Install nixFlake
         uses: cachix/install-nix-action@v30
         with:
@@ -66,6 +65,12 @@ jobs:
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+
+      - name: Set up WARP
+        if: ${{ matrix.hosts == 'alice' }}
+        uses: fscarmen/warp-on-actions@v1.3
+        with:
+          stack: ipv6
 
       - name: remote build
         if: ${{ matrix.hosts == 'natvps' }}
