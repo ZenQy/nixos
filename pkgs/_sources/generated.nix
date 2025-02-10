@@ -37,8 +37,8 @@
     version = "latest";
     src = dockerTools.pullImage {
       imageName = "youshandefeiyang/allinone";
-      imageDigest = "sha256:dcab7521eb70f717424e4d430248224011490ca125b15719baea25ddb6d86ad9";
-      sha256 = "sha256-ds8aT0A4JgHb1ojPXK7qdbNGW7yYmi1/m6FstQctBSM=";
+      imageDigest = "sha256:6ac5f8713e862f92b89cf5fe0e4cd5e6cb0741b33f7f856781a03d31c7619476";
+      sha256 = "sha256-jIHC4XbBgnCQtyfvqzT38Xtx3Z7w5GBDoGflvHIWUEE=";
       finalImageTag = "latest";
       os = "linux";
       arch = "arm64";
@@ -46,11 +46,23 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "AlstromPoint_EN-US6746094430";
+    version = "UmbrellaDay_EN-US6816351187";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.AlstromPoint_EN-US6746094430_UHD.jpg";
-      sha256 = "sha256-vM6lxLZ3I1nHKEjtDlS9ugzR2p8W/NjxKEvhEWgzt4Y=";
+      url = "https://www.bing.com/th?id=OHR.UmbrellaDay_EN-US6816351187_UHD.jpg";
+      sha256 = "sha256-8smuARWlBnNagb2n7xUqy+MA6btQsvImbz0yXGQsTbc=";
     };
+  };
+  chatgpt-web = {
+    pname = "chatgpt-web";
+    version = "eceb530bce9fa0f0f6453d2da204a64fd48c25ed";
+    src = fetchFromGitHub {
+      owner = "xqdoo00o";
+      repo = "chatgpt-web";
+      rev = "eceb530bce9fa0f0f6453d2da204a64fd48c25ed";
+      fetchSubmodules = false;
+      sha256 = "sha256-DvwQFSmoyEVcRArv2NMfVGmqgrUWXrPeGeQ8LfLvZ6o=";
+    };
+    date = "2025-02-11";
   };
   dbaeumer_vscode-eslint = {
     pname = "dbaeumer_vscode-eslint";
@@ -179,11 +191,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2297";
+    version = "0.4.2298";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2297/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2297.zip";
-      sha256 = "sha256-Yb+R2HErwbh8S/ihy9qedlt/zEEFHF5+3A+oaN4I8RM=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2298/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2298.zip";
+      sha256 = "sha256-vhz5rG78rD3AdA2YK3FCJiYzu7ZuOii9a5iUq5HKo10=";
     };
   };
   staticcheck = {
