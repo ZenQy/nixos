@@ -1,4 +1,4 @@
-{ secrets, pkgs, ... }:
+{ secrets, ... }:
 
 {
   imports = [
@@ -27,7 +27,7 @@
       in
       ''
         claw.${secrets.domain} {
-          root * ${pkgs.caddy}/share
+          root * /var/lib/caddy/file
           file_server browse
 
           ${config}
