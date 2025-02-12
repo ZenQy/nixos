@@ -6,7 +6,7 @@
 
 buildGoModule {
   inherit (source) pname version src;
-  vendorHash = "sha256-OZ67BWsIUaU24BPQ1VjbGE4GkDZUKgbBG3ynUVXvyaU=";
+  vendorHash = "sha256-HssfBnSKdVZVgf4f0mwsGTwhiszBlE2HmDy7cvyvJ60=";
 
   doCheck = false;
   subPackages = [ "cmd/staticcheck" ];
