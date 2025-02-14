@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-4g2Rz/4zI/RJPmPXXqm4wyZa3KFNrSV2l+uh8EmnIjo=",
+            "sha256": "sha256-9C20TqVRu3g2noLhWm/MXIbsfJzgqRBreHmTs7Grm/s=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.LakeTyrrell_EN-US7326346900_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PenguinLove_EN-US7515315710_UHD.jpg"
         },
-        "version": "LakeTyrrell_EN-US7326346900"
+        "version": "PenguinLove_EN-US7515315710"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -344,12 +344,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2302.zip",
-            "sha256": "sha256-eSNVNffzK3J753d7EISuuKF84FAVh62lCO2g2I+D9Vw=",
+            "name": "rust-analyzer-0.4.2303.zip",
+            "sha256": "sha256-aQCjRutvlT9QStqtYZYGMkL2qpvDsgfwMNR03yAFAcU=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2302/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2303/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2302"
+        "version": "0.4.2303"
     },
     "staticcheck": {
         "cargoLocks": null,
