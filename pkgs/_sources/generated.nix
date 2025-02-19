@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "BlueBelize_EN-US7787222240";
+    version = "IceHoleOtter_EN-US7859051687";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.BlueBelize_EN-US7787222240_UHD.jpg";
-      sha256 = "sha256-8FARIW+La4Wxun200q7ezHyzrVXyrzbN3IVha+Px+FI=";
+      url = "https://www.bing.com/th?id=OHR.IceHoleOtter_EN-US7859051687_UHD.jpg";
+      sha256 = "sha256-D5VUZ1qep1K0yeSDF8EWsZQffLouz6u89qLcLP94/9k=";
     };
   };
   chatgpt-web = {
@@ -191,11 +191,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2310";
+    version = "0.4.2311";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2310/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2310.zip";
-      sha256 = "sha256-YADaxA+Azd4uMO7mhUlhIQnOU27PudJVg6ege+aEeno=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2311/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2311.zip";
+      sha256 = "sha256-WeONKWUg23Box3JsYW2Xq86yjvKfOTJBYQ06XxaIZhY=";
     };
   };
   staticcheck = {
@@ -229,13 +229,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v6.1.0";
+    version = "v6.1.1";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v6.1.0";
+      rev = "v6.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-iGDU6GZ9gitLl7AqLIA1CvWnyI6UU1TYjlRTHwoc4gE=";
+      sha256 = "sha256-MlYt523/UuILzvC2M/5Qbg8RtgEMOwIdcjGs+3lesGE=";
     };
   };
   vue_volar = {
