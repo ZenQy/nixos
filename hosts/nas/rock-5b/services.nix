@@ -106,7 +106,7 @@
         root * ${pkgs.ariang}/share/ariang
         file_server browse
       }
-      http://10.0.0.12:6666 {
+      http://10.0.0.12:8686 {
         root * ${pkgs.chatgpt-web}/share/chatgpt-web
         file_server browse
       }

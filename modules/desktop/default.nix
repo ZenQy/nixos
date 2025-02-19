@@ -45,6 +45,7 @@
     xarchiver
     xdg-utils
     p7zip
+    xz
     unrar
     # gnome-tweaks
 

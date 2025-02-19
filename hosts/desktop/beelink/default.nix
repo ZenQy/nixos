@@ -43,13 +43,13 @@
       enp4s0 = {
         name = "enp4s0";
         address = [
-          "10.0.0.40/24"
+          "10.0.0.24/24"
         ];
       } // n;
       wlp5s0 = {
         name = "wlp5s0";
         address = [
-          "10.0.0.50/24"
+          "10.0.0.25/24"
           secrets.beelink.ipv6.ip
         ];
       } // n;
