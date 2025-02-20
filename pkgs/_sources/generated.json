@@ -67,11 +67,11 @@
             "arch": "arm64",
             "finalImageName": null,
             "finalImageTag": null,
-            "imageDigest": "sha256:5f93fb507d14e36f4b9d90c1776d46272ce42399e325fea8d9b9cfa7954d8e70",
+            "imageDigest": "sha256:079f7f2d9e6b3471fe37f38099e8a4efbf03de8c7518c146876446140db4148d",
             "imageName": "youshandefeiyang/allinone",
             "imageTag": "latest",
             "os": "linux",
-            "sha256": "sha256-+ScZueAc1yLnXN9soyJxR/UWwwTJxhVy+GMREyQl48s=",
+            "sha256": "sha256-JmmYGQK4wRVOJNjR8LgxBUSHCQJTCca9oeB12TchA74=",
             "tlsVerify": null
         },
         "version": "latest"
@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-D5VUZ1qep1K0yeSDF8EWsZQffLouz6u89qLcLP94/9k=",
+            "sha256": "sha256-r1gXPH2T5f0I+1rJJKoRKBjJjzBXoIaTOB1cWDWSaXM=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.IceHoleOtter_EN-US7859051687_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.AdamsYosemite_EN-US7924059397_UHD.jpg"
         },
-        "version": "IceHoleOtter_EN-US7859051687"
+        "version": "AdamsYosemite_EN-US7924059397"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -171,12 +171,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "go-0.45.1.zip",
-            "sha256": "sha256-HJ7Ix1VFqKZFGfImAYy70BCSvPMtNP2RrsN2vZMxBEQ=",
+            "name": "go-0.45.2.zip",
+            "sha256": "sha256-b7q1FAxDLBqJBgQgEhkBCGKiJ4Q454HR7edq+2ixFVg=",
             "type": "url",
-            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.45.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.45.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.45.1"
+        "version": "0.45.2"
     },
     "it-tools": {
         "cargoLocks": null,
@@ -294,12 +294,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.7.5",
-            "sha256": "sha256-vXEel3iyRaEitLjA5/a2dWwe+IoFd+Ftz6UTVhqIP4s=",
+            "rev": "v1.7.6",
+            "sha256": "sha256-SffEIWQXwsMg/PaIIUVXfK9rULNCtftw/R5P3+vz4Ko=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.7.5"
+        "version": "v1.7.6"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -344,12 +344,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2311.zip",
-            "sha256": "sha256-WeONKWUg23Box3JsYW2Xq86yjvKfOTJBYQ06XxaIZhY=",
+            "name": "rust-analyzer-0.4.2312.zip",
+            "sha256": "sha256-wMaBy22ceiNOlxk668to5NPKSXi567XsUMV76XyG5ac=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2311/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2312/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2311"
+        "version": "0.4.2312"
     },
     "staticcheck": {
         "cargoLocks": null,
