@@ -67,11 +67,11 @@
             "arch": "arm64",
             "finalImageName": null,
             "finalImageTag": null,
-            "imageDigest": "sha256:079f7f2d9e6b3471fe37f38099e8a4efbf03de8c7518c146876446140db4148d",
+            "imageDigest": "sha256:efe56661e37e89c5de70a961b5fc8507dd42925265f563d89ea27f8b3c70b871",
             "imageName": "youshandefeiyang/allinone",
             "imageTag": "latest",
             "os": "linux",
-            "sha256": "sha256-JmmYGQK4wRVOJNjR8LgxBUSHCQJTCca9oeB12TchA74=",
+            "sha256": "sha256-VP2+RbRJ4zmyaLlawuRvaej2vJ9SuYSG0IZstih17Us=",
             "tlsVerify": null
         },
         "version": "latest"
@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-r1gXPH2T5f0I+1rJJKoRKBjJjzBXoIaTOB1cWDWSaXM=",
+            "sha256": "sha256-k9sK4SRzpYnXQGOLSQvBn4+CDfEmrE8vKNo60GQHq/Q=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.AdamsYosemite_EN-US7924059397_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.MtFujiSunrise_EN-US2218385739_UHD.jpg"
         },
-        "version": "AdamsYosemite_EN-US7924059397"
+        "version": "MtFujiSunrise_EN-US2218385739"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -294,12 +294,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.7.6",
-            "sha256": "sha256-SffEIWQXwsMg/PaIIUVXfK9rULNCtftw/R5P3+vz4Ko=",
+            "rev": "v1.8.0",
+            "sha256": "sha256-DSu9mVnFfyLWhKmjwhwz2g9sloD2qWL/whVnmXmvcVY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.7.6"
+        "version": "v1.8.0"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -344,12 +344,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2312.zip",
-            "sha256": "sha256-wMaBy22ceiNOlxk668to5NPKSXi567XsUMV76XyG5ac=",
+            "name": "rust-analyzer-0.4.2315.zip",
+            "sha256": "sha256-Dd5vBF8BoU1WjiiVNM3dWE1WfYtaYz4dl26Lxn8LRHA=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2312/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2315/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2312"
+        "version": "0.4.2315"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -431,12 +431,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "volar-2.2.2.zip",
-            "sha256": "sha256-nLuVztV9UHAaggQT9yERnQhGX9dGTnQ3WFxTIFeggPw=",
+            "name": "volar-2.2.4.zip",
+            "sha256": "sha256-FHS/LNjSUVfCb4SVF9naR4W0JqycWzSWiK54jfbRagA=",
             "type": "url",
-            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.2.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.2.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "2.2.2"
+        "version": "2.2.4"
     },
     "wallpapers": {
         "cargoLocks": null,

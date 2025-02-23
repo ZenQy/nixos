@@ -37,8 +37,8 @@
     version = "latest";
     src = dockerTools.pullImage {
       imageName = "youshandefeiyang/allinone";
-      imageDigest = "sha256:079f7f2d9e6b3471fe37f38099e8a4efbf03de8c7518c146876446140db4148d";
-      sha256 = "sha256-JmmYGQK4wRVOJNjR8LgxBUSHCQJTCca9oeB12TchA74=";
+      imageDigest = "sha256:efe56661e37e89c5de70a961b5fc8507dd42925265f563d89ea27f8b3c70b871";
+      sha256 = "sha256-VP2+RbRJ4zmyaLlawuRvaej2vJ9SuYSG0IZstih17Us=";
       finalImageTag = "latest";
       os = "linux";
       arch = "arm64";
@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "AdamsYosemite_EN-US7924059397";
+    version = "MtFujiSunrise_EN-US2218385739";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.AdamsYosemite_EN-US7924059397_UHD.jpg";
-      sha256 = "sha256-r1gXPH2T5f0I+1rJJKoRKBjJjzBXoIaTOB1cWDWSaXM=";
+      url = "https://www.bing.com/th?id=OHR.MtFujiSunrise_EN-US2218385739_UHD.jpg";
+      sha256 = "sha256-k9sK4SRzpYnXQGOLSQvBn4+CDfEmrE8vKNo60GQHq/Q=";
     };
   };
   chatgpt-web = {
@@ -159,13 +159,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v1.7.6";
+    version = "v1.8.0";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v1.7.6";
+      rev = "v1.8.0";
       fetchSubmodules = false;
-      sha256 = "sha256-SffEIWQXwsMg/PaIIUVXfK9rULNCtftw/R5P3+vz4Ko=";
+      sha256 = "sha256-DSu9mVnFfyLWhKmjwhwz2g9sloD2qWL/whVnmXmvcVY=";
     };
   };
   pkief_material-icon-theme = {
@@ -191,11 +191,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2312";
+    version = "0.4.2315";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2312/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2312.zip";
-      sha256 = "sha256-wMaBy22ceiNOlxk668to5NPKSXi567XsUMV76XyG5ac=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2315/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2315.zip";
+      sha256 = "sha256-Dd5vBF8BoU1WjiiVNM3dWE1WfYtaYz4dl26Lxn8LRHA=";
     };
   };
   staticcheck = {
@@ -240,11 +240,11 @@
   };
   vue_volar = {
     pname = "vue_volar";
-    version = "2.2.2";
+    version = "2.2.4";
     src = fetchurl {
-      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.2.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "volar-2.2.2.zip";
-      sha256 = "sha256-nLuVztV9UHAaggQT9yERnQhGX9dGTnQ3WFxTIFeggPw=";
+      url = "https://vue.gallery.vsassets.io/_apis/public/gallery/publisher/vue/extension/volar/2.2.4/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "volar-2.2.4.zip";
+      sha256 = "sha256-FHS/LNjSUVfCb4SVF9naR4W0JqycWzSWiK54jfbRagA=";
     };
   };
   wallpapers = {
