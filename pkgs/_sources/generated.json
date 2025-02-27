@@ -67,11 +67,11 @@
             "arch": "arm64",
             "finalImageName": null,
             "finalImageTag": null,
-            "imageDigest": "sha256:efe56661e37e89c5de70a961b5fc8507dd42925265f563d89ea27f8b3c70b871",
+            "imageDigest": "sha256:8f18d6c5db27c8c1deca00c2d4dd6814c99102613c79d693016dec4a907cc378",
             "imageName": "youshandefeiyang/allinone",
             "imageTag": "latest",
             "os": "linux",
-            "sha256": "sha256-VP2+RbRJ4zmyaLlawuRvaej2vJ9SuYSG0IZstih17Us=",
+            "sha256": "sha256-OnBgCty1hsnTdiBcMgAVRrleBXWEeWPWDDa3VM8qTjE=",
             "tlsVerify": null
         },
         "version": "latest"
@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-EKGrAadnPUKksLn07VcOEFdEC8irzjmclDXYUUWvuF4=",
+            "sha256": "sha256-nxlHNZIFXqQ5MYd9H0djAN5JRriltRlSYTJncaljepw=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.GiantCuttlefish_EN-US2276053377_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.PolarCub_EN-US2740470421_UHD.jpg"
         },
-        "version": "GiantCuttlefish_EN-US2276053377"
+        "version": "PolarCub_EN-US2740470421"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -294,12 +294,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.8.1",
-            "sha256": "sha256-+E7Yk2+7gTXlc/b9bkHzcdHplMV6kW4nXVk0cinA+O8=",
+            "rev": "v1.8.2",
+            "sha256": "sha256-McbAPacAazfey2sBBcvqTdcwSVNDOULQcl1YSw/t0Ew=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.8.1"
+        "version": "v1.8.2"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -344,12 +344,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2318.zip",
-            "sha256": "sha256-WoBIhnZlMUcfKwZ7maM0ifk7XHaNAgmtWFLRtskGzVM=",
+            "name": "rust-analyzer-0.4.2322.zip",
+            "sha256": "sha256-r7ZyLegMG/cV+kH+nEKPEQydqRHDQfmnxyhmNO4u1BE=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2318/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2322/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2318"
+        "version": "0.4.2322"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -416,12 +416,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.1.1",
-            "sha256": "sha256-MlYt523/UuILzvC2M/5Qbg8RtgEMOwIdcjGs+3lesGE=",
+            "rev": "v6.2.0",
+            "sha256": "sha256-zY0r+OH9OP21CNFeLh49+oFKADXdsPcKH+tqqNn+zBo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.1.1"
+        "version": "v6.2.0"
     },
     "vue_volar": {
         "cargoLocks": null,

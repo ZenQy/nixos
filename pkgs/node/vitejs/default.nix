@@ -15,7 +15,7 @@ stdenv.mkDerivation {
 
   pnpmDeps = pnpm.fetchDeps {
     inherit (source) pname version src;
-    hash = "sha256-cPQkfvJA9FkH6/kI+Qe916/i0DIjJX68s5kcZWKHRCE=";
+    hash = "sha256-j+nI5VlX5TLhptS88KWMoxyhTFkhCXtkDUT74JHfzl4=";
   };
 
   nativeBuildInputs = [
