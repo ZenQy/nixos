@@ -58,7 +58,7 @@ let
       }
     ];
     final = "dns_proxy";
-    strategy = "prefer_ipv6";
+    strategy = "prefer_ipv4";
   };
   route = {
     rule_set = [
@@ -188,6 +188,20 @@ let
       auto_route = true;
       strict_route = false;
       stack = "gvisor";
+      include_package = [
+        "cn.jimex.dict"
+        "com.aistra.hail"
+        "com.deskangel.daremote"
+        "com.ichi2.anki"
+        "com.x8bit.bitwarden"
+        "InfinityLoop1309.NewPipeEnhanced"
+        "io.legado.app.release"
+        "mark.via.gp"
+        "me.bmax.apatch"
+        "org.telegram.messenger"
+        "pro.cubox.androidapp"
+        "xyz.chatboxapp.chatbox"
+      ];
     }
   ];
   outbounds =
