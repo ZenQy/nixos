@@ -17,12 +17,9 @@
       let
         domain = tag: if tag == "claw" then "" else "${tag}.${secrets.domain}";
         config = concatStringsSep "\n" (
-          concatMap (
-            flag:
-            map (
-              tag: "reverse_proxy /${tag} ${domain tag}:${toString secrets.sing-box.trojan.port}"
-            ) secrets.hosts.${flag}
-          ) (attrNames secrets.hosts)
+          map (
+            tag: "reverse_proxy /${tag} ${domain tag}:${toString secrets.sing-box.trojan.port}"
+          ) secrets.vps
         );
       in
       ''

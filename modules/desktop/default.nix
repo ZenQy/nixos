@@ -104,6 +104,6 @@
 
   environment.variables = {
     NIXOS_OZONE_WL = "1";
-    inherit (secrets) AIANTHROPIC_API_EKY;
+    inherit (secrets.AI) ANTHROPIC_API_EKY;
   };
 }
