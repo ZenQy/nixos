@@ -1,4 +1,4 @@
-{ pkgs, secrets, ... }:
+{ secrets, pkgs, ... }:
 
 let
 
@@ -207,58 +207,68 @@ let
   outbounds =
     with builtins;
     let
-      hostList = attrNames secrets.hosts;
-    in
-    concatMap (
-      flag:
-      let
-        list = filter (x: x != "claw") secrets.hosts.${flag};
-        shared = {
-          type = "trojan";
-          inherit (secrets.sing-box.trojan) password;
-          server_port = 443;
-          tls = {
-            enabled = true;
-            utls.enabled = true;
-          };
-          multiplex.enabled = true;
+      shared = {
+        type = "trojan";
+        inherit (secrets.sing-box.trojan) password;
+        server_port = 443;
+        tls = {
+          enabled = true;
+          utls.enabled = true;
         };
-        raw = map (
-          tag:
-          {
-            inherit tag;
-            server = "${tag}.${secrets.domain}";
-            transport = {
-              type = "ws";
-              path = "/${tag}";
-            };
-          }
-          // shared
-        ) secrets.hosts.${flag};
-        fwd = map (
-          tag:
-          {
-            tag = "claw→${tag}";
-            server = "claw.${secrets.domain}";
-            transport = {
-              type = "ws";
-              path = "/${tag}";
-            };
-          }
-          // shared
-        ) list;
-      in
-      [
+        multiplex.enabled = true;
+      };
+    in
+    concatMap (tag: [
+      {
+        inherit tag;
+        type = "urltest";
+        outbounds = [
+          "🇨🇳→${tag}"
+          "claw→${tag}"
+        ];
+      }
+      (
         {
-          tag = flag;
-          type = "urltest";
-          outbounds = map (x: "claw→${x}") list ++ secrets.hosts.${flag};
+          tag = "🇨🇳→${tag}";
+          server = "${tag}.${secrets.domain}";
+          transport = {
+            type = "ws";
+            path = "/${tag}";
+          };
         }
-      ]
-      ++ raw
-      ++ fwd
-    ) hostList
+        // shared
+      )
+      (
+        {
+          tag = "claw→${tag}";
+          server = "claw.${secrets.domain}";
+          transport = {
+            type = "ws";
+            path = "/${tag}";
+          };
+        }
+        // shared
+      )
+    ]) (filter (tag: tag != "claw") secrets.vps)
     ++ [
+      {
+        tag = "proxy";
+        type = "selector";
+        outbounds = secrets.vps ++ [
+          "cloudflare"
+        ];
+      }
+      (
+        {
+          tag = "claw";
+          server = "claw.${secrets.domain}";
+          transport = {
+            type = "ws";
+            path = "/claw";
+          };
+        }
+        // shared
+      )
       {
         tag = "cloudflare";
         type = "trojan";
@@ -274,28 +284,6 @@ let
           headers.Host = "cf.${secrets.domain}";
           path = "/8PtaCVX69w3a4X";
         };
-      }
-      {
-        tag = "auto";
-        type = "urltest";
-        outbounds = hostList;
-      }
-      {
-        tag = "proxy";
-        type = "selector";
-        outbounds =
-          let
-            raw = concatLists (attrValues secrets.hosts);
-            fwd = map (x: "claw→${x}") (filter (x: x != "claw") raw);
-
-          in
-          [
-            "auto"
-            "cloudflare"
-          ]
-          ++ raw
-          ++ fwd;
-        default = "auto";
       }
       {
         tag = "direct";
