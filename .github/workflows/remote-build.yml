@@ -77,25 +77,26 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
       - name: Set up WARP
-        if: ${{ matrix.hosts == 'alice' }}
+        if: ${{ matrix.hosts == 'alice' || matrix.hosts == 'natvps' }}
         uses: fscarmen/warp-on-actions@v1.3
         with:
           stack: ipv6
           mode: client
 
       - name: remote build
-        if: ${{ matrix.hosts == 'natvps' }}
-        env:
-          NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p 49615"
-        run: |
-          nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
-
-      - name: remote build
-        if: ${{ matrix.hosts != 'natvps' }}
         env:
           NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p 2022"
         run: |
           nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
+
+      - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{ secrets[env.HOST] }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: "2022"
+          script: nix-collect-garbage -d
 
       - name: Telegram notification
         if: failure()
