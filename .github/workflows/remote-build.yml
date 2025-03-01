@@ -20,7 +20,17 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        hosts: [osaka-1, osaka-2, tokyo-1, tokyo-2, claw, natvps, alice, sailor]
+        hosts:
+          - osaka-1
+          - osaka-2
+          - tokyo-1
+          - tokyo-2
+          - claw
+          - natvps
+          - alice
+          - sailor
+          - legend
+
     steps:
       - name: Delete older workflow runs and artifacts
         uses: Mattraks/delete-workflow-runs@v2
