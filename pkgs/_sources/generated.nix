@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "EucalyptusForest_EN-US3015819767";
+    version = "HornbillPair_EN-US3168408482";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.EucalyptusForest_EN-US3015819767_UHD.jpg";
-      sha256 = "sha256-jJPM4+eneD4b1Bc+g1w2bBIPUpW79RNYsc5RbsmovUI=";
+      url = "https://www.bing.com/th?id=OHR.HornbillPair_EN-US3168408482_UHD.jpg";
+      sha256 = "sha256-UMmNXkQU6U3VyIk9EUQIH03h7zDhJP2YN4DJz5EVBog=";
     };
   };
   chatgpt-web = {
@@ -148,24 +148,24 @@
   };
   nezha-agent = {
     pname = "nezha-agent";
-    version = "v1.9.0";
+    version = "v1.9.2";
     src = fetchFromGitHub {
       owner = "nezhahq";
       repo = "agent";
-      rev = "v1.9.0";
+      rev = "v1.9.2";
       fetchSubmodules = false;
-      sha256 = "sha256-ymFTPBa8ogLw6aIu6JiY+jdAyoiMAUNM8yGhxt+x8xE=";
+      sha256 = "sha256-bXzTZ8GCD3gNQsJzvXGlcufKxbX2aTq51toy5P02BxY=";
     };
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v1.9.3";
+    version = "v1.9.5";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v1.9.3";
+      rev = "v1.9.5";
       fetchSubmodules = false;
-      sha256 = "sha256-2vFBBwSwpS6KLx1iXk4kYYe5tsH1N8TKBBL9z5/CAVc=";
+      sha256 = "sha256-06x/M3Np8223ovMVj1K6e7WyoI5+QZohEIHNs/9+bJ0=";
     };
   };
   pkief_material-icon-theme = {
@@ -195,7 +195,7 @@
     src = fetchurl {
       url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2327/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
       name = "rust-analyzer-0.4.2327.zip";
-      sha256 = "sha256-fbBn/5gePX9dPKNaSWNdtBAMBok77q4/Tv1M5ehicP0=";
+      sha256 = "sha256-5rlaiq12GTbqJmHBg5UQLgPIGmvoCm86bk8xADGiJ04=";
     };
   };
   staticcheck = {
