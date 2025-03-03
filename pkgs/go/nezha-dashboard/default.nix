@@ -1,7 +1,7 @@
 {
   source,
   lib,
-  buildGo123Module,
+  buildGo124Module,
   go-swag,
   dbip-country-lite,
   formats,
@@ -44,7 +44,7 @@ let
 
 in
 
-buildGo123Module {
+buildGo124Module {
   inherit (source) pname version src;
 
   proxyVendor = true;
