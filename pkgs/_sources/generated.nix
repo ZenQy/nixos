@@ -37,8 +37,8 @@
     version = "latest";
     src = dockerTools.pullImage {
       imageName = "youshandefeiyang/allinone";
-      imageDigest = "sha256:b23b5fcf67391a0237fe0bc7f9ffbf3ebe4de2ba06d463aa38f1144436195c0e";
-      sha256 = "sha256-Z46XduAs3eY/gSze/hHS4Ayc7oB/KkdtWZjyKZQV7SI=";
+      imageDigest = "sha256:7e987d59d63e15b9156057e4ad1165670347d202db2fb89a58a53db90a99fe6d";
+      sha256 = "sha256-NVBoqzT9zdqGI8sM1GqlvmzVlwiUeRRcQX2CRCvPJho=";
       finalImageTag = "latest";
       os = "linux";
       arch = "arm64";
@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "HornbillPair_EN-US3168408482";
+    version = "MardiGrasJackson_EN-US3277683692";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HornbillPair_EN-US3168408482_UHD.jpg";
-      sha256 = "sha256-UMmNXkQU6U3VyIk9EUQIH03h7zDhJP2YN4DJz5EVBog=";
+      url = "https://www.bing.com/th?id=OHR.MardiGrasJackson_EN-US3277683692_UHD.jpg";
+      sha256 = "sha256-bHNZP50IGaoc77KrEkblL1QdYzY5DZunGfcaEKZYdIQ=";
     };
   };
   chatgpt-web = {
@@ -94,11 +94,11 @@
   };
   golang_go = {
     pname = "golang_go";
-    version = "0.47.0";
+    version = "0.47.1";
     src = fetchurl {
-      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.47.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "go-0.47.0.zip";
-      sha256 = "sha256-Ru0R06Xb+ZGxYxV+185a+hYdUFLLQXHL4tH/DKoUoYg=";
+      url = "https://golang.gallery.vsassets.io/_apis/public/gallery/publisher/golang/extension/go/0.47.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "go-0.47.1.zip";
+      sha256 = "sha256-FKbPvXIO7SGt9C2lD7+0Q6yD0QNzrdef1ltsYXPmAi0=";
     };
   };
   it-tools = {
@@ -159,13 +159,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v1.9.5";
+    version = "v1.9.6";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v1.9.5";
+      rev = "v1.9.6";
       fetchSubmodules = false;
-      sha256 = "sha256-06x/M3Np8223ovMVj1K6e7WyoI5+QZohEIHNs/9+bJ0=";
+      sha256 = "sha256-HlitQhdzsS2wUNZLgcH6S5VrkuAavFSImbex4BoCj/g=";
     };
   };
   pkief_material-icon-theme = {
@@ -191,11 +191,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2327";
+    version = "0.4.2329";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2327/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2327.zip";
-      sha256 = "sha256-5rlaiq12GTbqJmHBg5UQLgPIGmvoCm86bk8xADGiJ04=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2329/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2329.zip";
+      sha256 = "sha256-G1W2iA/6aQROwT8vxxXOamfwBHXuJ1YKGXbanvAMjQ4=";
     };
   };
   staticcheck = {
