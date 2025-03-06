@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "SuratThani_EN-US3326265231";
+    version = "NevadaBigHorns_EN-US3434258986";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SuratThani_EN-US3326265231_UHD.jpg";
-      sha256 = "sha256-DqLMmsht8YxNjMaVUe/owov3K8IKPV7sBhViH/XNLUw=";
+      url = "https://www.bing.com/th?id=OHR.NevadaBigHorns_EN-US3434258986_UHD.jpg";
+      sha256 = "sha256-VSi9nMHO0TFY12tNg4hgHr1/90gSuyoIIzoOtKmg7Xc=";
     };
   };
   chatgpt-web = {
@@ -75,13 +75,13 @@
   };
   dlv-dap = {
     pname = "dlv-dap";
-    version = "v1.24.0";
+    version = "v1.24.1";
     src = fetchFromGitHub {
       owner = "go-delve";
       repo = "delve";
-      rev = "v1.24.0";
+      rev = "v1.24.1";
       fetchSubmodules = false;
-      sha256 = "sha256-R1MTMRAIceHv9apKTV+k4d8KoBaRJSZCflxqhgfQWu4=";
+      sha256 = "sha256-QAFCJ5oQYHDXrNLptRdAWzzbX6J9XVgnmsB3eZ3Lko8=";
     };
   };
   fcitx5-pinyin-zenith = {
@@ -191,22 +191,22 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2331";
+    version = "0.4.2332";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2331/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2331.zip";
-      sha256 = "sha256-LgmMHj9d3+fVaoLvdl3XBVPXgkUFmwYKFNVqEVd5e58=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2332/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2332.zip";
+      sha256 = "sha256-khF9dKW7T6JJSGRib512WMoL5uU328YCbQb8C8q0iKU=";
     };
   };
   staticcheck = {
     pname = "staticcheck";
-    version = "2025.1";
+    version = "2025.1.1";
     src = fetchFromGitHub {
       owner = "dominikh";
       repo = "go-tools";
-      rev = "2025.1";
+      rev = "2025.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-akNSaZBM1cUuQG4Zg3wQLUv5YI+phW0XnAHOOo1YF6g=";
+      sha256 = "sha256-ekSOXaVSFdzM76tcj1hbtzhYw4fnFX3VkTnsGtJanXg=";
     };
   };
   tamasfe_even-better-toml = {
@@ -220,11 +220,11 @@
   };
   usernamehw_errorlens = {
     pname = "usernamehw_errorlens";
-    version = "3.23.0";
+    version = "3.24.0";
     src = fetchurl {
-      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.23.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "errorlens-3.23.0.zip";
-      sha256 = "sha256-mz3JU4+/P6nM/SEJcVG5gq5K1Ym9L8N2pXbfw8a5DoA=";
+      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.24.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "errorlens-3.24.0.zip";
+      sha256 = "sha256-r5xXR4rDbP+2bk66yqPoLod8IZXFrntcKHuWbAiFWwE=";
     };
   };
   vitejs = {
