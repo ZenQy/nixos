@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "NevadaBigHorns_EN-US3434258986";
+    version = "PlumBlossom_EN-US7055526666";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.NevadaBigHorns_EN-US3434258986_UHD.jpg";
-      sha256 = "sha256-VSi9nMHO0TFY12tNg4hgHr1/90gSuyoIIzoOtKmg7Xc=";
+      url = "https://www.bing.com/th?id=OHR.PlumBlossom_EN-US7055526666_UHD.jpg";
+      sha256 = "sha256-+nGph4Q5rPbMXUE4EPPlSf0wJyiX2slizkHVZpifWeo=";
     };
   };
   chatgpt-web = {
@@ -131,10 +131,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.176.2";
+    version = "v1.177.0";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.176.2/compressed-dist.tgz";
-      sha256 = "sha256-t3bMRZi2p0O/gSRjtp3l4CRagAo25T72Fy8LuZ4EWJk=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.177.0/compressed-dist.tgz";
+      sha256 = "sha256-ZV962bbZukj9pqoJJ97v055bm+BG+dTKHeawyPqjq4Y=";
     };
   };
   mhutchie_git-graph = {
@@ -148,24 +148,24 @@
   };
   nezha-agent = {
     pname = "nezha-agent";
-    version = "v1.9.2";
+    version = "v1.9.3";
     src = fetchFromGitHub {
       owner = "nezhahq";
       repo = "agent";
-      rev = "v1.9.2";
+      rev = "v1.9.3";
       fetchSubmodules = false;
-      sha256 = "sha256-bXzTZ8GCD3gNQsJzvXGlcufKxbX2aTq51toy5P02BxY=";
+      sha256 = "sha256-VjyJy5W2lZdZreGdSRHIfBvhqJgWW/BQ645mqvK2Aps=";
     };
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v1.9.6";
+    version = "v1.9.7";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v1.9.6";
+      rev = "v1.9.7";
       fetchSubmodules = false;
-      sha256 = "sha256-HlitQhdzsS2wUNZLgcH6S5VrkuAavFSImbex4BoCj/g=";
+      sha256 = "sha256-qB3WEf8BjuaW1wkrj9c5929RL9D/vZ2d1YAlt71WhoA=";
     };
   };
   pkief_material-icon-theme = {
@@ -191,11 +191,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2332";
+    version = "0.4.2333";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2332/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2332.zip";
-      sha256 = "sha256-khF9dKW7T6JJSGRib512WMoL5uU328YCbQb8C8q0iKU=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2333/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2333.zip";
+      sha256 = "sha256-xILpxsy28ffMvptOQMIgx0fhAk9zfkCxMYsM9/IMgvU=";
     };
   };
   staticcheck = {
@@ -229,13 +229,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v6.2.0";
+    version = "v6.2.1";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v6.2.0";
+      rev = "v6.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-zY0r+OH9OP21CNFeLh49+oFKADXdsPcKH+tqqNn+zBo=";
+      sha256 = "sha256-KHKOhhtXRKGVGPvM/4XAhmR/7fqj+qmaNdm/cHTf/Eo=";
     };
   };
   vue_volar = {
