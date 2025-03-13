@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-hsBUUzbXOem2XBsl2xUpzdWpx5F6DrKBAXgdKqEpRXI=",
+            "sha256": "sha256-qzxx0CnS3y0l2b7z6svPxVi9pN1vIfIz5dH/NqDwWsw=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.ChateauLoire_EN-US8827570825_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.HoliColors_EN-US9033637774_UHD.jpg"
         },
-        "version": "ChateauLoire_EN-US8827570825"
+        "version": "HoliColors_EN-US9033637774"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -294,12 +294,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.9.8",
-            "sha256": "sha256-bjclr3eUIWIyp/rwVa1bTZ6tgW73Men3n1U30KzXPIg=",
+            "rev": "v1.9.9",
+            "sha256": "sha256-idt6g9tuTfX4XjgdY4gI0qJigGMsAMFq+ePjpEQ6WY4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.9.8"
+        "version": "v1.9.9"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -344,12 +344,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2339.zip",
-            "sha256": "sha256-dNakVjl8Kp1VDHuNUOUE3Vfosdl4G0dr8arW1oplPyY=",
+            "name": "rust-analyzer-0.4.2340.zip",
+            "sha256": "sha256-5IECw46NZgjEi6+7Cj/R8ZBKReY01omxd2l/YGAseV4=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2339/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2340/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2339"
+        "version": "0.4.2340"
     },
     "staticcheck": {
         "cargoLocks": null,
