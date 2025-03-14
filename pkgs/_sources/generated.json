@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qzxx0CnS3y0l2b7z6svPxVi9pN1vIfIz5dH/NqDwWsw=",
+            "sha256": "sha256-agH1iJoQ9flaF24vFHwULp78CPOB2C14MkmpDUfdqgE=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.HoliColors_EN-US9033637774_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.BasqueDolmen_EN-US9089569057_UHD.jpg"
         },
-        "version": "HoliColors_EN-US9033637774"
+        "version": "BasqueDolmen_EN-US9089569057"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -238,11 +238,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-XUIAOg+Ce7/T0ug/u2+FIBYlP8GWHDkuZqXukA4y/r8=",
+            "sha256": "sha256-kcZFvnbNdCbIMBROEaQDqw1Ko5GfAzeXVkJFbBTcH8k=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.180.0/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.181.2/compressed-dist.tgz"
         },
-        "version": "v1.180.0"
+        "version": "v1.181.2"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -344,12 +344,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2340.zip",
-            "sha256": "sha256-5IECw46NZgjEi6+7Cj/R8ZBKReY01omxd2l/YGAseV4=",
+            "name": "rust-analyzer-0.4.2341.zip",
+            "sha256": "sha256-F7zGEYL25q5dbP/k9sekY+CJwI2d6F2C1G+xV/u1QVk=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2340/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2341/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2340"
+        "version": "0.4.2341"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -416,12 +416,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.2.1",
-            "sha256": "sha256-KHKOhhtXRKGVGPvM/4XAhmR/7fqj+qmaNdm/cHTf/Eo=",
+            "rev": "v6.2.2",
+            "sha256": "sha256-KMOVoUSiwK8yHqO5C1jHnoYHli5dSn/vZhsec2XrpmM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.2.1"
+        "version": "v6.2.2"
     },
     "vue_volar": {
         "cargoLocks": null,

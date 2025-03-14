@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "HoliColors_EN-US9033637774";
+    version = "BasqueDolmen_EN-US9089569057";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.HoliColors_EN-US9033637774_UHD.jpg";
-      sha256 = "sha256-qzxx0CnS3y0l2b7z6svPxVi9pN1vIfIz5dH/NqDwWsw=";
+      url = "https://www.bing.com/th?id=OHR.BasqueDolmen_EN-US9089569057_UHD.jpg";
+      sha256 = "sha256-agH1iJoQ9flaF24vFHwULp78CPOB2C14MkmpDUfdqgE=";
     };
   };
   chatgpt-web = {
@@ -131,10 +131,10 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.180.0";
+    version = "v1.181.2";
     src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.180.0/compressed-dist.tgz";
-      sha256 = "sha256-XUIAOg+Ce7/T0ug/u2+FIBYlP8GWHDkuZqXukA4y/r8=";
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.181.2/compressed-dist.tgz";
+      sha256 = "sha256-kcZFvnbNdCbIMBROEaQDqw1Ko5GfAzeXVkJFbBTcH8k=";
     };
   };
   mhutchie_git-graph = {
@@ -191,11 +191,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2340";
+    version = "0.4.2341";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2340/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2340.zip";
-      sha256 = "sha256-5IECw46NZgjEi6+7Cj/R8ZBKReY01omxd2l/YGAseV4=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2341/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2341.zip";
+      sha256 = "sha256-F7zGEYL25q5dbP/k9sekY+CJwI2d6F2C1G+xV/u1QVk=";
     };
   };
   staticcheck = {
@@ -229,13 +229,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v6.2.1";
+    version = "v6.2.2";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v6.2.1";
+      rev = "v6.2.2";
       fetchSubmodules = false;
-      sha256 = "sha256-KHKOhhtXRKGVGPvM/4XAhmR/7fqj+qmaNdm/cHTf/Eo=";
+      sha256 = "sha256-KMOVoUSiwK8yHqO5C1jHnoYHli5dSn/vZhsec2XrpmM=";
     };
   };
   vue_volar = {
