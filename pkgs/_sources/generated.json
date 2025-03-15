@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-agH1iJoQ9flaF24vFHwULp78CPOB2C14MkmpDUfdqgE=",
+            "sha256": "sha256-eyEiCy8Q44QYtC6QgZRFBGcxbHU0yCLgkogYifn+i64=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BasqueDolmen_EN-US9089569057_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ForumRomanum_EN-US9379132630_UHD.jpg"
         },
-        "version": "BasqueDolmen_EN-US9089569057"
+        "version": "ForumRomanum_EN-US9379132630"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -229,6 +229,27 @@
         },
         "version": "v1.4.13"
     },
+    "linux-armbian": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "linux-armbian",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "armbian",
+            "repo": "linux-rockchip",
+            "rev": "v24.11.1",
+            "sha256": "sha256-ZqEKQyFeE0UXN+tY8uAGrKgi9mXEp6s5WGyjVuxmuyM=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v24.11.1"
+    },
     "metacubexd": {
         "cargoLocks": null,
         "date": null,
@@ -238,11 +259,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-kcZFvnbNdCbIMBROEaQDqw1Ko5GfAzeXVkJFbBTcH8k=",
+            "sha256": "sha256-0eziX3+6YwPHJREFli/2K7VAo6AnvlSAEGxGTo2fJoo=",
             "type": "url",
-            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.181.2/compressed-dist.tgz"
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.186.1/compressed-dist.tgz"
         },
-        "version": "v1.181.2"
+        "version": "v1.186.1"
     },
     "mhutchie_git-graph": {
         "cargoLocks": null,
@@ -294,12 +315,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.9.9",
-            "sha256": "sha256-idt6g9tuTfX4XjgdY4gI0qJigGMsAMFq+ePjpEQ6WY4=",
+            "rev": "v1.9.11",
+            "sha256": "sha256-qGWOy4nKgCXt2AzQB/tbllRifuXxfZCt9ITE+KtThDU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.9.9"
+        "version": "v1.9.11"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -344,12 +365,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2341.zip",
-            "sha256": "sha256-F7zGEYL25q5dbP/k9sekY+CJwI2d6F2C1G+xV/u1QVk=",
+            "name": "rust-analyzer-0.4.2342.zip",
+            "sha256": "sha256-AQJfzUNRpMxU4cB7chLmM7XH+2ThGdnm0AMDnu/Tg7U=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2341/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2342/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2341"
+        "version": "0.4.2342"
     },
     "staticcheck": {
         "cargoLocks": null,
