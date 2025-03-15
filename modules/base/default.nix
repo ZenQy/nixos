@@ -1,7 +1,12 @@
-{ pkgs, secrets, ... }:
+{
+  config,
+  pkgs,
+  secrets,
+  ...
+}:
 
 {
-  system.stateVersion = "25.05";
+  system.stateVersion = builtins.substring 0 5 config.system.nixos.version;
   # nix
   nix = {
     # optimise.automatic = true;
@@ -49,13 +54,13 @@
   # nano
   programs.nano = {
     nanorc = ''
-      set autoindent     
-      set casesensitive  
-      set linenumbers          
-      set nohelp         
-      set smarthome              
-      set tabsize 2      
-      set tabstospaces   
+      set autoindent
+      set casesensitive
+      set linenumbers
+      set nohelp
+      set smarthome
+      set tabsize 2
+      set tabstospaces
     '';
     syntaxHighlight = true;
   };

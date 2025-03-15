@@ -131,3 +131,7 @@ fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper
 [chatgpt-web]
 src.git = "https://github.com/xqdoo00o/chatgpt-web"
 fetch.github = "xqdoo00o/chatgpt-web"
+
+[linux-armbian]
+src.github_tag = "armbian/linux-rockchip"
+fetch.github = "armbian/linux-rockchip"
