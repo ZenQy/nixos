@@ -77,6 +77,7 @@
                     "osaka-arm"
                     "tx3"
                     "rock-5b"
+                    "e20c"
                   ]
                 then
                   "aarch64-linux"
