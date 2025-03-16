@@ -12,24 +12,24 @@
   };
   alist = {
     pname = "alist";
-    version = "v3.42.0";
+    version = "v3.43.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "alist";
-      rev = "v3.42.0";
+      rev = "v3.43.0";
       fetchSubmodules = false;
-      sha256 = "sha256-r9hL4bxeCiJKHiWMyN4MxqDeN3NhlY8pnpxBCaWDz9c=";
+      sha256 = "sha256-H48LKi9AFyqxLzeu4DTavYsMlkQt4EUBbYZnzjMOleo=";
     };
   };
   alist-web = {
     pname = "alist-web";
-    version = "3.42.0";
+    version = "3.43.0";
     src = fetchFromGitHub {
       owner = "alist-org";
       repo = "web-dist";
-      rev = "3.42.0";
+      rev = "3.43.0";
       fetchSubmodules = false;
-      sha256 = "sha256-5DQ46Bkc8d8zot5IqxpjNKmIa5xU1AjVfDFciFNiAwE=";
+      sha256 = "sha256-iEfQCVnWQztK4+JhnRFL06AixtdL/6vd3pBQiq/fTGE=";
     };
   };
   allinone = {
@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "ForumRomanum_EN-US9379132630";
+    version = "PandaSnow_EN-US9432739016";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.ForumRomanum_EN-US9379132630_UHD.jpg";
-      sha256 = "sha256-eyEiCy8Q44QYtC6QgZRFBGcxbHU0yCLgkogYifn+i64=";
+      url = "https://www.bing.com/th?id=OHR.PandaSnow_EN-US9432739016_UHD.jpg";
+      sha256 = "sha256-sGOuAPnG1/KXE1maXuMcvPhHn90gMReUJQxbgKEn6V8=";
     };
   };
   chatgpt-web = {
@@ -202,11 +202,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2342";
+    version = "0.4.2343";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2342/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2342.zip";
-      sha256 = "sha256-AQJfzUNRpMxU4cB7chLmM7XH+2ThGdnm0AMDnu/Tg7U=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2343/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2343.zip";
+      sha256 = "sha256-fcAW3eQs764pQZlZXUmHrG+zVamQ2BiDB7CKC3buJ40=";
     };
   };
   staticcheck = {
