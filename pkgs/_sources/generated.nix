@@ -37,8 +37,8 @@
     version = "latest";
     src = dockerTools.pullImage {
       imageName = "youshandefeiyang/allinone";
-      imageDigest = "sha256:459db7a1481445eb2d3a91c03427971a36e1305e39c116486d393a9941307d37";
-      sha256 = "sha256-w9rIRTAKUpLHkfgaRGN9yvKFwFd+9YDLHlv8ugL8jmU=";
+      imageDigest = "sha256:5db8a9461059dfc338e741ee11d4ed003c9b3b8d7767633e7bda0d3fc0ac57f1";
+      sha256 = "sha256-hn69S3vxKKqhJ6o4cKGl0HNGWYaboP7fVAVb/1eCb0E=";
       finalImageTag = "latest";
       os = "linux";
       arch = "arm64";
@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "PandaSnow_EN-US9432739016";
+    version = "BeckettBridge_EN-US9511078525";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.PandaSnow_EN-US9432739016_UHD.jpg";
-      sha256 = "sha256-sGOuAPnG1/KXE1maXuMcvPhHn90gMReUJQxbgKEn6V8=";
+      url = "https://www.bing.com/th?id=OHR.BeckettBridge_EN-US9511078525_UHD.jpg";
+      sha256 = "sha256-4rKCDs5wQ7UCrt+3B9hMymwi6CmYI6R4nZS2C35U8I8=";
     };
   };
   chatgpt-web = {
@@ -202,11 +202,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2343";
+    version = "0.4.2344";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2343/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2343.zip";
-      sha256 = "sha256-fcAW3eQs764pQZlZXUmHrG+zVamQ2BiDB7CKC3buJ40=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2344/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2344.zip";
+      sha256 = "sha256-hSm8lx8dK7P9pxIMJgq1vS3EvY3DcYL41QihE6UHa74=";
     };
   };
   staticcheck = {

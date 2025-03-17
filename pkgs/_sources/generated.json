@@ -67,11 +67,11 @@
             "arch": "arm64",
             "finalImageName": null,
             "finalImageTag": null,
-            "imageDigest": "sha256:459db7a1481445eb2d3a91c03427971a36e1305e39c116486d393a9941307d37",
+            "imageDigest": "sha256:5db8a9461059dfc338e741ee11d4ed003c9b3b8d7767633e7bda0d3fc0ac57f1",
             "imageName": "youshandefeiyang/allinone",
             "imageTag": "latest",
             "os": "linux",
-            "sha256": "sha256-w9rIRTAKUpLHkfgaRGN9yvKFwFd+9YDLHlv8ugL8jmU=",
+            "sha256": "sha256-hn69S3vxKKqhJ6o4cKGl0HNGWYaboP7fVAVb/1eCb0E=",
             "tlsVerify": null
         },
         "version": "latest"
@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-sGOuAPnG1/KXE1maXuMcvPhHn90gMReUJQxbgKEn6V8=",
+            "sha256": "sha256-4rKCDs5wQ7UCrt+3B9hMymwi6CmYI6R4nZS2C35U8I8=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.PandaSnow_EN-US9432739016_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.BeckettBridge_EN-US9511078525_UHD.jpg"
         },
-        "version": "PandaSnow_EN-US9432739016"
+        "version": "BeckettBridge_EN-US9511078525"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -365,12 +365,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2343.zip",
-            "sha256": "sha256-fcAW3eQs764pQZlZXUmHrG+zVamQ2BiDB7CKC3buJ40=",
+            "name": "rust-analyzer-0.4.2344.zip",
+            "sha256": "sha256-hSm8lx8dK7P9pxIMJgq1vS3EvY3DcYL41QihE6UHa74=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2343/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2344/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2343"
+        "version": "0.4.2344"
     },
     "staticcheck": {
         "cargoLocks": null,
