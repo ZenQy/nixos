@@ -8,19 +8,24 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  # nixpkgs.hostPlatform.system = "aarch64-linux";
+  hardware.deviceTree = {
+    enable = true;
+    name = "rockchip/rk3588-rock-5b.dtb";
+    filter = "*rock-5b*.dtb";
+  };
+
   boot = {
-    initrd.availableKernelModules = [
-      "nvme"
-      "sd_mod"
+    loader.grub.enable = false;
+    loader.generic-extlinux-compatible.enable = true;
+    loader.generic-extlinux-compatible.configurationLimit = 2;
+    kernelParams = [
+      "console=ttyS0,1500000"
+      "console=tty0"
     ];
-    initrd.kernelModules = [ ];
-    kernelModules = [ ];
-    extraModulePackages = [ ];
   };
 
   fileSystems."/" = {
-    device = "/dev/disk/by-label/ROOTFS";
+    device = "/dev/disk/by-partlabel/disk-main-root";
     fsType = "btrfs";
     options = [
       "compress-force=zstd"
@@ -30,19 +35,11 @@
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-label/EFI";
+    device = "/dev/disk/by-partlabel/disk-main-boot";
     fsType = "vfat";
     options = [ "umask=0077" ];
   };
 
   swapDevices = [ ];
-  boot.loader = {
-    efi.canTouchEfiVariables = false;
-    systemd-boot = {
-      configurationLimit = 1;
-      consoleMode = "auto";
-      enable = true;
-    };
-    timeout = 1;
-  };
+
 }

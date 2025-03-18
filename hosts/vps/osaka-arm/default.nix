@@ -67,6 +67,11 @@
           root * ${pkgs.it-tools}/share/it-tools
           file_server browse
         }
+
+        f.${secrets.domain} {
+          root * /var/lib/caddy/file
+          file_server browse
+        }
       '';
     };
 
