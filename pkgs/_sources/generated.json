@@ -67,11 +67,11 @@
             "arch": "arm64",
             "finalImageName": null,
             "finalImageTag": null,
-            "imageDigest": "sha256:5db8a9461059dfc338e741ee11d4ed003c9b3b8d7767633e7bda0d3fc0ac57f1",
+            "imageDigest": "sha256:e2d7386cd089ad741c16a3736157ca68aed47c019db1fbcaf6c8fbaa4b55f5cf",
             "imageName": "youshandefeiyang/allinone",
             "imageTag": "latest",
             "os": "linux",
-            "sha256": "sha256-hn69S3vxKKqhJ6o4cKGl0HNGWYaboP7fVAVb/1eCb0E=",
+            "sha256": "sha256-7DDpGxwOKZUHnQhHY3Rugim/Bi1XUaV7PPtnifLo40w=",
             "tlsVerify": null
         },
         "version": "latest"
@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-4rKCDs5wQ7UCrt+3B9hMymwi6CmYI6R4nZS2C35U8I8=",
+            "sha256": "sha256-bHRNRkv0IjdIgVPmsvhTggcwHlZKZbBgdhSd5Ap9y64=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BeckettBridge_EN-US9511078525_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.SedonaSpring_EN-US9611080272_UHD.jpg"
         },
-        "version": "BeckettBridge_EN-US9511078525"
+        "version": "SedonaSpring_EN-US9611080272"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -201,12 +201,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "nix-ide-0.4.12.zip",
-            "sha256": "sha256-3pXypgAwg/iEBUqPeNsyoX2oYqlKMVdemEhmhy1PuGU=",
+            "name": "nix-ide-0.4.16.zip",
+            "sha256": "sha256-MdFDOg9uTUzYtRW2Kk4L8V3T/87MRDy1HyXY9ikqDFY=",
             "type": "url",
-            "url": "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.12/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://jnoortheen.gallery.vsassets.io/_apis/public/gallery/publisher/jnoortheen/extension/nix-ide/0.4.16/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.12"
+        "version": "0.4.16"
     },
     "leetgo": {
         "cargoLocks": null,
@@ -365,12 +365,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2344.zip",
-            "sha256": "sha256-hSm8lx8dK7P9pxIMJgq1vS3EvY3DcYL41QihE6UHa74=",
+            "name": "rust-analyzer-0.4.2346.zip",
+            "sha256": "sha256-PQocdkb9GW4AlQpIb0g7GhcRbAg/Cd6zHPjtlkt/q0o=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2344/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2346/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2344"
+        "version": "0.4.2346"
     },
     "staticcheck": {
         "cargoLocks": null,
