@@ -80,7 +80,7 @@ buildGo124Module {
     GOROOT=''${GOROOT-$(go env GOROOT)} swag init --pd -d . -g ./cmd/dashboard/main.go -o ./cmd/dashboard/docs --parseGoList=false
   '';
 
-  vendorHash = "sha256-VEWev+RPt7WSa8UsiADxUndeCmnUmhQddriJ2tQoNxA=";
+  vendorHash = "sha256-PcA2t5f+PWb3kE2SUjWWBEIJJa4sng4CK8SqJPusG48=";
 
   ldflags = [
     "-s"
