@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mkFn42li0sJcPENkY6A5d74xpP+Ns4xRyvCY9qhHxHA=",
+            "sha256": "sha256-uzHoA3dt/SNjep4FSMoVAcJQAJmh1JQPg9eCRVHrOCk=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.NebraskaStorm_EN-US1163295363_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.ElephantGrass_EN-US1398774650_UHD.jpg"
         },
-        "version": "NebraskaStorm_EN-US1163295363"
+        "version": "ElephantGrass_EN-US1398774650"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -365,12 +365,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2351.zip",
-            "sha256": "sha256-FZzwLNeD627rvBZqkeObIGR3Ri4UuGwyK+q9a8l+IHQ=",
+            "name": "rust-analyzer-0.4.2354.zip",
+            "sha256": "sha256-nZH3YIVvOU2I2obXUyi4D68AybhWcmRNyWibDHlmGyE=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2351/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2354/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2351"
+        "version": "0.4.2354"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -437,12 +437,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.2.2",
-            "sha256": "sha256-KMOVoUSiwK8yHqO5C1jHnoYHli5dSn/vZhsec2XrpmM=",
+            "rev": "v6.2.3",
+            "sha256": "sha256-SK3QIpg4U2VwF0Gtv28byPbguM+5mo8yKWeIN+jmRAA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.2.2"
+        "version": "v6.2.3"
     },
     "vue_volar": {
         "cargoLocks": null,
