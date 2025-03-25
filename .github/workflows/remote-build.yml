@@ -23,8 +23,6 @@ jobs:
         hosts:
           - osaka-1
           - osaka-2
-          - tokyo-1
-          - tokyo-2
           - claw
           - natvps
           - alice
@@ -77,7 +75,7 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
       - name: Set up WARP
-        if: ${{ matrix.hosts == 'alice' || matrix.hosts == 'natvps' }}
+        if: ${{ matrix.hosts == 'alice' || matrix.hosts == 'natvps' || matrix.hosts == 'legend' }}
         uses: fscarmen/warp-on-actions@v1.3
         with:
           stack: ipv6

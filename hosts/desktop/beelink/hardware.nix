@@ -17,9 +17,16 @@
       "usbhid"
       "sd_mod"
     ];
-    initrd.kernelModules = [ ];
     kernelModules = [ "kvm-amd" ];
-    extraModulePackages = [ ];
+    loader = {
+      efi.canTouchEfiVariables = false;
+      systemd-boot = {
+        configurationLimit = 1;
+        consoleMode = "auto";
+        enable = true;
+      };
+      timeout = 2;
+    };
   };
 
   fileSystems."/" = {
@@ -106,13 +113,4 @@
 
   hardware.amdgpu.initrd.enable = true;
 
-  boot.loader = {
-    efi.canTouchEfiVariables = false;
-    systemd-boot = {
-      configurationLimit = 1;
-      consoleMode = "auto";
-      enable = true;
-    };
-    timeout = 2;
-  };
 }

@@ -8,20 +8,17 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  hardware.deviceTree = {
-    enable = true;
-    name = "rockchip/rk3588-rock-5b.dtb";
-    filter = "*rock-5b*.dtb";
-  };
-
   boot = {
-    loader.grub.enable = false;
-    loader.generic-extlinux-compatible.enable = true;
-    loader.generic-extlinux-compatible.configurationLimit = 2;
-    kernelParams = [
-      "console=ttyS0,1500000"
-      "console=tty0"
-    ];
+    initrd.availableKernelModules = [ "nvme" ];
+    loader = {
+      efi.canTouchEfiVariables = false;
+      systemd-boot = {
+        configurationLimit = 2;
+        consoleMode = "auto";
+        enable = true;
+      };
+      timeout = 1;
+    };
   };
 
   fileSystems."/" = {

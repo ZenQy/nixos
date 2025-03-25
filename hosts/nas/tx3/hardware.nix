@@ -15,10 +15,6 @@
   };
 
   boot = {
-    initrd.availableKernelModules = [ "usb_storage" ];
-    initrd.kernelModules = [ ];
-    kernelModules = [ ];
-    extraModulePackages = [ ];
     loader.grub.enable = false;
     loader.generic-extlinux-compatible.enable = true;
     loader.generic-extlinux-compatible.configurationLimit = 2;
@@ -27,8 +23,6 @@
       "console=tty0"
     ];
   };
-
-  # nixpkgs.hostPlatform.system = "aarch64-linux";
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/ROOTFS_EMMC";

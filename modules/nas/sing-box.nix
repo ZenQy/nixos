@@ -82,7 +82,7 @@ let
               "blizzard.com"
               "test-ipv6.com"
               "10155.com"
-              "940940.xyz"
+              "nezha.${secrets.domain}"
               "binmt.cc"
             ];
           }
