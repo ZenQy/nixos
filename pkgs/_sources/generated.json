@@ -67,11 +67,11 @@
             "arch": "arm64",
             "finalImageName": null,
             "finalImageTag": null,
-            "imageDigest": "sha256:e2d7386cd089ad741c16a3736157ca68aed47c019db1fbcaf6c8fbaa4b55f5cf",
+            "imageDigest": "sha256:6753df040d1cafb397e35c4f0b297958c337b533fab5f6309c213f5170cd1abe",
             "imageName": "youshandefeiyang/allinone",
             "imageTag": "latest",
             "os": "linux",
-            "sha256": "sha256-7DDpGxwOKZUHnQhHY3Rugim/Bi1XUaV7PPtnifLo40w=",
+            "sha256": "sha256-GdPQBs3n4mSfQxySFceoOPWcNEX6ooxdBtKnGtsLcVg=",
             "tlsVerify": null
         },
         "version": "latest"
@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-s0a414sfSopALpUCeZ7+mQh5knlNhVZNjEEtM9I4Abk=",
+            "sha256": "sha256-YhJmjsYD0sS+ahYskFFnlrBiZuy5xDW0y9TKQApJUnM=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.HobbitHole_EN-US1602468401_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CrystalManatee_EN-US1724106178_UHD.jpg"
         },
-        "version": "HobbitHole_EN-US1602468401"
+        "version": "CrystalManatee_EN-US1724106178"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -315,12 +315,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.10.3",
-            "sha256": "sha256-ZlKTZE/m6PZDl9YN7PTFZcjYOz4+D117VGk+5J7WL1Q=",
+            "rev": "v1.10.4",
+            "sha256": "sha256-9dw1MT3v7ZCpC/MrlZDJmZ9EdTNVIbE0b45ao3eXO7o=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.10.3"
+        "version": "v1.10.4"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -365,12 +365,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2355.zip",
-            "sha256": "sha256-MZUbV3P+uZ7AEMq3IhV/p/URP45UeN075N8eM6Hc8K4=",
+            "name": "rust-analyzer-0.4.2356.zip",
+            "sha256": "sha256-OBSYDwdVO1yzf2xL+6s3mknMoHbPgOf4Zx3Zi5BcYYU=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2355/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2356/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2355"
+        "version": "0.4.2356"
     },
     "staticcheck": {
         "cargoLocks": null,
