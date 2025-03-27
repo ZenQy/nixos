@@ -28,12 +28,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "alist",
-            "rev": "v3.43.0",
-            "sha256": "sha256-H48LKi9AFyqxLzeu4DTavYsMlkQt4EUBbYZnzjMOleo=",
+            "rev": "v3.44.0",
+            "sha256": "sha256-MgNoqR9RYRZhQSCplZwqQECE+6/33vijjx0AnC0U2QA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.43.0"
+        "version": "v3.44.0"
     },
     "alist-web": {
         "cargoLocks": null,
@@ -49,12 +49,12 @@
             "name": null,
             "owner": "alist-org",
             "repo": "web-dist",
-            "rev": "3.43.0",
-            "sha256": "sha256-iEfQCVnWQztK4+JhnRFL06AixtdL/6vd3pBQiq/fTGE=",
+            "rev": "3.44.0",
+            "sha256": "sha256-nsQihiYJIOd72ppTy1ewZULTzx8agD56mIBztBfhriA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3.43.0"
+        "version": "3.44.0"
     },
     "allinone": {
         "cargoLocks": null,
@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-YhJmjsYD0sS+ahYskFFnlrBiZuy5xDW0y9TKQApJUnM=",
+            "sha256": "sha256-W52opSM9qfZ2xkebJb0eZZnv4UUlZ9zKx64sRv+O6f0=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.CrystalManatee_EN-US1724106178_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.OdeonAthens_EN-US2159327450_UHD.jpg"
         },
-        "version": "CrystalManatee_EN-US1724106178"
+        "version": "OdeonAthens_EN-US2159327450"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -315,12 +315,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.10.4",
-            "sha256": "sha256-9dw1MT3v7ZCpC/MrlZDJmZ9EdTNVIbE0b45ao3eXO7o=",
+            "rev": "v1.10.5",
+            "sha256": "sha256-33mY9ZDbblJKFmJ3XK3fsSKl/JKdxQ+tuyAQ1kOLDAA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.10.4"
+        "version": "v1.10.5"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -365,12 +365,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2356.zip",
-            "sha256": "sha256-OBSYDwdVO1yzf2xL+6s3mknMoHbPgOf4Zx3Zi5BcYYU=",
+            "name": "rust-analyzer-0.4.2357.zip",
+            "sha256": "sha256-74XGZHLcIlm3wBQX9WUBcuDZc7alfpM9KGmyJO7IxFA=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2356/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2357/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2356"
+        "version": "0.4.2357"
     },
     "staticcheck": {
         "cargoLocks": null,
