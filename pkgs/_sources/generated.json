@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-W52opSM9qfZ2xkebJb0eZZnv4UUlZ9zKx64sRv+O6f0=",
+            "sha256": "sha256-i+Ipe7B7ORaBCj7fGO8+U2wggvpZSp43KJcU4z15EPk=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.OdeonAthens_EN-US2159327450_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.NestingMonarch_EN-US2312410271_UHD.jpg"
         },
-        "version": "OdeonAthens_EN-US2159327450"
+        "version": "NestingMonarch_EN-US2312410271"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -365,12 +365,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2357.zip",
-            "sha256": "sha256-74XGZHLcIlm3wBQX9WUBcuDZc7alfpM9KGmyJO7IxFA=",
+            "name": "rust-analyzer-0.4.2358.zip",
+            "sha256": "sha256-ZY43NF3GgxhNr9vVly54wdv53kQ5FJBa/PWvgAE8ZnM=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2357/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2358/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2357"
+        "version": "0.4.2358"
     },
     "staticcheck": {
         "cargoLocks": null,
