@@ -44,12 +44,12 @@ jobs:
           fetch-depth: 1
 
       - name: SSH Private Key
-        uses: webfactory/ssh-agent@v0.9.0
+        uses: webfactory/ssh-agent@v0.9.1
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Install nixFlake
-        uses: cachix/install-nix-action@v30
+        uses: cachix/install-nix-action@v31
         with:
           extra_nix_config: |
             trusted-public-keys = zenqy.cachix.org-1:G5csLBsu/kQIOXU7XUiqeMacwzN1WQWv0+GysTVmJgo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
@@ -59,7 +59,7 @@ jobs:
         uses: DeterminateSystems/flakehub-cache-action@main
 
       - name: Use Cachix
-        uses: cachix/cachix-action@v15
+        uses: cachix/cachix-action@v16
         with:
           name: zenqy
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
@@ -74,8 +74,16 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
+      - id: set-ipv6
+        name: Set IPv6 tag
+        run: |
+          host=${{matrix.hosts}}
+          if [[ $host == 'alice' || $host == 'natvps' || $host == 'legend' ]]; then
+            echo "ipv6=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Set up WARP
-        if: ${{ matrix.hosts == 'alice' || matrix.hosts == 'natvps' || matrix.hosts == 'legend' }}
+        if: ${{ steps.set-ipv6.outputs.ipv6 == 'true' }}
         uses: fscarmen/warp-on-actions@v1.3
         with:
           stack: ipv6
@@ -88,7 +96,19 @@ jobs:
           nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
 
       - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@v1.2.1
+        if: ${{ steps.set-ipv6.outputs.ipv6 == 'true' }}
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets[env.HOST] }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          protocol: tcp6
+          port: "2022"
+          script: nix-collect-garbage -d
+
+      - name: executing remote ssh commands using ssh key
+        if: ${{ steps.set-ipv6.outputs.ipv6 != 'true' }}
+        uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets[env.HOST] }}
           username: root
