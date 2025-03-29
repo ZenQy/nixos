@@ -85,11 +85,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-i+Ipe7B7ORaBCj7fGO8+U2wggvpZSp43KJcU4z15EPk=",
+            "sha256": "sha256-kcZJxdrdOnfUIlEN3tnSvm8X/pIWwdDsXmnwEVmxcf4=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.NestingMonarch_EN-US2312410271_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CarrizoBloom_EN-US2504669059_UHD.jpg"
         },
-        "version": "NestingMonarch_EN-US2312410271"
+        "version": "CarrizoBloom_EN-US2504669059"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -315,12 +315,12 @@
             "name": null,
             "owner": "naiba",
             "repo": "nezha",
-            "rev": "v1.10.5",
-            "sha256": "sha256-33mY9ZDbblJKFmJ3XK3fsSKl/JKdxQ+tuyAQ1kOLDAA=",
+            "rev": "v1.10.7",
+            "sha256": "sha256-ncw8FBm/hjK1N8IfZldLP42ukDyXrwEaU3Y+BJZoPr8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.10.5"
+        "version": "v1.10.7"
     },
     "pkief_material-icon-theme": {
         "cargoLocks": null,
@@ -365,12 +365,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2358.zip",
-            "sha256": "sha256-ZY43NF3GgxhNr9vVly54wdv53kQ5FJBa/PWvgAE8ZnM=",
+            "name": "rust-analyzer-0.4.2359.zip",
+            "sha256": "sha256-Cuo+3nPr6gOruyYWJMKXL+y9oZo06gFjNz69D+qdtSs=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2358/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2359/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2358"
+        "version": "0.4.2359"
     },
     "staticcheck": {
         "cargoLocks": null,
