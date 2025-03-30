@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "CarrizoBloom_EN-US2504669059";
+    version = "SydneyHarbour_EN-US2885246621";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.CarrizoBloom_EN-US2504669059_UHD.jpg";
-      sha256 = "sha256-kcZJxdrdOnfUIlEN3tnSvm8X/pIWwdDsXmnwEVmxcf4=";
+      url = "https://www.bing.com/th?id=OHR.SydneyHarbour_EN-US2885246621_UHD.jpg";
+      sha256 = "sha256-J3QoLBxBtfUWHyxGI0cmUOxC9P6aO8uyK1UJyYMV5bk=";
     };
   };
   chatgpt-web = {
@@ -202,11 +202,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2359";
+    version = "0.4.2360";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2359/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2359.zip";
-      sha256 = "sha256-Cuo+3nPr6gOruyYWJMKXL+y9oZo06gFjNz69D+qdtSs=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2360/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2360.zip";
+      sha256 = "sha256-7Q0YWk4HoVw5maKm6egqZjP1zVXp6BBg5VwKKIsZSPA=";
     };
   };
   staticcheck = {
