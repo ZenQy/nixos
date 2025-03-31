@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "SydneyHarbour_EN-US2885246621";
+    version = "ItalyOstuni_EN-US2964422003";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SydneyHarbour_EN-US2885246621_UHD.jpg";
-      sha256 = "sha256-J3QoLBxBtfUWHyxGI0cmUOxC9P6aO8uyK1UJyYMV5bk=";
+      url = "https://www.bing.com/th?id=OHR.ItalyOstuni_EN-US2964422003_UHD.jpg";
+      sha256 = "sha256-uxKeUUfCPAQSNwKDdNmkNWglaBfajs/yo5PGIUdAyaI=";
     };
   };
   chatgpt-web = {
@@ -170,13 +170,13 @@
   };
   nezha-dashboard = {
     pname = "nezha-dashboard";
-    version = "v1.10.7";
+    version = "v1.10.8";
     src = fetchFromGitHub {
       owner = "naiba";
       repo = "nezha";
-      rev = "v1.10.7";
+      rev = "v1.10.8";
       fetchSubmodules = false;
-      sha256 = "sha256-ncw8FBm/hjK1N8IfZldLP42ukDyXrwEaU3Y+BJZoPr8=";
+      sha256 = "sha256-uYZclZPvjiOpCVpxkyU6BjdxBmdryBzoGkTctsRuapY=";
     };
   };
   pkief_material-icon-theme = {
@@ -202,11 +202,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2360";
+    version = "0.4.2361";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2360/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2360.zip";
-      sha256 = "sha256-7Q0YWk4HoVw5maKm6egqZjP1zVXp6BBg5VwKKIsZSPA=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2361/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2361.zip";
+      sha256 = "sha256-W1BKxckiOEvG+0yZF6Hl+MmGCapiMBVw9zYJiz5KYmk=";
     };
   };
   staticcheck = {
@@ -240,13 +240,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v6.2.3";
+    version = "v6.2.4";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v6.2.3";
+      rev = "v6.2.4";
       fetchSubmodules = false;
-      sha256 = "sha256-SK3QIpg4U2VwF0Gtv28byPbguM+5mo8yKWeIN+jmRAA=";
+      sha256 = "sha256-u0pTHOCeAgUSY8//+qR/4em5XOpNTnYa9EkCve57bP4=";
     };
   };
   vue_volar = {
