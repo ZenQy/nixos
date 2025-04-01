@@ -46,10 +46,10 @@
   };
   bingimg = {
     pname = "bingimg";
-    version = "ItalyOstuni_EN-US2964422003";
+    version = "TicanFrog_EN-US3006346741";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.ItalyOstuni_EN-US2964422003_UHD.jpg";
-      sha256 = "sha256-uxKeUUfCPAQSNwKDdNmkNWglaBfajs/yo5PGIUdAyaI=";
+      url = "https://www.bing.com/th?id=OHR.TicanFrog_EN-US3006346741_UHD.jpg";
+      sha256 = "sha256-46ulnq+h3gWe2w9Y2GtGyZ5zBt+Yr3/cEtBFESxf0+w=";
     };
   };
   chatgpt-web = {
@@ -86,10 +86,10 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2025.03.02";
+    version = "v2025.04.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.03.02/zenith.dict";
-      sha256 = "sha256-ahNqi5bpGJ4LUjnjz5Emkv9sQmQcK91YxsyFLsccI4M=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.04.02/zenith.dict";
+      sha256 = "sha256-dqhv1Ei/2YGBAJBtYQDhkoDR2/esA7VhCCqz0qeZPwg=";
     };
   };
   golang_go = {
@@ -202,11 +202,11 @@
   };
   rust-lang_rust-analyzer = {
     pname = "rust-lang_rust-analyzer";
-    version = "0.4.2361";
+    version = "0.4.2363";
     src = fetchurl {
-      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2361/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "rust-analyzer-0.4.2361.zip";
-      sha256 = "sha256-W1BKxckiOEvG+0yZF6Hl+MmGCapiMBVw9zYJiz5KYmk=";
+      url = "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2363/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "rust-analyzer-0.4.2363.zip";
+      sha256 = "sha256-QcjbFTk/lc5t3X5PMHmCjtngB8n7BNqglDwilfaHG00=";
     };
   };
   staticcheck = {
@@ -231,11 +231,11 @@
   };
   usernamehw_errorlens = {
     pname = "usernamehw_errorlens";
-    version = "3.24.0";
+    version = "3.25.0";
     src = fetchurl {
-      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.24.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-      name = "errorlens-3.24.0.zip";
-      sha256 = "sha256-r5xXR4rDbP+2bk66yqPoLod8IZXFrntcKHuWbAiFWwE=";
+      url = "https://usernamehw.gallery.vsassets.io/_apis/public/gallery/publisher/usernamehw/extension/errorlens/3.25.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+      name = "errorlens-3.25.0.zip";
+      sha256 = "sha256-Gszz6sGJt6DBgVCH7tgTGTX73TbKBwityJn7cY39WmU=";
     };
   };
   vitejs = {
