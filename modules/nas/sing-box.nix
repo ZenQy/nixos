@@ -1,7 +1,12 @@
-{ secrets, pkgs, ... }:
+{
+  config,
+  secrets,
+  pkgs,
+  ...
+}:
 
 let
-
+  host = config.networking.hostName;
   log = {
     level = "info";
     timestamp = false;
@@ -61,118 +66,154 @@ let
     strategy = "prefer_ipv4";
   };
   route = {
-    rule_set = [
-      {
-        tag = "rule_set_direct";
-        type = "inline";
-        rules = [
-          {
-            process_name = [
-              "transmission-daemon"
-              "nezha-agent"
-            ];
-          }
-          {
-            domain_suffix = [
-              "oracle.com"
-              ".cn"
-              "allawnfs.com"
-              "epicgames.com"
-              "msftconnecttest.com"
-              "blizzard.com"
-              "test-ipv6.com"
-              "10155.com"
-              "nezha.${secrets.domain}"
-              "binmt.cc"
-            ];
-          }
-        ];
-      }
-      {
-        tag = "rule_set_proxy";
-        type = "inline";
-        rules = [
-          {
-            domain_suffix = [
-              "googleapis.cn"
-            ];
-          }
-        ];
-      }
-      {
-        tag = "geosite-cn";
-        type = "remote";
-        format = "binary";
-        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs";
-        download_detour = "proxy";
-      }
-      {
-        tag = "geoip-cn";
-        type = "remote";
-        format = "binary";
-        url = "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs";
-        download_detour = "proxy";
-      }
-      {
-        tag = "geosite-geolocation-cn@ads";
-        type = "remote";
-        format = "binary";
-        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn@ads.srs";
-        download_detour = "proxy";
-      }
-      {
-        tag = "geosite-geolocation-!cn@ads";
-        type = "remote";
-        format = "binary";
-        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn@ads.srs";
-        download_detour = "proxy";
-      }
-    ];
-    rules = [
-      {
-        action = "sniff";
-      }
-      {
-        protocol = "dns";
-        action = "hijack-dns";
-      }
-      {
-        ip_is_private = true;
-        outbound = "direct";
-      }
-      {
-        clash_mode = "global";
-        outbound = "proxy";
-      }
-      {
-        clash_mode = "direct";
-        outbound = "direct";
-      }
-      {
-        rule_set = "rule_set_direct";
-        outbound = "direct";
-      }
-      {
-        rule_set = "rule_set_proxy";
-        outbound = "proxy";
-      }
-      {
-        rule_set = "geosite-geolocation-cn@ads";
-        action = "reject";
-      }
-      {
-        rule_set = "geosite-geolocation-!cn@ads";
-        action = "reject";
-      }
-      {
-        rule_set = "geosite-cn";
-        outbound = "direct";
-      }
-      {
-        rule_set = "geoip-cn";
-        outbound = "direct";
-      }
-    ];
+    rule_set =
+      [
+        {
+          tag = "rule_set_direct";
+          type = "inline";
+          rules = [
+            {
+              process_name = [
+                "transmission-daemon"
+                "nezha-agent"
+              ];
+            }
+            {
+              domain_suffix = [
+                "oracle.com"
+                ".cn"
+                "allawnfs.com"
+                "epicgames.com"
+                "msftconnecttest.com"
+                "blizzard.com"
+                "test-ipv6.com"
+                "10155.com"
+                "nezha.${secrets.domain}"
+                "binmt.cc"
+              ];
+            }
+          ];
+        }
+        {
+          tag = "rule_set_proxy";
+          type = "inline";
+          rules = [
+            {
+              domain_suffix = [
+                "googleapis.cn"
+              ];
+            }
+          ];
+        }
+        {
+          tag = "geosite-cn";
+          type = "remote";
+          format = "binary";
+          url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs";
+          download_detour = "proxy";
+        }
+        {
+          tag = "geoip-cn";
+          type = "remote";
+          format = "binary";
+          url = "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs";
+          download_detour = "proxy";
+        }
+        {
+          tag = "geosite-geolocation-cn@ads";
+          type = "remote";
+          format = "binary";
+          url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn@ads.srs";
+          download_detour = "proxy";
+        }
+        {
+          tag = "geosite-geolocation-!cn@ads";
+          type = "remote";
+          format = "binary";
+          url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn@ads.srs";
+          download_detour = "proxy";
+        }
+      ]
+      ++ (
+        if host == "e20c" then
+          [
+            {
+              tag = "rule_set_iptv";
+              type = "inline";
+              rules = [
+                {
+                  network = [
+                    "udp"
+                  ];
+                  ip_cidr = [
+                    "238.1.78.0/23"
+                  ];
+                }
+              ];
+            }
+          ]
+        else
+          [ ]
+      );
+    rules =
+      [
+        {
+          action = "sniff";
+        }
+        {
+          protocol = "dns";
+          action = "hijack-dns";
+        }
+        {
+          ip_is_private = true;
+          outbound = "direct";
+        }
+      ]
+      ++ (
+        if host == "e20c" then
+          [
+            {
+              rule_set = "rule_set_iptv";
+              outbound = "iptv";
+            }
+          ]
+        else
+          [ ]
+      )
+      ++ [
+        {
+          clash_mode = "global";
+          outbound = "proxy";
+        }
+        {
+          clash_mode = "direct";
+          outbound = "direct";
+        }
+        {
+          rule_set = "rule_set_direct";
+          outbound = "direct";
+        }
+        {
+          rule_set = "rule_set_proxy";
+          outbound = "proxy";
+        }
+        {
+          rule_set = "geosite-geolocation-cn@ads";
+          action = "reject";
+        }
+        {
+          rule_set = "geosite-geolocation-!cn@ads";
+          action = "reject";
+        }
+        {
+          rule_set = "geosite-cn";
+          outbound = "direct";
+        }
+        {
+          rule_set = "geoip-cn";
+          outbound = "direct";
+        }
+      ];
     final = "proxy";
     auto_detect_interface = true;
   };
@@ -289,7 +330,19 @@ let
         tag = "direct";
         type = "direct";
       }
-    ];
+    ]
+    ++ (
+      if host == "e20c" then
+        [
+          {
+            tag = "iptv";
+            type = "direct";
+            bind_interface = "eth1";
+          }
+        ]
+      else
+        [ ]
+    );
   experimental = {
     cache_file = {
       enabled = true;

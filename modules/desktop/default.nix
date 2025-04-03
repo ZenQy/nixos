@@ -74,8 +74,8 @@
     # python3Packages.pip
     # dig
     # ghostty
-    putty
-    parted
+    # putty
+    # parted
   ];
 
   xdg.mime = {

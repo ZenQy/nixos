@@ -1,4 +1,4 @@
-{ ... }:
+{ secrets, ... }:
 
 {
   imports = [
@@ -8,11 +8,29 @@
   systemd.network.networks = {
     eth0 = {
       name = "eth0";
-      DHCP = "yes";
+      address = [
+        "10.0.0.16/24"
+      ];
+      gateway = [
+        "10.0.0.1"
+      ];
     };
     eth1 = {
-      name = "eth1";
-      DHCP = "yes";
+      matchConfig = {
+        Name = "eth1";
+      };
+      networkConfig = {
+        DHCP = "ipv4";
+        IPv6AcceptRA = "no";
+        LinkLocalAddressing = "no";
+      };
+      linkConfig = {
+        inherit (secrets) MACAddress;
+      };
+      dhcpV4Config = {
+        inherit (secrets) Hostname;
+        inherit (secrets) SendOption;
+      };
     };
   };
 

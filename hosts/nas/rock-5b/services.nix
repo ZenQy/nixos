@@ -1,7 +1,6 @@
 {
   lib,
   pkgs,
-  secrets,
   ...
 }:
 
@@ -123,18 +122,6 @@
   virtualisation.oci-containers = {
     backend = "docker";
     containers = {
-      allinone = {
-        privileged = true;
-        ports = [ "35455:35455" ];
-        image = "youshandefeiyang/allinone";
-        imageFile = pkgs.allinone;
-        extraOptions = [ "--network=host" ];
-        cmd = [
-          "-aesKey=${secrets.tv.aesKey}"
-          "-userid=${secrets.tv.userid}"
-          "-token=${secrets.tv.token}"
-        ];
-      };
       qd = {
         ports = [ "8923:80" ];
         volumes = [

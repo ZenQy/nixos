@@ -6,9 +6,9 @@
 }:
 
 {
-  services.sing-box = {
-    enable = lib.mkDefault true;
-    settings = {
+  services.sing-box =
+    let
+      host = config.networking.hostName;
       log = {
         disabled = false;
         level = "warn";
@@ -16,7 +16,7 @@
       };
       inbounds =
         let
-          domain = "${config.networking.hostName}.${secrets.domain}";
+          domain = "${host}.${secrets.domain}";
           trojan = {
             type = "trojan";
             users = [
@@ -27,12 +27,12 @@
             multiplex.enabled = true;
             transport = {
               type = "ws";
-              path = "/${config.networking.hostName}";
+              path = "/${host}";
             };
           };
         in
         (
-          if config.networking.hostName == "claw" then
+          if host == "claw" then
             [
               (
                 trojan
@@ -85,6 +85,11 @@
             }
         )
       ];
+    in
+    {
+      enable = lib.mkDefault true;
+      settings = {
+        inherit log inbounds outbounds;
+      };
     };
-  };
 }

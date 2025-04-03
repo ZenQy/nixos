@@ -18,7 +18,6 @@
       url = {
         launch = "xdg-open \${url}";
         osc8-underline = "url-mode";
-        protocols = "http, https, ftp, ftps, file";
       };
     };
   };
