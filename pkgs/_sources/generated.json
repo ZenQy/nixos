@@ -56,26 +56,6 @@
         },
         "version": "3.44.0"
     },
-    "allinone": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "allinone",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "arch": "arm64",
-            "finalImageName": null,
-            "finalImageTag": null,
-            "imageDigest": "sha256:6753df040d1cafb397e35c4f0b297958c337b533fab5f6309c213f5170cd1abe",
-            "imageName": "youshandefeiyang/allinone",
-            "imageTag": "latest",
-            "os": "linux",
-            "sha256": "sha256-GdPQBs3n4mSfQxySFceoOPWcNEX6ooxdBtKnGtsLcVg=",
-            "tlsVerify": null
-        },
-        "version": "latest"
-    },
     "bingimg": {
         "cargoLocks": null,
         "date": null,
@@ -85,11 +65,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-VjUhe8blqvEvdFL1YN/9dlFTD8AxV/b/cFsnYpeKn+U=",
+            "sha256": "sha256-7bOMkiK3uWZGQXCFMyfcsaLtzkEvGBqfnBKhGAXLHto=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.UtahBadlands_EN-US3082813561_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.SaguaroRainbow_EN-US3149462337_UHD.jpg"
         },
-        "version": "UtahBadlands_EN-US3082813561"
+        "version": "SaguaroRainbow_EN-US3149462337"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -330,12 +310,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "material-icon-theme-5.21.0.zip",
-            "sha256": "sha256-aG6QF8Gfh8/z5mtMfOQupbTBn6RjIki27Ths4OyvlXk=",
+            "name": "material-icon-theme-5.21.2.zip",
+            "sha256": "sha256-HEcFa+SCosf5UonqxFQZI+G5ogxCaScmHt54xn4H4QI=",
             "type": "url",
-            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.21.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://pkief.gallery.vsassets.io/_apis/public/gallery/publisher/pkief/extension/material-icon-theme/5.21.2/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "5.21.0"
+        "version": "5.21.2"
     },
     "qd": {
         "cargoLocks": null,
@@ -365,12 +345,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2364.zip",
-            "sha256": "sha256-TontMQyaxk1comLtKkmMF1YEmbJPiuCraj4mlZhtFIA=",
+            "name": "rust-analyzer-0.4.2365.zip",
+            "sha256": "sha256-twFsVyJNAeQZGgEAoFFlhcc1TZe6idUv10QDTaCxKws=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2364/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2365/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2364"
+        "version": "0.4.2365"
     },
     "staticcheck": {
         "cargoLocks": null,
@@ -437,12 +417,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.2.4",
-            "sha256": "sha256-u0pTHOCeAgUSY8//+qR/4em5XOpNTnYa9EkCve57bP4=",
+            "rev": "v6.2.5",
+            "sha256": "sha256-ht4K8Obzt4HHYtzG+MtbNCt4KY2NW5yhgBnJ+Vok4xQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.2.4"
+        "version": "v6.2.5"
     },
     "vue_volar": {
         "cargoLocks": null,
