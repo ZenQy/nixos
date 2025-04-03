@@ -25,11 +25,11 @@
         LinkLocalAddressing = "no";
       };
       linkConfig = {
-        inherit (secrets) MACAddress;
+        inherit (secrets.tvbox) MACAddress;
       };
       dhcpV4Config = {
-        inherit (secrets) Hostname;
-        inherit (secrets) SendOption;
+        inherit (secrets.tvbox) Hostname;
+        inherit (secrets.tvbox) SendOption;
       };
     };
   };
