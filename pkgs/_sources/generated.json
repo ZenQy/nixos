@@ -65,11 +65,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7bOMkiK3uWZGQXCFMyfcsaLtzkEvGBqfnBKhGAXLHto=",
+            "sha256": "sha256-W5E/hQTf9b1QMYee2DF51UP21r8tMzfkeA/74d9j9g8=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.SaguaroRainbow_EN-US3149462337_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.CherryBlossomDC_EN-US9897772834_UHD.jpg"
         },
-        "version": "SaguaroRainbow_EN-US3149462337"
+        "version": "CherryBlossomDC_EN-US9897772834"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -345,12 +345,12 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "rust-analyzer-0.4.2365.zip",
-            "sha256": "sha256-twFsVyJNAeQZGgEAoFFlhcc1TZe6idUv10QDTaCxKws=",
+            "name": "rust-analyzer-0.4.2366.zip",
+            "sha256": "sha256-h5JLAte42cj5R0xrKuPwc2U04W2Y/bfsZu9PgHQUXPw=",
             "type": "url",
-            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2365/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+            "url": "https://rust-lang.gallery.vsassets.io/_apis/public/gallery/publisher/rust-lang/extension/rust-analyzer/0.4.2366/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
         },
-        "version": "0.4.2365"
+        "version": "0.4.2366"
     },
     "staticcheck": {
         "cargoLocks": null,
