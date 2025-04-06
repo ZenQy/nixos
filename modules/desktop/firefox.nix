@@ -4,15 +4,19 @@
   programs.firefox = {
     enable = true;
     preferences = {
-      "media.ffmpeg.vaapi.enabled" = true;
-      "media.ffvpx.enabled" = false;
+      "browser.aboutConfig.showWarning" = false;
+      "browser.newtabpage.activity-stream.showWeather" = false;
+      "browser.search.region" = "US";
+      "browser.translations.neverTranslateLanguages" = "zh-Hans";
+      "browser.translations.panelShown" = true;
+      "font.name.serif.x-western" = "serif";
       "gfx.webrender.all" = true;
       "gfx.webrender.compositor" = true;
       "gfx.webrender.compositor.force-enabled" = true;
-      "media.hardware-video-decoding.force-enabled" = true;
       "media.autoplay.default" = 0;
-      "browser.search.region" = "US";
-      "browser.newtabpage.activity-stream.showWeather" = false;
+      "media.ffmpeg.vaapi.enabled" = true;
+      "media.ffvpx.enabled" = false;
+      "media.hardware-video-decoding.force-enabled" = true;
     };
     policies = {
       Homepage = {
@@ -34,9 +38,9 @@
           installation_mode = "force_installed";
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/scriptcat/latest.xpi";
         };
-        "{e9c422a1-5740-4c0a-a10e-867939119613}" = {
+        "clipper@obsidian.md" = {
           installation_mode = "force_installed";
-          install_url = "https://github.com/pt-plugins/PT-Plugin-Plus/releases/download/v1.6.1.2749/PT-Plugin-Plus-1.6.1.2749.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/web-clipper-obsidian/latest.xpi";
         };
       };
     };

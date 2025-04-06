@@ -86,7 +86,7 @@
         ".cache"
         ".config"
         ".local"
-        # ".mozilla"
+        ".mozilla"
         ".ssh"
       ];
       files = [

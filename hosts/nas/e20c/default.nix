@@ -28,6 +28,7 @@
         inherit (secrets.tvbox) MACAddress;
       };
       dhcpV4Config = {
+        RouteMetric = 20;
         inherit (secrets.tvbox) Hostname;
         inherit (secrets.tvbox) SendOption;
       };
