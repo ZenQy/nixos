@@ -192,5 +192,3 @@ binds {
 
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png"
 spawn-at-startup "fcitx5"
-spawn-at-startup "foot"
-spawn-at-startup "firefox"

@@ -24,30 +24,31 @@
       # "clngdbkpkpeebahjckkjfobafhncgmne"
       # 沙拉查词
       # "cdonnmffkdaoajfknoeeecmchibpmkmg"
-      # Web Clipper
-      "mhfbofiokmppgdliakminbgdgcmbhbac"
+      # obsidian-web-clipper
+      "cnjifjpddelmedmihgijeibhnjfabmlf"
       # Vue.js devtools
       # "nhdogjmejiglipccpnnnanhbledajbpd"
       # Bitwarden
       "nngceckbapebfimnlniiiahkandclblb"
       # Cookies获取助手
-      "mmcdaoockinhaeiljdmjmnjfndpfpklo"
+      # "mmcdaoockinhaeiljdmjmnjfndpfpklo"
     ];
     homepageLocation = "https://go.itab.link";
 
     extraOpts = {
-      HomepageIsNewTabPage = false;
-      ShowHomeButton = true;
-      BrowserSignin = 1;
-      SyncDisabled = false;
-      PasswordManagerEnabled = false;
-      SpellcheckEnabled = false;
-      TranslateEnabled = false;
-      DefaultNotificationsSetting = 2;
-      RestoreOnStartup = 4;
-      RestoreOnStartupURLs = [ "https://go.itab.link" ];
       AutoplayAllowed = false;
       BackgroundModeEnabled = false;
+      BrowserSignin = 1;
+      DefaultNotificationsSetting = 2;
+      ExtensionManifestV2Availability = 2;
+      HomepageIsNewTabPage = false;
+      PasswordManagerEnabled = false;
+      RestoreOnStartup = 4;
+      RestoreOnStartupURLs = [ "https://go.itab.link" ];
+      ShowHomeButton = true;
+      SpellcheckEnabled = false;
+      SyncDisabled = false;
+      TranslateEnabled = false;
     };
   };
 }
