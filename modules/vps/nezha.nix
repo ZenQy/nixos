@@ -8,26 +8,26 @@
 with lib;
 
 let
-  cfg = config.zenith.nezha-dashboard;
+  cfg = config.zenith.nezha;
 in
 
 {
   options = {
-    zenith.nezha-dashboard = {
+    zenith.nezha = {
       enable = mkOption {
         type = types.bool;
         default = false;
-        description = "是否启用nezha-dashboard";
+        description = "是否启用nezha";
       };
     };
   };
 
   config = mkIf cfg.enable {
-    systemd.services.nezha-dashboard =
+    systemd.services.nezha =
       let
-        path = "/var/lib/nezha-dashboard";
+        path = "/var/lib/nezha";
         conf = (pkgs.formats.yaml { }).generate "config.yaml" {
-          inherit (secrets.nezha-dashboard) jwtsecretkey agentsecretkey listenport;
+          inherit (secrets.nezha) jwtsecretkey agentsecretkey listenport;
           debug = false;
           tls = false;
           language = "zh_CN";
@@ -55,11 +55,11 @@ in
         serviceConfig = {
           User = "nixos";
           Group = "wheel";
-          StateDirectory = "nezha-dashboard";
-          RuntimeDirectory = "nezha-dashboard";
+          StateDirectory = "nezha";
+          RuntimeDirectory = "nezha";
           WorkingDirectory = path;
           ExecStart = ''
-            ${pkgs.nezha-dashboard}/bin/nezha-dashboard
+            ${pkgs.nezha}/bin/nezha
           '';
           RestartSec = 5;
           Restart = "on-failure";

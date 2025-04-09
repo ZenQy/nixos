@@ -8,8 +8,8 @@
   environment.etc."mpv/mpv.conf".text = ''
     alang=chi,zh-CN,sc,chs,zh-TW,tc,cht,eng,en
     force-window=yes
-    hwdec=auto
     hwdec-codecs=all
+    hwdec=auto
     profile=gpu-hq
     slang=chi,zh-CN,sc,chs,zh-TW,tc,cht,eng,en
     speed=1.5

@@ -16,7 +16,7 @@
   };
   zenith = {
     cachix.enable = true;
-    nezha-dashboard.enable = true;
+    nezha.enable = true;
   };
   services = {
     sing-box.enable = false;
@@ -52,7 +52,7 @@
       enable = true;
       extraConfig = ''
         s.${secrets.domain} {
-        	reverse_proxy :${toString secrets.nezha-dashboard.listenport}
+        	reverse_proxy :${toString secrets.nezha.listenport}
         }
 
         p.${secrets.domain} {

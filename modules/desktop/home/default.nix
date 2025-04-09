@@ -1,4 +1,4 @@
-{ pkgs, lib }:
+{ pkgs }:
 
 with builtins;
 
@@ -20,10 +20,6 @@ let
       '';
       path = ".config/go/env";
     };
-    # niri = {
-    #   file = toString ./niri-config.kdl;
-    #   path = ".config/niri/config.kdl";
-    # };
   };
   cmd = map (
     name:

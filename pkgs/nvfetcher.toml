@@ -1,121 +1,16 @@
-[fcitx5-pinyin-zenith]
-src.github = "ZenQy/scel2dict"
-fetch.url = "https://github.com/ZenQy/scel2dict/releases/download/$ver/zenith.dict"
-
-[dlv-dap]
-src.github = "go-delve/delve"
-fetch.github = "go-delve/delve"
-
-[nezha-agent]
-src.github = "nezhahq/agent"
-fetch.github = "nezhahq/agent"
-
-[nezha-dashboard]
-src.github = "naiba/nezha"
-fetch.github = "naiba/nezha"
-
-# [nezha-theme-user]
-# src.github = "hamster1963/nezha-dash-v1"
-# fetch.url = "https://github.com/hamster1963/nezha-dash-v1/releases/download/$ver/dist.zip"
-
-# [nezha-theme-admin]
-# src.github = "nezhahq/admin-frontend"
-# fetch.url = "https://github.com/nezhahq/admin-frontend/releases/download/$ver/dist.zip"
-
-[staticcheck]
-src.github = "dominikh/go-tools"
-fetch.github = "dominikh/go-tools"
-
-[vue_volar]
-src.vsmarketplace = "vue.volar"
-fetch.vsmarketplace = "vue.volar"
-
-[dbaeumer_vscode-eslint]
-src.vsmarketplace = "dbaeumer.vscode-eslint"
-fetch.vsmarketplace = "dbaeumer.vscode-eslint"
-
-[golang_go]
-src.vsmarketplace = "golang.go"
-fetch.vsmarketplace = "golang.go"
-
-[pkief_material-icon-theme]
-src.vsmarketplace = "pkief.material-icon-theme"
-fetch.vsmarketplace = "pkief.material-icon-theme"
-
-[mhutchie_git-graph]
-src.vsmarketplace = "mhutchie.git-graph"
-fetch.vsmarketplace = "mhutchie.git-graph"
-
-[jnoortheen_nix-ide]
-src.vsmarketplace = "jnoortheen.nix-ide"
-fetch.vsmarketplace = "jnoortheen.nix-ide"
-
-[usernamehw_errorlens]
-src.vsmarketplace = "usernamehw.errorlens"
-fetch.vsmarketplace = "usernamehw.errorlens"
-
-[tamasfe_even-better-toml]
-src.vsmarketplace = "tamasfe.even-better-toml"
-fetch.vsmarketplace = "tamasfe.even-better-toml"
-
-[rust-lang_rust-analyzer]
-src.vsmarketplace = "rust-lang.rust-analyzer"
-fetch.vsmarketplace = "rust-lang.rust-analyzer"
-
-[SuperMonster003_autojs6-vscode-ext]
-src.vsmarketplace = "003.autojs6-vscode-ext"
-fetch.vsmarketplace = "003.autojs6-vscode-ext"
-
-[bingimg]
-src.webpage = "https://www.bing.com/"
-src.regex = "id=OHR\\.(.*?)_tmb\\.jpg"
-fetch.url = "https://www.bing.com/th?id=OHR.$ver_UHD.jpg"
-
-# [logseq]
-# src.github_tag = "logseq/logseq"
-# fetch.url = "https://github.com/logseq/logseq/releases/download/$ver/logseq-linux-x64-$ver.zip"
-
-[leetgo]
-src.github = "j178/leetgo"
-fetch.github = "j178/leetgo"
-
-# [markdown-online-editor]
-# src.git = "https://github.com/nicejade/markdown-online-editor"
-# fetch.github = "nicejade/markdown-online-editor"
-
-# [code-server]
-# src.github_tag = "coder/code-server"
-# src.prefix = "v"
-# fetch.tarball = "https://github.com/coder/code-server/releases/download/v$ver/code-server-$ver-linux-arm64.tar.gz"
-
-[metacubexd]
-src.github = "MetaCubeX/metacubexd"
-fetch.url = "https://github.com/MetaCubeX/metacubexd/releases/download/$ver/compressed-dist.tgz"
-
-[alist]
-src.github_tag = "alist-org/alist"
-fetch.github = "alist-org/alist"
-
-[alist-web]
-src.github_tag = "alist-org/web-dist"
-fetch.github = "alist-org/web-dist"
-
-[it-tools]
-src.github = "CorentinTh/it-tools"
-src.prefix = "v"
-fetch.url = "https://github.com/CorentinTh/it-tools/releases/download/v$ver/it-tools-$ver.zip"
-
 [vitejs]
 src.github_tag = "vitejs/vite"
 src.exclude_regex = ".*(alpha|beta|@).*"
 fetch.github = "vitejs/vite"
 
-[qd]
-src.container = "qdtoday/qd"
-src.include_regex = "lite-latest"
-fetch.docker = "qdtoday/qd"
-docker.os = "linux"
-docker.arch = "arm64"
+[fcitx5-pinyin-zenith]
+src.github = "ZenQy/scel2dict"
+fetch.url = "https://github.com/ZenQy/scel2dict/releases/download/$ver/zenith.dict"
+
+[bingimg]
+src.webpage = "https://www.bing.com/"
+src.regex = "id=OHR\\.(.*?)_tmb\\.jpg"
+fetch.url = "https://www.bing.com/th?id=OHR.$ver_UHD.jpg"
 
 [wallpapers]
 src.github = "ZenQy/wallpaper"
@@ -124,6 +19,13 @@ fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper
 [chatgpt-web]
 src.git = "https://github.com/xqdoo00o/chatgpt-web"
 fetch.github = "xqdoo00o/chatgpt-web"
+
+[qd]
+src.container = "qdtoday/qd"
+src.include_regex = "lite-latest"
+fetch.docker = "qdtoday/qd"
+docker.os = "linux"
+docker.arch = "arm64"
 
 [linux-armbian]
 src.github_tag = "armbian/linux-rockchip"

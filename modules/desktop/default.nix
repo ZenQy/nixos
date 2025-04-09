@@ -23,8 +23,6 @@
     ## Go ##
     go
     gopls
-    # dlv-dap
-    # staticcheck
     leetgo
     # gcc
 
@@ -58,7 +56,7 @@
     # you-get
 
     ## Editor ##
-    vscode-with-extensions
+    # vscode-with-extensions
     zed-editor
     # vscodium
     obsidian
