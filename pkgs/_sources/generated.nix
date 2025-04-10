@@ -3,10 +3,10 @@
 {
   bingimg = {
     pname = "bingimg";
-    version = "BlueNaxos_EN-US8006377229";
+    version = "LittleFoxes_EN-US8078019606";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.BlueNaxos_EN-US8006377229_UHD.jpg";
-      sha256 = "sha256-6FxrdQoC308zp2x8/rWaNgnNt3U7ZxrdFkeEsLfgoYo=";
+      url = "https://www.bing.com/th?id=OHR.LittleFoxes_EN-US8078019606_UHD.jpg";
+      sha256 = "sha256-KrPgWY1ZIIdf/z7jo2UsZb7E7lfutvNpk3oTk3oHxrY=";
     };
   };
   chatgpt-web = {
@@ -54,13 +54,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v6.2.5";
+    version = "v6.2.6";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v6.2.5";
+      rev = "v6.2.6";
       fetchSubmodules = false;
-      sha256 = "sha256-ht4K8Obzt4HHYtzG+MtbNCt4KY2NW5yhgBnJ+Vok4xQ=";
+      sha256 = "sha256-tbrUxtc/aq6UT5E5eZBD1L8F80iq+rQm/ai5HsQVtB0=";
     };
   };
   wallpapers = {
