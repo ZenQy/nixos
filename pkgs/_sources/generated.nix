@@ -3,10 +3,10 @@
 {
   bingimg = {
     pname = "bingimg";
-    version = "LittleFoxes_EN-US8078019606";
+    version = "TulipsWindmill_EN-US8114977846";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.LittleFoxes_EN-US8078019606_UHD.jpg";
-      sha256 = "sha256-KrPgWY1ZIIdf/z7jo2UsZb7E7lfutvNpk3oTk3oHxrY=";
+      url = "https://www.bing.com/th?id=OHR.TulipsWindmill_EN-US8114977846_UHD.jpg";
+      sha256 = "sha256-w/4tAMCoTv7/vC21q8F0O3XnYZOE+7c+//kjKFBeucA=";
     };
   };
   chatgpt-web = {
