@@ -3,10 +3,10 @@
 {
   bingimg = {
     pname = "bingimg";
-    version = "SpaceFlight_EN-US8143075629";
+    version = "ThailandPagodas_EN-US8039751329";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SpaceFlight_EN-US8143075629_UHD.jpg";
-      sha256 = "sha256-Rsko3SY//HflBVOAsjr8UdNVjFGOBn2zGKx5LQ6HL0w=";
+      url = "https://www.bing.com/th?id=OHR.ThailandPagodas_EN-US8039751329_UHD.jpg";
+      sha256 = "sha256-rBzjl8/GlWyiS533u8ea1mS8Y3cKIqaO6YxFzknyQ1Q=";
     };
   };
   chatgpt-web = {
