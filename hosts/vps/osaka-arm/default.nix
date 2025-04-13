@@ -35,8 +35,6 @@
 
         go
         gopls
-        dlv-dap
-        staticcheck
 
         rustc
         rustfmt
