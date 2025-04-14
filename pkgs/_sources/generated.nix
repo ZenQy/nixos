@@ -3,10 +3,10 @@
 {
   bingimg = {
     pname = "bingimg";
-    version = "ThailandPagodas_EN-US8039751329";
+    version = "SpottedDolphins_EN-US0872892049";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.ThailandPagodas_EN-US8039751329_UHD.jpg";
-      sha256 = "sha256-rBzjl8/GlWyiS533u8ea1mS8Y3cKIqaO6YxFzknyQ1Q=";
+      url = "https://www.bing.com/th?id=OHR.SpottedDolphins_EN-US0872892049_UHD.jpg";
+      sha256 = "sha256-ZvmmdBqQNp9FqBncC7EVIaWvI0JOBpXe/55V3HOBo+A=";
     };
   };
   chatgpt-web = {
