@@ -3,10 +3,10 @@
 {
   bingimg = {
     pname = "bingimg";
-    version = "SpottedDolphins_EN-US0872892049";
+    version = "BeachArt_EN-US0911239616";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.SpottedDolphins_EN-US0872892049_UHD.jpg";
-      sha256 = "sha256-ZvmmdBqQNp9FqBncC7EVIaWvI0JOBpXe/55V3HOBo+A=";
+      url = "https://www.bing.com/th?id=OHR.BeachArt_EN-US0911239616_UHD.jpg";
+      sha256 = "sha256-aotpxVQ7NCFDMTYvxNNYkIKN+SlBT4qf9T+ATCPaxwQ=";
     };
   };
   chatgpt-web = {

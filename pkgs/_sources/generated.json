@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ZvmmdBqQNp9FqBncC7EVIaWvI0JOBpXe/55V3HOBo+A=",
+            "sha256": "sha256-aotpxVQ7NCFDMTYvxNNYkIKN+SlBT4qf9T+ATCPaxwQ=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.SpottedDolphins_EN-US0872892049_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.BeachArt_EN-US0911239616_UHD.jpg"
         },
-        "version": "SpottedDolphins_EN-US0872892049"
+        "version": "BeachArt_EN-US0911239616"
     },
     "chatgpt-web": {
         "cargoLocks": null,
