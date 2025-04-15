@@ -17,6 +17,16 @@
   zenith = {
     cachix.enable = true;
     nezha.enable = true;
+    rclone = {
+      enable = true;
+      path = [
+        {
+          source = "/var/lib/nezha/data/";
+          dest = "/osaka-arm/nezha";
+          exclude = [ "config.yaml" ];
+        }
+      ];
+    };
   };
   services = {
     sing-box.enable = false;
