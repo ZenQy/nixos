@@ -3,10 +3,10 @@
 {
   bingimg = {
     pname = "bingimg";
-    version = "BeachArt_EN-US0911239616";
+    version = "KachinaBridge_EN-US1000475196";
     src = fetchurl {
-      url = "https://www.bing.com/th?id=OHR.BeachArt_EN-US0911239616_UHD.jpg";
-      sha256 = "sha256-aotpxVQ7NCFDMTYvxNNYkIKN+SlBT4qf9T+ATCPaxwQ=";
+      url = "https://www.bing.com/th?id=OHR.KachinaBridge_EN-US1000475196_UHD.jpg";
+      sha256 = "sha256-2FOmaoEa24+c8FDRTfUBAzoFXKLVHQOzhpefdSWWMPQ=";
     };
   };
   chatgpt-web = {
@@ -54,13 +54,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v6.2.6";
+    version = "v6.3.0";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v6.2.6";
+      rev = "v6.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-tbrUxtc/aq6UT5E5eZBD1L8F80iq+rQm/ai5HsQVtB0=";
+      sha256 = "sha256-1QJftVg2KOjGBxcxilcHer1ftweZnN0VE9esMcVd2e0=";
     };
   };
   wallpapers = {

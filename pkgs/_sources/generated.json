@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-aotpxVQ7NCFDMTYvxNNYkIKN+SlBT4qf9T+ATCPaxwQ=",
+            "sha256": "sha256-2FOmaoEa24+c8FDRTfUBAzoFXKLVHQOzhpefdSWWMPQ=",
             "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.BeachArt_EN-US0911239616_UHD.jpg"
+            "url": "https://www.bing.com/th?id=OHR.KachinaBridge_EN-US1000475196_UHD.jpg"
         },
-        "version": "BeachArt_EN-US0911239616"
+        "version": "KachinaBridge_EN-US1000475196"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -105,12 +105,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.2.6",
-            "sha256": "sha256-tbrUxtc/aq6UT5E5eZBD1L8F80iq+rQm/ai5HsQVtB0=",
+            "rev": "v6.3.0",
+            "sha256": "sha256-1QJftVg2KOjGBxcxilcHer1ftweZnN0VE9esMcVd2e0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.2.6"
+        "version": "v6.3.0"
     },
     "wallpapers": {
         "cargoLocks": null,
