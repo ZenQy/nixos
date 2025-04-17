@@ -1,19 +1,4 @@
 {
-    "bingimg": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "bingimg",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-2FOmaoEa24+c8FDRTfUBAzoFXKLVHQOzhpefdSWWMPQ=",
-            "type": "url",
-            "url": "https://www.bing.com/th?id=OHR.KachinaBridge_EN-US1000475196_UHD.jpg"
-        },
-        "version": "KachinaBridge_EN-US1000475196"
-    },
     "chatgpt-web": {
         "cargoLocks": null,
         "date": "2025-02-13",
@@ -105,12 +90,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.3.0",
-            "sha256": "sha256-1QJftVg2KOjGBxcxilcHer1ftweZnN0VE9esMcVd2e0=",
+            "rev": "v6.3.1",
+            "sha256": "sha256-lL18pqjyDeG9lI3kNnBclGYx8RUyqcfrMmOozu90z50=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.3.0"
+        "version": "v6.3.1"
     },
     "wallpapers": {
         "cargoLocks": null,
