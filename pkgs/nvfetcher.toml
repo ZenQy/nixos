@@ -7,11 +7,6 @@ fetch.github = "vitejs/vite"
 src.github = "ZenQy/scel2dict"
 fetch.url = "https://github.com/ZenQy/scel2dict/releases/download/$ver/zenith.dict"
 
-[bingimg]
-src.webpage = "https://www.bing.com/"
-src.regex = "id=OHR\\.(.*?)_tmb\\.jpg"
-fetch.url = "https://www.bing.com/th?id=OHR.$ver_UHD.jpg"
-
 [wallpapers]
 src.github = "ZenQy/wallpaper"
 fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper.tar.gz"

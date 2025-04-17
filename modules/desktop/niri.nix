@@ -25,21 +25,8 @@
   environment.systemPackages = with pkgs; [
     niri
     fuzzel
-    swaylock
-    swaybg
   ];
 
-  security.pam.services.swaylock = { };
-
-  environment.etc = {
-    "niri/config.kdl".source = ./dotfiles/niri/config.kdl;
-
-    "swaylock/config".text = ''
-      show-failed-attempts
-      daemonize
-      image=${pkgs.bingimg}/share/bingimg-blur.jpg
-      scaling=fill
-    '';
-  };
+  environment.etc."niri/config.kdl".source = ./dotfiles/niri/config.kdl;
 
 }

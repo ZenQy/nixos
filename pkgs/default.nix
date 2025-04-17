@@ -7,7 +7,12 @@ let
         mapAttrs (k: v: if k != "deprecated" && v == "directory" then k else null) (readDir dir)
       )
     );
-  packageLists = concatMap (dir: map (subdir: "${dir}/${subdir}") (floder ./${dir})) (floder ./.);
+
+  # 缓存根目录列表，避免多次计算
+  rootDirs = floder ./.;
+
+  packageLists = concatMap (dir: map (subdir: "${dir}/${subdir}") (floder ./${dir})) rootDirs;
+
   listToSet =
     l: f:
     listToAttrs (
@@ -20,7 +25,7 @@ in
 
 {
   exclude =
-    systems: concatMap (system: if elem system (floder ./.) then floder ./${system} else [ ]) systems;
+    systems: concatMap (system: if elem system rootDirs then floder ./${system} else [ ]) systems;
 
   packages =
     pkgs:

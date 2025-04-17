@@ -6,10 +6,6 @@
   nodejs,
 }:
 
-# let
-#   pnpm = pnpm_9;
-# in
-
 stdenv.mkDerivation {
   inherit (source) pname version src;
 
@@ -26,16 +22,31 @@ stdenv.mkDerivation {
     nodejs
   ];
 
+  # 启用并行构建以提高性能
+  enableParallelBuilding = true;
+
   buildPhase = ''
     pnpm run build
   '';
 
   installPhase = ''
+    # 创建目标目录
     mkdir -p $out/{bin,lib}
-    cp -r ./* $out/lib
 
+    cp -r ./node_modules $out/lib/
+    cp -r ./packages $out/lib/
+
+    # 创建可执行文件的符号链接
     ln -sf $out/lib/packages/vite/bin/vite.js $out/bin/vite
     ln -sf $out/lib/packages/create-vite/index.js $out/bin/create-vite
+
+    # 确保二进制文件可执行
+    chmod +x $out/bin/vite $out/bin/create-vite
+  '';
+
+  # 添加固定阶段以确保所有权限正确
+  fixupPhase = ''
+    patchShebangs $out/bin
   '';
 
   meta = with lib; {

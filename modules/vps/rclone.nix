@@ -29,9 +29,9 @@ in
             exclude = [ "mimeapps.list" ];
           }
         ];
-        type =
-          let
-            pathOpts.options = {
+        type = types.listOf (
+          types.submodule {
+            options = {
               source = mkOption {
                 type = types.str;
                 description = "文件源路径";
@@ -51,9 +51,9 @@ in
                 description = "排除符合指定模式的文件";
               };
             };
-          in
-          types.listOf (types.submodule pathOpts);
-        description = "文件源位置和目标位置，已经相应的匹配规则。";
+          }
+        );
+        description = "文件源位置和目标位置，以及相应的匹配规则";
       };
     };
   };
@@ -61,31 +61,33 @@ in
   config = mkIf (cfg.enable && cfg.path != [ ]) {
     systemd.services.rclone =
       let
-        ini = generators.toINI { } {
+        rcloneConfig = generators.toINI { } {
           webdav = {
             type = "webdav";
             vendor = "other";
             inherit (secrets.webdav) url user pass;
           };
         };
-        conf = builtins.toFile "rclone.conf" ini;
-        cmdList = map (
-          x:
+        configFile = builtins.toFile "rclone.conf" rcloneConfig;
+
+        # 构建rclone命令列表
+        makeRcloneCmd =
+          path:
           let
-            include = builtins.concatStringsSep " " (map (i: "--include ${i}") x.include);
-            exclude = builtins.concatStringsSep " " (map (i: "--exclude ${i}") x.exclude);
+            includeArgs = concatMapStringsSep " " (i: "--include ${i}") path.include;
+            excludeArgs = concatMapStringsSep " " (i: "--exclude ${i}") path.exclude;
           in
-          "rclone --config ${conf} sync ${x.source} webdav:${x.dest} ${include} ${exclude}"
-        ) cfg.path;
-        cmd = builtins.concatStringsSep "\n" cmdList;
+          "rclone --config ${configFile} sync ${path.source} webdav:${path.dest} ${includeArgs} ${excludeArgs}";
+
+        syncCommands = concatMapStringsSep "\n" makeRcloneCmd cfg.path;
       in
       {
-        description = "rclone";
+        description = "Rclone WebDAV Sync";
         wants = [ "network-online.target" ];
         after = [ "network-online.target" ];
         path = [ pkgs.rclone ];
         script = ''
-          ${cmd}
+          ${syncCommands}
         '';
         serviceConfig = {
           Type = "oneshot";
@@ -97,6 +99,7 @@ in
           PrivateTmp = true;
         };
       };
+
     systemd.timers.rclone = {
       wantedBy = [ "timers.target" ];
       timerConfig = {

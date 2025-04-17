@@ -5,12 +5,16 @@
   ...
 }:
 
+let
+  kernelBranch = "6.1";
+  kernelVersion = "6.1.75";
+in
 linuxManualConfig {
   inherit (source) src;
 
-  extraMeta.branch = "6.1";
-  version = "6.1.75-armbian";
-  modDirVersion = "6.1.75";
+  extraMeta.branch = kernelBranch;
+  version = "${kernelVersion}-armbian";
+  modDirVersion = kernelVersion;
 
   configfile = ./config;
   allowImportFromDerivation = true;
@@ -19,5 +23,4 @@ linuxManualConfig {
     bridge_stp_helper
     request_key_helper
   ];
-
 }

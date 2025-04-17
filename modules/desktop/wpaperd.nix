@@ -10,7 +10,7 @@
         let
           settings = {
             any = {
-              path = "${pkgs.wallpapers}/share";
+              path = "${pkgs.wallpapers}/share/image";
               mode = "stretch";
               sorting = "random";
             };
@@ -24,4 +24,17 @@
       Restart = "on-failure";
     };
   };
+
+  # swaylock
+  environment.systemPackages = with pkgs; [
+    swaylock
+  ];
+  security.pam.services.swaylock = { };
+  environment.etc."swaylock/config".text = ''
+    show-failed-attempts
+    daemonize
+    image=${pkgs.wallpapers}/share/image-blur/swaylock.jpg
+    scaling=fill
+  '';
+
 }

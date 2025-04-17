@@ -15,9 +15,7 @@ with builtins;
 
   programs.sway = {
     enable = true;
-    extraPackages = with pkgs; [
-      swaylock
-    ];
+    extraPackages = [ ];
     xwayland.enable = false;
   };
 
@@ -161,12 +159,6 @@ with builtins;
         ${bindsym}
       '';
 
-    "swaylock/config".text = ''
-      show-failed-attempts
-      daemonize
-      image=${pkgs.bingimg}/share/bingimg-blur.jpg
-      scaling=fill
-    '';
   };
 
 }
