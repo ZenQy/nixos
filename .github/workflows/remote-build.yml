@@ -42,7 +42,6 @@ jobs:
           repository: ${{ github.repository }}
           retain_days: 3
           keep_minimum_runs: 3
-
       - id: set-matrix
         name: set-matrix
         run: |
@@ -55,6 +54,7 @@ jobs:
 
   build:
     runs-on: ubuntu-24.04
+    needs: prepare
     strategy:
       fail-fast: false
       matrix:
