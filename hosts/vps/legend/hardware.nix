@@ -31,7 +31,7 @@
     ];
   };
 
-  swapDevices = [ { device = "/dev/disk/by-partlabel/disk-main-swap"; } ];
+  swapDevices = [ ];
 
   boot.loader.grub = {
     enable = true;
