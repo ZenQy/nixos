@@ -9,18 +9,11 @@ on:
         description: "Run the build with tmate debugging enabled"
         required: false
         default: false
-
-env:
-  NIX_PATH: nixpkgs=channel:nixos-unstable
-  TZ: Asia/Shanghai
-
-jobs:
-  build:
-    runs-on: ubuntu-24.04
-    strategy:
-      fail-fast: false
-      matrix:
-        hosts:
+      hosts:
+        type: choice
+        description: "choose one or all vps"
+        options:
+          - all
           - osaka-1
           - osaka-2
           - claw
@@ -28,6 +21,18 @@ jobs:
           - alice
           - sailor
           - legend
+        required: true
+        default: all
+
+env:
+  NIX_PATH: nixpkgs=channel:nixos-unstable
+  TZ: Asia/Shanghai
+
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
 
     steps:
       - name: Delete older workflow runs and artifacts
@@ -38,6 +43,24 @@ jobs:
           retain_days: 3
           keep_minimum_runs: 3
 
+      - id: set-matrix
+        name: set-matrix
+        run: |
+          hosts='[ "${{ inputs.hosts }}" ]'
+          if [[ ${{ inputs.hosts }} == 'all' ]]; then
+            hosts='[ "osaka-1" "osaka-2" "claw" "natvps" "alice" "sailor" "legend" ]'
+          fi
+          echo $hosts
+          echo "matrix=$(echo $hosts)" >> $GITHUB_OUTPUT
+
+  build:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        hosts: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+
+    steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
