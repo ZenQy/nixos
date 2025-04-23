@@ -119,6 +119,28 @@
     '';
   };
 
+  zenith.rclone = {
+    enable = true;
+    path = [
+      {
+        source = "/var/lib/alist/data/";
+        dest = "/rock-5b/alist";
+        include = [
+          "config.json"
+          "data.db*"
+        ];
+      }
+      {
+        source = "/var/lib/docker/volumes/qd_config/_data/";
+        dest = "/rock-5b/qd";
+        include = [
+          "config.json"
+          "data.db*"
+        ];
+      }
+    ];
+  };
+
   virtualisation.oci-containers = {
     backend = "docker";
     containers = {

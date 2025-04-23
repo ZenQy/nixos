@@ -98,7 +98,7 @@ jobs:
             fi
           done
           if [[ $pkgs_list == '[]' ]]; then
-            pkgs_list='[ "hello" ]'
+            pkgs_list='[ "fcitx5-pinyin-zenith" ]'
           fi
           echo $pkgs_list
           echo "matrix=$(echo $pkgs_list)" >> $GITHUB_OUTPUT

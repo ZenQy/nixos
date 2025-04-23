@@ -8,8 +8,8 @@ input {
 
     mouse {}
 
-    warp-mouse-to-focus
-    focus-follows-mouse
+    // warp-mouse-to-focus
+    // focus-follows-mouse
 }
 
 output "HDMI-A-1" {

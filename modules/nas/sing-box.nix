@@ -74,22 +74,22 @@ let
           rules = [
             {
               process_name = [
-                "transmission-daemon"
                 "nezha-agent"
+                "transmission-daemon"
               ];
             }
             {
               domain_suffix = [
-                "oracle.com"
                 ".cn"
+                "10155.com"
                 "allawnfs.com"
+                "binmt.cc"
+                "blizzard.com"
                 "epicgames.com"
                 "msftconnecttest.com"
-                "blizzard.com"
-                "test-ipv6.com"
-                "10155.com"
                 "nezha.${secrets.domain}"
-                "binmt.cc"
+                "oracle.com"
+                "test-ipv6.com"
               ];
             }
           ];
@@ -230,17 +230,21 @@ let
       strict_route = false;
       stack = "gvisor";
       include_package = [
+        "InfinityLoop1309.NewPipeEnhanced"
+        "ai.x.grok"
         "cn.jimex.dict"
         "com.aistra.hail"
+        "com.aurora.store"
         "com.deskangel.daremote"
+        "com.google.android.gms"
         "com.ichi2.anki"
         "com.x8bit.bitwarden"
-        "InfinityLoop1309.NewPipeEnhanced"
         "io.legado.app.release"
         "mark.via.gp"
         "me.bmax.apatch"
         "org.telegram.messenger"
         "pro.cubox.androidapp"
+        "top.achatbot.aichat"
         "xyz.chatboxapp.chatbox"
       ];
     }
