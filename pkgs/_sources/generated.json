@@ -90,12 +90,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v6.3.2",
-            "sha256": "sha256-6NgRpZf96I1GbaTmEkHGL1z4ACqhWahj6ELGoD09vCs=",
+            "rev": "v6.3.3",
+            "sha256": "sha256-PY3qYQ3PuCeXVT5hrotd/XIYw8/MiELCDWzhM61HzZg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.3.2"
+        "version": "v6.3.3"
     },
     "wallpapers": {
         "cargoLocks": null,
