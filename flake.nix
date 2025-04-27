@@ -50,7 +50,7 @@
         system:
         let
           pkgs = import nixpkgs { inherit system; };
-          home = import ./modules/desktop/home {
+          home = import ./home {
             inherit pkgs;
             lib = nixpkgs.lib;
           };
