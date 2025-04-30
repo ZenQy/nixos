@@ -3,6 +3,7 @@
 {
   imports = [
     ../vps
+    ../vps/rclone.nix
     ../vps/nezha-agent.nix
   ];
 

@@ -8,11 +8,11 @@
   systemd.network.networks.default = {
     name = "eth0";
     address = [
-      secrets.alice.ipv6.ip
+      secrets.alice-2.ipv6.ip
     ];
     routes = [
       {
-        Gateway = secrets.alice.ipv6.gateway;
+        Gateway = secrets.alice-2.ipv6.gateway;
         GatewayOnLink = true;
       }
     ];
