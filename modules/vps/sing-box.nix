@@ -70,7 +70,7 @@
         );
       outbounds = [
         (
-          if config.networking.hostName == "alice" then
+          if (builtins.substring 0 5 config.networking.hostName) == "alice" then
             {
               type = "socks";
               server = "2a14:67c0:100::af";
