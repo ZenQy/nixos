@@ -4,11 +4,6 @@ on:
     - cron: 0 20 1/16 * *
   workflow_dispatch:
     inputs:
-      debug_enabled:
-        type: boolean
-        description: "Run the build with tmate debugging enabled"
-        required: false
-        default: false
       hosts:
         type: choice
         description: "choose one or all vps"
@@ -45,8 +40,9 @@ jobs:
       - id: set-matrix
         name: set-matrix
         run: |
+          echo ${{ inputs.hosts }}
           hosts='[ "${{ inputs.hosts }}" ]'
-          if [[ ${{ inputs.hosts }} == 'all' ]]; then
+          if [[ "${{ inputs.hosts }}" == 'all' ]]; then
             hosts='[ "osaka-1" "osaka-2" "claw" "natvps" "alice-1" "alice-2" "sailor" ]'
           fi
           echo $hosts
