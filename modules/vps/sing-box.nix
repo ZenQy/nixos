@@ -9,6 +9,7 @@
   services.sing-box =
     let
       host = config.networking.hostName;
+      isAlice = (builtins.substring 0 5 host) == "alice";
       log = {
         disabled = false;
         level = "warn";
@@ -68,28 +69,46 @@
               )
             ]
         );
-      outbounds = [
-        (
-          if (builtins.substring 0 5 config.networking.hostName) == "alice" then
+      outbounds =
+        if isAlice then
+          [
             {
               type = "socks";
+              tag = "socks";
               server = "2a14:67c0:100::af";
               server_port = 40000;
               version = "5";
               username = "alice";
               password = "alicefofo123..@";
             }
-          else
+            {
+              type = "direct";
+              tag = "direct";
+            }
+          ]
+        else
+          [
             {
               type = "direct";
             }
-        )
-      ];
+          ];
+      route = {
+        rules = [
+          {
+            ip_version = 4;
+            outbound = "socks";
+          }
+          {
+            ip_version = 6;
+            outbound = "direct";
+          }
+        ];
+      };
     in
     {
       enable = lib.mkDefault true;
       settings = {
         inherit log inbounds outbounds;
-      };
+      } // (if isAlice then { inherit route; } else { });
     };
 }

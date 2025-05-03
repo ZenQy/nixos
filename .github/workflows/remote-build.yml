@@ -40,7 +40,6 @@ jobs:
       - id: set-matrix
         name: set-matrix
         run: |
-          echo ${{ inputs.options }}
           hosts='[ "${{ inputs.hosts }}" ]'
           if [[ "${{ inputs.hosts }}" == 'all' ]]; then
             hosts='[ "osaka-1", "osaka-2", "claw", "natvps", "alice-1", "alice-2", "sailor" ]'
