@@ -26,7 +26,7 @@
       n = {
         gateway = [
           "10.0.0.11"
-          secrets.beelink.ipv6.gateway
+          secrets.hosts.beelink.ipv6.gateway
         ];
         DHCP = "no";
         networkConfig = {
@@ -50,7 +50,7 @@
         name = "wlp5s0";
         address = [
           "10.0.0.25/24"
-          secrets.beelink.ipv6.ip
+          secrets.hosts.beelink.ipv6.ip
         ];
       } // n;
     };

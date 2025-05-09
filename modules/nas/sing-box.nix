@@ -18,7 +18,7 @@ let
       }
       {
         tag = "dns_direct";
-        address = "https://223.5.5.5/dns-query";
+        address = "127.0.0.1";
         detour = "direct";
       }
       {
@@ -131,55 +131,60 @@ let
         download_detour = "proxy";
       }
     ];
-    rules =
-      [
-        {
-          action = "sniff";
-        }
-        {
-          protocol = "dns";
-          action = "hijack-dns";
-        }
-        {
-          ip_is_private = true;
-          outbound = "direct";
-        }
-      ]
+    rules = [
+      {
+        action = "sniff";
+      }
+      {
+        # adguardhome 出栈数据务必放行
+        protocol = "dns";
+        process_name = [
+          "adguardhome"
+        ];
+        outbound = "direct";
+      }
+      {
+        protocol = "dns";
+        action = "hijack-dns";
+      }
+      {
+        ip_is_private = true;
+        outbound = "direct";
+      }
 
-      ++ [
-        {
-          clash_mode = "global";
-          outbound = "proxy";
-        }
-        {
-          clash_mode = "direct";
-          outbound = "direct";
-        }
-        {
-          rule_set = "rule_set_direct";
-          outbound = "direct";
-        }
-        {
-          rule_set = "rule_set_proxy";
-          outbound = "proxy";
-        }
-        {
-          rule_set = "geosite-geolocation-cn@ads";
-          action = "reject";
-        }
-        {
-          rule_set = "geosite-geolocation-!cn@ads";
-          action = "reject";
-        }
-        {
-          rule_set = "geosite-cn";
-          outbound = "direct";
-        }
-        {
-          rule_set = "geoip-cn";
-          outbound = "direct";
-        }
-      ];
+      {
+        clash_mode = "global";
+        outbound = "proxy";
+      }
+      {
+        clash_mode = "direct";
+        outbound = "direct";
+      }
+      {
+        rule_set = "rule_set_direct";
+        outbound = "direct";
+      }
+      {
+        rule_set = "rule_set_proxy";
+        outbound = "proxy";
+      }
+      {
+        rule_set = "geosite-geolocation-cn@ads";
+        action = "reject";
+      }
+      {
+        rule_set = "geosite-geolocation-!cn@ads";
+        action = "reject";
+      }
+      {
+        rule_set = "geosite-cn";
+        outbound = "direct";
+      }
+      {
+        rule_set = "geoip-cn";
+        outbound = "direct";
+      }
+    ];
     final = "proxy";
     auto_detect_interface = true;
   };
@@ -261,12 +266,12 @@ let
         }
         // shared
       )
-    ]) (filter (tag: tag != "claw") secrets.vps)
+    ]) (filter (tag: tag != "claw") secrets.sing-box.server)
     ++ [
       {
         tag = "proxy";
         type = "selector";
-        outbounds = secrets.vps ++ [
+        outbounds = secrets.sing-box.server ++ [
           "cloudflare"
         ];
       }

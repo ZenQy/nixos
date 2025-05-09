@@ -64,7 +64,7 @@
 
     ## Others ##
     tdesktop
-    # hugo
+    hugo
     # android-tools
     # mdbook
     # mitmproxy

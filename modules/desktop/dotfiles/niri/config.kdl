@@ -85,6 +85,7 @@ window-rule {
 window-rule {
     match app-id="codium"
     match app-id="dev.zed.Zed"
+    match app-id="obsidian"
     opacity 0.8
     open-on-workspace "4"
 }

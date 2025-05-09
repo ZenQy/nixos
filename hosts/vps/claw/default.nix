@@ -19,7 +19,7 @@
         config = concatStringsSep "\n" (
           map (
             tag: "reverse_proxy /${tag} ${domain tag}:${toString secrets.sing-box.trojan.port}"
-          ) secrets.vps
+          ) secrets.sing-box.server
         );
       in
       ''

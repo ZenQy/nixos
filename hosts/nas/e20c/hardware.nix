@@ -21,8 +21,7 @@
     kernelParams = [
       "console=ttyS0,1500000"
     ];
-    # kernelPackages = pkgs.linuxPackagesFor pkgs.linux-armbian;
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackagesFor pkgs.linux-armbian;
 
   };
 

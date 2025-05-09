@@ -13,8 +13,7 @@ on:
           - osaka-2
           - claw
           - natvps
-          - alice-1
-          - alice-2
+          - alice
           - sailor
         required: false
         default: all
@@ -42,7 +41,7 @@ jobs:
         run: |
           hosts='[ "${{ inputs.hosts }}" ]'
           if [[ "${{ inputs.hosts }}" == 'all' ]]; then
-            hosts='[ "osaka-1", "osaka-2", "claw", "natvps", "alice-1", "alice-2", "sailor" ]'
+            hosts='[ "osaka-1", "osaka-2", "claw", "natvps", "alice", "sailor" ]'
           fi
           echo $hosts
           echo "matrix=$(echo $hosts)" >> $GITHUB_OUTPUT
@@ -96,7 +95,7 @@ jobs:
         name: Set IPv6 tag
         run: |
           host=${{matrix.hosts}}
-          if [[ $host == 'alice-1' || $host == 'alice-2' || $host == 'natvps' ]]; then
+          if [[ $host == 'alice' || $host == 'natvps' ]]; then
             echo "ipv6=true" >> $GITHUB_OUTPUT
           fi
 
