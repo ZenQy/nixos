@@ -28,10 +28,10 @@
           "10.0.0.11"
           secrets.hosts.beelink.ipv6.gateway
         ];
-        DHCP = "no";
+        DHCP = false;
         networkConfig = {
-          IPv6AcceptRA = "no";
-          LinkLocalAddressing = "no";
+          IPv6AcceptRA = false;
+          LinkLocalAddressing = false;
         };
       };
     in

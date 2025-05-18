@@ -7,7 +7,7 @@
 
   systemd.network.networks.default = {
     name = "eth0";
-    DHCP = "yes";
+    DHCP = true;
   };
 
 }

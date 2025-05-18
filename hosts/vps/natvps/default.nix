@@ -18,10 +18,10 @@
         GatewayOnLink = true;
       }
     ];
-    DHCP = "no";
+    DHCP = false;
     networkConfig = {
-      IPv6AcceptRA = "no";
-      LinkLocalAddressing = "no";
+      IPv6AcceptRA = false;
+      LinkLocalAddressing = false;
     };
   };
 

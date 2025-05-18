@@ -12,8 +12,9 @@
 
   systemd.network.networks.default = {
     name = "eth0";
-    DHCP = "yes";
+    DHCP = true;
   };
+
   zenith = {
     cachix.enable = true;
     nezha.enable = true;
@@ -24,6 +25,11 @@
           source = "/var/lib/nezha/data/";
           dest = "/osaka-arm/nezha";
           exclude = [ "config.yaml" ];
+        }
+        {
+          source = "/var/lib/vaultwarden/";
+          dest = "/osaka-arm/vaultwarden";
+          exclude = [ "tmp" ];
         }
       ];
     };

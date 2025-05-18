@@ -5,27 +5,6 @@
     ./hardware.nix
   ];
 
-  # systemd.network.networks = {
-  #   eth0 = {
-  #     name = "eth0";
-  #     address = [
-  #       "10.0.0.16/24"
-  #     ];
-  #     gateway = [
-  #       "10.0.0.1"
-  #     ];
-  #   };
-  #   eth1 = {
-  #     name = "eth1";
-  #     address = [
-  #       "10.0.0.18/24"
-  #     ];
-  #     gateway = [
-  #       "10.0.0.1"
-  #     ];
-  #   };
-  # };
-
   systemd.network.networks = {
     wan = {
       name = "pppoe-wan";
@@ -46,13 +25,18 @@
 
     lan = {
       name = "eth1";
-      address = [
-        "10.0.0.18/24"
-      ];
-      gateway = [
-        "10.0.0.1"
-      ];
-      DHCP = "ipv6";
+      networkConfig = {
+        Address = "10.0.0.18/24";
+        Gateway = "10.0.0.1";
+        DHCP = "ipv6";
+        IPv6AcceptRA = false;
+        LinkLocalAddressing = false;
+        DHCPServer = true;
+      };
+      dhcpServerConfig = {
+        PoolOffset = 100;
+        PoolSize = 150;
+      };
     };
   };
 
