@@ -76,6 +76,26 @@
         },
         "version": "lite-latest"
     },
+    "traffmonetizer-amd64": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "traffmonetizer-amd64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "arch": "amd64",
+            "finalImageName": null,
+            "finalImageTag": null,
+            "imageDigest": "sha256:217e332155cfc1427a125db7b615aad24d522c0def7d21e1090f4e7eb1a1e364",
+            "imageName": "traffmonetizer/cli_v2",
+            "imageTag": "latest",
+            "os": "linux",
+            "sha256": "sha256-Yb4CriAMxPniSWvwfPRP77cElN7n3m3aKcVdjjUJizI=",
+            "tlsVerify": null
+        },
+        "version": "latest"
+    },
     "vitejs": {
         "cargoLocks": null,
         "date": null,

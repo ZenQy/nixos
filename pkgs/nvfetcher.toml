@@ -25,3 +25,10 @@ docker.arch = "arm64"
 [linux-armbian]
 src.github_tag = "armbian/linux-rockchip"
 fetch.github = "armbian/linux-rockchip"
+
+[traffmonetizer-amd64]
+src.container = "traffmonetizer/cli_v2"
+src.include_regex = "latest"
+fetch.docker = "traffmonetizer/cli_v2"
+docker.os = "linux"
+docker.arch = "amd64"

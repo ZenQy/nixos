@@ -40,6 +40,7 @@
       BackgroundModeEnabled = false;
       BrowserSignin = 1;
       DefaultNotificationsSetting = 2;
+      ExtensionDeveloperModeSettings = 0;
       ExtensionManifestV2Availability = 2;
       HomepageIsNewTabPage = false;
       PasswordManagerEnabled = false;

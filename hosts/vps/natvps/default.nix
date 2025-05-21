@@ -7,10 +7,6 @@
 
   systemd.network.networks.default = {
     name = "eth0";
-    address = [
-      secrets.hosts.natvps.ipv4.ip
-      secrets.hosts.natvps.ipv6.ip
-    ];
     routes = [
       { Gateway = secrets.hosts.natvps.ipv4.gateway; }
       {
@@ -18,8 +14,12 @@
         GatewayOnLink = true;
       }
     ];
-    DHCP = false;
     networkConfig = {
+      Address = [
+        secrets.hosts.natvps.ipv4.ip
+        secrets.hosts.natvps.ipv6.ip
+      ];
+      DHCP = false;
       IPv6AcceptRA = false;
       LinkLocalAddressing = false;
     };
