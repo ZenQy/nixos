@@ -15,20 +15,6 @@ fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper
 src.git = "https://github.com/xqdoo00o/chatgpt-web"
 fetch.github = "xqdoo00o/chatgpt-web"
 
-[qd]
-src.container = "qdtoday/qd"
-src.include_regex = "lite-latest"
-fetch.docker = "qdtoday/qd"
-docker.os = "linux"
-docker.arch = "arm64"
-
 [linux-armbian]
 src.github_tag = "armbian/linux-rockchip"
 fetch.github = "armbian/linux-rockchip"
-
-[traffmonetizer-amd64]
-src.container = "traffmonetizer/cli_v2"
-src.include_regex = "latest"
-fetch.docker = "traffmonetizer/cli_v2"
-docker.os = "linux"
-docker.arch = "amd64"

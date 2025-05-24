@@ -12,7 +12,7 @@
 
   systemd.network.networks.default = {
     name = "eth0";
-    DHCP = true;
+    networkConfig.DHCP = true;
   };
 
   zenith = {

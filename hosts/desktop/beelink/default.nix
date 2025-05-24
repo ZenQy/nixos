@@ -23,36 +23,37 @@
   };
   systemd.network.networks =
     let
-      n = {
-        gateway = [
+      nc = {
+        Gateway = [
           "10.0.0.11"
           secrets.hosts.beelink.ipv6.gateway
         ];
         DHCP = false;
-        networkConfig = {
-          IPv6AcceptRA = false;
-          LinkLocalAddressing = false;
-        };
+        IPv6AcceptRA = false;
+        LinkLocalAddressing = false;
       };
     in
     {
       enp3s0 = {
         name = "enp3s0";
-        DHCP = "yes";
+        networkConfig = {
+          DHCP = "yes";
+        };
       };
       enp4s0 = {
         name = "enp4s0";
-        address = [
-          "10.0.0.24/24"
-        ];
-      } // n;
+        networkConfig = {
+          Address = "10.0.0.24/24";
+        } // nc;
+      };
       wlp5s0 = {
         name = "wlp5s0";
-        address = [
-          "10.0.0.25/24"
-          secrets.hosts.beelink.ipv6.ip
-        ];
-      } // n;
+        networkConfig = {
+          Address = [
+            "10.0.0.25/24"
+            secrets.hosts.beelink.ipv6.ip
+          ];
+        } // nc;
+      };
     };
-
 }

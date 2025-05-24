@@ -119,6 +119,11 @@
     '';
   };
 
+  zenith.podman = {
+    qd.enable = true;
+    qinglong.enable = true;
+  };
+
   zenith.rclone = {
     enable = true;
     path = [
@@ -131,7 +136,7 @@
         ];
       }
       {
-        source = "/var/lib/docker/volumes/qd_config/_data/";
+        source = "/var/lib/containers/storage/volumes/qd/_data/";
         dest = "/rock-5b/qd";
         include = [
           "config.json"
@@ -139,20 +144,6 @@
         ];
       }
     ];
-  };
-
-  virtualisation.oci-containers = {
-    backend = "docker";
-    containers = {
-      qd = {
-        ports = [ "8923:80" ];
-        volumes = [
-          "qd_config:/usr/src/app/config"
-        ];
-        image = "qdtoday/qd";
-        imageFile = pkgs.qd;
-      };
-    };
   };
 
 }

@@ -3,8 +3,9 @@
 {
   imports = [
     ../vps
-    ../vps/rclone.nix
     ../vps/nezha-agent.nix
+    ../vps/podman.nix
+    ../vps/rclone.nix
   ];
 
   nix.settings.substituters = [
