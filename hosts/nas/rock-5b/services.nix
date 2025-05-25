@@ -121,7 +121,6 @@
 
   zenith.podman = {
     qd.enable = true;
-    qinglong.enable = true;
   };
 
   zenith.rclone = {

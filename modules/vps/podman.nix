@@ -13,34 +13,24 @@ in
 
 {
   options.zenith.podman = {
-    qinglong.enable = mkOption {
+    qd.enable = mkOption {
       type = types.bool;
       default = false;
-      description = "是否启用qinglong";
+      description = "是否启用qd";
     };
     traffmonetizer.enable = mkOption {
       type = types.bool;
       default = false;
       description = "是否启用traffmonetizer";
     };
-    qd.enable = mkOption {
+    redroid.enable = mkOption {
       type = types.bool;
       default = false;
-      description = "是否启用qd";
+      description = "是否启用redroid";
     };
   };
 
   config = mkMerge [
-    (mkIf cfg.qinglong.enable {
-      virtualisation.oci-containers.containers = {
-        qinglong = {
-          autoStart = true;
-          image = "whyour/qinglong:latest";
-          ports = [ "2011:5700" ];
-          volumes = [ "qinglong:/ql/data" ];
-        };
-      };
-    })
     (mkIf cfg.qd.enable {
       virtualisation.oci-containers.containers = {
         qd = {
@@ -67,6 +57,21 @@ in
             secrets.traffmonetizer.token
             "--device-name"
             config.networking.hostName
+          ];
+        };
+      };
+    })
+    (mkIf cfg.redroid.enable {
+      virtualisation.oci-containers.containers = {
+        redroid = {
+          autoStart = true;
+          privileged = true;
+          image = "cnflysky/redroid-rk3588:lineage-20";
+          ports = [ "5555:5555" ];
+          volumes = [ "redroid:/data" ];
+          cmd = [
+            "androidboot.redroid_height=1920"
+            "androidboot.redroid_width=1080"
           ];
         };
       };
