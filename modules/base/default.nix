@@ -72,6 +72,10 @@
     PS1="\[\033[$PROMPT_COLOR\][\u@\h:\w]\\$\[\033[0m\] "
   '';
 
+  security.sudo.enable = false;
+  security.sudo-rs.enable = true;
+  security.sudo-rs.wheelNeedsPassword = false;
+
   environment.systemPackages = with pkgs; [
     fastfetch
     jq

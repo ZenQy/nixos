@@ -41,7 +41,7 @@ in
         };
       };
     })
-    (mkIf cfg.qinglong.enable {
+    (mkIf cfg.qd.enable {
       virtualisation.oci-containers.containers = {
         qd = {
           autoStart = true;
@@ -51,7 +51,7 @@ in
         };
       };
     })
-    (mkIf cfg.qinglong.enable {
+    (mkIf cfg.traffmonetizer.enable {
       virtualisation.oci-containers.containers = {
         traffmonetizer = {
           autoStart = true;

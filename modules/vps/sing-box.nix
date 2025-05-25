@@ -9,7 +9,8 @@
   services.sing-box =
     let
       host = config.networking.hostName;
-      isAlice = (builtins.substring 0 5 host) == "alice";
+      isAlice = host == "alice";
+      isClaw = host == "claw";
       log = {
         disabled = false;
         level = "warn";
@@ -33,7 +34,7 @@
           };
         in
         (
-          if host == "claw" then
+          if isClaw then
             [
               (
                 trojan
@@ -68,6 +69,25 @@
                 }
               )
             ]
+        )
+        ++ (
+          if isAlice then
+            [
+              {
+                type = "tun";
+                tag = "tun-in";
+                address = [
+                  "172.18.0.1/24"
+                  "fdfe:dcba:9876::1/64"
+                ];
+                mtu = 1500;
+                auto_route = true;
+                strict_route = false;
+                stack = "gvisor";
+              }
+            ]
+          else
+            [ ]
         );
       outbounds =
         if isAlice then
