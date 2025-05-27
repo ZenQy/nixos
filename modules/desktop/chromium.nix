@@ -17,9 +17,9 @@
       # Extension Manager
       # "gjldcdngmdknpinoemndlidpcabkggco"
       # Tampermonkey BETA
-      # "gcalenpjmijncebpfijmoaglllgpjagf"
+      "gcalenpjmijncebpfijmoaglllgpjagf"
       # scriptcat
-      "ndcooeababalnlpkfedmmbbbgkljhpjf"
+      # "ndcooeababalnlpkfedmmbbbgkljhpjf"
       # Stylus
       # "clngdbkpkpeebahjckkjfobafhncgmne"
       # 沙拉查词

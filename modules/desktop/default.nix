@@ -61,10 +61,14 @@
     obsidian
     sqlitebrowser
 
+    ## android ##
+    android-tools
+    payload-dumper-go
+    erofs-utils
+
     ## Others ##
     tdesktop
     hugo
-    # android-tools
     # mdbook
     # mitmproxy
     # python3
