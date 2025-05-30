@@ -56,46 +56,6 @@
         },
         "version": "v24.11.1"
     },
-    "qd": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "qd",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "arch": "arm64",
-            "finalImageName": null,
-            "finalImageTag": null,
-            "imageDigest": "sha256:82001a466271f9c1f8faebc053a19b3f956f938220153b599798d2f0805ebafa",
-            "imageName": "qdtoday/qd",
-            "imageTag": "lite-latest",
-            "os": "linux",
-            "sha256": "sha256-DTA6aVyYQFf4+SYfyPh4ekJPqgGhoIaslqIRQpQWaZo=",
-            "tlsVerify": null
-        },
-        "version": "lite-latest"
-    },
-    "traffmonetizer-amd64": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "traffmonetizer-amd64",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "arch": "amd64",
-            "finalImageName": null,
-            "finalImageTag": null,
-            "imageDigest": "sha256:217e332155cfc1427a125db7b615aad24d522c0def7d21e1090f4e7eb1a1e364",
-            "imageName": "traffmonetizer/cli_v2",
-            "imageTag": "latest",
-            "os": "linux",
-            "sha256": "sha256-Yb4CriAMxPniSWvwfPRP77cElN7n3m3aKcVdjjUJizI=",
-            "tlsVerify": null
-        },
-        "version": "latest"
-    },
     "vitejs": {
         "cargoLocks": null,
         "date": null,

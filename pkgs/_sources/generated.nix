@@ -32,30 +32,6 @@
       sha256 = "sha256-ZqEKQyFeE0UXN+tY8uAGrKgi9mXEp6s5WGyjVuxmuyM=";
     };
   };
-  qd = {
-    pname = "qd";
-    version = "lite-latest";
-    src = dockerTools.pullImage {
-      imageName = "qdtoday/qd";
-      imageDigest = "sha256:82001a466271f9c1f8faebc053a19b3f956f938220153b599798d2f0805ebafa";
-      sha256 = "sha256-DTA6aVyYQFf4+SYfyPh4ekJPqgGhoIaslqIRQpQWaZo=";
-      finalImageTag = "lite-latest";
-      os = "linux";
-      arch = "arm64";
-    };
-  };
-  traffmonetizer-amd64 = {
-    pname = "traffmonetizer-amd64";
-    version = "latest";
-    src = dockerTools.pullImage {
-      imageName = "traffmonetizer/cli_v2";
-      imageDigest = "sha256:217e332155cfc1427a125db7b615aad24d522c0def7d21e1090f4e7eb1a1e364";
-      sha256 = "sha256-Yb4CriAMxPniSWvwfPRP77cElN7n3m3aKcVdjjUJizI=";
-      finalImageTag = "latest";
-      os = "linux";
-      arch = "amd64";
-    };
-  };
   vitejs = {
     pname = "vitejs";
     version = "v6.3.5";
