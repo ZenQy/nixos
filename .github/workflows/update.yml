@@ -107,8 +107,9 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git diff-index --quiet HEAD \
-          || (git commit -am "Update dependencies - Automated Commit" && git push || git stash)
+          git add .
+          git commit -m "Update dependencies - Automated Commit"
+          git push
 
   build:
     runs-on: ubuntu-24.04
