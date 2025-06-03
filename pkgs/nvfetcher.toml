@@ -18,3 +18,8 @@ fetch.github = "xqdoo00o/chatgpt-web"
 [linux-armbian]
 src.github_tag = "armbian/linux-rockchip"
 fetch.github = "armbian/linux-rockchip"
+
+[librespeed-rs]
+src.github_tag = "librespeed/speedtest-rust"
+fetch.github = "librespeed/speedtest-rust"
+cargo_locks = ["Cargo.lock"]
