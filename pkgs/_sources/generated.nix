@@ -15,10 +15,27 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2025.05.02";
+    version = "v2025.06.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.05.02/zenith.dict";
-      sha256 = "sha256-j9fjrcDTDDZxD17Xjg9aO9tiP5nPfQlYyycvXnNjLxM=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.06.02/zenith.dict";
+      sha256 = "sha256-z90YwlFhNyfT3qzZElb3Rnvj0bntXatAahjMgYqd1ks=";
+    };
+  };
+  librespeed-rs = {
+    pname = "librespeed-rs";
+    version = "v1.3.7";
+    src = fetchFromGitHub {
+      owner = "librespeed";
+      repo = "speedtest-rust";
+      rev = "v1.3.7";
+      fetchSubmodules = false;
+      sha256 = "sha256-druHF3IdYGaDC0eFNY4bbwLaPgLhiBzTY8a03wiJnQE=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./librespeed-rs-v1.3.7/Cargo.lock;
+      outputHashes = {
+        
+      };
     };
   };
   linux-armbian = {
@@ -45,10 +62,10 @@
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2025.05.03";
+    version = "v2025.06.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.05.03/wallpaper.tar.gz";
-      sha256 = "sha256-egwSK1J8ZQqnoEYUT4+qRWYTKWyHVnNdJRSIMaif3WY=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.06.03/wallpaper.tar.gz";
+      sha256 = "sha256-VJ+7qcW/tG+U5hkF/tVDQEfhpK4Om2e2GZbgCWHcp/I=";
     };
   };
 }

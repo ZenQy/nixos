@@ -29,11 +29,37 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-j9fjrcDTDDZxD17Xjg9aO9tiP5nPfQlYyycvXnNjLxM=",
+            "sha256": "sha256-z90YwlFhNyfT3qzZElb3Rnvj0bntXatAahjMgYqd1ks=",
             "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2025.05.02/zenith.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2025.06.02/zenith.dict"
         },
-        "version": "v2025.05.02"
+        "version": "v2025.06.02"
+    },
+    "librespeed-rs": {
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./librespeed-rs-v1.3.7/Cargo.lock",
+                {}
+            ]
+        },
+        "date": null,
+        "extract": null,
+        "name": "librespeed-rs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "librespeed",
+            "repo": "speedtest-rust",
+            "rev": "v1.3.7",
+            "sha256": "sha256-druHF3IdYGaDC0eFNY4bbwLaPgLhiBzTY8a03wiJnQE=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.3.7"
     },
     "linux-armbian": {
         "cargoLocks": null,
@@ -86,10 +112,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-egwSK1J8ZQqnoEYUT4+qRWYTKWyHVnNdJRSIMaif3WY=",
+            "sha256": "sha256-VJ+7qcW/tG+U5hkF/tVDQEfhpK4Om2e2GZbgCWHcp/I=",
             "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.05.03/wallpaper.tar.gz"
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.06.03/wallpaper.tar.gz"
         },
-        "version": "v2025.05.03"
+        "version": "v2025.06.03"
     }
 }
