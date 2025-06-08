@@ -18,7 +18,7 @@ let
       }
       {
         tag = "dns_direct";
-        address = "127.0.0.1";
+        address = "114.114.114.114";
         detour = "direct";
       }
       {
@@ -30,10 +30,6 @@ let
       {
         outbound = "any";
         server = "dns_direct";
-      }
-      {
-        clash_mode = "global";
-        server = "dns_proxy";
       }
       {
         clash_mode = "direct";
@@ -48,16 +44,16 @@ let
         server = "dns_proxy";
       }
       {
+        rule_set = "geosite-cn";
+        server = "dns_direct";
+      }
+      {
         rule_set = "geosite-geolocation-cn@ads";
         server = "dns_refused";
       }
       {
         rule_set = "geosite-geolocation-!cn@ads";
         server = "dns_refused";
-      }
-      {
-        rule_set = "geosite-cn";
-        server = "dns_direct";
       }
     ];
     final = "dns_proxy";
@@ -136,14 +132,6 @@ let
         action = "sniff";
       }
       {
-        # adguardhome 出栈数据务必放行
-        protocol = "dns";
-        process_name = [
-          "adguardhome"
-        ];
-        outbound = "direct";
-      }
-      {
         protocol = "dns";
         action = "hijack-dns";
       }
@@ -151,7 +139,6 @@ let
         ip_is_private = true;
         outbound = "direct";
       }
-
       {
         clash_mode = "global";
         outbound = "proxy";
@@ -222,85 +209,27 @@ let
     }
   ];
   outbounds =
-    with builtins;
-    let
-      shared = {
-        type = "trojan";
-        inherit (secrets.sing-box.trojan) password;
-        server_port = 443;
-        tls = {
-          enabled = true;
-          utls.enabled = true;
-        };
-        multiplex.enabled = true;
+    map (tag: {
+      inherit tag;
+      type = "trojan";
+      server = "${tag}.${secrets.domain}";
+      server_port = if tag == "lxc" then 20443 else 443;
+      inherit (secrets.sing-box.trojan) password;
+      transport = {
+        type = "ws";
+        inherit (secrets.sing-box.trojan) path;
       };
-    in
-    concatMap (tag: [
-      {
-        inherit tag;
-        type = "urltest";
-        outbounds = [
-          "🇨🇳→${tag}"
-          "claw→${tag}"
-        ];
-      }
-      (
-        {
-          tag = "🇨🇳→${tag}";
-          server = "${tag}.${secrets.domain}";
-          transport = {
-            type = "ws";
-            path = "/${tag}";
-          };
-        }
-        // shared
-      )
-      (
-        {
-          tag = "claw→${tag}";
-          server = "claw.${secrets.domain}";
-          transport = {
-            type = "ws";
-            path = "/${tag}";
-          };
-        }
-        // shared
-      )
-    ]) (filter (tag: tag != "claw") secrets.sing-box.server)
+      tls = {
+        enabled = true;
+        utls.enabled = true;
+      };
+      multiplex.enabled = tag != "cf";
+    }) secrets.sing-box.server
     ++ [
       {
         tag = "proxy";
         type = "selector";
-        outbounds = secrets.sing-box.server ++ [
-          "cloudflare"
-        ];
-      }
-      (
-        {
-          tag = "claw";
-          server = "claw.${secrets.domain}";
-          transport = {
-            type = "ws";
-            path = "/claw";
-          };
-        }
-        // shared
-      )
-      {
-        tag = "cloudflare";
-        type = "trojan";
-        server = "www.visa.com.sg";
-        server_port = 443;
-        inherit (secrets.sing-box.trojan) password;
-        tls = {
-          enabled = true;
-          server_name = "cf.${secrets.domain}";
-        };
-        transport = {
-          type = "ws";
-          headers.Host = "cf.${secrets.domain}";
-          path = "/8PtaCVX69w3a4X";
-        };
+        outbounds = secrets.sing-box.server;
       }
       {
         tag = "direct";
@@ -311,7 +240,6 @@ let
     cache_file = {
       enabled = true;
       path = "cache.db";
-      store_fakeip = true;
     };
     clash_api = {
       external_controller = "0.0.0.0:9090";
@@ -320,7 +248,6 @@ let
   };
 
 in
-
 {
   services.sing-box = {
     enable = true;
