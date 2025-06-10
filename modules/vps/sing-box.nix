@@ -10,7 +10,7 @@ let
   isAlice = host == "alice";
   log = {
     disabled = false;
-    level = "warn";
+    level = "info";
     timestamp = true;
   };
   inbounds = [

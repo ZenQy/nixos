@@ -93,14 +93,12 @@ window-rule {
 window-rule {
     match app-id="org.telegram.desktop"
     opacity 0.9
-    open-on-workspace "5"
 }
 
 workspace "1"
 workspace "2"
 workspace "3"
 workspace "4"
-workspace "5"
 
 binds {
 
