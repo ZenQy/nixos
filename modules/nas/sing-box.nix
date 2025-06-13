@@ -189,7 +189,6 @@ let
       stack = "gvisor";
       include_package = [
         "InfinityLoop1309.NewPipeEnhanced"
-        "ai.x.grok"
         "app.aiaw"
         "cn.jimex.dict"
         "com.aistra.hail"
@@ -213,7 +212,7 @@ let
       inherit tag;
       type = "trojan";
       server = "${tag}.${secrets.domain}";
-      server_port = if tag == "lxc" then 20443 else 443;
+      server_port = if tag == "lxc-us" || tag == "lxc-hk" || tag == "hatch" then 11611 else 443;
       inherit (secrets.sing-box.trojan) password;
       transport = {
         type = "ws";

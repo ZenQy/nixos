@@ -21,7 +21,7 @@ in
       };
       address = mkOption {
         type = types.str;
-        default = "0.0.0.0";
+        default = "::";
         description = "bind socket adress";
       };
       port = mkOption {
