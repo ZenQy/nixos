@@ -4,7 +4,9 @@ let
     dir:
     filter (v: v != null) (
       attrValues (
-        mapAttrs (k: v: if k != "deprecated" && v == "directory" then k else null) (readDir dir)
+        mapAttrs (k: v: if k != "deprecated" && k != "_sources" && v == "directory" then k else null) (
+          readDir dir
+        )
       )
     );
 
