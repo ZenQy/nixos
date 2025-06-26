@@ -25,6 +25,10 @@ let
         tag = "dns_refused";
         address = "rcode://refused";
       }
+      {
+        tag = "dns_fakeip";
+        address = "fakeip";
+      }
     ];
     rules = [
       {
@@ -36,33 +40,41 @@ let
         server = "dns_direct";
       }
       {
-        rule_set = "rule_set_direct";
+        rule_set = "custom_direct";
         server = "dns_direct";
       }
       {
-        rule_set = "rule_set_proxy";
-        server = "dns_proxy";
+        rule_set = "custom_proxy";
+        server = "dns_fakeip";
+      }
+      {
+        rule_set = "geosite-category-ads-all";
+        server = "dns_refused";
       }
       {
         rule_set = "geosite-cn";
         server = "dns_direct";
       }
       {
-        rule_set = "geosite-geolocation-cn@ads";
-        server = "dns_refused";
-      }
-      {
-        rule_set = "geosite-geolocation-!cn@ads";
-        server = "dns_refused";
+        query_type = [
+          "A"
+          "AAAA"
+        ];
+        server = "dns_fakeip";
       }
     ];
+    fakeip = {
+      enabled = true;
+      inet4_range = "198.18.0.0/16";
+      inet6_range = "fc00::/18";
+    };
     final = "dns_proxy";
     strategy = "prefer_ipv4";
   };
   route = {
     rule_set = [
       {
-        tag = "rule_set_direct";
+        tag = "custom_direct";
         type = "inline";
         rules = [
           {
@@ -88,7 +100,7 @@ let
         ];
       }
       {
-        tag = "rule_set_proxy";
+        tag = "custom_proxy";
         type = "inline";
         rules = [
           {
@@ -113,17 +125,10 @@ let
         download_detour = "proxy";
       }
       {
-        tag = "geosite-geolocation-cn@ads";
+        tag = "geosite-category-ads-all";
         type = "remote";
         format = "binary";
-        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn@ads.srs";
-        download_detour = "proxy";
-      }
-      {
-        tag = "geosite-geolocation-!cn@ads";
-        type = "remote";
-        format = "binary";
-        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn@ads.srs";
+        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs";
         download_detour = "proxy";
       }
     ];
@@ -148,19 +153,15 @@ let
         outbound = "direct";
       }
       {
-        rule_set = "rule_set_direct";
+        rule_set = "custom_direct";
         outbound = "direct";
       }
       {
-        rule_set = "rule_set_proxy";
+        rule_set = "custom_proxy";
         outbound = "proxy";
       }
       {
-        rule_set = "geosite-geolocation-cn@ads";
-        action = "reject";
-      }
-      {
-        rule_set = "geosite-geolocation-!cn@ads";
+        rule_set = "geosite-category-ads-all";
         action = "reject";
       }
       {
