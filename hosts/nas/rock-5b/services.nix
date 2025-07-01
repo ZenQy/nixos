@@ -55,9 +55,9 @@
       };
     };
 
-  systemd.services.alist =
+  systemd.services.openlist =
     let
-      path = "/var/lib/alist";
+      path = "/var/lib/openlist";
     in
     {
       description = "A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs.";
@@ -66,17 +66,17 @@
       preStart = ''
         if [[ ! -d "${path}/data" ]]
         then
-          ${pkgs.alist}/bin/alist admin set admin
+          ${pkgs.openlist}/bin/OpenList admin set admin
         fi
       '';
       serviceConfig = {
         User = "nixos";
         Group = "wheel";
-        StateDirectory = "alist";
-        RuntimeDirectory = "alist";
+        StateDirectory = "openlist";
+        RuntimeDirectory = "openlist";
         WorkingDirectory = path;
         ExecStart = ''
-          ${pkgs.alist}/bin/alist server
+          ${pkgs.openlist}/bin/OpenList server
         '';
         RestartSec = 5;
         Restart = "on-failure";
@@ -105,17 +105,11 @@
         root * ${pkgs.ariang}/share/ariang
         file_server browse
       }
-      http://10.0.0.12:8686 {
-        root * ${pkgs.chatgpt-web}/share/chatgpt-web
-        file_server browse
-      }
+
       http://10.0.0.12:8080 {
         root * /storage
         file_server browse
       }
-      # 10.0.0.12 {
-      #   reverse_proxy :5244
-      # }
     '';
   };
 
@@ -127,8 +121,8 @@
     enable = true;
     path = [
       {
-        source = "/var/lib/alist/data/";
-        dest = "/rock-5b/alist";
+        source = "/var/lib/openlist/data/";
+        dest = "/rock-5b/openlist";
         include = [
           "config.json"
           "data.db*"

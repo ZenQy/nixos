@@ -1,121 +1,95 @@
 {
-    "chatgpt-web": {
-        "cargoLocks": null,
-        "date": "2025-02-13",
-        "extract": null,
-        "name": "chatgpt-web",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "xqdoo00o",
-            "repo": "chatgpt-web",
-            "rev": "43b062e32e31f1c61e8d955d49c7100100a75f48",
-            "sha256": "sha256-2RY3tdsspya3sHwCakEsZQZTCvUmAV9Mk2kAAnqX14g=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "43b062e32e31f1c61e8d955d49c7100100a75f48"
+  "fcitx5-pinyin-zenith": {
+    "cargoLocks": null,
+    "date": null,
+    "extract": null,
+    "name": "fcitx5-pinyin-zenith",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "name": null,
+      "sha256": "sha256-z90YwlFhNyfT3qzZElb3Rnvj0bntXatAahjMgYqd1ks=",
+      "type": "url",
+      "url": "https://github.com/ZenQy/scel2dict/releases/download/v2025.06.02/zenith.dict"
     },
-    "fcitx5-pinyin-zenith": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "fcitx5-pinyin-zenith",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-z90YwlFhNyfT3qzZElb3Rnvj0bntXatAahjMgYqd1ks=",
-            "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2025.06.02/zenith.dict"
-        },
-        "version": "v2025.06.02"
+    "version": "v2025.06.02"
+  },
+  "librespeed-rs": {
+    "cargoLocks": null,
+    "date": null,
+    "extract": null,
+    "name": "librespeed-rs",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "librespeed",
+      "repo": "speedtest-rust",
+      "rev": "v1.3.8",
+      "sha256": "sha256-TINIKZefT4ngnEtlMjxO56PrQxW5gyb1+higiSnkE3Q=",
+      "sparseCheckout": [],
+      "type": "github"
     },
-    "librespeed-rs": {
-        "cargoLocks": {
-            "Cargo.lock": [
-                "./librespeed-rs-v1.3.7/Cargo.lock",
-                {}
-            ]
-        },
-        "date": null,
-        "extract": null,
-        "name": "librespeed-rs",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "librespeed",
-            "repo": "speedtest-rust",
-            "rev": "v1.3.7",
-            "sha256": "sha256-druHF3IdYGaDC0eFNY4bbwLaPgLhiBzTY8a03wiJnQE=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v1.3.7"
+    "version": "v1.3.8"
+  },
+  "linux-armbian": {
+    "cargoLocks": null,
+    "date": null,
+    "extract": null,
+    "name": "linux-armbian",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "armbian",
+      "repo": "linux-rockchip",
+      "rev": "v24.11.1",
+      "sha256": "sha256-ZqEKQyFeE0UXN+tY8uAGrKgi9mXEp6s5WGyjVuxmuyM=",
+      "sparseCheckout": [],
+      "type": "github"
     },
-    "linux-armbian": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "linux-armbian",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "armbian",
-            "repo": "linux-rockchip",
-            "rev": "v24.11.1",
-            "sha256": "sha256-ZqEKQyFeE0UXN+tY8uAGrKgi9mXEp6s5WGyjVuxmuyM=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v24.11.1"
+    "version": "v24.11.1"
+  },
+  "vitejs": {
+    "cargoLocks": null,
+    "date": null,
+    "extract": null,
+    "name": "vitejs",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "vitejs",
+      "repo": "vite",
+      "rev": "v7.0.0",
+      "sha256": "sha256-4Ee7QTzaep07p02pL896h5c3AkhyO+DaLw4At62QP6Y=",
+      "sparseCheckout": [],
+      "type": "github"
     },
-    "vitejs": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "vitejs",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "vitejs",
-            "repo": "vite",
-            "rev": "v7.0.0",
-            "sha256": "sha256-4Ee7QTzaep07p02pL896h5c3AkhyO+DaLw4At62QP6Y=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v7.0.0"
+    "version": "v7.0.0"
+  },
+  "wallpapers": {
+    "cargoLocks": null,
+    "date": null,
+    "extract": null,
+    "name": "wallpapers",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "name": null,
+      "sha256": "sha256-VJ+7qcW/tG+U5hkF/tVDQEfhpK4Om2e2GZbgCWHcp/I=",
+      "type": "url",
+      "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.06.03/wallpaper.tar.gz"
     },
-    "wallpapers": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "wallpapers",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-VJ+7qcW/tG+U5hkF/tVDQEfhpK4Om2e2GZbgCWHcp/I=",
-            "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.06.03/wallpaper.tar.gz"
-        },
-        "version": "v2025.06.03"
-    }
+    "version": "v2025.06.03"
+  }
 }

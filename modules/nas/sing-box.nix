@@ -45,7 +45,7 @@ let
       }
       {
         rule_set = "custom_proxy";
-        server = "dns_fakeip";
+        server = "dns_proxy";
       }
       {
         rule_set = "geosite-category-ads-all";
@@ -54,13 +54,6 @@ let
       {
         rule_set = "geosite-cn";
         server = "dns_direct";
-      }
-      {
-        query_type = [
-          "A"
-          "AAAA"
-        ];
-        server = "dns_fakeip";
       }
     ];
     fakeip = {

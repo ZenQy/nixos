@@ -26,7 +26,7 @@ in
       };
       port = mkOption {
         type = types.int;
-        default = 2080;
+        default = 80;
         description = "socket listent port";
       };
       threads = mkOption {
@@ -63,10 +63,10 @@ in
           result_image_theme = "light";
           database_type = "sqlite";
           database_hostname = config.networking.hostName;
-          database_name = "speedtest_db";
+          database_name = "librespeed-rs_db";
           database_username = "";
           database_password = "";
-          database_file = "speedtest.db";
+          database_file = "librespeed-rs.db";
           enable_tls = false;
           tls_cert_file = "";
           tls_key_file = "";

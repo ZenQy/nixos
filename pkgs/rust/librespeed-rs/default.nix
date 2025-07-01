@@ -6,11 +6,11 @@
 
 rustPlatform.buildRustPackage (finalAttrs: {
   inherit (source) pname version src;
-  cargoLock = source.cargoLock."Cargo.lock";
-
+  cargoLock.lockFile = ./Cargo.lock;
   useFetchCargoVendor = true;
 
-  postConfigure = ''
+  postPatch = ''
+    ln -s ${./Cargo.lock} Cargo.lock
     rm .cargo/config.toml
   '';
 

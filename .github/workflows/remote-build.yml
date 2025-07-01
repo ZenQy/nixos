@@ -106,7 +106,8 @@ jobs:
 
       - name: remote build
         env:
-          NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p 2022"
+          NIX_SSHOPTS: |
+            -o StrictHostKeyChecking=no -p ${{ secrets.PORT }}
         run: |
           nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
 
@@ -118,7 +119,7 @@ jobs:
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           protocol: tcp6
-          port: "2022"
+          port: ${{ secrets.PORT }}
           script: nix-collect-garbage -d
 
       - name: executing remote ssh commands using ssh key
@@ -128,7 +129,7 @@ jobs:
           host: ${{ secrets[env.HOST] }}
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: "2022"
+          port: ${{ secrets.PORT }}
           script: nix-collect-garbage -d
 
       - name: Telegram notification
