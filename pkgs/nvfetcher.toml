@@ -18,4 +18,3 @@ fetch.github = "armbian/linux-rockchip"
 [librespeed-rs]
 src.github_tag = "librespeed/speedtest-rust"
 fetch.github = "librespeed/speedtest-rust"
-cargo_locks = ["Cargo.lock"]

@@ -106,8 +106,7 @@ jobs:
 
       - name: remote build
         env:
-          NIX_SSHOPTS: |
-            -o StrictHostKeyChecking=no -p ${{ secrets.PORT }}
+          NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p ${{ secrets.PORT }}"
         run: |
           nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
 

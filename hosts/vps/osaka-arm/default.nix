@@ -18,6 +18,7 @@
   zenith = {
     cachix.enable = true;
     nezha.enable = true;
+    librespeed-rs.port = 2080;
     rclone = {
       enable = true;
       path = [
@@ -85,6 +86,10 @@
         f.${secrets.domain} {
           root * /var/lib/caddy/file
           file_server browse
+        }
+
+        speed.${secrets.domain} {
+        	reverse_proxy :${toString config.zenith.librespeed-rs.port}
         }
       '';
     };
