@@ -25,10 +25,6 @@ let
         tag = "dns_refused";
         address = "rcode://refused";
       }
-      {
-        tag = "dns_fakeip";
-        address = "fakeip";
-      }
     ];
     rules = [
       {
@@ -56,13 +52,8 @@ let
         server = "dns_direct";
       }
     ];
-    fakeip = {
-      enabled = true;
-      inet4_range = "198.18.0.0/16";
-      inet6_range = "fc00::/18";
-    };
     final = "dns_proxy";
-    strategy = "prefer_ipv4";
+    strategy = "ipv4_only";
   };
   route = {
     rule_set = [
