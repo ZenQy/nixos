@@ -33,21 +33,21 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.0.0";
+    version = "v7.0.2";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.0.0";
+      rev = "v7.0.2";
       fetchSubmodules = false;
-      sha256 = "sha256-4Ee7QTzaep07p02pL896h5c3AkhyO+DaLw4At62QP6Y=";
+      sha256 = "sha256-/4UOL96Wuk6uMSdc1QUaE/kgiClvhPAYGBPFIUeJXIQ=";
     };
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2025.06.03";
+    version = "v2025.07.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.06.03/wallpaper.tar.gz";
-      sha256 = "sha256-VJ+7qcW/tG+U5hkF/tVDQEfhpK4Om2e2GZbgCWHcp/I=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.07.03/wallpaper.tar.gz";
+      sha256 = "sha256-7awBsTJfE76bdYAPANB+Ccg2z8R22UahebQ0Y46CK9M=";
     };
   };
 }

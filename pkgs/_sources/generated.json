@@ -70,12 +70,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v7.0.0",
-            "sha256": "sha256-4Ee7QTzaep07p02pL896h5c3AkhyO+DaLw4At62QP6Y=",
+            "rev": "v7.0.2",
+            "sha256": "sha256-/4UOL96Wuk6uMSdc1QUaE/kgiClvhPAYGBPFIUeJXIQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.0.0"
+        "version": "v7.0.2"
     },
     "wallpapers": {
         "cargoLocks": null,
@@ -86,10 +86,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-VJ+7qcW/tG+U5hkF/tVDQEfhpK4Om2e2GZbgCWHcp/I=",
+            "sha256": "sha256-7awBsTJfE76bdYAPANB+Ccg2z8R22UahebQ0Y46CK9M=",
             "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.06.03/wallpaper.tar.gz"
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.07.03/wallpaper.tar.gz"
         },
-        "version": "v2025.06.03"
+        "version": "v2025.07.03"
     }
 }
