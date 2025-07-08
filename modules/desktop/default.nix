@@ -44,6 +44,6 @@
 
   environment.variables = {
     NIXOS_OZONE_WL = "1";
-    inherit (secrets.AI) ANTHROPIC_API_EKY;
+    inherit (secrets.AI) DEEPSEEK_API_EKY;
   };
 }

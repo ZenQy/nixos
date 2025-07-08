@@ -11,10 +11,14 @@ fetch.url = "https://github.com/ZenQy/scel2dict/releases/download/$ver/zenith.di
 src.github = "ZenQy/wallpaper"
 fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper.tar.gz"
 
+[librespeed-rs]
+src.github_tag = "librespeed/speedtest-rust"
+fetch.github = "librespeed/speedtest-rust"
+
 [linux-armbian]
 src.github_tag = "armbian/linux-rockchip"
 fetch.github = "armbian/linux-rockchip"
 
-[librespeed-rs]
-src.github_tag = "librespeed/speedtest-rust"
-fetch.github = "librespeed/speedtest-rust"
+[linux-flippy]
+src.git = "https://github.com/unifreq/linux-6.12.y"
+fetch.github = "unifreq/linux-6.12.y"

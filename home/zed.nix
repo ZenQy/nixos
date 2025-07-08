@@ -1,8 +1,8 @@
 {
-  assistant = {
+  agent = {
     default_model = {
-      provider = "zed.dev";
-      model = "claude-3-7-sonnet-thinking-latest";
+      model = "deepseek-sonnet-4-latest";
+      provider = "deepseek";
     };
     version = "2";
   };
@@ -17,20 +17,14 @@
     enabled = true;
   };
   languages = {
+    Go = {
+      language_servers = [ "gopls" ];
+    };
     JSON = {
       enable_language_server = false;
     };
     JSONC = {
       enable_language_server = false;
-    };
-    YAML = {
-      enable_language_server = false;
-    };
-    Rust = {
-      language_servers = [ "rust-analyzer" ];
-    };
-    Go = {
-      language_servers = [ "gopls" ];
     };
     Nix = {
       language_servers = [
@@ -38,14 +32,20 @@
         "!nil"
       ];
     };
+    Rust = {
+      language_servers = [ "rust-analyzer" ];
+    };
     Svelte = {
-      language_servers = [ "svelte-language-server" ];
+      language_servers = [ "svelteserver" ];
+    };
+    YAML = {
+      enable_language_server = false;
     };
   };
   lsp = {
     gopls = { };
     rust-analyzer = { };
-    svelte-language-server = { };
+    svelteserver = { };
   };
   soft_wrap = "editor_width";
   tab_size = 2;
@@ -58,9 +58,9 @@
     metrics = false;
   };
   theme = {
-    mode = "dark";
     dark = "Ayu Dark";
     light = "Ayu Light";
+    mode = "dark";
   };
   ui_font_size = 16;
 }
