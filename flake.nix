@@ -78,6 +78,7 @@
                     "tx3"
                     "rock-5b"
                     "e20c"
+                    "oect"
                   ]
                 then
                   "aarch64-linux"
