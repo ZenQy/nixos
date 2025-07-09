@@ -10,8 +10,8 @@
 
   hardware.deviceTree = {
     enable = true;
-    name = "rockchip/rk3528-radxa-e20c.dtb";
-    filter = "*e20c*.dtb";
+    name = "rockchip/rk3566-wxy-oec-turbo-4g.dtb";
+    filter = "*oec*.dtb";
   };
 
   boot = {
@@ -21,8 +21,7 @@
     kernelParams = [
       "console=ttyS0,1500000"
     ];
-    kernelPackages = pkgs.linuxPackagesFor pkgs.linux-armbian;
-
+    kernelPackages = pkgs.linuxPackagesFor pkgs.linux-flippy;
   };
 
   fileSystems."/" = {
