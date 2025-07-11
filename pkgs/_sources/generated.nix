@@ -33,25 +33,25 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "513a69bc0e74724cee598621fe173aac3d691672";
+    version = "917eecec3fc845cdc08af786c19102afa85e2904";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "513a69bc0e74724cee598621fe173aac3d691672";
+      rev = "917eecec3fc845cdc08af786c19102afa85e2904";
       fetchSubmodules = false;
-      sha256 = "sha256-btSBASrmrGDnf0zmnxDNZs7lytqexIPHjsFc2XJfuVE=";
+      sha256 = "sha256-SQ+Hgnjb8TsaLr3WudRyyzKuMC3uBY0Hh7OuQoOrrng=";
     };
-    date = "2025-07-07";
+    date = "2025-07-10";
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.0.3";
+    version = "v7.0.4";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.0.3";
+      rev = "v7.0.4";
       fetchSubmodules = false;
-      sha256 = "sha256-H2JqIl8YLkpW/XycV9iv4F+5PGLhVfZSvCR8eDEu0pM=";
+      sha256 = "sha256-P+3ZvM80FJi3ej4KMymOaMyfz7PtgGgucdgUcYDBJ5U=";
     };
   };
   wallpapers = {
