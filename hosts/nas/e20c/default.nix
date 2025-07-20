@@ -1,5 +1,5 @@
 { ... }:
-
+# 拨号还未验证
 {
   imports = [
     ./hardware.nix
@@ -43,14 +43,21 @@
   services.pppd = {
     enable = true;
     peers.pppoe.config = ''
-      plugin pppoe.so eth0
+      plugin rp-pppoe.so
+      eth0
 
-      name 12345678901  # 账号
-      password Iampasswd  # 密码
+      name "<username>"
+      password "<password>"
       ifname pppoe-wan
 
-      usepeerdns
-      defaultroute  # v4默认路由
+      +ipv6 ipv6cp-use-ipaddr
+
+      persist
+      maxfail 0
+      holdoff 5
+
+      noipdefault
+      defaultroute
     '';
   };
 

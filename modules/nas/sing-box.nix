@@ -182,6 +182,7 @@ let
         "com.google.android.gms"
         "com.ichi2.anki"
         "com.x8bit.bitwarden"
+        "com.xbrowser.play"
         "io.legado.app.release"
         "mark.via.gp"
         "me.bmax.apatch"
@@ -207,13 +208,30 @@ let
         enabled = true;
         utls.enabled = true;
       };
-      multiplex.enabled = tag != "cf";
+      multiplex.enabled = true;
     }) secrets.sing-box.server
     ++ [
       {
+        tag = "cf";
+        type = "vless";
+        server = "cf.${secrets.domain}";
+        server_port = 443;
+        inherit (secrets.sing-box.vless) uuid;
+        transport = {
+          type = "ws";
+          inherit (secrets.sing-box.vless) path;
+        };
+        tls = {
+          enabled = true;
+          utls.enabled = true;
+          # fragment = true; # v1.12.0 支持
+        };
+        packet_encoding = "packetaddr";
+      }
+      {
         tag = "proxy";
         type = "selector";
-        outbounds = secrets.sing-box.server;
+        outbounds = secrets.sing-box.server ++ [ "cf" ];
       }
       {
         tag = "direct";

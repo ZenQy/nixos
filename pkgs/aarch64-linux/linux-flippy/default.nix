@@ -7,7 +7,7 @@
 
 let
   kernelBranch = "6.12";
-  kernelVersion = "6.12.36";
+  kernelVersion = "6.12.39";
 in
 linuxManualConfig {
   inherit (source) src;

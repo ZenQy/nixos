@@ -20,6 +20,7 @@
     loader.generic-extlinux-compatible.configurationLimit = 2;
     kernelParams = [
       "console=ttyS0,1500000"
+      "console=tty0"
     ];
     kernelPackages = pkgs.linuxPackagesFor pkgs.linux-flippy;
   };
