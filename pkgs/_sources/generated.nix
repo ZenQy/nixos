@@ -3,10 +3,10 @@
 {
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2025.07.02";
+    version = "v2025.08.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.07.02/zenith.dict";
-      sha256 = "sha256-ENHihUfpbo6o84BdBo3LUWxOIkwQ/xnMosywaRKvfWY=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.08.02/zenith.dict";
+      sha256 = "sha256-bvlyiUBKH9UyiMhjgm0YU5rgm7FVDwxuKQIAKcTD/ZI=";
     };
   };
   librespeed-rs = {
@@ -33,15 +33,15 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "fbbb69804f8fd1993e920a191088bff605861b67";
+    version = "03c59cb35ee2749d644560cd86077805dd0db6a8";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "fbbb69804f8fd1993e920a191088bff605861b67";
+      rev = "03c59cb35ee2749d644560cd86077805dd0db6a8";
       fetchSubmodules = false;
-      sha256 = "sha256-bDrSOewwV/3d2RCZnFop8jTZmAFXRxaVob1VXRV4mVU=";
+      sha256 = "sha256-9w3p4cAovQUxuaOdMbs/6zegvqaF63PF/XjO6eQeLNk=";
     };
-    date = "2025-07-21";
+    date = "2025-08-01";
   };
   vitejs = {
     pname = "vitejs";
