@@ -58,7 +58,7 @@
     },
     "linux-flippy": {
         "cargoLocks": null,
-        "date": "2025-08-01",
+        "date": "2025-08-02",
         "extract": null,
         "name": "linux-flippy",
         "passthru": null,
@@ -70,12 +70,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.12.y",
-            "rev": "03c59cb35ee2749d644560cd86077805dd0db6a8",
-            "sha256": "sha256-9w3p4cAovQUxuaOdMbs/6zegvqaF63PF/XjO6eQeLNk=",
+            "rev": "a556af8b9a1083956b909e887ea35cc5f0dcf901",
+            "sha256": "sha256-pU8kvlPo6403TN5TbA5ijwcVXUgPlvxuFvozo71jy+w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "03c59cb35ee2749d644560cd86077805dd0db6a8"
+        "version": "a556af8b9a1083956b909e887ea35cc5f0dcf901"
     },
     "vitejs": {
         "cargoLocks": null,
@@ -91,12 +91,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v7.0.6",
-            "sha256": "sha256-/cJzxcgUCWB1AfJWA3oantuI1n1hNNKLsHrgXLkAG3o=",
+            "rev": "v7.1.1",
+            "sha256": "sha256-cJF1MyqzhkJnhbWV3Mh5WTbeESCvzwFjw6J64whzqz8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.0.6"
+        "version": "v7.1.1"
     },
     "wallpapers": {
         "cargoLocks": null,
@@ -107,10 +107,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7awBsTJfE76bdYAPANB+Ccg2z8R22UahebQ0Y46CK9M=",
+            "sha256": "sha256-a8DwCYmOxy3G1pLDKgHShNu3Ejn/dHbObtBCOqCW+sc=",
             "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.07.03/wallpaper.tar.gz"
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.08.03/wallpaper.tar.gz"
         },
-        "version": "v2025.07.03"
+        "version": "v2025.08.03"
     }
 }

@@ -33,33 +33,33 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "03c59cb35ee2749d644560cd86077805dd0db6a8";
+    version = "a556af8b9a1083956b909e887ea35cc5f0dcf901";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "03c59cb35ee2749d644560cd86077805dd0db6a8";
+      rev = "a556af8b9a1083956b909e887ea35cc5f0dcf901";
       fetchSubmodules = false;
-      sha256 = "sha256-9w3p4cAovQUxuaOdMbs/6zegvqaF63PF/XjO6eQeLNk=";
+      sha256 = "sha256-pU8kvlPo6403TN5TbA5ijwcVXUgPlvxuFvozo71jy+w=";
     };
-    date = "2025-08-01";
+    date = "2025-08-02";
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.0.6";
+    version = "v7.1.1";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.0.6";
+      rev = "v7.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-/cJzxcgUCWB1AfJWA3oantuI1n1hNNKLsHrgXLkAG3o=";
+      sha256 = "sha256-cJF1MyqzhkJnhbWV3Mh5WTbeESCvzwFjw6J64whzqz8=";
     };
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2025.07.03";
+    version = "v2025.08.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.07.03/wallpaper.tar.gz";
-      sha256 = "sha256-7awBsTJfE76bdYAPANB+Ccg2z8R22UahebQ0Y46CK9M=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.08.03/wallpaper.tar.gz";
+      sha256 = "sha256-a8DwCYmOxy3G1pLDKgHShNu3Ejn/dHbObtBCOqCW+sc=";
     };
   };
 }
