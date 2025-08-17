@@ -14,52 +14,71 @@ let
     timestamp = true;
   };
   inbounds = [
+    # {
+    #   type = "anytls";
+    #   listen = "::";
+    #   listen_port = 443;
+    #   users = [
+    #     {
+    #       inherit (secrets.sing-box.anytls) password;
+    #     }
+    #   ];
+    #   tls = {
+    #     enabled = true;
+    #     inherit (secrets.sing-box.reality) server_name;
+    #     reality = {
+    #       enabled = true;
+    #       handshake = {
+    #         server = secrets.sing-box.reality.server_name;
+    #         server_port = 443;
+    #       };
+    #       inherit (secrets.sing-box.reality) private_key short_id;
+    #       max_time_difference = "1m0s";
+    #     };
+    #   };
+    # }
     {
-      type = "trojan";
+      type = "tuic";
       listen = "::";
       listen_port = 443;
       users = [
         {
-          inherit (secrets.sing-box.trojan) password;
+          inherit (secrets.sing-box.tuic) uuid;
         }
       ];
+      congestion_control = "bbr";
+      zero_rtt_handshake = false;
       tls = {
         enabled = true;
-        alpn = [ "h2" ];
+        alpn = "h3";
         acme = {
-          domain = "${host}.${secrets.domain}";
-          email = "zenqy.qin@gmail.com";
+          domain = "${host}.940940.xyz";
+          inherit (secrets.sing-box) email;
         };
       };
-      transport = {
-        type = "ws";
-        inherit (secrets.sing-box.trojan) path;
-      };
-      multiplex.enabled = true;
     }
   ];
-  outbounds =
-    [
-      {
-        type = "direct";
-      }
-    ]
-    ++ (
-      if isAlice then
-        [
-          {
-            type = "socks";
-            tag = "socks";
-            server = "2a14:67c0:116::1";
-            server_port = 20000;
-            version = "5";
-            username = "alice";
-            password = "alicefofo123..OVO";
-          }
-        ]
-      else
-        [ ]
-    );
+  outbounds = [
+    {
+      type = "direct";
+    }
+  ]
+  ++ (
+    if isAlice then
+      [
+        {
+          type = "socks";
+          tag = "socks";
+          server = "2a14:67c0:116::1";
+          server_port = 20000;
+          version = "5";
+          username = "alice";
+          password = "alicefofo123..OVO";
+        }
+      ]
+    else
+      [ ]
+  );
   route.rules = [
     {
       ip_version = 4;
@@ -73,6 +92,7 @@ in
     enable = lib.mkDefault true;
     settings = {
       inherit log inbounds outbounds;
-    } // (if isAlice then { inherit route; } else { });
+    }
+    // (if isAlice then { inherit route; } else { });
   };
 }

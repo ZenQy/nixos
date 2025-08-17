@@ -9,6 +9,7 @@
   boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
   boot.supportedFilesystems = [ "ntfs" ];
   services.gvfs.enable = true;
+  services.speechd.enable = false;
   services.gnome.gnome-keyring.enable = lib.mkForce false;
   security.polkit.extraConfig = ''
     polkit.addRule(function(action, subject) {
@@ -23,6 +24,7 @@
     defaultApplications = {
       "inode/directory" = "pcmanfm.desktop";
       "video/mp4" = "mpv.desktop";
+      "x-scheme-handler/mpv" = "mpv.desktop";
     };
   };
 

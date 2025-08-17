@@ -16,7 +16,7 @@
 
     ## Nix ##
     # nil
-    nixfmt-rfc-style
+    nixfmt
     nixd
 
     ## File Manager ##

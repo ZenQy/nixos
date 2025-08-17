@@ -1,9 +1,14 @@
 final: prev:
-# let
-#   sources = (import ./_sources/generated.nix) {
-#     inherit (final) fetchgit fetchurl fetchFromGitHub dockerTools;
-#   };
-# in
+let
+  sources = (import ./_sources/generated.nix) {
+    inherit (final)
+      fetchgit
+      fetchurl
+      fetchFromGitHub
+      dockerTools
+      ;
+  };
+in
 {
   # vscode-with-extensions = prev.vscode-with-extensions.override {
   #   vscode = prev.vscodium.override {
@@ -44,12 +49,10 @@ final: prev:
   mpv =
     let
       mpv-unwrapped = prev.mpv-unwrapped.overrideAttrs (old: {
-        postPatch =
-          old.postPatch
-          + ''
-            substituteInPlace meson.build \
-              --replace "get_option('sysconfdir'), 'mpv'" "'/etc/mpv'"
-          '';
+        postPatch = old.postPatch + ''
+          substituteInPlace meson.build \
+            --replace "get_option('sysconfdir'), 'mpv'" "'/etc/mpv'"
+        '';
       });
     in
     mpv-unwrapped.wrapper {
@@ -57,4 +60,18 @@ final: prev:
       scripts = with mpv-unwrapped.scripts; [ autoload ];
     };
 
+  sing-box = prev.sing-box.overrideAttrs (old: {
+    inherit (sources.sing-box) src version;
+    vendorHash = "sha256-sWWiPDUEc+EBzLmd+QYYVdecqhKBeKkPABEp6jFqraw=";
+    tags = [
+      "with_quic"
+      "with_dhcp"
+      "with_wireguard"
+      "with_utls"
+      "with_acme"
+      "with_clash_api"
+      "with_gvisor"
+      "with_tailscale"
+    ];
+  });
 }

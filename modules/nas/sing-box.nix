@@ -13,24 +13,17 @@ let
     servers = [
       {
         tag = "dns_proxy";
-        address = "https://1.1.1.1/dns-query";
+        type = "https";
+        server = "1.1.1.1";
         detour = "proxy";
       }
       {
         tag = "dns_direct";
-        address = "114.114.114.114";
-        detour = "direct";
-      }
-      {
-        tag = "dns_refused";
-        address = "rcode://refused";
+        type = "udp";
+        server = "114.114.114.114";
       }
     ];
     rules = [
-      {
-        outbound = "any";
-        server = "dns_direct";
-      }
       {
         clash_mode = "direct";
         server = "dns_direct";
@@ -45,7 +38,8 @@ let
       }
       {
         rule_set = "geosite-category-ads-all";
-        server = "dns_refused";
+        action = "predefined";
+        rcode = "REFUSED";
       }
       {
         rule_set = "geosite-cn";
@@ -53,7 +47,7 @@ let
       }
     ];
     final = "dns_proxy";
-    strategy = "ipv4_only";
+    strategy = "prefer_ipv4";
   };
   route = {
     rule_set = [
@@ -184,6 +178,7 @@ let
         "com.x8bit.bitwarden"
         "com.xbrowser.play"
         "io.legado.app.release"
+        "mark.via"
         "mark.via.gp"
         "me.bmax.apatch"
         "org.telegram.messenger"
@@ -194,44 +189,65 @@ let
     }
   ];
   outbounds =
+    let
+      tuicList = [
+        "osaka-1"
+        "osaka-2"
+        "sailor"
+        "natvps"
+        "alice"
+      ];
+      anytlsList = [
+        "lxc-us-18"
+        "lxc-jp-1"
+      ];
+    in
     map (tag: {
       inherit tag;
-      type = "trojan";
+      type = "anytls";
       server = "${tag}.${secrets.domain}";
-      server_port = if tag == "lxc-us" || tag == "lxc-hk" || tag == "hatch" then 11611 else 443;
-      inherit (secrets.sing-box.trojan) password;
-      transport = {
-        type = "ws";
-        inherit (secrets.sing-box.trojan) path;
-      };
+      server_port = if tag == "lxc-us-18" || tag == "lxc-jp-1" then 44443 else 443;
+      inherit (secrets.sing-box.anytls) password;
       tls = {
         enabled = true;
         utls.enabled = true;
-      };
-      multiplex.enabled = true;
-    }) secrets.sing-box.server
-    ++ [
-      {
-        tag = "cf";
-        type = "vless";
-        server = "cf.${secrets.domain}";
-        server_port = 443;
-        inherit (secrets.sing-box.vless) uuid;
-        transport = {
-          type = "ws";
-          inherit (secrets.sing-box.vless) path;
-        };
-        tls = {
+        alpn = "h2";
+        inherit (secrets.sing-box.reality) server_name;
+        reality = {
           enabled = true;
-          utls.enabled = true;
-          # fragment = true; # v1.12.0 支持
+          inherit (secrets.sing-box.reality) public_key short_id;
         };
-        packet_encoding = "packetaddr";
-      }
+      };
+    }) anytlsList
+    ++ map (tag: {
+      inherit tag;
+      type = "tuic";
+      server = "${tag}.${secrets.domain}";
+      server_port = 443;
+      inherit (secrets.sing-box.tuic) uuid;
+      congestion_control = "bbr";
+      udp_relay_mode = "native";
+      udp_over_stream = false;
+      zero_rtt_handshake = false;
+      tls = {
+        enabled = true;
+        alpn = "h3";
+      };
+    }) tuicList
+    ++ [
       {
         tag = "proxy";
         type = "selector";
-        outbounds = secrets.sing-box.server ++ [ "cf" ];
+        outbounds = [
+          "auto"
+        ]
+        ++ anytlsList
+        ++ tuicList;
+      }
+      {
+        tag = "auto";
+        type = "urltest";
+        outbounds = anytlsList ++ tuicList;
       }
       {
         tag = "direct";
