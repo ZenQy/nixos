@@ -1,4 +1,4 @@
-{ ... }:
+{ secrets, ... }:
 # 拨号还未验证
 {
   imports = [
@@ -43,11 +43,11 @@
   services.pppd = {
     enable = true;
     peers.pppoe.config = ''
-      plugin rp-pppoe.so
+      plugin pppoe.so
       eth0
 
-      name "<username>"
-      password "<password>"
+      name "${secrets.pppoe.username}"
+      password "${secrets.pppoe.password}"
       ifname pppoe-wan
 
       +ipv6 ipv6cp-use-ipaddr

@@ -199,14 +199,13 @@ let
       ];
       anytlsList = [
         "lxc-us-18"
-        "lxc-jp-1"
       ];
     in
     map (tag: {
       inherit tag;
       type = "anytls";
       server = "${tag}.${secrets.domain}";
-      server_port = if tag == "lxc-us-18" || tag == "lxc-jp-1" then 44443 else 443;
+      server_port = 34443;
       inherit (secrets.sing-box.anytls) password;
       tls = {
         enabled = true;
@@ -282,7 +281,7 @@ in
   };
 
   boot.kernel.sysctl = {
-    "net.ipv4.conf.all.forwarding" = 1;
-    "net.ipv6.conf.all.forwarding" = 1;
+    "net.ipv4.conf.all.forwarding" = true;
+    "net.ipv6.conf.all.forwarding" = true;
   };
 }
