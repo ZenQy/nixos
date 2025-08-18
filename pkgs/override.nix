@@ -1,14 +1,5 @@
 final: prev:
-let
-  sources = (import ./_sources/generated.nix) {
-    inherit (final)
-      fetchgit
-      fetchurl
-      fetchFromGitHub
-      dockerTools
-      ;
-  };
-in
+
 {
   # vscode-with-extensions = prev.vscode-with-extensions.override {
   #   vscode = prev.vscodium.override {
@@ -60,18 +51,4 @@ in
       scripts = with mpv-unwrapped.scripts; [ autoload ];
     };
 
-  sing-box = prev.sing-box.overrideAttrs (old: {
-    inherit (sources.sing-box) src version;
-    vendorHash = "sha256-sWWiPDUEc+EBzLmd+QYYVdecqhKBeKkPABEp6jFqraw=";
-    tags = [
-      "with_quic"
-      "with_dhcp"
-      "with_wireguard"
-      "with_utls"
-      "with_acme"
-      "with_clash_api"
-      "with_gvisor"
-      "with_tailscale"
-    ];
-  });
 }
