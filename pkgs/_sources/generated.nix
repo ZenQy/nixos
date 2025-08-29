@@ -33,25 +33,25 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "f779c3024639373acef916548c0022353bdc1f36";
+    version = "86d4f34ecf9c1e0111f88451b9988dcc39331213";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "f779c3024639373acef916548c0022353bdc1f36";
+      rev = "86d4f34ecf9c1e0111f88451b9988dcc39331213";
       fetchSubmodules = false;
-      sha256 = "sha256-gCpzpiEaPIRELDuS1zdgHqc6LJ3uI/PCwor37yn4HZw=";
+      sha256 = "sha256-wSXnfy+uD3Q4GE39V/IXtruRY93ZDSPR4qP6xlEgdu8=";
     };
-    date = "2025-08-21";
+    date = "2025-08-25";
   };
   sing-box = {
     pname = "sing-box";
-    version = "v1.12.3";
+    version = "v1.12.4";
     src = fetchFromGitHub {
       owner = "SagerNet";
       repo = "sing-box";
-      rev = "v1.12.3";
+      rev = "v1.12.4";
       fetchSubmodules = false;
-      sha256 = "sha256-OHhCC+tSDZRSDN9i3L6NtwgarBKHv+KGNyPhHttqo4g=";
+      sha256 = "sha256-Pc6aszIzu9GZha7I59yGasVVKHUeLPiW34zALFTM8Ec=";
     };
   };
   vitejs = {

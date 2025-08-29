@@ -58,7 +58,7 @@
     },
     "linux-flippy": {
         "cargoLocks": null,
-        "date": "2025-08-21",
+        "date": "2025-08-25",
         "extract": null,
         "name": "linux-flippy",
         "passthru": null,
@@ -70,12 +70,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.12.y",
-            "rev": "f779c3024639373acef916548c0022353bdc1f36",
-            "sha256": "sha256-gCpzpiEaPIRELDuS1zdgHqc6LJ3uI/PCwor37yn4HZw=",
+            "rev": "86d4f34ecf9c1e0111f88451b9988dcc39331213",
+            "sha256": "sha256-wSXnfy+uD3Q4GE39V/IXtruRY93ZDSPR4qP6xlEgdu8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f779c3024639373acef916548c0022353bdc1f36"
+        "version": "86d4f34ecf9c1e0111f88451b9988dcc39331213"
     },
     "sing-box": {
         "cargoLocks": null,
@@ -91,12 +91,12 @@
             "name": null,
             "owner": "SagerNet",
             "repo": "sing-box",
-            "rev": "v1.12.3",
-            "sha256": "sha256-OHhCC+tSDZRSDN9i3L6NtwgarBKHv+KGNyPhHttqo4g=",
+            "rev": "v1.12.4",
+            "sha256": "sha256-Pc6aszIzu9GZha7I59yGasVVKHUeLPiW34zALFTM8Ec=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.12.3"
+        "version": "v1.12.4"
     },
     "vitejs": {
         "cargoLocks": null,
