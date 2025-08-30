@@ -25,14 +25,14 @@ let
     #   ];
     #   tls = {
     #     enabled = true;
-    #     inherit (secrets.sing-box.reality) server_name;
+    #     inherit (secrets.sing-box.anytls.reality) server_name;
     #     reality = {
     #       enabled = true;
     #       handshake = {
-    #         server = secrets.sing-box.reality.server_name;
+    #         server = secrets.sing-box.anytls.reality.server_name;
     #         server_port = 443;
     #       };
-    #       inherit (secrets.sing-box.reality) private_key short_id;
+    #       inherit (secrets.sing-box.anytls.reality) private_key short_id;
     #       max_time_difference = "1m0s";
     #     };
     #   };

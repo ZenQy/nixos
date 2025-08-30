@@ -12,4 +12,9 @@
     "https://mirrors.ustc.edu.cn/nix-channels/store"
   ];
 
+  networking.nameservers = [
+    "223.5.5.5"
+    "119.29.29.29"
+  ];
+
 }

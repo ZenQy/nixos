@@ -37,11 +37,11 @@
     "net.ipv4.tcp_rmem" = "32768 262144 208338944";
     "net.ipv4.tcp_wmem" = "32768 262144 1561917063";
   };
-  services.cron = {
-    enable = true;
-    systemCronJobs = [
-      "0 22 1/16 * * root reboot"
-    ];
-  };
+
+  networking.nameservers = [
+    "1.1.1.1"
+    "2606:4700:4700::1111"
+  ];
+
   documentation.nixos.enable = false;
 }

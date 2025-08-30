@@ -155,41 +155,49 @@ let
     auto_detect_interface = true;
   };
   inbounds = [
+    # {
+    #   tag = "tun-in";
+    #   type = "tun";
+    #   address = [
+    #     "172.18.0.1/24"
+    #     "fdfe:dcba:9876::1/64"
+    #   ];
+    #   mtu = 1500;
+    #   auto_route = true;
+    #   strict_route = false;
+    #   stack = "gvisor";
+    #   include_package = [
+    #     "InfinityLoop1309.NewPipeEnhanced"
+    #     "app.aiaw"
+    #     "cn.jimex.dict"
+    #     "com.aistra.hail"
+    #     "com.aurora.store"
+    #     "com.deskangel.daremote"
+    #     "com.google.android.gms"
+    #     "com.ichi2.anki"
+    #     "com.x8bit.bitwarden"
+    #     "com.xbrowser.play"
+    #     "io.legado.app.release"
+    #     "mark.via"
+    #     "mark.via.gp"
+    #     "me.bmax.apatch"
+    #     "org.telegram.messenger"
+    #     "pro.cubox.androidapp"
+    #     "top.achatbot.aichat"
+    #     "xyz.chatboxapp.chatbox"
+    #   ];
+    # }
     {
-      type = "tun";
-      tag = "tun-in";
-      address = [
-        "172.18.0.1/24"
-        "fdfe:dcba:9876::1/64"
-      ];
-      mtu = 1500;
-      auto_route = true;
-      strict_route = false;
-      stack = "gvisor";
-      include_package = [
-        "InfinityLoop1309.NewPipeEnhanced"
-        "app.aiaw"
-        "cn.jimex.dict"
-        "com.aistra.hail"
-        "com.aurora.store"
-        "com.deskangel.daremote"
-        "com.google.android.gms"
-        "com.ichi2.anki"
-        "com.x8bit.bitwarden"
-        "com.xbrowser.play"
-        "io.legado.app.release"
-        "mark.via"
-        "mark.via.gp"
-        "me.bmax.apatch"
-        "org.telegram.messenger"
-        "pro.cubox.androidapp"
-        "top.achatbot.aichat"
-        "xyz.chatboxapp.chatbox"
-      ];
+      tag = "tproxy-in";
+      type = "tproxy";
+      listen = "::";
+      listen_port = 12345;
+      tcp_fast_open = true;
     }
   ];
   outbounds =
     let
+      sb = secrets.sing-box;
       tuicList = [
         "osaka-1"
         "osaka-2"
@@ -200,21 +208,43 @@ let
       anytlsList = [
         "lxc-us-18"
       ];
+      vlessList = [
+        "bwh"
+      ];
     in
+
     map (tag: {
+      inherit tag;
+      type = "vless";
+      server = "${tag}.${secrets.domain}";
+      server_port = 43388;
+      inherit (sb.vless) uuid;
+      flow = "xtls-rprx-vision";
+      tls = {
+        enabled = true;
+        utls.enabled = true;
+        # alpn = "h2";
+        inherit (sb.anytls.vless) server_name;
+        reality = {
+          enabled = true;
+          inherit (sb.vless.reality) public_key short_id;
+        };
+      };
+    }) vlessList
+    ++ map (tag: {
       inherit tag;
       type = "anytls";
       server = "${tag}.${secrets.domain}";
       server_port = 34443;
-      inherit (secrets.sing-box.anytls) password;
+      inherit (sb.anytls) password;
       tls = {
         enabled = true;
         utls.enabled = true;
         alpn = "h2";
-        inherit (secrets.sing-box.reality) server_name;
+        inherit (sb.anytls.reality) server_name;
         reality = {
           enabled = true;
-          inherit (secrets.sing-box.reality) public_key short_id;
+          inherit (sb.anytls.reality) public_key short_id;
         };
       };
     }) anytlsList
@@ -223,7 +253,7 @@ let
       type = "tuic";
       server = "${tag}.${secrets.domain}";
       server_port = 443;
-      inherit (secrets.sing-box.tuic) uuid;
+      inherit (sb.tuic) uuid;
       congestion_control = "bbr";
       udp_relay_mode = "native";
       udp_over_stream = false;
@@ -239,14 +269,16 @@ let
         type = "selector";
         outbounds = [
           "auto"
+          "direct"
         ]
+        ++ vlessList
         ++ anytlsList
         ++ tuicList;
       }
       {
         tag = "auto";
         type = "urltest";
-        outbounds = anytlsList ++ tuicList;
+        outbounds = vlessList ++ anytlsList ++ tuicList;
       }
       {
         tag = "direct";
@@ -280,8 +312,4 @@ in
     };
   };
 
-  boot.kernel.sysctl = {
-    "net.ipv4.conf.all.forwarding" = true;
-    "net.ipv6.conf.all.forwarding" = true;
-  };
 }

@@ -7,28 +7,27 @@
   nix.settings.substituters = [
     "https://mirrors.ustc.edu.cn/nix-channels/store"
   ];
-  networking.wireless = with builtins; {
-    enable = true;
-    networks =
-      let
-        s = secrets.wireless.password;
-        list = map (x: {
-          name = x;
-          value = {
-            psk = s."${x}";
-          };
-        }) (attrNames s);
-      in
-      listToAttrs list;
-  };
+
+  # 启用/停用WIFI
+  # networking.wireless = with builtins; {
+  #   enable = true;
+  #   networks =
+  #     let
+  #       s = secrets.wireless.password;
+  #       list = map (x: {
+  #         name = x;
+  #         value = {
+  #           psk = s."${x}";
+  #         };
+  #       }) (attrNames s);
+  #     in
+  #     listToAttrs list;
+  # };
+
   systemd.network.networks =
     let
       nc = {
-        Gateway = [
-          "10.0.0.11"
-          secrets.hosts.beelink.ipv6.gateway
-        ];
-        DHCP = false;
+        DHCP = "ipv6";
         IPv6AcceptRA = false;
         LinkLocalAddressing = false;
       };
@@ -37,23 +36,23 @@
       enp3s0 = {
         name = "enp3s0";
         networkConfig = {
-          DHCP = "yes";
-        };
+          Address = "10.0.0.33/24";
+        }
+        // nc;
       };
-      enp4s0 = {
-        name = "enp4s0";
-        networkConfig = {
-          Address = "10.0.0.24/24";
-        } // nc;
-      };
-      wlp5s0 = {
-        name = "wlp5s0";
-        networkConfig = {
-          Address = [
-            "10.0.0.25/24"
-            secrets.hosts.beelink.ipv6.ip
-          ];
-        } // nc;
-      };
+      # enp4s0 = {
+      #   name = "enp4s0";
+      #   networkConfig = {
+      #     Address = "10.0.0.44/24";
+      #   }
+      #   // nc;
+      # };
+      # wlp5s0 = {
+      #   name = "wlp5s0";
+      #   networkConfig = {
+      #     Address = "10.0.0.55/24";
+      #   }
+      #   // nc;
+      # };
     };
 }
