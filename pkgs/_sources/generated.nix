@@ -3,10 +3,10 @@
 {
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2025.08.02";
+    version = "v2025.09.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.08.02/zenith.dict";
-      sha256 = "sha256-bvlyiUBKH9UyiMhjgm0YU5rgm7FVDwxuKQIAKcTD/ZI=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.09.02/zenith.dict";
+      sha256 = "sha256-TkCj2bvGF8PXTRZUliudFBXm5NslYTNHrxj78tVLFjE=";
     };
   };
   librespeed-rs = {
@@ -33,15 +33,15 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "86d4f34ecf9c1e0111f88451b9988dcc39331213";
+    version = "d3391dc2f57f560458602a7e77ab054a7ebf69ff";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "86d4f34ecf9c1e0111f88451b9988dcc39331213";
+      rev = "d3391dc2f57f560458602a7e77ab054a7ebf69ff";
       fetchSubmodules = false;
-      sha256 = "sha256-wSXnfy+uD3Q4GE39V/IXtruRY93ZDSPR4qP6xlEgdu8=";
+      sha256 = "sha256-0hVPyQZ1CLVL/KvDuHMfx6abHylXEBymfFw4o51o0uI=";
     };
-    date = "2025-08-25";
+    date = "2025-09-05";
   };
   sing-box = {
     pname = "sing-box";
@@ -56,21 +56,21 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.1.3";
+    version = "v7.1.4";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.1.3";
+      rev = "v7.1.4";
       fetchSubmodules = false;
-      sha256 = "sha256-9RTTsIU4i4kWCtbdg5vYWBkbq5TyD5FQl2YDvBc+f80=";
+      sha256 = "sha256-IgJYg4py5knuvfiw6021Qu+WtKIFOa5yEl1l0uucsdk=";
     };
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2025.08.03";
+    version = "v2025.09.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.08.03/wallpaper.tar.gz";
-      sha256 = "sha256-a8DwCYmOxy3G1pLDKgHShNu3Ejn/dHbObtBCOqCW+sc=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.09.03/wallpaper.tar.gz";
+      sha256 = "sha256-fBuz28xchyotQfm2plgHKmvd0HURKHyoHjsFGEQ/LD0=";
     };
   };
 }

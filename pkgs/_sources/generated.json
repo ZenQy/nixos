@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-bvlyiUBKH9UyiMhjgm0YU5rgm7FVDwxuKQIAKcTD/ZI=",
+            "sha256": "sha256-TkCj2bvGF8PXTRZUliudFBXm5NslYTNHrxj78tVLFjE=",
             "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2025.08.02/zenith.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2025.09.02/zenith.dict"
         },
-        "version": "v2025.08.02"
+        "version": "v2025.09.02"
     },
     "librespeed-rs": {
         "cargoLocks": null,
@@ -58,7 +58,7 @@
     },
     "linux-flippy": {
         "cargoLocks": null,
-        "date": "2025-08-25",
+        "date": "2025-09-05",
         "extract": null,
         "name": "linux-flippy",
         "passthru": null,
@@ -70,12 +70,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.12.y",
-            "rev": "86d4f34ecf9c1e0111f88451b9988dcc39331213",
-            "sha256": "sha256-wSXnfy+uD3Q4GE39V/IXtruRY93ZDSPR4qP6xlEgdu8=",
+            "rev": "d3391dc2f57f560458602a7e77ab054a7ebf69ff",
+            "sha256": "sha256-0hVPyQZ1CLVL/KvDuHMfx6abHylXEBymfFw4o51o0uI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "86d4f34ecf9c1e0111f88451b9988dcc39331213"
+        "version": "d3391dc2f57f560458602a7e77ab054a7ebf69ff"
     },
     "sing-box": {
         "cargoLocks": null,
@@ -112,12 +112,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v7.1.3",
-            "sha256": "sha256-9RTTsIU4i4kWCtbdg5vYWBkbq5TyD5FQl2YDvBc+f80=",
+            "rev": "v7.1.4",
+            "sha256": "sha256-IgJYg4py5knuvfiw6021Qu+WtKIFOa5yEl1l0uucsdk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.1.3"
+        "version": "v7.1.4"
     },
     "wallpapers": {
         "cargoLocks": null,
@@ -128,10 +128,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-a8DwCYmOxy3G1pLDKgHShNu3Ejn/dHbObtBCOqCW+sc=",
+            "sha256": "sha256-fBuz28xchyotQfm2plgHKmvd0HURKHyoHjsFGEQ/LD0=",
             "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.08.03/wallpaper.tar.gz"
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.09.03/wallpaper.tar.gz"
         },
-        "version": "v2025.08.03"
+        "version": "v2025.09.03"
     }
 }
