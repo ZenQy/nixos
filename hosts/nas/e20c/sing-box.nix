@@ -20,17 +20,19 @@ let
       {
         tag = "dns_direct";
         type = "udp";
-        server = "114.114.114.114";
+        server = "223.5.5.5";
       }
     ];
     rules = [
       {
         clash_mode = "direct";
         server = "dns_direct";
+        strategy = "prefer_ipv6";
       }
       {
         rule_set = "custom_direct";
         server = "dns_direct";
+        strategy = "prefer_ipv6";
       }
       {
         rule_set = "custom_proxy";
@@ -44,10 +46,11 @@ let
       {
         rule_set = "geosite-cn";
         server = "dns_direct";
+        strategy = "prefer_ipv6";
       }
     ];
     final = "dns_proxy";
-    strategy = "prefer_ipv4";
+    strategy = "ipv4_only";
   };
   route = {
     rule_set = [
@@ -153,6 +156,7 @@ let
     ];
     final = "proxy";
     auto_detect_interface = true;
+    default_domain_resolver = "dns_direct";
   };
   inbounds = [
     # {
@@ -224,7 +228,7 @@ let
         enabled = true;
         utls.enabled = true;
         # alpn = "h2";
-        inherit (sb.anytls.vless) server_name;
+        inherit (sb.vless.reality) server_name;
         reality = {
           enabled = true;
           inherit (sb.vless.reality) public_key short_id;

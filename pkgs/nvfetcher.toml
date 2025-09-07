@@ -22,7 +22,4 @@ fetch.github = "armbian/linux-rockchip"
 [linux-flippy]
 src.git = "https://github.com/unifreq/linux-6.12.y"
 fetch.github = "unifreq/linux-6.12.y"
-
-[sing-box]
-src.github = "SagerNet/sing-box"
-fetch.github = "SagerNet/sing-box"
+extract = ["Makefile"]

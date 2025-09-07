@@ -38,10 +38,5 @@
     "net.ipv4.tcp_wmem" = "32768 262144 1561917063";
   };
 
-  networking.nameservers = [
-    "1.1.1.1"
-    "2606:4700:4700::1111"
-  ];
-
   documentation.nixos.enable = false;
 }

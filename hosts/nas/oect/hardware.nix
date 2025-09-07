@@ -35,6 +35,16 @@
     ];
   };
 
+  fileSystems."/storage" = {
+    device = "/dev/disk/by-partlabel/disk-main-storage";
+    fsType = "btrfs";
+    options = [
+      "compress-force=zstd"
+      "nosuid"
+      "nodev"
+    ];
+  };
+
   fileSystems."/boot" = {
     device = "/dev/disk/by-partlabel/disk-main-boot";
     fsType = "vfat";

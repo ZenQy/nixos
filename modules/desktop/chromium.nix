@@ -13,19 +13,17 @@
       # PT Plugin Plus
       # "dmmjlmbkigbgpnjfiimhlnbnmppjhpea;https://raw.githubusercontent.com/pt-plugins/PT-Plugin-Plus/gh-pages/update/canary.xml"
       # uBlock Origin
-      "cjpalhdlnbpafiamejdnhcphjbkeiagm"
-      # Extension Manager
-      # "gjldcdngmdknpinoemndlidpcabkggco"
+      # "cjpalhdlnbpafiamejdnhcphjbkeiagm"
+      # uBlock Origin Lite
+      "ddkjiahejlhfcafbddmgiahcphecmpfh"
       # Tampermonkey BETA
       # "gcalenpjmijncebpfijmoaglllgpjagf"
       # scriptcat beta
       "jaehimmlecjmebpekkipmpmbpfhdacom"
       # Stylus
       # "clngdbkpkpeebahjckkjfobafhncgmne"
-      # 沙拉查词
-      # "cdonnmffkdaoajfknoeeecmchibpmkmg"
       # obsidian-web-clipper
-      "cnjifjpddelmedmihgijeibhnjfabmlf"
+      # "cnjifjpddelmedmihgijeibhnjfabmlf"
       # Vue.js devtools
       # "nhdogjmejiglipccpnnnanhbledajbpd"
       # Bitwarden
@@ -41,7 +39,6 @@
       BrowserSignin = 1;
       DefaultNotificationsSetting = 2;
       ExtensionDeveloperModeSettings = 0;
-      ExtensionManifestV2Availability = 2;
       HomepageIsNewTabPage = false;
       PasswordManagerEnabled = false;
       RestoreOnStartup = 4;

@@ -1,4 +1,4 @@
-{ secrets, ... }:
+{ ... }:
 
 {
   imports = [
@@ -28,8 +28,8 @@
     let
       nc = {
         DHCP = "ipv6";
-        IPv6AcceptRA = false;
-        LinkLocalAddressing = false;
+        # IPv6AcceptRA = false;
+        # LinkLocalAddressing = false;
       };
     in
     {
@@ -37,6 +37,7 @@
         name = "enp3s0";
         networkConfig = {
           Address = "10.0.0.33/24";
+          Gateway = "10.0.0.1";
         }
         // nc;
       };
@@ -55,4 +56,5 @@
       #   // nc;
       # };
     };
+
 }

@@ -6,6 +6,7 @@
     ./network.nix
     ./nftable.nix
     ./pppoe.nix
+    ./sing-box.nix
   ];
 
   boot.kernel.sysctl = {

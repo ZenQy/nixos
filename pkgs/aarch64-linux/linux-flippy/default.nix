@@ -5,10 +5,14 @@
   ...
 }:
 
+with builtins;
 let
-  kernelBranch = "6.12";
-  kernelVersion = "6.12.39";
+  kernelVersion = concatStringsSep "." (
+    match ".*?VERSION = ([[:xdigit:]]+).*?PATCHLEVEL = ([[:xdigit:]]+).*?SUBLEVEL = ([[:xdigit:]]+).*?" source.Makefile
+  );
+  kernelBranch = concatStringsSep "." (match "([[:xdigit:]]+)\.([[:xdigit:]]+).*?" kernelVersion);
 in
+
 linuxManualConfig {
   inherit (source) src;
 
