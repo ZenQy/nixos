@@ -41,18 +41,8 @@
       fetchSubmodules = false;
       sha256 = "sha256-0hVPyQZ1CLVL/KvDuHMfx6abHylXEBymfFw4o51o0uI=";
     };
+    Makefile = builtins.readFile ./linux-flippy-d3391dc2f57f560458602a7e77ab054a7ebf69ff/Makefile;
     date = "2025-09-05";
-  };
-  sing-box = {
-    pname = "sing-box";
-    version = "v1.12.4";
-    src = fetchFromGitHub {
-      owner = "SagerNet";
-      repo = "sing-box";
-      rev = "v1.12.4";
-      fetchSubmodules = false;
-      sha256 = "sha256-Pc6aszIzu9GZha7I59yGasVVKHUeLPiW34zALFTM8Ec=";
-    };
   };
   vitejs = {
     pname = "vitejs";

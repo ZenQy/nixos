@@ -59,7 +59,9 @@
     "linux-flippy": {
         "cargoLocks": null,
         "date": "2025-09-05",
-        "extract": null,
+        "extract": {
+            "Makefile": "./linux-flippy-d3391dc2f57f560458602a7e77ab054a7ebf69ff/Makefile"
+        },
         "name": "linux-flippy",
         "passthru": null,
         "pinned": false,
@@ -76,27 +78,6 @@
             "type": "github"
         },
         "version": "d3391dc2f57f560458602a7e77ab054a7ebf69ff"
-    },
-    "sing-box": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "sing-box",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "SagerNet",
-            "repo": "sing-box",
-            "rev": "v1.12.4",
-            "sha256": "sha256-Pc6aszIzu9GZha7I59yGasVVKHUeLPiW34zALFTM8Ec=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v1.12.4"
     },
     "vitejs": {
         "cargoLocks": null,
