@@ -95,4 +95,6 @@ in
     }
     // (if isAlice then { inherit route; } else { });
   };
+
+  users.users.sing-box.home = "/var/lib/sing-box";
 }

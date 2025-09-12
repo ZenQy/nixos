@@ -22,21 +22,25 @@ let
         type = "udp";
         server = "223.5.5.5";
       }
+      {
+        tag = "dns_fakeip";
+        type = "fakeip";
+        inet4_range = "198.18.0.0/15";
+        inet6_range = "fc00::/18";
+      }
     ];
     rules = [
       {
         clash_mode = "direct";
         server = "dns_direct";
-        strategy = "prefer_ipv6";
       }
       {
         rule_set = "custom_direct";
         server = "dns_direct";
-        strategy = "prefer_ipv6";
       }
       {
         rule_set = "custom_proxy";
-        server = "dns_proxy";
+        server = "dns_fakeip";
       }
       {
         rule_set = "geosite-category-ads-all";
@@ -46,11 +50,17 @@ let
       {
         rule_set = "geosite-cn";
         server = "dns_direct";
-        strategy = "prefer_ipv6";
+      }
+      {
+        query_type = [
+          "A"
+          "AAAA"
+        ];
+        server = "dns_fakeip";
       }
     ];
-    final = "dns_proxy";
-    strategy = "ipv4_only";
+    final = "dns_direct";
+    strategy = "prefer_ipv6";
   };
   route = {
     rule_set = [
@@ -59,10 +69,8 @@ let
         type = "inline";
         rules = [
           {
-            process_name = [
-              "nezha-agent"
-              "transmission-daemon"
-            ];
+            ip_cidr = secrets.nezha-agent.server;
+            port = secrets.nezha.listenport;
           }
           {
             domain_suffix = [

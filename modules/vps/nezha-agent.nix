@@ -25,10 +25,10 @@ in
   config = mkIf cfg.enable {
     systemd.services.nezha-agent =
       let
-        path = "/var/lib/nezha-agent";
-        file = "${path}/config.yaml";
+        file = "/var/lib/nezha-agent/config.yaml";
         conf = (pkgs.formats.yaml { }).generate "config.yaml" {
-          inherit (secrets.nezha-agent) client_secret server;
+          inherit (secrets.nezha-agent) client_secret;
+          server = "${secrets.nezha-agent.server}:${toString secrets.nezha.listenport}";
           debug = false;
           disable_auto_update = true;
           disable_command_execute = true;
@@ -59,11 +59,7 @@ in
           fi
         '';
         serviceConfig = {
-          # User = "nixos";
-          # Group = "wheel"; ICMP-Ping 需要 root 权限
           StateDirectory = "nezha-agent";
-          RuntimeDirectory = "nezha-agent";
-          WorkingDirectory = path;
           ExecStart = ''
             ${pkgs.nezha-agent}/bin/nezha-agent -c ${file}
           '';
