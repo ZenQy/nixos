@@ -33,26 +33,26 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "d3391dc2f57f560458602a7e77ab054a7ebf69ff";
+    version = "f29ab30eb9bb790fac1fffa2e2128e867f6af4b7";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "d3391dc2f57f560458602a7e77ab054a7ebf69ff";
+      rev = "f29ab30eb9bb790fac1fffa2e2128e867f6af4b7";
       fetchSubmodules = false;
-      sha256 = "sha256-0hVPyQZ1CLVL/KvDuHMfx6abHylXEBymfFw4o51o0uI=";
+      sha256 = "sha256-n/6SNXcajK/Dxi10u5DyAxXEM8C51AVXQhMy+2oIJI4=";
     };
-    Makefile = builtins.readFile ./linux-flippy-d3391dc2f57f560458602a7e77ab054a7ebf69ff/Makefile;
-    date = "2025-09-05";
+    Makefile = builtins.readFile ./linux-flippy-f29ab30eb9bb790fac1fffa2e2128e867f6af4b7/Makefile;
+    date = "2025-09-10";
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.1.4";
+    version = "v7.1.5";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.1.4";
+      rev = "v7.1.5";
       fetchSubmodules = false;
-      sha256 = "sha256-IgJYg4py5knuvfiw6021Qu+WtKIFOa5yEl1l0uucsdk=";
+      sha256 = "sha256-RPVr+j5wx1qHXtPGQSpOKEb4L1jB2uxbBMylGdm7EcI=";
     };
   };
   wallpapers = {

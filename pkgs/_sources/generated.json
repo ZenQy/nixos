@@ -58,9 +58,9 @@
     },
     "linux-flippy": {
         "cargoLocks": null,
-        "date": "2025-09-05",
+        "date": "2025-09-10",
         "extract": {
-            "Makefile": "./linux-flippy-d3391dc2f57f560458602a7e77ab054a7ebf69ff/Makefile"
+            "Makefile": "./linux-flippy-f29ab30eb9bb790fac1fffa2e2128e867f6af4b7/Makefile"
         },
         "name": "linux-flippy",
         "passthru": null,
@@ -72,12 +72,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.12.y",
-            "rev": "d3391dc2f57f560458602a7e77ab054a7ebf69ff",
-            "sha256": "sha256-0hVPyQZ1CLVL/KvDuHMfx6abHylXEBymfFw4o51o0uI=",
+            "rev": "f29ab30eb9bb790fac1fffa2e2128e867f6af4b7",
+            "sha256": "sha256-n/6SNXcajK/Dxi10u5DyAxXEM8C51AVXQhMy+2oIJI4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d3391dc2f57f560458602a7e77ab054a7ebf69ff"
+        "version": "f29ab30eb9bb790fac1fffa2e2128e867f6af4b7"
     },
     "vitejs": {
         "cargoLocks": null,
@@ -93,12 +93,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v7.1.4",
-            "sha256": "sha256-IgJYg4py5knuvfiw6021Qu+WtKIFOa5yEl1l0uucsdk=",
+            "rev": "v7.1.5",
+            "sha256": "sha256-RPVr+j5wx1qHXtPGQSpOKEb4L1jB2uxbBMylGdm7EcI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.1.4"
+        "version": "v7.1.5"
     },
     "wallpapers": {
         "cargoLocks": null,
