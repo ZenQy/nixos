@@ -20,6 +20,6 @@ src.github_tag = "armbian/linux-rockchip"
 fetch.github = "armbian/linux-rockchip"
 
 [linux-flippy]
-src.git = "https://github.com/unifreq/linux-6.12.y"
-fetch.github = "unifreq/linux-6.12.y"
+src.git = "https://github.com/unifreq/linux-6.1.y-rockchip"
+fetch.github = "unifreq/linux-6.1.y-rockchip"
 extract = ["Makefile"]

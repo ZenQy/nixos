@@ -28,7 +28,6 @@ in
         file = "/var/lib/nezha-agent/config.yaml";
         conf = (pkgs.formats.yaml { }).generate "config.yaml" {
           inherit (secrets.nezha-agent) client_secret;
-          server = "${secrets.nezha-agent.server}:${toString secrets.nezha.listenport}";
           debug = false;
           disable_auto_update = true;
           disable_command_execute = true;
@@ -40,12 +39,14 @@ in
           ip_report_period = 1800;
           report_delay = 3;
           self_update_period = 0;
+          server = "${secrets.nezha-agent.server}:${toString secrets.nezha.listenport}";
           skip_connection_count = false;
           skip_procs_count = false;
           temperature = true;
           tls = false;
           use_gitee_to_upgrade = false;
           use_ipv6_country_code = false;
+          uuid = secrets.nezha-agent.uuid.${config.networking.hostName};
         };
       in
       {
@@ -53,10 +54,7 @@ in
         after = [ "network.target" ];
         wantedBy = [ "multi-user.target" ];
         preStart = ''
-          if [[ ! -e ${file} ]]
-          then
-            cat ${conf} > ${file}
-          fi
+          cat ${conf} > ${file}
         '';
         serviceConfig = {
           StateDirectory = "nezha-agent";

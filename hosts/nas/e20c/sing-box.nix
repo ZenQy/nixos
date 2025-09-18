@@ -69,19 +69,18 @@ let
         type = "inline";
         rules = [
           {
-            ip_cidr = secrets.nezha-agent.server;
-            port = secrets.nezha.listenport;
-          }
-          {
             domain_suffix = [
               ".cn"
               "10155.com"
+              "ahrefs.com"
               "allawnfs.com"
               "binmt.cc"
               "blizzard.com"
+              "blog.cloudflare.com"
+              "developers.cloudflare.com"
               "epicgames.com"
+              "hostinger.com"
               "msftconnecttest.com"
-              "nezha.${secrets.domain}"
               "oracle.com"
               "test-ipv6.com"
             ];

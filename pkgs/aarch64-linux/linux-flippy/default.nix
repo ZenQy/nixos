@@ -28,5 +28,3 @@ linuxManualConfig {
     request_key_helper
   ];
 }
-
-# !!! e20c使用此内核会丢失1个网卡,还需要调整config文件测试

@@ -1,17 +1,17 @@
-{ ... }:
+{ secrets, ... }:
 
 {
 
   systemd.network.networks = {
     wan = {
-      name = "eth0";
+      name = "eth1";
       networkConfig = {
         Address = "192.168.1.11/24";
       };
     };
 
     lan = {
-      name = "eth1";
+      name = "eth0";
       networkConfig = {
         Address = "10.0.0.1/24";
         DHCP = "ipv6";
@@ -40,20 +40,21 @@
     };
   };
 
-}
+  services.pppd = {
+    enable = true;
+    peers.pppoe.config = ''
+      plugin pppoe.so eth1
 
-# 网卡:
-# 1.
-# 类型: gmac
-# 网卡名称: YT8531 Gigabit Ethernet
-# 驱动: /sys/devices/platform/ffbe0000.ethernet/
-# 2.
-# 类型:pcie
-# 网卡名称:8168
-# 驱动:
-# 01:00.0 "Class 0200" "10ec" "8168" "10ec" "0123" "r8168"
-# 00:00.0 "Class 0604" "1d87" "3528" "0000" "0000" "pcieport"
-# /sys/kernel/btf/r8168
-# /sys/bus/pci/drivers/r8168
-# /sys/module/r8168
-# /sys/module/r8168/drivers/pci:r8168
+      name "${secrets.pppoe.username}"
+      password "${secrets.pppoe.password}"
+
+      persist
+      maxfail 0
+      holdoff 5
+
+      noipdefault
+      defaultroute
+    '';
+  };
+
+}
