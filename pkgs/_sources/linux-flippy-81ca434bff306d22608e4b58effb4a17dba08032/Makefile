@@ -1,12 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 VERSION = 6
-<<<<<<<< HEAD:pkgs/_sources/linux-flippy-f29ab30eb9bb790fac1fffa2e2128e867f6af4b7/Makefile
-PATCHLEVEL = 12
-SUBLEVEL = 46
-========
 PATCHLEVEL = 1
 SUBLEVEL = 115
->>>>>>>> f8ed2a9 (linux-flippy: unifreq/linux-6.12.y -> unifreq/linux-6.1.y-rockchip):pkgs/_sources/linux-flippy-81ca434bff306d22608e4b58effb4a17dba08032/Makefile
 EXTRAVERSION =
 NAME = Curry Ramen
 

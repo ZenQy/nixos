@@ -51,13 +51,13 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.1.5";
+    version = "v7.1.6";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.1.5";
+      rev = "v7.1.6";
       fetchSubmodules = false;
-      sha256 = "sha256-RPVr+j5wx1qHXtPGQSpOKEb4L1jB2uxbBMylGdm7EcI=";
+      sha256 = "sha256-UG6tfdh2GEV44T1YvM5kfgxU7E1ZVJYYzUM23/jLzTM=";
     };
   };
   wallpapers = {
