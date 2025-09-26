@@ -1,6 +1,6 @@
 {
     "fcitx5-pinyin-zenith": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "fcitx5-pinyin-zenith",
@@ -15,7 +15,7 @@
         "version": "v2025.09.02"
     },
     "librespeed-rs": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "librespeed-rs",
@@ -36,7 +36,7 @@
         "version": "v1.3.8"
     },
     "linux-armbian": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "linux-armbian",
@@ -57,10 +57,10 @@
         "version": "v24.11.1"
     },
     "linux-flippy": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-07-18",
         "extract": {
-            "Makefile": "./linux-flippy-81ca434bff306d22608e4b58effb4a17dba08032/Makefile"
+            "Makefile": "sha256-knROPfrT7RW+D5O3b7RYR5DnKCE4dmzwUpyQccWuGkE=/Makefile"
         },
         "name": "linux-flippy",
         "passthru": null,
@@ -80,7 +80,7 @@
         "version": "81ca434bff306d22608e4b58effb4a17dba08032"
     },
     "vitejs": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "vitejs",
@@ -93,15 +93,15 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v7.1.6",
-            "sha256": "sha256-UG6tfdh2GEV44T1YvM5kfgxU7E1ZVJYYzUM23/jLzTM=",
+            "rev": "v7.1.7",
+            "sha256": "sha256-or4avhZ++A8ETpJjPrm3dBO7dLJCbGREDI/UktcG6xU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.1.6"
+        "version": "v7.1.7"
     },
     "wallpapers": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "wallpapers",

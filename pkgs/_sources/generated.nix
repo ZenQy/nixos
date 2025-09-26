@@ -46,18 +46,19 @@
       fetchSubmodules = false;
       sha256 = "sha256-knROPfrT7RW+D5O3b7RYR5DnKCE4dmzwUpyQccWuGkE=";
     };
-    Makefile = builtins.readFile ./linux-flippy-81ca434bff306d22608e4b58effb4a17dba08032/Makefile;
-    date = "2025-07-18";
+    extract = {
+      Makefile = ./. + "/sha256-knROPfrT7RW+D5O3b7RYR5DnKCE4dmzwUpyQccWuGkE=/Makefile";
+    };date = "2025-07-18";
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.1.6";
+    version = "v7.1.7";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.1.6";
+      rev = "v7.1.7";
       fetchSubmodules = false;
-      sha256 = "sha256-UG6tfdh2GEV44T1YvM5kfgxU7E1ZVJYYzUM23/jLzTM=";
+      sha256 = "sha256-or4avhZ++A8ETpJjPrm3dBO7dLJCbGREDI/UktcG6xU=";
     };
   };
   wallpapers = {
