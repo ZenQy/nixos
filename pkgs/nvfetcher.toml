@@ -15,6 +15,10 @@ fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper
 src.github_tag = "librespeed/speedtest-rust"
 fetch.github = "librespeed/speedtest-rust"
 
+[Ech0]
+src.github = "lin-snow/Ech0"
+fetch.github = "lin-snow/Ech0"
+
 [linux-armbian]
 src.github_tag = "armbian/linux-rockchip"
 fetch.github = "armbian/linux-rockchip"

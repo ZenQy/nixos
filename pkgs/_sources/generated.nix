@@ -6,6 +6,17 @@
   dockerTools,
 }:
 {
+  Ech0 = {
+    pname = "Ech0";
+    version = "v2.5.1";
+    src = fetchFromGitHub {
+      owner = "lin-snow";
+      repo = "Ech0";
+      rev = "v2.5.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-sEdSo6IweR3JFgi7mjmEaWD2a6vmZd5CBLPo3OxC6XQ=";
+    };
+  };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
     version = "v2025.10.02";

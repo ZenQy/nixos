@@ -50,12 +50,9 @@
             chain prerouting {
                 type filter hook prerouting priority mangle; policy accept;
 
-                # ip6 daddr { ::/0 } return
-                ip6 daddr != fc00::/18 return
-
-                fib daddr type local udp dport 53 tproxy to :${toString tproxy_port} meta mark set ${toString proxy_fwmark}
                 fib daddr type local meta l4proto { tcp, udp } th dport ${toString tproxy_port} reject
 
+                ip6 daddr != fc00::/18 return
                 ip saddr {${concatStringsSep ", " source_IP}} return
                 ip daddr {${concatStringsSep ", " reserved_IP}} return
 
@@ -65,15 +62,11 @@
             chain output {
                 type route hook output priority mangle; policy accept;
 
-                # ip6 daddr { ::/0 } return
-                ip6 daddr != fc00::/18 return
-
-                fib daddr type local udp dport 53 meta mark set ${toString proxy_fwmark}
                 fib daddr type local meta l4proto { tcp, udp } th dport ${toString tproxy_port} reject
-
                 meta skuid ${user} return
+
+                ip6 daddr != fc00::/18 return
                 ip daddr {${concatStringsSep ", " reserved_IP}} return
-                udp dport { netbios-ns, netbios-dgm, netbios-ssn } return
 
                 meta l4proto { tcp, udp } meta mark set ${toString proxy_fwmark}
             }

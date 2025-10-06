@@ -12,15 +12,9 @@ let
   dns = {
     servers = [
       {
-        tag = "dns_proxy";
-        type = "https";
-        server = "1.1.1.1";
-        detour = "proxy";
-      }
-      {
         tag = "dns_direct";
         type = "udp";
-        server = "223.5.5.5";
+        server = "127.0.0.53";
       }
       {
         tag = "dns_fakeip";
@@ -123,6 +117,10 @@ let
     rules = [
       {
         action = "sniff";
+      }
+      {
+        process_name = "AdGuardHome";
+        outbound = "direct";
       }
       {
         protocol = "dns";

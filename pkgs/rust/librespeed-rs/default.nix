@@ -23,5 +23,6 @@ rustPlatform.buildRustPackage (finalAttrs: {
         email = "zenqy.qin@gmail.com";
       }
     ];
+    platforms = lib.platforms.linux;
   };
 })

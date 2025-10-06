@@ -1,10 +1,9 @@
 {
   agent = {
     default_model = {
-      model = "deepseek-sonnet-4-latest";
-      provider = "deepseek";
+      model = "claude-sonnet-4";
+      provider = "zed.dev";
     };
-    version = "2";
   };
   auto_update = false;
   buffer_font_size = 16;
@@ -27,10 +26,7 @@
       enable_language_server = false;
     };
     Nix = {
-      language_servers = [
-        "nixd"
-        "!nil"
-      ];
+      language_servers = [ "nixd" ];
     };
     Rust = {
       language_servers = [ "rust-analyzer" ];

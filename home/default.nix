@@ -1,8 +1,20 @@
 { pkgs, ... }:
 
-with builtins;
-
 let
+  inherit (builtins)
+    toFile
+    toJSON
+    attrNames
+    map
+    stringLength
+    baseNameOf
+    substring
+    concatStringsSep
+    match
+    ;
+
+  homeDir = "/home/nixos";
+
   conf = {
     vscode = {
       file = toFile "settings.json" (toJSON (import ./vscode.nix));
@@ -21,25 +33,27 @@ let
       path = ".config/go/env";
     };
   };
-  cmd = map (
+
+  mkCommand =
     name:
     let
-      fullpath = "/home/nixos/" + conf.${name}.path;
-      source = conf.${name}.file;
-      target = substring 0 ((stringLength fullpath) - (stringLength (baseNameOf fullpath))) fullpath;
-      ext = concatStringsSep "" (match ".*\\.(.+?$)" fullpath);
+      config = conf.${name};
+      fullPath = "${homeDir}/${config.path}";
+      targetDir = substring 0 (stringLength fullPath - stringLength (baseNameOf fullPath)) fullPath;
+      extension = concatStringsSep "" (match ".*\\.(.+)$" fullPath);
+      command = if extension == "json" then "${pkgs.jq}/bin/jq ." else "cat";
     in
     ''
-      mkdir -p ${target}
-      ${if ext == "json" then pkgs.jq + "/bin/jq ." else "cat"} ${source} > ${fullpath}
-    ''
-  ) (attrNames conf);
+      mkdir -p ${targetDir}
+      ${command} ${config.file} > ${fullPath}
+    '';
 
-  script =
-    ''
-      #!/usr/bin/env bash
-    ''
-    + concatStringsSep "\n" cmd;
+  commands = map mkCommand (attrNames conf);
+
+  script = ''
+    #!/usr/bin/env bash
+    ${concatStringsSep "\n" commands}
+  '';
 
 in
 {

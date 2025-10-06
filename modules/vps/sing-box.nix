@@ -67,13 +67,15 @@ let
     if isAlice then
       [
         {
-          type = "socks";
           tag = "socks";
-          server = "2a14:67c0:116::1";
-          server_port = 20000;
+          type = "socks";
           version = "5";
-          username = "alice";
-          password = "alicefofo123..OVO";
+          inherit (secrets.sing-box.socks5)
+            server
+            server_port
+            username
+            password
+            ;
         }
       ]
     else
@@ -95,6 +97,4 @@ in
     }
     // (if isAlice then { inherit route; } else { });
   };
-
-  users.users.sing-box.home = "/var/lib/sing-box";
 }

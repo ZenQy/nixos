@@ -16,6 +16,7 @@
   };
 
   zenith = {
+    Ech0.enable = true;
     cachix.enable = true;
     nezha.enable = true;
     librespeed-rs.port = 2080;
@@ -47,25 +48,28 @@
       group = "wheel";
       host = "127.0.0.1";
       extraPackages = with pkgs; [
-        nixfmt-rfc-style
+        nixfmt
         nixd
 
         go
         gopls
+        leetgo
 
         rustc
         rustfmt
         cargo
         rust-analyzer
-
         gcc
-        leetgo
       ];
     };
 
     caddy = {
       enable = true;
       extraConfig = ''
+        q.${secrets.domain} {
+        	reverse_proxy :6277
+        }
+
         s.${secrets.domain} {
         	reverse_proxy :${toString secrets.nezha.listenport}
         }

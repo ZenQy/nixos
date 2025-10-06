@@ -50,16 +50,16 @@ stdenv.mkDerivation {
     patchShebangs $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Next generation frontend tooling.";
     homepage = "https://vite.dev/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = [
       {
         name = "ZenQy";
         email = "zenqy.qin@gmail.com";
       }
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.linux;
   };
 }
