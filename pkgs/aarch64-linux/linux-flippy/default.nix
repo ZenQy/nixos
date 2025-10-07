@@ -6,9 +6,11 @@
 }:
 
 with builtins;
+
 let
+  makefile = readFile source.extract.Makefile;
   kernelVersion = concatStringsSep "." (
-    match ".*?VERSION = ([[:xdigit:]]+).*?PATCHLEVEL = ([[:xdigit:]]+).*?SUBLEVEL = ([[:xdigit:]]+).*?" source.Makefile
+    match ".*?VERSION = ([[:xdigit:]]+).*?PATCHLEVEL = ([[:xdigit:]]+).*?SUBLEVEL = ([[:xdigit:]]+).*?" makefile
   );
   kernelBranch = concatStringsSep "." (match "([[:xdigit:]]+)\.([[:xdigit:]]+).*?" kernelVersion);
 in

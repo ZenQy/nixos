@@ -19,7 +19,7 @@ in
 
   config = mkIf cfg.enable {
     services.transmission = {
-      enable = false;
+      enable = true;
       user = "nixos";
       group = "wheel";
       webHome = pkgs.flood-for-transmission;

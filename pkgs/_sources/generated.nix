@@ -59,7 +59,8 @@
     };
     extract = {
       Makefile = ./. + "/sha256-knROPfrT7RW+D5O3b7RYR5DnKCE4dmzwUpyQccWuGkE=/Makefile";
-    };date = "2025-07-18";
+    };
+    date = "2025-07-18";
   };
   vitejs = {
     pname = "vitejs";
