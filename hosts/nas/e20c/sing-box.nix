@@ -127,6 +127,10 @@ let
         action = "hijack-dns";
       }
       {
+        protocol = "bittorrent";
+        outbound = "direct";
+      }
+      {
         ip_is_private = true;
         outbound = "direct";
       }
