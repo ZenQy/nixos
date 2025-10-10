@@ -1,139 +1,139 @@
 {
-  "fcitx5-pinyin-zenith": {
-    "cargoLock": null,
-    "date": null,
-    "extract": null,
-    "name": "fcitx5-pinyin-zenith",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "name": null,
-      "sha256": "sha256-ZT6SzMkioRLChm9U9UM6+1t2b7CY8MIQhPKLnerzmgU=",
-      "type": "url",
-      "url": "https://github.com/ZenQy/scel2dict/releases/download/v2025.10.02/zenith.dict"
+    "Ech0": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "Ech0",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "lin-snow",
+            "repo": "Ech0",
+            "rev": "v2.7.7",
+            "sha256": "sha256-44PbduBoV4YPnq/9LJd291mZU99htNA6UKgR5b51NNQ=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v2.7.7"
     },
-    "version": "v2025.10.02"
-  },
-  "Ech0": {
-    "cargoLocks": null,
-    "date": null,
-    "extract": null,
-    "name": "Ech0",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "lin-snow",
-      "repo": "Ech0",
-      "rev": "v2.5.1",
-      "sha256": "sha256-sEdSo6IweR3JFgi7mjmEaWD2a6vmZd5CBLPo3OxC6XQ=",
-      "sparseCheckout": [],
-      "type": "github"
+    "fcitx5-pinyin-zenith": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "fcitx5-pinyin-zenith",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-ZT6SzMkioRLChm9U9UM6+1t2b7CY8MIQhPKLnerzmgU=",
+            "type": "url",
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2025.10.02/zenith.dict"
+        },
+        "version": "v2025.10.02"
     },
-    "version": "v2.5.1"
-  },
-  "librespeed-rs": {
-    "cargoLock": null,
-    "date": null,
-    "extract": null,
-    "name": "librespeed-rs",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "librespeed",
-      "repo": "speedtest-rust",
-      "rev": "v1.3.8",
-      "sha256": "sha256-TINIKZefT4ngnEtlMjxO56PrQxW5gyb1+higiSnkE3Q=",
-      "sparseCheckout": [],
-      "type": "github"
+    "librespeed-rs": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "librespeed-rs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "librespeed",
+            "repo": "speedtest-rust",
+            "rev": "v1.3.8",
+            "sha256": "sha256-TINIKZefT4ngnEtlMjxO56PrQxW5gyb1+higiSnkE3Q=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.3.8"
     },
-    "version": "v1.3.8"
-  },
-  "linux-armbian": {
-    "cargoLock": null,
-    "date": null,
-    "extract": null,
-    "name": "linux-armbian",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "armbian",
-      "repo": "linux-rockchip",
-      "rev": "v24.11.1",
-      "sha256": "sha256-ZqEKQyFeE0UXN+tY8uAGrKgi9mXEp6s5WGyjVuxmuyM=",
-      "sparseCheckout": [],
-      "type": "github"
+    "linux-armbian": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "linux-armbian",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "armbian",
+            "repo": "linux-rockchip",
+            "rev": "v24.11.1",
+            "sha256": "sha256-ZqEKQyFeE0UXN+tY8uAGrKgi9mXEp6s5WGyjVuxmuyM=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v24.11.1"
     },
-    "version": "v24.11.1"
-  },
-  "linux-flippy": {
-    "cargoLock": null,
-    "date": "2025-07-18",
-    "extract": {
-      "Makefile": "sha256-knROPfrT7RW+D5O3b7RYR5DnKCE4dmzwUpyQccWuGkE=/Makefile"
+    "linux-flippy": {
+        "cargoLock": null,
+        "date": "2025-10-09",
+        "extract": {
+            "Makefile": "sha256-vkO7XDZVQMZTI4GRil4375UP3m7VwoDGwwWK0Se9WRI=/Makefile"
+        },
+        "name": "linux-flippy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "unifreq",
+            "repo": "linux-6.1.y-rockchip",
+            "rev": "918c3e76780b6a84a487f462d80777fbb1bc1f41",
+            "sha256": "sha256-vkO7XDZVQMZTI4GRil4375UP3m7VwoDGwwWK0Se9WRI=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "918c3e76780b6a84a487f462d80777fbb1bc1f41"
     },
-    "name": "linux-flippy",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "unifreq",
-      "repo": "linux-6.1.y-rockchip",
-      "rev": "81ca434bff306d22608e4b58effb4a17dba08032",
-      "sha256": "sha256-knROPfrT7RW+D5O3b7RYR5DnKCE4dmzwUpyQccWuGkE=",
-      "sparseCheckout": [],
-      "type": "github"
+    "vitejs": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "vitejs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "vitejs",
+            "repo": "vite",
+            "rev": "v7.1.9",
+            "sha256": "sha256-CLwDVtOvLpvlev8XklQsrYOLAJkm9qko9wj5/BQ33VA=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v7.1.9"
     },
-    "version": "81ca434bff306d22608e4b58effb4a17dba08032"
-  },
-  "vitejs": {
-    "cargoLock": null,
-    "date": null,
-    "extract": null,
-    "name": "vitejs",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "vitejs",
-      "repo": "vite",
-      "rev": "v7.1.9",
-      "sha256": "sha256-CLwDVtOvLpvlev8XklQsrYOLAJkm9qko9wj5/BQ33VA=",
-      "sparseCheckout": [],
-      "type": "github"
-    },
-    "version": "v7.1.9"
-  },
-  "wallpapers": {
-    "cargoLock": null,
-    "date": null,
-    "extract": null,
-    "name": "wallpapers",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "name": null,
-      "sha256": "sha256-OajiSZyhhC5mgramRtF+5rfPURoPHZZlFHvDb85XzmA=",
-      "type": "url",
-      "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.10.03/wallpaper.tar.gz"
-    },
-    "version": "v2025.10.03"
-  }
+    "wallpapers": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "wallpapers",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-OajiSZyhhC5mgramRtF+5rfPURoPHZZlFHvDb85XzmA=",
+            "type": "url",
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2025.10.03/wallpaper.tar.gz"
+        },
+        "version": "v2025.10.03"
+    }
 }

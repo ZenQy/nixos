@@ -8,13 +8,13 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v2.5.1";
+    version = "v2.7.7";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v2.5.1";
+      rev = "v2.7.7";
       fetchSubmodules = false;
-      sha256 = "sha256-sEdSo6IweR3JFgi7mjmEaWD2a6vmZd5CBLPo3OxC6XQ=";
+      sha256 = "sha256-44PbduBoV4YPnq/9LJd291mZU99htNA6UKgR5b51NNQ=";
     };
   };
   fcitx5-pinyin-zenith = {
@@ -49,18 +49,17 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "81ca434bff306d22608e4b58effb4a17dba08032";
+    version = "918c3e76780b6a84a487f462d80777fbb1bc1f41";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.1.y-rockchip";
-      rev = "81ca434bff306d22608e4b58effb4a17dba08032";
+      rev = "918c3e76780b6a84a487f462d80777fbb1bc1f41";
       fetchSubmodules = false;
-      sha256 = "sha256-knROPfrT7RW+D5O3b7RYR5DnKCE4dmzwUpyQccWuGkE=";
+      sha256 = "sha256-vkO7XDZVQMZTI4GRil4375UP3m7VwoDGwwWK0Se9WRI=";
     };
     extract = {
-      Makefile = ./. + "/sha256-knROPfrT7RW+D5O3b7RYR5DnKCE4dmzwUpyQccWuGkE=/Makefile";
-    };
-    date = "2025-07-18";
+      Makefile = ./. + "/sha256-vkO7XDZVQMZTI4GRil4375UP3m7VwoDGwwWK0Se9WRI=/Makefile";
+    };date = "2025-10-09";
   };
   vitejs = {
     pname = "vitejs";

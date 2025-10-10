@@ -18,7 +18,7 @@ let
     pnpmDeps = pnpm.fetchDeps {
       inherit (source) pname version src;
       sourceRoot = "${finalAttrs.src.name}/web";
-      hash = "sha256-3S8S2ql7UaVC0hIgiVe66QwEaiDzDZygslwgPh3c0dA=";
+      hash = "sha256-twcp/bc6WcMq3rGAZEOe6KYl21dBUf2onqYekJJK0xA=";
       fetcherVersion = 1;
     };
 
@@ -54,7 +54,7 @@ buildGoModule (finalAttrs: {
   inherit (source) pname version src;
 
   proxyVendor = true;
-  vendorHash = "sha256-VP04VRgGhBE/BzY2hhPXAdrO6DYykQ/ZArCgweX2opQ=";
+  vendorHash = "sha256-twcp/bc6WcMq3rGAZEOe6KYl21dBUf2onqYekJJK0xA=";
 
   preConfigure = ''
     rm -rf template/dist
