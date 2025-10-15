@@ -25,6 +25,7 @@ let
     #   ];
     #   tls = {
     #     enabled = true;
+    #     alpn = "h2";
     #     inherit (secrets.sing-box.anytls.reality) server_name;
     #     reality = {
     #       enabled = true;

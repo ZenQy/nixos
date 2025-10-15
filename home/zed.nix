@@ -31,8 +31,8 @@
     Rust = {
       language_servers = [ "rust-analyzer" ];
     };
-    Svelte = {
-      language_servers = [ "svelteserver" ];
+    Vue = {
+      language_servers = [ "vue-language-server" ];
     };
     YAML = {
       enable_language_server = false;
@@ -41,7 +41,7 @@
   lsp = {
     gopls = { };
     rust-analyzer = { };
-    svelteserver = { };
+    vue-language-server = { };
   };
   soft_wrap = "editor_width";
   tab_size = 2;

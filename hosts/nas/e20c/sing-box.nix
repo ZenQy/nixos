@@ -5,6 +5,7 @@
 }:
 
 let
+  sb = secrets.sing-box;
   log = {
     level = "info";
     timestamp = false;
@@ -77,6 +78,7 @@ let
               "msftconnecttest.com"
               "oracle.com"
               "test-ipv6.com"
+              "wmviv.com"
             ];
           }
         ];
@@ -121,6 +123,10 @@ let
       {
         process_name = "AdGuardHome";
         outbound = "direct";
+      }
+      {
+        ip_cidr = "100.0.0.0/8";
+        outbound = "ts-ep";
       }
       {
         protocol = "dns";
@@ -207,10 +213,19 @@ let
       listen_port = 12345;
       tcp_fast_open = true;
     }
+    {
+      type = "mixed";
+      listen = "0.0.0.0";
+      listen_port = 1080;
+      set_system_proxy = false;
+    }
   ];
   outbounds =
     let
-      sb = secrets.sing-box;
+      utls = {
+        enabled = true;
+        fingerprint = "safari";
+      };
       tuicList = [
         "osaka-1"
         "osaka-2"
@@ -219,7 +234,7 @@ let
         "alice"
       ];
       anytlsList = [
-        "lxc-us-18"
+        "lazycats"
       ];
       vlessList = [
         "bwh"
@@ -235,8 +250,8 @@ let
       flow = "xtls-rprx-vision";
       tls = {
         enabled = true;
-        utls.enabled = true;
         # alpn = "h2";
+        inherit utls;
         inherit (sb.vless.reality) server_name;
         reality = {
           enabled = true;
@@ -248,12 +263,12 @@ let
       inherit tag;
       type = "anytls";
       server = "${tag}.${secrets.domain}";
-      server_port = 34443;
+      server_port = 44443;
       inherit (sb.anytls) password;
       tls = {
         enabled = true;
-        utls.enabled = true;
         alpn = "h2";
+        inherit utls;
         inherit (sb.anytls.reality) server_name;
         reality = {
           enabled = true;
@@ -280,24 +295,25 @@ let
       {
         tag = "proxy";
         type = "selector";
-        outbounds = [
-          "auto"
-          "direct"
-        ]
-        ++ vlessList
-        ++ anytlsList
-        ++ tuicList;
-      }
-      {
-        tag = "auto";
-        type = "urltest";
-        outbounds = vlessList ++ anytlsList ++ tuicList;
+        outbounds = vlessList ++ anytlsList ++ tuicList ++ [ "direct" ];
       }
       {
         tag = "direct";
         type = "direct";
       }
     ];
+  endpoints = [
+    {
+      type = "tailscale";
+      tag = "ts-ep";
+      auth_key = sb.tailscale;
+      ephemeral = false;
+      accept_routes = false; # 手机端设置为true,可通过局域网ip访问
+      advertise_routes = [ "10.0.0.0/24" ];
+      advertise_exit_node = false;
+      udp_timeout = "5m";
+    }
+  ];
   experimental = {
     cache_file = {
       enabled = true;
@@ -320,6 +336,7 @@ in
         route
         inbounds
         outbounds
+        endpoints
         experimental
         ;
     };

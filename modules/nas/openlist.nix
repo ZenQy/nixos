@@ -41,7 +41,6 @@ in
           User = "nixos";
           Group = "wheel";
           StateDirectory = "openlist";
-          RuntimeDirectory = "openlist";
           WorkingDirectory = path;
           ExecStart = ''
             ${pkgs.openlist}/bin/OpenList server

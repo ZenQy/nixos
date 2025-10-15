@@ -93,7 +93,6 @@ in
           Type = "oneshot";
           User = "root";
           Group = "root";
-          RuntimeDirectory = "rclone";
           CacheDirectory = "rclone";
           CacheDirectoryMode = "0700";
           PrivateTmp = true;

@@ -22,6 +22,8 @@
       dhcpServerConfig = {
         PoolOffset = 150;
         PoolSize = 100;
+        EmitDNS = true;
+        DNS = "10.0.0.1";
       };
     };
 

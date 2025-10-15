@@ -28,6 +28,7 @@ in
       wantedBy = [ "multi-user.target" ];
       serviceConfig = {
         StateDirectory = "Ech0";
+        WorkingDirectory = "/var/lib/Ech0";
         ExecStart = ''
           ${pkgs.Ech0}/bin/ech0 serve
         '';

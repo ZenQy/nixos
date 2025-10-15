@@ -56,7 +56,6 @@ in
           User = "nixos";
           Group = "wheel";
           StateDirectory = "nezha";
-          RuntimeDirectory = "nezha";
           WorkingDirectory = path;
           ExecStart = ''
             ${pkgs.nezha}/bin/nezha

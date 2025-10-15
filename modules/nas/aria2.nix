@@ -63,7 +63,6 @@ in
           User = "nixos";
           Group = "wheel";
           StateDirectory = "aria2";
-          RuntimeDirectory = "aria2";
           WorkingDirectory = path;
           ExecStart = ''
             ${pkgs.aria2}/bin/aria2c --conf-path=${conf}

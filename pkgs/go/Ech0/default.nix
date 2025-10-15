@@ -18,7 +18,7 @@ let
     pnpmDeps = pnpm.fetchDeps {
       inherit (source) pname version src;
       sourceRoot = "${finalAttrs.src.name}/web";
-      hash = "sha256-twcp/bc6WcMq3rGAZEOe6KYl21dBUf2onqYekJJK0xA=";
+      hash = "sha256-H6EazIGgMKp8Ik9IuprzoC3iUPCjd3jpKiriblCv3bc=";
       fetcherVersion = 1;
     };
 

@@ -78,7 +78,6 @@ in
         wantedBy = [ "multi-user.target" ];
         serviceConfig = {
           StateDirectory = "librespeed-rs";
-          RuntimeDirectory = "librespeed-rs";
           WorkingDirectory = path;
           ExecStart = ''
             ${pkgs.librespeed-rs}/bin/librespeed-rs -c ${conf}
