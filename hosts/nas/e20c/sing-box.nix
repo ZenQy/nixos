@@ -26,24 +26,22 @@ let
     ];
     rules = [
       {
-        clash_mode = "direct";
-        server = "dns_direct";
+        rule_set = "geosite-category-ads-all";
+        action = "reject";
       }
       {
-        rule_set = "custom_direct";
-        server = "dns_direct";
-      }
-      {
-        rule_set = "custom_proxy";
+        rule_set = "inline_proxy";
         server = "dns_fakeip";
       }
       {
-        rule_set = "geosite-category-ads-all";
-        action = "predefined";
-        rcode = "REFUSED";
+        protocol = "bittorrent";
+        server = "dns_direct";
       }
       {
-        rule_set = "geosite-cn";
+        rule_set = [
+          "inline_direct"
+          "geosite-cn"
+        ];
         server = "dns_direct";
       }
       {
@@ -60,7 +58,7 @@ let
   route = {
     rule_set = [
       {
-        tag = "custom_direct";
+        tag = "inline_direct";
         type = "inline";
         rules = [
           {
@@ -71,8 +69,7 @@ let
               "allawnfs.com"
               "binmt.cc"
               "blizzard.com"
-              "blog.cloudflare.com"
-              "developers.cloudflare.com"
+              "cloudflare.com"
               "epicgames.com"
               "hostinger.com"
               "msftconnecttest.com"
@@ -84,7 +81,7 @@ let
         ];
       }
       {
-        tag = "custom_proxy";
+        tag = "inline_proxy";
         type = "inline";
         rules = [
           {
@@ -133,39 +130,20 @@ let
         action = "hijack-dns";
       }
       {
+        rule_set = "inline_proxy";
+        outbound = "proxy";
+      }
+      {
         protocol = "bittorrent";
         outbound = "direct";
       }
       {
         ip_is_private = true;
-        outbound = "direct";
-      }
-      {
-        clash_mode = "global";
-        outbound = "proxy";
-      }
-      {
-        clash_mode = "direct";
-        outbound = "direct";
-      }
-      {
-        rule_set = "custom_direct";
-        outbound = "direct";
-      }
-      {
-        rule_set = "custom_proxy";
-        outbound = "proxy";
-      }
-      {
-        rule_set = "geosite-category-ads-all";
-        action = "reject";
-      }
-      {
-        rule_set = "geosite-cn";
-        outbound = "direct";
-      }
-      {
-        rule_set = "geoip-cn";
+        rule_set = [
+          "inline_direct"
+          "geosite-cn"
+          "geoip-cn"
+        ];
         outbound = "direct";
       }
     ];

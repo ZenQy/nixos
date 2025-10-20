@@ -1,6 +1,5 @@
 {
   secrets,
-  lib,
   pkgs,
   ...
 }:
@@ -10,7 +9,7 @@
   boot.supportedFilesystems = [ "ntfs" ];
   services.gvfs.enable = true;
   services.speechd.enable = false;
-  services.gnome.gnome-keyring.enable = lib.mkForce false;
+  services.gnome.gnome-keyring.enable = true;
   security.polkit.extraConfig = ''
     polkit.addRule(function(action, subject) {
       if (subject.isInGroup("wheel")) {

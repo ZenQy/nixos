@@ -13,7 +13,6 @@ let
   conf = {
     layer = "top";
     position = "top";
-    height = 30;
 
     modules-left = [
       # "hyprland/workspaces"
@@ -110,6 +109,7 @@ let
         "(.*) - Personal - Microsoft Edge" = "🌎 $1";
         "(.*) - Untitled\(Workspace\) - VSCodium" = " $1";
       };
+      swap-icon-label = true;
     };
 
     # idle_inhibitor = {
@@ -157,13 +157,13 @@ let
     };
 
     cpu = {
-      format = "{icon} {}%";
+      format = "{icon} {0}%";
       format-icons = map (color: "<span color='${color}'></span>") colors;
       tooltip = false;
     };
 
     memory = {
-      format = "{icon} {}%";
+      format = "{icon} {0}%";
       format-icons = map (color: "<span color='${color}'></span>") colors;
     };
 

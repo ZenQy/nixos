@@ -84,7 +84,20 @@ let
   );
   route.rules = [
     {
+      action = "sniff";
+    }
+    {
       ip_version = 4;
+      outbound = "socks";
+    }
+    {
+      domain_suffix = [
+        "github.com"
+        "githubassets.com"
+        "githubusercontent.com"
+        "twimg.com"
+        "x.com"
+      ];
       outbound = "socks";
     }
   ];
