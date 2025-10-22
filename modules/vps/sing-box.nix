@@ -59,29 +59,38 @@ let
       };
     }
   ];
-  outbounds = [
-    {
-      type = "direct";
-    }
-  ]
-  ++ (
-    if isAlice then
-      [
-        {
-          tag = "socks";
+  outbounds =
+    let
+      s = secrets.sing-box.socks5;
+    in
+    [
+      {
+        type = "direct";
+      }
+    ]
+    ++ (
+      if isAlice then
+        [
+          {
+            tag = "socks";
+            type = "urltest";
+            outbounds = map (p: toString p) s.server_port;
+          }
+        ]
+        ++ map (p: {
+          tag = toString p;
           type = "socks";
           version = "5";
-          inherit (secrets.sing-box.socks5)
+          server_port = p;
+          inherit (s)
             server
-            server_port
             username
             password
             ;
-        }
-      ]
-    else
-      [ ]
-  );
+        }) s.server_port
+      else
+        [ ]
+    );
   route.rules = [
     {
       action = "sniff";
