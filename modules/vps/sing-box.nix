@@ -15,6 +15,7 @@ let
   };
   inbounds = [
     # {
+    #   tag = "anytls";
     #   type = "anytls";
     #   listen = "::";
     #   listen_port = 443;
@@ -39,6 +40,7 @@ let
     #   };
     # }
     {
+      tag = "tuic";
       type = "tuic";
       listen = "::";
       listen_port = 443;
@@ -53,18 +55,29 @@ let
         enabled = true;
         alpn = "h3";
         acme = {
-          domain = "${host}.940940.xyz";
+          domain = "${host}.${secrets.domain}";
           inherit (secrets.sing-box) email;
         };
       };
     }
   ];
+  dns = {
+    servers = [
+      {
+        tag = "local";
+        type = "local";
+      }
+    ];
+    final = "local";
+    strategy = "prefer_ipv6";
+  };
   outbounds =
     let
       s = secrets.sing-box.socks5;
     in
     [
       {
+        tag = "direct";
         type = "direct";
       }
     ]
@@ -91,25 +104,20 @@ let
       else
         [ ]
     );
-  route.rules = [
-    {
-      action = "sniff";
-    }
-    {
-      ip_version = 4;
-      outbound = "socks";
-    }
-    {
-      domain_suffix = [
-        "github.com"
-        "githubassets.com"
-        "githubusercontent.com"
-        "twimg.com"
-        "x.com"
-      ];
-      outbound = "socks";
-    }
-  ];
+  route = {
+    rules = [
+      {
+        inbound = "tuic";
+        action = "resolve";
+        server = "local";
+      }
+      {
+        ip_cidr = "::/0";
+        outbound = "direct";
+      }
+    ];
+    final = "socks";
+  };
 
 in
 {
@@ -118,6 +126,6 @@ in
     settings = {
       inherit log inbounds outbounds;
     }
-    // (if isAlice then { inherit route; } else { });
+    // (if isAlice then { inherit dns route; } else { });
   };
 }
