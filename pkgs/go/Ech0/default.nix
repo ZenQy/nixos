@@ -2,53 +2,8 @@
   source,
   lib,
   buildGoModule,
-  stdenv,
-  pnpm,
-  nodejs_24,
+  Ech0-frontend,
 }:
-
-let
-  nodejs = nodejs_24;
-
-  frontend = stdenv.mkDerivation (finalAttrs: {
-    inherit (source) pname version src;
-
-    sourceRoot = "${finalAttrs.src.name}/web";
-
-    pnpmDeps = pnpm.fetchDeps {
-      inherit (source) pname version src;
-      sourceRoot = "${finalAttrs.src.name}/web";
-      hash = "sha256-H6EazIGgMKp8Ik9IuprzoC3iUPCjd3jpKiriblCv3bc=";
-      fetcherVersion = 1;
-    };
-
-    patchPhase = ''
-      sed -i 's|../template/dist|./dist|g' vite.config.ts
-    '';
-
-    nativeBuildInputs = [
-      pnpm.configHook
-    ];
-
-    buildInputs = [
-      nodejs
-      pnpm
-    ];
-
-    # 启用并行构建以提高性能
-    enableParallelBuilding = true;
-
-    buildPhase = ''
-      pnpm run build-only
-    '';
-
-    installPhase = ''
-      cp -r dist $out
-    '';
-
-  });
-
-in
 
 buildGoModule (finalAttrs: {
   inherit (source) pname version src;
@@ -58,7 +13,7 @@ buildGoModule (finalAttrs: {
 
   preConfigure = ''
     rm -rf template/dist
-    cp -r ${frontend} template/dist
+    cp -r ${Ech0-frontend} template/dist
   '';
 
   env.CGO_ENABLED = 1;

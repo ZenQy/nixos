@@ -88,22 +88,12 @@ jobs:
               pkgs_list=$(echo $pkgs_list | jq "del(.[] | select(. == \"$pkg\"))")
             else
               if [[ -d pkgs/go/$pkg ]]; then
-                count=$(cat pkgs/go/$pkg/default.nix | grep sha256 | wc -l)
                 sed -i 's/"sha256\(.*\)"/"sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/g' pkgs/go/$pkg/default.nix
-                if [ $count -eq 1 ]; then
-                  ./result/bin/nix-update $pkg --flake --version=skip
-                else
-                  ./result/bin/nix-update --subpackage $pkg --flake --version=skip
-                fi
+                ./result/bin/nix-update $pkg --flake --version=skip
               fi
               if [[ -d pkgs/node/$pkg ]]; then
-                count=$(cat pkgs/node/$pkg/default.nix | grep sha256 | wc -l)
                 sed -i 's/"sha256\(.*\)"/"sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/g' pkgs/node/$pkg/default.nix
-                if [ $count -eq 1 ]; then
-                  ./result/bin/nix-update $pkg --flake --version=skip
-                else
-                  ./result/bin/nix-update --subpackage $pkg --flake --version=skip
-                fi
+                ./result/bin/nix-update $pkg --flake --version=skip
               fi
             fi
           done

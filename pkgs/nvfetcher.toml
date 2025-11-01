@@ -19,6 +19,10 @@ fetch.github = "librespeed/speedtest-rust"
 src.github = "lin-snow/Ech0"
 fetch.github = "lin-snow/Ech0"
 
+[Ech0-frontend]
+src.github = "lin-snow/Ech0"
+fetch.github = "lin-snow/Ech0"
+
 [linux-armbian]
 src.github_tag = "armbian/linux-rockchip"
 fetch.github = "armbian/linux-rockchip"

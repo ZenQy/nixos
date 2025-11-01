@@ -17,6 +17,17 @@
       sha256 = "sha256-44PbduBoV4YPnq/9LJd291mZU99htNA6UKgR5b51NNQ=";
     };
   };
+  Ech0-frontend = {
+    pname = "Ech0";
+    version = "v2.7.7";
+    src = fetchFromGitHub {
+      owner = "lin-snow";
+      repo = "Ech0";
+      rev = "v2.7.7";
+      fetchSubmodules = false;
+      sha256 = "sha256-44PbduBoV4YPnq/9LJd291mZU99htNA6UKgR5b51NNQ=";
+    };
+  };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
     version = "v2025.10.02";
@@ -59,7 +70,8 @@
     };
     extract = {
       Makefile = ./. + "/sha256-vkO7XDZVQMZTI4GRil4375UP3m7VwoDGwwWK0Se9WRI=/Makefile";
-    };date = "2025-10-09";
+    };
+    date = "2025-10-09";
   };
   vitejs = {
     pname = "vitejs";
