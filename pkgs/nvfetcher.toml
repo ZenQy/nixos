@@ -14,6 +14,7 @@ fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper
 [librespeed-rs]
 src.github_tag = "librespeed/speedtest-rust"
 fetch.github = "librespeed/speedtest-rust"
+extract = ["Cargo.lock"]
 
 [Ech0]
 src.github = "lin-snow/Ech0"

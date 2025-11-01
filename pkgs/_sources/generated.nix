@@ -46,6 +46,9 @@
       fetchSubmodules = false;
       sha256 = "sha256-Jnm17GMjqh5evz3r0sd//dzKP3dKf0T1ReR1OAKq2Dw=";
     };
+    extract = {
+      "Cargo.lock" = ./. + "/sha256-Jnm17GMjqh5evz3r0sd__dzKP3dKf0T1ReR1OAKq2Dw=/Cargo.lock";
+    };
   };
   linux-armbian = {
     pname = "linux-armbian";

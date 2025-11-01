@@ -59,7 +59,9 @@
     "librespeed-rs": {
         "cargoLock": null,
         "date": null,
-        "extract": null,
+        "extract": {
+            "Cargo.lock": "sha256-Jnm17GMjqh5evz3r0sd__dzKP3dKf0T1ReR1OAKq2Dw=/Cargo.lock"
+        },
         "name": "librespeed-rs",
         "passthru": null,
         "pinned": false,
