@@ -13,12 +13,33 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v2.7.7",
-            "sha256": "sha256-44PbduBoV4YPnq/9LJd291mZU99htNA6UKgR5b51NNQ=",
+            "rev": "v2.9.5",
+            "sha256": "sha256-UbmYwp5ML7U/jhqV16wZx9n9Wa8AhLDvLtbZX8xDV9A=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.7.7"
+        "version": "v2.9.5"
+    },
+    "Ech0-frontend": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "Ech0-frontend",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "lin-snow",
+            "repo": "Ech0",
+            "rev": "v2.9.5",
+            "sha256": "sha256-UbmYwp5ML7U/jhqV16wZx9n9Wa8AhLDvLtbZX8xDV9A=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v2.9.5"
     },
     "fcitx5-pinyin-zenith": {
         "cargoLock": null,
@@ -49,12 +70,12 @@
             "name": null,
             "owner": "librespeed",
             "repo": "speedtest-rust",
-            "rev": "v1.3.8",
-            "sha256": "sha256-TINIKZefT4ngnEtlMjxO56PrQxW5gyb1+higiSnkE3Q=",
+            "rev": "v1.4.0",
+            "sha256": "sha256-Jnm17GMjqh5evz3r0sd//dzKP3dKf0T1ReR1OAKq2Dw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.3.8"
+        "version": "v1.4.0"
     },
     "linux-armbian": {
         "cargoLock": null,
@@ -79,9 +100,9 @@
     },
     "linux-flippy": {
         "cargoLock": null,
-        "date": "2025-10-09",
+        "date": "2025-10-26",
         "extract": {
-            "Makefile": "sha256-vkO7XDZVQMZTI4GRil4375UP3m7VwoDGwwWK0Se9WRI=/Makefile"
+            "Makefile": "sha256-vD6lyC6YnLfJHW94do9c7hGjs+TRgiaFWla5qlYnB4E=/Makefile"
         },
         "name": "linux-flippy",
         "passthru": null,
@@ -93,12 +114,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.1.y-rockchip",
-            "rev": "918c3e76780b6a84a487f462d80777fbb1bc1f41",
-            "sha256": "sha256-vkO7XDZVQMZTI4GRil4375UP3m7VwoDGwwWK0Se9WRI=",
+            "rev": "97dc213c926c6c3bbb9b29b473163771040ba329",
+            "sha256": "sha256-vD6lyC6YnLfJHW94do9c7hGjs+TRgiaFWla5qlYnB4E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "918c3e76780b6a84a487f462d80777fbb1bc1f41"
+        "version": "97dc213c926c6c3bbb9b29b473163771040ba329"
     },
     "vitejs": {
         "cargoLock": null,
@@ -114,12 +135,12 @@
             "name": null,
             "owner": "vitejs",
             "repo": "vite",
-            "rev": "v7.1.9",
-            "sha256": "sha256-CLwDVtOvLpvlev8XklQsrYOLAJkm9qko9wj5/BQ33VA=",
+            "rev": "v7.1.12",
+            "sha256": "sha256-giF2XEu84QywuBMVo8klV5zkVWISIuhoNcEyBrZhvmY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.1.9"
+        "version": "v7.1.12"
     },
     "wallpapers": {
         "cargoLock": null,
