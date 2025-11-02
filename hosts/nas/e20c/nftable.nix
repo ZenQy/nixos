@@ -5,22 +5,23 @@
     enable = true;
     checkRuleset = false;
     tables = {
-      filter = {
-        family = "inet";
-        content = ''
-          chain forward {
-            type filter hook forward priority 0;
-            oifname "ppp0" tcp flags syn tcp option maxseg size set rt mtu # 自动设置数据包的mtu大小，否则会遇到比如优酷视频加载不了的问题。
-          }
-        '';
-      };
+      # 移除该规则,观察是否正常
+      # filter = {
+      #   family = "inet";
+      #   content = ''
+      #     chain forward {
+      #       type filter hook forward priority 0;
+      #       oifname "ppp0" tcp flags syn tcp option maxseg size set rt mtu counter # 自动设置数据包的mtu大小，否则会遇到比如优酷视频加载不了的问题。
+      #     }
+      #   '';
+      # };
 
       nat = {
         family = "ip";
         content = ''
           chain postrouting {
             type nat hook postrouting priority srcnat; policy accept;
-            masquerade # 将lan浏量转发到ppp0，这么说不知道对不对，反正不设接到软路由的设备就不能访问外网。
+            counter masquerade # ipv4 动态伪装
           }
         '';
       };
@@ -50,25 +51,25 @@
             chain prerouting {
                 type filter hook prerouting priority mangle; policy accept;
 
-                fib daddr type local meta l4proto { tcp, udp } th dport ${toString tproxy_port} reject
+                fib daddr type local meta l4proto { tcp, udp } th dport ${toString tproxy_port} counter reject
 
-                ip6 daddr != fc00::/18 return
-                ip saddr {${concatStringsSep ", " source_IP}} return
-                ip daddr {${concatStringsSep ", " reserved_IP}} return
+                ip6 daddr != fc00::/18 counter return
+                ip saddr {${concatStringsSep ", " source_IP}} counter return
+                ip daddr {${concatStringsSep ", " reserved_IP}} counter return
 
-                meta l4proto { tcp, udp } tproxy to :${toString tproxy_port} meta mark set ${toString proxy_fwmark}
+                meta l4proto { tcp, udp } counter tproxy to :${toString tproxy_port} meta mark set ${toString proxy_fwmark}
             }
 
             chain output {
                 type route hook output priority mangle; policy accept;
 
-                fib daddr type local meta l4proto { tcp, udp } th dport ${toString tproxy_port} reject
-                meta skuid ${user} return
+                fib daddr type local meta l4proto { tcp, udp } th dport ${toString tproxy_port} counter reject
+                meta skuid ${user} counter return
 
-                ip6 daddr != fc00::/18 return
-                ip daddr {${concatStringsSep ", " reserved_IP}} return
+                ip6 daddr != fc00::/18 counter return
+                ip daddr {${concatStringsSep ", " reserved_IP}} counter return
 
-                meta l4proto { tcp, udp } meta mark set ${toString proxy_fwmark}
+                meta l4proto { tcp, udp } counter meta mark set ${toString proxy_fwmark}
             }
           '';
       };

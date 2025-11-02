@@ -153,7 +153,7 @@ let
   };
   inbounds = [
     # {
-    #   tag = "tun-in";
+    #   tag = "tun";
     #   type = "tun";
     #   address = [
     #     "172.18.0.1/24"
@@ -185,7 +185,7 @@ let
     #   ];
     # }
     {
-      tag = "tproxy-in";
+      tag = "tproxy";
       type = "tproxy";
       listen = "::";
       listen_port = 12345;
@@ -216,6 +216,21 @@ let
       ];
       vlessList = [
         "bwh"
+      ];
+      trojanList = [
+        sb.trojan.host
+        "bestcf.top"
+        "cdn.2020111.xyz"
+        "cdn.tzpro.xyz"
+        "cf.090227.xyz"
+        "cf.0sm.com"
+        "cf.zhetengsha.eu.org"
+        "cfip.1323123.xyz"
+        "cloudflare-ip.mofashi.ltd"
+        "cloudflare.182682.xyz"
+        "cnamefuckxxs.yuchen.icu"
+        "freeyx.cloudflare88.eu.org"
+        "xn--b6gac.eu.org"
       ];
     in
 
@@ -269,11 +284,29 @@ let
         alpn = "h3";
       };
     }) tuicList
+    ++ map (tag: {
+      inherit tag;
+      type = "trojan";
+      server = tag;
+      server_port = 443;
+      inherit (sb.trojan) password;
+      transport = {
+        type = "ws";
+        path = "/";
+        headers.Host = sb.trojan.host;
+      };
+      tls = {
+        enabled = true;
+        server_name = sb.trojan.host;
+        alpn = "h3";
+        inherit utls;
+      };
+    }) trojanList
     ++ [
       {
         tag = "proxy";
         type = "selector";
-        outbounds = vlessList ++ anytlsList ++ tuicList ++ [ "direct" ];
+        outbounds = vlessList ++ anytlsList ++ tuicList ++ trojanList ++ [ "direct" ];
       }
       {
         tag = "direct";
@@ -319,5 +352,4 @@ in
         ;
     };
   };
-
 }
