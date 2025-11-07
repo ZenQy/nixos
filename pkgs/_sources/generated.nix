@@ -8,32 +8,32 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v2.9.5";
+    version = "v2.9.6";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v2.9.5";
+      rev = "v2.9.6";
       fetchSubmodules = false;
-      sha256 = "sha256-UbmYwp5ML7U/jhqV16wZx9n9Wa8AhLDvLtbZX8xDV9A=";
+      sha256 = "sha256-KtXI0WVTx3FZIdnxWFKiiotXnuipA2VnJxX1FTALHNY=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v2.9.5";
+    version = "v2.9.6";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v2.9.5";
+      rev = "v2.9.6";
       fetchSubmodules = false;
-      sha256 = "sha256-UbmYwp5ML7U/jhqV16wZx9n9Wa8AhLDvLtbZX8xDV9A=";
+      sha256 = "sha256-KtXI0WVTx3FZIdnxWFKiiotXnuipA2VnJxX1FTALHNY=";
     };
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2025.10.02";
+    version = "v2025.11.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.10.02/zenith.dict";
-      sha256 = "sha256-ZT6SzMkioRLChm9U9UM6+1t2b7CY8MIQhPKLnerzmgU=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.11.02/zenith.dict";
+      sha256 = "sha256-fqNYGm4suD1DGDYEIuhkNNt70B+aVsFirY/WUnUrd7A=";
     };
   };
   librespeed-rs = {
@@ -77,21 +77,21 @@
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.1.12";
+    version = "v7.2.2";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.1.12";
+      rev = "v7.2.2";
       fetchSubmodules = false;
-      sha256 = "sha256-giF2XEu84QywuBMVo8klV5zkVWISIuhoNcEyBrZhvmY=";
+      sha256 = "sha256-y4Nqug+WxqssXXO17bDGRPSC6tHlQ9eAmLXp66Zp8dM=";
     };
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2025.10.03";
+    version = "v2025.11.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.10.03/wallpaper.tar.gz";
-      sha256 = "sha256-OajiSZyhhC5mgramRtF+5rfPURoPHZZlFHvDb85XzmA=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.11.03/wallpaper.tar.gz";
+      sha256 = "sha256-V8ilKLESt8TpXcWi3C+8QF3sRwjkBYLWa8E0ICdAKTk=";
     };
   };
 }
