@@ -211,11 +211,8 @@ let
         "natvps"
         "alice"
       ];
-      anytlsList = [
-        "lazycats"
-      ];
       vlessList = [
-        "bwh"
+        "dmit"
       ];
       trojanList = [
         sb.trojan.host
@@ -233,17 +230,17 @@ let
         "xn--b6gac.eu.org"
       ];
     in
-
-    map (tag: {
+    sb.node
+    ++ map (tag: {
       inherit tag;
       type = "vless";
       server = "${tag}.${secrets.domain}";
-      server_port = 43388;
+      server_port = 443;
       inherit (sb.vless) uuid;
       flow = "xtls-rprx-vision";
       tls = {
         enabled = true;
-        # alpn = "h2";
+        alpn = "h2";
         inherit utls;
         inherit (sb.vless.reality) server_name;
         reality = {
@@ -252,23 +249,6 @@ let
         };
       };
     }) vlessList
-    ++ map (tag: {
-      inherit tag;
-      type = "anytls";
-      server = "${tag}.${secrets.domain}";
-      server_port = 44443;
-      inherit (sb.anytls) password;
-      tls = {
-        enabled = true;
-        alpn = "h2";
-        inherit utls;
-        inherit (sb.anytls.reality) server_name;
-        reality = {
-          enabled = true;
-          inherit (sb.anytls.reality) public_key short_id;
-        };
-      };
-    }) anytlsList
     ++ map (tag: {
       inherit tag;
       type = "tuic";
@@ -306,7 +286,7 @@ let
       {
         tag = "proxy";
         type = "selector";
-        outbounds = vlessList ++ anytlsList ++ tuicList ++ trojanList ++ [ "direct" ];
+        outbounds = map (s: s.tag) sb.node ++ vlessList ++ tuicList ++ trojanList ++ [ "direct" ];
       }
       {
         tag = "direct";

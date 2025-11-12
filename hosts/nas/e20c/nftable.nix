@@ -5,16 +5,16 @@
     enable = true;
     checkRuleset = false;
     tables = {
-      # 移除该规则,观察是否正常
-      # filter = {
-      #   family = "inet";
-      #   content = ''
-      #     chain forward {
-      #       type filter hook forward priority 0;
-      #       oifname "ppp0" tcp flags syn tcp option maxseg size set rt mtu counter # 自动设置数据包的mtu大小，否则会遇到比如优酷视频加载不了的问题。
-      #     }
-      #   '';
-      # };
+      filter = {
+        family = "inet";
+        content = ''
+          chain forward {
+            type filter hook forward priority filter; policy accept;
+            # 自动设置数据包的mtu大小，否则可能无法加载视频。
+            oifname "ppp0" tcp flags syn tcp option maxseg size set rt mtu counter
+          }
+        '';
+      };
 
       nat = {
         family = "ip";
