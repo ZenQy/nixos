@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v2.9.6";
+    version = "v2.9.10";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v2.9.6";
+      rev = "v2.9.10";
       fetchSubmodules = false;
-      sha256 = "sha256-KtXI0WVTx3FZIdnxWFKiiotXnuipA2VnJxX1FTALHNY=";
+      sha256 = "sha256-kwqp9rmKgJXZkgk52mt79Jk6hHfPd2LZ1ytlQ5P73Iw=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v2.9.6";
+    version = "v2.9.10";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v2.9.6";
+      rev = "v2.9.10";
       fetchSubmodules = false;
-      sha256 = "sha256-KtXI0WVTx3FZIdnxWFKiiotXnuipA2VnJxX1FTALHNY=";
+      sha256 = "sha256-kwqp9rmKgJXZkgk52mt79Jk6hHfPd2LZ1ytlQ5P73Iw=";
     };
   };
   fcitx5-pinyin-zenith = {
@@ -63,17 +63,17 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "97dc213c926c6c3bbb9b29b473163771040ba329";
+    version = "05f450a0e11ab008852d35d32db81646172b2b67";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.1.y-rockchip";
-      rev = "97dc213c926c6c3bbb9b29b473163771040ba329";
+      rev = "05f450a0e11ab008852d35d32db81646172b2b67";
       fetchSubmodules = false;
-      sha256 = "sha256-vD6lyC6YnLfJHW94do9c7hGjs+TRgiaFWla5qlYnB4E=";
+      sha256 = "sha256-rdxAfjDcAdLbOhSe5Y42ZVKulDccbZLbycQ+Uj4KMXk=";
     };
     extract = {
-      Makefile = ./. + "/sha256-vD6lyC6YnLfJHW94do9c7hGjs+TRgiaFWla5qlYnB4E=/Makefile";
-    };date = "2025-10-26";
+      Makefile = ./. + "/sha256-rdxAfjDcAdLbOhSe5Y42ZVKulDccbZLbycQ+Uj4KMXk=/Makefile";
+    };date = "2025-11-14";
   };
   vitejs = {
     pname = "vitejs";

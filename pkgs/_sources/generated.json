@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v2.9.6",
-            "sha256": "sha256-KtXI0WVTx3FZIdnxWFKiiotXnuipA2VnJxX1FTALHNY=",
+            "rev": "v2.9.10",
+            "sha256": "sha256-kwqp9rmKgJXZkgk52mt79Jk6hHfPd2LZ1ytlQ5P73Iw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.9.6"
+        "version": "v2.9.10"
     },
     "Ech0-frontend": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v2.9.6",
-            "sha256": "sha256-KtXI0WVTx3FZIdnxWFKiiotXnuipA2VnJxX1FTALHNY=",
+            "rev": "v2.9.10",
+            "sha256": "sha256-kwqp9rmKgJXZkgk52mt79Jk6hHfPd2LZ1ytlQ5P73Iw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.9.6"
+        "version": "v2.9.10"
     },
     "fcitx5-pinyin-zenith": {
         "cargoLock": null,
@@ -102,9 +102,9 @@
     },
     "linux-flippy": {
         "cargoLock": null,
-        "date": "2025-10-26",
+        "date": "2025-11-14",
         "extract": {
-            "Makefile": "sha256-vD6lyC6YnLfJHW94do9c7hGjs+TRgiaFWla5qlYnB4E=/Makefile"
+            "Makefile": "sha256-rdxAfjDcAdLbOhSe5Y42ZVKulDccbZLbycQ+Uj4KMXk=/Makefile"
         },
         "name": "linux-flippy",
         "passthru": null,
@@ -116,12 +116,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.1.y-rockchip",
-            "rev": "97dc213c926c6c3bbb9b29b473163771040ba329",
-            "sha256": "sha256-vD6lyC6YnLfJHW94do9c7hGjs+TRgiaFWla5qlYnB4E=",
+            "rev": "05f450a0e11ab008852d35d32db81646172b2b67",
+            "sha256": "sha256-rdxAfjDcAdLbOhSe5Y42ZVKulDccbZLbycQ+Uj4KMXk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "97dc213c926c6c3bbb9b29b473163771040ba329"
+        "version": "05f450a0e11ab008852d35d32db81646172b2b67"
     },
     "vitejs": {
         "cargoLock": null,
