@@ -69,7 +69,8 @@ let
               "allawnfs.com"
               "binmt.cc"
               "blizzard.com"
-              "cloudflare.com"
+              "blog.cloudflare.com"
+              "developers.cloudflare.com"
               "epicgames.com"
               "hostinger.com"
               "msftconnecttest.com"
@@ -208,7 +209,8 @@ let
         "osaka-1"
         "osaka-2"
         "sailor"
-        "natvps"
+        "natvps-us"
+        "natvps-ca"
         "alice"
       ];
       vlessList = [

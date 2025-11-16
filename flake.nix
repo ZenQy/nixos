@@ -93,7 +93,7 @@
               modules = [
                 ./hosts/${cate}/${host}
                 (import ./modules cate)
-                (if cate == "desktop" then (impermanence.nixosModule) else { })
+                (if cate == "desktop" then (impermanence.nixosModules.impermanence) else { })
                 {
                   nixpkgs.overlays = [ self.overlays.default ];
                   nix.nixPath = [ "nixpkgs=${nixpkgs}" ];

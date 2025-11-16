@@ -20,8 +20,8 @@
         family = "ip";
         content = ''
           chain postrouting {
-            type nat hook postrouting priority srcnat; policy accept;
-            counter masquerade # ipv4 动态伪装
+            type nat hook postrouting priority filter; policy accept;
+            oifname "ppp0" counter masquerade # ipv4 动态伪装
           }
         '';
       };

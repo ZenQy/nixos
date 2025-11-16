@@ -35,6 +35,8 @@
     options = [
       "relatime"
       "mode=755"
+      "nosuid"
+      "nodev"
     ];
   };
 
