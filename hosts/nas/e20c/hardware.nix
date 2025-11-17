@@ -14,6 +14,12 @@
     filter = "*e20c*.dtb";
   };
 
+  nixpkgs.overlays = [
+    (final: super: {
+      makeModulesClosure = x: super.makeModulesClosure (x // { allowMissing = true; });
+    })
+  ];
+
   boot = {
     loader.grub.enable = false;
     loader.generic-extlinux-compatible.enable = true;
@@ -21,7 +27,7 @@
     kernelParams = [
       "console=ttyS0,1500000"
     ];
-    kernelPackages = pkgs.linuxPackagesFor pkgs.linux-flippy;
+    kernelPackages = pkgs.linuxPackagesFor pkgs.linux-flippy-612;
 
   };
 

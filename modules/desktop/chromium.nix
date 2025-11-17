@@ -23,7 +23,7 @@
       # Stylus
       # "clngdbkpkpeebahjckkjfobafhncgmne"
       # obsidian-web-clipper
-      # "cnjifjpddelmedmihgijeibhnjfabmlf"
+      "cnjifjpddelmedmihgijeibhnjfabmlf"
       # Vue.js devtools
       # "nhdogjmejiglipccpnnnanhbledajbpd"
       # Bitwarden

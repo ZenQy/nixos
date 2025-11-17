@@ -50,30 +50,33 @@
       "Cargo.lock" = ./. + "/sha256-Jnm17GMjqh5evz3r0sd__dzKP3dKf0T1ReR1OAKq2Dw=/Cargo.lock";
     };
   };
-  linux-armbian = {
-    pname = "linux-armbian";
-    version = "v24.11.1";
-    src = fetchFromGitHub {
-      owner = "armbian";
-      repo = "linux-rockchip";
-      rev = "v24.11.1";
-      fetchSubmodules = false;
-      sha256 = "sha256-ZqEKQyFeE0UXN+tY8uAGrKgi9mXEp6s5WGyjVuxmuyM=";
-    };
-  };
-  linux-flippy = {
-    pname = "linux-flippy";
-    version = "05f450a0e11ab008852d35d32db81646172b2b67";
+  linux-flippy-61 = {
+    pname = "linux-flippy-61";
+    version = "94af8777c99daff8873de9aa9d308817ccb70e97";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.1.y-rockchip";
-      rev = "05f450a0e11ab008852d35d32db81646172b2b67";
+      rev = "94af8777c99daff8873de9aa9d308817ccb70e97";
       fetchSubmodules = false;
-      sha256 = "sha256-rdxAfjDcAdLbOhSe5Y42ZVKulDccbZLbycQ+Uj4KMXk=";
+      sha256 = "sha256-WYb1wHREYDJ9kg47K8Sl1LL9DvBnfCgPLVMbSxzmVwE=";
     };
     extract = {
-      Makefile = ./. + "/sha256-rdxAfjDcAdLbOhSe5Y42ZVKulDccbZLbycQ+Uj4KMXk=/Makefile";
-    };date = "2025-11-14";
+      Makefile = ./. + "/sha256-WYb1wHREYDJ9kg47K8Sl1LL9DvBnfCgPLVMbSxzmVwE=/Makefile";
+    };date = "2025-11-17";
+  };
+  linux-flippy-612 = {
+    pname = "linux-flippy-612";
+    version = "64812a9df5e4cfe09a23c608089ca4b5c6cc0ef8";
+    src = fetchFromGitHub {
+      owner = "unifreq";
+      repo = "linux-6.12.y";
+      rev = "64812a9df5e4cfe09a23c608089ca4b5c6cc0ef8";
+      fetchSubmodules = false;
+      sha256 = "sha256-0/SlhYe7AN4DKiVmex03ZUYlX5XSCRu17E8k5ydwcEA=";
+    };
+    extract = {
+      Makefile = ./. + "/sha256-0_SlhYe7AN4DKiVmex03ZUYlX5XSCRu17E8k5ydwcEA=/Makefile";
+    };date = "2025-11-17";
   };
   vitejs = {
     pname = "vitejs";
