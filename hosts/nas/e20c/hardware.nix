@@ -21,7 +21,7 @@
     kernelParams = [
       "console=ttyS0,1500000"
     ];
-    kernelPackages = pkgs.linuxPackagesFor pkgs.linux-flippy-612;
+    kernelPackages = pkgs.linuxPackagesFor pkgs.linux-flippy;
   };
 
   fileSystems."/" = {

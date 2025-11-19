@@ -50,22 +50,8 @@
       "Cargo.lock" = ./. + "/sha256-Jnm17GMjqh5evz3r0sd__dzKP3dKf0T1ReR1OAKq2Dw=/Cargo.lock";
     };
   };
-  linux-flippy-61 = {
-    pname = "linux-flippy-61";
-    version = "94af8777c99daff8873de9aa9d308817ccb70e97";
-    src = fetchFromGitHub {
-      owner = "unifreq";
-      repo = "linux-6.1.y-rockchip";
-      rev = "94af8777c99daff8873de9aa9d308817ccb70e97";
-      fetchSubmodules = false;
-      sha256 = "sha256-WYb1wHREYDJ9kg47K8Sl1LL9DvBnfCgPLVMbSxzmVwE=";
-    };
-    extract = {
-      Makefile = ./. + "/sha256-WYb1wHREYDJ9kg47K8Sl1LL9DvBnfCgPLVMbSxzmVwE=/Makefile";
-    };date = "2025-11-17";
-  };
-  linux-flippy-612 = {
-    pname = "linux-flippy-612";
+  linux-flippy = {
+    pname = "linux-flippy";
     version = "64812a9df5e4cfe09a23c608089ca4b5c6cc0ef8";
     src = fetchFromGitHub {
       owner = "unifreq";
