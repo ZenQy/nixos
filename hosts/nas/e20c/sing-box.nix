@@ -123,10 +123,6 @@ let
         outbound = "direct";
       }
       {
-        ip_cidr = "100.0.0.0/8";
-        outbound = "ts-ep";
-      }
-      {
         protocol = "dns";
         action = "hijack-dns";
       }
@@ -295,18 +291,6 @@ let
         type = "direct";
       }
     ];
-  endpoints = [
-    {
-      type = "tailscale";
-      tag = "ts-ep";
-      auth_key = sb.tailscale;
-      ephemeral = false;
-      accept_routes = false; # 手机端设置为true,可通过局域网ip访问
-      advertise_routes = [ "10.0.0.0/24" ];
-      advertise_exit_node = false;
-      udp_timeout = "5m";
-    }
-  ];
   experimental = {
     cache_file = {
       enabled = true;
@@ -329,7 +313,6 @@ in
         route
         inbounds
         outbounds
-        endpoints
         experimental
         ;
     };
