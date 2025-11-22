@@ -50,8 +50,9 @@
     erofs-utils
 
     ## Others ##
-    tdesktop
+    telegram-desktop
     hugo
+    tio
     # mdbook
     # mitmproxy
     # python3

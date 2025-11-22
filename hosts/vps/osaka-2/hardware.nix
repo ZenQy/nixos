@@ -8,32 +8,44 @@
     (modulesPath + "/profiles/qemu-guest.nix")
   ];
 
-  boot.initrd.availableKernelModules = [ "ata_piix" "uhci_hcd" "virtio_pci" "virtio_scsi" "sd_mod" ];
-  boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd" ];
-  boot.extraModulePackages = [ ];
+  boot = {
+    initrd.availableKernelModules = [
+      "ata_piix"
+      "uhci_hcd"
+      "virtio_pci"
+      "virtio_scsi"
+      "sd_mod"
+    ];
+    initrd.kernelModules = [ ];
+    kernelModules = [ "kvm-amd" ];
+    extraModulePackages = [ ];
+    loader = {
+      efi.canTouchEfiVariables = false;
+      systemd-boot = {
+        configurationLimit = 1;
+        consoleMode = "auto";
+        enable = true;
+      };
+      timeout = 1;
+    };
+  };
 
   fileSystems."/" = {
-    device = "/dev/disk/by-label/NixOS";
+    device = "/dev/disk/by-partlabel/disk-main-root";
     fsType = "btrfs";
-    options = [ "compress-force=zstd" "nosuid" "nodev" ];
+    options = [
+      "compress-force=zstd"
+      "nosuid"
+      "nodev"
+    ];
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-label/UEFI";
+    device = "/dev/disk/by-partlabel/disk-main-boot";
     fsType = "vfat";
     options = [ "umask=0077" ];
   };
 
-  swapDevices = [{ device = "/dev/disk/by-label/SWAP"; }];
+  swapDevices = [ { device = "/dev/disk/by-partlabel/disk-main-swap"; } ];
 
-  boot.loader = {
-    efi.canTouchEfiVariables = false;
-    systemd-boot = {
-      configurationLimit = 1;
-      consoleMode = "auto";
-      enable = true;
-    };
-    timeout = 1;
-  };
 }

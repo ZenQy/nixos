@@ -44,7 +44,7 @@
       };
     };
     packages = with pkgs; [
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       font-awesome
 
       source-code-pro
