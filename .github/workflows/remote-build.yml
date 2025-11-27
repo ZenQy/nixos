@@ -99,7 +99,7 @@ jobs:
 
       - name: Set up WARP
         if: ${{ steps.set-ipv6.outputs.ipv6 == 'true' }}
-        uses: fscarmen/warp-on-actions@v1.3
+        uses: fscarmen/warp-on-actions@v1.4
         with:
           stack: ipv6
           mode: client
@@ -112,7 +112,7 @@ jobs:
 
       - name: executing remote ssh commands using ssh key
         if: ${{ steps.set-ipv6.outputs.ipv6 == 'true' }}
-        uses: appleboy/ssh-action@v1.2.2
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets[env.HOST] }}
           username: root
@@ -123,7 +123,7 @@ jobs:
 
       - name: executing remote ssh commands using ssh key
         if: ${{ steps.set-ipv6.outputs.ipv6 != 'true' }}
-        uses: appleboy/ssh-action@v1.2.2
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets[env.HOST] }}
           username: root
