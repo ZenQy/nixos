@@ -150,7 +150,7 @@ let
 
     network = {
       format-wifi = "";
-      format-ethernet = "";
+      format-ethernet = "";
       format-disconnected = "";
       tooltip-format-wifi = "{essid} ({signalStrength}%)";
       tooltip-format-ethernet = "{ifname}";

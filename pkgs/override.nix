@@ -22,7 +22,7 @@ final: prev:
   # };
 
   chromium = prev.chromium.override {
-    commandLineArgs = "--enable-wayland-ime --wayland-text-input-version=3 --force-dark-mode";
+    commandLineArgs = "--wayland-text-input-version=3 --force-dark-mode";
   };
 
   # vivaldi = prev.vivaldi.override {
@@ -30,12 +30,12 @@ final: prev:
   #   commandLineArgs = "--enable-wayland-ime";
   # };
 
-  obsidian = prev.obsidian.overrideAttrs (old: {
-    postInstall = ''
-      substituteInPlace $out/bin/obsidian \
-        --replace '--ozone-platform=wayland' '--ozone-platform=wayland --wayland-text-input-version=3'
-    '';
-  });
+  # obsidian = prev.obsidian.overrideAttrs (old: {
+  #   postInstall = ''
+  #     substituteInPlace $out/bin/obsidian \
+  #       --replace '--ozone-platform=wayland' '--ozone-platform=wayland --wayland-text-input-version=3'
+  #   '';
+  # });
 
   mpv =
     let
@@ -48,7 +48,7 @@ final: prev:
     in
     mpv-unwrapped.wrapper {
       mpv = mpv-unwrapped;
-      scripts = with mpv-unwrapped.scripts; [ autoload ];
+      # scripts = with mpv-unwrapped.scripts; [ autoload ];
     };
 
 }
