@@ -26,7 +26,7 @@ in
       };
       port = mkOption {
         type = types.int;
-        default = 80;
+        default = 2080;
         description = "socket listent port";
       };
       threads = mkOption {

@@ -19,7 +19,7 @@
     Ech0.enable = true;
     cachix.enable = true;
     nezha.enable = true;
-    librespeed-rs.port = 2080;
+    openlist.enable = true;
     rclone = {
       enable = true;
       path = [
@@ -68,6 +68,10 @@
       extraConfig = ''
         q.${secrets.domain} {
         	reverse_proxy :6277
+        }
+
+        pan.${secrets.domain} {
+        	reverse_proxy :5244
         }
 
         s.${secrets.domain} {
