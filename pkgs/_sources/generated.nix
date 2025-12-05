@@ -8,32 +8,32 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v2.9.10";
+    version = "v3.0.3";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v2.9.10";
+      rev = "v3.0.3";
       fetchSubmodules = false;
-      sha256 = "sha256-kwqp9rmKgJXZkgk52mt79Jk6hHfPd2LZ1ytlQ5P73Iw=";
+      sha256 = "sha256-EQWRLBB4FKjjnjwIIOm3DnBvl3qRybapezVTbntqBNU=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v2.9.10";
+    version = "v3.0.3";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v2.9.10";
+      rev = "v3.0.3";
       fetchSubmodules = false;
-      sha256 = "sha256-kwqp9rmKgJXZkgk52mt79Jk6hHfPd2LZ1ytlQ5P73Iw=";
+      sha256 = "sha256-EQWRLBB4FKjjnjwIIOm3DnBvl3qRybapezVTbntqBNU=";
     };
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2025.11.02";
+    version = "v2025.12.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.11.02/zenith.dict";
-      sha256 = "sha256-fqNYGm4suD1DGDYEIuhkNNt70B+aVsFirY/WUnUrd7A=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.12.02/zenith.dict";
+      sha256 = "sha256-qt3te3Cd5LsA5T2QmUciRWwIrAHvJcriKj2gcjrwEZE=";
     };
   };
   librespeed-rs = {
@@ -52,35 +52,35 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "177cd942e022ef74040a22b26446779c692a5d75";
+    version = "f6a083f506380dc42ff9e05cec884d8cb8cb3f5c";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "177cd942e022ef74040a22b26446779c692a5d75";
+      rev = "f6a083f506380dc42ff9e05cec884d8cb8cb3f5c";
       fetchSubmodules = false;
-      sha256 = "sha256-VvPXTD1pTXvvDP+76CBg2TBE0Yi6lwallvqmxgeZA+o=";
+      sha256 = "sha256-TblunLdWHT0ydTXfMuVmDQX8kfTuaW7sHZ7IpPFeaB4=";
     };
     extract = {
-      Makefile = ./. + "/sha256-VvPXTD1pTXvvDP+76CBg2TBE0Yi6lwallvqmxgeZA+o=/Makefile";
-    };date = "2025-11-28";
+      Makefile = ./. + "/sha256-TblunLdWHT0ydTXfMuVmDQX8kfTuaW7sHZ7IpPFeaB4=/Makefile";
+    };date = "2025-12-01";
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.2.4";
+    version = "v7.2.6";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.2.4";
+      rev = "v7.2.6";
       fetchSubmodules = false;
-      sha256 = "sha256-5DWmHuySKCfaDPMU8BrY5syyH9YkYFahYCVtmuUX6Eo=";
+      sha256 = "sha256-Xi7FD65XkXzCFTvTww+TuiB3LZIM+io4/cnv96UdCQ4=";
     };
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2025.11.03";
+    version = "v2025.12.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.11.03/wallpaper.tar.gz";
-      sha256 = "sha256-V8ilKLESt8TpXcWi3C+8QF3sRwjkBYLWa8E0ICdAKTk=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.12.03/wallpaper.tar.gz";
+      sha256 = "sha256-L946ulh4s2b9Wc/XHI+fbfCcS7cX4dSrMQCr/tNH5c4=";
     };
   };
 }
