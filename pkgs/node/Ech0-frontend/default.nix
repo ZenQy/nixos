@@ -39,6 +39,8 @@ stdenv.mkDerivation (finalAttrs: {
   enableParallelBuilding = true;
 
   buildPhase = ''
+    # 删除sass二进制文件,参考链接:https://github.com/sass/embedded-host-node/issues/334
+    rm -r node_modules/.pnpm/sass-embedded*
     pnpm run build-only
   '';
 
