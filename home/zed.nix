@@ -1,14 +1,20 @@
 {
   agent = {
     default_model = {
-      model = "claude-sonnet-4";
-      provider = "zed.dev";
+      model = "gpt-5-mini";
+      provider = "copilot_chat";
     };
+    single_file_review = false;
   };
   auto_update = false;
   buffer_font_size = 16;
+  colorize_brackets = true;
   extend_comment_on_newline = false;
+  features = {
+    edit_prediction_provider = "zed";
+  };
   format_on_save = "on";
+  icon_theme = "Material Icon Theme";
   indent_guides = {
     coloring = "indent_aware";
   };
@@ -43,6 +49,7 @@
     rust-analyzer = { };
     vue-language-server = { };
   };
+  show_edit_predictions = false;
   soft_wrap = "editor_width";
   tab_size = 2;
   tabs = {

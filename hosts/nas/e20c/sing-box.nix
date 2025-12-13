@@ -74,6 +74,7 @@ let
               "epicgames.com"
               "hostinger.com"
               "msftconnecttest.com"
+              "natchecker.com"
               "oracle.com"
               "test-ipv6.com"
               "wmviv.com"
