@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v3.0.3";
+    version = "v3.0.5";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v3.0.3";
+      rev = "v3.0.5";
       fetchSubmodules = false;
-      sha256 = "sha256-EQWRLBB4FKjjnjwIIOm3DnBvl3qRybapezVTbntqBNU=";
+      sha256 = "sha256-5CmzcjbLkogRJdiO6Eb/CEtAa+z4JgZ924sQO3A1QyI=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v3.0.3";
+    version = "v3.0.5";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v3.0.3";
+      rev = "v3.0.5";
       fetchSubmodules = false;
-      sha256 = "sha256-EQWRLBB4FKjjnjwIIOm3DnBvl3qRybapezVTbntqBNU=";
+      sha256 = "sha256-5CmzcjbLkogRJdiO6Eb/CEtAa+z4JgZ924sQO3A1QyI=";
     };
   };
   fcitx5-pinyin-zenith = {
@@ -52,27 +52,27 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "b5923ba73623bc02112e5994518a21ca804c62d2";
+    version = "b348112ddecbd63a06514d7dc52219fd32a48941";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "b5923ba73623bc02112e5994518a21ca804c62d2";
+      rev = "b348112ddecbd63a06514d7dc52219fd32a48941";
       fetchSubmodules = false;
-      sha256 = "sha256-AWGlzfYroIpmEB4uXg0OEkHmoLVskhpVZveDDrxtTG4=";
+      sha256 = "sha256-quLWt/LHLdLoaFjUiJMAOgw5fvTzSjYPSiHGyRtUbHM=";
     };
     extract = {
-      Makefile = ./. + "/sha256-AWGlzfYroIpmEB4uXg0OEkHmoLVskhpVZveDDrxtTG4=/Makefile";
-    };date = "2025-12-12";
+      Makefile = ./. + "/sha256-quLWt_LHLdLoaFjUiJMAOgw5fvTzSjYPSiHGyRtUbHM=/Makefile";
+    };date = "2025-12-19";
   };
   vitejs = {
     pname = "vitejs";
-    version = "v7.2.7";
+    version = "v7.3.0";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v7.2.7";
+      rev = "v7.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-R8t/F5CgOMJ/GubDvwr9wk8FIwMc5SWe88HR8+cfANk=";
+      sha256 = "sha256-aoPKxIfMg1t93/HRIJqXYmfGYxS8WD+urIcNcppOB74=";
     };
   };
   wallpapers = {
