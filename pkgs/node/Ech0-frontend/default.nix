@@ -28,11 +28,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   nativeBuildInputs = [
     pnpm.configHook
-  ];
-
-  buildInputs = [
     nodejs
-    pnpm
   ];
 
   # 启用并行构建以提高性能

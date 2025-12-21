@@ -206,8 +206,6 @@ let
         "osaka-1"
         "osaka-2"
         "sailor"
-        "natvps-us"
-        "natvps-ca"
         "alice"
       ];
       vlessList = [
@@ -218,15 +216,13 @@ let
         "bestcf.top"
         "cdn.2020111.xyz"
         "cdn.tzpro.xyz"
-        "cf.090227.xyz"
         "cf.0sm.com"
-        "cf.zhetengsha.eu.org"
+        "cf.877771.xyz"
         "cfip.1323123.xyz"
         "cloudflare-ip.mofashi.ltd"
         "cloudflare.182682.xyz"
         "cnamefuckxxs.yuchen.icu"
         "freeyx.cloudflare88.eu.org"
-        "xn--b6gac.eu.org"
       ];
     in
     sb.node

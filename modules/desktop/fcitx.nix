@@ -50,17 +50,49 @@
             ForceWaylandDPI = 0;
             EnableFractionalScale = "True";
           };
-          pinyin.globalSection = {
-            ShuangpinProfile = "Xiaohe";
-            PageSize = 9;
-            CloudPinyinEnabled = "True";
-            CloudPinyinIndex = 2;
-            EmojiEnabled = "True";
+          punctuation.globalSection = {
+            HalfWidthPuncAfterLetterOrNumber = "True";
+            TypePairedPunctuationsTogether = "True";
+            Enabled = "True";
           };
-          cloudpinyin.globalSection = {
-            Backend = "Baidu";
+          pinyin = {
+            globalSection = {
+              ShuangpinProfile = "Xiaohe";
+              ShowShuangpinMode = "True";
+              PageSize = 9;
+              CloudPinyinEnabled = "False";
+              EmojiEnabled = "True";
+              FirstRun = "False";
+            };
+            sections.Fuzzy = builtins.listToAttrs (
+              map
+                (key: {
+                  name = key;
+                  value = "False";
+                })
+                [
+                  "VE_UE"
+                  "NG_GN"
+                  "Inner"
+                  "InnerShort"
+                  "PartialFinal"
+                  "PartialSp"
+                  "V_U"
+                  "AN_ANG"
+                  "EN_ENG"
+                  "IAN_IANG"
+                  "IN_ING"
+                  "U_OU"
+                  "UAN_UANG"
+                  "C_CH"
+                  "F_H"
+                  "L_N"
+                  "L_R"
+                  "S_SH"
+                  "Z_ZH"
+                ]
+            );
           };
-
         };
       };
     };

@@ -75,7 +75,6 @@
                 if
                   elem host [
                     "osaka-arm"
-                    "tx3"
                     "rock-5b"
                     "e20c"
                     "oect"

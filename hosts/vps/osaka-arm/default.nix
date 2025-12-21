@@ -96,9 +96,6 @@
           file_server browse
         }
 
-        speed.${secrets.domain} {
-        	reverse_proxy :${toString config.zenith.librespeed-rs.port}
-        }
       '';
     };
 

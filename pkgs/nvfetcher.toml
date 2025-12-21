@@ -11,9 +11,6 @@ fetch.url = "https://github.com/ZenQy/scel2dict/releases/download/$ver/zenith.di
 src.github = "ZenQy/wallpaper"
 fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper.tar.gz"
 
-[librespeed-rs]
-src.github_tag = "librespeed/speedtest-rust"
-fetch.github = "librespeed/speedtest-rust"
 extract = ["Cargo.lock"]
 
 [Ech0]

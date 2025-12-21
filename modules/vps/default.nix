@@ -1,4 +1,4 @@
-{ secrets, ... }:
+{ secrets, pkgs, ... }:
 
 {
   services.openssh = {
@@ -34,9 +34,14 @@
     "net.core.wmem_default" = 262144;
     "net.core.wmem_max" = 1561917063;
     "net.ipv4.tcp_congestion_control" = "bbr";
+    "net.ipv4.tcp_fastopen" = 3;
     "net.ipv4.tcp_rmem" = "32768 262144 208338944";
     "net.ipv4.tcp_wmem" = "32768 262144 1561917063";
   };
+
+  environment.systemPackages = with pkgs; [
+    iperf3
+  ];
 
   documentation.nixos.enable = false;
 }
