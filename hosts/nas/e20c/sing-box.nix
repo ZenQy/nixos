@@ -64,6 +64,7 @@ let
           {
             domain_suffix = [
               ".cn"
+              ".ip.zstaticcdn.com"
               "10155.com"
               "ahrefs.com"
               "allawnfs.com"
@@ -209,7 +210,8 @@ let
         "alice"
       ];
       vlessList = [
-        "dmit"
+        "dmit-4"
+        "dmit-6"
       ];
       trojanList = [
         sb.trojan.host
