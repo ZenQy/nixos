@@ -204,10 +204,11 @@ let
         fingerprint = "safari";
       };
       tuicList = [
+        "alice"
         "osaka-1"
         "osaka-2"
         "sailor"
-        "alice"
+        "wawo"
       ];
       vlessList = [
         "dmit-4"
