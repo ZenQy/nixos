@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v3.0.5";
+    version = "v3.0.8";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v3.0.5";
+      rev = "v3.0.8";
       fetchSubmodules = false;
-      sha256 = "sha256-5CmzcjbLkogRJdiO6Eb/CEtAa+z4JgZ924sQO3A1QyI=";
+      sha256 = "sha256-qE2k7grNz1ZQGgM2ZgXx1+iuHVBDFV77/upx+1btDQo=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v3.0.5";
+    version = "v3.0.8";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v3.0.5";
+      rev = "v3.0.8";
       fetchSubmodules = false;
-      sha256 = "sha256-5CmzcjbLkogRJdiO6Eb/CEtAa+z4JgZ924sQO3A1QyI=";
+      sha256 = "sha256-qE2k7grNz1ZQGgM2ZgXx1+iuHVBDFV77/upx+1btDQo=";
     };
   };
   fcitx5-pinyin-zenith = {
@@ -36,33 +36,31 @@
       sha256 = "sha256-qt3te3Cd5LsA5T2QmUciRWwIrAHvJcriKj2gcjrwEZE=";
     };
   };
-  librespeed-rs = {
-    pname = "librespeed-rs";
-    version = "v1.4.0";
-    src = fetchFromGitHub {
-      owner = "librespeed";
-      repo = "speedtest-rust";
-      rev = "v1.4.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-Jnm17GMjqh5evz3r0sd//dzKP3dKf0T1ReR1OAKq2Dw=";
-    };
-    extract = {
-      "Cargo.lock" = ./. + "/sha256-Jnm17GMjqh5evz3r0sd__dzKP3dKf0T1ReR1OAKq2Dw=/Cargo.lock";
-    };
-  };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "b348112ddecbd63a06514d7dc52219fd32a48941";
+    version = "78dedc6e9c3dc6954370cf4e7b3074f88f122994";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "b348112ddecbd63a06514d7dc52219fd32a48941";
+      rev = "78dedc6e9c3dc6954370cf4e7b3074f88f122994";
       fetchSubmodules = false;
-      sha256 = "sha256-quLWt/LHLdLoaFjUiJMAOgw5fvTzSjYPSiHGyRtUbHM=";
+      sha256 = "sha256-atO6Eo7BVCyNYs1rde7euklOAAb0bjYTGfoKg7jfrKc=";
     };
     extract = {
-      Makefile = ./. + "/sha256-quLWt_LHLdLoaFjUiJMAOgw5fvTzSjYPSiHGyRtUbHM=/Makefile";
-    };date = "2025-12-19";
+      Makefile = ./. + "/sha256-atO6Eo7BVCyNYs1rde7euklOAAb0bjYTGfoKg7jfrKc=/Makefile";
+    };date = "2025-12-21";
+  };
+  tracker = {
+    pname = "tracker";
+    version = "c7f1273c56b143458e8a4040014f7993c689f2c5";
+    src = fetchFromGitHub {
+      owner = "XIU2";
+      repo = "TrackersListCollection";
+      rev = "c7f1273c56b143458e8a4040014f7993c689f2c5";
+      fetchSubmodules = false;
+      sha256 = "sha256-J8DDF7EQ2c1bpDAiHgoJpMyHtSeGjr1X4Duze/Km3BM=";
+    };
+    date = "2025-12-28";
   };
   vitejs = {
     pname = "vitejs";
