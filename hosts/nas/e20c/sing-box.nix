@@ -209,6 +209,7 @@ let
         "osaka-2"
         "sailor"
         "wawo"
+        "gvuy"
       ];
       vlessList = [
         "dmit-4"

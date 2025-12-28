@@ -5,14 +5,16 @@
     ## Go ##
     go
     gopls
-    leetgo
+    # leetgo
 
     ## Rust ##
-    rustc
-    rustfmt
-    cargo
-    gcc
-    rust-analyzer
+    # rustc
+    # rustfmt
+    # cargo
+    # gcc
+    # rust-analyzer
+    # pkg-config
+    # openssl
 
     ## Nix ##
     # nil

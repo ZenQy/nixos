@@ -11,8 +11,6 @@ fetch.url = "https://github.com/ZenQy/scel2dict/releases/download/$ver/zenith.di
 src.github = "ZenQy/wallpaper"
 fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper.tar.gz"
 
-extract = ["Cargo.lock"]
-
 [Ech0]
 src.github = "lin-snow/Ech0"
 fetch.github = "lin-snow/Ech0"
@@ -25,3 +23,7 @@ fetch.github = "lin-snow/Ech0"
 src.git = "https://github.com/unifreq/linux-6.12.y"
 fetch.github = "unifreq/linux-6.12.y"
 extract = ["Makefile"]
+
+[tracker]
+src.git = "https://github.com/XIU2/TrackersListCollection"
+fetch.github = "XIU2/TrackersListCollection"
