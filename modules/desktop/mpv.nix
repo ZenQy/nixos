@@ -8,6 +8,7 @@
   environment.etc."mpv/mpv.conf".text = ''
     alang=chi,zh-CN,sc,chs,zh-TW,tc,cht,eng,en
     force-window=yes
+    gpu-api=vulkan
     hwdec-codecs=all
     hwdec=auto
     profile=gpu-hq

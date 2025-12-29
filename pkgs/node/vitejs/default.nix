@@ -3,20 +3,23 @@
   lib,
   stdenv,
   pnpm,
+  pnpmConfigHook,
+  fetchPnpmDeps,
   nodejs,
 }:
 
 stdenv.mkDerivation {
   inherit (source) pname version src;
 
-  pnpmDeps = pnpm.fetchDeps {
+  pnpmDeps = fetchPnpmDeps {
     inherit (source) pname version src;
     hash = "sha256-yu6V8z2RFftkPRq80IntoR6ZP2g3/YEIBwTQ1FZ0ifo=";
     fetcherVersion = 1;
   };
 
   nativeBuildInputs = [
-    pnpm.configHook
+    pnpm
+    pnpmConfigHook
   ];
 
   buildInputs = [

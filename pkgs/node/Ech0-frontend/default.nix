@@ -3,6 +3,8 @@
   lib,
   stdenv,
   pnpm,
+  pnpmConfigHook,
+  fetchPnpmDeps,
   nodejs_24,
 }:
 
@@ -15,7 +17,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   sourceRoot = "${finalAttrs.src.name}/web";
 
-  pnpmDeps = pnpm.fetchDeps {
+  pnpmDeps = fetchPnpmDeps {
     inherit (source) pname version src;
     sourceRoot = "${finalAttrs.src.name}/web";
     hash = "sha256-GqdvR75m6qAHmWpv3drNf1MKYltQJiA1+dDkEiDSQMM=";
@@ -27,7 +29,8 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
   nativeBuildInputs = [
-    pnpm.configHook
+    pnpm
+    pnpmConfigHook
     nodejs
   ];
 

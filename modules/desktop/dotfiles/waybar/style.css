@@ -52,7 +52,8 @@
   border-radius: 1rem;
   margin: 5px;
   background-color: @surface0;
-  margin-left: 1rem;
+
+  margin-right: 1rem;
 }
 #workspaces button {
   color: @lavender;
@@ -76,8 +77,10 @@
 #temperature,
 #clock,
 #tray,
+#powermenu,
 #custom-lock,
-#custom-power {
+#custom-reboot,
+#custom-poweroff {
   background-color: @surface0;
   margin: 5px 0;
   padding: 0 10px;
@@ -112,14 +115,21 @@
   border-radius: 1rem;
 }
 
-#custom-power {
-  border-radius: 1rem 0px 0px 1rem;
+#powermenu {
+  border-radius: 1rem;
   color: @red;
   margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#custom-poweroff {
+  color: @red;
+}
+
+#custom-reboot {
+  color: @peach;
 }
 
 #custom-lock {
-  border-radius: 0px 1rem 1rem 0px;
   color: @yellow;
-  margin-right: 1rem;
 }

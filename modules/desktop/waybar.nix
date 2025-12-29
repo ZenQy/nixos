@@ -17,9 +17,7 @@ let
     modules-left = [
       # "hyprland/workspaces"
       # "sway/workspaces"
-      "custom/power"
-      "custom/lock"
-
+      "group/powermenu"
       "niri/workspaces"
     ];
 
@@ -136,11 +134,11 @@ let
 
     wireplumber = {
       format = "{icon} {volume}";
-      format-muted = "🔇";
+      format-muted = "󰝟";
       format-icons = [
-        ""
-        ""
-        ""
+        "󰕿"
+        "󰖀"
+        "󰕾"
       ];
       on-click = "${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
       on-click-right = "${pkgs.helvum}/bin/helvum";
@@ -150,8 +148,8 @@ let
 
     network = {
       format-wifi = "";
-      format-ethernet = "";
-      format-disconnected = "";
+      format-ethernet = "󰈀";
+      format-disconnected = "󱛅";
       tooltip-format-wifi = "{essid} ({signalStrength}%)";
       tooltip-format-ethernet = "{ifname}";
     };
@@ -164,14 +162,14 @@ let
 
     memory = {
       format = "{icon} {0}%";
-      format-icons = map (color: "<span color='${color}'></span>") colors;
+      format-icons = map (color: "<span color='${color}'></span>") colors;
     };
 
     temperature = {
       critical-threshold = 80;
       format = "{icon} {temperatureC}°C";
       format-icons = map (color: "<span color='${color}'></span>") colors;
-      format-critical = "";
+      format-critical = "";
       interval = 30;
       thermal-zone = 1;
       tooltip = false;
@@ -188,16 +186,34 @@ let
       spacing = 10;
     };
 
+    "group/powermenu" = {
+      orientation = "inherit";
+      drawer = {
+        transition-left-to-right = true;
+      };
+      modules = [
+        "custom/lock"
+        "custom/reboot"
+        "custom/poweroff"
+      ];
+    };
+
     "custom/lock" = {
       tooltip = false;
       on-click = "${pkgs.swaylock}/bin/swaylock -C /etc/swaylock/config";
-      format = "";
+      format = "";
     };
 
-    "custom/power" = {
+    "custom/poweroff" = {
       tooltip = false;
       on-click = "poweroff";
       format = "";
+    };
+
+    "custom/reboot" = {
+      tooltip = false;
+      on-click = "reboot";
+      format = "󰑐";
     };
 
   };

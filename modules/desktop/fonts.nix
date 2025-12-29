@@ -8,7 +8,6 @@
       defaultFonts = {
         sansSerif = [
           "DejaVu Sans"
-
           "Source Han Sans SC"
           "Source Han Sans TC"
           "Source Han Sans HW"
@@ -17,7 +16,6 @@
         ];
         serif = [
           "DejaVu Serif"
-
           "Source Han Serif SC"
           "Source Han Serif TC"
           "Source Han Serif HW"
@@ -25,31 +23,28 @@
           "Source Han Serif"
         ];
         monospace = [
-          "Source Code Pro"
-
-          "Source Han Sans SC"
-          "Source Han Sans TC"
-          "Source Han Sans HW"
-          "Source Han Sans K"
-          "Source Han Sans"
+          "DejaVu Sans Mono"
+          "Source Han Mono SC"
+          "Source Han Mono TC"
+          "Source Han Mono HW"
+          "Source Han Mono K"
+          "Source Han Mono"
         ];
         emoji = [
-          "Noto Emoji"
           "Noto Color Emoji"
-
-          "Font Awesome 6 Free Regular"
-          "Font Awesome 6 Free Solid"
-          "Font Awesome 6 Brands Regular"
+          "Symbols Nerd Font"
+          "Symbols Nerd Font Mono"
         ];
       };
     };
+
     packages = with pkgs; [
       noto-fonts-color-emoji
-      font-awesome
+      nerd-fonts.symbols-only
 
-      source-code-pro
       source-han-sans
       source-han-serif
+      source-han-mono
     ];
   };
 
