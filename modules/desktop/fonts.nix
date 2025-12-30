@@ -5,6 +5,12 @@
   fonts = {
     fontconfig = {
       enable = true;
+      antialias = false;
+      cache32Bit = false;
+      hinting.enable = false;
+      includeUserConf = false;
+      subpixel.lcdfilter = "none";
+      subpixel.rgba = "rgb";
       defaultFonts = {
         sansSerif = [
           "DejaVu Sans"

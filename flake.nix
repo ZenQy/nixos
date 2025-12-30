@@ -74,10 +74,10 @@
               system =
                 if
                   elem host [
-                    "osaka-arm"
-                    "rock-5b"
                     "e20c"
                     "oect"
+                    "osaka-arm"
+                    "rock-5b"
                   ]
                 then
                   "aarch64-linux"

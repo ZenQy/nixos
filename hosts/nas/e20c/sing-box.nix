@@ -205,11 +205,12 @@ let
       };
       tuicList = [
         "alice"
+        "gvuy"
+        "icmp9"
         "osaka-1"
         "osaka-2"
         "sailor"
         "wawo"
-        "gvuy"
       ];
       vlessList = [
         "dmit-4"
