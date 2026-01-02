@@ -30,10 +30,10 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2025.12.02";
+    version = "v2026.01.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2025.12.02/zenith.dict";
-      sha256 = "sha256-qt3te3Cd5LsA5T2QmUciRWwIrAHvJcriKj2gcjrwEZE=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.01.02/zenith.dict";
+      sha256 = "sha256-1t8xaeXO1agLodF4ircUL2CEmHTeyyrdF+fQeFegGd8=";
     };
   };
   linux-flippy = {
@@ -52,15 +52,15 @@
   };
   tracker = {
     pname = "tracker";
-    version = "c7f1273c56b143458e8a4040014f7993c689f2c5";
+    version = "7c60e70e34ef4a135e8a74935bde29f0b73dce0c";
     src = fetchFromGitHub {
       owner = "XIU2";
       repo = "TrackersListCollection";
-      rev = "c7f1273c56b143458e8a4040014f7993c689f2c5";
+      rev = "7c60e70e34ef4a135e8a74935bde29f0b73dce0c";
       fetchSubmodules = false;
-      sha256 = "sha256-J8DDF7EQ2c1bpDAiHgoJpMyHtSeGjr1X4Duze/Km3BM=";
+      sha256 = "sha256-0nr1HCg83nThKilSuF0wpAQw92JL+wBTe4r5NocNw/Y=";
     };
-    date = "2025-12-28";
+    date = "2026-01-02";
   };
   vitejs = {
     pname = "vitejs";
@@ -75,10 +75,10 @@
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2025.12.03";
+    version = "v2026.01.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2025.12.03/wallpaper.tar.gz";
-      sha256 = "sha256-L946ulh4s2b9Wc/XHI+fbfCcS7cX4dSrMQCr/tNH5c4=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.01.03/wallpaper.tar.gz";
+      sha256 = "sha256-kPewxdtgvMbVxZt9YQYUCx72VHbWBh6ivAvUWtOnh+A=";
     };
   };
 }
