@@ -1,7 +1,5 @@
-name: Build Update
+name: Build All
 on:
-  schedule:
-    - cron: 0 20 * * 5
   workflow_dispatch:
     inputs:
       debug_enabled:
@@ -58,66 +56,12 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
-      - name: Get Old Packages
-        run: |
-          mkdir -p ~/.config/nix
-          echo "allow-import-from-derivation = true" > ~/.config/nix/nix.conf
-          pkgs_old=$(nix flake show --json | jq '.packages."x86_64-linux"')
-          pkgs_list=$(echo $pkgs_old | jq 'keys')
-          echo pkgs_old=$pkgs_old >> $GITHUB_ENV
-          echo pkgs_list=$pkgs_list >> $GITHUB_ENV
-
-      - name: Run Nix Flake Update
-        run: nix flake update
-
-      - name: Run nvfetcher CLI
-        run: |
-          cd pkgs
-          nix run github:berberman/nvfetcher
-          nix eval -f _sources/generated.nix
-          cd ../
-
-      - name: Run Nix Flake Check
-        run: nix flake check || true
-
-      - name: Build nix-update CLI
-        run: nix build github:Mic92/nix-update
-
       - id: set-matrix
         name: set-matrix
         run: |
-          pkgs_new=$(nix flake show --json | jq '.packages."x86_64-linux"')
-          pkgs=$(echo $pkgs_list | jq -r '.[]')
-          for pkg in $pkgs; do
-            echo 正在执行$pkg...
-            pkg_old=$(echo $pkgs_old | jq ".\"$pkg\".name")
-            pkg_new=$(echo $pkgs_new | jq ".\"$pkg\".name")
-            if [[ $pkg_old == $pkg_new ]]; then
-              pkgs_list=$(echo $pkgs_list | jq "del(.[] | select(. == \"$pkg\"))")
-            else
-              if [[ -d pkgs/go/$pkg ]]; then
-                sed -i 's/"sha256\(.*\)"/"sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/g' pkgs/go/$pkg/default.nix
-                ./result/bin/nix-update $pkg --flake --version=skip
-              fi
-              if [[ -d pkgs/node/$pkg ]]; then
-                sed -i 's/"sha256\(.*\)"/"sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/g' pkgs/node/$pkg/default.nix
-                ./result/bin/nix-update $pkg --flake --version=skip
-              fi
-            fi
-          done
-          if [[ $pkgs_list == '[]' ]]; then
-            pkgs_list='[ "fcitx5-pinyin-zenith" ]'
-          fi
+          pkgs_list=$(nix flake show --json | jq '.packages."x86_64-linux" | keys')
           echo $pkgs_list
           echo "matrix=$(echo $pkgs_list)" >> $GITHUB_OUTPUT
-
-      - name: Commit and Push
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add .
-          git commit -m "Update dependencies - Automated Commit"
-          git push
 
   build:
     runs-on: ubuntu-latest
@@ -131,9 +75,6 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 1
-
-      - name: update
-        run: git pull
 
       - name: Install nixFlake
         uses: cachix/install-nix-action@v31

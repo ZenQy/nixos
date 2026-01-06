@@ -37,18 +37,11 @@ final: prev:
   #   '';
   # });
 
-  mpv =
-    let
-      mpv-unwrapped = prev.mpv-unwrapped.overrideAttrs (old: {
-        postPatch = old.postPatch + ''
-          substituteInPlace meson.build \
-            --replace "get_option('sysconfdir'), 'mpv'" "'/etc/mpv'"
-        '';
-      });
-    in
-    mpv-unwrapped.wrapper {
-      mpv = mpv-unwrapped;
-      # scripts = with mpv-unwrapped.scripts; [ autoload ];
-    };
+  mpv-unwrapped = prev.mpv-unwrapped.overrideAttrs (old: {
+    postPatch = old.postPatch + ''
+      substituteInPlace meson.build \
+        --replace "get_option('sysconfdir'), 'mpv'" "'/etc/mpv'"
+    '';
+  });
 
 }
