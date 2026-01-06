@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    mpv
+    mpv-unwrapped
   ];
 
   environment.etc."mpv/mpv.conf".text = ''
