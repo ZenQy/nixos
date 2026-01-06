@@ -212,10 +212,7 @@ let
         "sailor"
         "wawo"
       ];
-      vlessList = [
-        "dmit-4"
-        "dmit-6"
-      ];
+      vlessList = [ ];
       trojanList = [
         sb.trojan.host
         "bestcf.top"

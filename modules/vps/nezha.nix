@@ -25,7 +25,7 @@ in
   config = mkIf cfg.enable {
     systemd.services.nezha =
       let
-        path = "/var/lib/nezha";
+        dir = "/var/lib/nezha";
         conf = (pkgs.formats.yaml { }).generate "config.yaml" {
           inherit (secrets.nezha) jwtsecretkey agentsecretkey listenport;
           debug = false;
@@ -43,12 +43,12 @@ in
         wantedBy = [ "multi-user.target" ];
         preStart =
           let
-            file = "${path}/data/config.yaml";
+            file = "${dir}/data/config.yaml";
           in
           ''
             if [[ ! -e ${file} ]]
             then
-              mkdir ${path}/data
+              mkdir ${dir}/data
               cat ${conf} > ${file}
             fi
           '';
@@ -56,7 +56,7 @@ in
           User = "nixos";
           Group = "wheel";
           StateDirectory = "nezha";
-          WorkingDirectory = path;
+          WorkingDirectory = dir;
           ExecStart = ''
             ${pkgs.nezha}/bin/nezha
           '';
