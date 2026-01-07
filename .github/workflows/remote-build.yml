@@ -114,7 +114,7 @@ jobs:
           fi
 
       - name: executing remote ssh commands using ssh key
-        if: ${{ steps.set-ipv6.outputs.ipv6 == 'true' }}
+        if: ${{ steps.set-ipv6.outputs.ipv6 == 'true' && matrix.hosts != 'beelink' }}
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets[env.HOST] }}
@@ -125,7 +125,7 @@ jobs:
           script: nix-collect-garbage -d
 
       - name: executing remote ssh commands using ssh key
-        if: ${{ steps.set-ipv6.outputs.ipv6 != 'true' }}
+        if: ${{ steps.set-ipv6.outputs.ipv6 != 'true' && matrix.hosts != 'beelink' }}
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets[env.HOST] }}
