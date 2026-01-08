@@ -6,13 +6,13 @@
   ];
 
   environment.etc."mpv/mpv.conf".text = ''
-    alang=chi,zh-CN,sc,chs,zh-TW,tc,cht,eng,en
+    alang=zh-Hans,chi,zh-Hant,cmn,en
     force-window=yes
     gpu-api=vulkan
     hwdec-codecs=all
     hwdec=auto
     profile=gpu-hq
-    slang=chi,zh-CN,sc,chs,zh-TW,tc,cht,eng,en
+    slang=zh-Hans,chi,zh-Hant,cmn,en
     speed=2.0
     sub-codepage=UTF-8
     user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36

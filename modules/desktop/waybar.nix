@@ -101,7 +101,7 @@ let
     };
 
     "niri/window" = {
-      format = " {title}";
+      format = "{title}";
       max-length = 100;
       rewrite = {
         "(.*) - Personal - Microsoft Edge" = "🌎 $1";

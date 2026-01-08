@@ -70,6 +70,7 @@
 }
 
 #wireplumber,
+#window,
 #network,
 #bluetooth,
 #cpu,
@@ -112,6 +113,10 @@
 #tray {
   margin-left: 1rem;
   margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+#window {
   border-radius: 1rem;
 }
 

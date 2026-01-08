@@ -25,7 +25,7 @@ in
   config = mkIf cfg.enable {
     systemd.services.aria2 =
       let
-        path = "/var/lib/aria2";
+        dir = "/var/lib/aria2";
         settings = {
           # 配置参考https://github.com/P3TERX/aria2.conf/blob/master/aria2.conf
           dir = "/storage/aria2";
@@ -46,7 +46,7 @@ in
           rpc-allow-origin-all = true;
           rpc-secure = false;
           check-certificate = false;
-          bt-tracker = builtins.readFile (/. + "${pkgs.tracker}/share/tracker/best_aria2.txt");
+          bt-tracker = builtins.readFile "${pkgs.tracker}/share/tracker/best_aria2.txt";
         };
         conf = builtins.toFile "aria2.conf" (lib.generators.toKeyValue { } settings);
       in
@@ -55,16 +55,16 @@ in
         after = [ "network.target" ];
         wantedBy = [ "multi-user.target" ];
         preStart = ''
-          if [[ ! -e "${path}/${settings.save-session}" ]]
+          if [[ ! -e "${dir}/${settings.save-session}" ]]
           then
-            touch "${path}/${settings.save-session}"
+            touch "${dir}/${settings.save-session}"
           fi
         '';
         serviceConfig = {
           User = "nixos";
           Group = "wheel";
           StateDirectory = "aria2";
-          WorkingDirectory = path;
+          WorkingDirectory = dir;
           ExecStart = ''
             ${pkgs.aria2}/bin/aria2c --conf-path=${conf}
           '';

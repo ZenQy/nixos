@@ -41,8 +41,8 @@
 
     ## Editor ##
     # vscode-with-extensions
+    vscodium
     zed-editor
-    # vscodium
     obsidian
     sqlitebrowser
 
