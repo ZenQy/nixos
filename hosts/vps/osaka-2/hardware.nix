@@ -31,12 +31,24 @@
   };
 
   fileSystems."/" = {
+    device = "tmpfs";
+    fsType = "tmpfs";
+    options = [
+      "relatime"
+      "mode=755"
+      "nosuid"
+      "nodev"
+    ];
+  };
+
+  fileSystems."/nix" = {
     device = "/dev/disk/by-partlabel/disk-main-root";
     fsType = "btrfs";
     options = [
       "compress-force=zstd"
       "nosuid"
       "nodev"
+      "subvol=/nix"
     ];
   };
 

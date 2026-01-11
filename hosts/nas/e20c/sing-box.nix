@@ -190,12 +190,6 @@ let
       listen_port = 12345;
       tcp_fast_open = true;
     }
-    {
-      type = "mixed";
-      listen = "0.0.0.0";
-      listen_port = 1080;
-      set_system_proxy = false;
-    }
   ];
   outbounds =
     let
@@ -213,19 +207,7 @@ let
         "wawo"
       ];
       vlessList = [ ];
-      trojanList = [
-        sb.trojan.host
-        "bestcf.top"
-        "cdn.2020111.xyz"
-        "cdn.tzpro.xyz"
-        "cf.0sm.com"
-        "cf.877771.xyz"
-        "cfip.1323123.xyz"
-        "cloudflare-ip.mofashi.ltd"
-        "cloudflare.182682.xyz"
-        "cnamefuckxxs.yuchen.icu"
-        "freeyx.cloudflare88.eu.org"
-      ];
+      cloudflareList = builtins.fromJSON (builtins.readFile ./cloudflare.json);
     in
     sb.node
     ++ map (tag: {
@@ -278,12 +260,24 @@ let
         alpn = "h3";
         inherit utls;
       };
-    }) trojanList
+    }) cloudflareList
     ++ [
       {
         tag = "proxy";
         type = "selector";
-        outbounds = map (s: s.tag) sb.node ++ vlessList ++ tuicList ++ trojanList ++ [ "direct" ];
+        outbounds =
+          map (s: s.tag) sb.node
+          ++ vlessList
+          ++ tuicList
+          ++ [
+            "cloudflare"
+            "direct"
+          ];
+      }
+      {
+        tag = "cloudflare";
+        type = "urltest";
+        outbounds = cloudflareList;
       }
       {
         tag = "direct";

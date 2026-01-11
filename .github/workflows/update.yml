@@ -111,6 +111,13 @@ jobs:
           echo $pkgs_list
           echo "matrix=$(echo $pkgs_list)" >> $GITHUB_OUTPUT
 
+      - name: update cloudflare.json
+        run: |
+          curl '${{ secrets.CLOUDFLARE_URL }}' | \
+            jq '.outbounds[] | select(.server) | .server' | \
+            jq -s > cloudflare.json
+          mv cloudflare.json hosts/nas/e20c/cloudflare.json
+
       - name: Commit and Push
         run: |
           git config --global user.name 'github-actions[bot]'
