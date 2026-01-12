@@ -7,8 +7,8 @@
 
 let
   host = config.networking.hostName;
-  isAlice = host == "alice";
-  isDmit = host == "dmit";
+  isIPv6Only = host == "alice" || host == "icmp9";
+  isOptimized = host == "dmit" || host == "bwh";
   sb = secrets.sing-box;
 
   log = {
@@ -17,7 +17,7 @@ let
     timestamp = true;
   };
   inbounds =
-    if isDmit then
+    if isOptimized then
       [
         {
           tag = "vless";
@@ -80,35 +80,28 @@ let
     final = "local";
     strategy = "prefer_ipv6";
   };
+  endpoints = [
+    {
+      type = "wireguard";
+      tag = "wireguard";
+      mtu = 1280;
+      inherit (sb.wireguard) address private_key;
+      peers = [
+        {
+          address = "engage.cloudflareclient.com";
+          port = 2408;
+          allowed_ips = "0.0.0.0/0";
+          inherit (sb.wireguard) public_key;
+        }
+      ];
+    }
+  ];
   outbounds = [
     {
       tag = "direct";
       type = "direct";
     }
-  ]
-  ++ (
-    if isAlice then
-      [
-        {
-          tag = "socks";
-          type = "urltest";
-          outbounds = map (p: toString p) sb.socks5.server_port;
-        }
-      ]
-      ++ map (p: {
-        tag = toString p;
-        type = "socks";
-        version = "5";
-        server_port = p;
-        inherit (sb.socks5)
-          server
-          username
-          password
-          ;
-      }) sb.socks5.server_port
-    else
-      [ ]
-  );
+  ];
   route = {
     rules = [
       {
@@ -121,7 +114,7 @@ let
         outbound = "direct";
       }
     ];
-    final = "socks";
+    final = "wireguard";
   };
 
 in
@@ -131,6 +124,6 @@ in
     settings = {
       inherit log inbounds outbounds;
     }
-    // (if isAlice then { inherit dns route; } else { });
+    // (if isIPv6Only then { inherit dns route endpoints; } else { });
   };
 }

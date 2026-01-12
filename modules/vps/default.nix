@@ -1,4 +1,9 @@
-{ secrets, pkgs, ... }:
+{
+  config,
+  secrets,
+  pkgs,
+  ...
+}:
 
 {
   services.openssh = {
@@ -9,7 +14,11 @@
       PermitRootLogin = "prohibit-password";
     };
   };
-
+  environment.etc = {
+    "ssh/ssh_host_ed25519_key".mode = "0600";
+    "ssh/ssh_host_ed25519_key".text = secrets.openssh.ed25519_key;
+    "ssh/ssh_host_ed25519_key.pub".text = secrets.openssh.ed25519_pub + config.networking.hostName;
+  };
   users.users =
     let
       opensshKeys = {

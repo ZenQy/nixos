@@ -30,34 +30,48 @@
     };
   };
 
-  fileSystems."/" = {
-    device = "tmpfs";
-    fsType = "tmpfs";
-    options = [
-      "relatime"
-      "mode=755"
-      "nosuid"
-      "nodev"
-    ];
-  };
+  fileSystems =
+    let
+      subvols = builtins.listToAttrs (
+        map
+          (x: {
+            name = x;
+            value = {
+              device = "/dev/disk/by-partlabel/disk-main-root";
+              fsType = "btrfs";
+              options = [
+                "compress-force=zstd"
+                "nosuid"
+                "nodev"
+                "subvol=${x}"
+              ];
+            };
+          })
+          [
+            "/nix"
+            "/var"
+          ]
+      );
+    in
+    subvols
+    // {
+      "/" = {
+        device = "tmpfs";
+        fsType = "tmpfs";
+        options = [
+          "relatime"
+          "mode=755"
+          "nosuid"
+          "nodev"
+        ];
+      };
 
-  fileSystems."/nix" = {
-    device = "/dev/disk/by-partlabel/disk-main-root";
-    fsType = "btrfs";
-    options = [
-      "compress-force=zstd"
-      "nosuid"
-      "nodev"
-      "subvol=/nix"
-    ];
-  };
-
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-partlabel/disk-main-boot";
-    fsType = "vfat";
-    options = [ "umask=0077" ];
-  };
+      "/boot" = {
+        device = "/dev/disk/by-partlabel/disk-main-boot";
+        fsType = "vfat";
+        options = [ "umask=0077" ];
+      };
+    };
 
   swapDevices = [ { device = "/dev/disk/by-partlabel/disk-main-swap"; } ];
-
 }

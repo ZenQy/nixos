@@ -72,12 +72,12 @@ in
 
         # 构建rclone命令列表
         makeRcloneCmd =
-          path:
+          dir:
           let
-            includeArgs = concatMapStringsSep " " (i: "--include ${i}") path.include;
-            excludeArgs = concatMapStringsSep " " (i: "--exclude ${i}") path.exclude;
+            includeArgs = concatMapStringsSep " " (i: "--include ${i}") dir.include;
+            excludeArgs = concatMapStringsSep " " (i: "--exclude ${i}") dir.exclude;
           in
-          "rclone --config ${configFile} sync ${path.source} webdav:${path.dest} ${includeArgs} ${excludeArgs}";
+          "rclone --config ${configFile} sync ${dir.source} webdav:${dir.dest} ${includeArgs} ${excludeArgs}";
 
         syncCommands = concatMapStringsSep "\n" makeRcloneCmd cfg.path;
       in

@@ -21,38 +21,43 @@
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" = {
-    device = "tmpfs";
-    fsType = "tmpfs";
-    options = [
-      "relatime"
-      "mode=755"
-      "nosuid"
-      "nodev"
-    ];
-  };
-
-  fileSystems."/nix" = {
-    device = "/dev/disk/by-partlabel/disk-main-root";
-    fsType = "btrfs";
-    options = [
-      "compress-force=zstd"
-      "nosuid"
-      "nodev"
-      "subvol=/nix"
-    ];
-  };
-
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-partlabel/disk-main-root";
-    fsType = "btrfs";
-    options = [
-      "compress-force=zstd"
-      "nosuid"
-      "nodev"
-      "subvol=/boot"
-    ];
-  };
+  fileSystems =
+    let
+      subvols = builtins.listToAttrs (
+        map
+          (x: {
+            name = x;
+            value = {
+              device = "/dev/disk/by-partlabel/disk-main-root";
+              fsType = "btrfs";
+              options = [
+                "compress-force=zstd"
+                "nosuid"
+                "nodev"
+                "subvol=${x}"
+              ];
+            };
+          })
+          [
+            "/boot"
+            "/nix"
+            "/var"
+          ]
+      );
+    in
+    subvols
+    // {
+      "/" = {
+        device = "tmpfs";
+        fsType = "tmpfs";
+        options = [
+          "relatime"
+          "mode=755"
+          "nosuid"
+          "nodev"
+        ];
+      };
+    };
 
   swapDevices = [ { device = "/dev/disk/by-partlabel/disk-main-swap"; } ];
 

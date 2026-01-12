@@ -25,14 +25,14 @@ in
   config = mkIf cfg.enable {
     systemd.services.openlist =
       let
-        path = "/var/lib/openlist";
+        dir = "/var/lib/openlist";
       in
       {
         description = "A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs.";
         after = [ "network.target" ];
         wantedBy = [ "multi-user.target" ];
         preStart = ''
-          if [[ ! -d "${path}/data" ]]
+          if [[ ! -d "${dir}/data" ]]
           then
             ${pkgs.openlist}/bin/OpenList admin set admin
           fi
@@ -41,7 +41,7 @@ in
           User = "nixos";
           Group = "wheel";
           StateDirectory = "openlist";
-          WorkingDirectory = path;
+          WorkingDirectory = dir;
           ExecStart = ''
             ${pkgs.openlist}/bin/OpenList server
           '';

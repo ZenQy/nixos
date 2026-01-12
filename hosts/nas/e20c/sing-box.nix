@@ -248,15 +248,15 @@ let
       type = "trojan";
       server = tag;
       server_port = 443;
-      inherit (sb.trojan) password;
+      inherit (sb.cloudflare) password;
       transport = {
         type = "ws";
         path = "/";
-        headers.Host = sb.trojan.host;
+        headers.Host = sb.cloudflare.host;
       };
       tls = {
         enabled = true;
-        server_name = sb.trojan.host;
+        server_name = sb.cloudflare.host;
         alpn = "h3";
         inherit utls;
       };
