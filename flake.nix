@@ -59,6 +59,7 @@
           default = {
             type = "app";
             program = "${home.gen}";
+            meta.description = "将配置文件写入HOME";
           };
         }
       );

@@ -223,6 +223,6 @@ in
   programs.waybar.enable = true;
   environment.etc = {
     "xdg/waybar/config".source = (pkgs.formats.json { }).generate "config" conf;
-    "xdg/waybar/style.css".source = ./dotfiles/waybar/style.css;
+    "xdg/waybar/style.css".source = ./conf/waybar.css;
   };
 }

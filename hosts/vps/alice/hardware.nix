@@ -42,6 +42,7 @@
             "/boot"
             "/nix"
             "/var"
+            "/home"
           ]
       );
     in

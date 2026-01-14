@@ -27,6 +27,6 @@
     fuzzel
   ];
 
-  environment.etc."niri/config.kdl".source = ./dotfiles/niri/config.kdl;
+  environment.etc."niri/config.kdl".source = ./conf/niri.kdl;
 
 }

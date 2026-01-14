@@ -22,6 +22,9 @@
     enabled = true;
   };
   languages = {
+    CSS = {
+      enable_language_server = false;
+    };
     Go = {
       language_servers = [ "gopls" ];
     };

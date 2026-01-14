@@ -7,7 +7,7 @@
 
 let
   host = config.networking.hostName;
-  isIPv6Only = host == "alice" || host == "icmp9";
+  isIPv6Only = host == "alice";
   isOptimized = host == "dmit" || host == "bwh";
   sb = secrets.sing-box;
 

@@ -2,15 +2,13 @@
 
 let
   inherit (builtins)
-    toFile
-    toJSON
     attrNames
-    map
-    stringLength
-    baseNameOf
-    substring
     concatStringsSep
     match
+    stringLength
+    substring
+    toFile
+    toJSON
     ;
 
   homeDir = "/home/nixos";

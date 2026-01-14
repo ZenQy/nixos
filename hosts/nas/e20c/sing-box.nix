@@ -90,6 +90,7 @@ let
           {
             domain_suffix = [
               "googleapis.cn"
+              "gstatic.com"
             ];
           }
         ];
@@ -200,14 +201,13 @@ let
       tuicList = [
         "alice"
         "gvuy"
-        "icmp9"
         "osaka-1"
         "osaka-2"
         "sailor"
         "wawo"
       ];
       vlessList = [ ];
-      cloudflareList = builtins.fromJSON (builtins.readFile ./cloudflare.json);
+      cloudflareList = builtins.fromJSON (builtins.readFile ./conf/cloudflare.json);
     in
     sb.node
     ++ map (tag: {

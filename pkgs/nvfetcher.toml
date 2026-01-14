@@ -24,6 +24,6 @@ src.git = "https://github.com/unifreq/linux-6.12.y"
 fetch.github = "unifreq/linux-6.12.y"
 extract = ["Makefile"]
 
-[tracker]
-src.git = "https://github.com/XIU2/TrackersListCollection"
-fetch.github = "XIU2/TrackersListCollection"
+[oci-help]
+src.github = "lemoex/oci-help"
+fetch.github = "lemoex/oci-help"

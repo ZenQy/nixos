@@ -8,36 +8,68 @@
     (modulesPath + "/profiles/qemu-guest.nix")
   ];
 
-  # nixpkgs.hostPlatform.system = "aarch64-linux";
-  boot.initrd.availableKernelModules = [
-    "xhci_pci"
-    "virtio_pci"
-    "usbhid"
-    "sd_mod"
-  ];
-  boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ ];
-  boot.extraModulePackages = [ ];
-
-  fileSystems."/" = {
-    device = "/dev/disk/by-label/cloudimg-rootfs";
-    fsType = "ext4";
+  boot = {
+    initrd.availableKernelModules = [
+      "xhci_pci"
+      "virtio_pci"
+      "usbhid"
+      "sd_mod"
+    ];
+    loader = {
+      efi.canTouchEfiVariables = false;
+      systemd-boot = {
+        configurationLimit = 1;
+        consoleMode = "auto";
+        enable = true;
+      };
+      timeout = 1;
+    };
   };
 
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-label/UEFI";
-    fsType = "vfat";
-  };
+  fileSystems =
+    let
+      subvols = builtins.listToAttrs (
+        map
+          (x: {
+            name = x;
+            value = {
+              device = "/dev/disk/by-partlabel/disk-main-root";
+              fsType = "btrfs";
+              options = [
+                "compress-force=zstd"
+                "nosuid"
+                "nodev"
+                "subvol=${x}"
+              ];
+            };
+          })
+          [
+            "/home"
+            "/nix"
+            "/var"
+          ]
+      );
+    in
+    subvols
+    // {
+      "/" = {
+        device = "tmpfs";
+        fsType = "tmpfs";
+        options = [
+          "relatime"
+          "mode=755"
+          "nosuid"
+          "nodev"
+        ];
+      };
+
+      "/boot" = {
+        device = "/dev/disk/by-partlabel/disk-main-boot";
+        fsType = "vfat";
+        options = [ "umask=0077" ];
+      };
+    };
 
   swapDevices = [ ];
 
-  boot.loader = {
-    efi.canTouchEfiVariables = false;
-    systemd-boot = {
-      configurationLimit = 1;
-      consoleMode = "auto";
-      enable = true;
-    };
-    timeout = 1;
-  };
 }

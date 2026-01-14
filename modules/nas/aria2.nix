@@ -46,7 +46,7 @@ in
           rpc-allow-origin-all = true;
           rpc-secure = false;
           check-certificate = false;
-          bt-tracker = builtins.readFile "${pkgs.tracker}/share/tracker/best_aria2.txt";
+          bt-tracker = builtins.readFile ./conf/aria2.txt;
         };
         conf = builtins.toFile "aria2.conf" (lib.generators.toKeyValue { } settings);
       in
