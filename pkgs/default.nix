@@ -1,5 +1,14 @@
-with builtins;
 let
+  inherit (builtins)
+    attrNames
+    attrValues
+    concatMap
+    elem
+    filter
+    listToAttrs
+    mapAttrs
+    readDir
+    ;
   floder =
     dir:
     filter (v: v != null) (
@@ -26,18 +35,37 @@ let
 in
 
 {
-  exclude =
-    systems: concatMap (system: if elem system rootDirs then floder ./${system} else [ ]) systems;
-
   packages =
-    pkgs:
+    system: pkgs: pkgs_:
     listToSet (packageLists ++ attrNames ((import ./override.nix) null pkgs)) (
-      name: pkgs.${baseNameOf name}
+      name:
+      let
+        shortName = baseNameOf name;
+        sources = (import ./_sources/generated.nix) {
+          inherit (pkgs_)
+            fetchurl
+            fetchgit
+            fetchFromGitHub
+            dockerTools
+            ;
+        };
+      in
+      if system == "x86_64-linux" && elem shortName (floder ./aarch64-linux) then
+        pkgs_.callPackage ./${name} {
+          source =
+            sources.${baseNameOf name} or {
+              pname = "x";
+              version = "0.0.0";
+              src = ./.;
+            };
+        }
+      else
+        pkgs.${shortName}
     );
 
   overlay =
     final: prev:
-    listToSet packageLists (
+    (listToSet packageLists (
       name:
       let
         sources = (import ./_sources/generated.nix) {
@@ -48,9 +76,8 @@ in
             dockerTools
             ;
         };
-        package = import ./${name};
       in
-      final.callPackage package {
+      final.callPackage ./${name} {
         source =
           sources.${baseNameOf name} or {
             pname = "x";
@@ -58,5 +85,6 @@ in
             src = ./.;
           };
       }
-    );
+    ))
+    // (import ./override.nix final prev);
 }

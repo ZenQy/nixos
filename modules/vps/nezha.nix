@@ -35,6 +35,7 @@ in
           usertemplate = "user-dist";
           admintemplate = "admin-dist";
           location = "Asia/Shanghai";
+          install_host = "${secrets.nezha-agent.server}:${toString secrets.nezha.listenport}";
         };
       in
       {

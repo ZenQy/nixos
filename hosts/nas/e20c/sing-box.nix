@@ -18,6 +18,11 @@ let
         server = "127.0.0.53";
       }
       {
+        tag = "dns_proxy";
+        type = "udp";
+        server = "8.8.8.8";
+      }
+      {
         tag = "dns_fakeip";
         type = "fakeip";
         inet4_range = "198.18.0.0/15";
@@ -25,6 +30,14 @@ let
       }
     ];
     rules = [
+      {
+        clash_mode = "direct";
+        server = "dns_direct";
+      }
+      {
+        clash_mode = "golbal";
+        server = "dns_proxy";
+      }
       {
         rule_set = "geosite-category-ads-all";
         action = "reject";
@@ -130,6 +143,18 @@ let
         action = "hijack-dns";
       }
       {
+        ip_is_private = true;
+        outbound = "direct";
+      }
+      {
+        clash_mode = "direct";
+        outbound = "direct";
+      }
+      {
+        clash_mode = "golbal";
+        outbound = "proxy";
+      }
+      {
         rule_set = "inline_proxy";
         outbound = "proxy";
       }
@@ -138,7 +163,6 @@ let
         outbound = "direct";
       }
       {
-        ip_is_private = true;
         rule_set = [
           "inline_direct"
           "geosite-cn"
@@ -202,7 +226,6 @@ let
         "alice"
         "gvuy"
         "osaka-1"
-        "osaka-2"
         "sailor"
         "wawo"
       ];
@@ -271,7 +294,6 @@ let
           ++ tuicList
           ++ [
             "cloudflare"
-            "direct"
           ];
       }
       {

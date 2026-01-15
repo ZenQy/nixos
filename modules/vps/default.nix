@@ -17,7 +17,8 @@
   environment.etc = {
     "ssh/ssh_host_ed25519_key".mode = "0600";
     "ssh/ssh_host_ed25519_key".text = secrets.openssh.ed25519_key;
-    "ssh/ssh_host_ed25519_key.pub".text = secrets.openssh.ed25519_pub + config.networking.hostName;
+    "ssh/ssh_host_ed25519_key.pub".text =
+      secrets.openssh.ed25519_pub + " root@" + config.networking.hostName;
   };
   users.users =
     let

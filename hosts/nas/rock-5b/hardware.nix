@@ -43,6 +43,7 @@
           [
             "/home"
             "/nix"
+            "/storage"
             "/var"
           ]
       );

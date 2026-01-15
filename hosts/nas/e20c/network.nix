@@ -13,7 +13,7 @@
     lan = {
       name = "eth0";
       networkConfig = {
-        Address = "10.0.0.1/24";
+        Address = secrets.hosts.e20c.ipv4.ip;
         DHCP = "ipv6";
         DHCPPrefixDelegation = true; # 自动选择第一个有 PD 的链路, 并获得子网前缀
         IPv6SendRA = true; # 会自动关闭 IPv6AcceptRA 并打开 IPv6Forwarding
@@ -23,7 +23,7 @@
         PoolOffset = 150;
         PoolSize = 100;
         EmitDNS = true;
-        DNS = "10.0.0.1";
+        DNS = secrets.hosts.e20c.ipv4.gateway;
       };
     };
 

@@ -30,8 +30,7 @@
 
     in
     {
-      overlays.default =
-        final: prev: (nixpkgs.lib.composeExtensions this.overlay (import ./pkgs/override.nix) final prev);
+      overlays.default = final: prev: this.overlay final prev;
 
       packages = forAllSystems (
         system:
@@ -42,8 +41,14 @@
             config.allowUnfree = true;
             config.allowUnsupportedSystem = true;
           };
+          pkgs_ = import nixpkgs {
+            localSystem = "x86_64-linux";
+            crossSystem = {
+              system = "aarch64-linux";
+            };
+          };
         in
-        removeAttrs (this.packages pkgs) (this.exclude (filter (s: s != system) systems))
+        this.packages system pkgs pkgs_
       );
 
       apps = forAllSystems (

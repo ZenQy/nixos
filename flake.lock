@@ -58,11 +58,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1768127708,
-        "narHash": "sha256-1Sm77VfZh3mU0F5OqKABNLWxOuDeHIlcFjsXeeiPazs=",
+        "lastModified": 1768305791,
+        "narHash": "sha256-AIdl6WAn9aymeaH/NvBj0H9qM+XuAuYbGMZaP0zcXAQ=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "ffbc9f8cbaacfb331b6017d5a5abb21a492c9a38",
+        "rev": "1412caf7bf9e660f2f962917c14b1ea1c3bc695e",
         "type": "github"
       },
       "original": {
@@ -82,11 +82,11 @@
     "secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1768239765,
-        "narHash": "sha256-qkXxh96saeqD4+ecXga2rCB4woAy1pG5CTDT9uGEwx8=",
+        "lastModified": 1768488663,
+        "narHash": "sha256-4ke1dC4WY7rvNudsbrWTt89B9Sr//gqkaEMWa+ziPiU=",
         "ref": "refs/heads/main",
-        "rev": "2a102a63fdde9b2c53b9eb368538a6d17e4e36bc",
-        "revCount": 84,
+        "rev": "0f2a0bf18c518c8e0e080419bd14becab2b92abb",
+        "revCount": 85,
         "type": "git",
         "url": "ssh://git@github.com/zenqy/nixos-secrets"
       },

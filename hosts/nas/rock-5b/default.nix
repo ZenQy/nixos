@@ -1,4 +1,4 @@
-{ ... }:
+{ secrets, ... }:
 
 {
   imports = [
@@ -9,8 +9,8 @@
   systemd.network.networks.default = {
     name = "eth0";
     networkConfig = {
-      Address = "10.0.0.12/24";
-      Gateway = "10.0.0.1";
+      Address = secrets.hosts.rock-5b.ipv4.ip;
+      Gateway = secrets.hosts.rock-5b.ipv4.gateway;
       DHCP = "ipv6";
     };
   };
