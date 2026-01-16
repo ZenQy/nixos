@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v3.0.9",
-            "sha256": "sha256-ezu8XWg4A9TatBI449UdeZczA/tYyFfdpi83u7jFn58=",
+            "rev": "v3.1.0",
+            "sha256": "sha256-jMmZL7ur94W3nhrBIuxsVEkEzjYrETPZ8EJkYH5xMRA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.0.9"
+        "version": "v3.1.0"
     },
     "Ech0-frontend": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v3.0.9",
-            "sha256": "sha256-ezu8XWg4A9TatBI449UdeZczA/tYyFfdpi83u7jFn58=",
+            "rev": "v3.1.0",
+            "sha256": "sha256-jMmZL7ur94W3nhrBIuxsVEkEzjYrETPZ8EJkYH5xMRA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.0.9"
+        "version": "v3.1.0"
     },
     "fcitx5-pinyin-zenith": {
         "cargoLock": null,
@@ -58,9 +58,9 @@
     },
     "linux-flippy": {
         "cargoLock": null,
-        "date": "2026-01-09",
+        "date": "2026-01-16",
         "extract": {
-            "Makefile": "sha256-+wl+hxoEZXIAZyCQ66fyE+vnYhEkivDeN9+aZEBB+nE=/Makefile"
+            "Makefile": "sha256-jH_A74lWZG79easgceyE6wxugrHsIsLfQOdAKLa0HK4=/Makefile"
         },
         "name": "linux-flippy",
         "passthru": null,
@@ -72,18 +72,18 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.12.y",
-            "rev": "1f6b42955dcfea46458018b7b5ed26b7ce3f0b29",
-            "sha256": "sha256-+wl+hxoEZXIAZyCQ66fyE+vnYhEkivDeN9+aZEBB+nE=",
+            "rev": "a67d28153b2c39afab74fcb8fa5b192cbb14fa6d",
+            "sha256": "sha256-jH/A74lWZG79easgceyE6wxugrHsIsLfQOdAKLa0HK4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1f6b42955dcfea46458018b7b5ed26b7ce3f0b29"
+        "version": "a67d28153b2c39afab74fcb8fa5b192cbb14fa6d"
     },
-    "tracker": {
+    "oci-help": {
         "cargoLock": null,
-        "date": "2026-01-09",
+        "date": null,
         "extract": null,
-        "name": "tracker",
+        "name": "oci-help",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -91,14 +91,14 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "XIU2",
-            "repo": "TrackersListCollection",
-            "rev": "9adbadc883c484d7c5861732a3c6b69d06bc6fa0",
-            "sha256": "sha256-dvBxjSjqfAd1Fgdv0igU+59jRqjPlqwP6ONv1F5JrVg=",
+            "owner": "lemoex",
+            "repo": "oci-help",
+            "rev": "v2.3.1",
+            "sha256": "sha256-Bs8g/r0qrvgWIOOpbxvP6pIg3wNfFeqdshchsn7K6ck=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9adbadc883c484d7c5861732a3c6b69d06bc6fa0"
+        "version": "v2.3.1"
     },
     "vitejs": {
         "cargoLock": null,

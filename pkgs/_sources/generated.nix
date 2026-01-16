@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v3.0.9";
+    version = "v3.1.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v3.0.9";
+      rev = "v3.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-ezu8XWg4A9TatBI449UdeZczA/tYyFfdpi83u7jFn58=";
+      sha256 = "sha256-jMmZL7ur94W3nhrBIuxsVEkEzjYrETPZ8EJkYH5xMRA=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v3.0.9";
+    version = "v3.1.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v3.0.9";
+      rev = "v3.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-ezu8XWg4A9TatBI449UdeZczA/tYyFfdpi83u7jFn58=";
+      sha256 = "sha256-jMmZL7ur94W3nhrBIuxsVEkEzjYrETPZ8EJkYH5xMRA=";
     };
   };
   fcitx5-pinyin-zenith = {
@@ -38,29 +38,28 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "1f6b42955dcfea46458018b7b5ed26b7ce3f0b29";
+    version = "a67d28153b2c39afab74fcb8fa5b192cbb14fa6d";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "1f6b42955dcfea46458018b7b5ed26b7ce3f0b29";
+      rev = "a67d28153b2c39afab74fcb8fa5b192cbb14fa6d";
       fetchSubmodules = false;
-      sha256 = "sha256-+wl+hxoEZXIAZyCQ66fyE+vnYhEkivDeN9+aZEBB+nE=";
+      sha256 = "sha256-jH/A74lWZG79easgceyE6wxugrHsIsLfQOdAKLa0HK4=";
     };
     extract = {
-      Makefile = ./. + "/sha256-+wl+hxoEZXIAZyCQ66fyE+vnYhEkivDeN9+aZEBB+nE=/Makefile";
-    };date = "2026-01-09";
+      Makefile = ./. + "/sha256-jH_A74lWZG79easgceyE6wxugrHsIsLfQOdAKLa0HK4=/Makefile";
+    };date = "2026-01-16";
   };
-  tracker = {
-    pname = "tracker";
-    version = "9adbadc883c484d7c5861732a3c6b69d06bc6fa0";
+  oci-help = {
+    pname = "oci-help";
+    version = "v2.3.1";
     src = fetchFromGitHub {
-      owner = "XIU2";
-      repo = "TrackersListCollection";
-      rev = "9adbadc883c484d7c5861732a3c6b69d06bc6fa0";
+      owner = "lemoex";
+      repo = "oci-help";
+      rev = "v2.3.1";
       fetchSubmodules = false;
-      sha256 = "sha256-dvBxjSjqfAd1Fgdv0igU+59jRqjPlqwP6ONv1F5JrVg=";
+      sha256 = "sha256-Bs8g/r0qrvgWIOOpbxvP6pIg3wNfFeqdshchsn7K6ck=";
     };
-    date = "2026-01-09";
   };
   vitejs = {
     pname = "vitejs";
