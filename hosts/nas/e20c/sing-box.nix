@@ -35,7 +35,7 @@ let
         server = "dns_direct";
       }
       {
-        clash_mode = "golbal";
+        clash_mode = "global";
         server = "dns_proxy";
       }
       {
@@ -151,7 +151,7 @@ let
         outbound = "direct";
       }
       {
-        clash_mode = "golbal";
+        clash_mode = "global";
         outbound = "proxy";
       }
       {

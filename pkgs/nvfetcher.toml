@@ -23,7 +23,3 @@ fetch.github = "lin-snow/Ech0"
 src.git = "https://github.com/unifreq/linux-6.12.y"
 fetch.github = "unifreq/linux-6.12.y"
 extract = ["Makefile"]
-
-[oci-help]
-src.github = "lemoex/oci-help"
-fetch.github = "lemoex/oci-help"

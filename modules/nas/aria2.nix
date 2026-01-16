@@ -35,6 +35,7 @@ in
           continue = true;
           always-resume = false;
           max-resume-failure-tries = 0;
+          max-concurrent-downloads = 20;
           remote-time = true;
           input-file = "aria2.session";
           save-session = "aria2.session";
