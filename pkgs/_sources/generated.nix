@@ -50,17 +50,6 @@
       Makefile = ./. + "/sha256-jH_A74lWZG79easgceyE6wxugrHsIsLfQOdAKLa0HK4=/Makefile";
     };date = "2026-01-16";
   };
-  oci-help = {
-    pname = "oci-help";
-    version = "v2.3.1";
-    src = fetchFromGitHub {
-      owner = "lemoex";
-      repo = "oci-help";
-      rev = "v2.3.1";
-      fetchSubmodules = false;
-      sha256 = "sha256-Bs8g/r0qrvgWIOOpbxvP6pIg3wNfFeqdshchsn7K6ck=";
-    };
-  };
   vitejs = {
     pname = "vitejs";
     version = "v7.3.1";

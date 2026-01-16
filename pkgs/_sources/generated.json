@@ -79,27 +79,6 @@
         },
         "version": "a67d28153b2c39afab74fcb8fa5b192cbb14fa6d"
     },
-    "oci-help": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "oci-help",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "lemoex",
-            "repo": "oci-help",
-            "rev": "v2.3.1",
-            "sha256": "sha256-Bs8g/r0qrvgWIOOpbxvP6pIg3wNfFeqdshchsn7K6ck=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v2.3.1"
-    },
     "vitejs": {
         "cargoLock": null,
         "date": null,
