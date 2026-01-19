@@ -10,10 +10,11 @@ on:
         options:
           - all
           - alice
+          - beelink
           - osaka-1
           - osaka-2
           - sailor
-          - beelink
+          - wawo
         required: false
         default: all
 
@@ -40,7 +41,7 @@ jobs:
         run: |
           hosts='[ "${{ inputs.hosts }}" ]'
           if [[ "${{ inputs.hosts }}" == 'all' || "${{ inputs.hosts }}" == '' ]]; then
-            hosts='[ "osaka-1", "osaka-2", "alice", "sailor"]'
+            hosts='[ "osaka-1", "osaka-2", "alice", "sailor", "wawo"]'
           fi
           echo $hosts
           echo "matrix=$(echo $hosts)" >> $GITHUB_OUTPUT

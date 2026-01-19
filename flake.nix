@@ -41,14 +41,8 @@
             config.allowUnfree = true;
             config.allowUnsupportedSystem = true;
           };
-          pkgs_ = import nixpkgs {
-            localSystem = "x86_64-linux";
-            crossSystem = {
-              system = "aarch64-linux";
-            };
-          };
         in
-        this.packages system pkgs pkgs_
+        this.packages system pkgs
       );
 
       apps = forAllSystems (

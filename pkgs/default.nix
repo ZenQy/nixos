@@ -9,6 +9,7 @@ let
     mapAttrs
     readDir
     ;
+
   floder =
     dir:
     filter (v: v != null) (
@@ -22,7 +23,7 @@ let
   # 缓存根目录列表，避免多次计算
   rootDirs = floder ./.;
 
-  packageLists = concatMap (dir: map (subdir: "${dir}/${subdir}") (floder ./${dir})) rootDirs;
+  packageList = concatMap (dir: map (subdir: "${dir}/${subdir}") (floder ./${dir})) rootDirs;
 
   listToSet =
     l: f:
@@ -36,36 +37,19 @@ in
 
 {
   packages =
-    system: pkgs: pkgs_:
-    listToSet (packageLists ++ attrNames ((import ./override.nix) null pkgs)) (
-      name:
-      let
-        shortName = baseNameOf name;
-        sources = (import ./_sources/generated.nix) {
-          inherit (pkgs_)
-            fetchurl
-            fetchgit
-            fetchFromGitHub
-            dockerTools
-            ;
-        };
-      in
-      if system == "x86_64-linux" && elem shortName (floder ./aarch64-linux) then
-        pkgs_.callPackage ./${name} {
-          source =
-            sources.${baseNameOf name} or {
-              pname = "x";
-              version = "0.0.0";
-              src = ./.;
-            };
-        }
-      else
-        pkgs.${shortName}
+    system: pkgs:
+    let
+      newPackageList = filter (
+        name: !(system == "x86_64-linux" && elem (baseNameOf name) (floder ./aarch64-linux))
+      ) packageList;
+    in
+    listToSet (newPackageList ++ attrNames ((import ./override.nix) null pkgs)) (
+      name: pkgs.${baseNameOf name}
     );
 
   overlay =
     final: prev:
-    (listToSet packageLists (
+    (listToSet packageList (
       name:
       let
         sources = (import ./_sources/generated.nix) {
