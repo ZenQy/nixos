@@ -8,7 +8,6 @@
       url = "git+ssh://git@github.com/zenqy/nixos-secrets";
       flake = false;
     };
-    impermanence.url = "github:nix-community/impermanence";
   };
 
   outputs =
@@ -16,7 +15,6 @@
       self,
       nixpkgs,
       secrets,
-      impermanence,
     }:
 
     with builtins;
@@ -92,7 +90,6 @@
               modules = [
                 ./hosts/${cate}/${host}
                 (import ./modules cate)
-                (if cate == "desktop" then (impermanence.nixosModules.impermanence) else { })
                 {
                   nixpkgs.overlays = [ self.overlays.default ];
                   nix.nixPath = [ "nixpkgs=${nixpkgs}" ];

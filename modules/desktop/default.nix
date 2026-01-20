@@ -48,6 +48,12 @@
     ];
   };
 
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    pulse.enable = true;
+  };
+
   environment.variables = {
     NIXOS_OZONE_WL = "1";
     inherit (secrets.AI) DEEPSEEK_API_EKY;

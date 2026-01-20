@@ -24,21 +24,49 @@
     kernelPackages = pkgs.linuxPackagesFor pkgs.linux-flippy;
   };
 
-  fileSystems."/" = {
-    device = "/dev/disk/by-partlabel/disk-main-root";
-    fsType = "btrfs";
-    options = [
-      "compress-force=zstd"
-      "nosuid"
-      "nodev"
-    ];
-  };
+  fileSystems =
+    let
+      subvols = builtins.listToAttrs (
+        map
+          (x: {
+            name = x;
+            value = {
+              device = "/dev/disk/by-partlabel/disk-main-root";
+              fsType = "btrfs";
+              options = [
+                "compress-force=zstd"
+                "nosuid"
+                "nodev"
+                "subvol=${x}"
+              ];
+            };
+          })
+          [
+            "/home"
+            "/nix"
+            "/var"
+          ]
+      );
+    in
+    subvols
+    // {
+      "/" = {
+        device = "tmpfs";
+        fsType = "tmpfs";
+        options = [
+          "relatime"
+          "mode=755"
+          "nosuid"
+          "nodev"
+        ];
+      };
 
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-partlabel/disk-main-boot";
-    fsType = "vfat";
-    options = [ "umask=0077" ];
-  };
+      "/boot" = {
+        device = "/dev/disk/by-partlabel/disk-main-boot";
+        fsType = "vfat";
+        options = [ "umask=0077" ];
+      };
+    };
 
   swapDevices = [ ];
 

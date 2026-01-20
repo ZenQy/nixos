@@ -29,89 +29,59 @@
     };
   };
 
-  fileSystems."/" = {
-    device = "tmpfs";
-    fsType = "tmpfs";
-    options = [
-      "relatime"
-      "mode=755"
-      "nosuid"
-      "nodev"
-    ];
-  };
+  fileSystems =
+    let
+      subvols = builtins.listToAttrs (
+        map
+          (x: {
+            name = x;
+            value = {
+              device = "/dev/disk/by-label/NixOS";
+              fsType = "btrfs";
+              options = [
+                "compress-force=zstd"
+                "nosuid"
+                "nodev"
+                "subvol=${x}"
+              ];
+            };
+          })
+          [
+            "/home"
+            "/nix"
+            "/root"
+            "/var"
+          ]
+      );
+    in
+    subvols
+    // {
+      "/" = {
+        device = "tmpfs";
+        fsType = "tmpfs";
+        options = [
+          "relatime"
+          "mode=755"
+          "nosuid"
+          "nodev"
+        ];
+      };
 
-  fileSystems."/nix" = {
-    device = "/dev/disk/by-label/NixOS";
-    fsType = "btrfs";
-    options = [
-      "compress-force=zstd"
-      "nosuid"
-      "nodev"
-    ];
-  };
+      "/boot" = {
+        device = "/dev/disk/by-label/UEFI";
+        fsType = "vfat";
+        options = [ "umask=0077" ];
+      };
 
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-label/UEFI";
-    fsType = "vfat";
-    options = [ "umask=0077" ];
-  };
+    };
 
   swapDevices = [ ];
 
-  environment.persistence."/nix/persistent" = {
-    hideMounts = true;
-
-    directories = [
-      # "/home/zenith"
-      "/var/cache"
-      "/var/lib"
-      "/var/log"
-      "/root/.ssh"
-    ];
-
-    files = [
-      "/etc/machine-id"
-    ];
-
-    users.nixos = {
-      directories = [
-        # 个人文件
-        "Desktop"
-        "Documents"
-        "Downloads"
-        "Music"
-        "Pictures"
-        "Videos"
-        "go"
-
-        # 配置文件夹
-        ".cache"
-        ".config"
-        ".local"
-        ".mozilla"
-        ".ssh"
-      ];
-      files = [
-        ".bash_history"
-      ];
-    };
-  };
-
   systemd.services.nix-daemon = {
-    environment = {
-      TMPDIR = "/var/cache/nix";
-    };
-    serviceConfig = {
-      CacheDirectory = "nix";
-    };
+    environment.TMPDIR = "/var/cache/nix";
+    serviceConfig.CacheDirectory = "nix";
   };
   environment.variables.NIX_REMOTE = "daemon";
-
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    pulse.enable = true;
-  };
 
   hardware.amdgpu.initrd.enable = true;
 

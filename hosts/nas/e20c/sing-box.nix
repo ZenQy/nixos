@@ -199,6 +199,7 @@ let
     #     "com.x8bit.bitwarden"
     #     "com.xbrowser.play"
     #     "io.legado.app.release"
+    #     "io.legato.kazusa"
     #     "mark.via"
     #     "mark.via.gp"
     #     "me.bmax.apatch"
@@ -228,6 +229,7 @@ let
         "osaka-1"
         "sailor"
         "wawo"
+        "lxc-jp"
       ];
       vlessList = [ ];
       cloudflareList = builtins.fromJSON (builtins.readFile ./conf/cloudflare.json);
@@ -255,7 +257,7 @@ let
       inherit tag;
       type = "tuic";
       server = "${tag}.${secrets.domain}";
-      server_port = 443;
+      server_port = if tag == "lxc-jp" then 33443 else 443;
       inherit (sb.tuic) uuid;
       congestion_control = "bbr";
       udp_relay_mode = "native";
@@ -314,6 +316,7 @@ let
     clash_api = {
       external_controller = "0.0.0.0:9090";
       external_ui = "${pkgs.metacubexd}";
+      secret = secrets.user.password.zenith;
     };
   };
 

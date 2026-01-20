@@ -65,7 +65,7 @@ let
             alpn = "h3";
             acme = {
               domain = "${host}.${secrets.domain}";
-              inherit (sb) email;
+              inherit (sb) dns01_challenge;
             };
           };
         }
