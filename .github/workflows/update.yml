@@ -115,7 +115,7 @@ jobs:
         run: |
           curl '${{ secrets.CLOUDFLARE_URL }}' | \
             jq '.outbounds[] | select(.server) | .server' | \
-            jq -s > cloudflare.json
+            jq -s 'unique' > cloudflare.json
           mv cloudflare.json hosts/nas/e20c/conf/cloudflare.json
 
           wget https://raw.githubusercontent.com/XIU2/TrackersListCollection/refs/heads/master/best_aria2.txt

@@ -225,6 +225,7 @@ let
       };
       tuicList = [
         "wawo"
+        "wawo-6"
         "lxc-jp"
         "alice"
         "gvuy"
