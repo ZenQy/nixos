@@ -164,7 +164,14 @@ jobs:
 
       - name: build package
         run: |
-          nix build .#${{ matrix.pkgs }}
+          echo ${{ matrix.os }} ${{ matrix.pkgs }}
+          system=aarch64-linux
+          if [[ ${{ matrix.os }} == 'ubuntu-24.04-arm' ]]; then
+            system=x86_64-linux
+          fi
+          if [[ ! -d pkgs/${system}/${{ matrix.pkgs }} ]]; then
+            nix build .#${{ matrix.pkgs }}
+          fi
 
       - name: Telegram notification
         if: failure()

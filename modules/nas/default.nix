@@ -7,6 +7,8 @@
     ../vps/openlist.nix
     ../vps/podman.nix
     ../vps/rclone.nix
+
+    ../desktop/ssh.nix
   ];
 
   nix.settings.substituters = [
