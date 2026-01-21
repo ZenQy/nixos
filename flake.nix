@@ -40,7 +40,7 @@
             config.allowUnsupportedSystem = true;
           };
         in
-        this.packages system pkgs
+        this.packages pkgs
       );
 
       apps = forAllSystems (

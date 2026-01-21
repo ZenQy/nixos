@@ -78,7 +78,6 @@
 
   environment.systemPackages = with pkgs; [
     fastfetch
-    jq
   ];
 
 }

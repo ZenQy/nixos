@@ -3,7 +3,6 @@ let
     attrNames
     attrValues
     concatMap
-    elem
     filter
     listToAttrs
     mapAttrs
@@ -37,13 +36,8 @@ in
 
 {
   packages =
-    system: pkgs:
-    let
-      newPackageList = filter (
-        name: !(system == "x86_64-linux" && elem (baseNameOf name) (floder ./aarch64-linux))
-      ) packageList;
-    in
-    listToSet (newPackageList ++ attrNames ((import ./override.nix) null pkgs)) (
+    pkgs:
+    listToSet (packageList ++ attrNames ((import ./override.nix) null pkgs)) (
       name: pkgs.${baseNameOf name}
     );
 

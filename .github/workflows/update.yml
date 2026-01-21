@@ -130,11 +130,12 @@ jobs:
           git push
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     needs: update
     strategy:
       fail-fast: false
       matrix:
+        os: [ubuntu-latest, ubuntu-24.04-arm]
         pkgs: ${{ fromJSON(needs.update.outputs.matrix) }}
     steps:
       - name: Checkout

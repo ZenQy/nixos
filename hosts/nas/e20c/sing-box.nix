@@ -224,12 +224,12 @@ let
         fingerprint = "safari";
       };
       tuicList = [
+        "wawo"
+        "lxc-jp"
         "alice"
         "gvuy"
         "osaka-1"
         "sailor"
-        "wawo"
-        "lxc-jp"
       ];
       vlessList = [ ];
       cloudflareList = builtins.fromJSON (builtins.readFile ./conf/cloudflare.json);
