@@ -38,17 +38,17 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "8596527be7ef1a05d09c9ae3be4ca8f8f4c76d14";
+    version = "a30ce5806e66e71db0da2720b88055e0069b8740";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "8596527be7ef1a05d09c9ae3be4ca8f8f4c76d14";
+      rev = "a30ce5806e66e71db0da2720b88055e0069b8740";
       fetchSubmodules = false;
-      sha256 = "sha256-btSrnGZtesCPr83fCKBBMfeNrr9i08FIbBk+3TQWg/E=";
+      sha256 = "sha256-xDWc0QrCrGy4+X4RL0bN5LhQcTtL/bv3I9Z5GKr+jkM=";
     };
     extract = {
-      Makefile = ./. + "/sha256-btSrnGZtesCPr83fCKBBMfeNrr9i08FIbBk+3TQWg_E=/Makefile";
-    };date = "2026-01-20";
+      Makefile = ./. + "/sha256-xDWc0QrCrGy4+X4RL0bN5LhQcTtL_bv3I9Z5GKr+jkM=/Makefile";
+    };date = "2026-01-23";
   };
   vitejs = {
     pname = "vitejs";
