@@ -78,6 +78,7 @@
 
   environment.systemPackages = with pkgs; [
     fastfetch
+    iperf3
   ];
 
 }

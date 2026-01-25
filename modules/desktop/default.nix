@@ -29,6 +29,8 @@
       "inode/directory" = "pcmanfm.desktop";
       "video/mp4" = "mpv.desktop";
       "x-scheme-handler/mpv" = "mpv.desktop";
+      "x-scheme-handler/http" = "chromium-browser.desktop";
+      "x-scheme-handler/https" = "chromium-browser.desktop";
     };
   };
 

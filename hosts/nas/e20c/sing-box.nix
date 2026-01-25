@@ -92,6 +92,7 @@ let
               "oracle.com"
               "test-ipv6.com"
               "wmviv.com"
+              "geevisit.com" # 解决跨域
             ];
           }
         ];
@@ -219,13 +220,13 @@ let
   ];
   outbounds =
     let
-      utls = {
-        enabled = true;
-        fingerprint = "safari";
-      };
+      # utls = {
+      #   enabled = true;
+      #   fingerprint = "safari";
+      # };
       tuicList = [
         "wawo"
-        "wawo-6"
+        "wawo6"
         "lxc-jp"
         "alice"
         "gvuy"
@@ -246,7 +247,7 @@ let
       tls = {
         enabled = true;
         alpn = "h2";
-        inherit utls;
+        # inherit utls;
         inherit (sb.vless.reality) server_name;
         reality = {
           enabled = true;
@@ -284,7 +285,7 @@ let
         enabled = true;
         server_name = sb.cloudflare.host;
         alpn = "h3";
-        inherit utls;
+        # inherit utls;
       };
     }) cloudflareList
     ++ [

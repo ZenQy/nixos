@@ -1,7 +1,6 @@
 {
   config,
   secrets,
-  pkgs,
   ...
 }:
 
@@ -62,10 +61,6 @@
     "net.ipv4.tcp_keepalive_intvl" = 30;
     "net.ipv4.tcp_keepalive_probes" = 5;
   };
-
-  environment.systemPackages = with pkgs; [
-    iperf3
-  ];
 
   documentation.nixos.enable = false;
 }
