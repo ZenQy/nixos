@@ -58,15 +58,6 @@ let
       };
     };
   };
-  tunNode = {
-    tag = "tun";
-    type = "tun";
-    address = [ "fdfe:dcba:9876::1/64" ];
-    mtu = 1500;
-    auto_route = true;
-    strict_route = false;
-    stack = "gvisor";
-  };
   wireguardNode = {
     tag = "wireguard";
     type = "wireguard";
@@ -108,9 +99,6 @@ let
     level = "info";
     timestamp = true;
   };
-  inbounds =
-    (if isOptimized then [ vlessNode ] else [ tuicNode ])
-    ++ (if isAlice || isIPv6Only then [ tunNode ] else [ ]);
   dns = {
     servers = [
       {
@@ -121,8 +109,6 @@ let
     final = "local";
     strategy = "prefer_ipv6";
   };
-  endpoints = if isIPv6Only then [ wireguardNode ] else [ ];
-  outbounds = [ { type = "direct"; } ] ++ (if isAlice then socksNodes else [ ]);
   route.rules = [
     {
       action = "sniff";
@@ -132,7 +118,9 @@ let
       outbound = if isAlice then "socks" else "wireguard";
     }
   ];
-
+  inbounds = if isOptimized then [ vlessNode ] else [ tuicNode ];
+  outbounds = [ { type = "direct"; } ] ++ (if isAlice then socksNodes else [ ]);
+  endpoints = if isIPv6Only then [ wireguardNode ] else [ ];
 in
 {
   services.sing-box = {

@@ -30,18 +30,27 @@
             value = {
               device = "/dev/disk/by-partlabel/disk-main-root";
               fsType = "btrfs";
-              options = [
-                "compress-force=zstd"
-                "nosuid"
-                "nodev"
-                "subvol=${x}"
-              ];
+              options =
+                if x == "/swap" then
+                  [
+                    "defaults"
+                    "subvol=${x}"
+                  ]
+                else
+                  [
+                    "compress-force=zstd"
+                    "nosuid"
+                    "nodev"
+                    "subvol=${x}"
+                  ];
             };
           })
           [
             "/boot"
             "/home"
             "/nix"
+            "/swap"
+            "/tmp"
             "/var"
           ]
       );
@@ -60,7 +69,7 @@
       };
     };
 
-  swapDevices = [ { device = "/dev/disk/by-partlabel/disk-main-swap"; } ];
+  swapDevices = [ { device = "/swap/swapfile"; } ];
 
   boot.loader.grub = {
     enable = true;

@@ -50,6 +50,7 @@
             "/home"
             "/nix"
             "/root"
+            "/tmp"
             "/var"
           ]
       );
@@ -76,13 +77,6 @@
     };
 
   swapDevices = [ ];
-
-  systemd.services.nix-daemon = {
-    environment.TMPDIR = "/var/cache/nix";
-    serviceConfig.CacheDirectory = "nix";
-  };
-  environment.variables.NIX_REMOTE = "daemon";
-
   hardware.amdgpu.initrd.enable = true;
 
 }

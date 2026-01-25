@@ -18,11 +18,6 @@ let
         server = "127.0.0.53";
       }
       {
-        tag = "dns_proxy";
-        type = "udp";
-        server = "8.8.8.8";
-      }
-      {
         tag = "dns_fakeip";
         type = "fakeip";
         inet4_range = "198.18.0.0/15";
@@ -36,7 +31,7 @@ let
       }
       {
         clash_mode = "global";
-        server = "dns_proxy";
+        server = "dns_fakeip";
       }
       {
         rule_set = "geosite-category-ads-all";
