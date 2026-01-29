@@ -42,7 +42,8 @@
     caddy = {
       enable = true;
       extraConfig = ''
-        q.${secrets.domain} {
+
+        ${secrets.domain} {
         	reverse_proxy :6277
         }
 
@@ -84,4 +85,7 @@
     };
   };
 
+  environment.systemPackages = with pkgs; [
+    nvfetcher
+  ];
 }

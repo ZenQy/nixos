@@ -3,6 +3,7 @@
 {
   imports = [
     ./adguardhome.nix
+    ./einat.nix
     ./hardware.nix
     ./network.nix
     ./nftable.nix

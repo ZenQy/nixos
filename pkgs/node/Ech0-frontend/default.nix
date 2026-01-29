@@ -45,6 +45,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   installPhase = ''
     cp -r dist $out
+    echo "google.com, pub-4972610997626579, DIRECT, f08c47fec0942fa0" > $out/ads.txt
   '';
 
   meta = {

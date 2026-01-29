@@ -222,7 +222,6 @@ let
       tuicList = [
         "wawo"
         "wawo6"
-        "lxc-jp"
         "alice"
         "gvuy"
         "osaka-1"

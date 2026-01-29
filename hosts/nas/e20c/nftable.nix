@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   networking.nftables = {
@@ -11,20 +11,21 @@
           chain forward {
             type filter hook forward priority filter; policy accept;
             # 自动设置数据包的mtu大小，否则可能无法加载视频。
-            oifname "ppp0" tcp flags syn tcp option maxseg size set rt mtu counter
+            oifname "${config.systemd.network.networks.pppoe.name}" tcp flags syn tcp option maxseg size set rt mtu counter
           }
         '';
       };
 
-      nat = {
-        family = "ip";
-        content = ''
-          chain postrouting {
-            type nat hook postrouting priority filter; policy accept;
-            oifname "ppp0" counter masquerade # ipv4 动态伪装
-          }
-        '';
-      };
+      # 使用einat后删除
+      # nat = {
+      #   family = "ip";
+      #   content = ''
+      #     chain postrouting {
+      #       type nat hook postrouting priority filter; policy accept;
+      #       oifname "ppp0" counter masquerade # ipv4 动态伪装
+      #     }
+      #   '';
+      # };
 
       proxy = {
         family = "inet";

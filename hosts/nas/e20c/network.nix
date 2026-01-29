@@ -1,4 +1,4 @@
-{ secrets, ... }:
+{ config, secrets, ... }:
 
 {
 
@@ -27,7 +27,7 @@
       };
     };
 
-    ppp0 = {
+    pppoe = {
       name = "ppp0";
       networkConfig = {
         DHCP = "ipv6"; # 需要先接收到包含 M Flag 的 RA 才会尝试 DHCP-PD
@@ -45,7 +45,7 @@
   services.pppd = {
     enable = true;
     peers.pppoe.config = ''
-      plugin pppoe.so eth1
+      plugin pppoe.so ${config.systemd.network.networks.wan.name}
 
       name "${secrets.pppoe.username}"
       password "${secrets.pppoe.password}"
@@ -58,5 +58,5 @@
       defaultroute
     '';
   };
-
+  systemd.services.pppd-pppoe.after = [ "systemd-networkd.service" ];
 }

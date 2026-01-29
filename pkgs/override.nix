@@ -40,8 +40,18 @@ final: prev:
   mpv-unwrapped = prev.mpv-unwrapped.overrideAttrs (old: {
     postPatch = old.postPatch + ''
       substituteInPlace meson.build \
-        --replace "get_option('sysconfdir'), 'mpv'" "'/etc/mpv'"
+        --replace-quiet "get_option('sysconfdir'), 'mpv'" "'/etc/mpv'"
     '';
   });
 
+  it-tools = prev.it-tools.overrideAttrs (o: {
+    postInstall = ''
+      substituteInPlace $out/lib/index.html  \
+        --replace-quiet '</head>' '
+          <script async crossorigin="anonymous"
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4972610997626579">
+          </script>
+        </head>'
+    '';
+  });
 }

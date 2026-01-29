@@ -6,6 +6,20 @@
   dockerTools,
 }:
 {
+  einat = {
+    pname = "einat";
+    version = "v0.1.10";
+    src = fetchFromGitHub {
+      owner = "EHfive";
+      repo = "einat-ebpf";
+      rev = "v0.1.10";
+      fetchSubmodules = false;
+      sha256 = "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=";
+    };
+    extract = {
+      "Cargo.lock" = ./. + "/sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=/Cargo.lock";
+    };
+  };
   Ech0 = {
     pname = "Ech0";
     version = "v3.1.0";
@@ -48,7 +62,8 @@
     };
     extract = {
       Makefile = ./. + "/sha256-xDWc0QrCrGy4+X4RL0bN5LhQcTtL_bv3I9Z5GKr+jkM=/Makefile";
-    };date = "2026-01-23";
+    };
+    date = "2026-01-23";
   };
   vitejs = {
     pname = "vitejs";
