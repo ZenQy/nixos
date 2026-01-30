@@ -41,6 +41,29 @@
         },
         "version": "v3.1.0"
     },
+    "einat": {
+        "cargoLock": null,
+        "date": null,
+        "extract": {
+            "Cargo.lock": "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=/Cargo.lock"
+        },
+        "name": "einat",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "EHfive",
+            "repo": "einat-ebpf",
+            "rev": "v0.1.10",
+            "sha256": "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.1.10"
+    },
     "fcitx5-pinyin-zenith": {
         "cargoLock": null,
         "date": null,
@@ -58,9 +81,9 @@
     },
     "linux-flippy": {
         "cargoLock": null,
-        "date": "2026-01-23",
+        "date": "2026-01-30",
         "extract": {
-            "Makefile": "sha256-xDWc0QrCrGy4+X4RL0bN5LhQcTtL_bv3I9Z5GKr+jkM=/Makefile"
+            "Makefile": "sha256-MbewyKhvRe+ztExRPgaEyWr7+XX53GlK8I06IAeErjA=/Makefile"
         },
         "name": "linux-flippy",
         "passthru": null,
@@ -72,12 +95,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.12.y",
-            "rev": "a30ce5806e66e71db0da2720b88055e0069b8740",
-            "sha256": "sha256-xDWc0QrCrGy4+X4RL0bN5LhQcTtL/bv3I9Z5GKr+jkM=",
+            "rev": "02b3bf80fbf2e4ed77735c3c10ae5e18eb7ea838",
+            "sha256": "sha256-MbewyKhvRe+ztExRPgaEyWr7+XX53GlK8I06IAeErjA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a30ce5806e66e71db0da2720b88055e0069b8740"
+        "version": "02b3bf80fbf2e4ed77735c3c10ae5e18eb7ea838"
     },
     "vitejs": {
         "cargoLock": null,

@@ -6,20 +6,6 @@
   dockerTools,
 }:
 {
-  einat = {
-    pname = "einat";
-    version = "v0.1.10";
-    src = fetchFromGitHub {
-      owner = "EHfive";
-      repo = "einat-ebpf";
-      rev = "v0.1.10";
-      fetchSubmodules = false;
-      sha256 = "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=";
-    };
-    extract = {
-      "Cargo.lock" = ./. + "/sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=/Cargo.lock";
-    };
-  };
   Ech0 = {
     pname = "Ech0";
     version = "v3.1.0";
@@ -42,6 +28,20 @@
       sha256 = "sha256-jMmZL7ur94W3nhrBIuxsVEkEzjYrETPZ8EJkYH5xMRA=";
     };
   };
+  einat = {
+    pname = "einat";
+    version = "v0.1.10";
+    src = fetchFromGitHub {
+      owner = "EHfive";
+      repo = "einat-ebpf";
+      rev = "v0.1.10";
+      fetchSubmodules = false;
+      sha256 = "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=";
+    };
+    extract = {
+      "Cargo.lock" = ./. + "/sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=/Cargo.lock";
+    };
+  };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
     version = "v2026.01.02";
@@ -52,18 +52,17 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "a30ce5806e66e71db0da2720b88055e0069b8740";
+    version = "02b3bf80fbf2e4ed77735c3c10ae5e18eb7ea838";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "a30ce5806e66e71db0da2720b88055e0069b8740";
+      rev = "02b3bf80fbf2e4ed77735c3c10ae5e18eb7ea838";
       fetchSubmodules = false;
-      sha256 = "sha256-xDWc0QrCrGy4+X4RL0bN5LhQcTtL/bv3I9Z5GKr+jkM=";
+      sha256 = "sha256-MbewyKhvRe+ztExRPgaEyWr7+XX53GlK8I06IAeErjA=";
     };
     extract = {
-      Makefile = ./. + "/sha256-xDWc0QrCrGy4+X4RL0bN5LhQcTtL_bv3I9Z5GKr+jkM=/Makefile";
-    };
-    date = "2026-01-23";
+      Makefile = ./. + "/sha256-MbewyKhvRe+ztExRPgaEyWr7+XX53GlK8I06IAeErjA=/Makefile";
+    };date = "2026-01-30";
   };
   vitejs = {
     pname = "vitejs";
