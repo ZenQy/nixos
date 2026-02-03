@@ -81,13 +81,13 @@ let
               "blog.cloudflare.com"
               "developers.cloudflare.com"
               "epicgames.com"
+              "geevisit.com" # 解决跨域
               "hostinger.com"
               "msftconnecttest.com"
               "natchecker.com"
               "oracle.com"
               "test-ipv6.com"
               "wmviv.com"
-              "geevisit.com" # 解决跨域
             ];
           }
         ];
