@@ -44,25 +44,25 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2026.01.02";
+    version = "v2026.02.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.01.02/zenith.dict";
-      sha256 = "sha256-1t8xaeXO1agLodF4ircUL2CEmHTeyyrdF+fQeFegGd8=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.02.02/zenith.dict";
+      sha256 = "sha256-WyKqBMsWE9qMj53vKQ+1e4lgpHkyycZUC9pRh8trR5M=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "02b3bf80fbf2e4ed77735c3c10ae5e18eb7ea838";
+    version = "b9e73c3b051d9b9ce0143490f4f21dbb5ee0e825";
     src = fetchFromGitHub {
       owner = "unifreq";
-      repo = "linux-6.12.y";
-      rev = "02b3bf80fbf2e4ed77735c3c10ae5e18eb7ea838";
+      repo = "linux-6.18.y";
+      rev = "b9e73c3b051d9b9ce0143490f4f21dbb5ee0e825";
       fetchSubmodules = false;
-      sha256 = "sha256-MbewyKhvRe+ztExRPgaEyWr7+XX53GlK8I06IAeErjA=";
+      sha256 = "sha256-7RlHi0o5iVqPevEnJ6wdqNSBAbI+c+4gXnDTdcUOBhU=";
     };
     extract = {
-      Makefile = ./. + "/sha256-MbewyKhvRe+ztExRPgaEyWr7+XX53GlK8I06IAeErjA=/Makefile";
-    };date = "2026-01-30";
+      Makefile = ./. + "/sha256-7RlHi0o5iVqPevEnJ6wdqNSBAbI+c+4gXnDTdcUOBhU=/Makefile";
+    };date = "2026-02-06";
   };
   vitejs = {
     pname = "vitejs";
@@ -77,10 +77,10 @@
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2026.01.03";
+    version = "v2026.02.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.01.03/wallpaper.tar.gz";
-      sha256 = "sha256-kPewxdtgvMbVxZt9YQYUCx72VHbWBh6ivAvUWtOnh+A=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.02.03/wallpaper.tar.gz";
+      sha256 = "sha256-oabAnifY5lZMnuKN43bTVbMzD4lwDK7/y48uGR9Oc24=";
     };
   };
 }
