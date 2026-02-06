@@ -11,29 +11,48 @@ let
   isIPv6Only = false;
   isOptimized = host == "dmit" || host == "bwh";
   sb = secrets.sing-box;
-  vlessNode = {
-    tag = "vless";
-    type = "vless";
+  # vlessNode = {
+  #   tag = "vless";
+  #   type = "vless";
+  #   listen = "::";
+  #   listen_port = 443;
+  #   users = [
+  #     {
+  #       inherit (sb.vless) uuid;
+  #       flow = "xtls-rprx-vision";
+  #     }
+  #   ];
+  #   tls = {
+  #     enabled = true;
+  #     alpn = "h2";
+  #     inherit (sb.vless.reality) server_name;
+  #     reality = {
+  #       enabled = true;
+  #       handshake = {
+  #         server = sb.vless.reality.server_name;
+  #         server_port = 443;
+  #       };
+  #       inherit (sb.vless.reality) private_key short_id;
+  #       max_time_difference = "1m0s";
+  #     };
+  #   };
+  # };
+  anytlsNode = {
+    tag = "anytls";
+    type = "anytls";
     listen = "::";
     listen_port = 443;
     users = [
       {
-        inherit (sb.vless) uuid;
-        flow = "xtls-rprx-vision";
+        inherit (sb.anytls) password;
       }
     ];
     tls = {
       enabled = true;
       alpn = "h2";
-      inherit (sb.vless.reality) server_name;
-      reality = {
-        enabled = true;
-        handshake = {
-          server = sb.vless.reality.server_name;
-          server_port = 443;
-        };
-        inherit (sb.vless.reality) private_key short_id;
-        max_time_difference = "1m0s";
+      acme = {
+        domain = "${host}.${secrets.domain}";
+        inherit (sb) dns01_challenge;
       };
     };
   };
@@ -118,7 +137,14 @@ let
       outbound = if isAlice then "socks" else "wireguard";
     }
   ];
-  inbounds = if isOptimized then [ vlessNode ] else [ tuicNode ];
+  inbounds =
+    if isOptimized then
+      [
+        # vlessNode
+        anytlsNode
+      ]
+    else
+      [ tuicNode ];
   outbounds = [ { type = "direct"; } ] ++ (if isAlice then socksNodes else [ ]);
   endpoints = if isIPv6Only then [ wireguardNode ] else [ ];
 in

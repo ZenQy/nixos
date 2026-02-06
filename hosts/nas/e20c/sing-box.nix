@@ -134,6 +134,12 @@ let
         process_name = "AdGuardHome";
         outbound = "direct";
       }
+      # {
+      #   # 手机端开启,可访问家庭内网
+      #   ip_cidr = "10.0.0.0/24";
+      #   network_type = "cellular";
+      #   outbound = "tailscale";
+      # }
       {
         protocol = "dns";
         action = "hijack-dns";
@@ -219,41 +225,52 @@ let
       #   enabled = true;
       #   fingerprint = "safari";
       # };
-      tuicList = [
+      tuicNodes = [
         "wawo"
         "wawo6"
         "alice"
-        "gvuy"
         "osaka-1"
         "sailor"
       ];
-      vlessList = [ ];
-      cloudflareList = builtins.fromJSON (builtins.readFile ./conf/cloudflare.json);
+      # vlessNodes = [ ];
+      anytlsNodes = [ "wapac" ];
+      cloudflareNodes = builtins.fromJSON (builtins.readFile ./conf/cloudflare.json);
     in
     sb.node
+    # ++ map (tag: {
+    #   inherit tag;
+    #   type = "vless";
+    #   server = "${tag}.${secrets.domain}";
+    #   server_port = if tag == "lxc-jp" then 33443 else 443;
+    #   inherit (sb.vless) uuid;
+    #   flow = "xtls-rprx-vision";
+    #   tls = {
+    #     enabled = true;
+    #     alpn = "h2";
+    #     inherit utls;
+    #     inherit (sb.vless.reality) server_name;
+    #     reality = {
+    #       enabled = true;
+    #       inherit (sb.vless.reality) public_key short_id;
+    #     };
+    #   };
+    # }) vlessNodes
     ++ map (tag: {
       inherit tag;
-      type = "vless";
+      type = "anytls";
       server = "${tag}.${secrets.domain}";
-      server_port = 443;
-      inherit (sb.vless) uuid;
-      flow = "xtls-rprx-vision";
+      server_port = if tag == "wapac" then 8443 else 443;
+      inherit (sb.anytls) password;
       tls = {
         enabled = true;
         alpn = "h2";
-        # inherit utls;
-        inherit (sb.vless.reality) server_name;
-        reality = {
-          enabled = true;
-          inherit (sb.vless.reality) public_key short_id;
-        };
       };
-    }) vlessList
+    }) anytlsNodes
     ++ map (tag: {
       inherit tag;
       type = "tuic";
       server = "${tag}.${secrets.domain}";
-      server_port = if tag == "lxc-jp" then 33443 else 443;
+      server_port = 443;
       inherit (sb.tuic) uuid;
       congestion_control = "bbr";
       udp_relay_mode = "native";
@@ -263,7 +280,7 @@ let
         enabled = true;
         alpn = "h3";
       };
-    }) tuicList
+    }) tuicNodes
     ++ map (tag: {
       inherit tag;
       type = "trojan";
@@ -279,17 +296,17 @@ let
         enabled = true;
         server_name = sb.cloudflare.host;
         alpn = "h3";
-        # inherit utls;
       };
-    }) cloudflareList
+    }) cloudflareNodes
     ++ [
       {
         tag = "proxy";
         type = "selector";
         outbounds =
           map (s: s.tag) sb.node
-          ++ vlessList
-          ++ tuicList
+          # ++ vlessNodes
+          ++ anytlsNodes
+          ++ tuicNodes
           ++ [
             "cloudflare"
           ];
@@ -297,13 +314,25 @@ let
       {
         tag = "cloudflare";
         type = "urltest";
-        outbounds = cloudflareList;
+        outbounds = cloudflareNodes;
       }
       {
         tag = "direct";
         type = "direct";
       }
     ];
+  endpoints = [
+    {
+      type = "tailscale";
+      tag = "tailscale";
+      auth_key = sb.tailscale;
+      ephemeral = false;
+      accept_routes = false; # 手机端设置为true,,可访问家庭内网
+      advertise_routes = [ "10.0.0.0/24" ]; # 手机端可删除
+      advertise_exit_node = false;
+      udp_timeout = "5m";
+    }
+  ];
   experimental = {
     cache_file = {
       enabled = true;
@@ -327,6 +356,7 @@ in
         route
         inbounds
         outbounds
+        endpoints
         experimental
         ;
     };

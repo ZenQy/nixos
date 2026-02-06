@@ -1,36 +1,28 @@
 { config, pkgs, ... }:
 
 {
-  networking.nftables =
-    let
-      pppoe = config.systemd.network.networks.pppoe.name;
-      wan = config.systemd.network.networks.wan.name;
-      lan = config.systemd.network.networks.lan.name;
-    in
-    {
-      enable = true;
-      checkRuleset = false;
-      tables = {
+  networking.nftables = {
+    enable = true;
+    checkRuleset = false;
+    tables =
+      let
+        pppoe = config.systemd.network.networks.pppoe.name;
+        wan = config.systemd.network.networks.wan.name;
+        ping6 = "iifname \"${pppoe}\" ip6 nexthdr icmpv6 icmpv6 type echo-request";
+      in
+      {
         filter = {
           family = "inet";
           content = ''
             chain input {
-              type filter hook input priority filter; policy drop;
-              iifname "lo" counter accept
-              ip protocol icmp counter accept
-              ip6 nexthdr icmpv6 counter accept
-              iifname "${pppoe}" udp dport 546 counter accept
-              iifname "${lan}" counter accept
-              iifname "${pppoe}" ct state { established, related } counter accept
+              type filter hook input priority filter; policy accept;
+              ${ping6} limit rate over 5/minute counter drop
             }
             chain forward {
-              type filter hook forward priority filter; policy drop;
+              type filter hook forward priority filter; policy accept;
+              ${ping6} limit rate over 5/minute counter drop
               # 自动设置数据包的mtu大小，否则可能无法加载视频。
               oifname "${pppoe}" tcp flags syn tcp option maxseg size set rt mtu counter
-              ip protocol icmp accept
-              ip6 nexthdr icmpv6 accept
-              iifname "${lan}" oifname "${pppoe}" counter accept
-              iifname "${pppoe}" oifname "${lan}" ct state { established, related } counter accept
             }
           '';
         };
@@ -93,7 +85,7 @@
             '';
         };
       };
-    };
+  };
 
   systemd.services.sing-box.serviceConfig = {
     ExecStartPost =
