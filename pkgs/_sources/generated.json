@@ -79,13 +79,34 @@
         },
         "version": "v2026.02.02"
     },
-    "linux-flippy": {
+    "linux-flippy-612": {
+        "cargoLock": null,
+        "date": "2026-02-07",
+        "extract": {
+            "Makefile": "sha256-fUu91hQpf28nGrFIfMNjxPEavANky4TgOSSRnoGr8JE=/Makefile"
+        },
+        "name": "linux-flippy-612",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "unifreq",
+            "repo": "linux-6.12.y",
+            "rev": "cf31448c797d9aa8304b9f821d957582cfbec386",
+            "sha256": "sha256-fUu91hQpf28nGrFIfMNjxPEavANky4TgOSSRnoGr8JE=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "cf31448c797d9aa8304b9f821d957582cfbec386"
+    },
+    "linux-flippy-618": {
         "cargoLock": null,
         "date": null,
-        "extract": {
-            "Makefile": "sha256-mKeeUSCNPBqJQH9+DVIN9qm363EWg962CdsPnzWI4zE=/Makefile"
-        },
-        "name": "linux-flippy",
+        "extract": null,
+        "name": "linux-flippy-618",
         "passthru": null,
         "pinned": false,
         "src": {

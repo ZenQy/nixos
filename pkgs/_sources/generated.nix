@@ -51,7 +51,21 @@
     };
   };
   linux-flippy-612 = {
-    pname = "linux-flippy";
+    pname = "linux-flippy-612";
+    version = "cf31448c797d9aa8304b9f821d957582cfbec386";
+    src = fetchFromGitHub {
+      owner = "unifreq";
+      repo = "linux-6.12.y";
+      rev = "cf31448c797d9aa8304b9f821d957582cfbec386";
+      fetchSubmodules = false;
+      sha256 = "sha256-fUu91hQpf28nGrFIfMNjxPEavANky4TgOSSRnoGr8JE=";
+    };
+    extract = {
+      Makefile = ./. + "/sha256-fUu91hQpf28nGrFIfMNjxPEavANky4TgOSSRnoGr8JE=/Makefile";
+    };date = "2026-02-07";
+  };
+  linux-flippy-618 = {
+    pname = "linux-flippy-618";
     version = "v6.18.9";
     src = fetchFromGitHub {
       owner = "unifreq";
@@ -59,9 +73,6 @@
       rev = "v6.18.9";
       fetchSubmodules = false;
       sha256 = "sha256-mKeeUSCNPBqJQH9+DVIN9qm363EWg962CdsPnzWI4zE=";
-    };
-    extract = {
-      Makefile = ./. + "/sha256-mKeeUSCNPBqJQH9+DVIN9qm363EWg962CdsPnzWI4zE=/Makefile";
     };
   };
   vitejs = {
