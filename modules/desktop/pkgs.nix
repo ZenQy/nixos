@@ -55,6 +55,7 @@
     telegram-desktop
     hugo
     tio
+    jq
     # mdbook
     # mitmproxy
     # python3

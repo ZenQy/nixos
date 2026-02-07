@@ -63,9 +63,7 @@ jobs:
           mkdir -p ~/.config/nix
           echo "allow-import-from-derivation = true" > ~/.config/nix/nix.conf
           pkgs_old=$(nix flake show --json | jq '.packages."x86_64-linux"')
-          pkgs_list=$(echo $pkgs_old | jq 'keys')
           echo pkgs_old=$pkgs_old >> $GITHUB_ENV
-          echo pkgs_list=$pkgs_list >> $GITHUB_ENV
 
       - name: Run Nix Flake Update
         run: nix flake update
@@ -87,12 +85,15 @@ jobs:
         name: set-matrix
         run: |
           pkgs_new=$(nix flake show --json | jq '.packages."x86_64-linux"')
+          pkgs_list=$(echo $pkgs_new | jq 'keys')
           pkgs=$(echo $pkgs_list | jq -r '.[]')
           for pkg in $pkgs; do
             echo 正在执行$pkg...
             pkg_old=$(echo $pkgs_old | jq ".\"$pkg\".name")
             pkg_new=$(echo $pkgs_new | jq ".\"$pkg\".name")
+            echo "pkg_old: $pkg_old | pkg_new: $pkg_new"
             if [[ $pkg_old == $pkg_new ]]; then
+              echo 此次不更新$pkg...
               pkgs_list=$(echo $pkgs_list | jq "del(.[] | select(. == \"$pkg\"))")
             else
               if [[ -d pkgs/go/$pkg ]]; then
