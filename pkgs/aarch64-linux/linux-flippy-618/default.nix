@@ -11,7 +11,7 @@ let
     match
     replaceStrings
     ;
-  kernelVersion = replaceStrings [ "v." ] [ "" ] source.version;
+  kernelVersion = replaceStrings [ "v" ] [ "" ] source.version;
   kernelBranch = concatStringsSep "." (match "([[:xdigit:]]+)\.([[:xdigit:]]+).*?" kernelVersion);
 in
 
