@@ -20,7 +20,7 @@ src.github = "lin-snow/Ech0"
 fetch.github = "lin-snow/Ech0"
 
 [linux-flippy]
-src.git = "https://github.com/unifreq/linux-6.18.y"
+src.github_tag = "unifreq/linux-6.18.y"
 fetch.github = "unifreq/linux-6.18.y"
 extract = ["Makefile"]
 

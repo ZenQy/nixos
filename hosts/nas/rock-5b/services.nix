@@ -1,10 +1,8 @@
 { pkgs, ... }:
 
 {
-
   zenith.aria2.enable = true;
   zenith.openlist.enable = true;
-  zenith.transmission.enable = true;
   zenith.podman.qd.enable = true;
   zenith.rclone = {
     enable = true;
