@@ -6,7 +6,11 @@
 }:
 
 let
-  inherit (builtins) readFile concatStringsSep match;
+  inherit (builtins)
+    readFile
+    concatStringsSep
+    match
+    ;
   makefile = readFile source.extract.Makefile;
   kernelVersion = concatStringsSep "." (
     match ".*?VERSION = ([[:xdigit:]]+).*?PATCHLEVEL = ([[:xdigit:]]+).*?SUBLEVEL = ([[:xdigit:]]+).*?" makefile
