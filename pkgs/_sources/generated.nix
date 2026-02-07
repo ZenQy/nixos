@@ -50,7 +50,7 @@
       sha256 = "sha256-WyKqBMsWE9qMj53vKQ+1e4lgpHkyycZUC9pRh8trR5M=";
     };
   };
-  linux-flippy = {
+  linux-flippy-612 = {
     pname = "linux-flippy";
     version = "v6.18.9";
     src = fetchFromGitHub {

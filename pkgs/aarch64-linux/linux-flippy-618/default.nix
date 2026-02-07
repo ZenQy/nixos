@@ -5,13 +5,13 @@
   ...
 }:
 
-with builtins;
-
 let
-  makefile = readFile source.extract.Makefile;
-  kernelVersion = concatStringsSep "." (
-    match ".*?VERSION = ([[:xdigit:]]+).*?PATCHLEVEL = ([[:xdigit:]]+).*?SUBLEVEL = ([[:xdigit:]]+).*?" makefile
-  );
+  inherit (builtins)
+    concatStringsSep
+    match
+    replaceStrings
+    ;
+  kernelVersion = replaceStrings [ "v." ] [ "" ] source.version;
   kernelBranch = concatStringsSep "." (match "([[:xdigit:]]+)\.([[:xdigit:]]+).*?" kernelVersion);
 in
 
