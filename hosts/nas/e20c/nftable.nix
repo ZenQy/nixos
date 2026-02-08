@@ -63,6 +63,7 @@
                   type filter hook prerouting priority mangle; policy accept;
 
                   fib daddr type local meta l4proto { tcp, udp } th dport ${toString tproxy_port} counter reject
+                  meta skuid ${user} counter return
 
                   ip6 daddr != fc00::/18 counter return
                   ip saddr {${concatStringsSep ", " source_IP}} counter return
