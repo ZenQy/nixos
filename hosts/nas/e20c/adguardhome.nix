@@ -71,6 +71,13 @@
         "||pscdn.co^"
         "||p.scdn.co^"
       ];
+      filtering.rewrites = [
+        {
+          domain = "*.lan";
+          answer = "10.0.0.12";
+          enabled = true;
+        }
+      ];
     };
   };
 }

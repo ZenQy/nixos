@@ -6,6 +6,8 @@
 
 let
   sb = secrets.sing-box;
+  tproxy_port = 12345;
+  fake_ipv6 = "fc00::/18";
   log = {
     level = "info";
     timestamp = false;
@@ -21,7 +23,7 @@ let
         tag = "dns_fakeip";
         type = "fakeip";
         inet4_range = "198.18.0.0/15";
-        inet6_range = "fc00::/18";
+        inet6_range = fake_ipv6;
       }
     ];
     rules = [
@@ -71,6 +73,7 @@ let
         rules = [
           {
             domain_suffix = [
+              ".lan"
               ".cn"
               ".ip.zstaticcdn.com"
               "10155.com"
@@ -125,6 +128,20 @@ let
         url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs";
         download_detour = "proxy";
       }
+      {
+        tag = "geosite-openai";
+        type = "remote";
+        format = "binary";
+        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-openai.srs";
+        download_detour = "proxy";
+      }
+      {
+        tag = "geosite-google-gemini";
+        type = "remote";
+        format = "binary";
+        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google-gemini.srs";
+        download_detour = "proxy";
+      }
     ];
     rules = [
       {
@@ -172,6 +189,14 @@ let
         ];
         outbound = "direct";
       }
+      {
+        rule_set = "geosite-openai";
+        outbound = "openai";
+      }
+      {
+        rule_set = "geosite-google-gemini";
+        outbound = "gemini";
+      }
     ];
     final = "proxy";
     auto_detect_interface = true;
@@ -215,57 +240,46 @@ let
       tag = "tproxy";
       type = "tproxy";
       listen = "::";
-      listen_port = 12345;
+      listen_port = tproxy_port;
       tcp_fast_open = true;
     }
   ];
   outbounds =
     let
-      # utls = {
-      #   enabled = true;
-      #   fingerprint = "safari";
-      # };
-      tuicNodes = [
+      openai-nodes = [
+        "lc-us"
+        "osaka-1"
+        "sailor"
+      ];
+      gemini-nodes = [
+        "wawo"
+        "wapac"
+        "osaka-1"
+        "sailor"
+      ];
+      tuic-nodes = [
         "wawo"
         "wawo6"
+        "wapac"
         "alice"
         "osaka-1"
         "sailor"
       ];
-      # vlessNodes = [ ];
-      anytlsNodes = [ "wapac" ];
-      cloudflareNodes = builtins.fromJSON (builtins.readFile ./conf/cloudflare.json);
+      anytls-nodes = [ "lc-us" ];
+      cloudflare-nodes = builtins.fromJSON (builtins.readFile ./conf/cloudflare.json);
     in
     sb.node
-    # ++ map (tag: {
-    #   inherit tag;
-    #   type = "vless";
-    #   server = "${tag}.${secrets.domain}";
-    #   server_port = if tag == "lxc-jp" then 33443 else 443;
-    #   inherit (sb.vless) uuid;
-    #   flow = "xtls-rprx-vision";
-    #   tls = {
-    #     enabled = true;
-    #     alpn = "h2";
-    #     inherit utls;
-    #     inherit (sb.vless.reality) server_name;
-    #     reality = {
-    #       enabled = true;
-    #       inherit (sb.vless.reality) public_key short_id;
-    #     };
-    #   };
-    # }) vlessNodes
     ++ map (tag: {
       inherit tag;
       type = "anytls";
       server = "${tag}.${secrets.domain}";
-      server_port = if tag == "wapac" then 8443 else 443;
+      server_port = if tag == "lc-us" then 42108 else 443;
       inherit (sb.anytls) password;
       tls = {
         enabled = true;
         alpn = "h2";
       };
-    }) anytlsNodes
+    }) anytls-nodes
     ++ map (tag: {
       inherit tag;
       type = "tuic";
@@ -280,7 +294,7 @@ let
         enabled = true;
         alpn = "h3";
       };
-    }) tuicNodes
+    }) tuic-nodes
     ++ map (tag: {
       inherit tag;
       type = "trojan";
@@ -297,16 +311,15 @@ let
         server_name = sb.cloudflare.host;
         alpn = "h3";
       };
-    }) cloudflareNodes
+    }) cloudflare-nodes
     ++ [
       {
         tag = "proxy";
         type = "selector";
         outbounds =
           map (s: s.tag) sb.node
-          # ++ vlessNodes
-          ++ anytlsNodes
-          ++ tuicNodes
+          ++ anytls-nodes
+          ++ tuic-nodes
           ++ [
             "cloudflare"
           ];
@@ -314,7 +327,17 @@ let
       {
         tag = "cloudflare";
         type = "urltest";
-        outbounds = cloudflareNodes;
+        outbounds = cloudflare-nodes;
+      }
+      {
+        tag = "openai";
+        type = "selector";
+        outbounds = openai-nodes;
+      }
+      {
+        tag = "gemini";
+        type = "selector";
+        outbounds = gemini-nodes;
       }
       {
         tag = "direct";
@@ -361,4 +384,83 @@ in
         ;
     };
   };
+
+  systemd.services.sing-box.serviceConfig =
+    let
+      table = "proxy";
+      ip = "${pkgs.iproute2}/bin/ip";
+      nft = "${pkgs.nftables}/bin/nft";
+      fwmark = 1;
+      tableID = 100;
+      ip_rule = "fwmark ${toString fwmark} lookup ${toString tableID}";
+      ip_route = "local default dev lo table ${toString tableID}";
+    in
+    {
+      ExecStartPost =
+        let
+          inherit (builtins) concatStringsSep;
+          reserved_IP = [
+            "127.0.0.0/8"
+            "10.0.0.0/16"
+            "192.168.0.0/16"
+            "100.64.0.0/10"
+            "169.254.0.0/16"
+            "172.16.0.0/12"
+            "224.0.0.0/4"
+            "240.0.0.0/4"
+            "255.255.255.255/32"
+          ];
+          source_IP = [ "10.0.0.128/25" ];
+          user = "sing-box";
+          ruleset =
+            chain:
+            map (rule: "${nft} add rule inet ${table} ${chain} ${rule}") (
+              [
+                "fib daddr type local meta l4proto { tcp, udp } th dport ${toString tproxy_port} counter reject"
+                "ip6 daddr != ${fake_ipv6} counter return"
+                "ip daddr { ${concatStringsSep ", " reserved_IP} } counter return"
+              ]
+              ++ (
+                if chain == "prerouting" then
+                  [
+                    "ip saddr { ${concatStringsSep ", " source_IP} } counter return"
+                    "meta l4proto { tcp, udp } counter tproxy to :${toString tproxy_port} meta mark set ${toString fwmark}"
+                  ]
+                else
+                  [
+                    "meta skuid ${user} counter return"
+                    "meta l4proto { tcp, udp } counter meta mark set ${toString fwmark}"
+                  ]
+              )
+            );
+
+          script = pkgs.writeShellScript "sing-box-post-start" ''
+            ${ip} rule add ${ip_rule}
+            ${ip} -6 rule add ${ip_rule}
+            ${ip} route add ${ip_route}
+            ${ip} -6 route add ${ip_route}
+
+            ${nft} add table inet ${table}
+            ${nft} add chain inet ${table} prerouting { type filter hook prerouting priority mangle \; policy accept \; }
+            ${nft} add chain inet ${table} output { type route hook output priority mangle \; policy accept \; }
+
+            ${concatStringsSep "\n" (ruleset "prerouting")}
+
+            ${concatStringsSep "\n" (ruleset "output")}
+          '';
+        in
+        "+${script}";
+      ExecStopPost =
+        let
+          script = pkgs.writeShellScript "sing-box-post-stop" ''
+            ${ip} rule del ${ip_rule}
+            ${ip} -6 rule del ${ip_rule}
+            ${ip} route del ${ip_route}
+            ${ip} -6 route del ${ip_route}
+
+            ${nft} delete table inet ${table}
+          '';
+        in
+        "+${script}";
+    };
 }
