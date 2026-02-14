@@ -75,11 +75,24 @@ jobs:
           nix eval -f _sources/generated.nix
           cd ../
 
-      - name: Run Nix Flake Check
-        run: nix flake check || true
-
       - name: Build nix-update CLI
         run: nix build github:Mic92/nix-update
+
+      - name: Download Files
+        run: |
+          curl '${{ secrets.CLOUDFLARE_URL }}' | \
+            jq '.outbounds[] | select(.server) | .server' | \
+            jq -s 'unique' > cloudflare.json
+          mv cloudflare.json hosts/nas/e20c/conf/cloudflare.json
+
+          wget https://raw.githubusercontent.com/XIU2/TrackersListCollection/refs/heads/master/best_aria2.txt
+          mv best_aria2.txt modules/nas/conf/aria2.txt
+
+      - name: Git Add
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .
 
       - id: set-matrix
         name: set-matrix
@@ -112,20 +125,8 @@ jobs:
           echo $pkgs_list
           echo "matrix=$(echo $pkgs_list)" >> $GITHUB_OUTPUT
 
-      - name: Download Files
-        run: |
-          curl '${{ secrets.CLOUDFLARE_URL }}' | \
-            jq '.outbounds[] | select(.server) | .server' | \
-            jq -s 'unique' > cloudflare.json
-          mv cloudflare.json hosts/nas/e20c/conf/cloudflare.json
-
-          wget https://raw.githubusercontent.com/XIU2/TrackersListCollection/refs/heads/master/best_aria2.txt
-          mv best_aria2.txt modules/nas/conf/aria2.txt
-
       - name: Commit and Push
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add .
           git commit -m "Update dependencies - Automated Commit"
           git push
