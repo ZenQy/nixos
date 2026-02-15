@@ -83,7 +83,8 @@ jobs:
           curl '${{ secrets.CLOUDFLARE_URL }}' | \
             jq '.outbounds[] | select(.server) | .server' | \
             jq -s 'unique' > cloudflare.json
-          mv cloudflare.json hosts/nas/e20c/conf/cloudflare.json
+          sed -i 's/,//g' cloudflare.json
+          mv cloudflare.json hosts/nas/e20c/sing-box/cloudflare.nix
 
           wget https://raw.githubusercontent.com/XIU2/TrackersListCollection/refs/heads/master/best_aria2.txt
           mv best_aria2.txt modules/nas/conf/aria2.txt

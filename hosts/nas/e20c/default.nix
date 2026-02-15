@@ -7,7 +7,7 @@
     ./hardware.nix
     ./network.nix
     ./nftable.nix
-    ./sing-box.nix
+    ./sing-box
   ];
 
   services.ntpd-rs.enable = true;

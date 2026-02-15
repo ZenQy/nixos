@@ -246,27 +246,12 @@ let
   ];
   outbounds =
     let
-      openai-nodes = [
-        "lc-us"
-        "osaka-1"
-        "sailor"
-      ];
-      gemini-nodes = [
-        "wawo"
-        "wapac"
-        "osaka-1"
-        "sailor"
-      ];
-      tuic-nodes = [
-        "wawo"
-        "wawo6"
-        "wapac"
-        "alice"
-        "osaka-1"
-        "sailor"
-      ];
-      anytls-nodes = [ "lc-us" ];
-      cloudflare-nodes = builtins.fromJSON (builtins.readFile ./conf/cloudflare.json);
+      nodes = import ./nodes.nix;
+      openai-nodes = nodes.openai;
+      gemini-nodes = nodes.gemini;
+      tuic-nodes = nodes.tuic;
+      anytls-nodes = nodes.anytls;
+      cloudflare-nodes = import ./cloudflare.nix;
     in
     sb.node
     ++ map (tag: {
@@ -350,7 +335,7 @@ let
       tag = "tailscale";
       auth_key = sb.tailscale;
       ephemeral = false;
-      accept_routes = false; # 手机端设置为true,,可访问家庭内网
+      accept_routes = false; # 手机端设置为true,可访问家庭内网
       advertise_routes = [ "10.0.0.0/24" ]; # 手机端可删除
       advertise_exit_node = false;
       udp_timeout = "5m";
@@ -370,6 +355,7 @@ let
 
 in
 {
+
   services.sing-box = {
     enable = true;
     settings = {
@@ -385,82 +371,9 @@ in
     };
   };
 
-  systemd.services.sing-box.serviceConfig =
-    let
-      table = "proxy";
-      ip = "${pkgs.iproute2}/bin/ip";
-      nft = "${pkgs.nftables}/bin/nft";
-      fwmark = 1;
-      tableID = 100;
-      ip_rule = "fwmark ${toString fwmark} lookup ${toString tableID}";
-      ip_route = "local default dev lo table ${toString tableID}";
-    in
-    {
-      ExecStartPost =
-        let
-          inherit (builtins) concatStringsSep;
-          reserved_IP = [
-            "127.0.0.0/8"
-            "10.0.0.0/16"
-            "192.168.0.0/16"
-            "100.64.0.0/10"
-            "169.254.0.0/16"
-            "172.16.0.0/12"
-            "224.0.0.0/4"
-            "240.0.0.0/4"
-            "255.255.255.255/32"
-          ];
-          source_IP = [ "10.0.0.128/25" ];
-          user = "sing-box";
-          ruleset =
-            chain:
-            map (rule: "${nft} add rule inet ${table} ${chain} ${rule}") (
-              [
-                "fib daddr type local meta l4proto { tcp, udp } th dport ${toString tproxy_port} counter reject"
-                "ip6 daddr != ${fake_ipv6} counter return"
-                "ip daddr { ${concatStringsSep ", " reserved_IP} } counter return"
-              ]
-              ++ (
-                if chain == "prerouting" then
-                  [
-                    "ip saddr { ${concatStringsSep ", " source_IP} } counter return"
-                    "meta l4proto { tcp, udp } counter tproxy to :${toString tproxy_port} meta mark set ${toString fwmark}"
-                  ]
-                else
-                  [
-                    "meta skuid ${user} counter return"
-                    "meta l4proto { tcp, udp } counter meta mark set ${toString fwmark}"
-                  ]
-              )
-            );
+  systemd.services.sing-box.serviceConfig = import ./service.nix {
+    inherit pkgs fake_ipv6;
+    tproxy_port = toString tproxy_port;
+  };
 
-          script = pkgs.writeShellScript "sing-box-post-start" ''
-            ${ip} rule add ${ip_rule}
-            ${ip} -6 rule add ${ip_rule}
-            ${ip} route add ${ip_route}
-            ${ip} -6 route add ${ip_route}
-
-            ${nft} add table inet ${table}
-            ${nft} add chain inet ${table} prerouting { type filter hook prerouting priority mangle \; policy accept \; }
-            ${nft} add chain inet ${table} output { type route hook output priority mangle \; policy accept \; }
-
-            ${concatStringsSep "\n" (ruleset "prerouting")}
-
-            ${concatStringsSep "\n" (ruleset "output")}
-          '';
-        in
-        "+${script}";
-      ExecStopPost =
-        let
-          script = pkgs.writeShellScript "sing-box-post-stop" ''
-            ${ip} rule del ${ip_rule}
-            ${ip} -6 rule del ${ip_rule}
-            ${ip} route del ${ip_route}
-            ${ip} -6 route del ${ip_route}
-
-            ${nft} delete table inet ${table}
-          '';
-        in
-        "+${script}";
-    };
 }
