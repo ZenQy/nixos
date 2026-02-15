@@ -73,7 +73,6 @@ let
         rules = [
           {
             domain_suffix = [
-              ".lan"
               ".cn"
               ".ip.zstaticcdn.com"
               "10155.com"

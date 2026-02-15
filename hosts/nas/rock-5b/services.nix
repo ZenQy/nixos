@@ -29,41 +29,19 @@
   services.caddy = {
     enable = true;
     extraConfig = ''
-      http://aria.lan {
+      :6868 {
         root * ${pkgs.ariang}/share/ariang
         file_server browse
       }
 
-      http://file.lan {
+      :8080 {
         root * /storage
         file_server browse
       }
 
-      http://dns.lan {
-        reverse_proxy 10.0.0.1:3000
-      }
-
-      http://sb.lan {
-        reverse_proxy 10.0.0.1:9090
-      }
-
-      http://bt.lan {
-        reverse_proxy 10.0.0.15:9091 {
-          header_up Host localhost
-        }
-      }
-
-      pan.lan {
+      10.0.0.12 {
         tls internal
         reverse_proxy :5244
-      }
-
-      http://pan1.lan {
-        reverse_proxy :5244
-      }
-
-      http://pan2.lan {
-        reverse_proxy 10.0.0.15:5244
       }
     '';
   };
