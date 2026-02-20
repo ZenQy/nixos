@@ -28,6 +28,7 @@
     let
       nc = {
         DHCP = "ipv6";
+        NTP = "ntp.aliyun.com";
         # IPv6AcceptRA = false;
         # LinkLocalAddressing = false;
       };

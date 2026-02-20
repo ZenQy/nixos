@@ -1,4 +1,4 @@
-{ secrets, ... }:
+{ config, secrets, ... }:
 
 {
   imports = [
@@ -7,16 +7,12 @@
 
   systemd.network.networks.default = {
     name = "eth0";
-    address = [
-      secrets.hosts.sailor.ipv4.ip
-      secrets.hosts.sailor.ipv6.ip
-    ];
-    routes = [
-      { Gateway = secrets.hosts.sailor.ipv4.gateway; }
+    networkConfig =
+      let
+        host = config.networking.hostName;
+      in
       {
-        Gateway = secrets.hosts.sailor.ipv6.gateway;
-        GatewayOnLink = true;
-      }
-    ];
+        inherit (secrets.hosts."${host}") Address Gateway;
+      };
   };
 }

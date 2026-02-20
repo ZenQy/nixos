@@ -1,4 +1,4 @@
-{ secrets, ... }:
+{ config, secrets, ... }:
 
 {
   imports = [
@@ -8,11 +8,14 @@
 
   systemd.network.networks.default = {
     name = "eth0";
-    networkConfig = {
-      Address = secrets.hosts.rock-5b.ipv4.ip;
-      Gateway = secrets.hosts.rock-5b.ipv4.gateway;
-      DHCP = "ipv6";
-    };
+    networkConfig =
+      let
+        host = config.networking.hostName;
+      in
+      {
+        inherit (secrets.hosts."${host}") Address Gateway;
+        DHCP = "ipv6";
+      };
   };
 
 }

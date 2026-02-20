@@ -257,7 +257,7 @@ let
       inherit tag;
       type = "anytls";
       server = "${tag}.${secrets.domain}";
-      server_port = if tag == "lc-us" then 42108 else 443;
+      server_port = 443;
       inherit (sb.anytls) password;
       tls = {
         enabled = true;

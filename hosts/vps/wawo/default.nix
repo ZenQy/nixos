@@ -1,4 +1,4 @@
-{ secrets, ... }:
+{ config, secrets, ... }:
 
 {
   imports = [
@@ -7,17 +7,13 @@
 
   systemd.network.networks.default = {
     name = "eth0";
-    address = [
-      secrets.hosts.wawo.ipv4.ip
-      secrets.hosts.wawo.ipv6.ip
-    ];
-    routes = [
-      { Gateway = secrets.hosts.wawo.ipv4.gateway; }
+    networkConfig =
+      let
+        host = config.networking.hostName;
+      in
       {
-        Gateway = secrets.hosts.wawo.ipv6.gateway;
-        GatewayOnLink = true;
-      }
-    ];
+        inherit (secrets.hosts."${host}") Address Gateway;
+      };
   };
 
 }

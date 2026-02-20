@@ -10,22 +10,26 @@
       };
     };
 
-    lan = {
-      name = "eth0";
-      networkConfig = {
-        Address = secrets.hosts.e20c.ipv4.ip;
-        DHCP = "ipv6";
-        DHCPPrefixDelegation = true; # 自动选择第一个有 PD 的链路, 并获得子网前缀
-        IPv6SendRA = true; # 会自动关闭 IPv6AcceptRA 并打开 IPv6Forwarding
-        DHCPServer = true;
+    lan =
+      let
+        host = config.networking.hostName;
+      in
+      {
+        name = "eth0";
+        networkConfig = {
+          inherit (secrets.hosts."${host}") Address;
+          DHCP = "ipv6";
+          DHCPPrefixDelegation = true; # 自动选择第一个有 PD 的链路, 并获得子网前缀
+          IPv6SendRA = true; # 会自动关闭 IPv6AcceptRA 并打开 IPv6Forwarding
+          DHCPServer = true;
+        };
+        dhcpServerConfig = {
+          PoolOffset = 150;
+          PoolSize = 100;
+          EmitDNS = true;
+          DNS = secrets.hosts."${host}".Gateway;
+        };
       };
-      dhcpServerConfig = {
-        PoolOffset = 150;
-        PoolSize = 100;
-        EmitDNS = true;
-        DNS = secrets.hosts.e20c.ipv4.gateway;
-      };
-    };
 
     pppoe = {
       name = "ppp0";
