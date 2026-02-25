@@ -4,6 +4,7 @@
   zenith.aria2.enable = true;
   zenith.openlist.enable = true;
   zenith.podman.qd.enable = true;
+  zenith.podman.qinglong.enable = true;
   zenith.rclone = {
     enable = true;
     path = [
@@ -25,7 +26,6 @@
     ];
   };
 
-  services.flaresolverr.enable = true;
   services.caddy = {
     enable = true;
     extraConfig = ''

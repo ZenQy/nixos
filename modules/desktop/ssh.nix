@@ -17,7 +17,7 @@ in
           mapAttrs (k: v: ''
             Host ${k}
               HostName ${v.ip}
-              User root
+              User nixos
               Port ${toString v.port}
           '') hosts
         )

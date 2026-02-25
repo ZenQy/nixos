@@ -9,7 +9,7 @@ let
   tproxy_port = 12345;
   fake_ipv6 = "fc00::/18";
   log = {
-    level = "info";
+    level = "warn";
     timestamp = false;
   };
   dns = {

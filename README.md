@@ -24,5 +24,4 @@ echo $settings | \
   jq "del(.endpoints.[].advertise_routes)" | \
   jq "del(.experimental.clash_api)" \
   > sing-box.json
-
 ```

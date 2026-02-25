@@ -18,6 +18,11 @@ in
       default = false;
       description = "是否启用qd";
     };
+    qinglong.enable = mkOption {
+      type = types.bool;
+      default = false;
+      description = "是否启用青龙";
+    };
     traffmonetizer.enable = mkOption {
       type = types.bool;
       default = false;
@@ -33,6 +38,16 @@ in
           image = "qdtoday/qd:lite-latest";
           ports = [ "8923:80" ];
           volumes = [ "qd:/usr/src/app/config" ];
+        };
+      };
+    })
+    (mkIf cfg.qinglong.enable {
+      virtualisation.oci-containers.containers = {
+        qinglong = {
+          autoStart = true;
+          image = "whyour/qinglong:latest";
+          ports = [ "5700:5700" ];
+          volumes = [ "qinglong:/ql/data" ];
         };
       };
     })
