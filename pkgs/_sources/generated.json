@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v3.1.2",
-            "sha256": "sha256-lv7FexabILW+YdNWVLkOBFsOOh+LlpYBtSO7Ef4vwpI=",
+            "rev": "v3.1.4",
+            "sha256": "sha256-Vc6eJQG4ub3YmXAz4DgMtXxcBIbkyvIn37cJjKK0u7k=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.1.2"
+        "version": "v3.1.4"
     },
     "Ech0-frontend": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v3.1.2",
-            "sha256": "sha256-lv7FexabILW+YdNWVLkOBFsOOh+LlpYBtSO7Ef4vwpI=",
+            "rev": "v3.1.4",
+            "sha256": "sha256-Vc6eJQG4ub3YmXAz4DgMtXxcBIbkyvIn37cJjKK0u7k=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.1.2"
+        "version": "v3.1.4"
     },
     "einat": {
         "cargoLock": null,
@@ -73,17 +73,17 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-WyKqBMsWE9qMj53vKQ+1e4lgpHkyycZUC9pRh8trR5M=",
+            "sha256": "sha256-BwlhWSJWPkqHfOm3whLtdEAs0AXlskW4rA8q8p4aTj0=",
             "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2026.02.02/zenith.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2026.03.02/zenith.dict"
         },
-        "version": "v2026.02.02"
+        "version": "v2026.03.02"
     },
     "linux-flippy-612": {
         "cargoLock": null,
-        "date": "2026-02-23",
+        "date": "2026-03-06",
         "extract": {
-            "Makefile": "sha256-sdwJWqQKFaRHe0EdYu6lKrP3Q0UhELuZl6rNZR1UaQs=/Makefile"
+            "Makefile": "sha256-lRiRIBIS7UxUDYXigOduauQ0O9d7JQ8+zgndH8xfQAI=/Makefile"
         },
         "name": "linux-flippy-612",
         "passthru": null,
@@ -95,12 +95,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.12.y",
-            "rev": "9df2bbcbe74163b4c06183f1d8cc59d19299dbae",
-            "sha256": "sha256-sdwJWqQKFaRHe0EdYu6lKrP3Q0UhELuZl6rNZR1UaQs=",
+            "rev": "a8c72df06df9b8f5e0ca8e88e54eea9b9bf7208c",
+            "sha256": "sha256-lRiRIBIS7UxUDYXigOduauQ0O9d7JQ8+zgndH8xfQAI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9df2bbcbe74163b4c06183f1d8cc59d19299dbae"
+        "version": "a8c72df06df9b8f5e0ca8e88e54eea9b9bf7208c"
     },
     "linux-flippy-618": {
         "cargoLock": null,
@@ -116,12 +116,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.13",
-            "sha256": "sha256-JP8C4QZ1TkBSJZdH1WdU0N55w/5Xiyj+iQYjgxr5f8A=",
+            "rev": "v6.18.16",
+            "sha256": "sha256-e2Zh7pGhlPEpmd/UFXT67tN6WjHzbZMIEoFXdK8zGYA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.13"
+        "version": "v6.18.16"
     },
     "vitejs": {
         "cargoLock": null,
@@ -153,10 +153,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-oabAnifY5lZMnuKN43bTVbMzD4lwDK7/y48uGR9Oc24=",
+            "sha256": "sha256-9G/vXsvbpOuQRRbYMsUySWOTLzpMmmiZGrhHpv9kkdc=",
             "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.02.03/wallpaper.tar.gz"
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.03.03/wallpaper.tar.gz"
         },
-        "version": "v2026.02.03"
+        "version": "v2026.03.03"
     }
 }
