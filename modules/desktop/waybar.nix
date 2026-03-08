@@ -141,7 +141,7 @@ let
         "󰕾"
       ];
       on-click = "${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
-      on-click-right = "${pkgs.helvum}/bin/helvum";
+      on-click-right = "${pkgs.crosspipe}/bin/crosspipe";
       max-volume = 100.0;
       scroll-step = 1.0;
     };

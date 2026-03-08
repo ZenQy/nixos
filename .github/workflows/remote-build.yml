@@ -16,6 +16,8 @@ on:
           - sailor
           - wawo
           - wawo6
+          - bitsflow
+          - gcloud
         required: false
         default: all
 
@@ -42,7 +44,7 @@ jobs:
         run: |
           hosts='[ "${{ inputs.hosts }}" ]'
           if [[ "${{ inputs.hosts }}" == 'all' || "${{ inputs.hosts }}" == '' ]]; then
-            hosts='[ "osaka-1", "osaka-2", "alice", "sailor", "wawo", "wawo6"]'
+            hosts='[ "osaka-1", "osaka-2", "alice", "sailor", "wawo", "wawo6", "bitsflow", "gcloud"]'
           fi
           echo $hosts
           echo "matrix=$(echo $hosts)" >> $GITHUB_OUTPUT
