@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v4.0.1";
+    version = "v4.0.2";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.0.1";
+      rev = "v4.0.2";
       fetchSubmodules = false;
-      sha256 = "sha256-5p9fJeiUNPl4LmU7PlgWzLl5akpoKAPL3xIRRQlGL+4=";
+      sha256 = "sha256-3T+XNBiHMUCG5Bie/uYymZNT/lnordBpPNPjrsfz8ic=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v4.0.1";
+    version = "v4.0.2";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.0.1";
+      rev = "v4.0.2";
       fetchSubmodules = false;
-      sha256 = "sha256-5p9fJeiUNPl4LmU7PlgWzLl5akpoKAPL3xIRRQlGL+4=";
+      sha256 = "sha256-3T+XNBiHMUCG5Bie/uYymZNT/lnordBpPNPjrsfz8ic=";
     };
   };
   einat = {
