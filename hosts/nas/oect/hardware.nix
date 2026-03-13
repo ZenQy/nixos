@@ -22,7 +22,7 @@
       "console=ttyS0,1500000"
       "console=tty0"
     ];
-    kernelPackages = pkgs.linuxPackagesFor pkgs.linux-flippy-612;
+    kernelPackages = pkgs.linuxPackagesFor pkgs.linux-flippy-618;
   };
 
   fileSystems =

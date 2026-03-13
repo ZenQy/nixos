@@ -3,14 +3,14 @@
   tuic = [
     "bitsflow"
     "wawo"
-    "wawo6"
-    "wapac"
     "alice"
     "osaka-1"
     "sailor"
     "gcloud"
   ];
-  anytls = [ ];
+  anytls = [
+    "lxc"
+  ];
 
   # 分流节点,必须存在于代理节点中
   openai = [
@@ -22,7 +22,6 @@
   gemini = [
     "bitsflow"
     "wawo"
-    "wapac"
     "osaka-1"
     "sailor"
     "gcloud"

@@ -4,7 +4,7 @@
 
   systemd.network.networks = {
     wan = {
-      name = "eth1";
+      name = "eth0";
       networkConfig = {
         Address = "192.168.1.11/24";
       };
@@ -15,7 +15,7 @@
         host = config.networking.hostName;
       in
       {
-        name = "eth0";
+        name = "eth1";
         networkConfig = {
           inherit (secrets.hosts."${host}") Address;
           DHCP = "ipv6";
