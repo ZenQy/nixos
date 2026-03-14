@@ -252,7 +252,7 @@ let
       anytls-nodes = nodes.anytls;
       cloudflare-nodes = import ./cloudflare.nix;
     in
-    sb.node
+    sb.nodes
     ++ map (tag: {
       inherit tag;
       type = "anytls";
@@ -301,7 +301,7 @@ let
         tag = "proxy";
         type = "selector";
         outbounds =
-          map (s: s.tag) sb.node
+          map (s: s.tag) sb.nodes
           ++ anytls-nodes
           ++ tuic-nodes
           ++ [
