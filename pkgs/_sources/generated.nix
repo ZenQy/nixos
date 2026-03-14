@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v4.0.2";
+    version = "v4.1.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.0.2";
+      rev = "v4.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-3T+XNBiHMUCG5Bie/uYymZNT/lnordBpPNPjrsfz8ic=";
+      sha256 = "sha256-BlHXm1pHfZZPCX4i7c6c+jhJLIDLrP0FN2djBrzgUYg=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v4.0.2";
+    version = "v4.1.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.0.2";
+      rev = "v4.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-3T+XNBiHMUCG5Bie/uYymZNT/lnordBpPNPjrsfz8ic=";
+      sha256 = "sha256-BlHXm1pHfZZPCX4i7c6c+jhJLIDLrP0FN2djBrzgUYg=";
     };
   };
   einat = {
@@ -52,27 +52,27 @@
   };
   linux-flippy-612 = {
     pname = "linux-flippy-612";
-    version = "7be902aa2d6501fccada31f913c9f96832df2450";
+    version = "2299d9afed1ba2501d2b9bf2cc9f9135661ed901";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "7be902aa2d6501fccada31f913c9f96832df2450";
+      rev = "2299d9afed1ba2501d2b9bf2cc9f9135661ed901";
       fetchSubmodules = false;
-      sha256 = "sha256-FNq81EtgA5rYtPquR0SU1feyWyDXEU8zRCUY8Bdsq24=";
+      sha256 = "sha256-uT2TMiki9meY5tVrJajVWBUB598guXFTwaagP3sBF7I=";
     };
     extract = {
-      Makefile = ./. + "/sha256-FNq81EtgA5rYtPquR0SU1feyWyDXEU8zRCUY8Bdsq24=/Makefile";
-    };date = "2026-03-13";
+      Makefile = ./. + "/sha256-uT2TMiki9meY5tVrJajVWBUB598guXFTwaagP3sBF7I=/Makefile";
+    };date = "2026-03-14";
   };
   linux-flippy-618 = {
     pname = "linux-flippy-618";
-    version = "v6.18.17";
+    version = "v6.18.18";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.17";
+      rev = "v6.18.18";
       fetchSubmodules = false;
-      sha256 = "sha256-7Bt9Tup2CPj+5lfolmO2dsQLwmDveq/Ob9Gyu1HAoRk=";
+      sha256 = "sha256-KOtP4e6XSba6HwG67S0chDA/4MXgnyzBRQAIWBsAwdk=";
     };
   };
   vitejs = {
