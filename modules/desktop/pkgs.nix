@@ -36,7 +36,7 @@
     wget
     # axel
     # rsync
-    # youtube-dl
+    yt-dlp
     # you-get
 
     ## Editor ##
