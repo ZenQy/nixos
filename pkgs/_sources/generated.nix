@@ -52,17 +52,17 @@
   };
   linux-flippy-612 = {
     pname = "linux-flippy-612";
-    version = "5afe8bbf430f1c40abcda756e179531f0f32e134";
+    version = "7d5165f886ed1cf22458eab7db9f8ab93613c051";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.12.y";
-      rev = "5afe8bbf430f1c40abcda756e179531f0f32e134";
+      rev = "7d5165f886ed1cf22458eab7db9f8ab93613c051";
       fetchSubmodules = false;
-      sha256 = "sha256-Je2KOGqHavAOQWDpYXM21LlN8aPqftboowFA3zAC6lU=";
+      sha256 = "sha256-VHwdxs45UHNTI2U/JMP368lC0qbh7o2ALPlIliOjyY8=";
     };
     extract = {
-      Makefile = ./. + "/sha256-Je2KOGqHavAOQWDpYXM21LlN8aPqftboowFA3zAC6lU=/Makefile";
-    };date = "2026-03-20";
+      Makefile = ./. + "/sha256-VHwdxs45UHNTI2U_JMP368lC0qbh7o2ALPlIliOjyY8=/Makefile";
+    };date = "2026-03-21";
   };
   linux-flippy-618 = {
     pname = "linux-flippy-618";

@@ -81,9 +81,9 @@
     },
     "linux-flippy-612": {
         "cargoLock": null,
-        "date": "2026-03-20",
+        "date": "2026-03-21",
         "extract": {
-            "Makefile": "sha256-Je2KOGqHavAOQWDpYXM21LlN8aPqftboowFA3zAC6lU=/Makefile"
+            "Makefile": "sha256-VHwdxs45UHNTI2U_JMP368lC0qbh7o2ALPlIliOjyY8=/Makefile"
         },
         "name": "linux-flippy-612",
         "passthru": null,
@@ -95,12 +95,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.12.y",
-            "rev": "5afe8bbf430f1c40abcda756e179531f0f32e134",
-            "sha256": "sha256-Je2KOGqHavAOQWDpYXM21LlN8aPqftboowFA3zAC6lU=",
+            "rev": "7d5165f886ed1cf22458eab7db9f8ab93613c051",
+            "sha256": "sha256-VHwdxs45UHNTI2U/JMP368lC0qbh7o2ALPlIliOjyY8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5afe8bbf430f1c40abcda756e179531f0f32e134"
+        "version": "7d5165f886ed1cf22458eab7db9f8ab93613c051"
     },
     "linux-flippy-618": {
         "cargoLock": null,
