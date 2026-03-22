@@ -41,43 +41,28 @@
         },
         "version": "v4.1.6"
     },
-    "einat": {
-        "cargoLock": null,
-        "date": null,
-        "extract": {
-            "Cargo.lock": "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=/Cargo.lock"
-        },
-        "name": "einat",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "EHfive",
-            "repo": "einat-ebpf",
-            "rev": "v0.1.10",
-            "sha256": "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v0.1.10"
+    "version": "v4.1.0"
+  },
+  "einat": {
+    "cargoLock": null,
+    "date": null,
+    "extract": {
+      "Cargo.lock": "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=/Cargo.lock"
     },
-    "fcitx5-pinyin-zenith": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "fcitx5-pinyin-zenith",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-BwlhWSJWPkqHfOm3whLtdEAs0AXlskW4rA8q8p4aTj0=",
-            "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2026.03.02/zenith.dict"
-        },
-        "version": "v2026.03.02"
+    "name": "einat",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "EHfive",
+      "repo": "einat-ebpf",
+      "rev": "v0.1.10",
+      "sha256": "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=",
+      "sparseCheckout": [],
+      "type": "github"
     },
     "linux-flippy-612": {
         "cargoLock": null,
@@ -144,19 +129,63 @@
         },
         "version": "v8.0.1"
     },
-    "wallpapers": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "wallpapers",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-9G/vXsvbpOuQRRbYMsUySWOTLzpMmmiZGrhHpv9kkdc=",
-            "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.03.03/wallpaper.tar.gz"
-        },
-        "version": "v2026.03.03"
-    }
+    "version": "2299d9afed1ba2501d2b9bf2cc9f9135661ed901"
+  },
+  "linux-flippy": {
+    "cargoLock": null,
+    "date": null,
+    "extract": null,
+    "name": "linux-flippy",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "unifreq",
+      "repo": "linux-6.18.y",
+      "rev": "v6.18.18",
+      "sha256": "sha256-KOtP4e6XSba6HwG67S0chDA/4MXgnyzBRQAIWBsAwdk=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "v6.18.18"
+  },
+  "vitejs": {
+    "cargoLock": null,
+    "date": null,
+    "extract": null,
+    "name": "vitejs",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "vitejs",
+      "repo": "vite",
+      "rev": "v8.0.0",
+      "sha256": "sha256-jcDrGPxTTIQ1mv1wZj5fAqZcfzcXUPoNjeOGg3LHrM8=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "v8.0.0"
+  },
+  "wallpapers": {
+    "cargoLock": null,
+    "date": null,
+    "extract": null,
+    "name": "wallpapers",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "name": null,
+      "sha256": "sha256-9G/vXsvbpOuQRRbYMsUySWOTLzpMmmiZGrhHpv9kkdc=",
+      "type": "url",
+      "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.03.03/wallpaper.tar.gz"
+    },
+    "version": "v2026.03.03"
+  }
 }

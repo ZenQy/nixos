@@ -19,12 +19,7 @@ fetch.github = "lin-snow/Ech0"
 src.github = "lin-snow/Ech0"
 fetch.github = "lin-snow/Ech0"
 
-[linux-flippy-612]
-src.git = "https://github.com/unifreq/linux-6.12.y"
-fetch.github = "unifreq/linux-6.12.y"
-extract = ["Makefile"]
-
-[linux-flippy-618]
+[linux-flippy]
 src.github_tag = "unifreq/linux-6.18.y"
 fetch.github = "unifreq/linux-6.18.y"
 
