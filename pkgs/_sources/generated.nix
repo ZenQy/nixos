@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v4.2.0";
+    version = "v4.2.2";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.2.0";
+      rev = "v4.2.2";
       fetchSubmodules = false;
-      sha256 = "sha256-79sj03ymrdVF7lpisVTEAMq+QbT40LM3S4z/t0hsOJ4=";
+      sha256 = "sha256-22qO5tsgEDiRwHP3b0TbLK1pFTQTULWesMXHF69GJdA=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v4.2.0";
+    version = "v4.2.2";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.2.0";
+      rev = "v4.2.2";
       fetchSubmodules = false;
-      sha256 = "sha256-79sj03ymrdVF7lpisVTEAMq+QbT40LM3S4z/t0hsOJ4=";
+      sha256 = "sha256-22qO5tsgEDiRwHP3b0TbLK1pFTQTULWesMXHF69GJdA=";
     };
   };
   einat = {
@@ -52,24 +52,24 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.19";
+    version = "v6.18.20";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.19";
+      rev = "v6.18.20";
       fetchSubmodules = false;
-      sha256 = "sha256-Iq96JKyD6fZ9yyVsts2nArqX7nQN1ZMjCAxgzdlO61s=";
+      sha256 = "sha256-51BjtXXpLfqTTSa+r/+oC90sobROi6PJfCKYyWHMfAI=";
     };
   };
   vitejs = {
     pname = "vitejs";
-    version = "v8.0.1";
+    version = "v8.0.3";
     src = fetchFromGitHub {
       owner = "vitejs";
       repo = "vite";
-      rev = "v8.0.1";
+      rev = "v8.0.3";
       fetchSubmodules = false;
-      sha256 = "sha256-deR1/LHvWetzuu2wBQEo6LodrevhhLH0gvTLpnoqXuk=";
+      sha256 = "sha256-LJ7R+cgrmfmn9mJeL3DKEUyPF6qQIlHKUrfoXuj/uqs=";
     };
   };
   wallpapers = {
