@@ -19,6 +19,7 @@
     Ech0.enable = true;
     cachix.enable = true;
     nezha.enable = true;
+    komari.enable = true;
     openlist.enable = true;
     rclone = {
       enable = true;
@@ -44,6 +45,11 @@
       extraConfig = ''
 
         ${secrets.domain} {
+          root * /var/lib/caddy/file
+          file_server browse
+        }
+
+        e.${secrets.domain} {
         	reverse_proxy :6277
         }
 
@@ -55,17 +61,16 @@
         	reverse_proxy :${toString secrets.nezha.listenport}
         }
 
+        ${secrets.komari.server} {
+        	reverse_proxy :${secrets.komari.port}
+        }
+
         p.${secrets.domain} {
         	reverse_proxy :${toString config.services.vaultwarden.config.ROCKET_PORT}
         }
 
         t.${secrets.domain} {
           root * ${pkgs.it-tools}/share/it-tools
-          file_server browse
-        }
-
-        f.${secrets.domain} {
-          root * /var/lib/caddy/file
           file_server browse
         }
 

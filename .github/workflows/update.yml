@@ -23,7 +23,7 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Delete older workflow runs and artifacts
-        uses: Mattraks/delete-workflow-runs@v2
+        uses: Mattraks/delete-workflow-runs@main
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
@@ -47,7 +47,7 @@ jobs:
           fetch-depth: 1
 
       - name: SSH Private Key
-        uses: webfactory/ssh-agent@v0.9.1
+        uses: webfactory/ssh-agent@v0.10.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
@@ -160,7 +160,7 @@ jobs:
         uses: DeterminateSystems/flakehub-cache-action@main
 
       - name: Use Cachix
-        uses: cachix/cachix-action@v16
+        uses: cachix/cachix-action@v17
         with:
           name: zenqy
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}

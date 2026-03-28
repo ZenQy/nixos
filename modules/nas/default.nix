@@ -4,6 +4,7 @@
   imports = [
     ../vps
     ../vps/nezha-agent.nix
+    ../vps/komari-agent.nix
     ../vps/openlist.nix
     ../vps/podman.nix
     ../vps/rclone.nix

@@ -18,7 +18,7 @@ buildGo126Module (finalAttrs: {
 
   env.CGO_ENABLED = 1;
 
-  subPackages = [ "./" ];
+  subPackages = [ "./cmd/ech0" ];
 
   tags = [ "netgo" ];
 

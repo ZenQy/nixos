@@ -6,6 +6,39 @@
   dockerTools,
 }:
 {
+  komari = {
+    pname = "komari";
+    version = "1.1.8";
+    src = fetchFromGitHub {
+      owner = "komari-monitor";
+      repo = "komari";
+      rev = "1.1.8";
+      fetchSubmodules = false;
+      sha256 = "sha256-nIv7TsCW28szslpaQ+yBROqQHAEEF/rO6/ME5/vubtQ=";
+    };
+  };
+  komari-web = {
+    pname = "komari-web";
+    version = "1.1.8";
+    src = fetchFromGitHub {
+      owner = "komari-monitor";
+      repo = "komari-web";
+      rev = "1.1.8";
+      fetchSubmodules = false;
+      sha256 = "sha256-Fii4F5u1ehvvJ7p0sBrftLIwTzIcbl3vG7mm6zeVg5g=";
+    };
+  };
+  rtp2httpd = {
+    pname = "rtp2httpd";
+    version = "v3.11.0";
+    src = fetchFromGitHub {
+      owner = "stackia";
+      repo = "rtp2httpd";
+      rev = "v3.11.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-ZPtSNmGLREwnrp351jt3DrC3V6KZjm5TCUmW31vaFGE=";
+    };
+  };
   Ech0 = {
     pname = "Ech0";
     version = "v4.2.2";
@@ -50,9 +83,24 @@
       sha256 = "sha256-BwlhWSJWPkqHfOm3whLtdEAs0AXlskW4rA8q8p4aTj0=";
     };
   };
-  linux-flippy = {
-    pname = "linux-flippy";
-    version = "v6.18.20";
+  linux-flippy-612 = {
+    pname = "linux-flippy-612";
+    version = "7d5165f886ed1cf22458eab7db9f8ab93613c051";
+    src = fetchFromGitHub {
+      owner = "unifreq";
+      repo = "linux-6.12.y";
+      rev = "7d5165f886ed1cf22458eab7db9f8ab93613c051";
+      fetchSubmodules = false;
+      sha256 = "sha256-VHwdxs45UHNTI2U/JMP368lC0qbh7o2ALPlIliOjyY8=";
+    };
+    extract = {
+      Makefile = ./. + "/sha256-VHwdxs45UHNTI2U_JMP368lC0qbh7o2ALPlIliOjyY8=/Makefile";
+    };
+    date = "2026-03-21";
+  };
+  linux-flippy-618 = {
+    pname = "linux-flippy-618";
+    version = "v6.18.19";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
