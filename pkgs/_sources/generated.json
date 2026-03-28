@@ -79,6 +79,48 @@
         },
         "version": "v2026.03.02"
     },
+    "komari": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "komari",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "komari-monitor",
+            "repo": "komari",
+            "rev": "1.1.8",
+            "sha256": "sha256-nIv7TsCW28szslpaQ+yBROqQHAEEF/rO6/ME5/vubtQ=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "1.1.8"
+    },
+    "komari-web": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "komari-web",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "komari-monitor",
+            "repo": "komari-web",
+            "rev": "1.1.8",
+            "sha256": "sha256-Fii4F5u1ehvvJ7p0sBrftLIwTzIcbl3vG7mm6zeVg5g=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "1.1.8"
+    },
     "linux-flippy": {
         "cargoLock": null,
         "date": null,
@@ -100,11 +142,11 @@
         },
         "version": "v6.18.20"
     },
-    "vitejs": {
+    "rtp2httpd": {
         "cargoLock": null,
         "date": null,
         "extract": null,
-        "name": "vitejs",
+        "name": "rtp2httpd",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -112,14 +154,14 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "vitejs",
-            "repo": "vite",
-            "rev": "v8.0.3",
-            "sha256": "sha256-LJ7R+cgrmfmn9mJeL3DKEUyPF6qQIlHKUrfoXuj/uqs=",
+            "owner": "stackia",
+            "repo": "rtp2httpd",
+            "rev": "v3.11.0",
+            "sha256": "sha256-ZPtSNmGLREwnrp351jt3DrC3V6KZjm5TCUmW31vaFGE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v8.0.3"
+        "version": "v3.11.0"
     },
     "wallpapers": {
         "cargoLock": null,
