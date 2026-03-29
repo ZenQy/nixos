@@ -44,6 +44,14 @@ final: prev:
     '';
   });
 
+  komari-agent = prev.komari-agent.overrideAttrs (old: {
+    postPatch = ''
+      substituteInPlace cmd/autodiscovery.go \
+        --replace-quiet "os.Executable()" "os.Getwd()" \
+        --replace-quiet "filepath.Dir(execPath)" "execPath"
+    '';
+  });
+
   it-tools = prev.it-tools.overrideAttrs (o: {
     postInstall = ''
       substituteInPlace $out/lib/index.html  \

@@ -1,29 +1,32 @@
 { pkgs, ... }:
 
 {
-  zenith.aria2.enable = true;
-  zenith.openlist.enable = true;
-  zenith.podman.qd.enable = true;
-  zenith.podman.qinglong.enable = true;
-  zenith.rclone = {
-    enable = true;
-    path = [
-      {
-        source = "/var/lib/openlist/data/";
-        dest = "/rock-5b/openlist";
-        include = [
-          "config.json"
-          "data.db*"
-        ];
-      }
-      {
-        source = "/var/lib/containers/storage/volumes/qd/_data/";
-        dest = "/rock-5b/qd";
-        include = [
-          "database.db"
-        ];
-      }
-    ];
+  zenith = {
+    aria2.enable = true;
+    openlist.enable = true;
+    rtp2httpd.enable = true;
+    podman.qd.enable = true;
+    podman.qinglong.enable = true;
+    rclone = {
+      enable = true;
+      path = [
+        {
+          source = "/var/lib/openlist/data/";
+          dest = "/rock-5b/openlist";
+          include = [
+            "config.json"
+            "data.db*"
+          ];
+        }
+        {
+          source = "/var/lib/containers/storage/volumes/qd/_data/";
+          dest = "/rock-5b/qd";
+          include = [
+            "database.db"
+          ];
+        }
+      ];
+    };
   };
 
   services.caddy = {

@@ -26,6 +26,8 @@ stdenv.mkDerivation (finalAttrs: {
     nodejs
   ];
 
+  env.RELEASE_VERSION = finalAttrs.version;
+
   perBuild = ''
     pnpm run web-ui:build
   '';

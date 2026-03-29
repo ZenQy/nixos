@@ -23,11 +23,10 @@ in
   };
 
   config = mkIf cfg.enable {
-    # environment.etc.<name>.text
     systemd.services.rtp2httpd =
       let
-        dir = "/var/lib/rtp2httpd";
-        settings = {
+        file = "rtp2httpd.conf";
+        conf = generators.toINI { } {
           global = {
             external-m3u = "http://10.0.0.12:8080/tv.m3u";
           };
@@ -37,14 +36,20 @@ in
         description = "Multicast RTP/RTSP to Unicast HTTP stream converter";
         after = [ "network.target" ];
         wantedBy = [ "multi-user.target" ];
+        path = with pkgs; [
+          curl
+          which
+        ];
         preStart = ''
-          cat ${generators.toINI { } settings} > rtp2httpd.conf
+          cat << EOF > ${file}
+          ${conf}
+          EOF
         '';
         serviceConfig = {
           StateDirectory = "rtp2httpd";
-          WorkingDirectory = dir;
+          WorkingDirectory = "/var/lib/rtp2httpd";
           ExecStart = ''
-            ${pkgs.rtp2httpd}/bin/rtp2httpd -c rtp2httpd.conf
+            ${pkgs.rtp2httpd}/bin/rtp2httpd -c ${file}
           '';
           RestartSec = 5;
           Restart = "on-failure";
