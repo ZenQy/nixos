@@ -18,16 +18,10 @@
   zenith = {
     Ech0.enable = true;
     cachix.enable = true;
-    nezha.enable = true;
     openlist.enable = true;
     rclone = {
       enable = true;
       path = [
-        {
-          source = "/var/lib/nezha/data/";
-          dest = "/osaka-arm/nezha";
-          exclude = [ "config.yaml" ];
-        }
         {
           source = "/var/lib/vaultwarden/";
           dest = "/osaka-arm/vaultwarden";
@@ -74,9 +68,6 @@
         	reverse_proxy :5244
         }
 
-        s.${secrets.domain} {
-        	reverse_proxy :${toString secrets.nezha.listenport}
-        }
 
         p.${secrets.domain} {
         	reverse_proxy :${toString config.services.vaultwarden.config.ROCKET_PORT}

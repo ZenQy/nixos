@@ -9,17 +9,11 @@
   zenith = {
     Ech0.enable = true;
     cachix.enable = true;
-    nezha.enable = true;
     komari.enable = true;
     openlist.enable = true;
     rclone = {
       enable = true;
       path = [
-        {
-          source = "/var/lib/nezha/data/";
-          dest = "/osaka-arm/nezha";
-          exclude = [ "config.yaml" ];
-        }
         {
           source = "/var/lib/komari/data/";
           dest = "/osaka-arm/komari";
@@ -47,9 +41,6 @@
         	reverse_proxy :5244
         }
 
-        s.${secrets.domain} {
-        	reverse_proxy :${toString secrets.nezha.listenport}
-        }
 
         ${secrets.komari.server} {
         	reverse_proxy :${secrets.komari.port}

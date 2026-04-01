@@ -1,4 +1,4 @@
-{ config, secrets, ... }:
+{ ... }:
 
 {
   imports = [
@@ -7,13 +7,6 @@
 
   systemd.network.networks.default = {
     name = "eth0";
-    networkConfig =
-      let
-        host = config.networking.hostName;
-      in
-      {
-        inherit (secrets.hosts."${host}") Address Gateway;
-      };
+    networkConfig.DHCP = true;
   };
-
 }
