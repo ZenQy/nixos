@@ -4,7 +4,6 @@
 
   programs.npm = {
     enable = true;
-    package = pkgs.nodePackages_latest.npm;
     npmrc = ''
       prefix = ''${HOME}/.config/npm
       registry=https://registry.npmmirror.com
@@ -14,8 +13,7 @@
   environment.variables.PATH = "$HOME/.config/npm/bin";
 
   environment.systemPackages = with pkgs; [
-    nodePackages_latest.nodejs
-    # nodePackages.eslint
+    # eslint
     # oxlint
     vue-language-server
     # yarn

@@ -12,7 +12,7 @@ input {
     focus-follows-mouse
 }
 
-output "HDMI-A-1" {
+output "DP-1" {
     mode "3840x2160@60.00000"
     scale 1.5
     transform "normal"
