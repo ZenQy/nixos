@@ -48,4 +48,36 @@
       }
     '';
   };
+
+  services.cron = {
+    enable = true;
+    systemCronJobs =
+      let
+        tv-m3u.sh = pkgs.writeShellScript "tv-m3u.sh" ''
+          echo "#EXTM3U" > /storage/tv.m3u
+          URL="https://www.wmviv.com/anhui-mobile-iptv.html"
+          count=1
+          curl -s "$URL" | ${pkgs.pup}/bin/pup 'table td text{}' | while read -r cell_data; do
+              case $count in
+                  1) val1=$cell_data ;;
+                  2) val2=$cell_data ;;
+                  4) val4=$cell_data ;;
+              esac
+              if [ $count -eq 5 ]; then
+                  echo "#EXTINF:-1 group-title=\"$val2\",$val1" >> /storage/tv.m3u
+                  echo "$val4" >> /storage/tv.m3u
+                  count=1
+              else
+                  ((count++))
+              fi
+          done
+        '';
+      in
+      [
+        # 更新 tv.m3u
+        "0 4 * * 3 nixos ${tv-m3u.sh}"
+        # 下载消耗流量
+        "*/5 2-6 * * * nixos curl -so /dev/null https://940940.xyz/alcie.raw.gz"
+      ];
+  };
 }

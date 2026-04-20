@@ -8,11 +8,12 @@
     # leetgo
 
     ## Rust ##
-    # rustc
-    # rustfmt
-    # cargo
-    # gcc
-    # rust-analyzer
+    # rustc-unwrapped
+    rustc
+    rust-analyzer
+    rustfmt
+    cargo
+    gcc
     # pkg-config
     # openssl
 
@@ -57,6 +58,7 @@
     hugo
     tio
     jq
+    # pup
     # mdbook
     # mitmproxy
     # python3

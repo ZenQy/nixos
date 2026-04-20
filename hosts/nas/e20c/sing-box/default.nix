@@ -44,7 +44,10 @@ let
         server = "dns_fakeip";
       }
       {
-        protocol = "bittorrent";
+        protocol = [
+          "bittorrent"
+          "ssh"
+        ];
         server = "dns_direct";
       }
       {
@@ -74,8 +77,8 @@ let
           {
             domain_suffix = [
               ".cn"
-              ".ip.zstaticcdn.com"
               "10155.com"
+              "940940.xyz"
               "ahrefs.com"
               "allawnfs.com"
               "binmt.cc"
@@ -85,11 +88,18 @@ let
               "epicgames.com"
               "geevisit.com" # 解决跨域
               "hostinger.com"
+              "icanhazip.com"
+              "ip.sb"
+              "ip.zstaticcdn.com"
+              "ipify.org"
               "msftconnecttest.com"
               "natchecker.com"
               "oracle.com"
+              "oraclecloud.com"
+              "oracleinfinity.io"
               "test-ipv6.com"
               "wmviv.com"
+              "zxinc.org"
             ];
           }
         ];
@@ -177,7 +187,10 @@ let
         outbound = "proxy";
       }
       {
-        protocol = "bittorrent";
+        protocol = [
+          "bittorrent"
+          "ssh"
+        ];
         outbound = "direct";
       }
       {
@@ -344,6 +357,8 @@ let
     cache_file = {
       enabled = true;
       path = "cache.db";
+      store_fakeip = true;
+      store_rdrc = true;
     };
     clash_api = {
       external_controller = "0.0.0.0:9090";

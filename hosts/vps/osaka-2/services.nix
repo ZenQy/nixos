@@ -28,7 +28,7 @@
       enable = true;
       extraConfig = ''
 
-        ${secrets.domain} {
+        f.${secrets.domain} ${secrets.domain} {
           root * /var/lib/caddy/file
           file_server browse
         }

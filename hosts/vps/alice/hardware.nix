@@ -11,15 +11,20 @@
     (modulesPath + "/profiles/qemu-guest.nix")
   ];
 
-  boot.initrd.availableKernelModules = [
-    "virtio_pci"
-    "virtio_scsi"
-    "virtio_blk"
-  ];
-
-  boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ ];
-  boot.extraModulePackages = [ ];
+  boot = {
+    initrd.availableKernelModules = [
+      "virtio_pci"
+      "virtio_scsi"
+      "virtio_blk"
+    ];
+    initrd.kernelModules = [ ];
+    kernelModules = [ ];
+    extraModulePackages = [ ];
+    loader.grub = {
+      enable = true;
+      device = "/dev/vda";
+    };
+  };
 
   fileSystems =
     let
@@ -62,8 +67,4 @@
 
   swapDevices = [ { device = "/dev/disk/by-partlabel/disk-main-swap"; } ];
 
-  boot.loader.grub = {
-    enable = true;
-    device = "/dev/vda";
-  };
 }
