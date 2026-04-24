@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v4.3.7";
+    version = "ech0-4.6.2";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.3.7";
+      rev = "ech0-4.6.2";
       fetchSubmodules = false;
-      sha256 = "sha256-MRRW8kPJtjUloOOQWUc20FUqsk0tEi45Isp9blWpkrw=";
+      sha256 = "sha256-Tpb1AdKiPCTcCtffB3tqLvWbAi4LSnIqTarkfaFCNsQ=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "v4.3.7";
+    version = "ech0-4.6.2";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.3.7";
+      rev = "ech0-4.6.2";
       fetchSubmodules = false;
-      sha256 = "sha256-MRRW8kPJtjUloOOQWUc20FUqsk0tEi45Isp9blWpkrw=";
+      sha256 = "sha256-Tpb1AdKiPCTcCtffB3tqLvWbAi4LSnIqTarkfaFCNsQ=";
     };
   };
   einat = {
@@ -74,13 +74,13 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.21";
+    version = "v6.18.24";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.21";
+      rev = "v6.18.24";
       fetchSubmodules = false;
-      sha256 = "sha256-/F7HrFJHF5sMJtobLH78l0JRhU9Bb0N/SidilsIkzFU=";
+      sha256 = "sha256-ZNBcypHW5nw+hq4tP9fiXGYkdBs0J123gQiFyL2hr+0=";
     };
   };
   rtp2httpd = {
