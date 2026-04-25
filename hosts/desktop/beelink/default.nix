@@ -4,9 +4,6 @@
   imports = [
     ./hardware.nix
   ];
-  nix.settings.substituters = [
-    "https://mirrors.ustc.edu.cn/nix-channels/store"
-  ];
 
   # 启用/停用WIFI
   # networking.wireless = with builtins; {

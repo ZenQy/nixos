@@ -15,6 +15,7 @@
   };
 
   boot = {
+    initrd.systemd.tpm2.enable = false;
     loader.grub.enable = false;
     loader.generic-extlinux-compatible.enable = true;
     loader.generic-extlinux-compatible.configurationLimit = 1;

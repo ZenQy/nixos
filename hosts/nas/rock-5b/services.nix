@@ -77,7 +77,7 @@
         # 更新 tv.m3u
         "0 4 * * 3 nixos ${tv-m3u.sh}"
         # 下载消耗流量
-        "*/5 2-6 * * * nixos curl -so /dev/null https://940940.xyz/alcie.raw.gz"
+        "*/5 1-6 * * * nixos ${pkgs.curl}/bin/curl -so /dev/null https://940940.xyz/alcie.raw.gz"
       ];
   };
 }

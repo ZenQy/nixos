@@ -5,6 +5,9 @@
 }:
 
 {
+  nix.settings.substituters = [
+    "https://mirrors.cernet.edu.cn/nix-channels/store"
+  ];
   boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
   boot.supportedFilesystems = [ "ntfs" ];
   services.gvfs.enable = true;
