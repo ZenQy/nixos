@@ -13,6 +13,11 @@ in
 
 {
   options.zenith.podman = {
+    metapi.enable = mkOption {
+      type = types.bool;
+      default = false;
+      description = "是否启用metapi";
+    };
     qd.enable = mkOption {
       type = types.bool;
       default = false;
@@ -31,6 +36,21 @@ in
   };
 
   config = mkMerge [
+    (mkIf cfg.metapi.enable {
+      virtualisation.oci-containers.containers = {
+        metapi = {
+          autoStart = true;
+          image = "1467078763/metapi:latest";
+          ports = [ "4000:4000" ];
+          volumes = [ "metapi:/app/data" ];
+          environment = {
+            AUTH_TOKEN = secrets.user.password.zenith;
+            PROXY_TOKEN = secrets.user.password.root;
+            TZ = "Asia/Shanghai";
+          };
+        };
+      };
+    })
     (mkIf cfg.qd.enable {
       virtualisation.oci-containers.containers = {
         qd = {

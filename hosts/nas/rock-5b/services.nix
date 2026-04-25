@@ -5,6 +5,7 @@
     aria2.enable = true;
     openlist.enable = true;
     rtp2httpd.enable = true;
+    podman.metapi.enable = true;
     podman.qd.enable = true;
     podman.qinglong.enable = true;
     rclone = {
