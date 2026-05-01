@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "ech0-4.6.2",
-            "sha256": "sha256-Tpb1AdKiPCTcCtffB3tqLvWbAi4LSnIqTarkfaFCNsQ=",
+            "rev": "ech0-4.7.1",
+            "sha256": "sha256-z28DAg+tJescCtoduBTSBtWNXXBrA1+TbAbvr0ff2hU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ech0-4.6.2"
+        "version": "ech0-4.7.1"
     },
     "Ech0-frontend": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "ech0-4.6.2",
-            "sha256": "sha256-Tpb1AdKiPCTcCtffB3tqLvWbAi4LSnIqTarkfaFCNsQ=",
+            "rev": "ech0-4.7.1",
+            "sha256": "sha256-z28DAg+tJescCtoduBTSBtWNXXBrA1+TbAbvr0ff2hU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ech0-4.6.2"
+        "version": "ech0-4.7.1"
     },
     "einat": {
         "cargoLock": null,
@@ -73,11 +73,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-s/vO/MLiZ0LPi4n2DxxJ4RoNiptUmmQ+pwts5jewxRc=",
+            "sha256": "sha256-szeuk7FT2ZKjw7gvQfL8GTAV4dqv3XjeXNIsmi9tePQ=",
             "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2026.04.02/zenith.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2026.05.02/zenith.dict"
         },
-        "version": "v2026.04.02"
+        "version": "v2026.05.02"
     },
     "komari": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.24",
-            "sha256": "sha256-ZNBcypHW5nw+hq4tP9fiXGYkdBs0J123gQiFyL2hr+0=",
+            "rev": "v6.18.25",
+            "sha256": "sha256-5zKA6fuoLRzVYH7DTG68cyVu+wJLz6gLQB+o/TMPzi4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.24"
+        "version": "v6.18.25"
     },
     "rtp2httpd": {
         "cargoLock": null,

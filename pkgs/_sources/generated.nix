@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "ech0-4.6.2";
+    version = "ech0-4.7.1";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "ech0-4.6.2";
+      rev = "ech0-4.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Tpb1AdKiPCTcCtffB3tqLvWbAi4LSnIqTarkfaFCNsQ=";
+      sha256 = "sha256-z28DAg+tJescCtoduBTSBtWNXXBrA1+TbAbvr0ff2hU=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "ech0-4.6.2";
+    version = "ech0-4.7.1";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "ech0-4.6.2";
+      rev = "ech0-4.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Tpb1AdKiPCTcCtffB3tqLvWbAi4LSnIqTarkfaFCNsQ=";
+      sha256 = "sha256-z28DAg+tJescCtoduBTSBtWNXXBrA1+TbAbvr0ff2hU=";
     };
   };
   einat = {
@@ -44,10 +44,10 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2026.04.02";
+    version = "v2026.05.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.04.02/zenith.dict";
-      sha256 = "sha256-s/vO/MLiZ0LPi4n2DxxJ4RoNiptUmmQ+pwts5jewxRc=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.05.02/zenith.dict";
+      sha256 = "sha256-szeuk7FT2ZKjw7gvQfL8GTAV4dqv3XjeXNIsmi9tePQ=";
     };
   };
   komari = {
@@ -74,13 +74,13 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.24";
+    version = "v6.18.25";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.24";
+      rev = "v6.18.25";
       fetchSubmodules = false;
-      sha256 = "sha256-ZNBcypHW5nw+hq4tP9fiXGYkdBs0J123gQiFyL2hr+0=";
+      sha256 = "sha256-5zKA6fuoLRzVYH7DTG68cyVu+wJLz6gLQB+o/TMPzi4=";
     };
   };
   rtp2httpd = {
