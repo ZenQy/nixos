@@ -44,7 +44,7 @@
     # vscode-with-extensions
     # vscodium
     zed-editor
-    claude-code
+    # claude-code
     obsidian
     sqlitebrowser
 

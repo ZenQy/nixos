@@ -14,7 +14,7 @@ lib.generators.toPretty {} s
 根据路由器端`sing-box`配置,生成手机端配置
 
 ```bash
-inbound="{\"address\":[\"172.18.0.1/24\",\"fdfe:dcba:9876::1/64\"],\"auto_route\":true,\"include_package\":[\"InfinityLoop1309.NewPipeEnhanced\",\"app.aiaw\",\"cn.jimex.dict\",\"com.aistra.hail\",\"com.aurora.store\",\"com.deskangel.daremote\",\"com.google.android.gms\",\"com.ichi2.anki\",\"com.mmbox.xbrowser.pro\",\"com.x8bit.bitwarden\",\"com.xbrowser.play\",\"io.legado.app.release\",\"io.legato.kazusa\",\"mark.via\",\"mark.via.gp\",\"me.bmax.apatch\",\"org.telegram.messenger\",\"pro.cubox.androidapp\",\"top.achatbot.aichat\",\"xyz.chatboxapp.chatbox\"],\"mtu\":1500,\"stack\":\"gvisor\",\"strict_route\":false,\"tag\":\"tun\",\"type\":\"tun\"}"
+inbound="{\"address\":[\"172.18.0.1/24\",\"fdfe:dcba:9876::1/64\"],\"auto_route\":true,\"include_package\":[\"InfinityLoop1309.NewPipeEnhanced\",\"app.aiaw\",\"cn.jimex.dict\",\"com.aistra.hail\",\"com.aurora.store\",\"com.deskangel.daremote\",\"com.google.android.gms\",\"com.ichi2.anki\",\"com.mmbox.xbrowser.pro\",\"com.mmbox.xbrowser\",\"com.x8bit.bitwarden\",\"com.xbrowser.play\",\"io.legado.app.release\",\"io.legato.kazusa\",\"mark.via\",\"mark.via.gp\",\"me.bmax.apatch\",\"org.telegram.messenger\",\"pro.cubox.androidapp\",\"top.achatbot.aichat\",\"xyz.chatboxapp.chatbox\"],\"mtu\":1500,\"stack\":\"gvisor\",\"strict_route\":false,\"tag\":\"tun\",\"type\":\"tun\"}"
 settings=$(nix eval --json .#nixosConfigurations.e20c.config.services.sing-box.settings)
 echo $settings | \
   jq ".inbounds = [$inbound]" | \

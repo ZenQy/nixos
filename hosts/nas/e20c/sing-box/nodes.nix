@@ -6,7 +6,6 @@
     "osaka-1"
     "sailor"
     "gcloud"
-    "bread"
   ];
   anytls = [ ];
 
@@ -16,7 +15,6 @@
     "osaka-1"
     "sailor"
     "gcloud"
-    "bread"
   ];
   gemini = [
     "bwh"
@@ -24,6 +22,5 @@
     "osaka-1"
     "sailor"
     "gcloud"
-    "bread"
   ];
 }

@@ -16,8 +16,17 @@ on:
           - sailor
           - wawo
           - gcloud
-        required: false
+        required: true
         default: all
+      command:
+        type: choice
+        description: "choose the command"
+        options:
+          - switch
+          - boot
+          - test
+        required: true
+        default: switch
 
 env:
   NIX_PATH: nixpkgs=channel:nixos-unstable
@@ -112,7 +121,7 @@ jobs:
           if [[ $host == 'beelink' ]]; then
             nixos-rebuild build --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
           else
-            nixos-rebuild switch --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
+            nixos-rebuild ${{ inputs.command }} --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
           fi
 
       - name: executing remote ssh commands using ssh key
@@ -124,7 +133,11 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           protocol: tcp6
           port: ${{ secrets.PORT }}
-          script: nix-collect-garbage -d
+          script: |
+            nix-collect-garbage -d
+            if [[ "${{ inputs.command }}" == 'boot' ]]; then
+              reboot
+            fi
 
       - name: executing remote ssh commands using ssh key
         if: ${{ steps.set-ipv6.outputs.ipv6 != 'true' && matrix.hosts != 'beelink' }}
@@ -134,7 +147,11 @@ jobs:
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
-          script: nix-collect-garbage -d
+          script: |
+            nix-collect-garbage -d
+            if [[ "${{ inputs.command }}" == 'boot' ]]; then
+              reboot
+            fi
 
       - name: Telegram notification
         if: failure()
