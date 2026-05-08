@@ -12,7 +12,6 @@
     # optimise.automatic = true;
     # gc.automatic = true;
     gc.options = "--delete-older-than 7d";
-    # package = pkgs.nixUnstable;
     extraOptions = ''
       experimental-features = nix-command flakes
       allow-import-from-derivation = true
@@ -31,10 +30,8 @@
 
   # i18n
   time.timeZone = "Asia/Shanghai";
-  i18n = {
-    defaultLocale = "en_US.UTF-8";
-    supportedLocales = [ "en_US.UTF-8/UTF-8" ];
-  };
+  i18n.defaultLocale = "en_US.UTF-8";
+
   services.timesyncd.servers = [
     "ntp.aliyun.com"
     "time.cloudflare.com"

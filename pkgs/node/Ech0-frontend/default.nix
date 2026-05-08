@@ -21,7 +21,7 @@ stdenv.mkDerivation (finalAttrs: {
     inherit (source) pname version src;
     sourceRoot = "${finalAttrs.src.name}/web";
     hash = "sha256-aTxSf/opr7FlqT0DNCcN/um9sOtzATgGrqb3f2v75S8=";
-    fetcherVersion = 1;
+    fetcherVersion = 3;
   };
 
   patchPhase = ''

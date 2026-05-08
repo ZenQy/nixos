@@ -11,27 +11,27 @@
       defaultFonts = {
         sansSerif = [
           "DejaVu Sans"
-          "Source Han Sans SC"
-          "Source Han Sans TC"
-          "Source Han Sans HW"
-          "Source Han Sans K"
-          "Source Han Sans"
+          "Noto Sans CJK SC"
+          "Noto Sans CJK TC"
+          "Noto Sans CJK HK"
+          "Noto Sans CJK KR"
+          "Noto Sans CJK JP"
         ];
         serif = [
           "DejaVu Serif"
-          "Source Han Serif SC"
-          "Source Han Serif TC"
-          "Source Han Serif HW"
-          "Source Han Serif K"
-          "Source Han Serif"
+          "Noto Serif CJK SC"
+          "Noto Serif CJK TC"
+          "Noto Serif CJK HK"
+          "Noto Serif CJK KR"
+          "Noto Serif CJK JP"
         ];
         monospace = [
           "DejaVu Sans Mono"
-          "Source Han Mono SC"
-          "Source Han Mono TC"
-          "Source Han Mono HW"
-          "Source Han Mono K"
-          "Source Han Mono"
+          "Noto Sans Mono CJK SC"
+          "Noto Sans Mono CJK TC"
+          "Noto Sans Mono CJK HK"
+          "Noto Sans Mono CJK KR"
+          "Noto Sans Mono CJK JP"
         ];
         emoji = [
           "Noto Color Emoji"
@@ -45,10 +45,8 @@
       noto-fonts-color-emoji
       nerd-fonts.symbols-only
 
-      source-han-sans
-      source-han-serif
-      source-han-mono
+      noto-fonts-cjk-sans-static
+      noto-fonts-cjk-serif-static
     ];
   };
-
 }
