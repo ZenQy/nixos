@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "ech0-4.7.1",
-            "sha256": "sha256-z28DAg+tJescCtoduBTSBtWNXXBrA1+TbAbvr0ff2hU=",
+            "rev": "ech0-4.7.5",
+            "sha256": "sha256-z0ZFutzYNkdedIPeCYX5exoe4XLtjFBluKDh5V28ng0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ech0-4.7.1"
+        "version": "ech0-4.7.5"
     },
     "Ech0-frontend": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "ech0-4.7.1",
-            "sha256": "sha256-z28DAg+tJescCtoduBTSBtWNXXBrA1+TbAbvr0ff2hU=",
+            "rev": "ech0-4.7.5",
+            "sha256": "sha256-z0ZFutzYNkdedIPeCYX5exoe4XLtjFBluKDh5V28ng0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ech0-4.7.1"
+        "version": "ech0-4.7.5"
     },
     "einat": {
         "cargoLock": null,
@@ -93,12 +93,12 @@
             "name": null,
             "owner": "komari-monitor",
             "repo": "komari",
-            "rev": "1.1.9",
-            "sha256": "sha256-HAN3nFCwGbpczhEzoSJr7NQQ+FqFyjkpCoUSAElPmcU=",
+            "rev": "1.2.0",
+            "sha256": "sha256-Z0zv60+YgT2IvMuSA6ku56Ostrp2REJZJFCJB0EotYk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.1.9"
+        "version": "1.2.0"
     },
     "komari-web": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.25",
-            "sha256": "sha256-5zKA6fuoLRzVYH7DTG68cyVu+wJLz6gLQB+o/TMPzi4=",
+            "rev": "v6.18.26",
+            "sha256": "sha256-QC83zQe6CEmFX0WkDviOTrf1lZFQnygN6cR4txNWolE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.25"
+        "version": "v6.18.26"
     },
     "rtp2httpd": {
         "cargoLock": null,
@@ -156,12 +156,12 @@
             "name": null,
             "owner": "stackia",
             "repo": "rtp2httpd",
-            "rev": "v3.11.0",
-            "sha256": "sha256-ZPtSNmGLREwnrp351jt3DrC3V6KZjm5TCUmW31vaFGE=",
+            "rev": "v3.12.1",
+            "sha256": "sha256-EvrWipIibph2sBNisQBjJOBUjBaxDNJIcGfH6B127Ms=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.11.0"
+        "version": "v3.12.1"
     },
     "wallpapers": {
         "cargoLock": null,
@@ -172,10 +172,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Y9KLA+r2UB2RVfREocFQnzZFE202XoHXuJjgzbKmO6w=",
+            "sha256": "sha256-hXXBy8MHu6fnHwTKNELbydnTF/A2B8xghuqRKKw7iys=",
             "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.04.03/wallpaper.tar.gz"
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.05.03/wallpaper.tar.gz"
         },
-        "version": "v2026.04.03"
+        "version": "v2026.05.03"
     }
 }

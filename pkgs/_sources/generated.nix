@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "ech0-4.7.1";
+    version = "ech0-4.7.5";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "ech0-4.7.1";
+      rev = "ech0-4.7.5";
       fetchSubmodules = false;
-      sha256 = "sha256-z28DAg+tJescCtoduBTSBtWNXXBrA1+TbAbvr0ff2hU=";
+      sha256 = "sha256-z0ZFutzYNkdedIPeCYX5exoe4XLtjFBluKDh5V28ng0=";
     };
   };
   Ech0-frontend = {
     pname = "Ech0-frontend";
-    version = "ech0-4.7.1";
+    version = "ech0-4.7.5";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "ech0-4.7.1";
+      rev = "ech0-4.7.5";
       fetchSubmodules = false;
-      sha256 = "sha256-z28DAg+tJescCtoduBTSBtWNXXBrA1+TbAbvr0ff2hU=";
+      sha256 = "sha256-z0ZFutzYNkdedIPeCYX5exoe4XLtjFBluKDh5V28ng0=";
     };
   };
   einat = {
@@ -52,13 +52,13 @@
   };
   komari = {
     pname = "komari";
-    version = "1.1.9";
+    version = "1.2.0";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari";
-      rev = "1.1.9";
+      rev = "1.2.0";
       fetchSubmodules = false;
-      sha256 = "sha256-HAN3nFCwGbpczhEzoSJr7NQQ+FqFyjkpCoUSAElPmcU=";
+      sha256 = "sha256-Z0zv60+YgT2IvMuSA6ku56Ostrp2REJZJFCJB0EotYk=";
     };
   };
   komari-web = {
@@ -74,32 +74,32 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.25";
+    version = "v6.18.26";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.25";
+      rev = "v6.18.26";
       fetchSubmodules = false;
-      sha256 = "sha256-5zKA6fuoLRzVYH7DTG68cyVu+wJLz6gLQB+o/TMPzi4=";
+      sha256 = "sha256-QC83zQe6CEmFX0WkDviOTrf1lZFQnygN6cR4txNWolE=";
     };
   };
   rtp2httpd = {
     pname = "rtp2httpd";
-    version = "v3.11.0";
+    version = "v3.12.1";
     src = fetchFromGitHub {
       owner = "stackia";
       repo = "rtp2httpd";
-      rev = "v3.11.0";
+      rev = "v3.12.1";
       fetchSubmodules = false;
-      sha256 = "sha256-ZPtSNmGLREwnrp351jt3DrC3V6KZjm5TCUmW31vaFGE=";
+      sha256 = "sha256-EvrWipIibph2sBNisQBjJOBUjBaxDNJIcGfH6B127Ms=";
     };
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2026.04.03";
+    version = "v2026.05.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.04.03/wallpaper.tar.gz";
-      sha256 = "sha256-Y9KLA+r2UB2RVfREocFQnzZFE202XoHXuJjgzbKmO6w=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.05.03/wallpaper.tar.gz";
+      sha256 = "sha256-hXXBy8MHu6fnHwTKNELbydnTF/A2B8xghuqRKKw7iys=";
     };
   };
 }
