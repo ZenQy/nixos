@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "ech0-4.7.5",
-            "sha256": "sha256-z0ZFutzYNkdedIPeCYX5exoe4XLtjFBluKDh5V28ng0=",
+            "rev": "v4.8.1",
+            "sha256": "sha256-nQM28SGugGZC9AkONGJSTxmTgWSLoZF4Lu2j8RfFuEk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ech0-4.7.5"
+        "version": "v4.8.1"
     },
     "Ech0-frontend": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "ech0-4.7.5",
-            "sha256": "sha256-z0ZFutzYNkdedIPeCYX5exoe4XLtjFBluKDh5V28ng0=",
+            "rev": "v4.8.1",
+            "sha256": "sha256-nQM28SGugGZC9AkONGJSTxmTgWSLoZF4Lu2j8RfFuEk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ech0-4.7.5"
+        "version": "v4.8.1"
     },
     "einat": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.26",
-            "sha256": "sha256-QC83zQe6CEmFX0WkDviOTrf1lZFQnygN6cR4txNWolE=",
+            "rev": "v6.18.31",
+            "sha256": "sha256-Pe1TPSFB9j5QrGUroWW2TzbUvBf6SifQU4XH5P6wt9E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.26"
+        "version": "v6.18.31"
     },
     "rtp2httpd": {
         "cargoLock": null,
