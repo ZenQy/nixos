@@ -85,13 +85,13 @@
   };
   rtp2httpd = {
     pname = "rtp2httpd";
-    version = "v3.12.1";
+    version = "v3.12.2";
     src = fetchFromGitHub {
       owner = "stackia";
       repo = "rtp2httpd";
-      rev = "v3.12.1";
+      rev = "v3.12.2";
       fetchSubmodules = false;
-      sha256 = "sha256-EvrWipIibph2sBNisQBjJOBUjBaxDNJIcGfH6B127Ms=";
+      sha256 = "sha256-6uzke/TwZ33TuhLL7YWvd0bB8mq/PwXrJmiIEQEg840=";
     };
   };
   wallpapers = {

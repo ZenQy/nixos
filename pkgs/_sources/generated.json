@@ -156,12 +156,12 @@
             "name": null,
             "owner": "stackia",
             "repo": "rtp2httpd",
-            "rev": "v3.12.1",
-            "sha256": "sha256-EvrWipIibph2sBNisQBjJOBUjBaxDNJIcGfH6B127Ms=",
+            "rev": "v3.12.2",
+            "sha256": "sha256-6uzke/TwZ33TuhLL7YWvd0bB8mq/PwXrJmiIEQEg840=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.12.1"
+        "version": "v3.12.2"
     },
     "wallpapers": {
         "cargoLock": null,
