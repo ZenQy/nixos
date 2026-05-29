@@ -9,7 +9,7 @@ buildGoModule (finalAttrs: {
   inherit (source) pname version src;
 
   proxyVendor = true;
-  vendorHash = "sha256-PGSFJBrXiwgF4telsDykYbLqxe0JdMTkSt7jAa7v5sY=";
+  vendorHash = "sha256-MMPZOLfpaTKOE/f2Z7lRC/UgHqeJi51CGyVaR8hOkAU=";
 
   preConfigure = ''
     rm -rf template/dist
