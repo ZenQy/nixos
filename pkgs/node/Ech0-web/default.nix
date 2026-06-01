@@ -5,11 +5,11 @@
   pnpm,
   pnpmConfigHook,
   fetchPnpmDeps,
-  nodejs_25,
+  nodejs_latest,
 }:
 
 let
-  nodejs = nodejs_25;
+  nodejs = nodejs_latest;
 in
 
 stdenv.mkDerivation (finalAttrs: {

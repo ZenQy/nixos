@@ -25,6 +25,7 @@
   environment.systemPackages = with pkgs; [
     niri
     fuzzel
+    copyq
   ];
 
   environment.etc."niri/config.kdl".source = ./conf/niri.kdl;

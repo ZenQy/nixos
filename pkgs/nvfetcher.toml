@@ -10,7 +10,7 @@ fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper
 src.github = "lin-snow/Ech0"
 fetch.github = "lin-snow/Ech0"
 
-[Ech0-frontend]
+[Ech0-web]
 src.github = "lin-snow/Ech0"
 fetch.github = "lin-snow/Ech0"
 

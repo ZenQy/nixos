@@ -2,7 +2,7 @@
   source,
   lib,
   buildGoModule,
-  Ech0-frontend,
+  Ech0-web,
 }:
 
 buildGoModule (finalAttrs: {
@@ -13,7 +13,7 @@ buildGoModule (finalAttrs: {
 
   preConfigure = ''
     rm -rf template/dist
-    cp -r ${Ech0-frontend} template/dist
+    cp -r ${Ech0-web} template/dist
   '';
 
   env.CGO_ENABLED = 1;

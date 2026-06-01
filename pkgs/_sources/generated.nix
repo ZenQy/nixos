@@ -17,8 +17,8 @@
       sha256 = "sha256-FfWI994j1Pkfh67pKZkOQHq94nVclkYqEjsanUl+e4U=";
     };
   };
-  Ech0-frontend = {
-    pname = "Ech0-frontend";
+  Ech0-web = {
+    pname = "Ech0-web";
     version = "v4.8.2";
     src = fetchFromGitHub {
       owner = "lin-snow";
