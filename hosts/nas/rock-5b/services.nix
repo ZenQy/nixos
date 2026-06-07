@@ -3,10 +3,11 @@
 {
   zenith = {
     aria2.enable = true;
+    freellmapi.enable = true;
     openlist.enable = true;
-    rtp2httpd.enable = true;
     podman.qd.enable = true;
     podman.qinglong.enable = true;
+    rtp2httpd.enable = true;
     rclone = {
       enable = true;
       path = [

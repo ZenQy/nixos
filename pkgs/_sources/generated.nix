@@ -6,6 +6,17 @@
   dockerTools,
 }:
 {
+  freellmapi = {
+    pname = "freellmapi";
+    version = "v0.2.8";
+    src = fetchFromGitHub {
+      owner = "tashfeenahmed";
+      repo = "freellmapi";
+      rev = "v0.2.8";
+      fetchSubmodules = false;
+      sha256 = "sha256-wLMYUV0c157xJh3qqVT8XPw6DWs3oFy351YhXjiI+lE=";
+    };
+  };
   Ech0 = {
     pname = "Ech0";
     version = "v4.8.2";
