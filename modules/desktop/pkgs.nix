@@ -13,6 +13,7 @@
     rust-analyzer
     rustfmt
     cargo
+    cargo-machete
     gcc
     # pkg-config
     # openssl

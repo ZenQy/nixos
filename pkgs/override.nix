@@ -7,27 +7,21 @@ final: prev:
   # };
 
   ariang = prev.ariang.override {
-    buildNpmPackage =
-      args:
-      prev.buildNpmPackage (
-        args
-        // {
-          version = "1.3.14";
-          src = prev.fetchFromGitHub {
-            owner = "timhae";
-            repo = "AriaNg";
-            rev = "7d0538b";
-            hash = "sha256-iUgUT1Vq0KExDT+xSrbvZDDs48GOk+gE6wPAKooFhuU=";
-          };
-          npmDepsHash = "sha256-XHoPPrebNgGZnVQmA0d5OeR+ZWJQEdZU4Ibcbd80/oM=";
-        }
-      );
+    buildNpmPackage = args: prev.buildNpmPackage (args // { nodejs = prev.nodejs_22; });
   };
 
   mpv-unwrapped = prev.mpv-unwrapped.overrideAttrs (old: {
     postPatch = old.postPatch + ''
       substituteInPlace meson.build \
         --replace-quiet "get_option('sysconfdir'), 'mpv'" "'/etc/mpv'"
+    '';
+  });
+
+  yt-dlp = prev.yt-dlp.overrideAttrs (old: {
+    postPatch = old.postPatch + ''
+      substituteInPlace yt_dlp/extractor/bilibili.py \
+        --replace-quiet "https://api.bilibili.com/x/player/wbi/playurl" \
+        "https://api.bilibili.com/x/player/playurl"
     '';
   });
 

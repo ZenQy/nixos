@@ -28,8 +28,8 @@
       # "nhdogjmejiglipccpnnnanhbledajbpd"
       # Bitwarden
       "nngceckbapebfimnlniiiahkandclblb"
-      # Cookies获取助手
-      # "mmcdaoockinhaeiljdmjmnjfndpfpklo"
+      # EditThisCookie (V3)
+      "ojfebgpkimhlhcblbalbfjblapadhbol"
     ];
     homepageLocation = "https://go.itab.link";
 
