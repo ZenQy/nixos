@@ -89,9 +89,9 @@
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "2e9e7b73ac3135e2f1142d7be1ab4e4c29b009ae";
+      rev = "v6.18.36";
       fetchSubmodules = false;
-      sha256 = "sha256-DGAoL1qsZIBP0CxfJKL8bqmiaSBcXTAmiLc/kX36fxg=";
+      sha256 = "sha256-MrJF8jCUJrIbQtdvR5EamGhi16L6TTRgpjRlGMs+ilQ=";
     };
   };
   rtp2httpd = {
