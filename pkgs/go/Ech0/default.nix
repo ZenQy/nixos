@@ -14,9 +14,13 @@ buildGoModule (finalAttrs: {
   preConfigure = ''
     rm -rf template/dist
     cp -r ${Ech0-web} template/dist
+
+    mkdir -p /tmp/include
+    cp ${./sqlite3.h} /tmp/include/sqlite3.h
   '';
 
   env.CGO_ENABLED = 1;
+  env.C_INCLUDE_PATH = "/tmp/include";
 
   subPackages = [ "./cmd/ech0" ];
 
@@ -25,6 +29,7 @@ buildGoModule (finalAttrs: {
   ldflags = [
     "-s"
     "-w"
+    "-X=github.com/lin-snow/ech0/internal/version.Commit=${finalAttrs.version}"
   ];
 
   meta = {

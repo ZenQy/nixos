@@ -12,8 +12,7 @@ buildGoModule (finalAttrs: {
   vendorHash = "sha256-I8R6YckeKqErCVmYSSwbsJaADmC7zanHpR06+ONxNgo=";
 
   preConfigure = ''
-    cp -r ${komari-web} public/defaultTheme
-    ls public/defaultTheme
+    cp -r ${komari-web} web/public/defaultTheme
   '';
 
   env.CGO_ENABLED = 1;
