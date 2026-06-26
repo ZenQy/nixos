@@ -6,37 +6,26 @@
   dockerTools,
 }:
 {
-  freellmapi = {
-    pname = "freellmapi";
-    version = "v0.2.8";
-    src = fetchFromGitHub {
-      owner = "tashfeenahmed";
-      repo = "freellmapi";
-      rev = "v0.2.8";
-      fetchSubmodules = false;
-      sha256 = "sha256-wLMYUV0c157xJh3qqVT8XPw6DWs3oFy351YhXjiI+lE=";
-    };
-  };
   Ech0 = {
     pname = "Ech0";
-    version = "v4.8.2";
+    version = "v5.2.5";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.8.2";
+      rev = "v5.2.5";
       fetchSubmodules = false;
-      sha256 = "sha256-FfWI994j1Pkfh67pKZkOQHq94nVclkYqEjsanUl+e4U=";
+      sha256 = "sha256-zKf9Y7BK4iLPEZcKZJrsFZBRVEmDEwhCEtY7I3SQOGc=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v4.8.2";
+    version = "v5.2.5";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v4.8.2";
+      rev = "v5.2.5";
       fetchSubmodules = false;
-      sha256 = "sha256-FfWI994j1Pkfh67pKZkOQHq94nVclkYqEjsanUl+e4U=";
+      sha256 = "sha256-zKf9Y7BK4iLPEZcKZJrsFZBRVEmDEwhCEtY7I3SQOGc=";
     };
   };
   einat = {
@@ -55,62 +44,73 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2026.05.02";
+    version = "v2026.06.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.05.02/zenith.dict";
-      sha256 = "sha256-szeuk7FT2ZKjw7gvQfL8GTAV4dqv3XjeXNIsmi9tePQ=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.06.02/zenith.dict";
+      sha256 = "sha256-u/PvPjpCtemYxflJ16EK0LqitMYXacTg76tb1w+Tn1c=";
+    };
+  };
+  freellmapi = {
+    pname = "freellmapi";
+    version = "v0.4.1";
+    src = fetchFromGitHub {
+      owner = "tashfeenahmed";
+      repo = "freellmapi";
+      rev = "v0.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-do+w677t+we/TWXHSu67cS7/gFeYH4MrSXomV69iMKg=";
     };
   };
   komari = {
     pname = "komari";
-    version = "1.2.0";
+    version = "1.2.5";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari";
-      rev = "1.2.0";
+      rev = "1.2.5";
       fetchSubmodules = false;
-      sha256 = "sha256-Z0zv60+YgT2IvMuSA6ku56Ostrp2REJZJFCJB0EotYk=";
+      sha256 = "sha256-GewV7MOQnyOemS6KRJ2q72oFRe5rH+pBf4vHOTbhxLM=";
     };
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.1.8";
+    version = "1.2.5";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.1.8";
+      rev = "1.2.5";
       fetchSubmodules = false;
-      sha256 = "sha256-Fii4F5u1ehvvJ7p0sBrftLIwTzIcbl3vG7mm6zeVg5g=";
+      sha256 = "sha256-3l6SJY/sLZgdxEgcBif4RoSTb0WWDyRN3r8I3Tie0uA=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.32";
+    version = "v6.18.36";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.32";
+      rev = "v6.18.36";
       fetchSubmodules = false;
-      sha256 = "sha256-6Gw6qYnHT8kUlLsK8F48ruXnXuc1UbYsPyfwbYP/Sw0=";
+      sha256 = "sha256-MrJF8jCUJrIbQtdvR5EamGhi16L6TTRgpjRlGMs+ilQ=";
     };
   };
   rtp2httpd = {
     pname = "rtp2httpd";
-    version = "v3.12.2";
+    version = "v3.14.1";
     src = fetchFromGitHub {
       owner = "stackia";
       repo = "rtp2httpd";
-      rev = "v3.12.2";
+      rev = "v3.14.1";
       fetchSubmodules = false;
-      sha256 = "sha256-6uzke/TwZ33TuhLL7YWvd0bB8mq/PwXrJmiIEQEg840=";
+      sha256 = "sha256-E+yvO7uEB6wRcitdoopTtI4pKNrPGttJC5H3Zns3fRg=";
     };
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2026.05.03";
+    version = "v2026.06.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.05.03/wallpaper.tar.gz";
-      sha256 = "sha256-hXXBy8MHu6fnHwTKNELbydnTF/A2B8xghuqRKKw7iys=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.06.03/wallpaper.tar.gz";
+      sha256 = "sha256-kLRkH+wHqmo6NkOiftRK7Nla9RPf/xIcxst3NuHbLVs=";
     };
   };
 }

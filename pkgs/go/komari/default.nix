@@ -9,7 +9,7 @@ buildGoModule (finalAttrs: {
   inherit (source) pname version src;
 
   proxyVendor = true;
-  vendorHash = "sha256-7ZiRfOZes2iftWW75XZORV5sWM/cQaPbNCYNMh8kFPk=";
+  vendorHash = "sha256-I8R6YckeKqErCVmYSSwbsJaADmC7zanHpR06+ONxNgo=";
 
   preConfigure = ''
     cp -r ${komari-web} public/defaultTheme
