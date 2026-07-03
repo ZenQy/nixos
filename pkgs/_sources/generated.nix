@@ -8,46 +8,46 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v5.2.5";
+    version = "v5.3.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.2.5";
+      rev = "v5.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-zKf9Y7BK4iLPEZcKZJrsFZBRVEmDEwhCEtY7I3SQOGc=";
+      sha256 = "sha256-XQL5OUoZgaCypu6uxjRN1ZuwyOoTkFvhoA0KPhGEwBE=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v5.2.5";
+    version = "v5.3.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.2.5";
+      rev = "v5.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-zKf9Y7BK4iLPEZcKZJrsFZBRVEmDEwhCEtY7I3SQOGc=";
+      sha256 = "sha256-XQL5OUoZgaCypu6uxjRN1ZuwyOoTkFvhoA0KPhGEwBE=";
     };
   };
   einat = {
     pname = "einat";
-    version = "v0.1.10";
+    version = "v0.1.11";
     src = fetchFromGitHub {
       owner = "EHfive";
       repo = "einat-ebpf";
-      rev = "v0.1.10";
+      rev = "v0.1.11";
       fetchSubmodules = false;
-      sha256 = "sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=";
+      sha256 = "sha256-dyjDzg6kpqjcne1Zke2f7KxAJMp2vAbfeyFGXoH+siE=";
     };
     extract = {
-      "Cargo.lock" = ./. + "/sha256-P0Q8DdeEns5xcALj5vIyubc1AE073nozbNoTzRso37w=/Cargo.lock";
+      "Cargo.lock" = ./. + "/sha256-dyjDzg6kpqjcne1Zke2f7KxAJMp2vAbfeyFGXoH+siE=/Cargo.lock";
     };
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2026.06.02";
+    version = "v2026.07.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.06.02/zenith.dict";
-      sha256 = "sha256-u/PvPjpCtemYxflJ16EK0LqitMYXacTg76tb1w+Tn1c=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.07.02/zenith.dict";
+      sha256 = "sha256-1dSmBCEvSGtqfLWHxiR81+uptN+PJC6Eh4wS6MO2GP0=";
     };
   };
   freellmapi = {
@@ -85,32 +85,32 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.36";
+    version = "v6.18.37";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.36";
+      rev = "v6.18.37";
       fetchSubmodules = false;
-      sha256 = "sha256-MrJF8jCUJrIbQtdvR5EamGhi16L6TTRgpjRlGMs+ilQ=";
+      sha256 = "sha256-x9my20HoEiwEsKh27g2GA0FAz996AdXuvWobbcL0y4E=";
     };
   };
   rtp2httpd = {
     pname = "rtp2httpd";
-    version = "v3.14.1";
+    version = "v3.14.3";
     src = fetchFromGitHub {
       owner = "stackia";
       repo = "rtp2httpd";
-      rev = "v3.14.1";
+      rev = "v3.14.3";
       fetchSubmodules = false;
-      sha256 = "sha256-E+yvO7uEB6wRcitdoopTtI4pKNrPGttJC5H3Zns3fRg=";
+      sha256 = "sha256-8dPnzntEoQSQNewSnV7n4EBPZYkEhBsfAdEpmufW8AM=";
     };
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2026.06.03";
+    version = "v2026.07.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.06.03/wallpaper.tar.gz";
-      sha256 = "sha256-kLRkH+wHqmo6NkOiftRK7Nla9RPf/xIcxst3NuHbLVs=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.07.03/wallpaper.tar.gz";
+      sha256 = "sha256-yRdKo5+k2C6j0aZbntsRe30tIk6qCS9iOiWU5N+EjEM=";
     };
   };
 }
