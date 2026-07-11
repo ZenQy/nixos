@@ -46,6 +46,7 @@
     # vscodium
     zed-editor
     claude-code
+    claude-agent-acp
     obsidian
     sqlitebrowser
 

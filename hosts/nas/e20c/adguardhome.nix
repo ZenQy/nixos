@@ -17,8 +17,8 @@
         port = 53;
         upstream_mode = "load_balance";
         upstream_dns = [
-          "https://dns.alidns.com/dns-query"
-          "https://dns.pub/dns-query"
+          "114.114.114.114"
+          "119.29.29.29"
         ];
         bootstrap_dns = [ "223.5.5.5" ];
       };

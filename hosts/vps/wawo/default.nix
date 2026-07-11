@@ -11,9 +11,7 @@
       let
         host = config.networking.hostName;
       in
-      {
-        inherit (secrets.hosts."${host}") Address Gateway;
-      };
+    secrets.hosts."${host}";
   };
 
 }

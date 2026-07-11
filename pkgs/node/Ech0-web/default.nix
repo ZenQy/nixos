@@ -20,8 +20,13 @@ stdenv.mkDerivation (finalAttrs: {
   pnpmDeps = fetchPnpmDeps {
     inherit (source) pname version src;
     sourceRoot = "${finalAttrs.src.name}/web";
+<<<<<<< HEAD
     hash = "sha256-0MYCPFeOdhhV8Q3jdijgcYo7GtVVnO6S5JIgVn0FCso=";
     fetcherVersion = 3;
+=======
+    hash = "sha256-h5dGR1kp+J3MuWZEi4MlKBeDjDgGHBpu7k+lqPfFazY=";
+    fetcherVersion = 4;
+>>>>>>> 4bdf3b5 (更换dns)
   };
 
   patchPhase = ''
