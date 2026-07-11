@@ -13,13 +13,13 @@
   };
   environment.variables.PATH = "$HOME/.config/npm/bin";
 
-  environment.systemPackages = with pkgs; [
-    # eslint
-    # oxlint
-    vue-language-server
-    # yarn
-    vitejs
-    # svelte-language-server
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   # eslint
+  #   # oxlint
+  #   vue-language-server
+  #   # yarn
+  #   vitejs
+  #   # svelte-language-server
+  # ];
 
 }

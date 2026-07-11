@@ -45,8 +45,10 @@
     # vscode-with-extensions
     # vscodium
     zed-editor
-    claude-code
-    claude-agent-acp
+    # claude-code
+    # claude-agent-acp
+    codex
+    # codex-acp
     obsidian
     sqlitebrowser
 
@@ -63,8 +65,8 @@
     # pup
     # mdbook
     # mitmproxy
-    # python3
-    # python3Packages.pip
+    python3
+    python3Packages.pip
     # dig
     # ghostty
     # parted

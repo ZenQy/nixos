@@ -33,11 +33,11 @@
     "secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1783709101,
-        "narHash": "sha256-soRfLr4OErUjoF9jOE40lw5jqUjmgHHySSlwyQc42v0=",
+        "lastModified": 1783762260,
+        "narHash": "sha256-cZjbXrGvT0N+hWSTQPU1Z6PqEPSwMA4vwt3roWpPZtw=",
         "ref": "refs/heads/main",
-        "rev": "63ba1602554a195818e85afad4446fde1eaf1c0d",
-        "revCount": 103,
+        "rev": "c61b459be0278c0a210f2d82a54e037dd7fbfda7",
+        "revCount": 104,
         "type": "git",
         "url": "ssh://git@github.com/zenqy/nixos-secrets"
       },
