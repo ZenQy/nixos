@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v5.3.0";
+    version = "v5.4.3";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.3.0";
+      rev = "v5.4.3";
       fetchSubmodules = false;
-      sha256 = "sha256-XQL5OUoZgaCypu6uxjRN1ZuwyOoTkFvhoA0KPhGEwBE=";
+      sha256 = "sha256-WxvuKnclBO/W6k4wIWLTxOf916/PncpeFmHpy8+A4Xw=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v5.3.0";
+    version = "v5.4.3";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.3.0";
+      rev = "v5.4.3";
       fetchSubmodules = false;
-      sha256 = "sha256-XQL5OUoZgaCypu6uxjRN1ZuwyOoTkFvhoA0KPhGEwBE=";
+      sha256 = "sha256-WxvuKnclBO/W6k4wIWLTxOf916/PncpeFmHpy8+A4Xw=";
     };
   };
   einat = {
@@ -63,46 +63,46 @@
   };
   komari = {
     pname = "komari";
-    version = "1.2.5";
+    version = "1.2.6";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari";
-      rev = "1.2.5";
+      rev = "1.2.6";
       fetchSubmodules = false;
-      sha256 = "sha256-GewV7MOQnyOemS6KRJ2q72oFRe5rH+pBf4vHOTbhxLM=";
+      sha256 = "sha256-JpU4YczP7BrUUDVhv6MX6VW1Rcifd0fkzWdX8zgkHo0=";
     };
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.2.5";
+    version = "1.2.6";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.2.5";
+      rev = "1.2.6";
       fetchSubmodules = false;
-      sha256 = "sha256-3l6SJY/sLZgdxEgcBif4RoSTb0WWDyRN3r8I3Tie0uA=";
+      sha256 = "sha256-P79Wtb+bNArvTe0QgV9QVPfEZLqI1bopJw2f890mfww=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.37";
+    version = "v6.18.38";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.37";
+      rev = "v6.18.38";
       fetchSubmodules = false;
-      sha256 = "sha256-x9my20HoEiwEsKh27g2GA0FAz996AdXuvWobbcL0y4E=";
+      sha256 = "sha256-4x1MdsUNm/3+DM0SSKH3/DFe7328SDjULvPAhisnRZE=";
     };
   };
   rtp2httpd = {
     pname = "rtp2httpd";
-    version = "v3.14.3";
+    version = "v3.15.3";
     src = fetchFromGitHub {
       owner = "stackia";
       repo = "rtp2httpd";
-      rev = "v3.14.3";
+      rev = "v3.15.3";
       fetchSubmodules = false;
-      sha256 = "sha256-8dPnzntEoQSQNewSnV7n4EBPZYkEhBsfAdEpmufW8AM=";
+      sha256 = "sha256-IybbEUN4V7jmCUkpYKf9CIMzZickWK3TB4m2GbOE8XE=";
     };
   };
   wallpapers = {
