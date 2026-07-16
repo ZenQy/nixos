@@ -57,6 +57,8 @@
     payload-dumper-go
     erofs-utils
 
+    ## Games ##
+    supertuxkart
     ## Others ##
     telegram-desktop
     hugo

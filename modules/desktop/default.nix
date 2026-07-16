@@ -9,7 +9,7 @@
     "https://mirrors.cernet.edu.cn/nix-channels/store"
   ];
   boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
-  boot.supportedFilesystems = [ "ntfs" ];
+  # boot.supportedFilesystems = [ "ntfs" ];
   services.gvfs.enable = true;
   services.speechd.enable = false;
   services.gnome.gnome-keyring.enable = true;

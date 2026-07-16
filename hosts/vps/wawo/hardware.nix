@@ -32,23 +32,32 @@
       subvols = builtins.listToAttrs (
         map
           (x: {
-            name = x;
+            name = "/${x}";
             value = {
               device = "/dev/disk/by-partlabel/disk-main-root";
               fsType = "btrfs";
               options = [
-                "compress-force=zstd"
-                "nosuid"
-                "nodev"
-                "subvol=${x}"
-              ];
+                "subvol=@${x}"
+              ]
+              ++ (
+                if x == "swap" then
+                  [ "defaults" ]
+                else
+                  [
+                    "compress-force=zstd"
+                    "nosuid"
+                    "nodev"
+                  ]
+              );
             };
           })
           [
-            "/boot"
-            "/home"
-            "/nix"
-            "/var"
+            "boot"
+            "home"
+            "nix"
+            "swap"
+            "tmp"
+            "var"
           ]
       );
     in
@@ -66,6 +75,6 @@
       };
     };
 
-  swapDevices = [ { device = "/dev/disk/by-partlabel/disk-main-swap"; } ];
+  swapDevices = [ { device = "/swap/swapfile"; } ];
 
 }

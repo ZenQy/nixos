@@ -23,7 +23,7 @@ buildGoModule (finalAttrs: {
     "-s"
     "-w"
     "-X=github.com/komari-monitor/komari/utils.CurrentVersion=${finalAttrs.version}"
-    "-X=github.com/komari-monitor/komari/utils.VersionHash=${finalAttrs.vendorHash}"
+    "-X=github.com/komari-monitor/komari/utils.VersionHash=${finalAttrs.version}"
   ];
 
   meta = {
