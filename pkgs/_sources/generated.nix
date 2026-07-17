@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v5.4.3";
+    version = "v5.4.4";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.4.3";
+      rev = "v5.4.4";
       fetchSubmodules = false;
-      sha256 = "sha256-WxvuKnclBO/W6k4wIWLTxOf916/PncpeFmHpy8+A4Xw=";
+      sha256 = "sha256-6gCFgHXdDQ/dHfoRLdRhYg4o4bXNomnyQUTzJq7ah8Y=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v5.4.3";
+    version = "v5.4.4";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.4.3";
+      rev = "v5.4.4";
       fetchSubmodules = false;
-      sha256 = "sha256-WxvuKnclBO/W6k4wIWLTxOf916/PncpeFmHpy8+A4Xw=";
+      sha256 = "sha256-6gCFgHXdDQ/dHfoRLdRhYg4o4bXNomnyQUTzJq7ah8Y=";
     };
   };
   einat = {
@@ -63,24 +63,24 @@
   };
   komari = {
     pname = "komari";
-    version = "1.2.6";
+    version = "1.2.7";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari";
-      rev = "1.2.6";
+      rev = "1.2.7";
       fetchSubmodules = false;
-      sha256 = "sha256-JpU4YczP7BrUUDVhv6MX6VW1Rcifd0fkzWdX8zgkHo0=";
+      sha256 = "sha256-DBTAdHWaPSfNhHskIufVC/DcPK0ZcHvrOlbgGwq5SBU=";
     };
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.2.6";
+    version = "1.2.7";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.2.6";
+      rev = "1.2.7";
       fetchSubmodules = false;
-      sha256 = "sha256-P79Wtb+bNArvTe0QgV9QVPfEZLqI1bopJw2f890mfww=";
+      sha256 = "sha256-YvQjGFwPP/DGjQWOmeVZtjNiNeGLyWY2uyeEu9w8Hdk=";
     };
   };
   linux-flippy = {

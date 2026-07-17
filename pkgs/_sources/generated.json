@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.4.3",
-            "sha256": "sha256-WxvuKnclBO/W6k4wIWLTxOf916/PncpeFmHpy8+A4Xw=",
+            "rev": "v5.4.4",
+            "sha256": "sha256-6gCFgHXdDQ/dHfoRLdRhYg4o4bXNomnyQUTzJq7ah8Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.4.3"
+        "version": "v5.4.4"
     },
     "Ech0-web": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.4.3",
-            "sha256": "sha256-WxvuKnclBO/W6k4wIWLTxOf916/PncpeFmHpy8+A4Xw=",
+            "rev": "v5.4.4",
+            "sha256": "sha256-6gCFgHXdDQ/dHfoRLdRhYg4o4bXNomnyQUTzJq7ah8Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.4.3"
+        "version": "v5.4.4"
     },
     "einat": {
         "cargoLock": null,
@@ -114,12 +114,12 @@
             "name": null,
             "owner": "komari-monitor",
             "repo": "komari",
-            "rev": "1.2.6",
-            "sha256": "sha256-JpU4YczP7BrUUDVhv6MX6VW1Rcifd0fkzWdX8zgkHo0=",
+            "rev": "1.2.7",
+            "sha256": "sha256-DBTAdHWaPSfNhHskIufVC/DcPK0ZcHvrOlbgGwq5SBU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.2.6"
+        "version": "1.2.7"
     },
     "komari-web": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "komari-monitor",
             "repo": "komari-web",
-            "rev": "1.2.6",
-            "sha256": "sha256-P79Wtb+bNArvTe0QgV9QVPfEZLqI1bopJw2f890mfww=",
+            "rev": "1.2.7",
+            "sha256": "sha256-YvQjGFwPP/DGjQWOmeVZtjNiNeGLyWY2uyeEu9w8Hdk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.2.6"
+        "version": "1.2.7"
     },
     "linux-flippy": {
         "cargoLock": null,
