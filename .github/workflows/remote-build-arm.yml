@@ -70,10 +70,7 @@ jobs:
 
       - name: Environment Prepare
         run: |
-          echo ----------------
-          curl -s4 ip.sb
-          echo ----------------
-          wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && sudo bash menu.sh 6
+          wget -N https://gitlab.com/fscarmen/warp/-/raw/main/warp-go.sh && bash warp-go.sh 6
           nix-env -f '<nixpkgs>' -iA nixos-rebuild
 
       # - name: Set up WARP # 不支持arm64
