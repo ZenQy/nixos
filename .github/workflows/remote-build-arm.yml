@@ -34,6 +34,13 @@ jobs:
   build:
     runs-on: ubuntu-24.04-arm
     steps:
+      - name: 判断是否填写ip
+        run: |
+          if [ "{{ inputs.address }}" == "" ]; then
+            echo "没有预填写ip，直接退出..."
+            exit 1
+          fi
+
       - name: Checkout
         uses: actions/checkout@v6
         with:
@@ -63,13 +70,14 @@ jobs:
 
       - name: Environment Prepare
         run: |
+          wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && sudo bash menu.sh 6
           nix-env -f '<nixpkgs>' -iA nixos-rebuild
 
-      - name: Set up WARP
-        uses: fscarmen/warp-on-actions@v1.4
-        with:
-          stack: ipv6
-          mode: client
+      # - name: Set up WARP # 不支持arm64
+      #   uses: fscarmen/warp-on-actions@v1.4
+      #   with:
+      #     stack: ipv6
+      #     mode: client
 
       - name: remote build
         env:
