@@ -9,13 +9,13 @@ on:
         description: "choose one or all vps"
         options:
           - all
-          - alice
           - beelink
+          - gcloud
           - osaka-1
           - osaka-2
-          # - sailor
+          - sailor
           - wawo
-          - gcloud
+          - yuusei
         required: true
         default: all
       command:
@@ -51,7 +51,7 @@ jobs:
         run: |
           hosts='[ "${{ inputs.hosts }}" ]'
           if [[ "${{ inputs.hosts }}" == 'all' || "${{ inputs.hosts }}" == '' ]]; then
-            hosts='[ "osaka-1", "osaka-2", "alice", "sailor", "wawo", "gcloud"]'
+            hosts='[ "osaka-1", "osaka-2", "yuusei", "sailor", "wawo", "gcloud"]'
           fi
           echo $hosts
           echo "matrix=$(echo $hosts)" >> $GITHUB_OUTPUT
@@ -102,7 +102,7 @@ jobs:
         name: Set IPv6 tag
         run: |
           host=${{matrix.hosts}}
-          if [[ $host == 'alice' ]]; then
+          if [[ $host == 'yuusei' ]]; then
             echo "ipv6=true" >> $GITHUB_OUTPUT
           fi
 

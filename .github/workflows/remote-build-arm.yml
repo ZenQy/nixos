@@ -1,0 +1,87 @@
+name: Remote Build for arm nas
+on:
+  workflow_dispatch:
+    inputs:
+      host:
+        type: choice
+        description: "choose one device"
+        options:
+          - e20c
+          - rock-5b
+          - oect
+        required: true
+        default: e20c
+      command:
+        type: choice
+        description: "choose the command"
+        options:
+          - boot
+          - build
+          - switch
+          - test
+        required: true
+        default: build
+      address:
+        description: "input the ipv6 address"
+        required: true
+        default: ""
+        type: string
+env:
+  NIX_PATH: nixpkgs=channel:nixos-unstable
+  TZ: Asia/Shanghai
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: SSH Private Key
+        uses: webfactory/ssh-agent@v0.10.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Install nixFlake
+        uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            trusted-public-keys = zenqy.cachix.org-1:G5csLBsu/kQIOXU7XUiqeMacwzN1WQWv0+GysTVmJgo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+            substituters = https://zenqy.cachix.org/ https://cache.nixos.org/
+
+      - name: Magic Nix Cache
+        uses: DeterminateSystems/flakehub-cache-action@main
+
+      - name: Use Cachix
+        uses: cachix/cachix-action@v17
+        with:
+          name: zenqy
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+          useDaemon: false
+
+      - name: Environment Prepare
+        run: |
+          nix-env -f '<nixpkgs>' -iA nixos-rebuild
+
+      - name: Set up WARP
+        uses: fscarmen/warp-on-actions@v1.4
+        with:
+          stack: ipv6
+          mode: client
+
+      - name: remote build
+        env:
+          NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p ${{ secrets.PORT }}"
+        run: |
+          nixos-rebuild ${{ inputs.command }} --flake .#${{ inputs.host }} --target-host root@${{ inputs.address }}
+
+      - name: Telegram notification
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            [${{ inputs.hosts }}]编译失败，请查明原因
