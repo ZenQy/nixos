@@ -1,31 +1,6 @@
-name: Remote Build for arm nas
+name: Build for arm64
 on:
   workflow_dispatch:
-    inputs:
-      host:
-        type: choice
-        description: "choose one device"
-        options:
-          - e20c
-          - rock-5b
-          - oect
-        required: true
-        default: e20c
-      command:
-        type: choice
-        description: "choose the command"
-        options:
-          - boot
-          - build
-          - switch
-          - test
-        required: true
-        default: build
-      address:
-        description: "input the ipv6 address"
-        required: true
-        default: ""
-        type: string
 env:
   NIX_PATH: nixpkgs=channel:nixos-unstable
   TZ: Asia/Shanghai
@@ -34,22 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-24.04-arm
     steps:
-      - name: 判断是否填写ip
-        run: |
-          if [ "{{ inputs.address }}" == "" ]; then
-            echo "没有预填写ip，直接退出..."
-            exit 1
-          fi
-
       - name: Checkout
         uses: actions/checkout@v6
         with:
           fetch-depth: 1
-
-      - name: SSH Private Key
-        uses: webfactory/ssh-agent@v0.10.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Install nixFlake
         uses: cachix/install-nix-action@v31
@@ -68,24 +31,9 @@ jobs:
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
           useDaemon: false
 
-      - name: Environment Prepare
-        run: |
-          wget -N https://gitlab.com/fscarmen/warp/-/raw/main/warp-go.sh && sudo bash warp-go.sh 6
-          curl -s4 ip.sb
-          curl -s6 ip.sb
-          nix-env -f '<nixpkgs>' -iA nixos-rebuild
-
       - name: remote build
-        env:
-          NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p ${{ secrets.PORT }}"
         run: |
-          nixos-rebuild ${{ inputs.command }} --flake .#${{ inputs.host }} --target-host root@${{ inputs.address }}
-
-      - name: Telegram notification
-        if: failure()
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            [${{ inputs.hosts }}]编译失败，请查明原因
+          nix-env -f '<nixpkgs>' -iA nixos-rebuild
+          nixos-rebuild build --flake .#e20c
+          nixos-rebuild build --flake .#rock-5b
+          nixos-rebuild build --flake .#oect
