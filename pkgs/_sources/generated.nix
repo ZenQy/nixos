@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v5.4.4";
+    version = "v5.4.6";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.4.4";
+      rev = "v5.4.6";
       fetchSubmodules = false;
-      sha256 = "sha256-6gCFgHXdDQ/dHfoRLdRhYg4o4bXNomnyQUTzJq7ah8Y=";
+      sha256 = "sha256-nfVA/8ViWcRV8mVGW069tju+iGrYeVlMZ64cvukw+Dw=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v5.4.4";
+    version = "v5.4.6";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.4.4";
+      rev = "v5.4.6";
       fetchSubmodules = false;
-      sha256 = "sha256-6gCFgHXdDQ/dHfoRLdRhYg4o4bXNomnyQUTzJq7ah8Y=";
+      sha256 = "sha256-nfVA/8ViWcRV8mVGW069tju+iGrYeVlMZ64cvukw+Dw=";
     };
   };
   einat = {
@@ -52,35 +52,35 @@
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.4.1";
+    version = "v0.5.0";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.4.1";
+      rev = "v0.5.0";
       fetchSubmodules = false;
-      sha256 = "sha256-do+w677t+we/TWXHSu67cS7/gFeYH4MrSXomV69iMKg=";
+      sha256 = "sha256-slCdFD4yEV2EIEPk9WLg1z8C0ZQzuWKIHIBYAKwAqvI=";
     };
   };
   komari = {
     pname = "komari";
-    version = "1.2.7";
+    version = "1.3.0";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari";
-      rev = "1.2.7";
+      rev = "1.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-DBTAdHWaPSfNhHskIufVC/DcPK0ZcHvrOlbgGwq5SBU=";
+      sha256 = "sha256-myMr4LHIXd8WZVCoDs3Qe05IR5n/Uaftx9pIyTqRfIU=";
     };
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.2.7";
+    version = "1.3.0";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.2.7";
+      rev = "1.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-YvQjGFwPP/DGjQWOmeVZtjNiNeGLyWY2uyeEu9w8Hdk=";
+      sha256 = "sha256-LAgPjWY/SqBiMlTwsICTbmNNz1lQCOH7Xb9Gp8o6gqo=";
     };
   };
   linux-flippy = {
