@@ -5,7 +5,7 @@
     ./hardware.nix
   ];
 
-  systemd.network.networks.default = {
+  systemd.network.networks.eth0 = {
     name = "eth0";
     address = [
       "10.0.0.11/24"

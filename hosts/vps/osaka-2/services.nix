@@ -67,4 +67,7 @@
     # };
   };
 
+  environment.systemPackages = with pkgs; [
+    wgcf
+  ];
 }

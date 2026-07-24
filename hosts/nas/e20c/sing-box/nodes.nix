@@ -2,7 +2,7 @@
   # 代理节点
   tuic = [
     "wawo"
-    "alice"
+    "yuusei"
     "osaka-1"
     "sailor"
     "gcloud"

@@ -10,7 +10,7 @@
     ./hardware.nix
   ];
 
-  systemd.network.networks.default = {
+  systemd.network.networks.eth0 = {
     name = "eth0";
     networkConfig.DHCP = true;
   };

@@ -5,13 +5,13 @@
     ./hardware.nix
   ];
 
-  systemd.network.networks.default = {
+  systemd.network.networks.eth0 = {
     name = "eth0";
     networkConfig =
       let
         host = config.networking.hostName;
       in
-    secrets.hosts."${host}";
+      secrets.hosts."${host}".network;
   };
 
 }

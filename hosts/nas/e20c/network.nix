@@ -17,7 +17,7 @@
       {
         name = "eth1";
         networkConfig = {
-          inherit (secrets.hosts."${host}") Address;
+          inherit (secrets.hosts."${host}".network) Address;
           DHCP = "ipv6";
           DHCPPrefixDelegation = true; # 自动选择第一个有 PD 的链路, 并获得子网前缀
           IPv6SendRA = true; # 会自动关闭 IPv6AcceptRA 并打开 IPv6Forwarding
@@ -27,7 +27,7 @@
           PoolOffset = 150;
           PoolSize = 100;
           EmitDNS = true;
-          DNS = secrets.hosts."${host}".Gateway;
+          DNS = secrets.hosts."${host}".network.Gateway;
         };
       };
 
