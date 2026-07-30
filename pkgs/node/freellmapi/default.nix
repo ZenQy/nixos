@@ -22,7 +22,7 @@ buildNpmPackage (finalAttrs: {
 
   installPhase = ''
     mkdir -p $out/{client,server}
-    mv {node_modules,shared} $out
+    mv {node_modules,shared,cli} $out
     mv client/dist $out/client
     mv server/dist $out/server
   '';

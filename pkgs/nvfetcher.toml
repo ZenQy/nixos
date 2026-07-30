@@ -40,5 +40,5 @@ src.github_tag = "tashfeenahmed/freellmapi"
 fetch.github = "tashfeenahmed/freellmapi"
 
 [yx-tools]
-src.github = "byJoey/yx-tools"
+src.github_tag = "byJoey/yx-tools"
 fetch.github = "byJoey/yx-tools"

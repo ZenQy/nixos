@@ -115,13 +115,13 @@
   };
   yx-tools = {
     pname = "yx-tools";
-    version = "v2.2.7";
+    version = "v3";
     src = fetchFromGitHub {
       owner = "byJoey";
       repo = "yx-tools";
-      rev = "v2.2.7";
+      rev = "v3";
       fetchSubmodules = false;
-      sha256 = "sha256-neYhk/ZIyKuE5yCWPhXrdREy1OMMWz39oHiiEQUOzyY=";
+      sha256 = "sha256-gTh+wupU6AKBryRrn6AWt2IeicV8nE1CDRaykcYKnLU=";
     };
   };
 }
