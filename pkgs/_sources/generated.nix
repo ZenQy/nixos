@@ -6,17 +6,6 @@
   dockerTools,
 }:
 {
-  yx-tools = {
-    pname = "yx-tools";
-    version = "v5.4.6";
-    src = fetchFromGitHub {
-      owner = "lin-snow";
-      repo = "Ech0";
-      rev = "v5.4.6";
-      fetchSubmodules = false;
-      sha256 = "sha256-nfVA/8ViWcRV8mVGW069tju+iGrYeVlMZ64cvukw+Dw=";
-    };
-  };
   Ech0 = {
     pname = "Ech0";
     version = "v5.4.6";
@@ -63,35 +52,35 @@
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.5.0";
+    version = "v0.6.5";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.5.0";
+      rev = "v0.6.5";
       fetchSubmodules = false;
-      sha256 = "sha256-slCdFD4yEV2EIEPk9WLg1z8C0ZQzuWKIHIBYAKwAqvI=";
+      sha256 = "sha256-IyAycr7mzyfUaM9VvQn4Le5nARstcPw0+cpbbAWPmws=";
     };
   };
   komari = {
     pname = "komari";
-    version = "1.3.0";
+    version = "1.3.2";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari";
-      rev = "1.3.0";
+      rev = "1.3.2";
       fetchSubmodules = false;
-      sha256 = "sha256-myMr4LHIXd8WZVCoDs3Qe05IR5n/Uaftx9pIyTqRfIU=";
+      sha256 = "sha256-6pw/DeG1kn3J+cIqY5w/R70O9s70MlcQwd8nVlRMoA4=";
     };
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.3.0";
+    version = "1.3.2";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.3.0";
+      rev = "1.3.2";
       fetchSubmodules = false;
-      sha256 = "sha256-LAgPjWY/SqBiMlTwsICTbmNNz1lQCOH7Xb9Gp8o6gqo=";
+      sha256 = "sha256-wAahCOfAh5nlN6qhdiul6MZTCfIygsFLENgrfY2yAew=";
     };
   };
   linux-flippy = {
@@ -122,6 +111,17 @@
     src = fetchurl {
       url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.07.03/wallpaper.tar.gz";
       sha256 = "sha256-yRdKo5+k2C6j0aZbntsRe30tIk6qCS9iOiWU5N+EjEM=";
+    };
+  };
+  yx-tools = {
+    pname = "yx-tools";
+    version = "v2.2.7";
+    src = fetchFromGitHub {
+      owner = "byJoey";
+      repo = "yx-tools";
+      rev = "v2.2.7";
+      fetchSubmodules = false;
+      sha256 = "sha256-neYhk/ZIyKuE5yCWPhXrdREy1OMMWz39oHiiEQUOzyY=";
     };
   };
 }
