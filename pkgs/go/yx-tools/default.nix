@@ -8,7 +8,7 @@ buildGoModule (finalAttrs: {
   inherit (source) pname version src;
 
   proxyVendor = true;
-  vendorHash = "sha256-aub4yvrKsVI5B4bY9nccgbEMyCe5DnJkB8ieEInxuys=";
+  vendorHash = "";
 
   doCheck = false;
 
