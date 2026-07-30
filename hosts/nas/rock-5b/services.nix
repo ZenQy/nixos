@@ -20,6 +20,15 @@
           ];
         }
         {
+          source = "/var/lib/freellmapi/data/";
+          dest = "/rock-5b/freellmapi";
+          include = [
+            "freeapi.db"
+            "freeapi.db-shm"
+            "freeapi.db-wal"
+          ];
+        }
+        {
           source = "/var/lib/containers/storage/volumes/qd/_data/";
           dest = "/rock-5b/qd";
           include = [
@@ -50,35 +59,55 @@
     '';
   };
 
-  services.cron = {
-    enable = true;
-    systemCronJobs =
-      let
-        tv-m3u.sh = pkgs.writeShellScript "tv-m3u.sh" ''
-          echo "#EXTM3U" > /storage/tv.m3u
-          URL="https://www.wmviv.com/anhui-mobile-iptv.html"
-          count=1
-          curl -s "$URL" | ${pkgs.pup}/bin/pup 'table td text{}' | while read -r cell_data; do
-              case $count in
-                  1) val1=$cell_data ;;
-                  2) val2=$cell_data ;;
-                  4) val4=$cell_data ;;
-              esac
-              if [ $count -eq 5 ]; then
-                  echo "#EXTINF:-1 group-title=\"$val2\",$val1" >> /storage/tv.m3u
-                  echo "$val4" >> /storage/tv.m3u
-                  count=1
-              else
-                  ((count++))
-              fi
-          done
-        '';
-      in
-      [
-        # 更新 tv.m3u
-        "0 4 * * 3 nixos ${tv-m3u.sh}"
-        # 下载消耗流量
-        "*/4 1-8 * * * nixos ${pkgs.curl}/bin/curl -so /dev/null https://f.940940.xyz/alcie.raw.gz"
+  systemd.timers = {
+    traffic-consumer = {
+      enable = true;
+      timerConfig.OnCalendar = "*-*-* 01..07:0/3:00";
+      wantedBy = [ "timers.target" ];
+    };
+    tv-m3u = {
+      enable = true;
+      timerConfig.OnCalendar = "Fri *-*-* 04:00:00";
+      wantedBy = [ "timers.target" ];
+    };
+  };
+  systemd.services = {
+    traffic-consumer = {
+      enable = true;
+      path = with pkgs; [ curl ];
+      serviceConfig.ExecStart = ''
+        curl -so /dev/null https://f.940940.xyz/alcie.raw.gz
+      '';
+    };
+    tv-m3u = {
+      enable = true;
+      path = with pkgs; [
+        curl
+        pup
       ];
+      serviceConfig = {
+        User = "nixos";
+        Group = "wheel";
+      };
+      script = ''
+        echo "#EXTM3U" > /storage/tv.m3u
+        URL="https://www.wmviv.com/anhui-mobile-iptv.html"
+        count=1
+        curl -s "$URL" | pup 'table td text{}' | while read -r cell_data; do
+            case $count in
+                1) val1=$cell_data ;;
+                2) val2=$cell_data ;;
+                4) val4=$cell_data ;;
+            esac
+            if [ $count -eq 5 ]; then
+                echo "#EXTINF:-1 group-title=\"$val2\",$val1" >> /storage/tv.m3u
+                echo "$val4" >> /storage/tv.m3u
+                count=1
+            else
+                ((count++))
+            fi
+        done
+      '';
+    };
   };
 }

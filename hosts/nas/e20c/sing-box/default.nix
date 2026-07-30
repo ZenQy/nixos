@@ -157,7 +157,10 @@ let
         action = "sniff";
       }
       {
-        process_name = "AdGuardHome";
+        process_name = [
+          "AdGuardHome"
+          "yx"
+        ];
         outbound = "direct";
       }
       # {

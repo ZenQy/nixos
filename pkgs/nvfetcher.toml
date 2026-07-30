@@ -38,3 +38,7 @@ fetch.github = "komari-monitor/komari-web"
 [freellmapi]
 src.github_tag = "tashfeenahmed/freellmapi"
 fetch.github = "tashfeenahmed/freellmapi"
+
+[yx-tools]
+src.github = "byJoey/yx-tools"
+fetch.github = "byJoey/yx-tools"

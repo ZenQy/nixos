@@ -6,6 +6,17 @@
   dockerTools,
 }:
 {
+  yx-tools = {
+    pname = "yx-tools";
+    version = "v5.4.6";
+    src = fetchFromGitHub {
+      owner = "lin-snow";
+      repo = "Ech0";
+      rev = "v5.4.6";
+      fetchSubmodules = false;
+      sha256 = "sha256-nfVA/8ViWcRV8mVGW069tju+iGrYeVlMZ64cvukw+Dw=";
+    };
+  };
   Ech0 = {
     pname = "Ech0";
     version = "v5.4.6";
