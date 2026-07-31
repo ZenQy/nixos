@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.4.6",
-            "sha256": "sha256-nfVA/8ViWcRV8mVGW069tju+iGrYeVlMZ64cvukw+Dw=",
+            "rev": "v5.4.7",
+            "sha256": "sha256-onI/qu4L2RAUvbOA+AkfmPP79RdJUA5/1fPwl1Ruvaw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.4.6"
+        "version": "v5.4.7"
     },
     "Ech0-web": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.4.6",
-            "sha256": "sha256-nfVA/8ViWcRV8mVGW069tju+iGrYeVlMZ64cvukw+Dw=",
+            "rev": "v5.4.7",
+            "sha256": "sha256-onI/qu4L2RAUvbOA+AkfmPP79RdJUA5/1fPwl1Ruvaw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.4.6"
+        "version": "v5.4.7"
     },
     "einat": {
         "cargoLock": null,
@@ -93,12 +93,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.6.5",
-            "sha256": "sha256-IyAycr7mzyfUaM9VvQn4Le5nARstcPw0+cpbbAWPmws=",
+            "rev": "v0.6.6",
+            "sha256": "sha256-GD8UeQPnt1LgTgu/ViMTO5SuOaUdePKSu0imgnzYLFE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.6.5"
+        "version": "v0.6.6"
     },
     "komari": {
         "cargoLock": null,
@@ -156,12 +156,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.38",
-            "sha256": "sha256-4x1MdsUNm/3+DM0SSKH3/DFe7328SDjULvPAhisnRZE=",
+            "rev": "v6.18.41",
+            "sha256": "sha256-IY8LqIb79WvOuVnhvI0b4QgFAhL+WB9DbOamKDBiBWw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.38"
+        "version": "v6.18.41"
     },
     "rtp2httpd": {
         "cargoLock": null,
@@ -213,11 +213,11 @@
             "name": null,
             "owner": "byJoey",
             "repo": "yx-tools",
-            "rev": "v2.2.7",
-            "sha256": "sha256-neYhk/ZIyKuE5yCWPhXrdREy1OMMWz39oHiiEQUOzyY=",
+            "rev": "v3",
+            "sha256": "sha256-gTh+wupU6AKBryRrn6AWt2IeicV8nE1CDRaykcYKnLU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.2.7"
+        "version": "v3"
     }
 }

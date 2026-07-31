@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v5.4.6";
+    version = "v5.4.7";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.4.6";
+      rev = "v5.4.7";
       fetchSubmodules = false;
-      sha256 = "sha256-nfVA/8ViWcRV8mVGW069tju+iGrYeVlMZ64cvukw+Dw=";
+      sha256 = "sha256-onI/qu4L2RAUvbOA+AkfmPP79RdJUA5/1fPwl1Ruvaw=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v5.4.6";
+    version = "v5.4.7";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.4.6";
+      rev = "v5.4.7";
       fetchSubmodules = false;
-      sha256 = "sha256-nfVA/8ViWcRV8mVGW069tju+iGrYeVlMZ64cvukw+Dw=";
+      sha256 = "sha256-onI/qu4L2RAUvbOA+AkfmPP79RdJUA5/1fPwl1Ruvaw=";
     };
   };
   einat = {
@@ -52,13 +52,13 @@
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.6.5";
+    version = "v0.6.6";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.6.5";
+      rev = "v0.6.6";
       fetchSubmodules = false;
-      sha256 = "sha256-IyAycr7mzyfUaM9VvQn4Le5nARstcPw0+cpbbAWPmws=";
+      sha256 = "sha256-GD8UeQPnt1LgTgu/ViMTO5SuOaUdePKSu0imgnzYLFE=";
     };
   };
   komari = {
@@ -85,13 +85,13 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.38";
+    version = "v6.18.41";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.38";
+      rev = "v6.18.41";
       fetchSubmodules = false;
-      sha256 = "sha256-4x1MdsUNm/3+DM0SSKH3/DFe7328SDjULvPAhisnRZE=";
+      sha256 = "sha256-IY8LqIb79WvOuVnhvI0b4QgFAhL+WB9DbOamKDBiBWw=";
     };
   };
   rtp2httpd = {
