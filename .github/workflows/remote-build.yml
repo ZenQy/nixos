@@ -117,11 +117,16 @@ jobs:
         env:
           NIX_SSHOPTS: "-o StrictHostKeyChecking=no -p ${{ secrets.PORT }}"
         run: |
-          host=${{matrix.hosts}}
+          host=${{ matrix.hosts }}
+          ip=${{ secrets[env.HOST] }}
+          if [[ ${{ steps.set-ipv6.outputs.ipv6 }} == 'true' ]]; then
+            ip="[${{ secrets[env.HOST] }}]"
+          fi
+
           if [[ $host == 'beelink' ]]; then
-            nixos-rebuild build --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
+            nixos-rebuild build --flake .#${{ matrix.hosts }} --target-host root@$ip
           else
-            nixos-rebuild ${{ inputs.command }} --flake .#${{ matrix.hosts }} --target-host root@${{ secrets[env.HOST] }}
+            nixos-rebuild ${{ inputs.command }} --flake .#${{ matrix.hosts }} --target-host root@$ip
           fi
 
       - name: executing remote ssh commands using ssh key
