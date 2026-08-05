@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v5.4.7";
+    version = "v5.5.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.4.7";
+      rev = "v5.5.0";
       fetchSubmodules = false;
-      sha256 = "sha256-onI/qu4L2RAUvbOA+AkfmPP79RdJUA5/1fPwl1Ruvaw=";
+      sha256 = "sha256-MwGynK/pl9mLPvFtDmX7XQU1T9woptJz90d5PSxVri8=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v5.4.7";
+    version = "v5.5.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.4.7";
+      rev = "v5.5.0";
       fetchSubmodules = false;
-      sha256 = "sha256-onI/qu4L2RAUvbOA+AkfmPP79RdJUA5/1fPwl1Ruvaw=";
+      sha256 = "sha256-MwGynK/pl9mLPvFtDmX7XQU1T9woptJz90d5PSxVri8=";
     };
   };
   einat = {
@@ -44,54 +44,54 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2026.07.02";
+    version = "v2026.08.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.07.02/zenith.dict";
-      sha256 = "sha256-1dSmBCEvSGtqfLWHxiR81+uptN+PJC6Eh4wS6MO2GP0=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.08.02/zenith.dict";
+      sha256 = "sha256-T7ok5QFatqNo6rklBnSdb+7XZFfwbk0xPLAkqSU7ynE=";
     };
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.6.6";
+    version = "v0.6.8";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.6.6";
+      rev = "v0.6.8";
       fetchSubmodules = false;
-      sha256 = "sha256-GD8UeQPnt1LgTgu/ViMTO5SuOaUdePKSu0imgnzYLFE=";
+      sha256 = "sha256-C8lr6Go6nNRORO5v+W0hRQaTgLQWlmySSUBLHkmFYEU=";
     };
   };
   komari = {
     pname = "komari";
-    version = "1.3.2";
+    version = "1.4.0";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari";
-      rev = "1.3.2";
+      rev = "1.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-6pw/DeG1kn3J+cIqY5w/R70O9s70MlcQwd8nVlRMoA4=";
+      sha256 = "sha256-ME6taT42RoEYPcEIv6aUmzHZA0UkZSSLdPvNV3wiRxw=";
     };
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.3.2";
+    version = "1.4.0";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.3.2";
+      rev = "1.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-wAahCOfAh5nlN6qhdiul6MZTCfIygsFLENgrfY2yAew=";
+      sha256 = "sha256-705kxj+NIX5oo5M7JDLoxnLLBobmXcpXcstOL7VDwO4=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.41";
+    version = "v6.18.42";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.41";
+      rev = "v6.18.42";
       fetchSubmodules = false;
-      sha256 = "sha256-IY8LqIb79WvOuVnhvI0b4QgFAhL+WB9DbOamKDBiBWw=";
+      sha256 = "sha256-+k8AWaW4bHB8vhCj+2VUW5JR0aMAXz9vOxSURZv0r3M=";
     };
   };
   rtp2httpd = {
@@ -107,21 +107,21 @@
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2026.07.03";
+    version = "v2026.08.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.07.03/wallpaper.tar.gz";
-      sha256 = "sha256-yRdKo5+k2C6j0aZbntsRe30tIk6qCS9iOiWU5N+EjEM=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.08.03/wallpaper.tar.gz";
+      sha256 = "sha256-skb5dTolnvlaphuB+HTXc2nvUPNM1Kkj9oweLNydR/c=";
     };
   };
   yx-tools = {
     pname = "yx-tools";
-    version = "v3";
+    version = "v3.0.1";
     src = fetchFromGitHub {
       owner = "byJoey";
       repo = "yx-tools";
-      rev = "v3";
+      rev = "v3.0.1";
       fetchSubmodules = false;
-      sha256 = "sha256-gTh+wupU6AKBryRrn6AWt2IeicV8nE1CDRaykcYKnLU=";
+      sha256 = "sha256-1dz/1VTN5yp7rGuZfNPicxGeu/UDl8ZoGjaufU3dbEc=";
     };
   };
 }
