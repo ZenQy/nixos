@@ -17,7 +17,7 @@
         WorkingDirectory = "/var/lib/yx-tools";
         ExecStart =
           let
-            cfg = secrets.cloudflare;
+            cfg = secrets.sing-box.cloudflare;
           in
           ''
             yx test -colo HKG,SIN -n 10 -upload api -domain ${cfg.host} -uuid ${cfg.uuid} -clear
