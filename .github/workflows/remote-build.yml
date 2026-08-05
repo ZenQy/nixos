@@ -22,11 +22,11 @@ on:
         type: choice
         description: "choose the command"
         options:
-          - switch
           - boot
+          - switch
           - test
         required: true
-        default: switch
+        default: boot
 
 env:
   NIX_PATH: nixpkgs=channel:nixos-unstable
@@ -119,7 +119,7 @@ jobs:
         run: |
           host=${{ matrix.hosts }}
           ip=${{ secrets[env.HOST] }}
-          if [[ ${{ steps.set-ipv6.outputs.ipv6 }} == 'true' ]]; then
+          if [[ "${{ steps.set-ipv6.outputs.ipv6 }}" == 'true' ]]; then
             ip="[${{ secrets[env.HOST] }}]"
           fi
 
