@@ -29,7 +29,7 @@ in
         conf = {
           auto_discovery_key = secrets.komari.auto_discovery_key; # 自动发现密钥
           disable_auto_update = true; # 禁用自动更新
-          disable_web_ssh = false; # 禁用远程控制（web ssh 和 rce）
+          disable_web_ssh = true; # 禁用远程控制（web ssh 和 rce）
           endpoint = "https://${secrets.komari.server}"; # 面板地址
           ignore_unsafe_cert = false; # 忽略不安全的证书
           month_rotate = 1; # 流量统计的月份重置日期（0表示禁用）

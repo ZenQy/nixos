@@ -10,7 +10,6 @@
     Ech0.enable = true;
     cachix.enable = true;
     komari.enable = true;
-    openlist.enable = true;
     rclone = {
       enable = true;
       path = [
@@ -36,11 +35,6 @@
         e.${secrets.domain} {
         	reverse_proxy :6277
         }
-
-        pan.${secrets.domain} {
-        	reverse_proxy :5244
-        }
-
 
         ${secrets.komari.server} {
         	reverse_proxy :${secrets.komari.port}

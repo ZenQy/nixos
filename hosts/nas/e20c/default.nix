@@ -7,6 +7,7 @@
     ./hardware.nix
     ./network.nix
     ./nftable.nix
+    ./others.nix
     ./sing-box
   ];
 
