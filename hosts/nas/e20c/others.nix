@@ -11,7 +11,6 @@
   systemd.services = {
     yx-tools = {
       enable = true;
-      path = with pkgs; [ yx ];
       serviceConfig = {
         StateDirectory = "yx-tools";
         WorkingDirectory = "/var/lib/yx-tools";
@@ -20,7 +19,7 @@
             cfg = secrets.sing-box.cloudflare;
           in
           ''
-            yx test -colo HKG,SIN -n 10 -upload api -domain ${cfg.host} -uuid ${cfg.uuid} -clear
+            ${pkgs.yx-tools}/bin/yx test -colo HKG,SIN -n 10 -upload api -domain ${cfg.host} -uuid ${cfg.uuid} -clear
           '';
       };
     };

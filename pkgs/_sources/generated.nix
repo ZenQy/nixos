@@ -6,6 +6,18 @@
   dockerTools,
 }:
 {
+  sing-box-dashboard = {
+    pname = "sing-box-dashboard";
+    version = "fa4d6ab6e742c4c22b65a2de3b10280d57c4d364";
+    src = fetchFromGitHub {
+      owner = "SagerNet";
+      repo = "sing-box-dashboard";
+      rev = "fa4d6ab6e742c4c22b65a2de3b10280d57c4d364";
+      fetchSubmodules = false;
+      sha256 = "sha256-S3Met6qcMLrYIz+AY05nggkl9BbsQO7FhK9cCowTOIg=";
+    };
+    date = "2026-08-03";
+  };
   Ech0 = {
     pname = "Ech0";
     version = "v5.5.0";

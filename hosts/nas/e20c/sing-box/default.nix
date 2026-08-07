@@ -85,7 +85,7 @@ let
               "blizzard.com"
               "blog.cloudflare.com"
               "developers.cloudflare.com"
-              "epicgames.com"
+              # "epicgames.com"
               "geevisit.com" # 解决跨域
               "hostinger.com"
               "icanhazip.com"

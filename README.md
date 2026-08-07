@@ -19,7 +19,7 @@ settings=$(nix eval --json .#nixosConfigurations.e20c.config.services.sing-box.s
 echo $settings | \
   jq ".inbounds = [$inbound]" | \
   jq '(.dns.servers.[] | select (.server == "127.0.0.53").server) = "114.114.114.114"' | \
-  jq '(.route.rules.[] | select (.process_name == "AdGuardHome")) = {"ip_cidr":"10.0.0.0/24","network_type":"cellular","outbound":"tailscale"}' | \
+  jq '(.route.rules.[] | select (.process_name)) = {"ip_cidr":"10.0.0.0/24","network_type":"cellular","outbound":"tailscale"}' | \
   jq ".endpoints.[].accept_routes = true" | \
   jq "del(.endpoints.[].advertise_routes)" | \
   jq "del(.experimental.clash_api)" \

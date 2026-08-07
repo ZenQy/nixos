@@ -42,3 +42,8 @@ fetch.github = "tashfeenahmed/freellmapi"
 [yx-tools]
 src.github_tag = "byJoey/yx-tools"
 fetch.github = "byJoey/yx-tools"
+
+[sing-box-dashboard]
+src.git = "https://github.com/SagerNet/sing-box-dashboard"
+src.branch = "gh-pages"
+fetch.github = "SagerNet/sing-box-dashboard"
