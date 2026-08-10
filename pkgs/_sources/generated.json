@@ -93,12 +93,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.6.8",
-            "sha256": "sha256-C8lr6Go6nNRORO5v+W0hRQaTgLQWlmySSUBLHkmFYEU=",
+            "rev": "v0.6.9",
+            "sha256": "sha256-wKRJ+2S7BQggMrwvgctjDEdFo6I9DAVrUOm8EO9xPXM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.6.8"
+        "version": "v0.6.9"
     },
     "komari": {
         "cargoLock": null,
@@ -114,12 +114,12 @@
             "name": null,
             "owner": "komari-monitor",
             "repo": "komari",
-            "rev": "1.4.0",
-            "sha256": "sha256-ME6taT42RoEYPcEIv6aUmzHZA0UkZSSLdPvNV3wiRxw=",
+            "rev": "1.4.2",
+            "sha256": "sha256-6Tj7os2yFCkvA71kKYJNQeP9/0BwNiagJr8cfC368KE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.4.0"
+        "version": "1.4.2"
     },
     "komari-web": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "komari-monitor",
             "repo": "komari-web",
-            "rev": "1.4.0",
-            "sha256": "sha256-705kxj+NIX5oo5M7JDLoxnLLBobmXcpXcstOL7VDwO4=",
+            "rev": "1.4.2",
+            "sha256": "sha256-sXBl8Kwulv2qwEco66WrHVIB6OGHEAFSGP40DtEEQx0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.4.0"
+        "version": "1.4.2"
     },
     "linux-flippy": {
         "cargoLock": null,
@@ -156,12 +156,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.42",
-            "sha256": "sha256-+k8AWaW4bHB8vhCj+2VUW5JR0aMAXz9vOxSURZv0r3M=",
+            "rev": "v6.18.43",
+            "sha256": "sha256-rFGUtKY5NFgkxMoNGzShOG8/H8a1hLwxoGzP7umowVc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.42"
+        "version": "v6.18.43"
     },
     "rtp2httpd": {
         "cargoLock": null,
@@ -183,6 +183,27 @@
             "type": "github"
         },
         "version": "v3.15.3"
+    },
+    "sing-box-dashboard": {
+        "cargoLock": null,
+        "date": "2026-08-03",
+        "extract": null,
+        "name": "sing-box-dashboard",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "SagerNet",
+            "repo": "sing-box-dashboard",
+            "rev": "fa4d6ab6e742c4c22b65a2de3b10280d57c4d364",
+            "sha256": "sha256-S3Met6qcMLrYIz+AY05nggkl9BbsQO7FhK9cCowTOIg=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "fa4d6ab6e742c4c22b65a2de3b10280d57c4d364"
     },
     "wallpapers": {
         "cargoLock": null,
@@ -213,11 +234,11 @@
             "name": null,
             "owner": "byJoey",
             "repo": "yx-tools",
-            "rev": "v3.0.1",
-            "sha256": "sha256-1dz/1VTN5yp7rGuZfNPicxGeu/UDl8ZoGjaufU3dbEc=",
+            "rev": "v3.0.6",
+            "sha256": "sha256-LWmyjVc02WnfShoqM5WSTkIwFqI2HgocSgOFKvIYt4k=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.0.1"
+        "version": "v3.0.6"
     }
 }

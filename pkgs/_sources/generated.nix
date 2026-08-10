@@ -6,18 +6,6 @@
   dockerTools,
 }:
 {
-  sing-box-dashboard = {
-    pname = "sing-box-dashboard";
-    version = "fa4d6ab6e742c4c22b65a2de3b10280d57c4d364";
-    src = fetchFromGitHub {
-      owner = "SagerNet";
-      repo = "sing-box-dashboard";
-      rev = "fa4d6ab6e742c4c22b65a2de3b10280d57c4d364";
-      fetchSubmodules = false;
-      sha256 = "sha256-S3Met6qcMLrYIz+AY05nggkl9BbsQO7FhK9cCowTOIg=";
-    };
-    date = "2026-08-03";
-  };
   Ech0 = {
     pname = "Ech0";
     version = "v5.5.0";
@@ -64,46 +52,46 @@
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.6.8";
+    version = "v0.6.9";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.6.8";
+      rev = "v0.6.9";
       fetchSubmodules = false;
-      sha256 = "sha256-C8lr6Go6nNRORO5v+W0hRQaTgLQWlmySSUBLHkmFYEU=";
+      sha256 = "sha256-wKRJ+2S7BQggMrwvgctjDEdFo6I9DAVrUOm8EO9xPXM=";
     };
   };
   komari = {
     pname = "komari";
-    version = "1.4.0";
+    version = "1.4.2";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari";
-      rev = "1.4.0";
+      rev = "1.4.2";
       fetchSubmodules = false;
-      sha256 = "sha256-ME6taT42RoEYPcEIv6aUmzHZA0UkZSSLdPvNV3wiRxw=";
+      sha256 = "sha256-6Tj7os2yFCkvA71kKYJNQeP9/0BwNiagJr8cfC368KE=";
     };
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.4.0";
+    version = "1.4.2";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.4.0";
+      rev = "1.4.2";
       fetchSubmodules = false;
-      sha256 = "sha256-705kxj+NIX5oo5M7JDLoxnLLBobmXcpXcstOL7VDwO4=";
+      sha256 = "sha256-sXBl8Kwulv2qwEco66WrHVIB6OGHEAFSGP40DtEEQx0=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.42";
+    version = "v6.18.43";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.42";
+      rev = "v6.18.43";
       fetchSubmodules = false;
-      sha256 = "sha256-+k8AWaW4bHB8vhCj+2VUW5JR0aMAXz9vOxSURZv0r3M=";
+      sha256 = "sha256-rFGUtKY5NFgkxMoNGzShOG8/H8a1hLwxoGzP7umowVc=";
     };
   };
   rtp2httpd = {
@@ -117,6 +105,18 @@
       sha256 = "sha256-IybbEUN4V7jmCUkpYKf9CIMzZickWK3TB4m2GbOE8XE=";
     };
   };
+  sing-box-dashboard = {
+    pname = "sing-box-dashboard";
+    version = "fa4d6ab6e742c4c22b65a2de3b10280d57c4d364";
+    src = fetchFromGitHub {
+      owner = "SagerNet";
+      repo = "sing-box-dashboard";
+      rev = "fa4d6ab6e742c4c22b65a2de3b10280d57c4d364";
+      fetchSubmodules = false;
+      sha256 = "sha256-S3Met6qcMLrYIz+AY05nggkl9BbsQO7FhK9cCowTOIg=";
+    };
+    date = "2026-08-03";
+  };
   wallpapers = {
     pname = "wallpapers";
     version = "v2026.08.03";
@@ -127,13 +127,13 @@
   };
   yx-tools = {
     pname = "yx-tools";
-    version = "v3.0.1";
+    version = "v3.0.6";
     src = fetchFromGitHub {
       owner = "byJoey";
       repo = "yx-tools";
-      rev = "v3.0.1";
+      rev = "v3.0.6";
       fetchSubmodules = false;
-      sha256 = "sha256-1dz/1VTN5yp7rGuZfNPicxGeu/UDl8ZoGjaufU3dbEc=";
+      sha256 = "sha256-LWmyjVc02WnfShoqM5WSTkIwFqI2HgocSgOFKvIYt4k=";
     };
   };
 }
