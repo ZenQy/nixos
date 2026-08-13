@@ -74,9 +74,8 @@
   systemd.services = {
     traffic-consumer = {
       enable = true;
-      path = with pkgs; [ curl ];
       serviceConfig.ExecStart = ''
-        curl -so /dev/null https://f.940940.xyz/alcie.raw.gz
+        ${pkgs.curl}/bin/curl -so /dev/null https://f.940940.xyz/alcie.raw.gz
       '';
     };
     tv-m3u = {

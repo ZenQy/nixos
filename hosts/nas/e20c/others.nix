@@ -1,6 +1,10 @@
 { pkgs, secrets, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    dig
+  ];
+
   systemd.timers = {
     yx-tools = {
       enable = true;
