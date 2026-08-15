@@ -58,7 +58,7 @@
     erofs-utils
 
     ## Games ##
-    supertuxkart
+    # supertuxkart
     ## Others ##
     telegram-desktop
     hugo
