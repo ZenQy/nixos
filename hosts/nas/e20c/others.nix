@@ -23,7 +23,7 @@
             cfg = secrets.sing-box.cloudflare;
           in
           ''
-            ${pkgs.yx-tools}/bin/yx test -colo HKG,SIN -n 10 -upload api -domain ${cfg.host} -uuid ${cfg.uuid} -clear
+            ${pkgs.yx-tools}/bin/yx test -colo HKG,SIN -n 5 -upload api -domain ${cfg.host} -uuid ${cfg.uuid} -clear
           '';
       };
     };

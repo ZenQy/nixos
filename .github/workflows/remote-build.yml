@@ -94,20 +94,23 @@ jobs:
 
       - name: Environment Prepare
         run: |
+          command="${{ inputs.command }}"
+          if [[ -z "$command" ]]; then
+            command="boot"
+            echo "CMD=$command" >> $GITHUB_ENV
+          fi
           host=$(echo ${{ matrix.hosts }} | sed 's/-/_/g' | awk '{print toupper ($0)}')
-          echo HOST=$host >> $GITHUB_ENV
+          echo "HOST=$host" >> $GITHUB_ENV
+          protocol="tcp"
+          host=${{ matrix.hosts }}
+          if [[ "$host" == 'yuusei' ]]; then
+            protocol="tcp6"
+            echo "PROTOCOL=$protocol" >> $GITHUB_ENV
+          fi
           nix-env -f '<nixpkgs>' -iA nixos-rebuild
 
-      - id: set-ipv6
-        name: Set IPv6 tag
-        run: |
-          host=${{matrix.hosts}}
-          if [[ $host == 'yuusei' ]]; then
-            echo "ipv6=true" >> $GITHUB_OUTPUT
-          fi
-
       - name: Set up WARP
-        if: ${{ steps.set-ipv6.outputs.ipv6 == 'true' }}
+        if: ${{ env.PROTOCOL == 'tcp6' }}
         uses: fscarmen/warp-on-actions@v1.4
         with:
           stack: ipv6
@@ -119,42 +122,28 @@ jobs:
         run: |
           host=${{ matrix.hosts }}
           ip=${{ secrets[env.HOST] }}
-          if [[ "${{ steps.set-ipv6.outputs.ipv6 }}" == 'true' ]]; then
-            ip="[${{ secrets[env.HOST] }}]"
+          if [[ "${{ env.PROTOCOL }}" == "tcp6" ]]; then
+            ip="[$ip]"
           fi
 
-          if [[ $host == 'beelink' ]]; then
-            nixos-rebuild build --flake .#${{ matrix.hosts }} --target-host root@$ip
+          if [[ "$host" == 'beelink' ]]; then
+            nixos-rebuild build --flake .#$host --target-host root@$ip
           else
-            nixos-rebuild ${{ inputs.command }} --flake .#${{ matrix.hosts }} --target-host root@$ip
+            nixos-rebuild ${{ env.CMD }} --flake .#$host --target-host root@$ip
           fi
 
       - name: executing remote ssh commands using ssh key
-        if: ${{ steps.set-ipv6.outputs.ipv6 == 'true' && matrix.hosts != 'beelink' }}
+        if: ${{ matrix.hosts != 'beelink' }}
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets[env.HOST] }}
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          protocol: tcp6
+          protocol: ${{ env.PROTOCOL }}
           port: ${{ secrets.PORT }}
           script: |
             nix-collect-garbage -d
-            if [[ "${{ inputs.command }}" == 'boot' ]]; then
-              reboot
-            fi
-
-      - name: executing remote ssh commands using ssh key
-        if: ${{ steps.set-ipv6.outputs.ipv6 != 'true' && matrix.hosts != 'beelink' }}
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets[env.HOST] }}
-          username: root
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.PORT }}
-          script: |
-            nix-collect-garbage -d
-            if [[ "${{ inputs.command }}" == 'boot' ]]; then
+            if [[ "${{ env.CMD }}" == 'boot' ]]; then
               reboot
             fi
 
