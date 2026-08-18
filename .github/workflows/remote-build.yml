@@ -97,8 +97,8 @@ jobs:
           command="${{ inputs.command }}"
           if [[ -z "$command" ]]; then
             command="boot"
-            echo "CMD=$command" >> $GITHUB_ENV
           fi
+          echo "CMD=$command" >> $GITHUB_ENV
           host=$(echo ${{ matrix.hosts }} | sed 's/-/_/g' | awk '{print toupper ($0)}')
           echo "HOST=$host" >> $GITHUB_ENV
           protocol="tcp"
