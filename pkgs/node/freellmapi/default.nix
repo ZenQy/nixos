@@ -21,11 +21,12 @@ buildNpmPackage (finalAttrs: {
   '';
 
   installPhase = ''
-    mkdir -p $out/{cli,client,server}
     for d in cli client server
     do
+      mkdir -p $out/$d
       mv $d/dist $out/$d/
     done
+    mv server/node_modules $out/server
     mv {node_modules,shared} $out
   '';
 
