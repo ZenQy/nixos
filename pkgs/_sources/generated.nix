@@ -52,13 +52,13 @@
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.8.0";
+    version = "v0.8.7";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.8.0";
+      rev = "v0.8.7";
       fetchSubmodules = false;
-      sha256 = "sha256-OGUhp9HoxcDq7LmWTQQUG8pn6nM0M7jIuq+zoB43TWc=";
+      sha256 = "sha256-wUhWnWIGG1fgFkC71o5cYGfi9HaZsTsC9DnfMC8ZteQ=";
     };
   };
   komari = {
@@ -85,13 +85,13 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.44";
+    version = "v6.18.46";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.44";
+      rev = "v6.18.46";
       fetchSubmodules = false;
-      sha256 = "sha256-PYeu8oP0KPA8gFCcs0k0xcBJBetZY2UeX1jP+vJxm3M=";
+      sha256 = "sha256-w+SDKVH0TuA29otz2cvu1urweybWyqBREjTF31TSpFE=";
     };
   };
   rtp2httpd = {
@@ -107,15 +107,15 @@
   };
   sing-box-dashboard = {
     pname = "sing-box-dashboard";
-    version = "bec05dd5e5b985659c271ff0d7dc6f78fd50975e";
+    version = "a9d068d22a6cff77dbb2f803e7469209f2e76af4";
     src = fetchFromGitHub {
       owner = "SagerNet";
       repo = "sing-box-dashboard";
-      rev = "bec05dd5e5b985659c271ff0d7dc6f78fd50975e";
+      rev = "a9d068d22a6cff77dbb2f803e7469209f2e76af4";
       fetchSubmodules = false;
-      sha256 = "sha256-46+DE+d/rmkc6SCd83cYfO72Ywm0EcjzsM+kt0qAtDw=";
+      sha256 = "sha256-bRg0T6q2HNjq0+5JmmbS4QZojU+nIjgMgkQVn2/t/TU=";
     };
-    date = "2026-08-15";
+    date = "2026-08-23";
   };
   wallpapers = {
     pname = "wallpapers";
