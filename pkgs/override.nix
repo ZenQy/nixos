@@ -6,9 +6,9 @@ final: prev:
   #   commandLineArgs = "--wayland-text-input-version=3 --force-dark-mode";
   # };
 
-  ariang = prev.ariang.override {
-    buildNpmPackage = args: prev.buildNpmPackage (args // { nodejs = prev.nodejs_22; });
-  };
+  # ariang = prev.ariang.override {
+  # buildNpmPackage = args: prev.buildNpmPackage (args // { nodejs = prev.nodejs_22; });
+  # };
 
   mpv-unwrapped = prev.mpv-unwrapped.overrideAttrs (old: {
     postPatch = old.postPatch + ''

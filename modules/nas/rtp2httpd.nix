@@ -28,7 +28,7 @@ in
         file = "rtp2httpd.conf";
         conf = generators.toINI { } {
           global = {
-            external-m3u = "http://10.0.0.12:8080/tv.m3u";
+            external-m3u = "file:///storage/tv.m3u";
           };
         };
       in
@@ -37,7 +37,7 @@ in
         after = [ "network.target" ];
         wantedBy = [ "multi-user.target" ];
         path = with pkgs; [
-          curl
+          # curl # 读取本地文件不需要该类工具
           which
         ];
         preStart = ''

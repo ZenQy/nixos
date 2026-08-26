@@ -42,19 +42,59 @@
   services.caddy = {
     enable = true;
     extraConfig = ''
+
+      :80 {
+        # ==========================================
+        # 智能尾斜杠补全：只为没有扩展名的目录路径加斜杠
+        # ==========================================
+        @needs_slash {
+          not path */    # 条件1：排除已经以 / 结尾的路径
+          not path *.*   # 条件2：排除包含 . 的请求（保护 .css, .js, .png 等静态文件）
+        }
+        redir @needs_slash {path}/
+
+        handle_path /ariang/* {
+          root * ${pkgs.ariang}/share/ariang
+          file_server
+        }
+        handle_path /storage/* {
+          root * /storage
+          file_server browse
+        }
+        handle_path /openlist/* {
+          reverse_proxy :5244
+        }
+        handle_path /freellmapi/* {
+          reverse_proxy :3001
+        }
+        handle_path /qd/* {
+          reverse_proxy :8923
+        }
+        handle_path /qinglong/* {
+          reverse_proxy :5700
+        }
+        handle_path /rtp2httpd/* {
+          reverse_proxy :5140
+        }
+
+        handle {
+          root * ${./conf/caddy}
+          file_server
+        }
+      }
+
+      :443 {
+        tls internal
+        reverse_proxy :5244
+      }
+      # 下面的作为过渡，过段时间要记得删除
       :6868 {
         root * ${pkgs.ariang}/share/ariang
         file_server browse
       }
-
       :8080 {
         root * /storage
         file_server browse
-      }
-
-      10.0.0.12 {
-        tls internal
-        reverse_proxy :5244
       }
     '';
   };
