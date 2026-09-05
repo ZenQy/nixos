@@ -7,11 +7,13 @@ src.github = "ZenQy/wallpaper"
 fetch.url = "https://github.com/ZenQy/wallpaper/releases/download/$ver/wallpaper.tar.gz"
 
 [Ech0]
-src.github = "lin-snow/Ech0"
+# src.github = "lin-snow/Ech0"
+src.manual = "v5.5.0"
 fetch.github = "lin-snow/Ech0"
 
 [Ech0-web]
-src.github = "lin-snow/Ech0"
+# src.github = "lin-snow/Ech0"
+src.manual = "v5.5.0"
 fetch.github = "lin-snow/Ech0"
 
 [linux-flippy]
