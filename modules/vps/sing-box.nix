@@ -43,7 +43,8 @@ let
     tls = {
       enabled = true;
       alpn = "h3";
-      acme = {
+      certificate_provider = {
+        type = "acme";
         domain = "${host}.${secrets.domain}";
         inherit (sb) dns01_challenge;
       };

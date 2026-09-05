@@ -163,12 +163,20 @@ let
         ];
         outbound = "direct";
       }
-      # {
-      #   # 手机端开启,可访问家庭内网
-      #   ip_cidr = "10.0.0.0/24";
-      #   network_type = "cellular";
-      #   outbound = "tailscale";
-      # }
+      {
+        # 直连特定WIFI
+        ip_cidr = "10.0.0.0/24";
+        wifi_ssid = [
+          "JDCwifi_1155"
+          "JDCwifi_1155_5G"
+        ];
+        outbound = "direct";
+      }
+      {
+        # 其余走tailscale
+        ip_cidr = "10.0.0.0/24";
+        outbound = "tailscale";
+      }
       {
         protocol = "dns";
         action = "hijack-dns";
@@ -361,15 +369,21 @@ let
       enabled = true;
       path = "cache.db";
       store_fakeip = true;
-      store_rdrc = true;
-    };
-    clash_api = {
-      external_controller = "0.0.0.0:9090";
-      external_ui = "${pkgs.metacubexd}";
-      secret = secrets.user.password.zenith;
+      store_dns = true;
     };
   };
-
+  services = [
+    {
+      tag = "api";
+      type = "api";
+      secret = secrets.user.password.zenith;
+      access_control_allow_private_network = true;
+      dashboard = {
+        enabled = true;
+        path = "${pkgs.sing-box-dashboard}";
+      };
+    }
+  ];
 in
 {
 
@@ -384,6 +398,7 @@ in
         outbounds
         endpoints
         experimental
+        services
         ;
     };
   };
