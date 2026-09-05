@@ -22,6 +22,6 @@ echo $settings | \
   jq '(.route.rules.[] | select (.process_name)) = {"ip_cidr":"10.0.0.0/24","network_type":"cellular","outbound":"tailscale"}' | \
   jq ".endpoints.[].accept_routes = true" | \
   jq "del(.endpoints.[].advertise_routes)" | \
-  jq "del(.experimental.clash_api)" \
+  jq "del(.services)" \
   > sing-box.json
 ```

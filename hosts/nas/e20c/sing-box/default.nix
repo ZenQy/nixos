@@ -121,35 +121,35 @@ let
         type = "remote";
         format = "binary";
         url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs";
-        download_detour = "proxy";
+        update_interval = "10d";
       }
       {
         tag = "geoip-cn";
         type = "remote";
         format = "binary";
         url = "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs";
-        download_detour = "proxy";
+        update_interval = "10d";
       }
       {
         tag = "geosite-category-ads-all";
         type = "remote";
         format = "binary";
         url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs";
-        download_detour = "proxy";
+        update_interval = "10d";
       }
       {
         tag = "geosite-openai";
         type = "remote";
         format = "binary";
         url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-openai.srs";
-        download_detour = "proxy";
+        update_interval = "10d";
       }
       {
         tag = "geosite-google-gemini";
         type = "remote";
         format = "binary";
         url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google-gemini.srs";
-        download_detour = "proxy";
+        update_interval = "10d";
       }
     ];
     rules = [
@@ -162,20 +162,6 @@ let
           "yx"
         ];
         outbound = "direct";
-      }
-      {
-        # 直连特定WIFI
-        ip_cidr = "10.0.0.0/24";
-        wifi_ssid = [
-          "JDCwifi_1155"
-          "JDCwifi_1155_5G"
-        ];
-        outbound = "direct";
-      }
-      {
-        # 其余走tailscale
-        ip_cidr = "10.0.0.0/24";
-        outbound = "tailscale";
       }
       {
         protocol = "dns";
@@ -224,41 +210,9 @@ let
     final = "proxy";
     auto_detect_interface = true;
     default_domain_resolver = "dns_direct";
+    default_http_client = "default_http_client";
   };
   inbounds = [
-    # {
-    #   tag = "tun";
-    #   type = "tun";
-    #   address = [
-    #     "172.18.0.1/24"
-    #     "fdfe:dcba:9876::1/64"
-    #   ];
-    #   mtu = 1500;
-    #   auto_route = true;
-    #   strict_route = false;
-    #   stack = "gvisor";
-    #   include_package = [
-    #     "InfinityLoop1309.NewPipeEnhanced"
-    #     "app.aiaw"
-    #     "cn.jimex.dict"
-    #     "com.aistra.hail"
-    #     "com.aurora.store"
-    #     "com.deskangel.daremote"
-    #     "com.google.android.gms"
-    #     "com.ichi2.anki"
-    #     "com.x8bit.bitwarden"
-    #     "com.xbrowser.play"
-    #     "io.legado.app.release"
-    #     "io.legato.kazusa"
-    #     "mark.via"
-    #     "mark.via.gp"
-    #     "me.bmax.apatch"
-    #     "org.telegram.messenger"
-    #     "pro.cubox.androidapp"
-    #     "top.achatbot.aichat"
-    #     "xyz.chatboxapp.chatbox"
-    #   ];
-    # }
     {
       tag = "tproxy";
       type = "tproxy";
@@ -376,11 +330,25 @@ let
     {
       tag = "api";
       type = "api";
+      listen = "::";
+      listen_port = 9090;
       secret = secrets.user.password.zenith;
       access_control_allow_private_network = true;
       dashboard = {
         enabled = true;
         path = "${pkgs.sing-box-dashboard}";
+        update_interval = "0";
+      };
+    }
+  ];
+  http_clients = [
+    {
+      tag = "default_http_client";
+      version = 2;
+      disable_version_fallback = true;
+      tls = {
+        enabled = true;
+        alpn = "h2";
       };
     }
   ];
@@ -391,14 +359,15 @@ in
     enable = true;
     settings = {
       inherit
-        log
         dns
+        log
         route
         inbounds
-        outbounds
-        endpoints
-        experimental
         services
+        endpoints
+        outbounds
+        experimental
+        http_clients
         ;
     };
   };
