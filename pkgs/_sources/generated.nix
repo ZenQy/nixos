@@ -44,21 +44,21 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2026.08.02";
+    version = "v2026.09.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.08.02/zenith.dict";
-      sha256 = "sha256-T7ok5QFatqNo6rklBnSdb+7XZFfwbk0xPLAkqSU7ynE=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.09.02/zenith.dict";
+      sha256 = "sha256-1A2Nh8AECsb1/mGmQUW6IastusNo/aaROAT5sKnsHZM=";
     };
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.8.7";
+    version = "v0.9.8";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.8.7";
+      rev = "v0.9.8";
       fetchSubmodules = false;
-      sha256 = "sha256-wUhWnWIGG1fgFkC71o5cYGfi9HaZsTsC9DnfMC8ZteQ=";
+      sha256 = "sha256-4wQo9nehW0RsEFnvdRkUTBNM7QNea6/UYw6uKbqScAg=";
     };
   };
   komari = {
@@ -85,13 +85,13 @@
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.46";
+    version = "v6.18.49";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.46";
+      rev = "v6.18.49";
       fetchSubmodules = false;
-      sha256 = "sha256-w+SDKVH0TuA29otz2cvu1urweybWyqBREjTF31TSpFE=";
+      sha256 = "sha256-EV/Ams1Px4pYYrtIxB42CI/OWeO9GyXFVbWQ/VPEJE0=";
     };
   };
   rtp2httpd = {
@@ -107,22 +107,22 @@
   };
   sing-box-dashboard = {
     pname = "sing-box-dashboard";
-    version = "a9d068d22a6cff77dbb2f803e7469209f2e76af4";
+    version = "c285014d351a685d8a100db0d5bf47ad9bdad76f";
     src = fetchFromGitHub {
       owner = "SagerNet";
       repo = "sing-box-dashboard";
-      rev = "a9d068d22a6cff77dbb2f803e7469209f2e76af4";
+      rev = "c285014d351a685d8a100db0d5bf47ad9bdad76f";
       fetchSubmodules = false;
-      sha256 = "sha256-bRg0T6q2HNjq0+5JmmbS4QZojU+nIjgMgkQVn2/t/TU=";
+      sha256 = "sha256-0fPTRY6ChfhAgkAQcr7BztlM5kLZCiIRm8Nm76//3PM=";
     };
-    date = "2026-08-23";
+    date = "2026-09-03";
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2026.08.03";
+    version = "v2026.09.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.08.03/wallpaper.tar.gz";
-      sha256 = "sha256-skb5dTolnvlaphuB+HTXc2nvUPNM1Kkj9oweLNydR/c=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.09.03/wallpaper.tar.gz";
+      sha256 = "sha256-xjxvfnqzVlkdMQtHHQRf6FOM/H0VZQ6o6zia5It398k=";
     };
   };
   yx-tools = {

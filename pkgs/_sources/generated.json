@@ -73,11 +73,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-T7ok5QFatqNo6rklBnSdb+7XZFfwbk0xPLAkqSU7ynE=",
+            "sha256": "sha256-1A2Nh8AECsb1/mGmQUW6IastusNo/aaROAT5sKnsHZM=",
             "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2026.08.02/zenith.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2026.09.02/zenith.dict"
         },
-        "version": "v2026.08.02"
+        "version": "v2026.09.02"
     },
     "freellmapi": {
         "cargoLock": null,
@@ -93,12 +93,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.8.7",
-            "sha256": "sha256-wUhWnWIGG1fgFkC71o5cYGfi9HaZsTsC9DnfMC8ZteQ=",
+            "rev": "v0.9.8",
+            "sha256": "sha256-4wQo9nehW0RsEFnvdRkUTBNM7QNea6/UYw6uKbqScAg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.8.7"
+        "version": "v0.9.8"
     },
     "komari": {
         "cargoLock": null,
@@ -156,12 +156,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.46",
-            "sha256": "sha256-w+SDKVH0TuA29otz2cvu1urweybWyqBREjTF31TSpFE=",
+            "rev": "v6.18.49",
+            "sha256": "sha256-EV/Ams1Px4pYYrtIxB42CI/OWeO9GyXFVbWQ/VPEJE0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.46"
+        "version": "v6.18.49"
     },
     "rtp2httpd": {
         "cargoLock": null,
@@ -186,7 +186,7 @@
     },
     "sing-box-dashboard": {
         "cargoLock": null,
-        "date": "2026-08-23",
+        "date": "2026-09-03",
         "extract": null,
         "name": "sing-box-dashboard",
         "passthru": null,
@@ -198,12 +198,12 @@
             "name": null,
             "owner": "SagerNet",
             "repo": "sing-box-dashboard",
-            "rev": "a9d068d22a6cff77dbb2f803e7469209f2e76af4",
-            "sha256": "sha256-bRg0T6q2HNjq0+5JmmbS4QZojU+nIjgMgkQVn2/t/TU=",
+            "rev": "c285014d351a685d8a100db0d5bf47ad9bdad76f",
+            "sha256": "sha256-0fPTRY6ChfhAgkAQcr7BztlM5kLZCiIRm8Nm76//3PM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a9d068d22a6cff77dbb2f803e7469209f2e76af4"
+        "version": "c285014d351a685d8a100db0d5bf47ad9bdad76f"
     },
     "wallpapers": {
         "cargoLock": null,
@@ -214,11 +214,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-skb5dTolnvlaphuB+HTXc2nvUPNM1Kkj9oweLNydR/c=",
+            "sha256": "sha256-xjxvfnqzVlkdMQtHHQRf6FOM/H0VZQ6o6zia5It398k=",
             "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.08.03/wallpaper.tar.gz"
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.09.03/wallpaper.tar.gz"
         },
-        "version": "v2026.08.03"
+        "version": "v2026.09.03"
     },
     "yx-tools": {
         "cargoLock": null,
