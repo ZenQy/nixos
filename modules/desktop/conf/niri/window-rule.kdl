@@ -1,0 +1,50 @@
+window-rule {
+    open-maximized true
+    geometry-corner-radius 8
+    draw-border-with-background false
+}
+
+window-rule {
+    match app-id="foot"
+    geometry-corner-radius 0
+    opacity 0.8
+    open-on-workspace "1"
+}
+
+window-rule {
+    match app-id="firefox"
+    match app-id="chromium-browser"
+    open-on-workspace "2"
+}
+
+window-rule {
+    match app-id="pcmanfm"
+    open-on-workspace "3"
+}
+
+window-rule {
+    match app-id="firefox" at-startup=false
+    match app-id="chrome-nngceckbapebfimnlniiiahkandclblb-Default"
+    match app-id="pcmanfm" title="Confirm"
+    open-floating true
+}
+
+window-rule {
+    match app-id="codium"
+    match app-id="dev.zed.Zed"
+    match app-id="obsidian"
+    opacity 0.8
+    open-on-workspace "4"
+}
+
+window-rule {
+    match app-id="org.telegram.desktop"
+    opacity 0.9
+    open-on-workspace "5"
+}
+
+window-rule {
+    match app-id="mpv"
+    open-fullscreen true
+    open-on-workspace "5"
+}

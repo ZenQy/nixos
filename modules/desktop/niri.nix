@@ -24,10 +24,10 @@
   };
   environment.systemPackages = with pkgs; [
     niri
-    fuzzel
-    copyq
+    # fuzzel
+    # copyq
   ];
 
-  environment.etc."niri/config.kdl".source = ./conf/niri.kdl;
+  environment.etc."niri".source = ./conf/niri;
 
 }

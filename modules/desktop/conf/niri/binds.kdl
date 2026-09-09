@@ -1,116 +1,8 @@
-input {
-    keyboard {
-        xkb {
-            layout "us"
-        }
-        track-layout "global"
-    }
-
-    mouse {}
-
-    // warp-mouse-to-focus
-    focus-follows-mouse
-}
-
-output "DP-1" {
-    mode "3840x2160@60.00000"
-    scale 1.5
-    transform "normal"
-    position x=0 y=0
-}
-
-layout {
-    gaps 8
-    center-focused-column "never"
-
-    preset-column-widths {
-        proportion 0.33333
-        proportion 0.5
-        proportion 0.66667
-        proportion 1.0
-    }
-    default-column-width {}
-
-    focus-ring { off; }
-    border {
-        width 4
-        active-gradient from="#808080" to="#ff00ff" angle=45
-        inactive-gradient from="#505050" to="#808080" angle=45
-    }
-
-    struts {}
-}
-
-animations {}
-
-cursor {
-    xcursor-size 24
-    xcursor-theme "Nordzy-cursors"
-}
-
-window-rule {
-    open-maximized true
-    geometry-corner-radius 8
-    draw-border-with-background false
-}
-
-window-rule {
-    match app-id="foot"
-    geometry-corner-radius 0
-    opacity 0.8
-    open-on-workspace "1"
-}
-
-window-rule {
-    match app-id="firefox"
-    match app-id="chromium-browser"
-    open-on-workspace "2"
-}
-
-window-rule {
-    match app-id="pcmanfm"
-    open-on-workspace "3"
-}
-
-window-rule {
-    match app-id="firefox" at-startup=false
-    match app-id="chrome-nngceckbapebfimnlniiiahkandclblb-Default"
-    match app-id="pcmanfm" title="Confirm"
-    open-floating true
-}
-
-window-rule {
-    match app-id="codium"
-    match app-id="dev.zed.Zed"
-    match app-id="obsidian"
-    opacity 0.8
-    open-on-workspace "4"
-}
-
-window-rule {
-    match app-id="org.telegram.desktop"
-    opacity 0.9
-    open-on-workspace "5"
-}
-
-window-rule {
-    match app-id="mpv"
-    open-fullscreen true
-    open-on-workspace "5"
-}
-
-workspace "1"
-workspace "2"
-workspace "3"
-workspace "4"
-workspace "5"
-
 binds {
 
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+Return { spawn "foot"; }
-    Mod+D { spawn "fuzzel"; }
     Mod+Alt+L { spawn "swaylock" "-C" "/etc/swaylock/config"; }
 
     Mod+Q { close-window; }
@@ -170,7 +62,7 @@ binds {
     Mod+Shift+8 { move-column-to-workspace 8; }
     Mod+Shift+9 { move-column-to-workspace 9; }
 
-    Mod+Comma  { consume-window-into-column; }
+    // Mod+Comma  { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
 
     Mod+R { switch-preset-column-width; }
@@ -193,7 +85,3 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 }
-
-screenshot-path "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png"
-spawn-at-startup "fcitx5"
-spawn-at-startup "copyq"

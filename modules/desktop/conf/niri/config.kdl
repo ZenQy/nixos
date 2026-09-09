@@ -1,0 +1,63 @@
+include "binds.kdl"
+include "window-rule.kdl"
+include "noctalia.kdl"
+
+input {
+    keyboard {
+        xkb {
+            layout "us"
+        }
+        track-layout "global"
+    }
+
+    mouse {}
+
+    // warp-mouse-to-focus
+    focus-follows-mouse
+}
+
+output "DP-1" {
+    mode "3840x2160@60.00000"
+    scale 1.5
+    transform "normal"
+    position x=0 y=0
+}
+
+layout {
+    gaps 8
+    center-focused-column "never"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
+    default-column-width {}
+
+    focus-ring { off; }
+    border {
+        width 4
+        active-gradient from="#808080" to="#ff00ff" angle=45
+        inactive-gradient from="#505050" to="#808080" angle=45
+    }
+
+    struts {}
+}
+
+animations {}
+
+cursor {
+    xcursor-size 24
+    xcursor-theme "Nordzy-cursors"
+}
+
+workspace "1"
+workspace "2"
+workspace "3"
+workspace "4"
+workspace "5"
+
+screenshot-path "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png"
+spawn-at-startup "fcitx5"
+spawn-at-startup "copyq"
