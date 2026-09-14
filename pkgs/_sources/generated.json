@@ -93,12 +93,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.9.8",
-            "sha256": "sha256-4wQo9nehW0RsEFnvdRkUTBNM7QNea6/UYw6uKbqScAg=",
+            "rev": "v0.9.9",
+            "sha256": "sha256-gr1O7Voht7N7G0ODKMwnRFF2Mdc6H2V2K9m4uBRC/Bw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.9.8"
+        "version": "v0.9.9"
     },
     "komari": {
         "cargoLock": null,
@@ -114,12 +114,12 @@
             "name": null,
             "owner": "komari-monitor",
             "repo": "komari",
-            "rev": "1.4.3",
-            "sha256": "sha256-cn3UjSigXVB5Fnqzjmct80FMLZfU1zETIf70o/lXA4M=",
+            "rev": "1.5.0-fix1",
+            "sha256": "sha256-VL3Pk3II8fU+tKexdumu/j6cX5OEI4GT0TdIFlIfs64=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.4.3"
+        "version": "1.5.0-fix1"
     },
     "komari-web": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "komari-monitor",
             "repo": "komari-web",
-            "rev": "1.4.3",
-            "sha256": "sha256-skpx4mQomAAqUvF5j1HmPemh+9iV/L2UX/9ctmCB0tw=",
+            "rev": "1.5.0-fix1",
+            "sha256": "sha256-ySHbv3AOgCJvAIqzZ12dsOjOCmOzYI6rBFYNoR5Wnjw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.4.3"
+        "version": "1.5.0-fix1"
     },
     "linux-flippy": {
         "cargoLock": null,
@@ -156,12 +156,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.49",
-            "sha256": "sha256-EV/Ams1Px4pYYrtIxB42CI/OWeO9GyXFVbWQ/VPEJE0=",
+            "rev": "v6.18.51",
+            "sha256": "sha256-VUq4w0snyCpoiDfQhP77fLdQPJfDKE6jVfFqBvKc8WY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.49"
+        "version": "v6.18.51"
     },
     "rtp2httpd": {
         "cargoLock": null,
@@ -177,12 +177,12 @@
             "name": null,
             "owner": "stackia",
             "repo": "rtp2httpd",
-            "rev": "v3.16.0",
-            "sha256": "sha256-Xi8NQNK8eRaPhECj2RlAOqLjOQhf5k5mDLlRbdhsA34=",
+            "rev": "v3.17.1",
+            "sha256": "sha256-z8gMaNjg2NOWgItplwMtJ+NEbKbW0FLMAqZwpHJrEhc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.16.0"
+        "version": "v3.17.1"
     },
     "sing-box-dashboard": {
         "cargoLock": null,

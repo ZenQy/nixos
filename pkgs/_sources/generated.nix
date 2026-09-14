@@ -52,57 +52,57 @@
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.9.8";
+    version = "v0.9.9";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.9.8";
+      rev = "v0.9.9";
       fetchSubmodules = false;
-      sha256 = "sha256-4wQo9nehW0RsEFnvdRkUTBNM7QNea6/UYw6uKbqScAg=";
+      sha256 = "sha256-gr1O7Voht7N7G0ODKMwnRFF2Mdc6H2V2K9m4uBRC/Bw=";
     };
   };
   komari = {
     pname = "komari";
-    version = "1.4.3";
+    version = "1.5.0-fix1";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari";
-      rev = "1.4.3";
+      rev = "1.5.0-fix1";
       fetchSubmodules = false;
-      sha256 = "sha256-cn3UjSigXVB5Fnqzjmct80FMLZfU1zETIf70o/lXA4M=";
+      sha256 = "sha256-VL3Pk3II8fU+tKexdumu/j6cX5OEI4GT0TdIFlIfs64=";
     };
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.4.3";
+    version = "1.5.0-fix1";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.4.3";
+      rev = "1.5.0-fix1";
       fetchSubmodules = false;
-      sha256 = "sha256-skpx4mQomAAqUvF5j1HmPemh+9iV/L2UX/9ctmCB0tw=";
+      sha256 = "sha256-ySHbv3AOgCJvAIqzZ12dsOjOCmOzYI6rBFYNoR5Wnjw=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.49";
+    version = "v6.18.51";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.49";
+      rev = "v6.18.51";
       fetchSubmodules = false;
-      sha256 = "sha256-EV/Ams1Px4pYYrtIxB42CI/OWeO9GyXFVbWQ/VPEJE0=";
+      sha256 = "sha256-VUq4w0snyCpoiDfQhP77fLdQPJfDKE6jVfFqBvKc8WY=";
     };
   };
   rtp2httpd = {
     pname = "rtp2httpd";
-    version = "v3.16.0";
+    version = "v3.17.1";
     src = fetchFromGitHub {
       owner = "stackia";
       repo = "rtp2httpd";
-      rev = "v3.16.0";
+      rev = "v3.17.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Xi8NQNK8eRaPhECj2RlAOqLjOQhf5k5mDLlRbdhsA34=";
+      sha256 = "sha256-z8gMaNjg2NOWgItplwMtJ+NEbKbW0FLMAqZwpHJrEhc=";
     };
   };
   sing-box-dashboard = {
