@@ -61,6 +61,6 @@
 
   environment.variables = {
     NIXOS_OZONE_WL = "1";
-    inherit (secrets.AI) FreeLLM_API_KEY;
+    # inherit (secrets.AI) FreeLLM_API_KEY;
   };
 }

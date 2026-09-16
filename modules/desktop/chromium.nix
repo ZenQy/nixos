@@ -12,8 +12,6 @@
     extensions = [
       # PT Plugin Plus
       # "dmmjlmbkigbgpnjfiimhlnbnmppjhpea;https://raw.githubusercontent.com/pt-plugins/PT-Plugin-Plus/gh-pages/update/canary.xml"
-      # uBlock Origin
-      # "cjpalhdlnbpafiamejdnhcphjbkeiagm"
       # uBlock Origin Lite
       "ddkjiahejlhfcafbddmgiahcphecmpfh"
       # Tampermonkey BETA
@@ -29,7 +27,7 @@
       # Bitwarden
       "nngceckbapebfimnlniiiahkandclblb"
       # EditThisCookie (V3)
-      "ojfebgpkimhlhcblbalbfjblapadhbol"
+      # "ojfebgpkimhlhcblbalbfjblapadhbol"
     ];
     homepageLocation = "https://go.itab.link";
 

@@ -72,5 +72,6 @@
     # dig
     # ghostty
     # parted
+    # ubootTools
   ];
 }

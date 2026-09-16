@@ -6,6 +6,17 @@
   dockerTools,
 }:
 {
+  ampart = {
+    pname = "ampart";
+    version = "v1.4.1";
+    src = fetchFromGitHub {
+      owner = "7Ji";
+      repo = "ampart";
+      rev = "v1.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-iqrG/JgE4C3AsLUMwh2+uUy7UEmh66mBeX15q08pmzw=";
+    };
+  };
   Ech0 = {
     pname = "Ech0";
     version = "v5.5.0";

@@ -7,17 +7,18 @@
 
   environment.etc."mpv/mpv.conf".text = ''
     alang=zh-Hans,chi,zh-Hant,cmn,en
+    slang=zh-Hans,chi,zh-Hant,cmn,en
     force-window=yes
     gpu-api=vulkan
     hwdec-codecs=all
     hwdec=auto
     profile=gpu-hq
-    slang=zh-Hans,chi,zh-Hant,cmn,en
     speed=2.0
     sub-codepage=UTF-8
     user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
     vo=gpu
     ytdl-format=bestvideo+bestaudio
+    ytdl-raw-options=cookies-from-browser=chromium
 
     autocreate-playlist=filter
     directory-filter-types=video,audio
