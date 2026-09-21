@@ -93,12 +93,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.9.9",
-            "sha256": "sha256-gr1O7Voht7N7G0ODKMwnRFF2Mdc6H2V2K9m4uBRC/Bw=",
+            "rev": "v0.11.1",
+            "sha256": "sha256-O6GmGUVyIFCx6Kaa/4s+lmirhYj2iijVKWENSxHnn3Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.9.9"
+        "version": "v0.11.1"
     },
     "komari": {
         "cargoLock": null,
@@ -156,12 +156,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.51",
-            "sha256": "sha256-VUq4w0snyCpoiDfQhP77fLdQPJfDKE6jVfFqBvKc8WY=",
+            "rev": "v6.18.52",
+            "sha256": "sha256-ySQHBOX55bTiK5mgGT3T6D3oOl9VQ2VXTA7kNFYaiEo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.51"
+        "version": "v6.18.52"
     },
     "rtp2httpd": {
         "cargoLock": null,
@@ -186,7 +186,7 @@
     },
     "sing-box-dashboard": {
         "cargoLock": null,
-        "date": "2026-09-03",
+        "date": "2026-09-18",
         "extract": null,
         "name": "sing-box-dashboard",
         "passthru": null,
@@ -198,12 +198,12 @@
             "name": null,
             "owner": "SagerNet",
             "repo": "sing-box-dashboard",
-            "rev": "c285014d351a685d8a100db0d5bf47ad9bdad76f",
-            "sha256": "sha256-0fPTRY6ChfhAgkAQcr7BztlM5kLZCiIRm8Nm76//3PM=",
+            "rev": "1f56683b9adf952b47957f5bb758d9ca7837cef0",
+            "sha256": "sha256-zYp7AQZB5GxTHa7PB+HrfUIu85lrsPwMx7LicruvAZk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c285014d351a685d8a100db0d5bf47ad9bdad76f"
+        "version": "1f56683b9adf952b47957f5bb758d9ca7837cef0"
     },
     "wallpapers": {
         "cargoLock": null,
