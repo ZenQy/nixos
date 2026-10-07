@@ -25,12 +25,12 @@ final: prev:
     '';
   });
 
-  komari-agent = prev.komari-agent.overrideAttrs (old: {
-    postPatch = ''
-      substituteInPlace cmd/autodiscovery.go \
-        --replace-quiet "os.Executable()" "os.Getwd()" \
-        --replace-quiet "filepath.Dir(execPath)" "execPath"
-    '';
-  });
+  # komari-agent = prev.komari-agent.overrideAttrs (old: {
+  #   postPatch = ''
+  #     substituteInPlace cmd/autodiscovery.go \
+  #       --replace-quiet "os.Executable()" "os.Getwd()" \
+  #       --replace-quiet "filepath.Dir(execPath)" "execPath"
+  #   '';
+  # });
 
 }

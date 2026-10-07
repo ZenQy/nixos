@@ -3,7 +3,7 @@
 {
   imports = [
     ../vps
-    ../vps/komari-agent.nix
+    ../vps/monitor-agent.nix
     ../vps/openlist.nix
     ../vps/podman.nix
     ../vps/rclone.nix

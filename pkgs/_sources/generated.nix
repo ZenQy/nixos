@@ -6,6 +6,53 @@
   dockerTools,
 }:
 {
+  monitor = {
+    pname = "monitor";
+    version = "v1.3.2";
+    src = fetchFromGitHub {
+      owner = "monitor-probe";
+      repo = "monitor";
+      rev = "v1.3.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-dbBDTJeKW0jS++67wGamVHQCaBCvmW+0UBOp9P/oX4g=";
+    };
+    extract = {
+      "Cargo.lock" = ./. + "/sha256-dbBDTJeKW0jS++67wGamVHQCaBCvmW+0UBOp9P_oX4g=/Cargo.lock";
+    };
+  };
+  monitor-web-admin = {
+    pname = "monitor";
+    version = "v1.3.2";
+    src = fetchFromGitHub {
+      owner = "monitor-probe";
+      repo = "monitor";
+      rev = "v1.3.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-dbBDTJeKW0jS++67wGamVHQCaBCvmW+0UBOp9P/oX4g=";
+    };
+  };
+  monitor-agent = {
+    pname = "monitor-agent";
+    version = "v1.2.0";
+    src = fetchFromGitHub {
+      owner = "monitor-probe";
+      repo = "agent";
+      rev = "v1.2.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-tqJpvFmq7TvdvusUXSF689tln+rXfZwFUKn9s1ixFIs=";
+    };
+    extract = {
+      "Cargo.lock" = ./. + "/sha256-tqJpvFmq7TvdvusUXSF689tln+rXfZwFUKn9s1ixFIs=/Cargo.lock";
+    };
+  };
+  monitor-theme-default = {
+    pname = "monitor-theme-default";
+    version = "v1.3.0";
+    src = fetchurl {
+      url = "https://github.com/monitor-probe/monitor-theme-default/releases/download/v1.3.0/theme.tar.gz";
+      sha256 = "sha256-Ug1gHLSTRHEeQ42VsT8nHCPKO96Ms/0RZtk1h5bOt6Y=";
+    };
+  };
   Ech0 = {
     pname = "Ech0";
     version = "v5.5.0";

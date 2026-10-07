@@ -29,14 +29,6 @@ extract = ["Cargo.lock"]
 src.github = "stackia/rtp2httpd"
 fetch.github = "stackia/rtp2httpd"
 
-[komari]
-src.github = "komari-monitor/komari"
-fetch.github = "komari-monitor/komari"
-
-[komari-web]
-src.github = "komari-monitor/komari-web"
-fetch.github = "komari-monitor/komari-web"
-
 [freellmapi]
 src.github_tag = "tashfeenahmed/freellmapi"
 fetch.github = "tashfeenahmed/freellmapi"
@@ -53,3 +45,21 @@ fetch.github = "SagerNet/sing-box-dashboard"
 [ampart]
 src.github = "7Ji/ampart"
 fetch.github = "7Ji/ampart"
+
+[monitor-theme-default]
+src.github = "monitor-probe/monitor-theme-default"
+fetch.url = "https://github.com/monitor-probe/monitor-theme-default/releases/download/$ver/theme.tar.gz"
+
+[monitor]
+src.github = "monitor-probe/monitor"
+fetch.github = "monitor-probe/monitor"
+extract = ["Cargo.lock"]
+
+[monitor-web-admin]
+src.github = "monitor-probe/monitor"
+fetch.github = "monitor-probe/monitor"
+
+[monitor-agent]
+src.github = "monitor-probe/agent"
+fetch.github = "monitor-probe/agent"
+extract = ["Cargo.lock"]

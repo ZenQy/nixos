@@ -9,13 +9,13 @@
   zenith = {
     Ech0.enable = true;
     cachix.enable = true;
-    komari.enable = true;
+    monitor.enable = true;
     rclone = {
       enable = true;
       path = [
         {
-          source = "/var/lib/komari/data/";
-          dest = "/osaka-arm/komari";
+          source = "/var/lib/monitor";
+          dest = "/osaka-arm/monitor";
         }
       ];
     };
@@ -36,8 +36,8 @@
         	reverse_proxy :6277
         }
 
-        ${secrets.komari.server} {
-        	reverse_proxy :${secrets.komari.port}
+        ${secrets.monitor.site} {
+        	reverse_proxy :${secrets.monitor.port}
         }
 
         t.${secrets.domain} {
@@ -61,7 +61,7 @@
     # };
   };
 
-  environment.systemPackages = with pkgs; [
-    wgcf
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   wgcf
+  # ];
 }
