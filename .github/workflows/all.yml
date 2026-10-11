@@ -16,7 +16,7 @@ env:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
@@ -69,7 +69,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, ubuntu-24.04-arm]
+        os: [ubuntu-26.04, ubuntu-26.04-arm]
         pkgs: ${{ fromJSON(needs.update.outputs.matrix) }}
     steps:
       - name: Checkout
@@ -98,7 +98,7 @@ jobs:
         run: |
           echo ${{ matrix.os }} ${{ matrix.pkgs }}
           system=aarch64-linux
-          if [[ ${{ matrix.os }} == 'ubuntu-24.04-arm' ]]; then
+          if [[ ${{ matrix.os }} == 'ubuntu-26.04-arm' ]]; then
             system=x86_64-linux
           fi
           if [[ ! -d pkgs/${system}/${{ matrix.pkgs }} ]]; then

@@ -229,6 +229,7 @@ let
       tuic-nodes = nodes.tuic;
       anytls-nodes = nodes.anytls;
       cloudflare-nodes = import ./cloudflare.nix;
+      cloudflare-tags = builtins.attrNames cloudflare-nodes;
     in
     sb.nodes
     ++ map (tag: {
@@ -260,12 +261,12 @@ let
     ++ map (tag: {
       inherit tag;
       type = "trojan";
-      server = tag;
+      server = cloudflare-nodes.${tag};
       server_port = 443;
       inherit (sb.cloudflare) password;
       transport = {
         type = "ws";
-        path = "/";
+        inherit (sb.cloudflare) path;
         headers.Host = sb.cloudflare.host;
       };
       tls = {
@@ -273,7 +274,7 @@ let
         server_name = sb.cloudflare.host;
         alpn = "h3";
       };
-    }) cloudflare-nodes
+    }) cloudflare-tags
     ++ [
       {
         tag = "proxy";
@@ -289,7 +290,7 @@ let
       {
         tag = "cloudflare";
         type = "urltest";
-        outbounds = cloudflare-nodes;
+        outbounds = cloudflare-tags;
       }
       {
         tag = "openai";

@@ -34,7 +34,7 @@ env:
 
 jobs:
   prepare:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
 
@@ -57,7 +57,7 @@ jobs:
           echo "matrix=$(echo $hosts)" >> $GITHUB_OUTPUT
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: prepare
     strategy:
       fail-fast: false
