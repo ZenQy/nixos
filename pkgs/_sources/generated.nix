@@ -6,53 +6,6 @@
   dockerTools,
 }:
 {
-  monitor = {
-    pname = "monitor";
-    version = "v1.3.2";
-    src = fetchFromGitHub {
-      owner = "monitor-probe";
-      repo = "monitor";
-      rev = "v1.3.2";
-      fetchSubmodules = false;
-      sha256 = "sha256-dbBDTJeKW0jS++67wGamVHQCaBCvmW+0UBOp9P/oX4g=";
-    };
-    extract = {
-      "Cargo.lock" = ./. + "/sha256-dbBDTJeKW0jS++67wGamVHQCaBCvmW+0UBOp9P_oX4g=/Cargo.lock";
-    };
-  };
-  monitor-web-admin = {
-    pname = "monitor";
-    version = "v1.3.2";
-    src = fetchFromGitHub {
-      owner = "monitor-probe";
-      repo = "monitor";
-      rev = "v1.3.2";
-      fetchSubmodules = false;
-      sha256 = "sha256-dbBDTJeKW0jS++67wGamVHQCaBCvmW+0UBOp9P/oX4g=";
-    };
-  };
-  monitor-agent = {
-    pname = "monitor-agent";
-    version = "v1.2.0";
-    src = fetchFromGitHub {
-      owner = "monitor-probe";
-      repo = "agent";
-      rev = "v1.2.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-tqJpvFmq7TvdvusUXSF689tln+rXfZwFUKn9s1ixFIs=";
-    };
-    extract = {
-      "Cargo.lock" = ./. + "/sha256-tqJpvFmq7TvdvusUXSF689tln+rXfZwFUKn9s1ixFIs=/Cargo.lock";
-    };
-  };
-  monitor-theme-default = {
-    pname = "monitor-theme-default";
-    version = "v1.3.0";
-    src = fetchurl {
-      url = "https://github.com/monitor-probe/monitor-theme-default/releases/download/v1.3.0/theme.tar.gz";
-      sha256 = "sha256-Ug1gHLSTRHEeQ42VsT8nHCPKO96Ms/0RZtk1h5bOt6Y=";
-    };
-  };
   Ech0 = {
     pname = "Ech0";
     version = "v5.5.0";
@@ -75,6 +28,17 @@
       sha256 = "sha256-MwGynK/pl9mLPvFtDmX7XQU1T9woptJz90d5PSxVri8=";
     };
   };
+  ampart = {
+    pname = "ampart";
+    version = "v1.4.1";
+    src = fetchFromGitHub {
+      owner = "7Ji";
+      repo = "ampart";
+      rev = "v1.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-iqrG/JgE4C3AsLUMwh2+uUy7UEmh66mBeX15q08pmzw=";
+    };
+  };
   einat = {
     pname = "einat";
     version = "v0.1.11";
@@ -91,85 +55,110 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2026.09.02";
+    version = "v2026.10.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.09.02/zenith.dict";
-      sha256 = "sha256-1A2Nh8AECsb1/mGmQUW6IastusNo/aaROAT5sKnsHZM=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.10.02/zenith.dict";
+      sha256 = "sha256-reNdXBjY7Tkan6Z7xSflgKckqukOTaXdgM4TiTR1iXY=";
     };
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.11.1";
+    version = "v0.13.7";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.11.1";
+      rev = "v0.13.7";
       fetchSubmodules = false;
-      sha256 = "sha256-O6GmGUVyIFCx6Kaa/4s+lmirhYj2iijVKWENSxHnn3Y=";
-    };
-  };
-  komari = {
-    pname = "komari";
-    version = "1.5.0-fix1";
-    src = fetchFromGitHub {
-      owner = "komari-monitor";
-      repo = "komari";
-      rev = "1.5.0-fix1";
-      fetchSubmodules = false;
-      sha256 = "sha256-VL3Pk3II8fU+tKexdumu/j6cX5OEI4GT0TdIFlIfs64=";
-    };
-  };
-  komari-web = {
-    pname = "komari-web";
-    version = "1.5.0-fix1";
-    src = fetchFromGitHub {
-      owner = "komari-monitor";
-      repo = "komari-web";
-      rev = "1.5.0-fix1";
-      fetchSubmodules = false;
-      sha256 = "sha256-ySHbv3AOgCJvAIqzZ12dsOjOCmOzYI6rBFYNoR5Wnjw=";
+      sha256 = "sha256-feb5GFOYj6EWYse5sJRZbND6eLiRlbcxd8A/rIRg4dg=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.52";
+    version = "v6.18.55";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.52";
+      rev = "v6.18.55";
       fetchSubmodules = false;
-      sha256 = "sha256-ySQHBOX55bTiK5mgGT3T6D3oOl9VQ2VXTA7kNFYaiEo=";
+      sha256 = "sha256-eXhRF/GTbW++gbk2UIDr2qFd7jtx/3nd52zZLDmMTAU=";
+    };
+  };
+  monitor = {
+    pname = "monitor";
+    version = "v1.4.1";
+    src = fetchFromGitHub {
+      owner = "monitor-probe";
+      repo = "monitor";
+      rev = "v1.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-R+aUgOU+2oVLg4bqwyd3kbs/Vl9txEftF7pzD8EmNOg=";
+    };
+    extract = {
+      "Cargo.lock" = ./. + "/sha256-R+aUgOU+2oVLg4bqwyd3kbs_Vl9txEftF7pzD8EmNOg=/Cargo.lock";
+    };
+  };
+  monitor-agent = {
+    pname = "monitor-agent";
+    version = "v1.2.1";
+    src = fetchFromGitHub {
+      owner = "monitor-probe";
+      repo = "agent";
+      rev = "v1.2.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-iR39sVMElyjU2CNc+IaghsaoxFqZGVl7a75NSFaCnQY=";
+    };
+    extract = {
+      "Cargo.lock" = ./. + "/sha256-iR39sVMElyjU2CNc+IaghsaoxFqZGVl7a75NSFaCnQY=/Cargo.lock";
+    };
+  };
+  monitor-theme-default = {
+    pname = "monitor-theme-default";
+    version = "v1.4.1";
+    src = fetchurl {
+      url = "https://github.com/monitor-probe/monitor-theme-default/releases/download/v1.4.1/theme.tar.gz";
+      sha256 = "sha256-cfNMK7aPRnNyqBXIwKD8jfmJjWvtUQ/noZdNsWRcbJk=";
+    };
+  };
+  monitor-web-admin = {
+    pname = "monitor-web-admin";
+    version = "v1.4.1";
+    src = fetchFromGitHub {
+      owner = "monitor-probe";
+      repo = "monitor";
+      rev = "v1.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-R+aUgOU+2oVLg4bqwyd3kbs/Vl9txEftF7pzD8EmNOg=";
     };
   };
   rtp2httpd = {
     pname = "rtp2httpd";
-    version = "v3.17.1";
+    version = "v3.17.2";
     src = fetchFromGitHub {
       owner = "stackia";
       repo = "rtp2httpd";
-      rev = "v3.17.1";
+      rev = "v3.17.2";
       fetchSubmodules = false;
-      sha256 = "sha256-z8gMaNjg2NOWgItplwMtJ+NEbKbW0FLMAqZwpHJrEhc=";
+      sha256 = "sha256-jOxWN2I5rq2Fbb61EjjIuG8q64Nklfg3l8iJ9RM8cUE=";
     };
   };
   sing-box-dashboard = {
     pname = "sing-box-dashboard";
-    version = "1f56683b9adf952b47957f5bb758d9ca7837cef0";
+    version = "d77c2f016a7681aa1704e9f83c69139edb230c97";
     src = fetchFromGitHub {
       owner = "SagerNet";
       repo = "sing-box-dashboard";
-      rev = "1f56683b9adf952b47957f5bb758d9ca7837cef0";
+      rev = "d77c2f016a7681aa1704e9f83c69139edb230c97";
       fetchSubmodules = false;
-      sha256 = "sha256-zYp7AQZB5GxTHa7PB+HrfUIu85lrsPwMx7LicruvAZk=";
+      sha256 = "sha256-sSq6Ai4JR4fxIrLTsQJz5jg/S8XbgQtvcOM5xlxEmfA=";
     };
-    date = "2026-09-18";
+    date = "2026-10-11";
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2026.09.03";
+    version = "v2026.10.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.09.03/wallpaper.tar.gz";
-      sha256 = "sha256-xjxvfnqzVlkdMQtHHQRf6FOM/H0VZQ6o6zia5It398k=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.10.03/wallpaper.tar.gz";
+      sha256 = "sha256-Ts4oU83pPGwfPF5GEIyQSGBjFmyLCg+FAostZxuczM8=";
     };
   };
   yx-tools = {

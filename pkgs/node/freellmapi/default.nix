@@ -7,7 +7,7 @@
 buildNpmPackage (finalAttrs: {
   inherit (source) pname version src;
 
-  npmDepsHash = "sha256-Rkbeffkks//gr16QXgDmoD1Uu3ALA9qOOR0Hx/WPJ/o=";
+  npmDepsHash = "sha256-7L32KsKeq+oI/tvadWiBpbHvHLqWZ4hSvUnInDOfs9E=";
 
   # The prepack script runs the build script, which we'd rather do in the build phase.
   npmPackFlags = [ "--ignore-scripts" ];
