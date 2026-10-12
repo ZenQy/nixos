@@ -28,6 +28,13 @@ in
         "240.0.0.0/4"
         "255.255.255.255/32"
       ];
+      reserved_IPv6 = [
+        "fe80::/10"
+        "240e::/18"
+        "2408:8000::/20"
+        "2409:8000::/20"
+        "2001:da8::/32"
+      ];
       user = "sing-box";
       source_MAC = [
         # beelink
@@ -47,8 +54,8 @@ in
         map (rule: "${nft} add rule inet ${table} ${chain} ${rule}") (
           [
             "fib daddr type local meta l4proto { tcp, udp } th dport ${tproxy_port} counter reject"
-            "ip6 daddr fe80::/10 counter return"
             "ip daddr { ${concatStringsSep ", " reserved_IP} } counter return"
+            "ip6 daddr { ${concatStringsSep ", " reserved_IPv6} } counter return"
           ]
           ++ (
             if chain == "prerouting" then

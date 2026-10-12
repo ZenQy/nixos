@@ -137,20 +137,6 @@ let
         url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs";
         update_interval = "10d";
       }
-      {
-        tag = "geosite-openai";
-        type = "remote";
-        format = "binary";
-        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-openai.srs";
-        update_interval = "10d";
-      }
-      {
-        tag = "geosite-google-gemini";
-        type = "remote";
-        format = "binary";
-        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google-gemini.srs";
-        update_interval = "10d";
-      }
     ];
     rules = [
       {
@@ -198,14 +184,6 @@ let
         ];
         outbound = "direct";
       }
-      {
-        rule_set = "geosite-openai";
-        outbound = "openai";
-      }
-      {
-        rule_set = "geosite-google-gemini";
-        outbound = "gemini";
-      }
     ];
     final = "proxy";
     auto_detect_interface = true;
@@ -224,8 +202,6 @@ let
   outbounds =
     let
       nodes = import ./nodes.nix;
-      openai-nodes = nodes.openai;
-      gemini-nodes = nodes.gemini;
       tuic-nodes = nodes.tuic;
       anytls-nodes = nodes.anytls;
       cloudflare-nodes = import ./cloudflare.nix;
@@ -289,18 +265,8 @@ let
       }
       {
         tag = "cloudflare";
-        type = "urltest";
+        type = "selector";
         outbounds = cloudflare-tags;
-      }
-      {
-        tag = "openai";
-        type = "selector";
-        outbounds = openai-nodes;
-      }
-      {
-        tag = "gemini";
-        type = "selector";
-        outbounds = gemini-nodes;
       }
       {
         tag = "direct";
