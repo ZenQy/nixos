@@ -1,6 +1,5 @@
 {
   pkgs,
-  fake_ipv6,
   tproxy_port,
 }:
 
@@ -29,20 +28,32 @@ in
         "240.0.0.0/4"
         "255.255.255.255/32"
       ];
-      source_IP = [ "10.0.0.128/25" ];
       user = "sing-box";
+      source_MAC = [
+        # beelink
+        "70:70:fc:03:2c:08"
+        "70:70:fc:03:2c:09"
+        "0c:91:92:f2:d2:e9"
+        # E20C
+        "12:a9:f6:67:39:e9"
+        "00:e0:4c:0d:1b:36"
+        # ROCK-5B
+        "00:e0:4c:68:00:7a"
+        # OECT
+        "d6:51:eb:55:bd:27"
+      ];
       ruleset =
         chain:
         map (rule: "${nft} add rule inet ${table} ${chain} ${rule}") (
           [
             "fib daddr type local meta l4proto { tcp, udp } th dport ${tproxy_port} counter reject"
-            "ip6 daddr != ${fake_ipv6} counter return"
+            "ip6 daddr fe80::/10 counter return"
             "ip daddr { ${concatStringsSep ", " reserved_IP} } counter return"
           ]
           ++ (
             if chain == "prerouting" then
               [
-                "ip saddr { ${concatStringsSep ", " source_IP} } counter return"
+                "ether saddr != { ${concatStringsSep ", " source_MAC} } counter return"
                 "meta l4proto { tcp, udp } counter tproxy to :${tproxy_port} meta mark set ${fwmark}"
               ]
             else

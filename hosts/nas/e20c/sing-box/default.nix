@@ -1,6 +1,6 @@
 {
-  secrets,
   pkgs,
+  secrets,
   ...
 }:
 
@@ -374,7 +374,7 @@ in
   };
 
   systemd.services.sing-box.serviceConfig = import ./service.nix {
-    inherit pkgs fake_ipv6;
+    inherit pkgs;
     tproxy_port = toString tproxy_port;
   };
 
