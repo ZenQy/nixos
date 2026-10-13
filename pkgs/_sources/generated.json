@@ -114,12 +114,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.13.7",
-            "sha256": "sha256-feb5GFOYj6EWYse5sJRZbND6eLiRlbcxd8A/rIRg4dg=",
+            "rev": "v0.13.10",
+            "sha256": "sha256-SVqcp8elJmRWbRJkvEWzKmY+KA5FoUARSRMn8TPDMoc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.13.7"
+        "version": "v0.13.10"
     },
     "linux-flippy": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.55",
-            "sha256": "sha256-eXhRF/GTbW++gbk2UIDr2qFd7jtx/3nd52zZLDmMTAU=",
+            "rev": "v6.18.56",
+            "sha256": "sha256-kZeCNjXISJKOzJ/LXJgtJSSoJU74R8i54I1w1Fx40wY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.55"
+        "version": "v6.18.56"
     },
     "monitor": {
         "cargoLock": null,
@@ -244,27 +244,6 @@
             "type": "github"
         },
         "version": "v3.17.2"
-    },
-    "sing-box-dashboard": {
-        "cargoLock": null,
-        "date": "2026-10-11",
-        "extract": null,
-        "name": "sing-box-dashboard",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "SagerNet",
-            "repo": "sing-box-dashboard",
-            "rev": "d77c2f016a7681aa1704e9f83c69139edb230c97",
-            "sha256": "sha256-sSq6Ai4JR4fxIrLTsQJz5jg/S8XbgQtvcOM5xlxEmfA=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "d77c2f016a7681aa1704e9f83c69139edb230c97"
     },
     "wallpapers": {
         "cargoLock": null,
