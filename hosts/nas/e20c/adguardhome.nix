@@ -73,4 +73,17 @@
       ];
     };
   };
+
+  systemd.services.adguardhome.serviceConfig = {
+    User = "adguardhome";
+    Group = "adguardhome";
+  };
+
+  users = {
+    users.adguardhome = {
+      isSystemUser = true;
+      group = "adguardhome";
+    };
+    groups.adguardhome = { };
+  };
 }

@@ -17,7 +17,7 @@ in
   ExecStartPost =
     let
       inherit (builtins) concatStringsSep;
-      reserved_IP = [
+      private_list_v4 = [
         "127.0.0.0/8"
         "10.0.0.0/16"
         "192.168.0.0/16"
@@ -26,17 +26,21 @@ in
         "172.16.0.0/12"
         "224.0.0.0/4"
         "240.0.0.0/4"
-        "255.255.255.255/32"
       ];
-      reserved_IPv6 = [
+      private_list_v6 = [
+        "::1"
         "fe80::/10"
+        "ff00::/8"
         "240e::/18"
         "2408:8000::/20"
         "2409:8000::/20"
         "2001:da8::/32"
       ];
-      user = "sing-box";
-      source_MAC = [
+      users = [
+        "sing-box"
+        "adguardhome"
+      ];
+      proxy_macs = [
         # beelink
         "70:70:fc:03:2c:08"
         "70:70:fc:03:2c:09"
@@ -54,18 +58,18 @@ in
         map (rule: "${nft} add rule inet ${table} ${chain} ${rule}") (
           [
             "fib daddr type local meta l4proto { tcp, udp } th dport ${tproxy_port} counter reject"
-            "ip daddr { ${concatStringsSep ", " reserved_IP} } counter return"
-            "ip6 daddr { ${concatStringsSep ", " reserved_IPv6} } counter return"
+            "ether saddr != @proxy_macs counter return"
+            "ip daddr @private_list_v4 counter return"
+            "ip6 daddr @private_list_v6 counter return"
           ]
           ++ (
             if chain == "prerouting" then
               [
-                "ether saddr != { ${concatStringsSep ", " source_MAC} } counter return"
                 "meta l4proto { tcp, udp } counter tproxy to :${tproxy_port} meta mark set ${fwmark}"
               ]
             else
               [
-                "meta skuid ${user} counter return"
+                "meta skuid { ${concatStringsSep ", " users} } counter return"
                 "meta l4proto { tcp, udp } counter meta mark set ${fwmark}"
               ]
           )
@@ -80,6 +84,14 @@ in
         ${nft} add table inet ${table}
         ${nft} add chain inet ${table} prerouting { type filter hook prerouting priority mangle \; policy accept \; }
         ${nft} add chain inet ${table} output { type route hook output priority mangle \; policy accept \; }
+
+        ${nft} add set inet ${table} private_list_v4 { type ipv4_addr\; flags interval\; }
+        ${nft} add set inet ${table} private_list_v6 { type ipv6_addr\; flags interval\; }
+        ${nft} add set inet ${table} proxy_macs { type ether_addr\; }
+
+        ${nft} add element inet ${table} private_list_v4 { ${concatStringsSep ", " private_list_v4} }
+        ${nft} add element inet ${table} private_list_v6 { ${concatStringsSep ", " private_list_v6} }
+        ${nft} add element inet ${table} proxy_macs { ${concatStringsSep ", " proxy_macs} }
 
         ${concatStringsSep "\n" (ruleset "prerouting")}
 

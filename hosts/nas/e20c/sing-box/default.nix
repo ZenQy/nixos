@@ -7,7 +7,6 @@
 let
   sb = secrets.sing-box;
   tproxy_port = 12345;
-  fake_ipv6 = "fc00::/18";
   log = {
     level = "info";
     timestamp = true;
@@ -23,7 +22,7 @@ let
         tag = "dns_fakeip";
         type = "fakeip";
         inet4_range = "198.18.0.0/15";
-        inet6_range = fake_ipv6;
+        inet6_range = "fc00::/18";
       }
     ];
     rules = [
