@@ -2,7 +2,7 @@
   description = "ZenQy's nixos configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/196ed3c2e7b503ead67cef9ace3a59ac4cfe6712";
     secrets = {
       # url = "/home/nixos/Documents/nixos-secrets";
       url = "git+ssh://git@github.com/zenqy/nixos-secrets";
