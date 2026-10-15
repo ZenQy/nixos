@@ -9,6 +9,10 @@ nix profile diff-closures --profile /nix/var/nix/profiles/system
 nix log $(realpath result)
 
 lib.generators.toPretty {} s
+
+# 切换到特定世代
+sudo nix-env --switch-profile /nix/var/nix/profiles/system-11-link -p /nix/var/nix/profiles/system
+sudo nixos-rebuild switch
 ```
 
 根据路由器端`sing-box`配置,生成手机端配置

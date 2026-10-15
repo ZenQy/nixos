@@ -1,11 +1,11 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGo127Module,
   Ech0-web,
 }:
 
-buildGoModule (finalAttrs: {
+buildGo127Module (finalAttrs: {
   inherit (source) pname version src;
 
   proxyVendor = true;
