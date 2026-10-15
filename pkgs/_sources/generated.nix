@@ -63,13 +63,13 @@
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.13.10";
+    version = "v0.14.2";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.13.10";
+      rev = "v0.14.2";
       fetchSubmodules = false;
-      sha256 = "sha256-SVqcp8elJmRWbRJkvEWzKmY+KA5FoUARSRMn8TPDMoc=";
+      sha256 = "sha256-Sd96He33MrxzbrXYKHHpn5ndkhHr2iLiCEs42S/KQ18=";
     };
   };
   linux-flippy = {
