@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v5.5.0";
+    version = "v5.8.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.5.0";
+      rev = "v5.8.0";
       fetchSubmodules = false;
-      sha256 = "sha256-MwGynK/pl9mLPvFtDmX7XQU1T9woptJz90d5PSxVri8=";
+      sha256 = "sha256-sl/uSKkqOtzUBVJTzqGc/f/7eRkXr6Ud8ELNfFNHBUo=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v5.5.0";
+    version = "v5.8.0";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.5.0";
+      rev = "v5.8.0";
       fetchSubmodules = false;
-      sha256 = "sha256-MwGynK/pl9mLPvFtDmX7XQU1T9woptJz90d5PSxVri8=";
+      sha256 = "sha256-sl/uSKkqOtzUBVJTzqGc/f/7eRkXr6Ud8ELNfFNHBUo=";
     };
   };
   ampart = {

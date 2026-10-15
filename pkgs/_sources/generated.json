@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.5.0",
-            "sha256": "sha256-MwGynK/pl9mLPvFtDmX7XQU1T9woptJz90d5PSxVri8=",
+            "rev": "v5.8.0",
+            "sha256": "sha256-sl/uSKkqOtzUBVJTzqGc/f/7eRkXr6Ud8ELNfFNHBUo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.5.0"
+        "version": "v5.8.0"
     },
     "Ech0-web": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.5.0",
-            "sha256": "sha256-MwGynK/pl9mLPvFtDmX7XQU1T9woptJz90d5PSxVri8=",
+            "rev": "v5.8.0",
+            "sha256": "sha256-sl/uSKkqOtzUBVJTzqGc/f/7eRkXr6Ud8ELNfFNHBUo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.5.0"
+        "version": "v5.8.0"
     },
     "ampart": {
         "cargoLock": null,
