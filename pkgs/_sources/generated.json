@@ -114,12 +114,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.15.0",
-            "sha256": "sha256-yWdVsiMmzkM9f2qa4WFIUy0U6JXP1Acb6m5RqnqAz04=",
+            "rev": "v0.16.5",
+            "sha256": "sha256-1sXAnAqv52VHrra/291wGhjKhSZ5bqPDruI1BKRvqLY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.15.0"
+        "version": "v0.16.5"
     },
     "linux-flippy": {
         "cargoLock": null,
@@ -135,18 +135,18 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.56",
-            "sha256": "sha256-kZeCNjXISJKOzJ/LXJgtJSSoJU74R8i54I1w1Fx40wY=",
+            "rev": "v6.18.57",
+            "sha256": "sha256-ZSFjJXK7+kYN9Wm7k9wpKaMwFIo6l6GQpGCf41HjV+s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.56"
+        "version": "v6.18.57"
     },
     "monitor": {
         "cargoLock": null,
         "date": null,
         "extract": {
-            "Cargo.lock": "sha256-R+aUgOU+2oVLg4bqwyd3kbs_Vl9txEftF7pzD8EmNOg=/Cargo.lock"
+            "Cargo.lock": "sha256-wemjxg1gmCNEr7Ol23dqvldkTeGCUe9uqR9Yra8aXEc=/Cargo.lock"
         },
         "name": "monitor",
         "passthru": null,
@@ -158,18 +158,18 @@
             "name": null,
             "owner": "monitor-probe",
             "repo": "monitor",
-            "rev": "v1.4.1",
-            "sha256": "sha256-R+aUgOU+2oVLg4bqwyd3kbs/Vl9txEftF7pzD8EmNOg=",
+            "rev": "v1.5.0",
+            "sha256": "sha256-wemjxg1gmCNEr7Ol23dqvldkTeGCUe9uqR9Yra8aXEc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.4.1"
+        "version": "v1.5.0"
     },
     "monitor-agent": {
         "cargoLock": null,
         "date": null,
         "extract": {
-            "Cargo.lock": "sha256-iR39sVMElyjU2CNc+IaghsaoxFqZGVl7a75NSFaCnQY=/Cargo.lock"
+            "Cargo.lock": "sha256-Ozp1Hi1QWTNi8Znp+J1e3_mNIrHgHNNc8wfy9QLG+QY=/Cargo.lock"
         },
         "name": "monitor-agent",
         "passthru": null,
@@ -181,12 +181,12 @@
             "name": null,
             "owner": "monitor-probe",
             "repo": "agent",
-            "rev": "v1.2.1",
-            "sha256": "sha256-iR39sVMElyjU2CNc+IaghsaoxFqZGVl7a75NSFaCnQY=",
+            "rev": "v1.2.2",
+            "sha256": "sha256-Ozp1Hi1QWTNi8Znp+J1e3/mNIrHgHNNc8wfy9QLG+QY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.2.1"
+        "version": "v1.2.2"
     },
     "monitor-theme-default": {
         "cargoLock": null,
@@ -217,12 +217,12 @@
             "name": null,
             "owner": "monitor-probe",
             "repo": "monitor",
-            "rev": "v1.4.1",
-            "sha256": "sha256-R+aUgOU+2oVLg4bqwyd3kbs/Vl9txEftF7pzD8EmNOg=",
+            "rev": "v1.5.0",
+            "sha256": "sha256-wemjxg1gmCNEr7Ol23dqvldkTeGCUe9uqR9Yra8aXEc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.4.1"
+        "version": "v1.5.0"
     },
     "rtp2httpd": {
         "cargoLock": null,
