@@ -9,7 +9,7 @@ buildNpmPackage (finalAttrs: {
 
   sourceRoot = "${finalAttrs.src.name}/web-admin";
 
-  npmDepsHash = "sha256-6V9J0QglcQbroWBPA9naQ+9n69Km1zjl2iXg4+BAQow=";
+  npmDepsHash = "sha256-Ptrfs48fvhiaCeM0L/0aUhmEQi5pfPRgDr7j2iTBTvE=";
 
   # The prepack script runs the build script, which we'd rather do in the build phase.
   npmPackFlags = [ "--ignore-scripts" ];

@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v5.8.0";
+    version = "v5.8.3";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.8.0";
+      rev = "v5.8.3";
       fetchSubmodules = false;
-      sha256 = "sha256-sl/uSKkqOtzUBVJTzqGc/f/7eRkXr6Ud8ELNfFNHBUo=";
+      sha256 = "sha256-2ZBPJFfl0qZrI+9+SNJOA57x9xr7fOZBCMC+Appbpto=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v5.8.0";
+    version = "v5.8.3";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.8.0";
+      rev = "v5.8.3";
       fetchSubmodules = false;
-      sha256 = "sha256-sl/uSKkqOtzUBVJTzqGc/f/7eRkXr6Ud8ELNfFNHBUo=";
+      sha256 = "sha256-2ZBPJFfl0qZrI+9+SNJOA57x9xr7fOZBCMC+Appbpto=";
     };
   };
   ampart = {
@@ -63,71 +63,71 @@
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.16.5";
+    version = "v0.16.10";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.16.5";
+      rev = "v0.16.10";
       fetchSubmodules = false;
-      sha256 = "sha256-1sXAnAqv52VHrra/291wGhjKhSZ5bqPDruI1BKRvqLY=";
+      sha256 = "sha256-TYi0gYiRk7N56xs1lR2IBKmonydXnkVr5M1EkGJxJZA=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.57";
+    version = "v6.18.58";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.57";
+      rev = "v6.18.58";
       fetchSubmodules = false;
-      sha256 = "sha256-ZSFjJXK7+kYN9Wm7k9wpKaMwFIo6l6GQpGCf41HjV+s=";
+      sha256 = "sha256-uvOYZySvV7dpGfzbCBohQicLhUsfuV1qUFRvDNedzOM=";
     };
   };
   monitor = {
     pname = "monitor";
-    version = "v1.5.0";
+    version = "v1.5.1";
     src = fetchFromGitHub {
       owner = "monitor-probe";
       repo = "monitor";
-      rev = "v1.5.0";
+      rev = "v1.5.1";
       fetchSubmodules = false;
-      sha256 = "sha256-wemjxg1gmCNEr7Ol23dqvldkTeGCUe9uqR9Yra8aXEc=";
+      sha256 = "sha256-CfXY241AZI25LXgkF/9UXuo00R5wLnG+0fxKMqqILjE=";
     };
     extract = {
-      "Cargo.lock" = ./. + "/sha256-wemjxg1gmCNEr7Ol23dqvldkTeGCUe9uqR9Yra8aXEc=/Cargo.lock";
+      "Cargo.lock" = ./. + "/sha256-CfXY241AZI25LXgkF_9UXuo00R5wLnG+0fxKMqqILjE=/Cargo.lock";
     };
   };
   monitor-agent = {
     pname = "monitor-agent";
-    version = "v1.2.2";
+    version = "v1.2.3";
     src = fetchFromGitHub {
       owner = "monitor-probe";
       repo = "agent";
-      rev = "v1.2.2";
+      rev = "v1.2.3";
       fetchSubmodules = false;
-      sha256 = "sha256-Ozp1Hi1QWTNi8Znp+J1e3/mNIrHgHNNc8wfy9QLG+QY=";
+      sha256 = "sha256-W33vLIzg9cYSU1Q08w2oaRTkhKyultj0lNxAlpJqtk8=";
     };
     extract = {
-      "Cargo.lock" = ./. + "/sha256-Ozp1Hi1QWTNi8Znp+J1e3_mNIrHgHNNc8wfy9QLG+QY=/Cargo.lock";
+      "Cargo.lock" = ./. + "/sha256-W33vLIzg9cYSU1Q08w2oaRTkhKyultj0lNxAlpJqtk8=/Cargo.lock";
     };
   };
   monitor-theme-default = {
     pname = "monitor-theme-default";
-    version = "v1.4.1";
+    version = "v1.4.2";
     src = fetchurl {
-      url = "https://github.com/monitor-probe/monitor-theme-default/releases/download/v1.4.1/theme.tar.gz";
-      sha256 = "sha256-cfNMK7aPRnNyqBXIwKD8jfmJjWvtUQ/noZdNsWRcbJk=";
+      url = "https://github.com/monitor-probe/monitor-theme-default/releases/download/v1.4.2/theme.tar.gz";
+      sha256 = "sha256-UOAGrGLStB5Tdo7cRaVh66hJZd9AH8KPSgjGSCZ+OgQ=";
     };
   };
   monitor-web-admin = {
     pname = "monitor-web-admin";
-    version = "v1.5.0";
+    version = "v1.5.1";
     src = fetchFromGitHub {
       owner = "monitor-probe";
       repo = "monitor";
-      rev = "v1.5.0";
+      rev = "v1.5.1";
       fetchSubmodules = false;
-      sha256 = "sha256-wemjxg1gmCNEr7Ol23dqvldkTeGCUe9uqR9Yra8aXEc=";
+      sha256 = "sha256-CfXY241AZI25LXgkF/9UXuo00R5wLnG+0fxKMqqILjE=";
     };
   };
   rtp2httpd = {
