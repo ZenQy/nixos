@@ -204,9 +204,15 @@ let
       tuic-nodes = nodes.tuic;
       anytls-nodes = nodes.anytls;
       cloudflare-nodes = import ./cloudflare.nix;
-      cloudflare-tags = builtins.attrNames cloudflare-nodes;
     in
-    sb.nodes
+    [
+      {
+        tag = "proxy";
+        type = "selector";
+        outbounds = map (s: s.tag) sb.nodes ++ anytls-nodes ++ tuic-nodes;
+      }
+    ]
+    ++ sb.nodes
     ++ map (tag: {
       inherit tag;
       type = "anytls";
@@ -218,55 +224,62 @@ let
         alpn = "h2";
       };
     }) anytls-nodes
-    ++ map (tag: {
-      inherit tag;
-      type = "tuic";
-      server = "${tag}.${secrets.domain}";
-      server_port = 443;
-      inherit (sb.tuic) uuid;
-      congestion_control = "bbr";
-      udp_relay_mode = "native";
-      udp_over_stream = false;
-      zero_rtt_handshake = false;
-      tls = {
-        enabled = true;
-        alpn = "h3";
-      };
-    }) tuic-nodes
-    ++ map (tag: {
-      inherit tag;
-      type = "trojan";
-      server = cloudflare-nodes.${tag};
-      server_port = 443;
-      inherit (sb.cloudflare) password;
-      transport = {
-        type = "ws";
-        inherit (sb.cloudflare) path;
-        headers.Host = sb.cloudflare.host;
-      };
-      tls = {
-        enabled = true;
-        server_name = sb.cloudflare.host;
-        alpn = "h3";
-      };
-    }) cloudflare-tags
+    ++ builtins.concatMap (
+      tag:
+      let
+        nodes = map (n: "${tag}_trojan_${n}") cloudflare-nodes;
+      in
+      [
+        {
+          inherit tag;
+          type = "selector";
+          outbounds = [
+            "${tag}_auto"
+            "${tag}_tuic"
+          ]
+          ++ nodes;
+        }
+        {
+          tag = "${tag}_auto";
+          type = "urltest";
+          outbounds = [ "${tag}_tuic" ] ++ nodes;
+        }
+        {
+          tag = "${tag}_tuic";
+          type = "tuic";
+          server = "${tag}.${secrets.domain}";
+          server_port = 443;
+          inherit (sb.tuic) uuid;
+          congestion_control = "bbr";
+          udp_relay_mode = "native";
+          udp_over_stream = false;
+          zero_rtt_handshake = false;
+          tls = {
+            enabled = true;
+            alpn = "h3";
+          };
+        }
+      ]
+      ++ (map (cf-node: {
+        tag = "${tag}_trojan_${cf-node}";
+        type = "trojan";
+        server = cf-node;
+        server_port = 443;
+        inherit (sb.trojan) password;
+        multiplex.enabled = true;
+        transport = {
+          type = "ws";
+          inherit (sb.trojan) path;
+          headers.Host = "${tag}-cf.${secrets.domain}";
+        };
+        tls = {
+          enabled = true;
+          server_name = "${tag}-cf.${secrets.domain}";
+          alpn = "h3";
+        };
+      }) cloudflare-nodes)
+    ) tuic-nodes
     ++ [
-      {
-        tag = "proxy";
-        type = "selector";
-        outbounds =
-          map (s: s.tag) sb.nodes
-          ++ anytls-nodes
-          ++ tuic-nodes
-          ++ [
-            "cloudflare"
-          ];
-      }
-      {
-        tag = "cloudflare";
-        type = "selector";
-        outbounds = cloudflare-tags;
-      }
       {
         tag = "direct";
         type = "direct";
@@ -316,6 +329,7 @@ let
         enabled = true;
         alpn = "h2";
       };
+      detour = "proxy";
     }
   ];
 in

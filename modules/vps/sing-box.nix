@@ -50,12 +50,37 @@ let
       };
     };
   };
+  trojan-nodes = {
+    tag = "trojan";
+    type = "trojan";
+    listen = "::";
+    listen_port = 80;
+    users = [
+      {
+        inherit (sb.trojan) password;
+      }
+    ];
+    multiplex.enabled = true;
+    transport = {
+      type = "ws";
+      inherit (sb.trojan) path;
+      headers.Host = "${host}-cf.${secrets.domain}";
+    };
+    tls.enabled = false;
+  };
   log = {
     disabled = false;
     level = "info";
     timestamp = true;
   };
-  inbounds = if isOptimized then [ anytlsNode ] else [ tuicNode ];
+  inbounds =
+    if isOptimized then
+      [ anytlsNode ]
+    else
+      [
+        tuicNode
+        trojan-nodes
+      ];
   outbounds = [ { type = "direct"; } ];
 in
 {

@@ -80,15 +80,12 @@ jobs:
 
       - name: Download Files
         run: |
-          curl '${{ secrets.CLOUDFLARE_URL }}' > cloudflare.json
-
-          tag=$(cat cloudflare.json | jq '.outbounds[] | select(.server) | .tag' | jq -s  'unique')
-          server=$(cat cloudflare.json | jq '.outbounds[] | select(.server) | .server' | jq -s  'unique')
-          jq -r -n --argjson keys "$tag" --argjson vals "$server" \
-            '[$keys, $vals] | transpose | map("\"\(.[0])\" = \"\(.[1])\";") | "{ " + join(" ") + " }"' \
-            > cloudflare.json
-
-          mv cloudflare.json hosts/nas/e20c/sing-box/cloudflare.nix
+          wget https://raw.githubusercontent.com/LancelotRar/best-cf-domains/main/best-cf-domain-lite.txt
+          FILE=hosts/nas/e20c/sing-box/cloudflare.nix
+          echo "[" > $FILE
+          cat best-cf-domain-lite.txt | awk -F ' ' '{print "\""$NF"\""}' >> $FILE
+          echo "]" >> $FILE
+          rm best-cf-domain-lite.txt
 
           wget https://raw.githubusercontent.com/XIU2/TrackersListCollection/refs/heads/master/best_aria2.txt
           mv best_aria2.txt modules/nas/conf/aria2.txt
