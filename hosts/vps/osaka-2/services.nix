@@ -10,6 +10,7 @@
     Ech0.enable = true;
     cachix.enable = true;
     monitor.enable = true;
+    openlist.enable = true;
     rclone = {
       enable = true;
       path = [
@@ -34,6 +35,10 @@
 
         e.${secrets.domain} {
         	reverse_proxy :6277
+        }
+
+        f.${secrets.domain} {
+        	reverse_proxy :5244
         }
 
         ${secrets.monitor.site} {
