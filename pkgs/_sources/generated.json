@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.8.3",
-            "sha256": "sha256-2ZBPJFfl0qZrI+9+SNJOA57x9xr7fOZBCMC+Appbpto=",
+            "rev": "v5.9.5",
+            "sha256": "sha256-irI6TG5XXFNZUr7UMmHjAvuRwZlzeF/+TrzJ97PPSrU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.8.3"
+        "version": "v5.9.5"
     },
     "Ech0-web": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.8.3",
-            "sha256": "sha256-2ZBPJFfl0qZrI+9+SNJOA57x9xr7fOZBCMC+Appbpto=",
+            "rev": "v5.9.5",
+            "sha256": "sha256-irI6TG5XXFNZUr7UMmHjAvuRwZlzeF/+TrzJ97PPSrU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.8.3"
+        "version": "v5.9.5"
     },
     "ampart": {
         "cargoLock": null,
@@ -94,11 +94,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-reNdXBjY7Tkan6Z7xSflgKckqukOTaXdgM4TiTR1iXY=",
+            "sha256": "sha256-O2le6TgeQC5fCqGeJJHw/1pluivtRu8dv8g0e/CSOLs=",
             "type": "url",
-            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2026.10.02/zenith.dict"
+            "url": "https://github.com/ZenQy/scel2dict/releases/download/v2026.11.02/zenith.dict"
         },
-        "version": "v2026.10.02"
+        "version": "v2026.11.02"
     },
     "freellmapi": {
         "cargoLock": null,
@@ -114,12 +114,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.16.10",
-            "sha256": "sha256-TYi0gYiRk7N56xs1lR2IBKmonydXnkVr5M1EkGJxJZA=",
+            "rev": "v0.16.19",
+            "sha256": "sha256-w86ri6ROeZHVvPxf1W9BwD3hgu5fZuqc4A4pezcawKs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.16.10"
+        "version": "v0.16.19"
     },
     "linux-flippy": {
         "cargoLock": null,
@@ -135,12 +135,33 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.58",
-            "sha256": "sha256-uvOYZySvV7dpGfzbCBohQicLhUsfuV1qUFRvDNedzOM=",
+            "rev": "v6.18.60",
+            "sha256": "sha256-SGUTw7m+HR6Tg/2pQgPivb5xdQITp/OhCpqNMwrtnDE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.58"
+        "version": "v6.18.60"
+    },
+    "mcis": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "mcis",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Leo-Mu",
+            "repo": "montecarlo-ip-searcher",
+            "rev": "v0.2.4",
+            "sha256": "sha256-zGMNbfyYhdrWfUacY82fbpfp49itg5Vm+K9wuyQLrgc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.2.4"
     },
     "monitor": {
         "cargoLock": null,
@@ -254,11 +275,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Ts4oU83pPGwfPF5GEIyQSGBjFmyLCg+FAostZxuczM8=",
+            "sha256": "sha256-eX5q0zQE1HSsHWFDCuStkNFNgLsVRq6UIAulfHPs8xc=",
             "type": "url",
-            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.10.03/wallpaper.tar.gz"
+            "url": "https://github.com/ZenQy/wallpaper/releases/download/v2026.11.03/wallpaper.tar.gz"
         },
-        "version": "v2026.10.03"
+        "version": "v2026.11.03"
     },
     "yx-tools": {
         "cargoLock": null,

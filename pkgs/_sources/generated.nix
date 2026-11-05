@@ -8,24 +8,24 @@
 {
   Ech0 = {
     pname = "Ech0";
-    version = "v5.8.3";
+    version = "v5.9.5";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.8.3";
+      rev = "v5.9.5";
       fetchSubmodules = false;
-      sha256 = "sha256-2ZBPJFfl0qZrI+9+SNJOA57x9xr7fOZBCMC+Appbpto=";
+      sha256 = "sha256-irI6TG5XXFNZUr7UMmHjAvuRwZlzeF/+TrzJ97PPSrU=";
     };
   };
   Ech0-web = {
     pname = "Ech0-web";
-    version = "v5.8.3";
+    version = "v5.9.5";
     src = fetchFromGitHub {
       owner = "lin-snow";
       repo = "Ech0";
-      rev = "v5.8.3";
+      rev = "v5.9.5";
       fetchSubmodules = false;
-      sha256 = "sha256-2ZBPJFfl0qZrI+9+SNJOA57x9xr7fOZBCMC+Appbpto=";
+      sha256 = "sha256-irI6TG5XXFNZUr7UMmHjAvuRwZlzeF/+TrzJ97PPSrU=";
     };
   };
   ampart = {
@@ -55,32 +55,43 @@
   };
   fcitx5-pinyin-zenith = {
     pname = "fcitx5-pinyin-zenith";
-    version = "v2026.10.02";
+    version = "v2026.11.02";
     src = fetchurl {
-      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.10.02/zenith.dict";
-      sha256 = "sha256-reNdXBjY7Tkan6Z7xSflgKckqukOTaXdgM4TiTR1iXY=";
+      url = "https://github.com/ZenQy/scel2dict/releases/download/v2026.11.02/zenith.dict";
+      sha256 = "sha256-O2le6TgeQC5fCqGeJJHw/1pluivtRu8dv8g0e/CSOLs=";
     };
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.16.10";
+    version = "v0.16.19";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.16.10";
+      rev = "v0.16.19";
       fetchSubmodules = false;
-      sha256 = "sha256-TYi0gYiRk7N56xs1lR2IBKmonydXnkVr5M1EkGJxJZA=";
+      sha256 = "sha256-w86ri6ROeZHVvPxf1W9BwD3hgu5fZuqc4A4pezcawKs=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.58";
+    version = "v6.18.60";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.58";
+      rev = "v6.18.60";
       fetchSubmodules = false;
-      sha256 = "sha256-uvOYZySvV7dpGfzbCBohQicLhUsfuV1qUFRvDNedzOM=";
+      sha256 = "sha256-SGUTw7m+HR6Tg/2pQgPivb5xdQITp/OhCpqNMwrtnDE=";
+    };
+  };
+  mcis = {
+    pname = "mcis";
+    version = "v0.2.4";
+    src = fetchFromGitHub {
+      owner = "Leo-Mu";
+      repo = "montecarlo-ip-searcher";
+      rev = "v0.2.4";
+      fetchSubmodules = false;
+      sha256 = "sha256-zGMNbfyYhdrWfUacY82fbpfp49itg5Vm+K9wuyQLrgc=";
     };
   };
   monitor = {
@@ -143,10 +154,10 @@
   };
   wallpapers = {
     pname = "wallpapers";
-    version = "v2026.10.03";
+    version = "v2026.11.03";
     src = fetchurl {
-      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.10.03/wallpaper.tar.gz";
-      sha256 = "sha256-Ts4oU83pPGwfPF5GEIyQSGBjFmyLCg+FAostZxuczM8=";
+      url = "https://github.com/ZenQy/wallpaper/releases/download/v2026.11.03/wallpaper.tar.gz";
+      sha256 = "sha256-eX5q0zQE1HSsHWFDCuStkNFNgLsVRq6UIAulfHPs8xc=";
     };
   };
   yx-tools = {
