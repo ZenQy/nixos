@@ -8,6 +8,7 @@
 let
   host = config.networking.hostName;
   isOptimized = host == "dmit" || host == "bwh";
+  isTrojan = host == "osaka-1";
   sb = secrets.sing-box;
   anytlsNode = {
     tag = "anytls";
@@ -55,16 +56,12 @@ let
     type = "trojan";
     listen = "::";
     listen_port = 80;
-    users = [
-      {
-        inherit (sb.trojan) password;
-      }
-    ];
+    users = [ { inherit (sb.cloudflare) password; } ];
     multiplex.enabled = true;
     transport = {
       type = "ws";
-      inherit (sb.trojan) path;
-      headers.Host = "${host}-cf.${secrets.domain}";
+      inherit (sb.cloudflare) path;
+      headers.Host = sb.cloudflare.host;
     };
     tls.enabled = false;
   };
@@ -74,13 +71,8 @@ let
     timestamp = true;
   };
   inbounds =
-    if isOptimized then
-      [ anytlsNode ]
-    else
-      [
-        tuicNode
-        trojan-nodes
-      ];
+    (if isOptimized then [ anytlsNode ] else [ tuicNode ])
+    ++ (if isTrojan then [ trojan-nodes ] else [ ]);
   outbounds = [ { type = "direct"; } ];
 in
 {

@@ -6,7 +6,7 @@
     freellmapi.enable = true;
     openlist.enable = true;
     podman.qd.enable = true;
-    podman.qinglong.enable = true;
+    # podman.qinglong.enable = true;
     rtp2httpd.enable = true;
     rclone = {
       enable = true;

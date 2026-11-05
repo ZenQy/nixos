@@ -58,3 +58,7 @@ fetch.github = "monitor-probe/monitor"
 src.github = "monitor-probe/agent"
 fetch.github = "monitor-probe/agent"
 extract = ["Cargo.lock"]
+
+[mcis]
+src.github = "Leo-Mu/montecarlo-ip-searcher"
+fetch.github = "Leo-Mu/montecarlo-ip-searcher"

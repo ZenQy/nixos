@@ -37,7 +37,7 @@
         	reverse_proxy :6277
         }
 
-        f.${secrets.domain} {
+        d.${secrets.domain} {
         	reverse_proxy :5244
         }
 
