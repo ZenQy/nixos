@@ -13,12 +13,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.9.5",
-            "sha256": "sha256-irI6TG5XXFNZUr7UMmHjAvuRwZlzeF/+TrzJ97PPSrU=",
+            "rev": "v5.9.8",
+            "sha256": "sha256-8JJsBrJJE0xTV3aT13NxVY7Xyj0ua5lrViqgtGXoAio=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.9.5"
+        "version": "v5.9.8"
     },
     "Ech0-web": {
         "cargoLock": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "lin-snow",
             "repo": "Ech0",
-            "rev": "v5.9.5",
-            "sha256": "sha256-irI6TG5XXFNZUr7UMmHjAvuRwZlzeF/+TrzJ97PPSrU=",
+            "rev": "v5.9.8",
+            "sha256": "sha256-8JJsBrJJE0xTV3aT13NxVY7Xyj0ua5lrViqgtGXoAio=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.9.5"
+        "version": "v5.9.8"
     },
     "ampart": {
         "cargoLock": null,
@@ -114,12 +114,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.16.19",
-            "sha256": "sha256-w86ri6ROeZHVvPxf1W9BwD3hgu5fZuqc4A4pezcawKs=",
+            "rev": "v0.16.23",
+            "sha256": "sha256-asiRo3TT259uGOOE5+a8SaxnaVDZWDQ6U7REb3JDy+E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.16.19"
+        "version": "v0.16.23"
     },
     "linux-flippy": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.60",
-            "sha256": "sha256-SGUTw7m+HR6Tg/2pQgPivb5xdQITp/OhCpqNMwrtnDE=",
+            "rev": "v6.18.62",
+            "sha256": "sha256-vB7LTvjLEkiXODbGu6zfFxbMX2Pu8kge/VRKAII7j5M=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.60"
+        "version": "v6.18.62"
     },
     "mcis": {
         "cargoLock": null,
