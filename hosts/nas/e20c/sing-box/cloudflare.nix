@@ -1,12 +1,6 @@
 [
-"shopify.com"
-"nexusmods.com"
-"mfa.gov.ua"
-"store.ubi.com"
-"cf.877774.xyz"
-"cf.090227.xyz"
-"cloudflare.seeck.cn"
-"ctcc.cloudflare.seeck.cn"
-"cmcc.cloudflare.seeck.cn"
-"cucc.cloudflare.seeck.cn"
+  "172.66.217.173"
+  "172.66.217.236"
+  "172.66.217.17"
+  "172.66.217.35"
 ]

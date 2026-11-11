@@ -145,6 +145,8 @@ let
       {
         process_name = [
           "AdGuardHome"
+          "dnsmasq"
+          "mcis"
           "yx"
         ];
         outbound = "direct";

@@ -5,7 +5,6 @@
     "yuusei"
     "osaka-1"
     "sailor"
-    "gcloud"
   ];
   anytls = [ ];
 
