@@ -4,12 +4,15 @@
   rustPlatform,
   monitor-web-admin,
   monitor-theme-default,
+  sqlite,
 }:
 
 rustPlatform.buildRustPackage {
   inherit (source) pname version src;
   cargoLock.lockFile = source.extract."Cargo.lock";
-
+  buildInputs = [
+    sqlite
+  ];
   preBuild = ''
     cp -r ${monitor-web-admin} web-admin/dist
     mkdir target
