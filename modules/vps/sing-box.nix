@@ -7,28 +7,8 @@
 
 let
   host = config.networking.hostName;
-  isOptimized = host == "dmit" || host == "bwh";
-  isTrojan = host == "osaka-1";
+  is_vless = host == "osaka-1";
   sb = secrets.sing-box;
-  anytlsNode = {
-    tag = "anytls";
-    type = "anytls";
-    listen = "::";
-    listen_port = 443;
-    users = [
-      {
-        inherit (sb.anytls) password;
-      }
-    ];
-    tls = {
-      enabled = true;
-      alpn = "h2";
-      acme = {
-        domain = "${host}.${secrets.domain}";
-        inherit (sb) dns01_challenge;
-      };
-    };
-  };
   tuicNode = {
     tag = "tuic";
     type = "tuic";
@@ -51,28 +31,32 @@ let
       };
     };
   };
-  trojan-nodes = {
-    tag = "trojan";
-    type = "trojan";
+  vless-nodes = {
+    tag = "vless";
+    type = "vless";
     listen = "::";
     listen_port = 80;
-    users = [ { inherit (sb.cloudflare) password; } ];
+    users = [ { inherit (sb.cloudflare) uuid; } ];
     multiplex.enabled = true;
     transport = {
       type = "ws";
-      inherit (sb.cloudflare) path;
+      path = "/";
       headers.Host = sb.cloudflare.host;
     };
     tls.enabled = false;
   };
   log = {
-    disabled = false;
     level = "info";
     timestamp = true;
   };
   inbounds =
-    (if isOptimized then [ anytlsNode ] else [ tuicNode ])
-    ++ (if isTrojan then [ trojan-nodes ] else [ ]);
+    if is_vless then
+      [
+        tuicNode
+        vless-nodes
+      ]
+    else
+      [ tuicNode ];
   outbounds = [ { type = "direct"; } ];
 in
 {

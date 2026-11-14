@@ -6,6 +6,5 @@
     "osaka-1"
     "sailor"
   ];
-  anytls = [ ];
 
 }

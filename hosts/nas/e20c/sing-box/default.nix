@@ -5,6 +5,12 @@
 }:
 
 let
+  inherit (builtins)
+    concatLists
+    genList
+    length
+    elemAt
+    ;
   sb = secrets.sing-box;
   tproxy_port = 12345;
   log = {
@@ -17,6 +23,12 @@ let
         tag = "dns_direct";
         type = "udp";
         server = "127.0.0.53";
+      }
+      {
+        tag = "dns_proxy";
+        type = "https";
+        server = "8.8.8.8";
+        detour = "proxy";
       }
       {
         tag = "dns_fakeip";
@@ -32,7 +44,7 @@ let
       }
       {
         clash_mode = "global";
-        server = "dns_fakeip";
+        server = "dns_proxy";
       }
       {
         rule_set = "geosite-category-ads-all";
@@ -64,7 +76,7 @@ let
         server = "dns_fakeip";
       }
     ];
-    final = "dns_direct";
+    final = "dns_proxy";
     strategy = "prefer_ipv6";
   };
   route = {
@@ -75,7 +87,6 @@ let
         rules = [
           {
             domain_suffix = [
-              ".cn"
               "10155.com"
               "940940.xyz"
               "ahrefs.com"
@@ -160,6 +171,10 @@ let
         outbound = "direct";
       }
       {
+        rule_set = "geosite-category-ads-all";
+        action = "reject";
+      }
+      {
         clash_mode = "direct";
         outbound = "direct";
       }
@@ -205,21 +220,9 @@ let
     let
       nodes = import ./nodes.nix;
       tuic-nodes = nodes.tuic;
-      anytls-nodes = nodes.anytls;
       cloudflare-nodes = import ./cloudflare.nix;
     in
     sb.nodes
-    ++ map (tag: {
-      inherit tag;
-      type = "anytls";
-      server = "${tag}.${secrets.domain}";
-      server_port = 443;
-      inherit (sb.anytls) password;
-      tls = {
-        enabled = true;
-        alpn = "h2";
-      };
-    }) anytls-nodes
     ++ map (tag: {
       inherit tag;
       type = "tuic";
@@ -235,31 +238,60 @@ let
         alpn = "h3";
       };
     }) tuic-nodes
-    ++ map (tag: {
-      inherit tag;
-      type = "trojan";
-      server = tag;
-      server_port = 443;
-      inherit (sb.cloudflare) password;
-      multiplex.enabled = true;
-      transport = {
-        type = "ws";
-        inherit (sb.cloudflare) path;
-        headers.Host = sb.cloudflare.host;
-      };
-      tls = {
-        enabled = true;
-        server_name = sb.cloudflare.host;
-        alpn = "h3";
-      };
-    }) cloudflare-nodes
+    ++ concatLists (
+      genList (
+        i:
+        let
+          server = elemAt cloudflare-nodes i;
+          tag = toString (i + 1);
+        in
+        [
+          {
+            tag = "CDN-${tag}";
+            type = "vless";
+            inherit server;
+            server_port = 443;
+            inherit (sb.cloudflare) uuid;
+            multiplex.enabled = true;
+            transport = {
+              type = "ws";
+              path = "/";
+              headers.Host = sb.cloudflare.host;
+            };
+            tls = {
+              enabled = true;
+              server_name = sb.cloudflare.host;
+              alpn = "h3";
+            };
+          }
+          {
+            tag = "CF-${tag}";
+            type = "vless";
+            inherit server;
+            server_port = 443;
+            inherit (sb.cloudflare) uuid;
+            transport = {
+              type = "ws";
+              path = "/";
+              headers.Host = "cf.${secrets.domain}";
+              max_early_data = 2048;
+              early_data_header_name = "Sec-WebSocket-Protocol";
+            };
+            tls = {
+              enabled = true;
+              server_name = "cf.${secrets.domain}";
+              alpn = "h3";
+            };
+          }
+        ]
+      ) (length cloudflare-nodes)
+    )
     ++ [
       {
         tag = "proxy";
         type = "selector";
         outbounds =
           map (s: s.tag) sb.nodes
-          ++ anytls-nodes
           ++ tuic-nodes
           ++ [
             "cloudflare"
@@ -267,8 +299,19 @@ let
       }
       {
         tag = "cloudflare";
-        type = "urltest";
-        outbounds = cloudflare-nodes;
+        type = "selector";
+        outbounds = concatLists (
+          genList (
+            i:
+            let
+              tag = toString (i + 1);
+            in
+            [
+              "CDN-${tag}"
+              "CF-${tag}"
+            ]
+          ) (length cloudflare-nodes)
+        );
       }
       {
         tag = "direct";
@@ -299,11 +342,11 @@ let
       type = "api";
       listen = "::";
       listen_port = 9090;
-      secret = secrets.user.password.zenith;
+      secret = sb.secret;
       access_control_allow_private_network = true;
       dashboard = {
         enabled = true;
-        path = "${pkgs.sing-box-dashboard}";
+        # path = "${pkgs.sing-box-dashboard}";
         update_interval = "0";
       };
     }
