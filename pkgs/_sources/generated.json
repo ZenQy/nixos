@@ -66,7 +66,7 @@
         "cargoLock": null,
         "date": null,
         "extract": {
-            "Cargo.lock": "sha256-dyjDzg6kpqjcne1Zke2f7KxAJMp2vAbfeyFGXoH+siE=/Cargo.lock"
+            "Cargo.lock": "sha256-T2Agt3ojSQp2dvnm4XJtvDhWC5oK50hHHmUVw9ODFKM=/Cargo.lock"
         },
         "name": "einat",
         "passthru": null,
@@ -78,12 +78,12 @@
             "name": null,
             "owner": "EHfive",
             "repo": "einat-ebpf",
-            "rev": "v0.1.11",
-            "sha256": "sha256-dyjDzg6kpqjcne1Zke2f7KxAJMp2vAbfeyFGXoH+siE=",
+            "rev": "v0.2.0",
+            "sha256": "sha256-T2Agt3ojSQp2dvnm4XJtvDhWC5oK50hHHmUVw9ODFKM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.1.11"
+        "version": "v0.2.0"
     },
     "fcitx5-pinyin-zenith": {
         "cargoLock": null,
@@ -114,12 +114,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.16.23",
-            "sha256": "sha256-asiRo3TT259uGOOE5+a8SaxnaVDZWDQ6U7REb3JDy+E=",
+            "rev": "v0.16.29",
+            "sha256": "sha256-1EE+fh0TA+fDALJSPyiIeGWBrMkMxI90ImonFelvRHQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.16.23"
+        "version": "v0.16.29"
     },
     "linux-flippy": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.62",
-            "sha256": "sha256-vB7LTvjLEkiXODbGu6zfFxbMX2Pu8kge/VRKAII7j5M=",
+            "rev": "v6.18.63",
+            "sha256": "sha256-j4lcONksBkrZX+93MHMLpiGPpcKmN2rj97dlYie3GNI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.62"
+        "version": "v6.18.63"
     },
     "mcis": {
         "cargoLock": null,
@@ -167,7 +167,7 @@
         "cargoLock": null,
         "date": null,
         "extract": {
-            "Cargo.lock": "sha256-CfXY241AZI25LXgkF_9UXuo00R5wLnG+0fxKMqqILjE=/Cargo.lock"
+            "Cargo.lock": "sha256-rK0zF8ZTI5_dFgphPj3s0DhJHTWil6QZ11kJLrD8M04=/Cargo.lock"
         },
         "name": "monitor",
         "passthru": null,
@@ -179,18 +179,18 @@
             "name": null,
             "owner": "monitor-probe",
             "repo": "monitor",
-            "rev": "v1.5.1",
-            "sha256": "sha256-CfXY241AZI25LXgkF/9UXuo00R5wLnG+0fxKMqqILjE=",
+            "rev": "v1.5.2",
+            "sha256": "sha256-rK0zF8ZTI5/dFgphPj3s0DhJHTWil6QZ11kJLrD8M04=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.1"
+        "version": "v1.5.2"
     },
     "monitor-agent": {
         "cargoLock": null,
         "date": null,
         "extract": {
-            "Cargo.lock": "sha256-W33vLIzg9cYSU1Q08w2oaRTkhKyultj0lNxAlpJqtk8=/Cargo.lock"
+            "Cargo.lock": "sha256-gpBxLnZNveMi9tnYx4dstF1wjfH7aCER7U8GaTsfsa4=/Cargo.lock"
         },
         "name": "monitor-agent",
         "passthru": null,
@@ -202,12 +202,12 @@
             "name": null,
             "owner": "monitor-probe",
             "repo": "agent",
-            "rev": "v1.2.3",
-            "sha256": "sha256-W33vLIzg9cYSU1Q08w2oaRTkhKyultj0lNxAlpJqtk8=",
+            "rev": "v1.2.4",
+            "sha256": "sha256-gpBxLnZNveMi9tnYx4dstF1wjfH7aCER7U8GaTsfsa4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.2.3"
+        "version": "v1.2.4"
     },
     "monitor-theme-default": {
         "cargoLock": null,
@@ -218,11 +218,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-UOAGrGLStB5Tdo7cRaVh66hJZd9AH8KPSgjGSCZ+OgQ=",
+            "sha256": "sha256-eMg+oDQ9CsBlB1KEB+rpOvB3Mjn9765UAkyp0WpUwKg=",
             "type": "url",
-            "url": "https://github.com/monitor-probe/monitor-theme-default/releases/download/v1.4.2/theme.tar.gz"
+            "url": "https://github.com/monitor-probe/monitor-theme-default/releases/download/v1.4.3/theme.tar.gz"
         },
-        "version": "v1.4.2"
+        "version": "v1.4.3"
     },
     "monitor-web-admin": {
         "cargoLock": null,
@@ -238,12 +238,12 @@
             "name": null,
             "owner": "monitor-probe",
             "repo": "monitor",
-            "rev": "v1.5.1",
-            "sha256": "sha256-CfXY241AZI25LXgkF/9UXuo00R5wLnG+0fxKMqqILjE=",
+            "rev": "v1.5.2",
+            "sha256": "sha256-rK0zF8ZTI5/dFgphPj3s0DhJHTWil6QZ11kJLrD8M04=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.1"
+        "version": "v1.5.2"
     },
     "rtp2httpd": {
         "cargoLock": null,

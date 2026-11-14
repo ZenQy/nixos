@@ -1,6 +1,12 @@
 [
-  "2606:4700:83b7:4b9f:dfd7:d560:629:2dca"
-  "2606:4700:83b7:8234:305a:f12e:cb0e:4413"
-  "104.20.56.213"
-  "104.20.57.42"
+"shopify.com"
+"nexusmods.com"
+"mfa.gov.ua"
+"store.ubi.com"
+"cf.877774.xyz"
+"cf.090227.xyz"
+"cloudflare.seeck.cn"
+"ctcc.cloudflare.seeck.cn"
+"cmcc.cloudflare.seeck.cn"
+"cucc.cloudflare.seeck.cn"
 ]
