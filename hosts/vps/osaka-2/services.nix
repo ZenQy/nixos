@@ -37,16 +37,12 @@
         	reverse_proxy :6277
         }
 
-        d.${secrets.domain} {
-        	reverse_proxy :5244
-        }
-
         ${secrets.monitor.site} {
         	reverse_proxy :${secrets.monitor.port}
         }
 
         t.${secrets.domain} {
-          root * ${pkgs.it-tools}/share/it-tools
+          root * ${pkgs.it-tools}/lib
           file_server browse
         }
 
