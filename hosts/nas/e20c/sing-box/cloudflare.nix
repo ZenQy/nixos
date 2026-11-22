@@ -1,4 +1,12 @@
 [
-  "158.247.220.241"
-  "85.113.71.195"
+"shopify.com"
+"nexusmods.com"
+"mfa.gov.ua"
+"store.ubi.com"
+"cf.877774.xyz"
+"cf.090227.xyz"
+"cloudflare.seeck.cn"
+"ctcc.cloudflare.seeck.cn"
+"cmcc.cloudflare.seeck.cn"
+"cucc.cloudflare.seeck.cn"
 ]

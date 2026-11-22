@@ -114,12 +114,12 @@
             "name": null,
             "owner": "tashfeenahmed",
             "repo": "freellmapi",
-            "rev": "v0.16.31",
-            "sha256": "sha256-YoTuQQazYC0b/YbNqyBK25Q5c6gJXa6cOAHQkZXU7T8=",
+            "rev": "v0.16.38",
+            "sha256": "sha256-qzHEMnvz6KLWPDJPp2GuB1tKX/0qHx0jzwejk6Y7+vs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.16.31"
+        "version": "v0.16.38"
     },
     "linux-flippy": {
         "cargoLock": null,
@@ -135,12 +135,12 @@
             "name": null,
             "owner": "unifreq",
             "repo": "linux-6.18.y",
-            "rev": "v6.18.63",
-            "sha256": "sha256-j4lcONksBkrZX+93MHMLpiGPpcKmN2rj97dlYie3GNI=",
+            "rev": "v6.18.64",
+            "sha256": "sha256-22MIegc5Ye0DTXWwqeVWv2tFan31bT7RoaL61kQfMdQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.18.63"
+        "version": "v6.18.64"
     },
     "mcis": {
         "cargoLock": null,
