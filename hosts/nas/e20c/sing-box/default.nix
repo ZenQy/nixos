@@ -22,7 +22,7 @@ let
       {
         tag = "dns_direct";
         type = "udp";
-        server = "127.0.0.53";
+        server = "127.0.0.1";
       }
       {
         tag = "dns_proxy";
@@ -39,6 +39,17 @@ let
     ];
     rules = [
       {
+        rule_set = "geosite-category-ads-all";
+        action = "reject";
+      }
+      {
+        protocol = [
+          "bittorrent"
+          "ssh"
+        ];
+        server = "dns_direct";
+      }
+      {
         clash_mode = "direct";
         server = "dns_direct";
       }
@@ -47,19 +58,11 @@ let
         server = "dns_proxy";
       }
       {
-        rule_set = "geosite-category-ads-all";
-        action = "reject";
-      }
-      {
-        rule_set = "inline_proxy";
-        server = "dns_fakeip";
-      }
-      {
-        protocol = [
-          "bittorrent"
-          "ssh"
+        rule_set = [
+          "inline_proxy"
+          "geosite-category-ai-!cn.srs"
         ];
-        server = "dns_direct";
+        server = "dns_fakeip";
       }
       {
         rule_set = [
@@ -148,6 +151,14 @@ let
         url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs";
         update_interval = "10d";
       }
+      {
+        tag = "geosite-category-ai-!cn.srs";
+        type = "remote";
+        format = "binary";
+        url = "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-category-ai-!cn.srs";
+        update_interval = "10d";
+
+      }
     ];
     rules = [
       {
@@ -156,9 +167,9 @@ let
       {
         process_name = [
           "AdGuardHome"
+          "smartdns"
           "dnsmasq"
           "mcis"
-          "yx"
         ];
         outbound = "direct";
       }
@@ -175,6 +186,13 @@ let
         action = "reject";
       }
       {
+        protocol = [
+          "bittorrent"
+          "ssh"
+        ];
+        outbound = "direct";
+      }
+      {
         clash_mode = "direct";
         outbound = "direct";
       }
@@ -183,19 +201,19 @@ let
         outbound = "proxy";
       }
       {
+        rule_set = "inline_direct";
+        outbound = "direct";
+      }
+      {
         rule_set = "inline_proxy";
         outbound = "proxy";
       }
       {
-        protocol = [
-          "bittorrent"
-          "ssh"
-        ];
-        outbound = "direct";
+        rule_set = "geosite-category-ai-!cn.srs";
+        outbound = "ai";
       }
       {
         rule_set = [
-          "inline_direct"
           "geosite-cn"
           "geoip-cn"
         ];
@@ -209,12 +227,61 @@ let
   };
   inbounds = [
     {
-      tag = "tproxy";
-      type = "tproxy";
-      listen = "::";
-      listen_port = tproxy_port;
-      tcp_fast_open = true;
+      tag = "tun";
+      type = "tun";
+      address = [
+        "172.18.0.1/24"
+        "fdfe:dcba:9876::1/64"
+      ];
+      auto_redirect = true;
+      auto_route = true;
+      dns_mode = "disabled";
+      include_mac_address = [
+        "70:70:fc:03:2c:08" # BeeLink
+        "70:70:fc:03:2c:09" # BeeLink
+        "0c:91:92:f2:d2:e9" # BeeLink
+        "12:a9:f6:67:39:e9" # E20C
+        "00:e0:4c:0d:1b:36" # E20C
+        "00:e0:4c:68:00:7a" # Rock-5B
+        "d6:51:eb:55:bd:27" # OECT
+        "30:5a:3a:7b:fd:e4" # ASUS
+        "34:2d:a3:ca:bb:84" # FiberHome
+      ];
+      include_package = [
+        "InfinityLoop1309.NewPipeEnhanced"
+        "app.aiaw"
+        "cn.jimex.dict"
+        "com.aistra.hail"
+        "com.aurora.store"
+        "com.deskangel.daremote"
+        "com.google.android.gms"
+        "com.ichi2.anki"
+        "com.mmbox.xbrowser.pro"
+        "com.mmbox.xbrowser"
+        "com.x8bit.bitwarden"
+        "com.xbrowser.play"
+        "io.legado.app.release"
+        "io.legato.kazusa"
+        "mark.via"
+        "mark.via.gp"
+        "me.bmax.apatch"
+        "org.telegram.messenger"
+        "org.telegram.messenges"
+        "pro.cubox.androidapp"
+        "top.achatbot.aichat"
+        "xyz.chatboxapp.chatbox"
+      ];
+      mtu = 1500;
+      strict_route = false;
     }
+    # 当前用于为openwrt/手机生成配置，E20C实际使用tproxy
+    # {
+    #   tag = "tproxy";
+    #   type = "tproxy";
+    #   listen = "::";
+    #   listen_port = tproxy_port;
+    #   tcp_fast_open = true;
+    # }
   ];
   outbounds =
     let
@@ -261,7 +328,6 @@ let
             tls = {
               enabled = true;
               server_name = sb.cloudflare.host;
-              alpn = "h3";
             };
           }
           {
@@ -280,7 +346,6 @@ let
             tls = {
               enabled = true;
               server_name = "cf.${secrets.domain}";
-              alpn = "h3";
             };
           }
         ]
@@ -312,6 +377,23 @@ let
             ]
           ) (length cloudflare-nodes)
         );
+      }
+      {
+        tag = "ai";
+        type = "urltest";
+        outbounds =
+          concatLists (
+            genList (
+              i:
+              let
+                tag = toString (i + 1);
+              in
+              [
+                "CDN-${tag}"
+              ]
+            ) (length cloudflare-nodes)
+          )
+          ++ [ "osaka-1" ];
       }
       {
         tag = "direct";
