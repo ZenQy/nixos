@@ -63,24 +63,24 @@
   };
   freellmapi = {
     pname = "freellmapi";
-    version = "v0.16.38";
+    version = "v0.16.44";
     src = fetchFromGitHub {
       owner = "tashfeenahmed";
       repo = "freellmapi";
-      rev = "v0.16.38";
+      rev = "v0.16.44";
       fetchSubmodules = false;
-      sha256 = "sha256-qzHEMnvz6KLWPDJPp2GuB1tKX/0qHx0jzwejk6Y7+vs=";
+      sha256 = "sha256-olgpk4QZOwl0WDjKc6kk6FZ9/hwPKojrggyeu4I334c=";
     };
   };
   linux-flippy = {
     pname = "linux-flippy";
-    version = "v6.18.64";
+    version = "v6.18.65";
     src = fetchFromGitHub {
       owner = "unifreq";
       repo = "linux-6.18.y";
-      rev = "v6.18.64";
+      rev = "v6.18.65";
       fetchSubmodules = false;
-      sha256 = "sha256-22MIegc5Ye0DTXWwqeVWv2tFan31bT7RoaL61kQfMdQ=";
+      sha256 = "sha256-EslthID3yxPtec9rutH3zKoswatcWTnoCqU6aflneKE=";
     };
   };
   mcis = {
