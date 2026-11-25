@@ -3,40 +3,40 @@
 {
   zenith = {
     aria2.enable = true;
-    freellmapi.enable = true;
+    # freellmapi.enable = true;
     openlist.enable = true;
     podman.qd.enable = true;
     # podman.qinglong.enable = true;
     rtp2httpd.enable = true;
-    rclone = {
-      enable = true;
-      path = [
-        {
-          source = "/var/lib/openlist/data/";
-          dest = "/rock-5b/openlist";
-          include = [
-            "config.json"
-            "data.db*"
-          ];
-        }
-        {
-          source = "/var/lib/freellmapi/data/";
-          dest = "/rock-5b/freellmapi";
-          include = [
-            "freeapi.db"
-            "freeapi.db-shm"
-            "freeapi.db-wal"
-          ];
-        }
-        {
-          source = "/var/lib/containers/storage/volumes/qd/_data/";
-          dest = "/rock-5b/qd";
-          include = [
-            "database.db"
-          ];
-        }
-      ];
-    };
+    # rclone = {
+    #   enable = true;
+    #   path = [
+    #     {
+    #       source = "/var/lib/openlist/data/";
+    #       dest = "/rock-5b/openlist";
+    #       include = [
+    #         "config.json"
+    #         "data.db*"
+    #       ];
+    #     }
+    #     # {
+    #     #   source = "/var/lib/freellmapi/data/";
+    #     #   dest = "/rock-5b/freellmapi";
+    #     #   include = [
+    #     #     "freeapi.db"
+    #     #     "freeapi.db-shm"
+    #     #     "freeapi.db-wal"
+    #     #   ];
+    #     # }
+    #     {
+    #       source = "/var/lib/containers/storage/volumes/qd/_data/";
+    #       dest = "/rock-5b/qd";
+    #       include = [
+    #         "database.db"
+    #       ];
+    #     }
+    #   ];
+    # };
   };
 
   services.caddy = {
@@ -88,7 +88,7 @@
       enable = true;
       path = with pkgs; [
         curl
-        pup
+        jq
       ];
       serviceConfig = {
         User = "nixos";
@@ -96,22 +96,10 @@
       };
       script = ''
         echo "#EXTM3U" > /storage/tv.m3u
-        URL="https://www.wmviv.com/anhui-mobile-iptv.html"
-        count=1
-        curl -s "$URL" | pup 'table td text{}' | while read -r cell_data; do
-            case $count in
-                1) val1=$cell_data ;;
-                2) val2=$cell_data ;;
-                4) val4=$cell_data ;;
-            esac
-            if [ $count -eq 5 ]; then
-                echo "#EXTINF:-1 group-title=\"$val2\",$val1" >> /storage/tv.m3u
-                echo "$val4" >> /storage/tv.m3u
-                count=1
-            else
-                ((count++))
-            fi
-        done
+        URL="https://www.wmviv.com/iptv/ahmoiptv.json?v=$(date +%s)&file=ahmoiptv"
+        curl -s "$URL" | \
+          jq -r '.channels.[] | "#EXTINF:-1 group-title=\"\(."频道分类")\",\(."频道名称")-\(."清晰度")\n\(."播放地址")"' \
+          >> /storage/tv.m3u
       '';
     };
   };

@@ -54,8 +54,8 @@ jobs:
       - name: Install nixFlake
         uses: cachix/install-nix-action@v31
 
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+      - name: Setup upterm session
+        uses: owenthereal/action-upterm@v2
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
       - name: Get Old Packages
@@ -80,12 +80,12 @@ jobs:
 
       - name: Download Files
         run: |
-          wget https://raw.githubusercontent.com/LancelotRar/best-cf-domains/main/best-cf-domain-lite.txt
-          FILE=hosts/nas/e20c/sing-box/cloudflare.nix
-          echo "[" > $FILE
-          cat best-cf-domain-lite.txt | awk -F ' ' '{print "\""$NF"\""}' >> $FILE
-          echo "]" >> $FILE
-          rm best-cf-domain-lite.txt
+          # wget https://raw.githubusercontent.com/LancelotRar/best-cf-domains/main/best-cf-domain-lite.txt
+          # FILE=hosts/nas/e20c/sing-box/cloudflare.nix
+          # echo "[" > $FILE
+          # cat best-cf-domain-lite.txt | awk -F ' ' '{print "\""$NF"\""}' >> $FILE
+          # echo "]" >> $FILE
+          # rm best-cf-domain-lite.txt
 
           wget https://raw.githubusercontent.com/XIU2/TrackersListCollection/refs/heads/master/best_aria2.txt
           mv best_aria2.txt modules/nas/conf/aria2.txt

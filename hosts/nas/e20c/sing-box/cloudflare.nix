@@ -1,12 +1,6 @@
 [
-"shopify.com"
-"nexusmods.com"
-"mfa.gov.ua"
-"store.ubi.com"
-"cf.877774.xyz"
-"cf.090227.xyz"
-"cloudflare.seeck.cn"
-"ctcc.cloudflare.seeck.cn"
-"cmcc.cloudflare.seeck.cn"
-"cucc.cloudflare.seeck.cn"
+  "2a06:98c1:310b:bc:e93:f29e:31f8:5cd6"
+  "2606:4700:83b9:c0e2:e49c:bdbf:619f:37c1"
+  "2606:4700:83b9:e479:e9a9:cb02:c637:6bc0"
+  "158.247.220.241"
 ]

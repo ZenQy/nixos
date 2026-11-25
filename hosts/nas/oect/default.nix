@@ -17,7 +17,10 @@
       // secrets.hosts."${host}".network;
   };
 
-  zenith.openlist.enable = true;
-  zenith.transmission.enable = true;
-
+  zenith = {
+    aria2.enable = true;
+    freellmapi.enable = true;
+    openlist.enable = true;
+    transmission.enable = true;
+  };
 }

@@ -23,6 +23,8 @@
     nixfmt
     nixd
 
+    pi-coding-agent
+
     ## File Manager ##
     pcmanfm
     nordzy-icon-theme
@@ -45,10 +47,6 @@
     # vscode-with-extensions
     # vscodium
     zed-editor
-    # claude-code
-    # claude-agent-acp
-    codex
-    # codex-acp
     obsidian
     sqlitebrowser
 
@@ -59,6 +57,7 @@
 
     ## Games ##
     # supertuxkart
+
     ## Others ##
     telegram-desktop
     hugo

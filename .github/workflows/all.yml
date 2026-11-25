@@ -52,8 +52,8 @@ jobs:
       - name: Install nixFlake
         uses: cachix/install-nix-action@v31
 
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+      - name: Setup upterm session
+        uses: owenthereal/action-upterm@v2
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
       - id: set-matrix

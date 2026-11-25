@@ -246,6 +246,7 @@ let
         "d6:51:eb:55:bd:27" # OECT
         "30:5a:3a:7b:fd:e4" # ASUS
         "34:2d:a3:ca:bb:84" # FiberHome
+        "bc:24:11:1a:69:8c" # LXC
       ];
       include_package = [
         "InfinityLoop1309.NewPipeEnhanced"
@@ -355,6 +356,7 @@ let
       {
         tag = "proxy";
         type = "selector";
+        interrupt_exist_connections = true;
         outbounds =
           map (s: s.tag) sb.nodes
           ++ tuic-nodes
@@ -365,6 +367,7 @@ let
       {
         tag = "cloudflare";
         type = "selector";
+        interrupt_exist_connections = true;
         outbounds = concatLists (
           genList (
             i:
